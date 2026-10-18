@@ -12,4 +12,5 @@
 - Separate verified facts from hypotheses in status updates. Do not label a failure a tooling regression, root cause, or resolved issue until reproducible evidence establishes it.
 - Keep context and tool output proportional to the decision at hand. Prefer `rg`, targeted line ranges, and summarized command results; do not print whole files, long logs, generated folders, or repeated evidence when a bounded excerpt will answer the question.
 - Batch related read-only checks, cap command output, and stop investigating once the next safe action or blocker is established. Run only verification relevant to the changed surface.
+- When an external platform, permission, connector, or tooling roadblock prevents the approved next step, stop after bounded verification and tell the user what is blocked and what they need to do. Do not keep retrying, improvise a workaround, or continue into adjacent work unless the user directs it.
 - Before handing work to a new chat, update `STATE.md` only when the current gate, blocker, or immediate next action changed. A fresh chat should be able to resume from `README.md`, `STATE.md`, and at most one routed document.
