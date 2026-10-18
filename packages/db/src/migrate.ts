@@ -13,6 +13,9 @@ export async function migrate(): Promise<string[]> {
 
   for (const filename of filenames) {
     await withTransaction(async (client) => {
+      await client.query(
+        "SELECT pg_advisory_xact_lock(hashtext('anchorpoint-schema-migrations'))",
+      );
       await client.query(`
         CREATE TABLE IF NOT EXISTS schema_migrations (
           name text PRIMARY KEY,

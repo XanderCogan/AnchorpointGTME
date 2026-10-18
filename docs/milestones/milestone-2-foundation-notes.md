@@ -43,4 +43,6 @@ The local security review changed development listeners from all interfaces to l
 - Create the Vercel web preview and Railway API, worker, and PostgreSQL preview described by the approved architecture.
 - Run the same migration, fixture, worker, API-authentication, signed-session, and browser checks against those preview services.
 
-Preview deployment is blocked on source and destination setup. The checkout has no Git remote, no GitHub repository has been identified, and no Vercel destination is connected. The Railway account is connected, but Railway repository deployments also require a confirmed GitHub `owner/name` source. No alternate host or database is approved.
+The source is committed and pushed to `XanderCogan/AnchorpointGTME` on `main`. `vercel.json` keeps Vercel at the repository root so the Next.js application can import shared packages. Separate Railway configuration files define the API and worker start commands, migration and fixture-load pre-deploy commands, API health check, and bounded restart policies. PostgreSQL advisory locking makes concurrent service migrations safe.
+
+Preview deployment remains blocked on destinations. No Vercel destination is connected. The Railway account is connected, but three bounded attempts to create a new Anchorpoint project returned `INVALID_ARGUMENT` without creating a project. The account's one existing project is unrelated and has not been modified. No alternate host or database is approved.

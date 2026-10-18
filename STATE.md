@@ -24,16 +24,18 @@ Strict TypeScript validation, nine tests, the inspection command, and a producti
 
 A repeatable malformed `crm-audit` job exhausts all three attempts, persists its bounded error, and displays the terminal failure and `3/3` count in the authenticated desktop and narrow interfaces. The protected API returns `401` without its bearer token and `200` with it. Development services bind to loopback by default, and production configuration rejects placeholder or undersized secrets.
 
-The local Milestone 2 exit path is accepted. The remaining deliverable is the approved Vercel and Railway preview deployment. It is blocked because this checkout has no Git remote or confirmed GitHub repository and no Vercel destination is connected. Railway is connected but requires the same confirmed repository source. No alternate host or database is approved.
+The local Milestone 2 exit path is accepted. The source, Railway API and worker configuration, Vercel configuration, production port handling, and concurrency-safe migrations are committed and pushed to `XanderCogan/AnchorpointGTME` on `main`.
+
+The remaining deliverable is the approved Vercel and Railway preview deployment. No Vercel destination is connected. The Railway account is connected, but three bounded attempts to create a new Anchorpoint project returned `INVALID_ARGUMENT` without creating a project. The one existing Railway project is unrelated and must not be repurposed. No alternate host or database is approved.
 
 ## Immediate work
 
 Complete Milestone 2 in this order:
 
-1. Confirm the GitHub repository in `owner/name` form and add it as this checkout's remote.
-2. Confirm or connect the Vercel destination; use the already connected Railway account for the backend path.
-3. Create the approved Vercel web and Railway API, worker, and PostgreSQL preview services with production secrets.
-4. Run the accepted foundation and browser checks against the previews, then mark Milestone 2 complete.
+1. Confirm or connect the Vercel destination.
+2. Create an empty Anchorpoint Railway project in the connected personal workspace, or resolve the connector's project-creation error; do not use the unrelated existing project.
+3. Stage and review the Vercel web and Railway API, worker, and PostgreSQL preview services with production secrets.
+4. Deploy only after explicit approval, run the accepted preview checks, then mark Milestone 2 complete.
 
 ## Decisions needed before ICP, TAM, or enrichment work
 
@@ -56,4 +58,4 @@ Do not derive ICP hypotheses, tune score weights, construct a production-shaped 
 
 ## Targeted handoff
 
-In a fresh chat, read `README.md`, then this file. Open `docs/milestones/milestone-2-foundation-notes.md` only when resuming or verifying the application slice. The next action requires the user's confirmed GitHub repository and Vercel destination. Do not replay this chat or reopen other documents unless `docs/README.md` routes the current question there.
+In a fresh chat, read `README.md`, then this file. Open `docs/milestones/milestone-2-foundation-notes.md` only when resuming or verifying the application slice. The next external action requires a Vercel destination and an empty Anchorpoint Railway project. Do not replay this chat or reopen other documents unless `docs/README.md` routes the current question there.
