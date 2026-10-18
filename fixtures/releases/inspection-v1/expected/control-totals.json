@@ -1,0 +1,22 @@
+{
+  "sourceRows": {
+    "owners": 3,
+    "companies": 8,
+    "contacts": 16,
+    "deals": 8,
+    "activities": 11,
+    "tasks": 2
+  },
+  "findingCount": 22,
+  "severityCounts": {
+    "critical": 15,
+    "warning": 7,
+    "informational": 0
+  },
+  "boundaryControls": {
+    "dealAtExactFourteenDaysIsFresh": "deal-006",
+    "oldDealWithFutureOwnedTaskIsFresh": "deal-007",
+    "contactAtExactNinetyDaysIsFresh": "contact-015"
+  }
+}
+

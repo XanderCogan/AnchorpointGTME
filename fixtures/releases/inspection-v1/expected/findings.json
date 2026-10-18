@@ -1,0 +1,25 @@
+[
+  { "ruleId": "CRM-ACTIVITY-001", "severity": "warning", "objectType": "activity", "affectedIds": ["activity-011"] },
+  { "ruleId": "CRM-COMPANY-001", "severity": "critical", "objectType": "company", "affectedIds": ["company-002", "company-003"] },
+  { "ruleId": "CRM-COMPANY-002", "severity": "critical", "objectType": "company", "affectedIds": ["company-006"] },
+  { "ruleId": "CRM-CONTACT-001", "severity": "critical", "objectType": "contact", "affectedIds": ["contact-003"] },
+  { "ruleId": "CRM-CONTACT-002", "severity": "critical", "objectType": "contact", "affectedIds": ["contact-004", "contact-005"] },
+  { "ruleId": "CRM-DATA-001", "severity": "critical", "objectType": "contact", "affectedIds": ["contact-010"] },
+  { "ruleId": "CRM-DATA-002", "severity": "critical", "objectType": "company", "affectedIds": ["company-008"] },
+  { "ruleId": "CRM-DATA-003", "severity": "warning", "objectType": "company", "affectedIds": ["company-008"] },
+  { "ruleId": "CRM-DATA-004", "severity": "warning", "objectType": "contact", "affectedIds": ["contact-011"] },
+  { "ruleId": "CRM-DATA-005", "severity": "critical", "objectType": "contact", "affectedIds": ["contact-012"] },
+  { "ruleId": "CRM-DATA-006", "severity": "critical", "objectType": "contact", "affectedIds": ["contact-013"] },
+  { "ruleId": "CRM-DEAL-001", "severity": "critical", "objectType": "deal", "affectedIds": ["deal-003"] },
+  { "ruleId": "CRM-DEAL-002", "severity": "warning", "objectType": "deal", "affectedIds": ["deal-005"] },
+  { "ruleId": "CRM-DEAL-003", "severity": "warning", "objectType": "deal", "affectedIds": ["deal-005"] },
+  { "ruleId": "CRM-DEAL-003", "severity": "warning", "objectType": "deal", "affectedIds": ["deal-008"] },
+  { "ruleId": "CRM-LIFECYCLE-001", "severity": "warning", "objectType": "contact", "affectedIds": ["contact-016"] },
+  { "ruleId": "CRM-OWNER-001", "severity": "critical", "objectType": "deal", "affectedIds": ["deal-004"] },
+  { "ruleId": "CRM-OWNER-002", "severity": "critical", "objectType": "contact", "affectedIds": ["contact-014"] },
+  { "ruleId": "CRM-SUPPRESSION-001", "severity": "critical", "objectType": "company", "affectedIds": ["company-004"] },
+  { "ruleId": "CRM-SUPPRESSION-002", "severity": "critical", "objectType": "company", "affectedIds": ["company-005"] },
+  { "ruleId": "CRM-SUPPRESSION-003", "severity": "critical", "objectType": "contact", "affectedIds": ["contact-008"] },
+  { "ruleId": "CRM-SUPPRESSION-004", "severity": "critical", "objectType": "contact", "affectedIds": ["contact-009"] }
+]
+

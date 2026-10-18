@@ -1,0 +1,19 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: anchorpoint
+      POSTGRES_PASSWORD: anchorpoint
+      POSTGRES_USER: anchorpoint
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U anchorpoint -d anchorpoint"]
+      interval: 2s
+      timeout: 3s
+      retries: 20
+    ports:
+      - "5433:5432"
+    volumes:
+      - anchorpoint-postgres:/var/lib/postgresql/data
+
+volumes:
+  anchorpoint-postgres:
