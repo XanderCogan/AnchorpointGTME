@@ -1,6 +1,6 @@
 # Milestone 2 Foundation Notes
 
-Status: in progress.
+Status: complete.
 
 ## Implemented foundation
 
@@ -38,11 +38,22 @@ Retry exhaustion is also repeatable. `npm run foundation:verify-failure` resets 
 
 The local security review changed development listeners from all interfaces to loopback-only defaults, retained production `0.0.0.0` binding for Railway, added Railway `PORT` support, and rejects placeholder or undersized production secrets. The production Next.js build passes after these changes.
 
-## Remaining Milestone 2 work
+## Preview acceptance
 
-- Create the Vercel web preview and Railway API, worker, and PostgreSQL preview described by the approved architecture.
-- Run the same migration, fixture, worker, API-authentication, signed-session, and browser checks against those preview services.
+The complete preview is deployed. Vercel serves `https://anchorpoint-gtme.vercel.app`, and Railway exposes the protected API at `https://api-production-0e83a.up.railway.app`. The current Railway deployments for Postgres, API, and Worker are successful with no pending staged work. Vercel deployment `UmvNiSvxzQ1fqGseK9XR1UZVokW1` is ready.
+
+Live acceptance checks passed on 2026-10-19:
+
+- `/health` returned `{"status":"ok"}`;
+- an unauthenticated `/v1/audits/latest` request returned `{"error":"unauthorized"}`;
+- the signed demo login reached the authenticated RevOps interface;
+- the interface showed worker job 1 succeeded, 22 findings, 15 criticals, and 7 warnings; and
+- the same summary remained available at the 390×844 narrow viewport.
+
+Screenshots are stored under `artifacts/milestone-2-preview/`.
 
 The source is committed and pushed to `XanderCogan/AnchorpointGTME` on `main`. `vercel.json` keeps Vercel at the repository root so the Next.js application can import shared packages. Separate Railway configuration files define the API and worker start commands, migration and fixture-load pre-deploy commands, API health check, and bounded restart policies. PostgreSQL advisory locking makes concurrent service migrations safe.
 
-Preview deployment remains blocked on destinations. No Vercel destination is connected. The Railway account is connected, but three bounded attempts to create a new Anchorpoint project returned `INVALID_ARGUMENT` without creating a project. The account's one existing project is unrelated and has not been modified. No alternate host or database is approved.
+The Railway destination is the private `Anchorpoint` project. The approved start, migration, fixture-load, health-check, and restart settings are applied directly to its API and worker service definitions because Railway rejected the custom config-file selector as deprecated. The first deployment established the three services but omitted `POSTGRES_PASSWORD`; Postgres repeatedly rejected initialization, and both application pre-deploy migrations timed out. A generated non-empty password was added, then Postgres, API, and Worker were redeployed in dependency order. The current deployments are online. PostgreSQL 17.11 is ready on port 5432, the migration and immutable fixture load completed, and the worker completed job 1 with 22 findings.
+
+Vercel's GitHub App can access `XanderCogan/AnchorpointGTME`, and the production project imports from the repository root with the Next.js preset. Fresh secrets were installed after rotation, including the same internal API token on Railway and Vercel. The unrelated Railway project was not modified, and no alternate host or database was used.
