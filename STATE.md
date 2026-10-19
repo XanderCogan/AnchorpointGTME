@@ -32,15 +32,15 @@ Vercel serves the production interface at `https://anchorpoint-gtme.vercel.app`,
 
 ## Immediate work
 
-Milestone 2 has no remaining implementation or preview blocker. The next product work begins only after the decisions below; do not advance into ICP, TAM, enrichment, or connector implementation without those approvals.
+Milestone 2 has no remaining implementation or preview blocker. All four decisions required before ICP, TAM, or enrichment work were approved on 2026-10-19. The next work is either building the historical fixture generator under decision 0006 or building the first Georgia market sample under decision 0007; the user has not yet chosen which comes first. Each decision's open items are settled when that work reaches them.
 
-## Decisions needed before ICP, TAM, or enrichment work
+## Decisions resolved before ICP, TAM, or enrichment work
 
 - Resolved: service catalog, branch footprint, licensing constraints, and travel-time rules are approved in `docs/decisions/0003-service-catalog-and-footprint.md`.
 - Resolved: Salesforce is the CRM system of record for post-Milestone 2 work under `docs/decisions/0005-crm-system-of-record.md`. `inspection-v1` and the deployed Milestone 2 application stay HubSpot-shaped.
 - Resolved: the field-service source system and CRM reconciliation rules are approved in `docs/decisions/0004-operating-source-system.md`.
 - Resolved: the ordinary-company operating profile and historical dataset parameters are approved in `docs/decisions/0006-ordinary-company-profile.md`.
-- Select the first Georgia segment sample and acceptable enrichment sources and costs.
+- Resolved: the first Georgia sample covers senior living and skilled nursing, with sources, a $300 enrichment cap, and a personal data boundary approved in `docs/decisions/0007-first-georgia-sample-and-enrichment.md`.
 
 The historical fixture must be evidence-shaped rather than convenient demo data. The external market should use real companies, facilities, and sourced public facts; Anchorpoint's internal commercial relationships and outcomes remain fictional. See `docs/research/tam-construction-plan.md` for the governing standard.
 
