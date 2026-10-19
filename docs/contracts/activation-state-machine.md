@@ -1,10 +1,10 @@
 # Activation State Machine
 
-Status: approved as the future activation contract on 2026-10-17. Connector transitions remain deferred to their gated milestones.
+Status: approved as the future activation contract on 2026-10-17. Amended on 2026-10-19 under decision 0005 to use Salesforce Campaigns for the calling handoff; states and transitions are unchanged. Connector transitions remain deferred to their gated milestones.
 
 Frozen version: `activation-states-v1`
 
-The state machine applies to a contact within a specific play. CRM lifecycle stage and deal stage remain separate HubSpot concepts.
+The state machine applies to a contact within a specific play. CRM lifecycle stage and deal stage remain separate Salesforce concepts.
 
 ## States
 
@@ -19,7 +19,7 @@ The state machine applies to a contact within a specific play. CRM lifecycle sta
 - `approved_email`: manager approved the contact and Lemlist campaign version
 - `approved_phone`: manager approved the contact and TitanX call play
 - `active_email`: Lemlist accepted the idempotent enrollment
-- `active_phone`: contact entered the controlled HubSpot segment used for TitanX
+- `active_phone`: contact entered the controlled Salesforce Campaign used for TitanX
 - `engaged`: a positive reply, connected qualified call, or meeting signal was recorded
 - `nurture`: the contact is valid but the next action is intentionally deferred
 - `disqualified`: a reviewed commercial reason removes the contact from the play

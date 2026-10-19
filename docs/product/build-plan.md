@@ -48,11 +48,11 @@ Deliverables:
 
 Exit gate: a clean environment can load the fixtures, run the audit, and display the same expected findings.
 
-## Milestone 3: Read-only HubSpot connection
+## Milestone 3: Read-only Salesforce connection
 
-Connect a development HubSpot portal using read-only permissions. Import bounded properties and associations, preserve source timestamps, and reconcile paginated data safely.
+Connect a Salesforce Developer Edition org holding only synthetic data, using read-only permissions. Import bounded Account, Site, Contact, Lead, Opportunity, User, Task, and Campaign data, preserve source timestamps, and reconcile paginated data safely. The object mapping follows `docs/decisions/0005-crm-system-of-record.md`.
 
-Exit gate: repeated syncs are idempotent and no HubSpot records are changed.
+Exit gate: repeated syncs are idempotent and no Salesforce records are changed.
 
 ## Milestone 4: Clay enrichment loop
 
@@ -82,7 +82,7 @@ Exit gate: fixtures prove that duplicate delivery, retries, and suppression conf
 
 ## Milestone 7: TitanX handoff
 
-Create a controlled HubSpot segment for approved phone-ready contacts. Configure the supported TitanX HubSpot workflow and map dispositions and follow-up expectations. Use fixtures or a documented manual import if the accessible integration cannot return all required events.
+Create a controlled Salesforce Campaign for approved phone-ready contacts. Configure the supported TitanX Salesforce integration, confirmed under decision 0005, and map dispositions and follow-up expectations. Use fixtures or a documented manual import if the accessible integration cannot return all required events.
 
 Exit gate: call-ready contacts are traceable from approval through disposition without claiming unsupported API behavior.
 

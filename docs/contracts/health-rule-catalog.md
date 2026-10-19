@@ -1,6 +1,6 @@
 # CRM Health Rule Catalog
 
-Status: approved for Milestone 1 on 2026-10-17.
+Status: approved for Milestone 1 on 2026-10-17. Wording amended on 2026-10-19 under decision 0005 to name Salesforce as the CRM; rule logic is unchanged, and `inspection-v1` still evaluates these rules against HubSpot-shaped records.
 
 Frozen version: `health-rules-v1`
 
@@ -51,7 +51,7 @@ Critical. The application may recommend an owner from an approved territory rule
 
 ### `CRM-OWNER-002`: Activation candidate missing owner
 
-Critical. No contact may enter Lemlist or TitanX without an accountable HubSpot owner.
+Critical. No contact may enter Lemlist or TitanX without an accountable CRM owner.
 
 ### `CRM-DEAL-002`: Stale open deal
 
@@ -69,7 +69,7 @@ Warning. A completed call or outreach activity lacks an accepted outcome. Correc
 
 ### `CRM-SUPPRESSION-001`: Customer in prospecting audience
 
-Critical. A company marked current customer, or a contact associated with it, appears in a proposed outbound audience. Removal from the application audience is automatic and does not alter HubSpot lifecycle.
+Critical. A company marked current customer, or a contact associated with it, appears in a proposed outbound audience. Removal from the application audience is automatic and does not alter the CRM lifecycle or customer status.
 
 ### `CRM-SUPPRESSION-002`: Open opportunity in prospecting audience
 
@@ -77,11 +77,11 @@ Critical. A company with an open deal appears in a proposed outbound audience. T
 
 ### `CRM-SUPPRESSION-003`: Email unsubscribe conflict
 
-Critical. The contact qualifies for email by fit but has an unsubscribe or global email-suppression signal. Suppression is permanent unless HubSpot records a valid later consent event.
+Critical. The contact qualifies for email by fit but has an unsubscribe or global email-suppression signal. Suppression is permanent unless the CRM records a valid later consent event.
 
 ### `CRM-SUPPRESSION-004`: Do-not-call conflict
 
-Critical. The contact qualifies for calling but is marked do-not-call or globally suppressed. The application must not place the contact in the TitanX segment.
+Critical. The contact qualifies for calling but is marked do-not-call or globally suppressed. The application must not place the contact in the controlled TitanX calling Campaign.
 
 ### `CRM-LIFECYCLE-001`: Invalid lifecycle progression
 

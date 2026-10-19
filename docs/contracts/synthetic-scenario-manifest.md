@@ -1,6 +1,6 @@
 # Synthetic Scenario Manifest
 
-Status: approved on 2026-10-17. Milestone 1 implements the CRM-audit subset first; scoring, connector, and feedback scenarios remain assigned to their later milestones.
+Status: approved on 2026-10-17. Milestone 1 implements the CRM-audit subset first; scoring, connector, and feedback scenarios remain assigned to their later milestones. Wording amended on 2026-10-19 under decision 0005; `inspection-v1` scenarios keep their HubSpot shape.
 
 Frozen version: `scenario-manifest-v1`
 
@@ -37,7 +37,7 @@ Expected outcome: no critical findings. Eligible records progress to scoring, bu
 - Current customer appears in a candidate audience.
 - Company with an open opportunity appears in a candidate audience.
 - Contact has a Lemlist unsubscribe signal.
-- Contact has a HubSpot do-not-call signal.
+- Contact has a CRM do-not-call signal.
 - Contact qualifies for both channels but email is suppressed; phone remains independently evaluated.
 - Customer status arrives after approval but before connector activation.
 - Unsubscribe arrives after Lemlist activation and must stop future steps without erasing history.
@@ -71,7 +71,7 @@ Expected outcome: no critical findings. Eligible records progress to scoring, bu
 
 - Approved email-ready contact is enrolled once in Lemlist.
 - Enrollment job retries after a timeout but does not create a duplicate lead.
-- Approved phone-ready contact enters the TitanX HubSpot segment once.
+- Approved phone-ready contact enters the controlled TitanX Salesforce Campaign once.
 - Contact qualifies for both channels but receives only the approved primary channel.
 - Conflicting active-channel evidence creates a critical finding.
 - Approval is withdrawn before activation.
