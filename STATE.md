@@ -39,7 +39,7 @@ Milestone 2 has no remaining implementation or preview blocker. The next product
 - Resolved: service catalog, branch footprint, licensing constraints, and travel-time rules are approved in `docs/decisions/0003-service-catalog-and-footprint.md`.
 - Resolved: Salesforce is the CRM system of record for post-Milestone 2 work under `docs/decisions/0005-crm-system-of-record.md`. `inspection-v1` and the deployed Milestone 2 application stay HubSpot-shaped.
 - Resolved: the field-service source system and CRM reconciliation rules are approved in `docs/decisions/0004-operating-source-system.md`.
-- Benchmark and approve Anchorpoint's ordinary-company operating profile, including its platform age, acquired-company history, scale, and the distributions of the synthetic 24-to-36-month commercial history.
+- Resolved: the ordinary-company operating profile and historical dataset parameters are approved in `docs/decisions/0006-ordinary-company-profile.md`.
 - Select the first Georgia segment sample and acceptable enrichment sources and costs.
 
 The historical fixture must be evidence-shaped rather than convenient demo data. The external market should use real companies, facilities, and sourced public facts; Anchorpoint's internal commercial relationships and outcomes remain fictional. See `docs/research/tam-construction-plan.md` for the governing standard.
