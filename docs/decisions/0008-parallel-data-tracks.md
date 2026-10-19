@@ -24,7 +24,7 @@ Step 2 is environment setup, not product behavior. The loader is a one-off setup
 
 ### Track B: Georgia market sample
 
-Build the first Georgia sample under decision 0007, keeping its $300 cap, stopping rule, source and retrieval-date requirement, and personal data boundary.
+Build the first Georgia sample under decision 0007, keeping its $0 free-tier budget, stopping rule, source and retrieval-date requirement, and personal data boundary.
 
 ### Separation between tracks
 

@@ -40,7 +40,7 @@ Milestone 2 has no remaining implementation or preview blocker. All four decisio
 - Resolved: Salesforce is the CRM system of record for post-Milestone 2 work under `docs/decisions/0005-crm-system-of-record.md`. `inspection-v1` and the deployed Milestone 2 application stay HubSpot-shaped.
 - Resolved: the field-service source system and CRM reconciliation rules are approved in `docs/decisions/0004-operating-source-system.md`.
 - Resolved: the ordinary-company operating profile and historical dataset parameters are approved in `docs/decisions/0006-ordinary-company-profile.md`.
-- Resolved: the first Georgia sample covers senior living and skilled nursing, with sources, a $300 enrichment cap, and a personal data boundary approved in `docs/decisions/0007-first-georgia-sample-and-enrichment.md`.
+- Resolved: the first Georgia sample covers senior living and skilled nursing, with sources, a $0 free-tier enrichment budget (cut from $300 on 2026-10-19), and a personal data boundary approved in `docs/decisions/0007-first-georgia-sample-and-enrichment.md`.
 
 The historical fixture must be evidence-shaped rather than convenient demo data. The external market should use real companies, facilities, and sourced public facts; Anchorpoint's internal commercial relationships and outcomes remain fictional. See `docs/research/tam-construction-plan.md` for the governing standard.
 

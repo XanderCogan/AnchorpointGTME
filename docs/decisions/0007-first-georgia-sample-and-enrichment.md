@@ -1,6 +1,6 @@
 # Decision 0007: First Georgia Segment Sample and Enrichment Budget
 
-Status: approved on 2026-10-19. Items listed under "Open within this decision" remain open.
+Status: approved on 2026-10-19. Items listed under "Open within this decision" remain open. Amended on 2026-10-19: the user cut the enrichment budget from a $300 cap to $0, free tiers only.
 
 Date: 2026-10-19  
 Decision owner: User  
@@ -51,12 +51,13 @@ Signals for ongoing monitoring are limited to fire safety citations, relevant ro
 
 ### Budget
 
-- A hard cap of $300 for the first sample, approved in advance. Any spend above the cap needs the user's approval.
-- Serper: the free allowance plus one small credit pack, about $50 at the reported rate of roughly $1 per 1,000 queries. That covers domain and job-posting lookups for a few thousand facilities.
-- Clay: start on the free plan to prove the table design on up to 200 rows, then one month of the Launch plan, reported at about $185 a month for 2,500 data credits, for the people pass. Phone enrichment is excluded from the first sample.
+- The cap is $0. The sample uses public data and free tiers only. No paid plan, credit pack, or top-up is bought without the user's explicit approval at the time, and the default answer is no.
+- Serper: the free allowance only, spent first on operator domains and parent-site confirmation, then on job postings if allowance remains.
+- Clay: the free plan only, to prove the table design and run the people pass on as many qualified accounts as its credits allow. Phone enrichment is excluded.
+- When a free tier runs out, the sample stops that pass and reports how many accounts it covered, rather than paying to finish. A smaller people pass with honest coverage rates is an acceptable result.
 - Bulk database exports from contact-data vendors are excluded. The method is the point.
 
-Prices come from secondary sources and must be confirmed on each vendor's own pricing page before purchase.
+Free-tier limits come from secondary sources and must be confirmed on each vendor's own pricing page before relying on them.
 
 ### Personal data boundary
 
