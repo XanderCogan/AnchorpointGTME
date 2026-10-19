@@ -45,7 +45,7 @@ Pull Georgia records from the three CMS datasets into a gitignored raw-data fold
 
 Resolve each facility to an operator using `chain_id` first, then organizational owners with operational or managerial control in the ownership file, then legal business name. Facilities whose operator is unclear go to a manual review list instead of being merged. Output: operator accounts with parent-site links, each link citing its source field.
 
-### Stages 1 and 2: first run, 2026-10-19, awaiting review
+### Stages 1 and 2: first run, 2026-10-19
 
 `scripts/georgia-sample/pull-cms.ts` pulls the four CMS datasets into the gitignored `data/georgia-sample/raw/` folder and writes `data/georgia-sample/source-manifest.json`. A second pull on the same day produced identical checksums. `scripts/georgia-sample/resolve-operators.ts` writes `operators.json`, `facility-operator-links.json`, and `operator-review.json` beside the manifest. These files hold business facts only and are committable.
 
@@ -89,6 +89,28 @@ Assumptions recorded in the output: Georgia licenses are company-wide, so Greenv
 - Count service-line-relevant citations per facility and roll them up to the operator, keeping severity, recency, repetition, and correction status as evidence.
 - Use ownership association dates as the change-of-ownership signal.
 - Use Serper to find operator domains and current facilities, maintenance, or regional-operations job postings. About 200 operators at three queries each is roughly 600 queries, which fits inside Serper's reported free allowance. If the allowance runs out, domain lookups take priority over job postings.
+
+### Stage 4: first run of the public-data signals, 2026-10-19
+
+`scripts/georgia-sample/signals.ts` writes `data/georgia-sample/signals.json` with per-facility evidence and an operator rollup. The Serper part of this stage, operator domains and job postings, has not run. It needs a Serper API key, which the user must create.
+
+Tag mapping. Thirteen Life Safety Code tags map to the five catalog lines. Each was confirmed against `tagd-9999`, and the output records its CMS wording.
+
+- Sprinkler: K-0353 and K-0352 as inspection, testing, and maintenance; K-0351 as install or repair.
+- Fire alarm: K-0345 as inspection, testing, and maintenance; K-0341, K-0342, K-0343, and K-0347 as install or repair.
+- Extinguishers: K-0355.
+- Kitchen hood: K-0324. Its CMS wording covers cooking facility protection broadly, so it is a looser match.
+- Emergency lighting: K-0291 as testing; K-0293 and K-0281 as install or repair.
+- Tags for doors, barriers, electrical, generators, and medical gas map to no catalog line and are not counted. They include K-0511, the second most common Georgia tag.
+
+Results from 3,482 Georgia fire safety citations:
+
+- 1,257 citations map to a service line: sprinkler 539, fire alarm 286, emergency lighting 235, kitchen hood 110, and extinguishers 87.
+- 314 of 356 facilities have one or more service-line citations, and 233 have one since 2025-01-01.
+- 151 facilities were cited for sprinkler work on more than one survey date. Repetition separates facilities better than presence does.
+- Only 8 service-line citations lack a correction date, so correction status carries little signal in Georgia.
+- 41 facilities show an ownership or partnership interest dated within the 24 months before retrieval, or the CMS change-of-ownership flag. 20 show a new management organization. Individuals with managerial control are excluded, because their dates mostly track administrator turnover; including them had flagged 138 facilities.
+- Of the 88 operators in the serviceable or conditional footprint, 82 have service-line citations, 59 have recent ones, 13 have an ownership change, and 7 a management change.
 
 ### Stage 5: tiering (free)
 
