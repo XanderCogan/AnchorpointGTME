@@ -73,7 +73,7 @@ Decision 0005 limits the Developer Edition org to synthetic data, and decision 0
 The budget for the whole sample is $0.
 
 - Serper and Clay run on free allowances only. Free-tier limits must be confirmed on each vendor's pricing page before relying on them.
-- The open-records request asks for electronic delivery. Its draft currently asks for an estimate only above $25, so the user should lower that to any cost before sending. If a fee is quoted, the user decides whether to pay it or drop the request and use the nursing-home-only universe.
+- The open-records request asks for electronic delivery and an estimate before any cost. If a fee is quoted, the user decides whether to pay it or drop the request and use the nursing-home-only universe.
 
 ## Decisions this plan needs from the user
 
