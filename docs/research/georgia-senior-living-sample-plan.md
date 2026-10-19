@@ -67,6 +67,22 @@ Rules found while building, beyond the plan:
 
 Apply decision 0003: nearest capable branch, estimated drive time, and serviceability state with its reason. The drive-time source is still open in decision 0003. The recommendation is a free routing API's distance matrix, since about 356 facilities against four branches is small; this needs a pricing and terms check before use. If none fits, straight-line distance times a road factor can stand in, labeled as an estimate and never shown as a measured drive time.
 
+### Stage 3: first run, 2026-10-19, on OSRM road drive times
+
+`scripts/georgia-sample/serviceability.ts` writes `data/georgia-sample/serviceability.json`. For each facility and each of the five recurring service lines, it records the nearest branch offering that line, the drive minutes and road miles, the state, and the reason.
+
+Drive times come from the OSRM public demo server's table service, using OpenStreetMap data and the car profile. The user approved it on 2026-10-19 after a straight-line estimate proved inadequate. Its published terms allow non-commercial use at no more than one request per second. The full FOSSGIS terms page blocked automated reading. The run used four sequential requests, and raw responses are cached in the gitignored raw folder. Facility coordinates come from CMS (`4pq5-n9py.latitude` and `longitude`). The fictional branches sit at city centers. This resolves the drive-time source left open in decision 0003 for this sample.
+
+Results:
+
+- Of 356 facilities, 185 are fully serviceable, 95 partially serviceable, and 76 not serviceable. Every facility was routable and within 500 meters of a road.
+- For sprinkler work, 188 facilities are serviceable, 58 conditional, and 110 not serviceable.
+- Of 128 operators, 71 are serviceable and 17 conditional for sprinkler or alarm work at one or more facilities. 62 of those 88 are resolved operators; the rest are provisional.
+- 52 facilities sit within 5 minutes of the 90- or 120-minute edge on some line.
+- OSRM times are free-flow without traffic. Spot checks look 10 to 25 percent slower than typical consumer-map times on some routes, such as Norcross to Rome at 91 minutes. This is a judgment, not a measured comparison. Treat facilities near a band edge as uncertain either way.
+
+Assumptions recorded in the output: Georgia licenses are company-wide, so Greenville may serve Georgia sites; alarm monitoring resale is left out while decision 0003 keeps it open; every nursing home is assumed to need all five lines until Stage 4 adds citation evidence.
+
 ### Stage 4: qualification and signals (free)
 
 - Map fire safety tags to Anchorpoint service lines, such as alarm testing, sprinkler maintenance, extinguishers, emergency lighting, and kitchen hood suppression. Confirm each tag against CMS's free Citation Code Look-up dataset (`tagd-9999`) before relying on it.
