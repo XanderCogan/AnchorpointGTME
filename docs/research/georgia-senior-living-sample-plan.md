@@ -64,9 +64,9 @@ Tier operators 1 to 4 using the priority bands and soft-scoring rules in `docs/c
 
 Only for serviceable, tiered operators, highest tier first. Run on Clay's free plan only: prove the table design for roles at the operator level and the site level, and measure the share of operators where named people can be found at all. The pass stops when free credits run out and reports how many operators it covered. There is no upgrade to a paid plan. Emails are checked for verifiability on a capped subset, and only whether a verified channel exists is recorded. Phone enrichment stays excluded.
 
-### Stage 7: load (blocked on a decision)
+### Stage 7: load
 
-Decision 0005 limits the Developer Edition org to synthetic data, and decision 0008 keeps real market records apart from the synthetic history. Real Georgia records therefore cannot go into that org as currently approved. Until a decision says where real market data lives, the sample stays in the project database and the Clay workspace.
+Under the 2026-10-19 amendments to decisions 0005 and 0008, real Georgia operators and facilities load into the Developer Edition org as Accounts and Sites, and Track A's fictional history may attach to them. Real people's contact details stay out of the public repository.
 
 ## Budget
 
@@ -77,7 +77,6 @@ The budget for the whole sample is $0.
 ## Decisions this plan needs from the user
 
 - Accepted on 2026-10-19: the first pass may reach roughly 100 to 136 serviceable operators from nursing homes alone, below the 200 target, until the scraped state list is added.
-- Decide where real market records may live for loading and demonstration, given that the Salesforce org is synthetic-only.
 
 ## Sources
 

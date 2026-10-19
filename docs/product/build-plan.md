@@ -50,9 +50,9 @@ Exit gate: a clean environment can load the fixtures, run the audit, and display
 
 ## Milestone 3: Read-only Salesforce connection
 
-Connect a Salesforce Developer Edition org holding only synthetic data, using read-only permissions. Import bounded Account, Site, Contact, Lead, Opportunity, User, Task, and Campaign data, preserve source timestamps, and reconcile paginated data safely. The object mapping follows `docs/decisions/0005-crm-system-of-record.md`.
+Connect a Salesforce Developer Edition org holding Anchorpoint's fictional history, using read-only permissions. Import bounded Account, Site, Contact, Lead, Opportunity, User, Task, and Campaign data, preserve source timestamps, and reconcile paginated data safely. The object mapping follows `docs/decisions/0005-crm-system-of-record.md`.
 
-The org's synthetic data is the first historical fixture release from decision 0006, loaded as a setup step separate from the read-only connector. Under decision 0008, this milestone is Track A and runs alongside the Georgia market sample.
+The org's data is the first historical fixture release from decision 0006, which may use real company names under the amended decision 0005, loaded as a setup step separate from the read-only connector. Under decision 0008, this milestone is Track A and runs alongside the Georgia market sample.
 
 Exit gate: repeated syncs are idempotent and no Salesforce records are changed.
 

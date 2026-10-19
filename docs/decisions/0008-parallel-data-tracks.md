@@ -20,17 +20,19 @@ Two tracks run in parallel. Each track is ordered internally, and both join at a
 2. Load the release's Salesforce-shaped records into the free Developer Edition org named in decision 0005. The user creates the org.
 3. Build Milestone 3 against that org. Its scope and exit gate are unchanged.
 
-Step 2 is environment setup, not product behavior. The loader is a one-off setup tool kept apart from the application's connector, which stays read-only. The org holds only synthetic data.
+Step 2 is environment setup, not product behavior. The loader is a one-off setup tool kept apart from the application's connector, which stays read-only. The org holds the fictional history, which may sit on real company names under the amendment to decision 0005.
 
 ### Track B: Georgia market sample
 
 Build the first Georgia sample under decision 0007, keeping its $0 free-tier budget, stopping rule, source and retrieval-date requirement, and personal data boundary.
 
-### Separation between tracks
+### How the tracks relate
 
-- Track A data is synthetic and never counts as market evidence.
-- Track B records are real companies and facilities. They carry no fictional Anchorpoint relationships or outcomes until the deliberate join step below.
-- The tracks share no fixture files or data tables. If both touch shared code, that code lands in one track at a time.
+Amended on 2026-10-19 after the user confirmed the project is openly fictional and disclosed as such.
+
+- Track A's generator may build Anchorpoint's fictional history on real companies, including real Georgia operators from Track B's operator resolution. For segments Track B does not cover, it may use other public business sources or fictional names.
+- The fictional history is never market evidence. Fit assumptions are written down before generation, and ICP analysis on the history tests whether the method recovers them. Real fit and need come from public evidence on real records, such as citations, chain size, hiring, and competitors' published customer segments.
+- If both tracks touch shared code, that code lands in one track at a time.
 
 ### Join point
 
@@ -44,7 +46,7 @@ Milestone 5 still follows Milestone 4. Milestones 6 and 7 still follow Milestone
 
 ## Rationale
 
-Milestone 3 needs synthetic data to sync, and the historical fixture is that data, already shaped by decisions 0005 and 0006. Building the fixture first gives Milestone 3 a realistic org instead of a hand-made one. The Georgia sample depends on neither, because it uses public sources and a separate pipeline. Running the two in parallel removes idle time without weakening any review gate, read-only boundary, or approval requirement.
+Milestone 3 needs data to sync, and the historical fixture is that data, already shaped by decisions 0005 and 0006. Building the fixture first gives Milestone 3 a realistic org instead of a hand-made one. The Georgia sample depends on neither. Track A can build its generator while Track B resolves operators, then bind its first release to that real operator list. Running the two in parallel removes idle time without weakening any review gate, read-only boundary, or approval requirement.
 
 ## Consequences
 
@@ -60,5 +62,5 @@ Milestone 3 needs synthetic data to sync, and the historical fixture is that dat
 ## Required future tests
 
 - The Milestone 3 connector has no create, update, or delete path, and repeated syncs leave every org record unchanged.
-- No Track B record carries a fictional outcome, relationship, or Anchorpoint history field before the join step.
+- The generator's fit assumptions are committed before the release they shape, and ICP analysis reports whether it recovered them.
 - The historical fixture release loaded into the org matches its committed release byte for byte, or by recorded checksum.
