@@ -39,7 +39,7 @@ Universe-level identity, run across every candidate facility, uses free sources 
 
 - CMS nursing home provider data, including ownership and affiliated-entity fields, which needs confirming
 - CMS fire safety deficiency data for life-safety survey citations, which needs confirming
-- Georgia GaMap2Care for state-licensed assisted living and personal care homes. It is a search tool with no confirmed bulk export, so collection needs a small, polite scraper or an open-records request to the Department of Community Health. That choice is left to the build.
+- Georgia GaMap2Care for state-licensed assisted living and personal care homes. It is a search tool with no confirmed bulk export, so collection needs a small, polite scraper or an open-records request to the Department of Community Health. Resolved on 2026-10-19: GaMap2Care appears retired, and the user chose a scraper of its replacement public search, subject to that site's terms of use. No records request is sent.
 - Operator websites for facility lists and parent relationships
 - Serper search to find operator domains and confirm parent-site links
 
@@ -81,7 +81,6 @@ Senior living and skilled nursing offer the rare combination of public, authorit
 ## Open within this decision
 
 - Confirming the CMS ownership and fire safety deficiency dataset fields, with one bounded lookup each when the build starts
-- GaMap2Care collection method, either scraper or open-records request
 - Whether the repository is public, which affects how strictly the personal data boundary must be enforced in fixtures and screenshots
 
 ## Required future tests

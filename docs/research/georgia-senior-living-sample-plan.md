@@ -27,7 +27,7 @@ What the counts mean for the plan:
 
 - GaMap2Care, named in decision 0007, appears retired. Its address returns HTTP 404 behind an expired certificate.
 - The live replacement appears to be the Healthcare Facility Regulation public search in the Georgia MMIS portal. It is a form-based search with no export.
-- Recommended path: a Georgia Open Records Act request to the Department of Community Health's Healthcare Facility Regulation Division for the current licensed assisted living community and personal care home list. It costs little or nothing and avoids scraping a state portal. A scraper is the fallback only if the request stalls, and it would need the user's approval first.
+- Approved path, chosen by the user on 2026-10-19: a small, polite scraper of that public search. No records request is sent. Before it runs, the scraper's build checks the portal's terms of use and robots rules, keeps requests slow and sequential, and stores raw pages only in the gitignored raw-data folder. If the terms forbid automated access, the scraper is not built and the sample stays nursing-home-only.
 
 ### Repository visibility
 
@@ -39,7 +39,7 @@ Each stage ends with a reviewable artifact and a count. Every stage runs on free
 
 ### Stage 1: facility universe (free)
 
-Pull Georgia records from the three CMS datasets into a gitignored raw-data folder. Commit only a source manifest recording dataset identifier, CMS modified date, retrieval date, row count, and file checksum. Assisted living and personal care homes join when the open-records list arrives. The first pass does not wait for it.
+Pull Georgia records from the three CMS datasets into a gitignored raw-data folder. Commit only a source manifest recording dataset identifier, CMS modified date, retrieval date, row count, and file checksum. Assisted living and personal care homes join once the state-portal scraper has run. The first pass does not wait for it.
 
 ### Stage 2: operator resolution (free)
 
@@ -73,12 +73,10 @@ Decision 0005 limits the Developer Edition org to synthetic data, and decision 0
 The budget for the whole sample is $0.
 
 - Serper and Clay run on free allowances only. Free-tier limits must be confirmed on each vendor's pricing page before relying on them.
-- The open-records request asks for electronic delivery and an estimate before any cost. If a fee is quoted, the user decides whether to pay it or drop the request and use the nursing-home-only universe.
 
 ## Decisions this plan needs from the user
 
-- Send the open-records request for the assisted living and personal care home list. The draft is in `docs/research/open-records-request-dch-hfrd.md`, and the user sends it.
-- Accept that the first pass may reach roughly 100 to 136 serviceable operators from nursing homes alone, below the 200 target, until the state list arrives.
+- Accepted on 2026-10-19: the first pass may reach roughly 100 to 136 serviceable operators from nursing homes alone, below the 200 target, until the scraped state list is added.
 - Decide where real market records may live for loading and demonstration, given that the Salesforce org is synthetic-only.
 
 ## Sources
