@@ -193,7 +193,7 @@ The first application fixture remains approximately 200 companies and 600 contac
 ## Open decisions
 
 - Service catalog, branch locations, travel-time rules, and licensing and capability constraints are resolved in `docs/decisions/0003-service-catalog-and-footprint.md`
-- Fictional field-service, billing, or ERP source system
+- The field-service source system and its reconciliation with the Salesforce CRM are resolved in `docs/decisions/0004-operating-source-system.md` and `docs/decisions/0005-crm-system-of-record.md`
 - Benchmarked historical dataset size and outcome distributions
 - Anchorpoint platform age, acquired-company history, and ordinary-company operating profile
 - Which segments belong in the first Georgia sample

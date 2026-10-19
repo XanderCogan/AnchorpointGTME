@@ -46,7 +46,8 @@ Milestone reports are evidence records. Update `STATE.md`, not an old report, wh
 - Approved rationale and consequences for soft targeting and change propensity: [`decisions/0001-soft-targeting.md`](decisions/0001-soft-targeting.md)
 - Approved user hierarchy for the application and Milestone 2 interface: [`decisions/0002-revops-primary-interface.md`](decisions/0002-revops-primary-interface.md)
 - Approved service catalog, branch footprint, licensing gates, and travel-time rules: [`decisions/0003-service-catalog-and-footprint.md`](decisions/0003-service-catalog-and-footprint.md)
-- Proposed field-service source system and CRM reconciliation rules: [`decisions/0004-operating-source-system.md`](decisions/0004-operating-source-system.md)
+- Approved field-service source system and CRM reconciliation rules: [`decisions/0004-operating-source-system.md`](decisions/0004-operating-source-system.md)
+- Approved move to Salesforce as the CRM system of record after Milestone 2: [`decisions/0005-crm-system-of-record.md`](decisions/0005-crm-system-of-record.md)
 
 Add a decision record when the user resolves a material ambiguity that changes product behavior, tests, contracts, or milestone scope. Do not create decision records for routine implementation details.
 

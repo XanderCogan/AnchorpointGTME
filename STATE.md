@@ -37,7 +37,8 @@ Milestone 2 has no remaining implementation or preview blocker. The next product
 ## Decisions needed before ICP, TAM, or enrichment work
 
 - Resolved: service catalog, branch footprint, licensing constraints, and travel-time rules are approved in `docs/decisions/0003-service-catalog-and-footprint.md`.
-- Select the fictional field-service, billing, or ERP source that will be reconciled with HubSpot. Proposed in `docs/decisions/0004-operating-source-system.md`; awaiting user approval.
+- Resolved: Salesforce is the CRM system of record for post-Milestone 2 work under `docs/decisions/0005-crm-system-of-record.md`. `inspection-v1` and the deployed Milestone 2 application stay HubSpot-shaped.
+- Resolved: the field-service source system and CRM reconciliation rules are approved in `docs/decisions/0004-operating-source-system.md`.
 - Benchmark and approve Anchorpoint's ordinary-company operating profile, including its platform age, acquired-company history, scale, and the distributions of the synthetic 24-to-36-month commercial history.
 - Select the first Georgia segment sample and acceptable enrichment sources and costs.
 
@@ -49,7 +50,7 @@ Do not derive ICP hypotheses, tune score weights, construct a production-shaped 
 
 - Deployment-only credentials exist in Railway and Vercel; no live CRM credentials or external business-system connectors exist.
 - No write-capable connector exists.
-- The first HubSpot connector must be read-only.
+- The first Salesforce connector must be read-only.
 - Synthetic records must never be contacted or represented as real outcomes.
 - Human approval and deny-first suppression remain mandatory before any future activation.
 
