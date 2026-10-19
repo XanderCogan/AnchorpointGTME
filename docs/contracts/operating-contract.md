@@ -1,14 +1,16 @@
 # Operating Contract
 
-Status: approved and amended after Milestone 1 review on 2026-10-17.
+Status: approved and amended after Milestone 1 review on 2026-10-17; amended on 2026-10-19 for decisions 0003, 0004, and 0005.
 
-Frozen version: `operating-contract-v1.2`
+Frozen version: `operating-contract-v1.3`
+
+Version `v1.2` named HubSpot as the CRM and remains the governing contract for the immutable `inspection-v1` fixture and the accepted Milestone 2 application. Version `v1.3` governs every later fixture release, connector, and milestone.
 
 ## Fictional portco
 
-Anchorpoint Fire & Safety is a fictional private-equity-backed commercial fire and life-safety services company. It performs recurring inspection, testing, maintenance, and repair for multi-location commercial operators in North Carolina, South Carolina, and Georgia.
+Anchorpoint Fire & Safety is a fictional private-equity-backed commercial fire and life-safety services company. It performs recurring inspection, testing, maintenance, and repair for multi-location commercial operators from branches in Georgia and South Carolina. Its service catalog, branches, licensing gates, and travel-time rules are defined in `docs/decisions/0003-service-catalog-and-footprint.md`. North Carolina operators appear in the CRM but are not serviceable because Anchorpoint holds no North Carolina licenses.
 
-The company recently consolidated several local operators. Its HubSpot portal contains imported records, inconsistent ownership, duplicated companies, stale deals, and contacts without clear personas. Leadership wants to add structured outbound without contacting customers, duplicating active opportunities, or handing representatives unusable lists.
+The company recently consolidated several local operators. Its Salesforce org contains imported records, inconsistent ownership, duplicated companies, stale deals, and contacts without clear personas. Leadership wants to add structured outbound without contacting customers, duplicating active opportunities, or handing representatives unusable lists.
 
 ## First sales motion
 
@@ -32,7 +34,9 @@ The initial buying personas are:
 
 ## Systems of record
 
-HubSpot is the operational source of truth for CRM identity, ownership, lifecycle, opportunity state, consent, and activity. The application keeps a versioned mirror for audits and processing but does not become the sales team's primary CRM.
+Salesforce is the operational source of truth for CRM identity, ownership, lifecycle, opportunity state, consent, and activity. The object mapping is defined in `docs/decisions/0005-crm-system-of-record.md`: Accounts with a parent hierarchy, a custom Site object for physical facilities, Contacts, Leads only for unmatched inbound, Opportunities, Users as owners, Tasks and Events, and Campaigns for controlled audiences. The application keeps a versioned, CRM-neutral mirror for audits and processing but does not become the sales team's primary CRM.
+
+The field-service management platform is the source of truth for service delivery, contracts, invoices, and therefore customer status, as defined in `docs/decisions/0004-operating-source-system.md`. Where it disagrees with Salesforce, the disagreement is a reconciliation finding rather than a silent override.
 
 Clay supplies enrichment with field-level provenance. Enriched values are proposed inputs until they pass validation and, where required, human review.
 
@@ -42,15 +46,15 @@ Lemlist is the email execution system. TitanX is the calling execution system. T
 
 For the demo, reporting timestamps normalize to `America/New_York`. Source timestamps and their original offsets are retained.
 
-A current customer is a company whose approved HubSpot customer-status property is `current`. A closed-won deal by itself does not prove that the company remains a current customer. Missing or contradictory customer status blocks activation until reviewed.
+A current customer is an account with at least one site that has an active field-service contract or a completed job in the last 13 months, after reconciliation under decision 0004. A closed-won opportunity by itself does not prove that the account remains a current customer. Missing, ambiguous, or contradictory customer status blocks activation until reviewed.
 
-An open opportunity is an associated deal in the approved new-business pipeline whose stage is not closed-won or closed-lost. Implementation, renewal, and support pipelines do not silently count as new-business opportunities; their treatment must be mapped explicitly before a live deployment.
+An open opportunity is an associated Opportunity of the approved new-business type whose stage is not closed-won or closed-lost. Implementation, renewal, and support opportunity types do not silently count as new-business opportunities; their treatment must be mapped explicitly before a live deployment.
 
 A logged sales activity for deal staleness includes a completed call, one-to-one sales email, prospect reply, completed meeting, or completed sales task associated directly with that deal. Company-only activity does not reset a deal's clock because it may belong to a different commercial motion. Notes and automated marketing events do not reset deal staleness.
 
 A future task is an incomplete owner-assigned sales task with a due timestamp after the audit timestamp. Tasks without owners do not satisfy the requirement.
 
-Suppression is deny-first. If HubSpot, Lemlist, or TitanX disagree, the most restrictive applicable signal wins until the conflict is resolved.
+Suppression is deny-first. If Salesforce, Lemlist, or TitanX disagree, the most restrictive applicable signal wins until the conflict is resolved.
 
 ## Company identity
 
@@ -145,13 +149,15 @@ A manager may move a non-engaged contact to the other channel after the first pl
 
 ## Ownership policy
 
-Every activated contact must have a named HubSpot owner. The owner is responsible for interested replies, scheduled follow-ups, and disposition quality. The application may recommend an owner but may not assign one without an approved ownership rule.
+Every activated contact must have a named Salesforce owner. The owner is responsible for interested replies, scheduled follow-ups, and disposition quality. The application may recommend an owner but may not assign one without an approved ownership rule.
 
 ## Write policy
 
-The first live HubSpot connector is read-only. Later approved writes are limited to versioned custom properties, activities, and controlled list membership.
+The first live Salesforce connector is read-only and connects only to a Developer Edition org holding synthetic data. Later approved writes are limited to versioned custom fields, Tasks, and controlled Campaign membership.
 
-The application will not automatically delete, merge, change deal stages, change lifecycle stages, reassign owners, or overwrite a human-entered value with a lower-confidence enriched value.
+An inbound Lead is matched to an existing Account before any follow-up. A matched Lead inherits the Account's customer, opportunity, and suppression state. An unmatched Lead cannot be activated.
+
+The application will not automatically delete, merge, convert Leads, change opportunity stages, change lifecycle stages, reassign owners, or overwrite a human-entered value with a lower-confidence enriched value.
 
 ## Success criteria for the demo
 

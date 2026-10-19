@@ -10,10 +10,10 @@ Browser
             -> Postgres-backed job queue
             -> Railway background worker
             -> Railway scheduled reconciliation jobs
-            -> HubSpot, Clay, Lemlist, and TitanX handoffs
+            -> Salesforce, Clay, Lemlist, and TitanX handoffs
 ```
 
-Vercel is the human interface. Railway is the integration and processing layer. HubSpot remains the operational system of record. PostgreSQL stores the application mirror, findings, proposals, approvals, job state, connector events, and audit evidence.
+Vercel is the human interface. Railway is the integration and processing layer. Salesforce is the operational CRM system of record under decision 0005, and the field-service platform is the source of service and customer truth under decision 0004. PostgreSQL stores the application mirror, findings, proposals, approvals, job state, connector events, and audit evidence.
 
 ## Current repository shape
 
@@ -51,7 +51,7 @@ Anchorpoint/
   packages/
     core/      health rules, scoring, suppression, and state transitions
     db/        schema, migrations, queries, and repositories
-    connectors/ HubSpot, Clay, Lemlist, and TitanX adapters
+    connectors/ Salesforce, Clay, Lemlist, and TitanX adapters
     contracts/ shared validated request and event schemas
   fixtures/    synthetic connector inputs and expected outcomes
   docs/        routed product, contract, research, milestone, and decision records
@@ -74,7 +74,7 @@ The folders beyond `docs/` will be created only when their milestone begins.
 ### API
 
 - Authenticated dashboard endpoints
-- HubSpot and Lemlist webhook receivers
+- Salesforce change events and Lemlist webhook receivers
 - Clay callback receiver
 - Approval commands
 - Connector credential boundaries
@@ -82,12 +82,12 @@ The folders beyond `docs/` will be created only when their milestone begins.
 
 ### Worker
 
-- Paginated HubSpot synchronization
+- Paginated Salesforce synchronization
 - Health-rule evaluation
 - Clay enrichment requests and result processing
 - Account score recalculation
 - Lemlist enrollment
-- HubSpot list and property updates for TitanX handoff
+- Salesforce Campaign membership and field updates for TitanX handoff
 - Retry, dead-letter, and reconciliation processing
 
 ### Database
@@ -103,7 +103,7 @@ The folders beyond `docs/` will be created only when their milestone begins.
 
 ## Connector boundaries
 
-HubSpot is read first. Writes are limited to explicitly approved properties, activities, and list membership. Clay receives bounded enrichment requests and returns structured fields. Lemlist receives approved email-ready contacts and returns activity events. TitanX is initially reached through a HubSpot segment and its supported HubSpot integration rather than an assumed private API.
+Salesforce is read first. Writes are limited to explicitly approved custom fields, Tasks, and Campaign membership. Clay receives bounded enrichment requests and returns structured fields. Lemlist receives approved email-ready contacts and returns activity events. TitanX is reached through a controlled Salesforce Campaign and its supported Salesforce integration rather than an assumed private API.
 
 ## Reliability requirements
 
