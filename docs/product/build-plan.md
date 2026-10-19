@@ -1,6 +1,6 @@
 # Gated Build Plan
 
-The project is active. Each milestone must be reviewed before the next one begins.
+The project is active. Each milestone must be reviewed before the next one begins. The one exception is the early Milestone 4 data work, which runs alongside Milestone 3 in two tracks under `../decisions/0008-parallel-data-tracks.md`.
 
 ## Milestone 0: Operating contract
 
@@ -34,7 +34,7 @@ Exit gate: every seeded problem is detected once, healthy records remain healthy
 
 ## Milestone 2: Application foundation
 
-Status: in progress. The reproducible local foundation passes the exit gate against PostgreSQL and displays the frozen fixture's verified findings through the worker, protected API, authenticated interface, and visible retry-exhaustion state. The Vercel and Railway preview remains pending.
+Status: complete. The reproducible local foundation passes the exit gate against PostgreSQL and displays the frozen fixture's verified findings through the worker, protected API, authenticated interface, and visible retry-exhaustion state. The Vercel and Railway preview is deployed and reproduces the same 22 findings.
 
 Create the monorepo, database schema, API, worker, job queue, and minimal dashboard. Deploy the web application to Vercel and the backend services and PostgreSQL to Railway.
 
@@ -52,11 +52,15 @@ Exit gate: a clean environment can load the fixtures, run the audit, and display
 
 Connect a Salesforce Developer Edition org holding only synthetic data, using read-only permissions. Import bounded Account, Site, Contact, Lead, Opportunity, User, Task, and Campaign data, preserve source timestamps, and reconcile paginated data safely. The object mapping follows `docs/decisions/0005-crm-system-of-record.md`.
 
+The org's synthetic data is the first historical fixture release from decision 0006, loaded as a setup step separate from the read-only connector. Under decision 0008, this milestone is Track A and runs alongside the Georgia market sample.
+
 Exit gate: repeated syncs are idempotent and no Salesforce records are changed.
 
 ## Milestone 4: Clay enrichment loop
 
 Before automating enrichment, create and inspect the historical customer dataset described in `../research/tam-construction-plan.md`, derive user-reviewed ICP hypotheses, and construct a bounded Georgia-first market sample. Then send only eligible incomplete target records to Clay. Validate returned fields, retain provenance, and distinguish unknown values from negative values.
+
+Under decision 0008, the historical dataset and the Georgia sample are built before or alongside Milestone 3. Applying ICP hypotheses to real accounts, enrichment automation, and this exit gate wait for Milestone 3 acceptance.
 
 Deliverables:
 

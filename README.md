@@ -16,8 +16,8 @@ The intended outcome is to earn a serious conversation about working with and le
 
 - Milestone 0 is complete.
 - Milestone 1 was accepted on 2026-10-17.
-- Milestone 2 is in progress.
-- The current application is a local Next.js read-only findings board backed by the frozen `inspection-v1` fixture and the deterministic audit engine.
+- Milestone 2 is complete, with the preview deployed on Vercel and Railway.
+- The current application is a read-only Next.js findings board backed by the frozen `inspection-v1` fixture and the deterministic audit engine.
 - The fixture proves CRM audit behavior. It is not valid evidence for ICP discovery, score calibration, or TAM sizing.
 - Later Anchorpoint history must be benchmarked against real regional service-company evidence before generation. The target is a plausible, unexceptional PE-backed operator—not an idealized company or a collection of convenient demo outcomes.
 

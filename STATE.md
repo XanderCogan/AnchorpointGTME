@@ -32,7 +32,7 @@ Vercel serves the production interface at `https://anchorpoint-gtme.vercel.app`,
 
 ## Immediate work
 
-Milestone 2 has no remaining implementation or preview blocker. All four decisions required before ICP, TAM, or enrichment work were approved on 2026-10-19. The next work is either building the historical fixture generator under decision 0006 or building the first Georgia market sample under decision 0007; the user has not yet chosen which comes first. Each decision's open items are settled when that work reaches them.
+Milestone 2 has no remaining implementation or preview blocker. All four decisions required before ICP, TAM, or enrichment work were approved on 2026-10-19. Decision 0008, approved on 2026-10-19, runs the next work as two parallel tracks. Track A builds the historical fixture generator under decision 0006, loads the release into a Salesforce Developer Edition org the user creates, then builds Milestone 3. Track B builds the first Georgia market sample under decision 0007. Each decision's open items are settled when that work reaches them.
 
 ## Decisions resolved before ICP, TAM, or enrichment work
 

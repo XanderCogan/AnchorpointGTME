@@ -50,6 +50,7 @@ Milestone reports are evidence records. Update `STATE.md`, not an old report, wh
 - Approved move to Salesforce as the CRM system of record after Milestone 2: [`decisions/0005-crm-system-of-record.md`](decisions/0005-crm-system-of-record.md)
 - Approved ordinary-company operating profile and historical dataset parameters: [`decisions/0006-ordinary-company-profile.md`](decisions/0006-ordinary-company-profile.md)
 - Approved first Georgia segment sample, sources, enrichment budget, and personal data boundary: [`decisions/0007-first-georgia-sample-and-enrichment.md`](decisions/0007-first-georgia-sample-and-enrichment.md)
+- Approved parallel tracks for the historical fixture with Milestone 3 and the Georgia market sample: [`decisions/0008-parallel-data-tracks.md`](decisions/0008-parallel-data-tracks.md)
 
 Add a decision record when the user resolves a material ambiguity that changes product behavior, tests, contracts, or milestone scope. Do not create decision records for routine implementation details.
 
