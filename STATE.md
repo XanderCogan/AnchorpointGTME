@@ -36,8 +36,8 @@ Milestone 2 has no remaining implementation or preview blocker. The next product
 
 ## Decisions needed before ICP, TAM, or enrichment work
 
-- Confirm Anchorpoint's service catalog, branch footprint, licensing constraints, and travel-time rules.
-- Select the fictional field-service, billing, or ERP source that will be reconciled with HubSpot.
+- Resolved: service catalog, branch footprint, licensing constraints, and travel-time rules are approved in `docs/decisions/0003-service-catalog-and-footprint.md`.
+- Select the fictional field-service, billing, or ERP source that will be reconciled with HubSpot. Proposed in `docs/decisions/0004-operating-source-system.md`; awaiting user approval.
 - Benchmark and approve Anchorpoint's ordinary-company operating profile, including its platform age, acquired-company history, scale, and the distributions of the synthetic 24-to-36-month commercial history.
 - Select the first Georgia segment sample and acceptable enrichment sources and costs.
 

@@ -192,9 +192,7 @@ The first application fixture remains approximately 200 companies and 600 contac
 
 ## Open decisions
 
-- Exact Anchorpoint service catalog
-- Branch locations and maximum travel-time rules
-- Licensing and technician-capability constraints by service line
+- Service catalog, branch locations, travel-time rules, and licensing and capability constraints are resolved in `docs/decisions/0003-service-catalog-and-footprint.md`
 - Fictional field-service, billing, or ERP source system
 - Benchmarked historical dataset size and outcome distributions
 - Anchorpoint platform age, acquired-company history, and ordinary-company operating profile
