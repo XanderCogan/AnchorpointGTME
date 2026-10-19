@@ -45,6 +45,24 @@ Pull Georgia records from the three CMS datasets into a gitignored raw-data fold
 
 Resolve each facility to an operator using `chain_id` first, then organizational owners with operational or managerial control in the ownership file, then legal business name. Facilities whose operator is unclear go to a manual review list instead of being merged. Output: operator accounts with parent-site links, each link citing its source field.
 
+### Stages 1 and 2: first run, 2026-10-19, awaiting review
+
+`scripts/georgia-sample/pull-cms.ts` pulls the four CMS datasets into the gitignored `data/georgia-sample/raw/` folder and writes `data/georgia-sample/source-manifest.json`. A second pull on the same day produced identical checksums. `scripts/georgia-sample/resolve-operators.ts` writes `operators.json`, `facility-operator-links.json`, and `operator-review.json` beside the manifest. These files hold business facts only and are committable.
+
+Results from the 2026-09-30 CMS release:
+
+- 356 facilities resolve to 128 operator accounts, 29 of them multi-site in Georgia.
+- 28 operators come from CMS chains (248 facilities), 5 from a corroborated organization with operational or managerial control, and 95 from legal business name.
+- 95 operators are resolved and 33 are provisional, because at least one of their facilities is on the review list.
+- The review list holds 41 cases: 36 facilities and 5 chains.
+
+Rules found while building, beyond the plan:
+
+- The ownership file's operational or managerial control role also covers contractors such as therapy, dining, dialysis, and lending firms. An organization becomes the operator only when it is the single corroborated candidate. Corroborated means it also holds an ownership interest in the facility, or it shares a distinctive name word with the facility, not counting the facility's city or county. Uncorroborated or competing candidates go to review.
+- 18 facilities have neither a legal business name, which CMS shows as the placeholder "Legal Business Name Not Available", nor any ownership data. Each stands alone under its CCN and goes to review rather than being grouped by the placeholder.
+- Five CMS chain names are individuals' names. Their facilities stay grouped by `chain_id`, but the names are withheld from committed files, and each chain goes to review for a publishable organization name. More generally, any committed name with no organizational word, or with trust or family wording, is withheld. The resolver also fails the run if any individual owner's full name appears in its output.
+- Operator identifiers are stable across reruns of the same release: `ga-op-chain-<chain_id>`, `ga-op-org-<name>`, `ga-op-lbn-<legal name>`, or `ga-op-ccn-<ccn>`.
+
 ### Stage 3: serviceability (free, one open choice)
 
 Apply decision 0003: nearest capable branch, estimated drive time, and serviceability state with its reason. The drive-time source is still open in decision 0003. The recommendation is a free routing API's distance matrix, since about 356 facilities against four branches is small; this needs a pricing and terms check before use. If none fits, straight-line distance times a road factor can stand in, labeled as an estimate and never shown as a measured drive time.

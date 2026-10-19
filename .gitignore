@@ -8,3 +8,7 @@ node_modules/
 
 
 .claude/settings.local.json
+
+# Track B market sample: raw public pulls and anything naming individuals
+data/georgia-sample/raw/
+data/georgia-sample/private/
