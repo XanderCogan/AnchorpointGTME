@@ -1,6 +1,6 @@
 # Georgia Senior-Living Sample: Pipeline Plan and Source Checks
 
-Status: proposed working plan, not yet approved. No money has been spent. This is the build plan for the first Georgia market sample under `docs/decisions/0007-first-georgia-sample-and-enrichment.md`, which is Track B under decision 0008. The budget is $0, free tiers only, under the 2026-10-19 amendment to decision 0007.
+Status: proposed working plan, not yet approved. No money has been spent. This is the build plan for the first Georgia market sample under `docs/decisions/0007-first-georgia-sample-and-enrichment.md`, which is Track B under decision 0008. The budget is $20 for Clay and $20 for one other service, with free tiers used first, under the 2026-10-20 amendment to decision 0007.
 
 Last updated: 2026-10-19
 
@@ -35,7 +35,7 @@ The GitHub repository is public. The personal data boundary in decision 0007 the
 
 ## Pipeline
 
-Each stage ends with a reviewable artifact and a count. Every stage runs on free sources or free tiers. When a free tier runs out, that stage stops and reports its coverage instead of buying more.
+Each stage ends with a reviewable artifact and a count. Every stage runs on free sources or free tiers first. When a free tier runs out, paid spend is allowed only within the caps under Budget. When those run out too, that stage stops and reports its coverage.
 
 ### Stage 1: facility universe (free)
 
@@ -60,9 +60,9 @@ Apply decision 0003: nearest capable branch, estimated drive time, and serviceab
 
 Tier operators 1 to 4 using the priority bands and soft-scoring rules in `docs/contracts/scoring-contract.md` and decision 0001. No new weights are invented here. Any weight the contract leaves open is proposed separately for approval. The output is a tiered operator list with visible reasons, which is the artifact an executive would sign off.
 
-### Stage 6: people (free tier only)
+### Stage 6: people (free tier, then up to $20)
 
-Only for serviceable, tiered operators, highest tier first. Run on Clay's free plan only: prove the table design for roles at the operator level and the site level, and measure the share of operators where named people can be found at all. The pass stops when free credits run out and reports how many operators it covered. There is no upgrade to a paid plan. Emails are checked for verifiability on a capped subset, and only whether a verified channel exists is recorded. Phone enrichment stays excluded.
+Only for serviceable, tiered operators, highest tier first. Start on Clay's free plan: prove the table design for roles at the operator level and the site level, and measure the share of operators where named people can be found at all. When free credits run out, up to $20 of paid Clay credit continues the pass, confirmed with the user before purchase. The pass stops when that is spent and reports how many operators it covered. Emails are checked for verifiability on a capped subset, and only whether a verified channel exists is recorded. Phone enrichment stays excluded.
 
 ### Stage 7: load
 
@@ -70,9 +70,11 @@ Under the 2026-10-19 amendments to decisions 0005 and 0008, real Georgia operato
 
 ## Budget
 
-The budget for the whole sample is $0.
+The budget for the whole sample is $40, set by the user on 2026-10-20.
 
-- Serper and Clay run on free allowances only. Free-tier limits must be confirmed on each vendor's pricing page before relying on them.
+- Clay: up to $20, after the free plan runs out.
+- One other service: up to $20, assigned when the build shows where it helps most, such as more Serper queries or email verification.
+- Free allowances come first for every service. Free-tier limits must be confirmed on each vendor's pricing page before relying on them, and each purchase is confirmed with the user before it is made.
 
 ## Decisions this plan needs from the user
 
