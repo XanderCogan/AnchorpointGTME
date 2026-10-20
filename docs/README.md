@@ -30,6 +30,7 @@ Treat frozen contract versions as authoritative for implemented behavior. If a p
 
 - Portfolio purpose, Apero audience, why the Anchorpoint scenario was selected, and what the work sample must prove: [`research/apero-portfolio-context.md`](research/apero-portfolio-context.md)
 - Required historical customer dataset, ICP-analysis method, Georgia-first source plan, parent-site resolution, and TAM acceptance criteria: [`research/tam-construction-plan.md`](research/tam-construction-plan.md)
+- Georgia nursing-home fire-safety citations from CMS: fixable-tag mapping, repeat offenders, correction-date pattern, and publication lag: [`research/cms-fire-citations-georgia.md`](research/cms-fire-citations-georgia.md)
 - Question-by-question fictional client assumptions, approval status, product consequences, and open follow-ups: [`research/anchorpoint-discovery-log.xlsx`](research/anchorpoint-discovery-log.xlsx)
 
 Use the discovery log only when a question ID, assumption owner, answer basis, or open follow-up is needed. Use the TAM plan for the method. Do not use the CRM audit fixture as customer-history evidence.

@@ -1,6 +1,6 @@
 # Project State
 
-Last updated: 2026-10-19
+Last updated: 2026-10-20
 
 This file contains only live execution context. Durable product knowledge belongs under `docs/`; use `docs/README.md` to locate it.
 
@@ -32,7 +32,7 @@ Vercel serves the production interface at `https://anchorpoint-gtme.vercel.app`,
 
 ## Immediate work
 
-Milestone 2 has no remaining implementation or preview blocker. All four decisions required before ICP, TAM, or enrichment work were approved on 2026-10-19. Decision 0008, approved on 2026-10-19, runs the next work as two parallel tracks. Track A builds the historical fixture generator under decision 0006, loads the release into a Salesforce Developer Edition org the user creates, then builds Milestone 3. Track B builds the first Georgia market sample under decision 0007. Each decision's open items are settled when that work reaches them.
+Milestone 2 has no remaining implementation or preview blocker. All four decisions required before ICP, TAM, or enrichment work were approved on 2026-10-19. Decision 0008 originally ran the next work as two parallel tracks. On 2026-10-20 the user cancelled Track A, the synthetic historical fixture, because a real-data TAM is the portfolio's centerpiece; its branch was deleted unmerged. Track B, the first Georgia market sample under decision 0007, is the active work. Each decision's open items are settled when that work reaches them.
 
 ## Decisions resolved before ICP, TAM, or enrichment work
 

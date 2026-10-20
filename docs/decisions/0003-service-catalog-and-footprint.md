@@ -1,6 +1,6 @@
 # Decision 0003: Service Catalog, Branch Footprint, Licensing, and Travel Time
 
-Status: approved on 2026-10-19. Items listed under "Open within this decision" remain open.
+Status: approved on 2026-10-19. Items listed under "Open within this decision" remain open. Amended on 2026-10-20 to add subcontracted large sprinkler work.
 
 Date: 2026-10-19  
 Decision owner: User  
@@ -31,7 +31,9 @@ Project and one-time lines:
 - Small tenant-improvement sprinkler and alarm modifications
 - Device and panel replacement or retrofit
 
-Explicitly excluded: new-construction sprinkler design-build, special-hazard clean-agent systems, backflow testing, and security or access control. Excluded lines stay visible in the market model as evidence about an account but never qualify it.
+Subcontracted: sprinkler work too large for the catalog, such as adding coverage to an unsprinklered wing, is subcontracted to a licensed installer while Anchorpoint keeps the customer relationship and manages the job. This keeps cited customers from going to a competitor. Added 2026-10-20.
+
+Explicitly excluded from self-performed work: new-construction sprinkler design-build, special-hazard clean-agent systems, backflow testing, and security or access control. Excluded lines stay visible in the market model as evidence about an account but never qualify it.
 
 ### Licensing constraints
 
