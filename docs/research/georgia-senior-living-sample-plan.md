@@ -153,7 +153,7 @@ On 2026-10-20 the user approved a second batch of 26 facility decisions and 2 ch
 - After the second batch, 356 facilities resolve to 105 operators, 103 resolved and 2 provisional, up from 95 resolved and 25 provisional. Five review cases remain. Serviceability, signals, and Serper lookups were rerun on the new operator list. The lookups spent 19 free Serper credits, and 5 operators now have posting candidates.
 - Still open: two facilities with no CMS legal name or ownership data and no public operator found (Healthcare at College Park and Sandtown Health and Rehabilitation), and three chains (205, 685, and 710) for which no publishable organization name was found.
 - Hypotheses not acted on: the chain 205 home in Rossville uses Parkside branding and may belong to The Parkside Group. Peach Health Group also has operational or managerial control of one Journey (chain 766) home. Harborview Jesup and Harborview Thomaston resolve as standalone legal-name operators but may belong to Harborview Health Systems (chain 246), like Harborview Satilla.
-- Tiering has not been rerun on the new operator list, because the tiering code is changing on another branch. The eligible-operator counts in the Stage 5 section below still describe the 120-operator list. Of its 20 eligible provisional operators, 18 are now resolved or merged, and the two above stay provisional.
+- Tiering was rerun on the 105-operator list after the value-model branch merged; see "Stage 5: rerun after the review decisions" below. Of the 20 eligible provisional operators on the 120-operator list, 18 are now resolved or merged, and the two above stay provisional.
 
 `npm run sample:georgia` reruns resolution, serviceability, signals, Serper lookups, and tiering from the raw data, with OSRM and Serper served from cache. `npm run sample:georgia:pull` refreshes the CMS pull separately.
 
@@ -174,7 +174,7 @@ Known effects to weigh before approval:
 - Proposal 1 scored citations as raw shares, so a single-site operator with one recent citation earned the full 15 citation points. Proposal 2 fixes that. Single-site operators still make up 34 of 41 in band C, because there are 58 of them and they cluster between 20 and 27 points. None reaches band B.
 - The score has no account-value input. It cannot yet say whether a 63-facility chain is worth more than its harder sale, or whether a small operator close to a branch is worth taking. The value model approved in `docs/decisions/0009-account-value-model.md` adds it beside the score.
 - Larger chains have more chances to show an ownership change at some facility.
-- 20 eligible operators are provisional, pending manual review.
+- 20 eligible operators were provisional, pending manual review. After the second batch of review decisions, 2 are.
 - A Serper result during domain lookup suggested a Chapter 7 bankruptcy case for C. Ross Management. It is unverified and not scored, because the contract allows only inputs that are captured with a source.
 
 ### Stage 5: account value, decision 0009, run on 2026-10-20
@@ -196,6 +196,19 @@ Top five operators by five-year value:
 - Empire Care Centers, band A, 21 sites: about $273,000 a year, $1.09 million over five years, landing value about $74,000.
 - Journey Healthcare, band A, 17 sites: about $154,000 a year, $616,000 over five years, landing value about $49,000.
 - Wellington Health Care Services, band B, 10 sites: about $116,000 a year, $465,000 over five years, landing value about $65,000.
+
+### Stage 5: rerun after the review decisions, 2026-10-20
+
+The full pipeline was rerun on the 105-operator list from cached CMS, OSRM, and Serper data, with no new credits spent. The figures above describe the earlier 120-operator list.
+
+- 71 operators are eligible and 34 are outside the footprint, down from 82 and 38, because review decisions merged operators.
+- Bands: 5 A, 12 B, 36 C, and 18 Watch, with scores from 15 to 49 and a median of 24. Band A is unchanged: PruittHealth, Ethica Health, Empire Care Centers, Journey Healthcare, and Harborview Health Systems.
+- Value bands: 4 Large, 13 Mid, and 54 Small. Band A holds the four Large operators and one Mid, band B holds 10 Mid and 2 Small, band C holds 2 Mid and 34 Small, and Watch is all Small.
+- The eligible footprint still comes to about .33 million a year. Empire Care Centers now has 22 footprint sites (about 91,000 a year, .16 million over five years) after the chain 771 merge, and Journey Healthcare has 18 (about 67,000 a year, 68,000 over five years).
+- 45 eligible operators are single-site, with a median five-year value of about 9,000. 28 of them are in band C, and none reaches band B.
+- Near-the-jaws rule: it applies to 41 operators, and 19 of them stay rep-eligible.
+- 22 eligible operators carry a CMS chain id.
+- 2 eligible operators are provisional: Sandtown Health and Rehabilitation (band C) and Healthcare at College Park (Watch).
 
 ### Stage 6: people (free tier, then up to $20)
 

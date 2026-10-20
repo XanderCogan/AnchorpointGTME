@@ -801,6 +801,16 @@
             "assumptionsVersion": "georgia-value-1"
           },
           {
+            "ccn": "115684",
+            "certifiedBeds": 78,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "not_serviceable",
+            "distanceFactor": 0,
+            "anchorDriveMinutes": null,
+            "annualUsd": 0,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
             "ccn": "115700",
             "certifiedBeds": 100,
             "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
@@ -828,6 +838,16 @@
             "distanceFactor": 0.75,
             "anchorDriveMinutes": 101,
             "annualUsd": 6975,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115721",
+            "certifiedBeds": 200,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "not_serviceable",
+            "distanceFactor": 0,
+            "anchorDriveMinutes": null,
+            "annualUsd": 0,
             "assumptionsVersion": "georgia-value-1"
           },
           {
@@ -1489,9 +1509,9 @@
       "gate": null,
       "identityStatus": "resolved",
       "band": "A",
-      "score": 45.1,
-      "footprintFacilities": 21,
-      "explanation": "Band A because Anchorpoint reaches all 21 of its footprint sites within 90 minutes, it runs 21 nursing homes within 120 minutes of a capable branch, 71% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
+      "score": 45.3,
+      "footprintFacilities": 22,
+      "explanation": "Band A because Anchorpoint reaches all 22 of its footprint sites within 90 minutes, it runs 22 nursing homes within 120 minutes of a capable branch, 72% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
       "components": {
         "ownershipChange": {
           "points": 5.2,
@@ -1531,7 +1551,7 @@
         "footprint": {
           "points": 14.9,
           "max": 15,
-          "input": "21 Georgia facilities inside the footprint",
+          "input": "22 Georgia facilities inside the footprint",
           "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
           "proposal": false
         },
@@ -1543,16 +1563,16 @@
           "proposal": false
         },
         "citationBreadth": {
-          "points": 7.1,
+          "points": 7.2,
           "max": 10,
-          "input": "15 of 21 footprint facilities cited for a service line since 2025; 71% after pulling toward the 68% statewide rate",
+          "input": "16 of 22 footprint facilities cited for a service line since 2025; 72% after pulling toward the 68% statewide rate",
           "source": "ifjz-ge4w via signals.json",
           "proposal": false
         },
         "citationRepetition": {
-          "points": 1.7,
+          "points": 1.8,
           "max": 5,
-          "input": "7 of 21 footprint facilities with sprinkler or alarm cited on more than one survey; 34% after pulling toward the 41% statewide rate",
+          "input": "8 of 22 footprint facilities with sprinkler or alarm cited on more than one survey; 37% after pulling toward the 41% statewide rate",
           "source": "ifjz-ge4w via signals.json",
           "proposal": false
         },
@@ -1566,7 +1586,7 @@
         "geography": {
           "points": 2,
           "max": 2,
-          "input": "21 facilities within 90 minutes",
+          "input": "22 facilities within 90 minutes",
           "source": "serviceability.json (OSRM, 2026-10-20)",
           "proposal": false
         },
@@ -1588,11 +1608,11 @@
       "value": {
         "assumptionsVersion": "georgia-value-1",
         "band": "Large",
-        "annualUsd": 273280,
-        "fiveYearUsd": 1093120,
+        "annualUsd": 290544,
+        "fiveYearUsd": 1162176,
         "landingUsd": 74172,
         "landingSite": "115422",
-        "input": "21 footprint sites with 3430 certified beds",
+        "input": "22 footprint sites with 3672 certified beds",
         "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
         "sources": [
           "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
@@ -1759,6 +1779,16 @@
             "assumptionsVersion": "georgia-value-1"
           },
           {
+            "ccn": "115535",
+            "certifiedBeds": 242,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 43,
+            "annualUsd": 17264,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
             "ccn": "115536",
             "certifiedBeds": 163,
             "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
@@ -1838,9 +1868,9 @@
       "gate": null,
       "identityStatus": "resolved",
       "band": "A",
-      "score": 47.4,
-      "footprintFacilities": 17,
-      "explanation": "Band A because Anchorpoint reaches 14 of its 17 footprint sites within 90 minutes, it runs 17 nursing homes within 120 minutes of a capable branch, 81% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
+      "score": 47.5,
+      "footprintFacilities": 18,
+      "explanation": "Band A because Anchorpoint reaches 15 of its 18 footprint sites within 90 minutes, it runs 18 nursing homes within 120 minutes of a capable branch, 82% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
       "components": {
         "ownershipChange": {
           "points": 6.2,
@@ -1878,9 +1908,9 @@
           "proposal": false
         },
         "footprint": {
-          "points": 14.7,
+          "points": 14.8,
           "max": 15,
-          "input": "17 Georgia facilities inside the footprint",
+          "input": "18 Georgia facilities inside the footprint",
           "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
           "proposal": false
         },
@@ -1892,16 +1922,16 @@
           "proposal": false
         },
         "citationBreadth": {
-          "points": 8.1,
+          "points": 8.2,
           "max": 10,
-          "input": "14 of 17 footprint facilities cited for a service line since 2025; 81% after pulling toward the 68% statewide rate",
+          "input": "15 of 18 footprint facilities cited for a service line since 2025; 82% after pulling toward the 68% statewide rate",
           "source": "ifjz-ge4w via signals.json",
           "proposal": false
         },
         "citationRepetition": {
-          "points": 3.6,
+          "points": 3.5,
           "max": 5,
-          "input": "13 of 17 footprint facilities with sprinkler or alarm cited on more than one survey; 73% after pulling toward the 41% statewide rate",
+          "input": "13 of 18 footprint facilities with sprinkler or alarm cited on more than one survey; 69% after pulling toward the 41% statewide rate",
           "source": "ifjz-ge4w via signals.json",
           "proposal": false
         },
@@ -1915,7 +1945,7 @@
         "geography": {
           "points": 2,
           "max": 2,
-          "input": "14 facilities within 90 minutes",
+          "input": "15 facilities within 90 minutes",
           "source": "serviceability.json (OSRM, 2026-10-20)",
           "proposal": false
         },
@@ -1937,11 +1967,11 @@
       "value": {
         "assumptionsVersion": "georgia-value-1",
         "band": "Large",
-        "annualUsd": 154049,
-        "fiveYearUsd": 616196,
-        "landingUsd": 49180,
-        "landingSite": "115565",
-        "input": "17 footprint sites with 1772 certified beds",
+        "annualUsd": 166916,
+        "fiveYearUsd": 667664,
+        "landingUsd": 51468,
+        "landingSite": "115368",
+        "input": "18 footprint sites with 1931 certified beds",
         "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
         "sources": [
           "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
@@ -2035,6 +2065,16 @@
             "distanceFactor": 0.75,
             "anchorDriveMinutes": 109,
             "annualUsd": 8739,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115368",
+            "certifiedBeds": 159,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 89,
+            "annualUsd": 12867,
             "assumptionsVersion": "georgia-value-1"
           },
           {
@@ -2407,6 +2447,16 @@
             "assumptionsVersion": "georgia-value-1"
           },
           {
+            "ccn": "115265",
+            "certifiedBeds": 174,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "not_serviceable",
+            "distanceFactor": 0,
+            "anchorDriveMinutes": null,
+            "annualUsd": 0,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
             "ccn": "115270",
             "certifiedBeds": 240,
             "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
@@ -2740,14 +2790,14 @@
     },
     {
       "operatorId": "ga-op-chain-769",
-      "name": "CMS chain 769 [withheld: may name an individual]",
+      "name": "The Parkside Group",
       "eligible": true,
       "gate": null,
       "identityStatus": "resolved",
       "band": "B",
-      "score": 35.8,
-      "footprintFacilities": 5,
-      "explanation": "Band B because Anchorpoint reaches 4 of its 5 footprint sites within 90 minutes, it runs 5 nursing homes within 120 minutes of a capable branch, 77% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+      "score": 36.6,
+      "footprintFacilities": 6,
+      "explanation": "Band B because Anchorpoint reaches 5 of its 6 footprint sites within 90 minutes, it runs 6 nursing homes within 120 minutes of a capable branch, 80% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
       "components": {
         "ownershipChange": {
           "points": 0,
@@ -2785,9 +2835,9 @@
           "proposal": false
         },
         "footprint": {
-          "points": 9.5,
+          "points": 10.7,
           "max": 15,
-          "input": "5 Georgia facilities inside the footprint",
+          "input": "6 Georgia facilities inside the footprint",
           "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
           "proposal": false
         },
@@ -2799,30 +2849,30 @@
           "proposal": false
         },
         "citationBreadth": {
-          "points": 7.7,
+          "points": 8,
           "max": 10,
-          "input": "4 of 5 footprint facilities cited for a service line since 2025; 77% after pulling toward the 68% statewide rate",
+          "input": "5 of 6 footprint facilities cited for a service line since 2025; 80% after pulling toward the 68% statewide rate",
           "source": "ifjz-ge4w via signals.json",
           "proposal": false
         },
         "citationRepetition": {
-          "points": 2.7,
+          "points": 3,
           "max": 5,
-          "input": "3 of 5 footprint facilities with sprinkler or alarm cited on more than one survey; 54% after pulling toward the 41% statewide rate",
+          "input": "4 of 6 footprint facilities with sprinkler or alarm cited on more than one survey; 60% after pulling toward the 41% statewide rate",
           "source": "ifjz-ge4w via signals.json",
           "proposal": false
         },
         "domain": {
-          "points": 2,
+          "points": 1,
           "max": 2,
-          "input": "parkplacenursingandrehab.com (name_match)",
+          "input": "parksidehc.com (word_match)",
           "source": "web-signals.json domains (Serper, 2026-10-20)",
           "proposal": false
         },
         "geography": {
           "points": 2,
           "max": 2,
-          "input": "4 facilities within 90 minutes",
+          "input": "5 facilities within 90 minutes",
           "source": "serviceability.json (OSRM, 2026-10-20)",
           "proposal": false
         },
@@ -2844,11 +2894,11 @@
       "value": {
         "assumptionsVersion": "georgia-value-1",
         "band": "Mid",
-        "annualUsd": 51284,
-        "fiveYearUsd": 205136,
-        "landingUsd": 55040,
-        "landingSite": "115005",
-        "input": "5 footprint sites with 620 certified beds",
+        "annualUsd": 68946,
+        "fiveYearUsd": 275784,
+        "landingUsd": 70648,
+        "landingSite": "115682",
+        "input": "6 footprint sites with 870 certified beds",
         "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
         "sources": [
           "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
@@ -2915,6 +2965,16 @@
             "assumptionsVersion": "georgia-value-1"
           },
           {
+            "ccn": "115682",
+            "certifiedBeds": 250,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 22,
+            "annualUsd": 17662,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
             "ccn": "115683",
             "certifiedBeds": 110,
             "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
@@ -2922,6 +2982,215 @@
             "distanceFactor": 0.75,
             "anchorDriveMinutes": 93,
             "annualUsd": 7456,
+            "assumptionsVersion": "georgia-value-1"
+          }
+        ]
+      }
+    },
+    {
+      "operatorId": "ga-op-chain-728",
+      "name": "RELIABLE HEALTH CARE MANAGEMENT",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "B",
+      "score": 36.1,
+      "footprintFacilities": 6,
+      "explanation": "Band B because Anchorpoint reaches 4 of its 6 footprint sites within 90 minutes, it runs 6 nursing homes within 120 minutes of a capable branch, 55% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
+      "components": {
+        "ownershipChange": {
+          "points": 5.8,
+          "max": 10,
+          "input": "latest ownership or management change 10.1 months before 2026-10-19",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": false
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "citationTrigger": {
+          "points": 4.6,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2026-04-30",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": false
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the approved citation trigger",
+          "source": "none",
+          "proposal": false
+        },
+        "footprint": {
+          "points": 10.7,
+          "max": 15,
+          "input": "6 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": false
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": false
+        },
+        "citationBreadth": {
+          "points": 5.5,
+          "max": 10,
+          "input": "3 of 6 footprint facilities cited for a service line since 2025; 55% after pulling toward the 68% statewide rate",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": false
+        },
+        "citationRepetition": {
+          "points": 0.5,
+          "max": 5,
+          "input": "0 of 6 footprint facilities with sprinkler or alarm cited on more than one survey; 10% after pulling toward the 41% statewide rate",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": false
+        },
+        "domain": {
+          "points": 0,
+          "max": 2,
+          "input": "no confirmed domain",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "4 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      },
+      "value": {
+        "assumptionsVersion": "georgia-value-1",
+        "band": "Mid",
+        "annualUsd": 48643,
+        "fiveYearUsd": 194572,
+        "landingUsd": 41272,
+        "landingSite": "115381",
+        "input": "6 footprint sites with 565 certified beds",
+        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+        "sources": [
+          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+          "serviceability.json (OSRM, 2026-10-20)",
+          "docs/decisions/0009-account-value-model.md"
+        ],
+        "nearTheJaws": {
+          "applies": false,
+          "repEligible": true,
+          "input": "rule applies only to Small single-site operators in band C or Watch",
+          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
+          "assumptionsVersion": "georgia-value-1"
+        },
+        "effort": {
+          "scored": false,
+          "centralProcurementChain": {
+            "value": true,
+            "source": "4pq5-n9py.chain_id via operators.json"
+          },
+          "nationalIncumbentVendor": {
+            "value": "unknown",
+            "source": "not yet collected"
+          }
+        },
+        "sites": [
+          {
+            "ccn": "115287",
+            "certifiedBeds": 100,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "conditional",
+            "distanceFactor": 0.75,
+            "anchorDriveMinutes": 91,
+            "annualUsd": 6975,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115319",
+            "certifiedBeds": 100,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "conditional",
+            "distanceFactor": 0.75,
+            "anchorDriveMinutes": 97,
+            "annualUsd": 6975,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115381",
+            "certifiedBeds": 116,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 81,
+            "annualUsd": 10318,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115558",
+            "certifiedBeds": 71,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "not_serviceable",
+            "distanceFactor": 0,
+            "anchorDriveMinutes": null,
+            "annualUsd": 0,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115559",
+            "certifiedBeds": 89,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 83,
+            "annualUsd": 8571,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115560",
+            "certifiedBeds": 60,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 72,
+            "annualUsd": 6504,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115717",
+            "certifiedBeds": 100,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 35,
+            "annualUsd": 9300,
             "assumptionsVersion": "georgia-value-1"
           }
         ]
@@ -3734,205 +4003,6 @@
       }
     },
     {
-      "operatorId": "ga-op-chain-728",
-      "name": "RELIABLE HEALTH CARE MANAGEMENT",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "resolved",
-      "band": "B",
-      "score": 35.7,
-      "footprintFacilities": 5,
-      "explanation": "Band B because Anchorpoint reaches 3 of its 5 footprint sites within 90 minutes, it runs 5 nursing homes within 120 minutes of a capable branch, 62% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
-      "components": {
-        "ownershipChange": {
-          "points": 5.8,
-          "max": 10,
-          "input": "latest ownership or management change 10.1 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 4.6,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2026-04-30",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 9.5,
-          "max": 15,
-          "input": "5 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 6.2,
-          "max": 10,
-          "input": "3 of 5 footprint facilities cited for a service line since 2025; 62% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 0.6,
-          "max": 5,
-          "input": "0 of 5 footprint facilities with sprinkler or alarm cited on more than one survey; 12% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "3 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 2,
-          "max": 2,
-          "input": "facility list resolved from CMS",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Mid",
-        "annualUsd": 38325,
-        "fiveYearUsd": 153300,
-        "landingUsd": 37200,
-        "landingSite": "115717",
-        "input": "5 footprint sites with 449 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": false,
-          "repEligible": true,
-          "input": "rule applies only to Small single-site operators in band C or Watch",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": true,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115287",
-            "certifiedBeds": 100,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "conditional",
-            "distanceFactor": 0.75,
-            "anchorDriveMinutes": 91,
-            "annualUsd": 6975,
-            "assumptionsVersion": "georgia-value-1"
-          },
-          {
-            "ccn": "115319",
-            "certifiedBeds": 100,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "conditional",
-            "distanceFactor": 0.75,
-            "anchorDriveMinutes": 97,
-            "annualUsd": 6975,
-            "assumptionsVersion": "georgia-value-1"
-          },
-          {
-            "ccn": "115558",
-            "certifiedBeds": 71,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "not_serviceable",
-            "distanceFactor": 0,
-            "anchorDriveMinutes": null,
-            "annualUsd": 0,
-            "assumptionsVersion": "georgia-value-1"
-          },
-          {
-            "ccn": "115559",
-            "certifiedBeds": 89,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 83,
-            "annualUsd": 8571,
-            "assumptionsVersion": "georgia-value-1"
-          },
-          {
-            "ccn": "115560",
-            "certifiedBeds": 60,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 72,
-            "annualUsd": 6504,
-            "assumptionsVersion": "georgia-value-1"
-          },
-          {
-            "ccn": "115717",
-            "certifiedBeds": 100,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 35,
-            "annualUsd": 9300,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
       "operatorId": "ga-op-chain-686",
       "name": "ELEVATION HEALTHCARE",
       "eligible": true,
@@ -4311,6 +4381,185 @@
       }
     },
     {
+      "operatorId": "ga-op-org-peach-health-group-llc",
+      "name": "Peach Health Group LLC",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "B",
+      "score": 31.8,
+      "footprintFacilities": 3,
+      "explanation": "Band B because Anchorpoint reaches 2 of its 3 footprint sites within 90 minutes, it runs 3 nursing homes within 120 minutes of a capable branch, 87% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+      "components": {
+        "ownershipChange": {
+          "points": 0,
+          "max": 10,
+          "input": "latest ownership or management change 27.6 months before 2026-10-19",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": false
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "citationTrigger": {
+          "points": 4.4,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2026-04-09",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": false
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the approved citation trigger",
+          "source": "none",
+          "proposal": false
+        },
+        "footprint": {
+          "points": 5.9,
+          "max": 15,
+          "input": "3 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": false
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": false
+        },
+        "citationBreadth": {
+          "points": 8.7,
+          "max": 10,
+          "input": "3 of 3 footprint facilities cited for a service line since 2025; 87% after pulling toward the 68% statewide rate",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": false
+        },
+        "citationRepetition": {
+          "points": 2.8,
+          "max": 5,
+          "input": "2 of 3 footprint facilities with sprinkler or alarm cited on more than one survey; 56% after pulling toward the 41% statewide rate",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": false
+        },
+        "domain": {
+          "points": 1,
+          "max": 2,
+          "input": "peachstatenursingagency.com (word_match)",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "2 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      },
+      "value": {
+        "assumptionsVersion": "georgia-value-1",
+        "band": "Mid",
+        "annualUsd": 28657,
+        "fiveYearUsd": 114628,
+        "landingUsd": 44940,
+        "landingSite": "115727",
+        "input": "3 footprint sites with 358 certified beds",
+        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+        "sources": [
+          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+          "serviceability.json (OSRM, 2026-10-20)",
+          "docs/decisions/0009-account-value-model.md"
+        ],
+        "nearTheJaws": {
+          "applies": false,
+          "repEligible": true,
+          "input": "rule applies only to Small single-site operators in band C or Watch",
+          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
+          "assumptionsVersion": "georgia-value-1"
+        },
+        "effort": {
+          "scored": false,
+          "centralProcurementChain": {
+            "value": false,
+            "source": "4pq5-n9py.chain_id via operators.json"
+          },
+          "nationalIncumbentVendor": {
+            "value": "unknown",
+            "source": "not yet collected"
+          }
+        },
+        "sites": [
+          {
+            "ccn": "115365",
+            "certifiedBeds": 150,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "not_serviceable",
+            "distanceFactor": 0,
+            "anchorDriveMinutes": null,
+            "annualUsd": 0,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115406",
+            "certifiedBeds": 94,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 84,
+            "annualUsd": 8906,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115494",
+            "certifiedBeds": 133,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "conditional",
+            "distanceFactor": 0.75,
+            "anchorDriveMinutes": 99,
+            "annualUsd": 8516,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115727",
+            "certifiedBeds": 131,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 37,
+            "annualUsd": 11235,
+            "assumptionsVersion": "georgia-value-1"
+          }
+        ]
+      }
+    },
+    {
       "operatorId": "ga-op-chain-311",
       "name": "LIFE CARE CENTERS OF AMERICA",
       "eligible": true,
@@ -4633,6 +4882,175 @@
             "distanceFactor": 1,
             "anchorDriveMinutes": 74,
             "annualUsd": 11946,
+            "assumptionsVersion": "georgia-value-1"
+          }
+        ]
+      }
+    },
+    {
+      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
+      "name": "A.G. Rhodes Home, Inc.",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "C",
+      "score": 28.8,
+      "footprintFacilities": 3,
+      "explanation": "Band C because Anchorpoint reaches all 3 of its footprint sites within 90 minutes, it runs 3 nursing homes within 120 minutes of a capable branch, 67% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+      "components": {
+        "ownershipChange": {
+          "points": 0,
+          "max": 10,
+          "input": "latest ownership or management change 39.6 months before 2026-10-19",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": false
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "citationTrigger": {
+          "points": 3.4,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2025-12-11",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": false
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the approved citation trigger",
+          "source": "none",
+          "proposal": false
+        },
+        "footprint": {
+          "points": 5.9,
+          "max": 15,
+          "input": "3 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": false
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": false
+        },
+        "citationBreadth": {
+          "points": 6.7,
+          "max": 10,
+          "input": "2 of 3 footprint facilities cited for a service line since 2025; 67% after pulling toward the 68% statewide rate",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": false
+        },
+        "citationRepetition": {
+          "points": 1.8,
+          "max": 5,
+          "input": "1 of 3 footprint facilities with sprinkler or alarm cited on more than one survey; 36% after pulling toward the 41% statewide rate",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": false
+        },
+        "domain": {
+          "points": 2,
+          "max": 2,
+          "input": "agrhodes.org (name_match)",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "3 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      },
+      "value": {
+        "assumptionsVersion": "georgia-value-1",
+        "band": "Mid",
+        "annualUsd": 35179,
+        "fiveYearUsd": 140716,
+        "landingUsd": 49408,
+        "landingSite": "115002",
+        "input": "3 footprint sites with 418 certified beds",
+        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+        "sources": [
+          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+          "serviceability.json (OSRM, 2026-10-20)",
+          "docs/decisions/0009-account-value-model.md"
+        ],
+        "nearTheJaws": {
+          "applies": false,
+          "repEligible": true,
+          "input": "rule applies only to Small single-site operators in band C or Watch",
+          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
+          "assumptionsVersion": "georgia-value-1"
+        },
+        "effort": {
+          "scored": false,
+          "centralProcurementChain": {
+            "value": false,
+            "source": "4pq5-n9py.chain_id via operators.json"
+          },
+          "nationalIncumbentVendor": {
+            "value": "unknown",
+            "source": "not yet collected"
+          }
+        },
+        "sites": [
+          {
+            "ccn": "115002",
+            "certifiedBeds": 150,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 19,
+            "annualUsd": 12352,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115275",
+            "certifiedBeds": 138,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 29,
+            "annualUsd": 11652,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115521",
+            "certifiedBeds": 130,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 30,
+            "annualUsd": 11175,
             "assumptionsVersion": "georgia-value-1"
           }
         ]
@@ -4977,20 +5395,20 @@
       }
     },
     {
-      "operatorId": "ga-op-ccn-115682",
-      "name": "PARKSIDE AT BUDD TERRACE OPERATING COMPANY LLC",
+      "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
+      "name": "Pyramid Healthcare Management LLC",
       "eligible": true,
       "gate": null,
-      "identityStatus": "provisional",
+      "identityStatus": "resolved",
       "band": "C",
-      "score": 23.3,
-      "footprintFacilities": 1,
-      "explanation": "Band C because Anchorpoint reaches its site within 90 minutes, 79% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+      "score": 28.3,
+      "footprintFacilities": 2,
+      "explanation": "Band C because its sites sit 90 to 120 minutes from a capable branch, it runs 2 nursing homes within 120 minutes of a capable branch, 84% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
       "components": {
         "ownershipChange": {
           "points": 0,
           "max": 10,
-          "input": "no dated ownership or management change",
+          "input": "latest ownership or management change 108.5 months before 2026-10-19",
           "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
           "proposal": false
         },
@@ -5002,9 +5420,9 @@
           "proposal": false
         },
         "citationTrigger": {
-          "points": 4.4,
+          "points": 4.3,
           "max": 6,
-          "input": "latest service-line fire citation surveyed 2026-04-08",
+          "input": "latest service-line fire citation surveyed 2026-04-01",
           "source": "ifjz-ge4w.survey_date via signals.json",
           "proposal": false
         },
@@ -5023,9 +5441,9 @@
           "proposal": false
         },
         "footprint": {
-          "points": 0,
+          "points": 3.3,
           "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
+          "input": "2 Georgia facilities inside the footprint",
           "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
           "proposal": false
         },
@@ -5037,37 +5455,37 @@
           "proposal": false
         },
         "citationBreadth": {
-          "points": 7.9,
+          "points": 8.4,
           "max": 10,
-          "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
+          "input": "2 of 2 footprint facilities cited for a service line since 2025; 84% after pulling toward the 68% statewide rate",
           "source": "ifjz-ge4w via signals.json",
           "proposal": false
         },
         "citationRepetition": {
-          "points": 3,
+          "points": 2.3,
           "max": 5,
-          "input": "1 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 60% after pulling toward the 41% statewide rate",
+          "input": "1 of 2 footprint facilities with sprinkler or alarm cited on more than one survey; 45% after pulling toward the 41% statewide rate",
           "source": "ifjz-ge4w via signals.json",
           "proposal": false
         },
         "domain": {
-          "points": 0,
+          "points": 2,
           "max": 2,
-          "input": "no confirmed domain",
+          "input": "pyramid-healthcare.com (name_match)",
           "source": "web-signals.json domains (Serper, 2026-10-20)",
           "proposal": false
         },
         "geography": {
-          "points": 2,
+          "points": 1,
           "max": 2,
-          "input": "1 facilities within 90 minutes",
+          "input": "conditional only: 90 to 120 minutes, needs manager approval",
           "source": "serviceability.json (OSRM, 2026-10-20)",
           "proposal": false
         },
         "locationProvenance": {
-          "points": 1,
+          "points": 2,
           "max": 2,
-          "input": "provisional: a facility awaits manual review",
+          "input": "facility list resolved from CMS",
           "source": "operators.json",
           "proposal": false
         },
@@ -5082,11 +5500,11 @@
       "value": {
         "assumptionsVersion": "georgia-value-1",
         "band": "Small",
-        "annualUsd": 17662,
-        "fiveYearUsd": 70648,
-        "landingUsd": 70648,
-        "landingSite": "115682",
-        "input": "1 footprint sites with 250 certified beds",
+        "annualUsd": 18700,
+        "fiveYearUsd": 74800,
+        "landingUsd": 46900,
+        "landingSite": "115566",
+        "input": "2 footprint sites with 310 certified beds",
         "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
         "sources": [
           "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
@@ -5094,9 +5512,9 @@
           "docs/decisions/0009-account-value-model.md"
         ],
         "nearTheJaws": {
-          "applies": true,
+          "applies": false,
           "repEligible": true,
-          "input": "Small single-site operator in band C; site 22 minutes from a capable branch against a 60-minute radius",
+          "input": "rule applies only to Small single-site operators in band C or Watch",
           "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
           "assumptionsVersion": "georgia-value-1"
         },
@@ -5113,13 +5531,23 @@
         },
         "sites": [
           {
-            "ccn": "115682",
-            "certifiedBeds": 250,
+            "ccn": "115348",
+            "certifiedBeds": 100,
             "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 22,
-            "annualUsd": 17662,
+            "anchorState": "conditional",
+            "distanceFactor": 0.75,
+            "anchorDriveMinutes": 96,
+            "annualUsd": 6975,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115566",
+            "certifiedBeds": 210,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "conditional",
+            "distanceFactor": 0.75,
+            "anchorDriveMinutes": 117,
+            "annualUsd": 11725,
             "assumptionsVersion": "georgia-value-1"
           }
         ]
@@ -5127,12 +5555,12 @@
     },
     {
       "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
-      "name": "HOSPITAL AUTHORITY OF COLUMBUS GA",
+      "name": "Hospital Authority of Columbus GA",
       "eligible": true,
       "gate": null,
-      "identityStatus": "provisional",
+      "identityStatus": "resolved",
       "band": "C",
-      "score": 26.4,
+      "score": 27.4,
       "footprintFacilities": 2,
       "explanation": "Band C because its sites sit 90 to 120 minutes from a capable branch, it runs 2 nursing homes within 120 minutes of a capable branch, 59% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
       "components": {
@@ -5214,9 +5642,9 @@
           "proposal": false
         },
         "locationProvenance": {
-          "points": 1,
+          "points": 2,
           "max": 2,
-          "input": "provisional: a facility awaits manual review",
+          "input": "facility list resolved from CMS",
           "source": "operators.json",
           "proposal": false
         },
@@ -5289,155 +5717,6 @@
             "distanceFactor": 0.75,
             "anchorDriveMinutes": 120,
             "annualUsd": 6174,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
-      "operatorId": "ga-op-chain-771",
-      "name": "CMS chain 771 [withheld: may name an individual]",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "resolved",
-      "band": "C",
-      "score": 24.4,
-      "footprintFacilities": 1,
-      "explanation": "Band C because Anchorpoint reaches its site within 90 minutes, 79% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 220.9 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 4.5,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2026-04-19",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 7.9,
-          "max": 10,
-          "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 3,
-          "max": 5,
-          "input": "1 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 60% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 2,
-          "max": 2,
-          "input": "facility list resolved from CMS",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 17264,
-        "fiveYearUsd": 69056,
-        "landingUsd": 69056,
-        "landingSite": "115535",
-        "input": "1 footprint sites with 242 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": true,
-          "input": "Small single-site operator in band C; site 43 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": true,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115535",
-            "certifiedBeds": 242,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 43,
-            "annualUsd": 17264,
             "assumptionsVersion": "georgia-value-1"
           }
         ]
@@ -5597,155 +5876,6 @@
             "distanceFactor": 1,
             "anchorDriveMinutes": 79,
             "annualUsd": 7026,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
-      "operatorId": "ga-op-ccn-115368",
-      "name": "BHM Carrollton Opco LLC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "provisional",
-      "band": "C",
-      "score": 21.7,
-      "footprintFacilities": 1,
-      "explanation": "Band C because Anchorpoint reaches its site within 90 minutes, 79% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "no dated ownership or management change",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 4.4,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2026-04-09",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 7.9,
-          "max": 10,
-          "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 1.4,
-          "max": 5,
-          "input": "0 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 27% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 1,
-          "max": 2,
-          "input": "provisional: a facility awaits manual review",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 12867,
-        "fiveYearUsd": 51468,
-        "landingUsd": 51468,
-        "landingSite": "115368",
-        "input": "1 footprint sites with 159 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": false,
-          "input": "Small single-site operator in band C; site 89 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": false,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115368",
-            "certifiedBeds": 159,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 89,
-            "annualUsd": 12867,
             "assumptionsVersion": "georgia-value-1"
           }
         ]
@@ -6044,602 +6174,6 @@
             "distanceFactor": 1,
             "anchorDriveMinutes": 47,
             "annualUsd": 11887,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
-      "operatorId": "ga-op-lbn-columbus-center-llc",
-      "name": "COLUMBUS CENTER LLC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "provisional",
-      "band": "C",
-      "score": 22.2,
-      "footprintFacilities": 1,
-      "explanation": "Band C because its sites sit 90 to 120 minutes from a capable branch, 79% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 108.5 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 4.3,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2026-04-01",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 7.9,
-          "max": 10,
-          "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 3,
-          "max": 5,
-          "input": "1 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 60% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 1,
-          "max": 2,
-          "input": "conditional only: 90 to 120 minutes, needs manager approval",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 1,
-          "max": 2,
-          "input": "provisional: a facility awaits manual review",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 11725,
-        "fiveYearUsd": 46900,
-        "landingUsd": 46900,
-        "landingSite": "115566",
-        "input": "1 footprint sites with 210 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": false,
-          "input": "Small single-site operator in band C; site 117 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": false,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115566",
-            "certifiedBeds": 210,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "conditional",
-            "distanceFactor": 0.75,
-            "anchorDriveMinutes": 117,
-            "annualUsd": 11725,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
-      "name": "A G RHODES HOME INC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "provisional",
-      "band": "C",
-      "score": 20.7,
-      "footprintFacilities": 1,
-      "explanation": "Band C because Anchorpoint reaches its site within 90 minutes, 79% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 40.6 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 3.4,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2025-12-04",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 7.9,
-          "max": 10,
-          "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 1.4,
-          "max": 5,
-          "input": "0 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 27% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 1,
-          "max": 2,
-          "input": "provisional: a facility awaits manual review",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 11652,
-        "fiveYearUsd": 46608,
-        "landingUsd": 46608,
-        "landingSite": "115275",
-        "input": "1 footprint sites with 138 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": true,
-          "input": "Small single-site operator in band C; site 29 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": false,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115275",
-            "certifiedBeds": 138,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 29,
-            "annualUsd": 11652,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
-      "operatorId": "ga-op-ccn-115727",
-      "name": "Jeffersonville Care Center LLC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "provisional",
-      "band": "C",
-      "score": 23.3,
-      "footprintFacilities": 1,
-      "explanation": "Band C because Anchorpoint reaches its site within 90 minutes, 79% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "no dated ownership or management change",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 4.4,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2026-04-09",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 7.9,
-          "max": 10,
-          "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 3,
-          "max": 5,
-          "input": "1 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 60% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 1,
-          "max": 2,
-          "input": "provisional: a facility awaits manual review",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 11235,
-        "fiveYearUsd": 44940,
-        "landingUsd": 44940,
-        "landingSite": "115727",
-        "input": "1 footprint sites with 131 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": true,
-          "input": "Small single-site operator in band C; site 37 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": false,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115727",
-            "certifiedBeds": 131,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 37,
-            "annualUsd": 11235,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-cobb-inc",
-      "name": "A G RHODES HOME COBB INC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "provisional",
-      "band": "C",
-      "score": 22.3,
-      "footprintFacilities": 1,
-      "explanation": "Band C because Anchorpoint reaches its site within 90 minutes, 79% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 39.6 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 3.4,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2025-12-11",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 7.9,
-          "max": 10,
-          "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 3,
-          "max": 5,
-          "input": "1 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 60% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 1,
-          "max": 2,
-          "input": "provisional: a facility awaits manual review",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 11175,
-        "fiveYearUsd": 44700,
-        "landingUsd": 44700,
-        "landingSite": "115521",
-        "input": "1 footprint sites with 130 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": true,
-          "input": "Small single-site operator in band C; site 30 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": false,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115521",
-            "certifiedBeds": 130,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 30,
-            "annualUsd": 11175,
             "assumptionsVersion": "georgia-value-1"
           }
         ]
@@ -7107,6 +6641,165 @@
             "distanceFactor": 1,
             "anchorDriveMinutes": 77,
             "annualUsd": 10380,
+            "assumptionsVersion": "georgia-value-1"
+          }
+        ]
+      }
+    },
+    {
+      "operatorId": "ga-op-org-isakson-living-inc",
+      "name": "Isakson Living, Inc.",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "C",
+      "score": 27.1,
+      "footprintFacilities": 2,
+      "explanation": "Band C because Anchorpoint reaches all 2 of its footprint sites within 90 minutes, it runs 2 nursing homes within 120 minutes of a capable branch, 59% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+      "components": {
+        "ownershipChange": {
+          "points": 0,
+          "max": 10,
+          "input": "latest ownership or management change 45.6 months before 2026-10-19",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": false
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "citationTrigger": {
+          "points": 4.6,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2026-05-03",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": false
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the approved citation trigger",
+          "source": "none",
+          "proposal": false
+        },
+        "footprint": {
+          "points": 3.3,
+          "max": 15,
+          "input": "2 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": false
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": false
+        },
+        "citationBreadth": {
+          "points": 5.9,
+          "max": 10,
+          "input": "1 of 2 footprint facilities cited for a service line since 2025; 59% after pulling toward the 68% statewide rate",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": false
+        },
+        "citationRepetition": {
+          "points": 2.3,
+          "max": 5,
+          "input": "1 of 2 footprint facilities with sprinkler or alarm cited on more than one survey; 45% after pulling toward the 41% statewide rate",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": false
+        },
+        "domain": {
+          "points": 2,
+          "max": 2,
+          "input": "isaksonliving.com (name_match)",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "2 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      },
+      "value": {
+        "assumptionsVersion": "georgia-value-1",
+        "band": "Small",
+        "annualUsd": 10028,
+        "fiveYearUsd": 40112,
+        "landingUsd": 26016,
+        "landingSite": "115694",
+        "input": "2 footprint sites with 85 certified beds",
+        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+        "sources": [
+          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+          "serviceability.json (OSRM, 2026-10-20)",
+          "docs/decisions/0009-account-value-model.md"
+        ],
+        "nearTheJaws": {
+          "applies": false,
+          "repEligible": true,
+          "input": "rule applies only to Small single-site operators in band C or Watch",
+          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
+          "assumptionsVersion": "georgia-value-1"
+        },
+        "effort": {
+          "scored": false,
+          "centralProcurementChain": {
+            "value": false,
+            "source": "4pq5-n9py.chain_id via operators.json"
+          },
+          "nationalIncumbentVendor": {
+            "value": "unknown",
+            "source": "not yet collected"
+          }
+        },
+        "sites": [
+          {
+            "ccn": "115694",
+            "certifiedBeds": 60,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 27,
+            "annualUsd": 6504,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115773",
+            "certifiedBeds": 25,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 23,
+            "annualUsd": 3524,
             "assumptionsVersion": "georgia-value-1"
           }
         ]
@@ -7709,162 +7402,13 @@
       }
     },
     {
-      "operatorId": "ga-op-lbn-phg-mcrae-llc",
-      "name": "PHG MCRAE LLC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "provisional",
-      "band": "C",
-      "score": 21.3,
-      "footprintFacilities": 1,
-      "explanation": "Band C because its sites sit 90 to 120 minutes from a capable branch, 79% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 27.6 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 3.4,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2025-12-04",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 7.9,
-          "max": 10,
-          "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 3,
-          "max": 5,
-          "input": "1 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 60% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 1,
-          "max": 2,
-          "input": "conditional only: 90 to 120 minutes, needs manager approval",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 1,
-          "max": 2,
-          "input": "provisional: a facility awaits manual review",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 8516,
-        "fiveYearUsd": 34064,
-        "landingUsd": 34064,
-        "landingSite": "115494",
-        "input": "1 footprint sites with 133 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": false,
-          "input": "Small single-site operator in band C; site 99 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": false,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115494",
-            "certifiedBeds": 133,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "conditional",
-            "distanceFactor": 0.75,
-            "anchorDriveMinutes": 99,
-            "annualUsd": 8516,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
       "operatorId": "ga-op-lbn-miona-geriatric-and-dementia-center-llc",
-      "name": "MIONA GERIATRIC & DEMENTIA CENTER, LLC",
+      "name": "Miona Geriatric & Dementia Center, LLC",
       "eligible": true,
       "gate": null,
-      "identityStatus": "provisional",
+      "identityStatus": "resolved",
       "band": "C",
-      "score": 21.9,
+      "score": 23.9,
       "footprintFacilities": 1,
       "explanation": "Band C because Anchorpoint reaches its site within 90 minutes, 79% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
       "components": {
@@ -7932,9 +7476,9 @@
           "proposal": false
         },
         "domain": {
-          "points": 0,
+          "points": 1,
           "max": 2,
-          "input": "no confirmed domain",
+          "input": "mionawebsite.com (word_match)",
           "source": "web-signals.json domains (Serper, 2026-10-20)",
           "proposal": false
         },
@@ -7946,9 +7490,9 @@
           "proposal": false
         },
         "locationProvenance": {
-          "points": 1,
+          "points": 2,
           "max": 2,
-          "input": "provisional: a facility awaits manual review",
+          "input": "facility list resolved from CMS",
           "source": "operators.json",
           "proposal": false
         },
@@ -8150,6 +7694,165 @@
             "distanceFactor": 1,
             "anchorDriveMinutes": 32,
             "annualUsd": 7604,
+            "assumptionsVersion": "georgia-value-1"
+          }
+        ]
+      }
+    },
+    {
+      "operatorId": "ga-op-org-atrium-health-inc",
+      "name": "ATRIUM HEALTH INC",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "C",
+      "score": 20.4,
+      "footprintFacilities": 2,
+      "explanation": "Band C because Anchorpoint reaches all 2 of its footprint sites within 90 minutes, it runs 2 nursing homes within 120 minutes of a capable branch, 34% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+      "components": {
+        "ownershipChange": {
+          "points": 0,
+          "max": 10,
+          "input": "latest ownership or management change 25 months before 2026-10-19",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": false
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "citationTrigger": {
+          "points": 0.4,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2024-12-08",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": false
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the approved citation trigger",
+          "source": "none",
+          "proposal": false
+        },
+        "footprint": {
+          "points": 3.3,
+          "max": 15,
+          "input": "2 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": false
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": false
+        },
+        "citationBreadth": {
+          "points": 3.4,
+          "max": 10,
+          "input": "0 of 2 footprint facilities cited for a service line since 2025; 34% after pulling toward the 68% statewide rate",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": false
+        },
+        "citationRepetition": {
+          "points": 2.3,
+          "max": 5,
+          "input": "1 of 2 footprint facilities with sprinkler or alarm cited on more than one survey; 45% after pulling toward the 41% statewide rate",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": false
+        },
+        "domain": {
+          "points": 2,
+          "max": 2,
+          "input": "atriumhealth.org (name_match)",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "2 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      },
+      "value": {
+        "assumptionsVersion": "georgia-value-1",
+        "band": "Small",
+        "annualUsd": 7362,
+        "fiveYearUsd": 29448,
+        "landingUsd": 19588,
+        "landingSite": "115680",
+        "input": "2 footprint sites with 55 certified beds",
+        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+        "sources": [
+          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+          "serviceability.json (OSRM, 2026-10-20)",
+          "docs/decisions/0009-account-value-model.md"
+        ],
+        "nearTheJaws": {
+          "applies": false,
+          "repEligible": true,
+          "input": "rule applies only to Small single-site operators in band C or Watch",
+          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
+          "assumptionsVersion": "georgia-value-1"
+        },
+        "effort": {
+          "scored": false,
+          "centralProcurementChain": {
+            "value": false,
+            "source": "4pq5-n9py.chain_id via operators.json"
+          },
+          "nationalIncumbentVendor": {
+            "value": "unknown",
+            "source": "not yet collected"
+          }
+        },
+        "sites": [
+          {
+            "ccn": "115649",
+            "certifiedBeds": 15,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 46,
+            "annualUsd": 2465,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "115680",
+            "certifiedBeds": 40,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "serviceable",
+            "distanceFactor": 1,
+            "anchorDriveMinutes": 15,
+            "annualUsd": 4897,
             "assumptionsVersion": "georgia-value-1"
           }
         ]
@@ -10570,155 +10273,6 @@
       }
     },
     {
-      "operatorId": "ga-op-lbn-pt-hills-place-terraces-llc",
-      "name": "PT HILLS PLACE TERRACES LLC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "provisional",
-      "band": "C",
-      "score": 24.5,
-      "footprintFacilities": 1,
-      "explanation": "Band C because Anchorpoint reaches its site within 90 minutes, 79% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 79.2 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 4.6,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2026-05-03",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 7.9,
-          "max": 10,
-          "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 3,
-          "max": 5,
-          "input": "1 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 60% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 1,
-          "max": 2,
-          "input": "peachtreehillsplace.com (word_match)",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 1,
-          "max": 2,
-          "input": "provisional: a facility awaits manual review",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 3524,
-        "fiveYearUsd": 14096,
-        "landingUsd": 14096,
-        "landingSite": "115773",
-        "input": "1 footprint sites with 25 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": true,
-          "input": "Small single-site operator in band C; site 23 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": false,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115773",
-            "certifiedBeds": 25,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 23,
-            "annualUsd": 3524,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
       "operatorId": "ga-op-lbn-4angels-of-byromville-healthcare-center",
       "name": "4ANGELS OF BYROMVILLE HEALTHCARE CENTER",
       "eligible": true,
@@ -11474,155 +11028,6 @@
       }
     },
     {
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc-at-wesley-woods",
-      "name": "A. G. RHODES HOME INC. AT WESLEY WOODS",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "provisional",
-      "band": "Watch",
-      "score": 16,
-      "footprintFacilities": 1,
-      "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes, 46% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 49.1 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 0,
-          "max": 6,
-          "input": "no service-line fire citation",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 4.6,
-          "max": 10,
-          "input": "0 of 1 footprint facilities cited for a service line since 2025; 46% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 1.4,
-          "max": 5,
-          "input": "0 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 27% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 2,
-          "max": 2,
-          "input": "agrhodes.org (name_match)",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 1,
-          "max": 2,
-          "input": "provisional: a facility awaits manual review",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 12352,
-        "fiveYearUsd": 49408,
-        "landingUsd": 49408,
-        "landingSite": "115002",
-        "input": "1 footprint sites with 150 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": true,
-          "input": "Small single-site operator in band Watch; site 19 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": false,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115002",
-            "certifiedBeds": 150,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 19,
-            "annualUsd": 12352,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
       "operatorId": "ga-op-org-brightmoor-management-services-llc",
       "name": "BRIGHTMOOR MANAGEMENT SERVICES LLC",
       "eligible": true,
@@ -12064,155 +11469,6 @@
             "distanceFactor": 1,
             "anchorDriveMinutes": 67,
             "annualUsd": 10504,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
-      "operatorId": "ga-op-ccn-115381",
-      "name": "COTTAGES AT ROCKMART, THE",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "provisional",
-      "band": "Watch",
-      "score": 14.3,
-      "footprintFacilities": 1,
-      "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes, 46% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "no dated ownership or management change",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 0.3,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2024-11-24",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 4.6,
-          "max": 10,
-          "input": "0 of 1 footprint facilities cited for a service line since 2025; 46% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 1.4,
-          "max": 5,
-          "input": "0 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 27% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 1,
-          "max": 2,
-          "input": "provisional: a facility awaits manual review",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 10318,
-        "fiveYearUsd": 41272,
-        "landingUsd": 41272,
-        "landingSite": "115381",
-        "input": "1 footprint sites with 116 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": false,
-          "input": "Small single-site operator in band Watch; site 81 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": false,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115381",
-            "certifiedBeds": 116,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 81,
-            "annualUsd": 10318,
             "assumptionsVersion": "georgia-value-1"
           }
         ]
@@ -12815,155 +12071,6 @@
       }
     },
     {
-      "operatorId": "ga-op-lbn-phg-wrightsville-llc",
-      "name": "PHG WRIGHTSVILLE LLC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "provisional",
-      "band": "Watch",
-      "score": 19.6,
-      "footprintFacilities": 1,
-      "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes, 79% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 87.6 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 2.3,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2025-07-31",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 7.9,
-          "max": 10,
-          "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 1.4,
-          "max": 5,
-          "input": "0 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 27% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 1,
-          "max": 2,
-          "input": "provisional: a facility awaits manual review",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 8906,
-        "fiveYearUsd": 35624,
-        "landingUsd": 35624,
-        "landingSite": "115406",
-        "input": "1 footprint sites with 94 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": false,
-          "input": "Small single-site operator in band Watch; site 84 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": false,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115406",
-            "certifiedBeds": 94,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 84,
-            "annualUsd": 8906,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
       "operatorId": "ga-op-lbn-northeast-georgia-medical-center-habersham-llc",
       "name": "NORTHEAST GEORGIA MEDICAL CENTER HABERSHAM LLC",
       "eligible": true,
@@ -13113,162 +12220,13 @@
       }
     },
     {
-      "operatorId": "ga-op-lbn-rome-center-llc",
-      "name": "ROME CENTER LLC",
+      "operatorId": "ga-op-org-georgia-dbhdd",
+      "name": "Georgia Department of Behavioral Health and Developmental Disabilities",
       "eligible": true,
       "gate": null,
-      "identityStatus": "provisional",
+      "identityStatus": "resolved",
       "band": "Watch",
-      "score": 18.2,
-      "footprintFacilities": 1,
-      "explanation": "Band Watch because its sites sit 90 to 120 minutes from a capable branch, 79% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 108.5 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 1.9,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2025-06-12",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 7.9,
-          "max": 10,
-          "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 1.4,
-          "max": 5,
-          "input": "0 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 27% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 1,
-          "max": 2,
-          "input": "conditional only: 90 to 120 minutes, needs manager approval",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 1,
-          "max": 2,
-          "input": "provisional: a facility awaits manual review",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 6975,
-        "fiveYearUsd": 27900,
-        "landingUsd": 27900,
-        "landingSite": "115348",
-        "input": "1 footprint sites with 100 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": false,
-          "input": "Small single-site operator in band Watch; site 96 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": false,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115348",
-            "certifiedBeds": 100,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "conditional",
-            "distanceFactor": 0.75,
-            "anchorDriveMinutes": 96,
-            "annualUsd": 6975,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
-      "operatorId": "ga-op-ccn-11A186",
-      "name": "Georgia Regional Atlanta LTC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "provisional",
-      "band": "Watch",
-      "score": 14,
+      "score": 16,
       "footprintFacilities": 1,
       "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes, 46% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
       "components": {
@@ -13336,9 +12294,9 @@
           "proposal": false
         },
         "domain": {
-          "points": 0,
+          "points": 1,
           "max": 2,
-          "input": "no confirmed domain",
+          "input": "dfcs.resources.uniteus.io (word_match)",
           "source": "web-signals.json domains (Serper, 2026-10-20)",
           "proposal": false
         },
@@ -13350,9 +12308,9 @@
           "proposal": false
         },
         "locationProvenance": {
-          "points": 1,
+          "points": 2,
           "max": 2,
-          "input": "provisional: a facility awaits manual review",
+          "input": "facility list resolved from CMS",
           "source": "operators.json",
           "proposal": false
         },
@@ -13379,9 +12337,9 @@
           "docs/decisions/0009-account-value-model.md"
         ],
         "nearTheJaws": {
-          "applies": true,
+          "applies": false,
           "repEligible": true,
-          "input": "Small single-site operator in band Watch; site 31 minutes from a capable branch against a 60-minute radius",
+          "input": "rule applies only to Small single-site operators in band C or Watch",
           "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
           "assumptionsVersion": "georgia-value-1"
         },
@@ -13405,6 +12363,16 @@
             "distanceFactor": 1,
             "anchorDriveMinutes": 31,
             "annualUsd": 6953,
+            "assumptionsVersion": "georgia-value-1"
+          },
+          {
+            "ccn": "11A200",
+            "certifiedBeds": 56,
+            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "anchorState": "not_serviceable",
+            "distanceFactor": 0,
+            "anchorDriveMinutes": null,
+            "annualUsd": 0,
             "assumptionsVersion": "georgia-value-1"
           }
         ]
@@ -13709,304 +12677,6 @@
       }
     },
     {
-      "operatorId": "ga-op-lbn-park-springs-llc",
-      "name": "PARK SPRINGS LLC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "provisional",
-      "band": "Watch",
-      "score": 14,
-      "footprintFacilities": 1,
-      "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes, 46% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 45.6 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 0,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2023-11-02",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 4.6,
-          "max": 10,
-          "input": "0 of 1 footprint facilities cited for a service line since 2025; 46% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 1.4,
-          "max": 5,
-          "input": "0 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 27% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 1,
-          "max": 2,
-          "input": "provisional: a facility awaits manual review",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 6504,
-        "fiveYearUsd": 26016,
-        "landingUsd": 26016,
-        "landingSite": "115694",
-        "input": "1 footprint sites with 60 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": true,
-          "input": "Small single-site operator in band Watch; site 27 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": false,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115694",
-            "certifiedBeds": 60,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 27,
-            "annualUsd": 6504,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
-      "operatorId": "ga-op-lbn-central-georgia-senior-health-inc",
-      "name": "CENTRAL GEORGIA SENIOR HEALTH, INC.",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "provisional",
-      "band": "Watch",
-      "score": 16,
-      "footprintFacilities": 1,
-      "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes, 46% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 25 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 0,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2024-08-25",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 4.6,
-          "max": 10,
-          "input": "0 of 1 footprint facilities cited for a service line since 2025; 46% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 1.4,
-          "max": 5,
-          "input": "0 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 27% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 2,
-          "max": 2,
-          "input": "carlyleplace.org (name_match)",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 1,
-          "max": 2,
-          "input": "provisional: a facility awaits manual review",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 4897,
-        "fiveYearUsd": 19588,
-        "landingUsd": 19588,
-        "landingSite": "115680",
-        "input": "1 footprint sites with 40 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": true,
-          "input": "Small single-site operator in band Watch; site 15 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": false,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115680",
-            "certifiedBeds": 40,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 15,
-            "annualUsd": 4897,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
-    },
-    {
       "operatorId": "ga-op-lbn-emanuel-county-hospital-authority",
       "name": "EMANUEL COUNTY HOSPITAL AUTHORITY",
       "eligible": true,
@@ -14156,15 +12826,15 @@
       }
     },
     {
-      "operatorId": "ga-op-ccn-115690",
-      "name": "D SCOTT HUDGENS CENTER FOR SKILLED NURSING, THE",
+      "operatorId": "ga-op-org-annandale-village",
+      "name": "Annandale Village",
       "eligible": true,
       "gate": null,
-      "identityStatus": "provisional",
+      "identityStatus": "resolved",
       "band": "Watch",
-      "score": 14,
+      "score": 19,
       "footprintFacilities": 1,
-      "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes, 46% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+      "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes, 46% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and it appears to be hiring maintenance or facilities staff.",
       "components": {
         "ownershipChange": {
           "points": 0,
@@ -14174,9 +12844,9 @@
           "proposal": false
         },
         "hiring": {
-          "points": 0,
+          "points": 4,
           "max": 8,
-          "input": "no maintenance or facilities posting found",
+          "input": "1 posting candidate(s), not confirmed open",
           "source": "web-signals.json jobs (Serper, 2026-10-20)",
           "proposal": false
         },
@@ -14244,9 +12914,9 @@
           "proposal": false
         },
         "locationProvenance": {
-          "points": 1,
+          "points": 2,
           "max": 2,
-          "input": "provisional: a facility awaits manual review",
+          "input": "facility list resolved from CMS",
           "source": "operators.json",
           "proposal": false
         },
@@ -14452,178 +13122,9 @@
           }
         ]
       }
-    },
-    {
-      "operatorId": "ga-op-org-atrium-health-inc",
-      "name": "ATRIUM HEALTH INC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "resolved",
-      "band": "Watch",
-      "score": 19,
-      "footprintFacilities": 1,
-      "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes, 46% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 46.6 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": false
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "citationTrigger": {
-          "points": 0.4,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2024-12-08",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": false
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the approved citation trigger",
-          "source": "none",
-          "proposal": false
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": false
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": false
-        },
-        "citationBreadth": {
-          "points": 4.6,
-          "max": 10,
-          "input": "0 of 1 footprint facilities cited for a service line since 2025; 46% after pulling toward the 68% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "citationRepetition": {
-          "points": 3,
-          "max": 5,
-          "input": "1 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 60% after pulling toward the 41% statewide rate",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": false
-        },
-        "domain": {
-          "points": 2,
-          "max": 2,
-          "input": "atriumhealth.org (name_match)",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 2,
-          "max": 2,
-          "input": "facility list resolved from CMS",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      },
-      "value": {
-        "assumptionsVersion": "georgia-value-1",
-        "band": "Small",
-        "annualUsd": 2465,
-        "fiveYearUsd": 9860,
-        "landingUsd": 9860,
-        "landingSite": "115649",
-        "input": "1 footprint sites with 15 certified beds",
-        "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-        "sources": [
-          "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "serviceability.json (OSRM, 2026-10-20)",
-          "docs/decisions/0009-account-value-model.md"
-        ],
-        "nearTheJaws": {
-          "applies": true,
-          "repEligible": true,
-          "input": "Small single-site operator in band Watch; site 46 minutes from a capable branch against a 60-minute radius",
-          "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-          "assumptionsVersion": "georgia-value-1"
-        },
-        "effort": {
-          "scored": false,
-          "centralProcurementChain": {
-            "value": false,
-            "source": "4pq5-n9py.chain_id via operators.json"
-          },
-          "nationalIncumbentVendor": {
-            "value": "unknown",
-            "source": "not yet collected"
-          }
-        },
-        "sites": [
-          {
-            "ccn": "115649",
-            "certifiedBeds": 15,
-            "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "anchorState": "serviceable",
-            "distanceFactor": 1,
-            "anchorDriveMinutes": 46,
-            "annualUsd": 2465,
-            "assumptionsVersion": "georgia-value-1"
-          }
-        ]
-      }
     }
   ],
   "outsideFootprint": [
-    {
-      "operatorId": "ga-op-ccn-115498",
-      "name": "HOSPITAL AUTHORITY OF BROOKS COUNTY, GEORGIA, THE",
-      "eligible": false,
-      "gate": "not serviceable: no facility within 120 minutes of a branch offering sprinkler or alarm work",
-      "band": null,
-      "score": null,
-      "components": {},
-      "explanation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-11A200",
-      "name": "GRACEWOOD NSG FACILITY(UNIT 9)",
-      "eligible": false,
-      "gate": "not serviceable: no facility within 120 minutes of a branch offering sprinkler or alarm work",
-      "band": null,
-      "score": null,
-      "components": {},
-      "explanation": null
-    },
     {
       "operatorId": "ga-op-chain-205",
       "name": "CMS chain 205 [withheld: may name an individual]",
@@ -14795,16 +13296,6 @@
       "explanation": null
     },
     {
-      "operatorId": "ga-op-lbn-harborview-waycross-llc",
-      "name": "HARBORVIEW WAYCROSS LLC",
-      "eligible": false,
-      "gate": "not serviceable: no facility within 120 minutes of a branch offering sprinkler or alarm work",
-      "band": null,
-      "score": null,
-      "components": {},
-      "explanation": null
-    },
-    {
       "operatorId": "ga-op-lbn-hospital-authority-of-liberty-county",
       "name": "HOSPITAL AUTHORITY OF LIBERTY COUNTY",
       "eligible": false,
@@ -14865,16 +13356,6 @@
       "explanation": null
     },
     {
-      "operatorId": "ga-op-lbn-phg-thomson-llc",
-      "name": "PHG THOMSON LLC",
-      "eligible": false,
-      "gate": "not serviceable: no facility within 120 minutes of a branch offering sprinkler or alarm work",
-      "band": null,
-      "score": null,
-      "components": {},
-      "explanation": null
-    },
-    {
       "operatorId": "ga-op-lbn-resorts-at-pooler-inc",
       "name": "RESORTS AT POOLER INC",
       "eligible": false,
@@ -14897,16 +13378,6 @@
     {
       "operatorId": "ga-op-lbn-south-georgia-medical-center-inc",
       "name": "SOUTH GEORGIA MEDICAL CENTER INC",
-      "eligible": false,
-      "gate": "not serviceable: no facility within 120 minutes of a branch offering sprinkler or alarm work",
-      "band": null,
-      "score": null,
-      "components": {},
-      "explanation": null
-    },
-    {
-      "operatorId": "ga-op-lbn-southeast-georgia-health-system-inc",
-      "name": "SOUTHEAST GEORGIA HEALTH SYSTEM, INC",
       "eligible": false,
       "gate": "not serviceable: no facility within 120 minutes of a branch offering sprinkler or alarm work",
       "band": null,
@@ -14977,6 +13448,16 @@
     {
       "operatorId": "ga-op-org-john-d-archbold-memorial-hospital-inc",
       "name": "JOHN D ARCHBOLD MEMORIAL HOSPITAL INC",
+      "eligible": false,
+      "gate": "not serviceable: no facility within 120 minutes of a branch offering sprinkler or alarm work",
+      "band": null,
+      "score": null,
+      "components": {},
+      "explanation": null
+    },
+    {
+      "operatorId": "ga-op-org-presbyterian-homes-of-georgia",
+      "name": "Presbyterian Homes of Georgia",
       "eligible": false,
       "gate": "not serviceable: no facility within 120 minutes of a branch offering sprinkler or alarm work",
       "band": null,
