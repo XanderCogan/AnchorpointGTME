@@ -21,12 +21,14 @@ Inputs come from the approved tiering in `data/georgia-sample/tiers.json` (propo
 - That leaves 57 operators and 220 footprint facilities: band A has 5 operators and 124 sites, band B 11 and 49, band C 41 and 47.
 - All band A and B operators are multi-site. Band C has 4 multi-site operators and 37 single-site operators.
 
-Rows run in two waves, and within each wave in band order A, then B, then C, highest score first inside a band.
+Rows run in band order A, then B, then C, highest score first inside a band.
 
-- Wave 1 runs every multi-site operator row, then up to three sites per operator. That is 93 site rows: 15 in A, 31 in B, 47 in C.
-- Wave 2 runs the remaining 127 sites, almost all of them band A chain facilities, only if credit remains.
+- Band A runs at full depth, decided by the user on 2026-10-20: all 5 operator rows and all 124 of their footprint sites. No per-operator site cap applies to band A.
+- Bands B and C then run their 15 multi-site operator rows and 96 sites. Whether B and C also run at full depth, or operators first and sites after, is open.
 
-The wave cap exists because the pass measures find rates across operators. The fourth to forty-first PruittHealth administrator adds little to that measurement and would spend most of the budget on one account. Within an operator, sites are ranked by the most recent service-line citation in `signals.json`, ties broken by shorter drive time in `serviceability.json`, so the sites with a reason to talk come first.
+Depth means every site and every role slot, not more detail about any person. The personal data boundary below is unchanged.
+
+Within an operator, sites are ranked by the most recent service-line citation in `signals.json`, ties broken by shorter drive time in `serviceability.json`, so the sites with a reason to talk come first. The `wave` field in the coverage schema records whether a site row ran in the first pass (1) or a later one (2).
 
 A single-site operator has no regional layer, so its operator row is marked `site_only` and only its site row runs. If the CMS ownership data shows a separate management organization, that organization is a later candidate for an operator row, not part of this pass.
 
@@ -34,7 +36,7 @@ A single-site operator has no regional layer, so its operator row is marked `sit
 
 Both tables are built from committed business facts only. An export script, not yet written, writes the input CSVs into the gitignored `data/georgia-sample/private/clay/` folder for upload.
 
-### Operator table (20 rows in wave 1)
+### Operator table (20 multi-site operator rows)
 
 Input columns:
 
@@ -50,7 +52,7 @@ Enrichment columns, in order:
 3. Enrich each found person's profile for current employer, current title, and current-role start date.
 4. Formula columns that reduce each slot to the coverage fields listed under the personal data boundary.
 
-### Site table (93 rows in wave 1, under the free plan's 200-row limit)
+### Site tables (124 band A rows, then 96 band B and C rows, each under the free plan's 200-row limit)
 
 Input columns:
 
@@ -107,33 +109,29 @@ Retrieved from Clay's own pages on 2026-10-20:
 
 Under these assumptions a person costs about 1.5 credits (1 to find, 0.5 to enrich). A full operator row is 4 people, about 6 credits. A full site row is 2 people, about 3 credits. The 20-person channel check is about 10 credits.
 
-### Free plan: about band A in wave 1
+### Free plan, month by month
 
-Of the 100 free credits, 10 go to the channel check and 90 to people.
+Decided by the user on 2026-10-20: if the free plan cannot buy a one-time top-up, the pass continues on later months of the free plan rather than a paid plan or another vendor.
 
-- Band A operators: 5 rows, about 30 credits.
-- Band A wave-1 sites: 15 rows, about 45 credits.
-- The remaining 15 credits reach about 2 band B operators.
+The whole pass at full depth, worst case:
 
-Actions are not the constraint: this uses about 100 of 500. Free credits refresh monthly, so a second month of the free plan adds about 100 more credits, roughly the rest of band B's operators and a third of its wave-1 sites, at no cost.
+- Band A: 5 operator rows (about 30 credits) and 124 site rows (about 372), about 402 credits.
+- Band B: 11 operator rows (about 66) and 49 site rows (about 147), about 213 credits.
+- Band C: 4 multi-site operator rows (about 24) and 47 site rows (about 141), about 165 credits.
+- Channel check: about 10 credits.
+
+That is about 790 credits, or about 8 months of free credits in the worst case. At a 50 percent find rate with misses free, it is about 400 credits, or about 4 months. Band A alone takes about 2 to 4 months. Actions are not the constraint: a month uses at most about 200 of 500.
 
 ### Paid credit: up to $20, confirmed with the user first
 
-If the free plan can buy a one-time top-up, the 250-credit minimum costs $16.25 at $0.05 plus the 30 percent premium, and $20 buys about 300 credits. Under worst-case assumptions, 250 credits after the free plan covers:
+If the free plan can buy a one-time top-up, the 250-credit minimum costs $16.25 at $0.05 plus the 30 percent premium, and $20 buys about 300 credits, about three free months' worth. It shortens the worst case from about 8 months to about 5.
 
-- The other 9 band B operators, about 54 credits.
-- Band B's 31 wave-1 sites, about 93 credits.
-- Band C's 4 multi-site operators, about 24 credits.
-- About 26 of band C's 47 wave-1 sites with the remaining 79 credits.
-
-Free plus a $16.25 top-up would therefore cover all 20 multi-site operators and about 72 of the 93 wave-1 sites, out of 220 footprint sites. At a 50 percent find rate, with misses free, the same spend reaches all 93 wave-1 sites and starts wave 2.
-
-If top-ups require a paid plan, Clay's cheapest monthly option is $60, three times the $20 cap. That spend is not allowed without the user amending decision 0007. The alternatives are listed under open questions.
+If top-ups require a paid plan, Clay's cheapest monthly option is $60, three times the $20 cap. Under the 2026-10-20 choice, the pass stays on the free plan instead.
 
 ## Stopping rule
 
 - Before each band batch, compare the remaining credits with the batch's worst-case estimate. Run only whole operator rows and whole site rows, so no row is left half-enriched.
-- When free credits run out, stop and report. Ask the user before any purchase, quoting the top-up size and price shown in Clay.
+- When a month's free credits run out, stop and report, then resume when they refresh. Ask the user before any purchase, quoting the top-up size and price shown in Clay.
 - When the paid cap is spent, stop. No further purchase, plan upgrade, or second vendor is used to continue.
 - The run also stops at 200 rows in a table, the free plan's limit.
 
@@ -181,11 +179,11 @@ Each awarded point carries its input (a slot, a band, or an outcome, never a per
 
 ## Open questions for the user
 
-1. Can a free-plan account buy a one-time top-up? Clay's docs do not say. If not, choose between a second free month (free, slower, and the recommendation), amending decision 0007 for one $60 Launch month, or bring-your-own-key enrichment on the free plan paid from the unassigned second $20.
-2. Persona mapping for the operations vice president and the site administrator stretches the approved personas. Approve the mapping, or add senior-living personas to the operating contract.
-3. Approve the proposed person-relevance points per slot (13, 7, 10, 7) and the best-person rollup.
-4. Approve committing tenure bands, or keep them in `private/` and commit only role-change points.
-5. Approve the wave cap of three sites per operator, which trades depth in band A chains for coverage of more operators.
+1. Can a free-plan account buy a one-time top-up? Clay's docs do not say. Resolved 2026-10-20 for the case where it cannot: stay on the free plan month by month.
+2. Order for bands B and C after band A: full depth per operator, or all operator rows first and sites after.
+3. Persona mapping for the operations vice president and the site administrator stretches the approved personas. Approve the mapping, or add senior-living personas to the operating contract.
+4. Approve the proposed person-relevance points per slot (13, 7, 10, 7) and the best-person rollup.
+5. Approve committing tenure bands, or keep them in `private/` and commit only role-change points.
 
 ## Sources
 
