@@ -183,7 +183,7 @@ The demo may show names only to authenticated users, from the database, as decis
 
 No weights change. Stage 6 fills components that `tiers.json` already holds at zero as "unknown until Stage 6", plus person relevance, which has no component yet. Wiring them into `tier.ts` belongs to the session that owns it.
 
-- `roleChange`, up to 16: from the most recent tenure band among the account's verified people. The contract leaves the decay function to the scoring milestone, so the reducer applies `role-change-proposal-1`, pending approval: 16 times one minus the band's midpoint months over 24, giving 14, 10, and 4 points for the under 6, 6 to 12, and 12 to 24 month bands. This mirrors the 24-month decay tier.ts proposes for ownership change. Unknown tenure scores zero, and long tenure is never a penalty.
+- `roleChange`, up to 16: from the most recent tenure band among the account's verified people. The contract leaves the decay function to the scoring milestone, so the reducer applies `role-change-proposal-1`, approved by the user on 2026-10-20: 16 times one minus the band's midpoint months over 24, giving 14, 10, and 4 points for the under 6, 6 to 12, and 12 to 24 month bands. This mirrors the 24-month decay tier.ts proposes for ownership change. Unknown tenure scores zero, and long tenure is never a penalty.
 - Person relevance, up to 15: the highest proposed slot value among verified people at the operator or its covered sites. Taking the best person rather than a sum is a proposed rollup rule.
 - `personaAndChannel`, up to 4: 2 if any verified person has persona and current employment confirmed, 2 if any of them has a validated channel.
 - `engagement` stays as it is, used by the citation trigger proposal.
@@ -195,7 +195,7 @@ Each awarded point carries its input (a slot, a band, or an outcome, never a per
 1. Can a free-plan account buy a one-time top-up? Clay's docs do not say. Resolved 2026-10-20: the run pays for speed, so this only decides between top-ups and a Launch month.
 2. Review later: the two provisional senior-living personas in the operating contract, and any generic persona that does not fit, once Stage 6 shows which titles actually exist.
 3. Approve the proposed person-relevance points per slot (13, 7, 10, 7) and the best-person rollup.
-4. Approve `role-change-proposal-1`, the role-change decay the reducer applies.
+4. Resolved 2026-10-20: `role-change-proposal-1` is approved.
 5. Resolved 2026-10-20: tenure bands stay in `private/`, and only account-level role-change points with a generic reason are committed.
 
 ## Sources

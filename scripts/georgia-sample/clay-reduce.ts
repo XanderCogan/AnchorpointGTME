@@ -18,7 +18,7 @@ const FACILITIES_SLOTS = new Set(["operator_regional_facilities", "site_maintena
 const TENURE_BANDS = ["under_6_months", "6_to_12_months", "12_to_24_months", "over_24_months", "unknown"];
 const CHANNELS = ["clay_email_waterfall_validated", "not_checked", "not_found", "found_not_valid"];
 
-// Proposal, not yet approved: role-change points decay linearly over 24 months from the band's
+// Approved by the user on 2026-10-20 as role-change-proposal-1: role-change points decay linearly over 24 months from the band's
 // midpoint, matching the 24-month decay tier.ts proposes for ownership change. Long tenure scores
 // zero and is never a penalty.
 export const ROLE_CHANGE_RULE = "role-change-proposal-1: 16 x (1 - midpoint months / 24); bands under 6, 6 to 12, 12 to 24 months use midpoints 3, 9, 18";
