@@ -175,11 +175,36 @@ type ReviewCase = {
   candidates: { name: string; sourceField: string; corroboration: string[] }[];
 };
 
-// Approved manual review decisions, applied on every run.
-const { decisions } = JSON.parse(await readFile(resolve(sampleRoot, "review-decisions.json"), "utf8")) as {
-  decisions: { ccn: string; operatorId: string; decidedOn: string; approvedBy: string; evidence: string }[];
+// Approved manual review decisions, applied on every run. Proposed decisions await the user;
+// `--include-proposed` previews their effect and writes nothing.
+type Decision = {
+  status?: "approved" | "proposed";
+  decidedOn?: string;
+  proposedOn?: string;
+  approvedBy: string | null;
+  evidence: string;
 };
+// A facility decision places one facility under an operator. When operatorName is given and
+// no rule built that operator, the decision creates it.
+type FacilityDecision = Decision & { ccn: string; operatorId: string; operatorName?: string };
+// A chain decision gives a withheld chain a publishable name, or merges it into another operator.
+type ChainDecision = Decision & { cmsChainId: string; operatorName?: string; mergeIntoOperatorId?: string };
+
+const includeProposed = process.argv.includes("--include-proposed");
+const applies = (decision: Decision) => decision.status !== "proposed" || includeProposed;
+const reviewDecisions = JSON.parse(await readFile(resolve(sampleRoot, "review-decisions.json"), "utf8")) as {
+  decisions: FacilityDecision[];
+  chainDecisions?: ChainDecision[];
+};
+const decisions = reviewDecisions.decisions.filter(applies);
+const chainDecisions = (reviewDecisions.chainDecisions ?? []).filter(applies);
 const decisionByCcn = new Map(decisions.map((decision) => [decision.ccn, decision]));
+const chainDecisionById = new Map(chainDecisions.map((decision) => [decision.cmsChainId, decision]));
+const decisionDate = (decision: Decision) => decision.decidedOn ?? decision.proposedOn ?? "";
+for (const decision of [...decisions, ...chainDecisions]) {
+  const name = "operatorName" in decision ? decision.operatorName : undefined;
+  if (name && !isPublishable(name)) throw new Error(`Review decision names an unpublishable operator: ${name}`);
+}
 
 const operators = new Map<string, Operator>();
 const links: Link[] = [];
@@ -250,8 +275,14 @@ for (const facility of providers) {
   rows.push(facility);
   chainFacilities.set(facility.chain_id, rows);
 }
+const chainMerges: [string, Row[], ChainDecision][] = [];
 for (const [chainId, facilities] of chainFacilities) {
-  const chainName = facilities[0]?.chain_name ?? "";
+  const chainDecision = chainDecisionById.get(chainId);
+  if (chainDecision?.mergeIntoOperatorId) {
+    chainMerges.push([chainId, facilities, chainDecision]);
+    continue;
+  }
+  const chainName = chainDecision?.operatorName ?? facilities[0]?.chain_name ?? "";
   const operatorId = `ga-op-chain-${chainId}`;
   const publishable = isPublishable(chainName);
   if (!publishable) {
@@ -272,7 +303,11 @@ for (const [chainId, facilities] of chainFacilities) {
       {
         operatorId,
         name: publishable ? chainName : `CMS chain ${chainId} ${WITHHELD}`,
-        nameSource: publishable ? `${PROVIDER}.chain_name` : `${PROVIDER}.chain_id (chain_name withheld)`,
+        nameSource: chainDecision?.operatorName
+          ? `review-decisions.json chain decision for ${chainId} (chain_name withheld)`
+          : publishable
+            ? `${PROVIDER}.chain_name`
+            : `${PROVIDER}.chain_id (chain_name withheld)`,
         resolutionRule: "chain_id",
         status: "resolved",
         cmsChainId: chainId,
@@ -285,22 +320,59 @@ for (const [chainId, facilities] of chainFacilities) {
   }
 }
 
-// Approved review decisions place a facility under an operator the rules already built.
-for (const facility of providers) {
-  const decision = decisionByCcn.get(ccnOf(facility));
-  if (!decision || facility.chain_id) continue;
-  const target = operators.get(decision.operatorId);
-  if (!target) throw new Error(`Review decision for ${decision.ccn} names unknown operator ${decision.operatorId}`);
+// A chain merge decision places every facility of a CMS chain under another chain's operator.
+for (const [chainId, facilities, decision] of chainMerges) {
+  const target = operators.get(decision.mergeIntoOperatorId!);
+  if (!target) throw new Error(`Chain decision for ${chainId} names unknown operator ${decision.mergeIntoOperatorId}`);
   const { georgiaFacilityCount: _count, facilityCcns: _ccns, ...operator } = target;
+  for (const facility of facilities) {
+    attach(
+      operator,
+      facility,
+      `chain decision for ${chainId}`,
+      target.operatorId,
+      { ...provider, retrievedOn: decisionDate(decision) },
+      "review-decisions.json",
+    );
+    links[links.length - 1]!.resolutionRule = "review_decision";
+  }
+}
+
+// Review decisions place a facility under an operator. Decisions whose operator the rules
+// have not built yet wait until rules 2 and 3 have run.
+const deferredDecisions: [Row, FacilityDecision][] = [];
+function applyDecision(facility: Row, decision: FacilityDecision, final: boolean) {
+  const target = operators.get(decision.operatorId);
+  if (!target && !final) return false;
+  if (!target && !decision.operatorName) {
+    throw new Error(`Review decision for ${decision.ccn} names unknown operator ${decision.operatorId}`);
+  }
+  const operator = target
+    ? (({ georgiaFacilityCount: _count, facilityCcns: _ccns, ...rest }) => rest)(target)
+    : {
+        operatorId: decision.operatorId,
+        name: decision.operatorName!,
+        nameSource: `review-decisions.json decision for ${decision.ccn}`,
+        resolutionRule: "review_decision" as const,
+        status: "resolved" as const,
+        cmsChainId: null,
+        cmsChainFacilitiesNationwide: null,
+      };
   attach(
     operator,
     facility,
     `decision for ${decision.ccn}`,
     decision.operatorId,
-    { ...provider, cmsModified: provider.cmsModified, retrievedOn: decision.decidedOn },
+    { ...provider, retrievedOn: decisionDate(decision) },
     "review-decisions.json",
   );
   links[links.length - 1]!.resolutionRule = "review_decision";
+  return true;
+}
+for (const facility of providers) {
+  const decision = decisionByCcn.get(ccnOf(facility));
+  if (!decision || facility.chain_id) continue;
+  if (!applyDecision(facility, decision, false)) deferredDecisions.push([facility, decision]);
 }
 
 // Rules 2 and 3 for facilities outside a CMS chain.
@@ -369,6 +441,8 @@ for (const facility of providers) {
   });
 }
 
+for (const [facility, decision] of deferredDecisions) applyDecision(facility, decision, true);
+
 // An operator is provisional while any of its facilities awaits review.
 for (const link of links) {
   if (link.status === "provisional") operators.get(link.operatorId)!.status = "provisional";
@@ -404,9 +478,11 @@ const generatedFrom = {
 const write = (file: string, key: string, value: unknown) =>
   writeFile(resolve(sampleRoot, file), `${JSON.stringify({ generatedFrom, [key]: value }, null, 2)}\n`, "utf8");
 
-await write("operators.json", "operators", operatorList);
-await write("facility-operator-links.json", "links", links);
-await write("operator-review.json", "reviewCases", reviewCases);
+if (!includeProposed) {
+  await write("operators.json", "operators", operatorList);
+  await write("facility-operator-links.json", "links", links);
+  await write("operator-review.json", "reviewCases", reviewCases);
+}
 
 const byRule = (rule: Rule) => operatorList.filter((operator) => operator.resolutionRule === rule);
 process.stdout.write(
