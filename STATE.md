@@ -26,7 +26,7 @@ Do not derive ICP hypotheses, tune score weights, or size the market from `inspe
 ## Blockers
 
 - Milestone 3 live acceptance needs the user's Developer Edition org, the Site custom object, and a read-only integration user and app. The milestone note lists each step.
-- Branch integration: GitHub `main` is behind. The working trunk is `docs/parallel-tracks-decisions` in the main checkout, and the branches above fork from it. Merging into `main` and pushing need the user's approval.
+- Branch integration: on 2026-10-20 the user had every branch merged. Local `main` matches the trunk `docs/parallel-tracks-decisions`, but nothing is pushed, so GitHub `main` is still behind. Pushing needs the user's approval.
 - The remote branch `origin/claude/tender-tesla-9lfwvn` proposes Supabase without Railway and reuses decision numbers 0003 and 0004 for different decisions. It is not part of the plan; ignore it until the user decides whether to delete it.
 
 ## Immediate next work

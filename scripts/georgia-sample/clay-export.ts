@@ -53,9 +53,9 @@ const inScope = tiers
   .sort((a, b) => BAND_ORDER.indexOf(a.band!) - BAND_ORDER.indexOf(b.band!) || b.score - a.score);
 
 const csv = (rows: Record<string, string | number>[]) => {
-  const columns = Object.keys(rows[0]);
+  const columns = Object.keys(rows[0] ?? {});
   const cell = (value: string | number) => (/[",\n]/.test(String(value)) ? `"${String(value).replace(/"/g, '""')}"` : String(value));
-  return [columns.join(","), ...rows.map((row) => columns.map((column) => cell(row[column])).join(","))].join("\n") + "\n";
+  return [columns.join(","), ...rows.map((row) => columns.map((column) => cell(row[column] ?? "")).join(","))].join("\n") + "\n";
 };
 
 const operatorRows: Record<string, string | number>[] = [];

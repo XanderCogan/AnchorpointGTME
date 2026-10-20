@@ -49,7 +49,7 @@ export const parseCsv = (text: string): Row[] => {
   }
   if (field || record.length) record.push(field), records.push(record);
   const [header, ...body] = records.filter((item) => item.some((value) => value.trim() !== ""));
-  return body.map((values) => Object.fromEntries(header.map((column, index) => [column.trim(), (values[index] ?? "").trim()])));
+  return body.map((values) => Object.fromEntries((header ?? []).map((column, index) => [column.trim(), (values[index] ?? "").trim()])));
 };
 
 const truthy = (value: string | undefined) => ["true", "yes", "1"].includes((value ?? "").toLowerCase());
@@ -180,7 +180,7 @@ export const reduce = (input: { operatorsIn: Row[]; sitesIn: Row[]; operatorsOut
 // "not searched". Every exported table must carry each slot's searched and found columns.
 export const missingReductionColumns = (rows: Row[], slots: readonly string[]) => {
   if (rows.length === 0) return [];
-  const columns = new Set(Object.keys(rows[0]));
+  const columns = new Set(Object.keys(rows[0]!));
   return slots.flatMap((slot) => [`${slot}__searched`, `${slot}__found`]).filter((column) => !columns.has(column));
 };
 
@@ -189,14 +189,14 @@ export const coverageSummary = (output: ReturnType<typeof reduce>) => {
   const rows = [...output.operators, ...output.sites] as { slots: Record<string, SlotResult> }[];
   return [...OPERATOR_SLOTS, ...SITE_SLOTS].map((slot) => {
     const searched = rows.filter((row) => row.slots[slot]?.searched);
-    const found = searched.filter((row) => row.slots[slot].peopleFound > 0);
+    const found = searched.filter((row) => row.slots[slot]!.peopleFound > 0);
     return `${slot}: ${found.length} of ${searched.length} searched rows found a person (${searched.length ? Math.round((found.length / searched.length) * 100) : 0}%)`;
   });
 };
 
 const arg = (name: string, fallback: string) => {
   const index = process.argv.indexOf(`--${name}`);
-  return resolve(index > -1 ? process.argv[index + 1] : fallback);
+  return resolve((index > -1 ? process.argv[index + 1] : undefined) ?? fallback);
 };
 
 if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
@@ -211,7 +211,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     console.error(`${message}\nSee "Runbook: when Clay is connected" in docs/research/georgia-clay-people-pass.md.`);
     process.exit(1);
   };
-  for (const [dir, file] of [[inputDir, "operators.csv"], [exportDir, "run.json"]]) {
+  for (const [dir, file] of [[inputDir, "operators.csv"], [exportDir, "run.json"]] as const) {
     await readFile(resolve(dir, file)).catch(() => setupProblem(`Missing ${resolve(dir, file)}.`));
   }
   const missing = [
