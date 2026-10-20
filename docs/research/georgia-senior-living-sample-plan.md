@@ -92,7 +92,7 @@ Assumptions recorded in the output: Georgia licenses are company-wide, so Greenv
 
 ### Stage 4: first run of the public-data signals, 2026-10-19
 
-`scripts/georgia-sample/signals.ts` writes `data/georgia-sample/signals.json` with per-facility evidence and an operator rollup. The Serper part of this stage, operator domains and job postings, has not run. It needs a Serper API key, which the user must create.
+`scripts/georgia-sample/signals.ts` writes `data/georgia-sample/signals.json` with per-facility evidence and an operator rollup. The Serper part of this stage is recorded in the next section.
 
 Tag mapping. Thirteen Life Safety Code tags map to the five catalog lines. Each was confirmed against `tagd-9999`, and the output records its CMS wording.
 
@@ -111,6 +111,25 @@ Results from 3,482 Georgia fire safety citations:
 - Only 8 service-line citations lack a correction date, so correction status carries little signal in Georgia.
 - 41 facilities show an ownership or partnership interest dated within the 24 months before retrieval, or the CMS change-of-ownership flag. 20 show a new management organization. Individuals with managerial control are excluded, because their dates mostly track administrator turnover; including them had flagged 138 facilities.
 - Of the 88 operators in the serviceable or conditional footprint, 82 have service-line citations, 59 have recent ones, 13 have an ownership change, and 7 a management change.
+
+### Stage 4: Serper domain and job lookups, 2026-10-19
+
+`scripts/georgia-sample/serper-lookups.ts` writes `data/georgia-sample/web-signals.json`. The run used about 250 of Serper's 2,500 free queries, a figure confirmed on serper.dev on 2026-10-19, including tuning. Serviceable operators ran first, and raw responses are cached in the gitignored raw folder, so reruns cost nothing. Multi-site, chain, and managing-organization operators were searched by name. Single-site operators were searched by facility name and city.
+
+Domains for all 128 operators:
+
+- 30 are name matches: the host spells out the operator's or facility's leading name words and includes a distinctive word, such as beaconhealthmanagement.com or agrhodes.org.
+- 24 are word matches: the host shares one distinctive word and the result places itself in Georgia or a facility city. Most are right, such as archbold.org for Grady General, but these need a glance before use.
+- 74 have no confirmed domain. Their top remaining result is kept only as a `candidateDomain` hint, usually an aggregator.
+- Among the 88 operators in the footprint, 24 have name matches and 14 word matches.
+- Tuning lessons: quoting the name in the query hurt results; a single shared word is not enough without a place check; and a domain matched by two operators, such as a Life Care careers site, identifies neither.
+
+Job postings for the 88 footprint operators:
+
+- 10 operators have posting candidates: single job pages whose title names a maintenance, facilities, or plant operations role and whose title or address names the operator. Search, salary, and review pages are excluded.
+- Search cannot confirm a posting is open or for the right facility. A PruittHealth Fort Oglethorpe posting attaches to several PruittHealth sites. Treat this as a weak signal.
+
+Stage 2 finding from these lookups: several of the 18 facilities with no CMS legal name are named for CMS chains and hiring under them. They include "PruittHealth - Lithonia" and "Pine Knoll Path of Journey". They belong in review as probable members of chains 434 (PruittHealth) and 766 (Journey) rather than standalone operators.
 
 ### Stage 5: tiering (free)
 
