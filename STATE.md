@@ -32,7 +32,7 @@ Vercel serves the production interface at `https://anchorpoint-gtme.vercel.app`,
 
 ## Immediate work
 
-Milestone 2 has no remaining implementation or preview blocker. All four decisions required before ICP, TAM, or enrichment work were approved on 2026-10-19. Decision 0008 originally ran the next work as two parallel tracks. On 2026-10-20 the user cancelled Track A, the synthetic historical fixture, because a real-data TAM is the portfolio's centerpiece; its branch was deleted unmerged. Track B, the first Georgia market sample under decision 0007, is the active work. Each decision's open items are settled when that work reaches them.
+Milestone 2 has no remaining implementation or preview blocker. All four decisions required before ICP, TAM, or enrichment work were approved on 2026-10-19. Decision 0008 originally ran the next work as two parallel tracks. On 2026-10-20 the user cancelled Track A, the synthetic historical fixture, because a real-data TAM is the portfolio's centerpiece; its branch was deleted unmerged. Track B, the first Georgia market sample under decision 0007, is the active work. Each decision's open items are settled when that work reaches them. On 2026-10-20 the user approved tiering proposal 2 and the account value model in `docs/decisions/0009-account-value-model.md`. Parallel work now covers the value model in code, the operator review cases, the Stage 6 Clay table design, and Milestone 3 groundwork for the read-only Salesforce connector.
 
 ## Decisions resolved before ICP, TAM, or enrichment work
 

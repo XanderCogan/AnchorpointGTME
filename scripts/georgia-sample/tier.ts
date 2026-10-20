@@ -17,7 +17,7 @@ const sampleRoot = resolve(projectRoot, "data/georgia-sample");
 const read = async <T>(file: string) => JSON.parse(await readFile(resolve(sampleRoot, file), "utf8")) as T;
 
 const CONTRACT = "account-score-v1.1";
-const PROPOSAL_VERSION = "georgia-account-proposal-1";
+const PROPOSAL_VERSION = "georgia-account-proposal-2";
 
 // Every value below is a proposal awaiting user approval. The contract caps are noted.
 const PROPOSAL = {
@@ -30,6 +30,9 @@ const PROPOSAL = {
   regulatedEnvironment: { max: 5 }, // CMS-certified nursing home
   citationBreadth: { max: 10 }, // share of in-footprint facilities with a service-line citation since 2025
   citationRepetition: { max: 5 }, // share with sprinkler or alarm cited on more than one survey
+  // Both citation shares are pulled toward the statewide footprint rate, as if each operator also had
+  // this many average facilities, so one cited building no longer earns full credit.
+  citationShrinkFacilities: 2,
   // Data confidence, cap 10 (persona and channel need people data).
   domain: { nameMatch: 2, wordMatch: 1 },
   geography: { serviceable: 2, conditional: 1 },
@@ -76,12 +79,25 @@ const jobsOf = new Map(web.jobs.map((job) => [job.operatorId, job]));
 
 type Component = { points: number; max: number; input: string; source: string; proposal: boolean };
 
+const anchorState = (facility: ServiceFacility) => {
+  const states = [facility.lines.sprinkler_itm?.state, facility.lines.fire_alarm_itm?.state];
+  return states.includes("serviceable") ? "serviceable" : states.includes("conditional") ? "conditional" : "not_serviceable";
+};
+const isRecentlyCited = (signal: SignalFacility) => signal.recentServiceLineCitations > 0;
+const isRepeated = (signal: SignalFacility) => Boolean(signal.lines.sprinkler_itm?.repeated || signal.lines.fire_alarm_itm?.repeated);
+
+// Statewide rates across every in-footprint facility, used as the prior for the citation shares.
+const footprintSignals = serviceability.facilities
+  .filter((facility) => facility.operatorId !== null && anchorState(facility) !== "not_serviceable")
+  .map((facility) => signalOf.get(facility.ccn))
+  .filter((item): item is SignalFacility => Boolean(item));
+const recentRate = footprintSignals.filter(isRecentlyCited).length / footprintSignals.length;
+const repeatedRate = footprintSignals.filter(isRepeated).length / footprintSignals.length;
+const shrunkShare = (hits: number, n: number, rate: number) =>
+  (hits + PROPOSAL.citationShrinkFacilities * rate) / (n + PROPOSAL.citationShrinkFacilities);
+
 const results = operators.map((operator) => {
   const facilities = serviceability.facilities.filter((facility) => facility.operatorId === operator.operatorId);
-  const anchorState = (facility: ServiceFacility) => {
-    const states = [facility.lines.sprinkler_itm?.state, facility.lines.fire_alarm_itm?.state];
-    return states.includes("serviceable") ? "serviceable" : states.includes("conditional") ? "conditional" : "not_serviceable";
-  };
   const inFootprint = facilities.filter((facility) => anchorState(facility) !== "not_serviceable");
   const serviceableCount = facilities.filter((facility) => anchorState(facility) === "serviceable").length;
 
@@ -165,20 +181,21 @@ const results = operators.map((operator) => {
     source: "4pq5-n9py",
     proposal: true,
   };
-  const recentShare = facilitySignals.filter((signal) => signal.recentServiceLineCitations > 0).length / n;
+  const recentHits = facilitySignals.filter(isRecentlyCited).length;
+  const recentShare = shrunkShare(recentHits, n, recentRate);
   components.citationBreadth = {
     points: round(PROPOSAL.citationBreadth.max * recentShare),
     max: PROPOSAL.citationBreadth.max,
-    input: `${Math.round(recentShare * 100)}% of footprint facilities cited for a service line since 2025`,
+    input: `${recentHits} of ${n} footprint facilities cited for a service line since 2025; ${Math.round(recentShare * 100)}% after pulling toward the ${Math.round(recentRate * 100)}% statewide rate`,
     source: "ifjz-ge4w via signals.json",
     proposal: true,
   };
-  const repeatedShare =
-    facilitySignals.filter((signal) => signal.lines.sprinkler_itm?.repeated || signal.lines.fire_alarm_itm?.repeated).length / n;
+  const repeatedHits = facilitySignals.filter(isRepeated).length;
+  const repeatedShare = shrunkShare(repeatedHits, n, repeatedRate);
   components.citationRepetition = {
     points: round(PROPOSAL.citationRepetition.max * repeatedShare),
     max: PROPOSAL.citationRepetition.max,
-    input: `${Math.round(repeatedShare * 100)}% of footprint facilities with sprinkler or alarm cited on more than one survey`,
+    input: `${repeatedHits} of ${n} footprint facilities with sprinkler or alarm cited on more than one survey; ${Math.round(repeatedShare * 100)}% after pulling toward the ${Math.round(repeatedRate * 100)}% statewide rate`,
     source: "ifjz-ge4w via signals.json",
     proposal: true,
   };

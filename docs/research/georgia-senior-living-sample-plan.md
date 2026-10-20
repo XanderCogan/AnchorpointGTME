@@ -149,21 +149,22 @@ Approved review decisions live in `data/georgia-sample/review-decisions.json`, a
 
 `npm run sample:georgia` reruns resolution, serviceability, signals, Serper lookups, and tiering from the raw data, with OSRM and Serper served from cache. `npm run sample:georgia:pull` refreshes the CMS pull separately.
 
-### Stage 5: tiering proposal, 2026-10-20, awaiting approval
+### Stage 5: tiering, proposal 2 approved on 2026-10-20
 
-`scripts/georgia-sample/tier.ts` writes `data/georgia-sample/tiers.json`. It applies `account-score-v1.1`. Every value the contract leaves open sits in one labeled proposal block, `georgia-account-proposal-1`, and is marked as a proposal on each scored component until the user approves it.
+`scripts/georgia-sample/tier.ts` writes `data/georgia-sample/tiers.json`. It applies `account-score-v1.1`. Every value the contract leaves open sits in one labeled proposal block, now `georgia-account-proposal-2`, and is marked as a proposal on each scored component until the user approves it.
 
 - Hard gate: an operator needs one or more facilities serviceable or conditional for sprinkler or alarm work. 82 operators pass and 38 sit outside the footprint.
 - Change propensity, using 24 of 40 points. Ownership or management change gets up to 10 points, decaying over 24 months from the latest association date. Hiring gets up to 8: 4 for an undated posting candidate, more for a dated one decaying over 120 days. A service-line citation is proposed as the contract's "approved timely trigger", up to 6 points decaying over 24 months.
-- Operational need, 35 points. Footprint earns up to 15 on a smooth curve over facilities within 120 minutes of a capable branch, with no cutoffs. Every nursing home gets 5 for its regulated environment. Up to 10 go to the share of footprint facilities cited for a service line since 2025, and up to 5 to the share with repeated sprinkler or alarm citations.
+- Operational need, 35 points. Footprint earns up to 15 on a smooth curve over facilities within 120 minutes of a capable branch, with no cutoffs. Every nursing home gets 5 for its regulated environment. Up to 10 go to the share of footprint facilities cited for a service line since 2025, and up to 5 to the share with repeated sprinkler or alarm citations. Since proposal 2, both shares are pulled toward the statewide footprint rate, 68 percent cited since 2025 and 41 percent repeated, as if each operator also had two average facilities. One cited building now earns about three-quarters of the breadth points rather than all of them.
 - Data confidence, using 6 of 10 points. Domain earns 2 for a name match and 1 for a word match. Geography earns 2 if any facility is within 90 minutes, 1 if all are conditional. Location provenance earns 2 for a resolved operator, 1 for a provisional one.
 - People-based inputs score zero as unknown until Stage 6: role change (16), engagement (6, used by the citation trigger proposal), and persona and channel (4). Today's maximum is therefore 65 of 100.
-- Proposed bands on the raw score, after inspecting the distribution: A from 40, B from 30, C from 20. After the 2026-10-20 rerun with fire door and firestopping lines, that gives 5 A, 15 B, 38 C, and 24 Watch, with scores from 8 to 48.8 and a median of 26.3. The first run gave 5 A, 14 B, 35 C, and 28 Watch. Five operators moved up one band; band A is unchanged.
+- Proposed bands on the raw score, after inspecting the distribution: A from 40, B from 30, C from 20. After the 2026-10-20 rerun with fire door and firestopping lines, that gives 5 A, 15 B, 38 C, and 24 Watch, with scores from 8 to 48.8 and a median of 26.3. The first run gave 5 A, 14 B, 35 C, and 28 Watch. Five operators moved up one band; band A is unchanged. Proposal 2, run on 2026-10-20 at the user's direction to fix single-site inflation, gives 5 A, 11 B, 41 C, and 25 Watch, with scores from 14 to 49 and a median of 23.3. Four operators moved from B to C and one from C to Watch; band A is unchanged.
 - Band A: PruittHealth, Journey Healthcare, Harborview Health Systems, Empire Care Centers, and Ethica Health.
 
 Known effects to weigh before approval:
 
-- Citation scores are shares, so a single-site operator with one recent citation earns the full 15 citation points. That lifts many single-site operators into band C, where 31 of 35 operators are single-site.
+- Proposal 1 scored citations as raw shares, so a single-site operator with one recent citation earned the full 15 citation points. Proposal 2 fixes that. Single-site operators still make up 34 of 41 in band C, because there are 58 of them and they cluster between 20 and 27 points. None reaches band B.
+- The score has no account-value input. It cannot yet say whether a 63-facility chain is worth more than its harder sale, or whether a small operator close to a branch is worth taking. The value model approved in `docs/decisions/0009-account-value-model.md` adds it beside the score.
 - Larger chains have more chances to show an ownership change at some facility.
 - 20 eligible operators are provisional, pending manual review.
 - A Serper result during domain lookup suggested a Chapter 7 bankruptcy case for C. Ross Management. It is unverified and not scored, because the contract allows only inputs that are captured with a source.
