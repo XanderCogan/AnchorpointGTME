@@ -77,7 +77,7 @@ Decision 0007 asks for email-verification rates on a capped subset, not for emai
 The role map follows decision 0007's buyer roles and maps each to an approved persona in `docs/contracts/operating-contract.md`. Person-relevance points stay inside the scoring contract's existing caps: up to 8 for direct functional ownership, 5 for regional, budget, vendor, or implementation influence, and 2 for an adjacent role with a credible path to the owner. The split per slot is a proposal.
 
 - Regional or corporate maintenance, facilities, or plant operations director, at the operator: Regional Facilities Manager, or Vice President or Director of Facilities when the title is corporate. Proposed 13 of 15: 8 direct ownership and 5 regional influence.
-- Regional or corporate vice president of operations, at the operator: Senior-Living Operations Leader, a provisional persona added to the operating contract on 2026-10-20. Proposed 7: 5 influence and 2 adjacent.
+- Regional or corporate vice president of operations, at the operator: Senior-Living Operations Leader, a provisional persona added to the operating contract on 2026-10-20. Treated as the economic buyer rather than the first contact, decided by the user on 2026-10-20. When no regional facilities person is found at an operator, the operations leader becomes the first contact. This is a routing rule and changes no points. Proposed 7: 5 influence and 2 adjacent.
 - Maintenance director, at the site: Director of Property Operations, as its site-level holder. Proposed 10: 8 direct ownership and 2 implementation influence.
 - Executive director or administrator, at the site: Site Administrator, a provisional persona added to the operating contract on 2026-10-20. Proposed 7: 5 influence and 2 adjacent.
 

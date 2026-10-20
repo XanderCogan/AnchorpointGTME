@@ -43,7 +43,8 @@
         "roleChange",
         "personRelevance",
         "personaAndChannel"
-      ]
+      ],
+      "buyingRole": "champion and first contact"
     },
     {
       "id": "operator_operations_vp",
@@ -79,7 +80,9 @@
         "roleChange",
         "personRelevance",
         "personaAndChannel"
-      ]
+      ],
+      "buyingRole": "economic buyer",
+      "firstContactWhen": "no verified operator_regional_facilities person is found at the operator"
     },
     {
       "id": "site_maintenance_director",
