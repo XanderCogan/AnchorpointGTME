@@ -1,16 +1,12 @@
 # Portco Launch Control
 
-Portco Launch Control is an Apero-style GTM engineering portfolio project built around the fictional client Anchorpoint Fire & Safety. It audits HubSpot with deterministic rules, prepares bounded records for enrichment, ranks accounts and people with explainable evidence, requires human approval, routes approved contacts to Lemlist or TitanX, and returns outcomes to HubSpot and a rep work queue.
+Portco Launch Control is an Apero-style GTM engineering portfolio project built around the fictional client Anchorpoint Fire & Safety. It maps a real market into Salesforce accounts and sites, audits CRM health with deterministic rules, prepares bounded records for enrichment, ranks accounts and people with explainable evidence, requires human approval, routes approved contacts to Lemlist or TitanX, and returns outcomes to Salesforce and a rep work queue.
 
 The system is intentionally gated and read-only at its current stage. No live credentials or external connectors exist.
 
-## Portfolio audience
+## Portfolio context
 
-This project is being built as a hiring portfolio project for Apero Advisors. Its primary audience is Benyamin Holley, Apero's Head of GTM. Michael Slawson is Apero's founder and President & CEO.
-
-Anchorpoint Fire & Safety is fictional. The project should nevertheless demonstrate the kind of market construction, CRM and revenue-systems work, outbound infrastructure, and operating handoff that Apero performs for growth private-equity-backed operators. Synthetic Anchorpoint history must be deliberately ordinary and evidence-shaped rather than optimized to make the project look unusually successful.
-
-The intended outcome is to earn a serious conversation about working with and learning from Apero by showing practical GTM-engineering judgment, not merely by expressing interest. The durable audience, motivation, and evaluation standard are recorded in [`docs/research/apero-portfolio-context.md`](docs/research/apero-portfolio-context.md).
+This is a GTM engineering work sample for Apero Advisors. Anchorpoint Fire & Safety is a fictional client; the market data it targets is real and sourced. The project shows the market construction, CRM, outbound, and handoff work Apero does for private-equity-backed operators. Context and evaluation criteria are in [`docs/research/apero-portfolio-context.md`](docs/research/apero-portfolio-context.md).
 
 ## Current position
 
@@ -19,14 +15,14 @@ The intended outcome is to earn a serious conversation about working with and le
 - Milestone 2 is complete, with the preview deployed on Vercel and Railway.
 - The current application is a read-only Next.js findings board backed by the frozen `inspection-v1` fixture and the deterministic audit engine.
 - The fixture proves CRM audit behavior. It is not valid evidence for ICP discovery, score calibration, or TAM sizing.
-- Later Anchorpoint history must be benchmarked against real regional service-company evidence before generation. The target is a plausible, unexceptional PE-backed operator—not an idealized company or a collection of convenient demo outcomes.
+- Later Anchorpoint history must be benchmarked against real regional service-company evidence before generation. The target is a plausible, unexceptional PE-backed operator, not an idealized company or a collection of convenient demo outcomes.
 
 Read [`STATE.md`](STATE.md) for the current gate, active decisions, and immediate next work. Use [`docs/README.md`](docs/README.md) to jump directly to the authoritative document for a specific question. Do not read the entire documentation set by default.
 
 ## Product flow
 
 ```text
-HubSpot and operating-system data
+Salesforce and operating-system data
   -> deterministic CRM health audit
   -> historical customer and deal analysis
   -> ICP hypotheses and external market construction
@@ -34,7 +30,7 @@ HubSpot and operating-system data
   -> explainable ranking and play table
   -> human approval
   -> Lemlist or TitanX
-  -> outcomes in HubSpot and the rep work queue
+  -> outcomes in Salesforce and the rep work queue
 ```
 
 ## Repository shape

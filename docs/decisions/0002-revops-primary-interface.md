@@ -32,7 +32,7 @@ A CRO-primary interface would overemphasize aggregate reporting before the opera
 - Executive summaries remain compact and do not displace the operator workflow.
 - The Milestone 5 play table and approval workflow serve sales managers.
 - The Milestone 8 work queue serves business-development or service-sales representatives.
-- HubSpot remains the operational CRM rather than being replaced by this application.
+- The operational CRM (Salesforce under decision 0005; HubSpot for the frozen `inspection-v1` fixture) remains the system of record rather than being replaced by this application.
 - The demo narrative begins with post-acquisition commercial standardization, then shows safe outbound enablement and handoff.
 
 ## Implementation status
