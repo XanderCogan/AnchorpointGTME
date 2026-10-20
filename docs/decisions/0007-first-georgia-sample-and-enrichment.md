@@ -1,6 +1,6 @@
 # Decision 0007: First Georgia Segment Sample and Enrichment Budget
 
-Status: approved on 2026-10-19. Items listed under "Open within this decision" remain open. Amended on 2026-10-19: the user cut the enrichment budget from a $300 cap to $0, free tiers only. Amended on 2026-10-20: the user set the budget to $20 for Clay and $20 for one other service.
+Status: approved on 2026-10-19. Items listed under "Open within this decision" remain open. Amended on 2026-10-19: the user cut the enrichment budget from a $300 cap to $0, free tiers only. Amended on 2026-10-20: the user set the budget to $20 for Clay and $20 for one other service. Amended again on 2026-10-20: the project runs in one day, and the user will pay beyond the $20 Clay cap rather than wait for monthly free credits; each purchase is still confirmed with the user at the price shown.
 
 Date: 2026-10-19  
 Decision owner: User  
@@ -53,7 +53,7 @@ Signals for ongoing monitoring are limited to fire safety citations, relevant ro
 
 - The cap is $40: up to $20 on Clay and up to $20 on one other service of the project's choice. Public data and free tiers are used first, and paid spend starts only when a free tier runs out. Each purchase is confirmed with the user before it is made.
 - Serper: the free allowance first, spent on operator domains and parent-site confirmation, then on job postings if allowance remains.
-- Clay: the free plan first, to prove the table design, then up to $20 of paid credit for the people pass on qualified accounts. Phone enrichment is excluded.
+- Clay: the free plan first, to prove the table design, then up to $20 of paid credit for the people pass on qualified accounts. Phone enrichment is excluded. Amended 2026-10-20: because the project runs in one day, Clay spend may exceed $20 when the free plan cannot finish the pass, up to the cheaper of the needed top-ups or one Launch month, confirmed with the user before purchase. The plan is in `docs/research/georgia-clay-people-pass.md`.
 - The second $20 is unassigned. It goes to whichever single service the build shows needs it most, such as more search queries or email verification, and the choice is recorded here when made.
 - When a free tier and its paid cap are both used up, the sample stops that pass and reports how many accounts it covered, rather than spending more. A smaller people pass with honest coverage rates is an acceptable result.
 - Bulk database exports from contact-data vendors are excluded. The method is the point.

@@ -21,13 +21,29 @@
         "director of environmental services",
         "director of life safety"
       ],
-      "titleExclude": ["intern", "assistant", "coordinator", "housekeeping", "sales", "recruiter"],
+      "titleExclude": [
+        "intern",
+        "assistant",
+        "coordinator",
+        "housekeeping",
+        "sales",
+        "recruiter"
+      ],
       "maxPeople": 2,
       "persona": "Regional Facilities Manager",
       "personaAlternate": "Vice President or Director of Facilities, when the title is corporate rather than regional",
-      "personRelevanceProposal": { "directOwnership": 8, "influence": 5, "adjacent": 0, "total": 13 },
+      "personRelevanceProposal": {
+        "directOwnership": 8,
+        "influence": 5,
+        "adjacent": 0,
+        "total": 13
+      },
       "influenceEvidence": "regional or corporate scope in the title",
-      "fills": ["roleChange", "personRelevance", "personaAndChannel"]
+      "fills": [
+        "roleChange",
+        "personRelevance",
+        "personaAndChannel"
+      ]
     },
     {
       "id": "operator_operations_vp",
@@ -40,13 +56,30 @@
         "chief operating officer",
         "senior vice president of operations"
       ],
-      "titleExclude": ["clinical", "nursing", "revenue", "sales", "marketing", "finance", "assistant"],
+      "titleExclude": [
+        "clinical",
+        "nursing",
+        "revenue",
+        "sales",
+        "marketing",
+        "finance",
+        "assistant"
+      ],
       "maxPeople": 2,
-      "persona": "Director of Property Operations",
-      "personaMappingConfidence": "needs review: operations leaders own budgets and vendors across a region but not facilities directly",
-      "personRelevanceProposal": { "directOwnership": 0, "influence": 5, "adjacent": 2, "total": 7 },
+      "persona": "Senior-Living Operations Leader (provisional)",
+      "personaMappingConfidence": "provisional persona added 2026-10-20; review after Stage 6 titles are seen",
+      "personRelevanceProposal": {
+        "directOwnership": 0,
+        "influence": 5,
+        "adjacent": 2,
+        "total": 7
+      },
       "influenceEvidence": "regional or corporate operations scope in the title",
-      "fills": ["roleChange", "personRelevance", "personaAndChannel"]
+      "fills": [
+        "roleChange",
+        "personRelevance",
+        "personaAndChannel"
+      ]
     },
     {
       "id": "site_maintenance_director",
@@ -61,13 +94,28 @@
         "facilities director",
         "maintenance manager"
       ],
-      "titleExclude": ["regional", "assistant", "technician", "housekeeping", "laundry"],
+      "titleExclude": [
+        "regional",
+        "assistant",
+        "technician",
+        "housekeeping",
+        "laundry"
+      ],
       "maxPeople": 1,
       "persona": "Director of Property Operations",
       "personaMappingConfidence": "site-level holder of the property-operations persona",
-      "personRelevanceProposal": { "directOwnership": 8, "influence": 2, "adjacent": 0, "total": 10 },
+      "personRelevanceProposal": {
+        "directOwnership": 8,
+        "influence": 2,
+        "adjacent": 0,
+        "total": 10
+      },
       "influenceEvidence": "implementation influence at one site; regional or budget influence only with recorded evidence",
-      "fills": ["roleChange", "personRelevance", "personaAndChannel"]
+      "fills": [
+        "roleChange",
+        "personRelevance",
+        "personaAndChannel"
+      ]
     },
     {
       "id": "site_executive_director",
@@ -79,15 +127,47 @@
         "nursing home administrator",
         "licensed nursing home administrator"
       ],
-      "titleExclude": ["assistant", "admissions", "medical director", "director of nursing", "activities", "business office", "regional", "intern"],
+      "titleExclude": [
+        "assistant",
+        "admissions",
+        "medical director",
+        "director of nursing",
+        "activities",
+        "business office",
+        "regional",
+        "intern"
+      ],
       "maxPeople": 1,
-      "persona": "Compliance or Risk leader with facilities responsibility",
-      "personaMappingConfidence": "needs review: the administrator is accountable for survey compliance and signs off site vendors, but does not own facilities work",
-      "personRelevanceProposal": { "directOwnership": 0, "influence": 5, "adjacent": 2, "total": 7 },
+      "persona": "Site Administrator (provisional)",
+      "personaMappingConfidence": "provisional persona added 2026-10-20; review after Stage 6 titles are seen",
+      "personRelevanceProposal": {
+        "directOwnership": 0,
+        "influence": 5,
+        "adjacent": 2,
+        "total": 7
+      },
       "influenceEvidence": "site budget and vendor approval held by the licensed administrator",
-      "fills": ["roleChange", "personRelevance", "personaAndChannel"]
+      "fills": [
+        "roleChange",
+        "personRelevance",
+        "personaAndChannel"
+      ]
     }
   ],
-  "tenureBands": ["under_6_months", "6_to_12_months", "12_to_24_months", "over_24_months", "unknown"],
-  "channelMethods": ["clay_email_waterfall_validated", "not_checked", "not_found", "found_not_valid"]
+  "tenureBands": {
+    "storedIn": "data/georgia-sample/private/ only",
+    "values": [
+      "under_6_months",
+      "6_to_12_months",
+      "12_to_24_months",
+      "over_24_months",
+      "unknown"
+    ]
+  },
+  "channelMethods": [
+    "clay_email_waterfall_validated",
+    "not_checked",
+    "not_found",
+    "found_not_valid"
+  ]
 }

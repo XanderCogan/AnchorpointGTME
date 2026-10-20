@@ -2,57 +2,181 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "georgia-sample/people-coverage.schema.json",
   "title": "Georgia Clay people pass: committed coverage",
-  "description": "The only shape Stage 6 results may take in the public repository. Every object forbids extra properties, and no property holds free text, so names, titles, profile links, emails, and phones cannot be committed through this file.",
+  "description": "The only shape Stage 6 results may take in the public repository. Every object forbids extra properties, and no property holds free text, so names, titles, profile links, emails, and phones cannot be committed through this file. Tenure is committed only as account-level role-change points with a generic reason.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["roleMapVersion", "clayRunDates", "retrievedOn", "credits", "stoppedBecause", "operators", "sites"],
+  "required": [
+    "roleMapVersion",
+    "clayRunDates",
+    "retrievedOn",
+    "credits",
+    "stoppedBecause",
+    "operators",
+    "sites"
+  ],
   "properties": {
-    "roleMapVersion": { "const": "georgia-clay-role-map-1" },
-    "clayRunDates": { "type": "array", "items": { "type": "string", "format": "date" } },
-    "retrievedOn": { "type": "string", "format": "date" },
+    "roleMapVersion": {
+      "const": "georgia-clay-role-map-1"
+    },
+    "clayRunDates": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "date"
+      }
+    },
+    "retrievedOn": {
+      "type": "string",
+      "format": "date"
+    },
     "credits": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["freeDataCreditsUsed", "paidDataCreditsUsed", "actionsUsed", "paidUsd"],
+      "required": [
+        "freeDataCreditsUsed",
+        "paidDataCreditsUsed",
+        "actionsUsed",
+        "paidUsd"
+      ],
       "properties": {
-        "freeDataCreditsUsed": { "type": "number", "minimum": 0 },
-        "paidDataCreditsUsed": { "type": "number", "minimum": 0 },
-        "actionsUsed": { "type": "integer", "minimum": 0 },
-        "paidUsd": { "type": "number", "minimum": 0, "maximum": 20 }
+        "freeDataCreditsUsed": {
+          "type": "number",
+          "minimum": 0
+        },
+        "paidDataCreditsUsed": {
+          "type": "number",
+          "minimum": 0
+        },
+        "actionsUsed": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "paidUsd": {
+          "type": "number",
+          "minimum": 0
+        }
       }
     },
-    "stoppedBecause": { "enum": ["completed", "free_credits_exhausted", "paid_cap_reached", "row_limit", "user_stopped"] },
-    "operators": { "type": "array", "items": { "$ref": "#/$defs/operatorRow" } },
-    "sites": { "type": "array", "items": { "$ref": "#/$defs/siteRow" } }
+    "stoppedBecause": {
+      "enum": [
+        "completed",
+        "free_credits_exhausted",
+        "purchased_credits_exhausted",
+        "row_limit",
+        "user_stopped"
+      ]
+    },
+    "operators": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/operatorRow"
+      }
+    },
+    "sites": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/siteRow"
+      }
+    }
   },
   "$defs": {
     "slotResult": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["searched", "peopleFound", "personaVerified", "currentEmploymentVerified", "tenureBand", "channel"],
+      "required": [
+        "searched",
+        "peopleFound",
+        "personaVerified",
+        "currentEmploymentVerified",
+        "channel"
+      ],
       "properties": {
-        "searched": { "type": "boolean" },
-        "peopleFound": { "type": "integer", "minimum": 0, "maximum": 2 },
-        "personaVerified": { "type": "boolean" },
-        "currentEmploymentVerified": { "type": "boolean" },
-        "tenureBand": { "enum": ["under_6_months", "6_to_12_months", "12_to_24_months", "over_24_months", "unknown"] },
-        "channel": { "enum": ["clay_email_waterfall_validated", "not_checked", "not_found", "found_not_valid"] }
+        "searched": {
+          "type": "boolean"
+        },
+        "peopleFound": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 2
+        },
+        "personaVerified": {
+          "type": "boolean"
+        },
+        "currentEmploymentVerified": {
+          "type": "boolean"
+        },
+        "channel": {
+          "enum": [
+            "clay_email_waterfall_validated",
+            "not_checked",
+            "not_found",
+            "found_not_valid"
+          ]
+        }
       }
     },
     "operatorRow": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["operatorId", "band", "status", "slots"],
+      "required": [
+        "operatorId",
+        "band",
+        "status",
+        "slots"
+      ],
       "properties": {
-        "operatorId": { "type": "string", "pattern": "^ga-op-(chain|org|lbn|ccn)-[a-z0-9-]+$" },
-        "band": { "enum": ["A", "B", "C"] },
-        "status": { "enum": ["covered", "not_reached", "site_only"] },
+        "operatorId": {
+          "type": "string",
+          "pattern": "^ga-op-(chain|org|lbn|ccn)-[a-z0-9-]+$"
+        },
+        "band": {
+          "enum": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        "status": {
+          "enum": [
+            "covered",
+            "not_reached",
+            "site_only"
+          ]
+        },
         "slots": {
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "operator_regional_facilities": { "$ref": "#/$defs/slotResult" },
-            "operator_operations_vp": { "$ref": "#/$defs/slotResult" }
+            "operator_regional_facilities": {
+              "$ref": "#/$defs/slotResult"
+            },
+            "operator_operations_vp": {
+              "$ref": "#/$defs/slotResult"
+            }
+          }
+        },
+        "roleChange": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "points",
+            "reason"
+          ],
+          "description": "Account-level only. Per-person and per-site tenure stays in data/georgia-sample/private/.",
+          "properties": {
+            "points": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 16
+            },
+            "reason": {
+              "enum": [
+                "verified_facilities_leader_started_recently",
+                "verified_leader_started_recently",
+                "no_recent_start",
+                "unknown"
+              ]
+            }
           }
         }
       }
@@ -60,19 +184,52 @@
     "siteRow": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["ccn", "operatorId", "band", "wave", "status", "slots"],
+      "required": [
+        "ccn",
+        "operatorId",
+        "band",
+        "wave",
+        "status",
+        "slots"
+      ],
       "properties": {
-        "ccn": { "type": "string", "pattern": "^[0-9A-Z]{6}$" },
-        "operatorId": { "type": "string", "pattern": "^ga-op-(chain|org|lbn|ccn)-[a-z0-9-]+$" },
-        "band": { "enum": ["A", "B", "C"] },
-        "wave": { "enum": [1, 2] },
-        "status": { "enum": ["covered", "not_reached"] },
+        "ccn": {
+          "type": "string",
+          "pattern": "^[0-9A-Z]{6}$"
+        },
+        "operatorId": {
+          "type": "string",
+          "pattern": "^ga-op-(chain|org|lbn|ccn)-[a-z0-9-]+$"
+        },
+        "band": {
+          "enum": [
+            "A",
+            "B",
+            "C"
+          ]
+        },
+        "wave": {
+          "enum": [
+            1,
+            2
+          ]
+        },
+        "status": {
+          "enum": [
+            "covered",
+            "not_reached"
+          ]
+        },
         "slots": {
           "type": "object",
           "additionalProperties": false,
           "properties": {
-            "site_executive_director": { "$ref": "#/$defs/slotResult" },
-            "site_maintenance_director": { "$ref": "#/$defs/slotResult" }
+            "site_executive_director": {
+              "$ref": "#/$defs/slotResult"
+            },
+            "site_maintenance_director": {
+              "$ref": "#/$defs/slotResult"
+            }
           }
         }
       }

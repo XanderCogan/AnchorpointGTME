@@ -23,12 +23,12 @@ Inputs come from the approved tiering in `data/georgia-sample/tiers.json` (propo
 
 Rows run in band order A, then B, then C, highest score first inside a band.
 
-- Band A runs at full depth, decided by the user on 2026-10-20: all 5 operator rows and all 124 of their footprint sites. No per-operator site cap applies to band A.
-- Bands B and C then run their 15 multi-site operator rows and 96 sites. Whether B and C also run at full depth, or operators first and sites after, is open.
+- Every band runs at full depth: all 20 multi-site operator rows and all 220 footprint sites. The user set full depth for band A on 2026-10-20, and the one-day paid run below makes it affordable for B and C too.
+- Band A runs first: 5 operator rows and 124 sites. Then band B's 11 operators and 49 sites, then band C's 4 multi-site operators and 47 sites.
 
 Depth means every site and every role slot, not more detail about any person. The personal data boundary below is unchanged.
 
-Within an operator, sites are ranked by the most recent service-line citation in `signals.json`, ties broken by shorter drive time in `serviceability.json`, so the sites with a reason to talk come first. The `wave` field in the coverage schema records whether a site row ran in the first pass (1) or a later one (2).
+Within an operator, sites are ranked by the most recent service-line citation in `signals.json`, ties broken by shorter drive time in `serviceability.json`, so the sites with a reason to talk come first. The `wave` field in the coverage schema records whether a site row ran in the first paid or free batch (1) or a later one (2).
 
 A single-site operator has no regional layer, so its operator row is marked `site_only` and only its site row runs. If the CMS ownership data shows a separate management organization, that organization is a later candidate for an operator row, not part of this pass.
 
@@ -77,13 +77,13 @@ Decision 0007 asks for email-verification rates on a capped subset, not for emai
 The role map follows decision 0007's buyer roles and maps each to an approved persona in `docs/contracts/operating-contract.md`. Person-relevance points stay inside the scoring contract's existing caps: up to 8 for direct functional ownership, 5 for regional, budget, vendor, or implementation influence, and 2 for an adjacent role with a credible path to the owner. The split per slot is a proposal.
 
 - Regional or corporate maintenance, facilities, or plant operations director, at the operator: Regional Facilities Manager, or Vice President or Director of Facilities when the title is corporate. Proposed 13 of 15: 8 direct ownership and 5 regional influence.
-- Regional or corporate vice president of operations, at the operator: Director of Property Operations, flagged for review because operations leaders hold budgets and vendors but not facilities work. Proposed 7: 5 influence and 2 adjacent.
+- Regional or corporate vice president of operations, at the operator: Senior-Living Operations Leader, a provisional persona added to the operating contract on 2026-10-20. Proposed 7: 5 influence and 2 adjacent.
 - Maintenance director, at the site: Director of Property Operations, as its site-level holder. Proposed 10: 8 direct ownership and 2 implementation influence.
-- Executive director or administrator, at the site: Compliance or Risk leader with facilities responsibility, flagged for review because the administrator answers for survey compliance and approves site vendors but does not own facilities work. Proposed 7: 5 influence and 2 adjacent.
+- Executive director or administrator, at the site: Site Administrator, a provisional persona added to the operating contract on 2026-10-20. Proposed 7: 5 influence and 2 adjacent.
 
 Every slot fills the same three scoring inputs:
 
-- Role change, up to 16 under change propensity, from the current-role start date, reduced to a tenure band.
+- Role change, up to 16 under change propensity, from the current-role start date, reduced to a tenure band kept in `private/`.
 - Person relevance, up to 15, from the slot's mapped persona.
 - Persona and channel, up to 4 under data confidence: 2 for persona and current employment verified, 2 for a verified channel.
 
@@ -109,9 +109,9 @@ Retrieved from Clay's own pages on 2026-10-20:
 
 Under these assumptions a person costs about 1.5 credits (1 to find, 0.5 to enrich). A full operator row is 4 people, about 6 credits. A full site row is 2 people, about 3 credits. The 20-person channel check is about 10 credits.
 
-### Free plan, month by month
+### One-day run, paying for speed
 
-Decided by the user on 2026-10-20: if the free plan cannot buy a one-time top-up, the pass continues on later months of the free plan rather than a paid plan or another vendor.
+Decided by the user on 2026-10-20: the project runs in one day, and the user will pay beyond the $20 Clay cap if the free plan cannot finish the pass in time. Waiting for monthly free credits is out. Each purchase is still confirmed with the user at the price Clay shows.
 
 The whole pass at full depth, worst case:
 
@@ -120,20 +120,23 @@ The whole pass at full depth, worst case:
 - Band C: 4 multi-site operator rows (about 24) and 47 site rows (about 141), about 165 credits.
 - Channel check: about 10 credits.
 
-That is about 790 credits, or about 8 months of free credits in the worst case. At a 50 percent find rate with misses free, it is about 400 credits, or about 4 months. Band A alone takes about 2 to 4 months. Actions are not the constraint: a month uses at most about 200 of 500.
+That is about 790 credits in the worst case, or about 400 at a 50 percent find rate with misses free. Actions are not the constraint.
 
-### Paid credit: up to $20, confirmed with the user first
+The run in order:
 
-If the free plan can buy a one-time top-up, the 250-credit minimum costs $16.25 at $0.05 plus the 30 percent premium, and $20 buys about 300 credits, about three free months' worth. It shortens the worst case from about 8 months to about 5.
+1. Free plan, 100 credits: build both tables and run band A's operator rows and first sites. Read the real per-person cost in Clay's enrichment panel and the find rate from these rows.
+2. Re-estimate the remaining credits from those two measured numbers.
+3. Buy the cheaper option that covers the estimate. One-time top-ups, if the free plan allows them, cost $16.25 per 250 credits, so about $50 covers the worst case. One Launch month, listed at $60 billed monthly with 3,000 data credits, covers everything with room to spare and can be cancelled after. The pricing page also shows a $185 Launch figure, so the price is read in Clay at checkout.
+4. Run bands A, B, and C at full depth, then the channel check.
 
-If top-ups require a paid plan, Clay's cheapest monthly option is $60, three times the $20 cap. Under the 2026-10-20 choice, the pass stays on the free plan instead.
+Recommendation: unless the measured cost makes one $16.25 top-up enough, take the Launch month. Three top-ups cost about the same and leave no margin.
 
 ## Stopping rule
 
 - Before each band batch, compare the remaining credits with the batch's worst-case estimate. Run only whole operator rows and whole site rows, so no row is left half-enriched.
-- When a month's free credits run out, stop and report, then resume when they refresh. Ask the user before any purchase, quoting the top-up size and price shown in Clay.
-- When the paid cap is spent, stop. No further purchase, plan upgrade, or second vendor is used to continue.
-- The run also stops at 200 rows in a table, the free plan's limit.
+- When the free credits run out, stop, report, and ask the user before buying, quoting the top-up or plan and price shown in Clay.
+- When the purchased credits run out, stop and report. A second purchase needs its own confirmation.
+- On the free plan, a table holds at most 200 rows, so band A's 124 sites and the 96 band B and C sites sit in separate tables.
 
 The stop report, written into `people-coverage.json` and summarized in the sample plan, gives:
 
@@ -159,10 +162,11 @@ Clay exports go to `data/georgia-sample/private/`, which is gitignored. A reduct
 Comes back into the repository, per operator row and per site row, and nothing else:
 
 - Identifiers already committed: `operatorId`, `ccn`, `band`, `wave`, and a status of covered, not reached, or site only.
-- Per role slot: whether it was searched, how many people were found (0 to 2), whether the persona and current employment were verified, a tenure band, and a channel outcome.
+- Per role slot: whether it was searched, how many people were found (0 to 2), whether the persona and current employment were verified, and a channel outcome.
+- Per operator: role-change points and a generic reason, with no slot or site attached.
 - Run totals: credits, actions, dollars, run dates, and the stop reason.
 
-Tenure is recorded as a band (under 6 months, 6 to 12, 12 to 24, over 24, or unknown), not a date. A band attached to a named facility's maintenance director could still help someone identify that person, so committing it needs the user's approval. The fallback keeps tenure bands in `private/` and commits only the resulting role-change points.
+Decided by the user on 2026-10-20: tenure bands (under 6 months, 6 to 12, 12 to 24, over 24, or unknown) stay in `private/`. A band tied to a named facility's maintenance director could help someone identify that person. The repository gets only each operator's account-level role-change points and a generic reason, such as a verified facilities leader who started recently.
 
 The demo may show names only to authenticated users, from the database, as decision 0007 allows. Real-person data is deleted when the project ends, including the Clay workspace tables.
 
@@ -179,11 +183,10 @@ Each awarded point carries its input (a slot, a band, or an outcome, never a per
 
 ## Open questions for the user
 
-1. Can a free-plan account buy a one-time top-up? Clay's docs do not say. Resolved 2026-10-20 for the case where it cannot: stay on the free plan month by month.
-2. Order for bands B and C after band A: full depth per operator, or all operator rows first and sites after.
-3. Persona mapping for the operations vice president and the site administrator stretches the approved personas. Approve the mapping, or add senior-living personas to the operating contract.
-4. Approve the proposed person-relevance points per slot (13, 7, 10, 7) and the best-person rollup.
-5. Approve committing tenure bands, or keep them in `private/` and commit only role-change points.
+1. Can a free-plan account buy a one-time top-up? Clay's docs do not say. Resolved 2026-10-20: the run pays for speed, so this only decides between top-ups and a Launch month.
+2. Review later: the two provisional senior-living personas in the operating contract, and any generic persona that does not fit, once Stage 6 shows which titles actually exist.
+3. Approve the proposed person-relevance points per slot (13, 7, 10, 7) and the best-person rollup.
+4. Resolved 2026-10-20: tenure bands stay in `private/`, and only account-level role-change points with a generic reason are committed.
 
 ## Sources
 
