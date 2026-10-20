@@ -74,7 +74,7 @@ Decision 0007 asks for email-verification rates on a capped subset, not for emai
 
 ## Roles and personas
 
-The role map follows decision 0007's buyer roles and maps each to an approved persona in `docs/contracts/operating-contract.md`. Person-relevance points stay inside the scoring contract's existing caps: up to 8 for direct functional ownership, 5 for regional, budget, vendor, or implementation influence, and 2 for an adjacent role with a credible path to the owner. The split per slot is a proposal.
+The role map follows decision 0007's buyer roles and maps each to an approved persona in `docs/contracts/operating-contract.md`. Person-relevance points stay inside the scoring contract's existing caps: up to 8 for direct functional ownership, 5 for regional, budget, vendor, or implementation influence, and 2 for an adjacent role with a credible path to the owner. The split per slot was approved by the user on 2026-10-20.
 
 - Regional or corporate maintenance, facilities, or plant operations director, at the operator: Regional Facilities Manager, or Vice President or Director of Facilities when the title is corporate. Proposed 13 of 15: 8 direct ownership and 5 regional influence.
 - Regional or corporate vice president of operations, at the operator: Senior-Living Operations Leader, a provisional persona added to the operating contract on 2026-10-20. Treated as the economic buyer rather than the first contact, decided by the user on 2026-10-20. When no regional facilities person is found at an operator, the operations leader becomes the first contact. This is a routing rule and changes no points. Proposed 7: 5 influence and 2 adjacent.
@@ -212,7 +212,7 @@ If the reducer fails, its message says why:
 
 1. Can a free-plan account buy a one-time top-up? Clay's docs do not say. Resolved 2026-10-20: the run pays for speed, so this only decides between top-ups and a Launch month.
 2. Review later: the two provisional senior-living personas in the operating contract, and any generic persona that does not fit, once Stage 6 shows which titles actually exist.
-3. Approve the proposed person-relevance points per slot (13, 7, 10, 7) and the best-person rollup.
+3. Resolved 2026-10-20: person-relevance points 13, 7, 10, and 7 and the best-person rollup are approved. The administrator's 7 is low confidence and is reviewed with the provisional personas.
 4. Resolved 2026-10-20: `role-change-proposal-1` is approved.
 5. Resolved 2026-10-20: tenure bands stay in `private/`, and only account-level role-change points with a generic reason are committed.
 
