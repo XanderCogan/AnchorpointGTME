@@ -1,0 +1,21 @@
+{
+  "totalSize": 3,
+  "done": true,
+  "records": [
+    {
+      "attributes": { "type": "Task", "url": "/services/data/v62.0/sobjects/Task/00TSYN000000003AAA" },
+      "Id": "00TSYN000000003AAA",
+      "WhoId": null,
+      "WhatId": "001SYN000000003AAA",
+      "AccountId": "001SYN000000003AAA",
+      "OwnerId": "005SYN000000002AAA",
+      "Subject": "Synthetic follow-up: confirm walkthrough date",
+      "Status": "Not Started",
+      "ActivityDate": "2026-10-05",
+      "TaskSubtype": "Task",
+      "CreatedDate": "2026-09-25T10:00:00.000+0000",
+      "LastModifiedDate": "2026-09-25T10:00:00.000+0000",
+      "SystemModstamp": "2026-09-25T10:00:00.000+0000"
+    }
+  ]
+}

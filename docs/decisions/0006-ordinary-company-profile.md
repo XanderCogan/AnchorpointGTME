@@ -1,6 +1,6 @@
 # Decision 0006: Ordinary-Company Operating Profile
 
-Status: approved on 2026-10-19. Items listed under "Open within this decision" remain open.
+Status: approved on 2026-10-19. Items listed under "Open within this decision" remain open. Amended on 2026-10-20 under decision 0010: the operating profile stands and feeds decision 0009 as labelled assumptions, but no history is generated, and the "Generated dataset scope" section is cancelled and kept for history only.
 
 Date: 2026-10-19  
 Decision owner: User  
@@ -62,6 +62,8 @@ The history carries the CRM problems a real roll-up has, in proportion rather th
 
 ## Generated dataset scope
 
+Cancelled on 2026-10-20 under decision 0010. No fictional history is generated.
+
 The historical fixture is a deterministic sample of the modeled company, not its full book:
 
 - 30 months of history, from April 2024 through September 2026
@@ -76,8 +78,8 @@ An ordinary company makes the system's judgment credible. A company with excelle
 
 ## Consequences
 
-- The parameter file and seed become part of the next immutable fixture release.
-- ICP hypotheses drawn from this history must cite examples and stay soft under decision 0001.
+- Cancelled under decision 0010: the parameter file and seed become part of the next immutable fixture release.
+- Cancelled under decision 0010: ICP hypotheses drawn from this history must cite examples and stay soft under decision 0001. ICP hypotheses now come from public evidence and labelled assumptions, and still stay soft.
 - Revenue and retention figures are never presented as market evidence.
 
 ## Open within this decision

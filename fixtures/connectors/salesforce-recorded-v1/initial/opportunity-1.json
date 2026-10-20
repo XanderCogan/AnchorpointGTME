@@ -1,0 +1,40 @@
+{
+  "totalSize": 2,
+  "done": true,
+  "records": [
+    {
+      "attributes": { "type": "Opportunity", "url": "/services/data/v62.0/sobjects/Opportunity/006SYN000000001AAA" },
+      "Id": "006SYN000000001AAA",
+      "AccountId": "001SYN000000002AAA",
+      "Name": "Synthetic North annual inspection (fixture)",
+      "StageName": "Closed Won",
+      "Type": "New Business",
+      "Amount": 18500,
+      "CloseDate": "2026-05-15",
+      "IsClosed": true,
+      "IsWon": true,
+      "CampaignId": null,
+      "OwnerId": "005SYN000000001AAA",
+      "CreatedDate": "2026-03-02T10:00:00.000+0000",
+      "LastModifiedDate": "2026-05-15T16:00:00.000+0000",
+      "SystemModstamp": "2026-05-15T16:00:00.000+0000"
+    },
+    {
+      "attributes": { "type": "Opportunity", "url": "/services/data/v62.0/sobjects/Opportunity/006SYN000000002AAA" },
+      "Id": "006SYN000000002AAA",
+      "AccountId": "001SYN000000003AAA",
+      "Name": "Synthetic South fire door remediation (fixture)",
+      "StageName": "Proposal/Price Quote",
+      "Type": "New Business",
+      "Amount": 9200,
+      "CloseDate": "2026-11-30",
+      "IsClosed": false,
+      "IsWon": false,
+      "CampaignId": "701SYN000000001AAA",
+      "OwnerId": "005SYN000000002AAA",
+      "CreatedDate": "2026-08-01T13:00:00.000+0000",
+      "LastModifiedDate": "2026-09-18T11:11:11.000+0000",
+      "SystemModstamp": "2026-09-18T11:11:11.000+0000"
+    }
+  ]
+}

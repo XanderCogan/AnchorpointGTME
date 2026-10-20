@@ -158,7 +158,7 @@ Every activated contact must have a named Salesforce owner. The owner is respons
 
 ## Write policy
 
-The first live Salesforce connector is read-only and connects only to a Developer Edition org holding synthetic data. Later approved writes are limited to versioned custom fields, Tasks, and controlled Campaign membership.
+The first live Salesforce connector is read-only and connects only to a Developer Edition org holding real Georgia operators and facilities from public sources, with no fictional CRM history under decision 0010. Later approved writes are limited to versioned custom fields, Tasks, and controlled Campaign membership.
 
 An inbound Lead is matched to an existing Account before any follow-up. A matched Lead inherits the Account's customer, opportunity, and suppression state. An unmatched Lead cannot be activated.
 

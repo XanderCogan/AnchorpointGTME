@@ -34,7 +34,7 @@ The core audit and scoring model stays CRM-neutral. Salesforce-specific names li
 
 The read-only connector milestone uses a free Salesforce Developer Edition org. No production org is involved.
 
-Amended on 2026-10-19: the org may hold real companies and facilities from public sources, with fictional Anchorpoint deals, activity, and history attached. Anchorpoint is openly fictional and the project is shown as a disclosed portfolio piece, so fictional relationships with real company names need no extra separation. Real people's contact details stay out of the public repository under decision 0007.
+Amended on 2026-10-19: the org may hold real companies and facilities from public sources, with fictional Anchorpoint deals, activity, and history attached. Narrowed on 2026-10-20 by decision 0010: the org holds the real companies and facilities only, with no fictional deals, activity, or history. Anchorpoint is openly fictional and the project is shown as a disclosed portfolio piece, so fictional relationships with real company names need no extra separation. Real people's contact details stay out of the public repository under decision 0007.
 
 ## Rationale
 

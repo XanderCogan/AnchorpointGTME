@@ -1,0 +1,24 @@
+{
+  "totalSize": 2,
+  "done": true,
+  "records": [
+    {
+      "attributes": { "type": "Site__c", "url": "/services/data/v62.0/sobjects/Site__c/a00SYN000000001AAA" },
+      "Id": "a00SYN000000001AAA",
+      "Name": "Synthetic North Campus (fixture)",
+      "Account__c": "001SYN000000002AAA",
+      "CreatedDate": "2026-01-15T10:00:00.000+0000",
+      "LastModifiedDate": "2026-01-15T10:00:00.000+0000",
+      "SystemModstamp": "2026-01-15T10:00:00.000+0000"
+    },
+    {
+      "attributes": { "type": "Site__c", "url": "/services/data/v62.0/sobjects/Site__c/a00SYN000000002AAA" },
+      "Id": "a00SYN000000002AAA",
+      "Name": "Synthetic South Campus (fixture)",
+      "Account__c": "001SYN000000003AAA",
+      "CreatedDate": "2026-01-15T10:05:00.000+0000",
+      "LastModifiedDate": "2026-03-09T13:20:00.000+0000",
+      "SystemModstamp": "2026-03-09T13:20:00.000+0000"
+    }
+  ]
+}

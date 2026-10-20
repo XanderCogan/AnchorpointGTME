@@ -14,7 +14,7 @@ Use this file to retrieve one precise source. Start with the narrowest matching 
 - User, problem, promise, workflow, scope, and top-level safety boundaries: [`product/brief.md`](product/brief.md)
 - Current and planned runtime, repository boundaries, service responsibilities, and reliability requirements: [`product/architecture.md`](product/architecture.md)
 - Milestone order, deliverables, and exit gates: [`product/build-plan.md`](product/build-plan.md)
-- User and Codex responsibilities, decision receipts, and explain-back gates: [`product/collaboration-protocol.md`](product/collaboration-protocol.md)
+- User and AI agent responsibilities (Claude Code or Codex), decision receipts, and explain-back gates: [`product/collaboration-protocol.md`](product/collaboration-protocol.md)
 
 ## Approved behavioral contracts
 
@@ -29,7 +29,8 @@ Treat frozen contract versions as authoritative for implemented behavior. If a p
 ## Research and discovery
 
 - Portfolio purpose, Apero audience, why the Anchorpoint scenario was selected, and what the work sample must prove: [`research/apero-portfolio-context.md`](research/apero-portfolio-context.md)
-- Required historical customer dataset, ICP-analysis method, Georgia-first source plan, parent-site resolution, and TAM acceptance criteria: [`research/tam-construction-plan.md`](research/tam-construction-plan.md)
+- Evidence standard, segment sizing, ICP method, Georgia-first source plan, parent-site resolution, and TAM acceptance criteria: [`research/tam-construction-plan.md`](research/tam-construction-plan.md)
+- Method for analysing a client's real CRM history into ICP hypotheses, and what is built for it: [`research/crm-icp-analysis-playbook.md`](research/crm-icp-analysis-playbook.md)
 - Georgia nursing-home fire-safety citations from CMS: fixable-tag mapping, repeat offenders, correction-date pattern, and publication lag: [`research/cms-fire-citations-georgia.md`](research/cms-fire-citations-georgia.md)
 - Georgia sample Stage 6 Clay people pass: table design, role-to-persona map, credit math, stopping rule, and personal data boundary: [`research/georgia-clay-people-pass.md`](research/georgia-clay-people-pass.md)
 - Question-by-question fictional client assumptions, approval status, product consequences, and open follow-ups: [`research/anchorpoint-discovery-log.xlsx`](research/anchorpoint-discovery-log.xlsx)
@@ -40,6 +41,7 @@ Use the discovery log only when a question ID, assumption owner, answer basis, o
 
 - Accepted Milestone 1 fixture contents, 22-finding result, contract correction, and verification evidence: [`milestones/milestone-1-inspection-report.md`](milestones/milestone-1-inspection-report.md)
 - Implemented Milestone 2 slice, last verification, and remaining foundation work: [`milestones/milestone-2-foundation-notes.md`](milestones/milestone-2-foundation-notes.md)
+- Milestone 3 read-only Salesforce connector, recorded-response verification, and what waits for the real org: [`milestones/milestone-3-salesforce-connector-notes.md`](milestones/milestone-3-salesforce-connector-notes.md)
 
 Milestone reports are evidence records. Update `STATE.md`, not an old report, when only the live next step changes.
 
@@ -50,10 +52,11 @@ Milestone reports are evidence records. Update `STATE.md`, not an old report, wh
 - Approved service catalog, branch footprint, licensing gates, and travel-time rules: [`decisions/0003-service-catalog-and-footprint.md`](decisions/0003-service-catalog-and-footprint.md)
 - Approved field-service source system and CRM reconciliation rules: [`decisions/0004-operating-source-system.md`](decisions/0004-operating-source-system.md)
 - Approved move to Salesforce as the CRM system of record after Milestone 2: [`decisions/0005-crm-system-of-record.md`](decisions/0005-crm-system-of-record.md)
-- Approved ordinary-company operating profile and historical dataset parameters: [`decisions/0006-ordinary-company-profile.md`](decisions/0006-ordinary-company-profile.md)
+- Approved ordinary-company operating profile (its generated-dataset section cancelled by 0010): [`decisions/0006-ordinary-company-profile.md`](decisions/0006-ordinary-company-profile.md)
 - Approved first Georgia segment sample, sources, enrichment budget, and personal data boundary: [`decisions/0007-first-georgia-sample-and-enrichment.md`](decisions/0007-first-georgia-sample-and-enrichment.md)
-- Approved parallel tracks for the historical fixture with Milestone 3 and the Georgia market sample: [`decisions/0008-parallel-data-tracks.md`](decisions/0008-parallel-data-tracks.md)
+- Parallel tracks for Milestone 3 and the Georgia market sample; Track A, the historical fixture, cancelled on 2026-10-20: [`decisions/0008-parallel-data-tracks.md`](decisions/0008-parallel-data-tracks.md)
 - Approved account value model, kept separate from the priority score: [`decisions/0009-account-value-model.md`](decisions/0009-account-value-model.md)
+- Approved removal of all fictional CRM history, real-only org contents, ICP from public evidence, and segment sizing: [`decisions/0010-no-fictional-crm-history.md`](decisions/0010-no-fictional-crm-history.md)
 
 Add a decision record when the user resolves a material ambiguity that changes product behavior, tests, contracts, or milestone scope. Do not create decision records for routine implementation details.
 

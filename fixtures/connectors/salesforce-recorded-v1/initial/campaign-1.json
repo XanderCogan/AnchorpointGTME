@@ -1,0 +1,21 @@
+{
+  "totalSize": 1,
+  "done": true,
+  "records": [
+    {
+      "attributes": { "type": "Campaign", "url": "/services/data/v62.0/sobjects/Campaign/701SYN000000001AAA" },
+      "Id": "701SYN000000001AAA",
+      "Name": "Synthetic Inspection Readiness Q3 (fixture)",
+      "Type": "Email",
+      "Status": "Completed",
+      "IsActive": false,
+      "StartDate": "2026-07-01",
+      "EndDate": "2026-09-30",
+      "ParentId": null,
+      "OwnerId": "005SYN000000001AAA",
+      "CreatedDate": "2026-06-20T15:00:00.000+0000",
+      "LastModifiedDate": "2026-09-30T22:00:00.000+0000",
+      "SystemModstamp": "2026-09-30T22:00:00.000+0000"
+    }
+  ]
+}

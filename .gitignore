@@ -12,3 +12,8 @@ node_modules/
 # Track B market sample: raw public pulls and anything naming individuals
 data/georgia-sample/raw/
 data/georgia-sample/private/
+
+# Salesforce JWT signing keys and certificates
+*.pem
+*.key
+*.crt

@@ -1,0 +1,19 @@
+{
+  "synthetic": true,
+  "note": "SYNTHETIC. Hand-written responses shaped like the Salesforce REST query resource. Not recorded from any org; no real people or customers.",
+  "instanceUrl": "https://anchorpoint-synthetic.example",
+  "apiVersion": "v62.0",
+  "responses": [
+    { "object": "User", "file": "user-1.json" },
+    { "object": "Account", "file": "account-1.json" },
+    { "path": "/services/data/v62.0/query/01gSYN000000001AAA-2", "file": "account-2.json" },
+    { "object": "Site__c", "file": "site-1.json" },
+    { "object": "Contact", "file": "contact-1.json" },
+    { "path": "/services/data/v62.0/query/01gSYN000000002AAA-2", "file": "contact-2.json" },
+    { "object": "Lead", "file": "lead-1.json" },
+    { "object": "Campaign", "file": "campaign-1.json" },
+    { "object": "Opportunity", "file": "opportunity-1.json" },
+    { "object": "Task", "file": "task-1.json" },
+    { "path": "/services/data/v62.0/query/01gSYN000000003AAA-2", "file": "task-2.json" }
+  ]
+}

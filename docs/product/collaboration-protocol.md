@@ -18,7 +18,7 @@ The user owns:
 - Acceptance of milestone outputs
 - Explanation of tradeoffs to a nontechnical stakeholder
 
-Codex owns:
+The AI agent owns:
 
 - Scaffolding and repetitive implementation
 - Presenting options and consequences
@@ -27,11 +27,11 @@ Codex owns:
 - Running verification
 - Keeping documentation synchronized
 
-Ownership does not mean working alone. Codex can teach, suggest, and review; it must not silently make customer-specific decisions and then ask the user to memorize them.
+Ownership does not mean working alone. The AI agent can teach, suggest, and review; it must not silently make customer-specific decisions and then ask the user to memorize them.
 
 ## Scenario before code
 
-Every meaningful rule begins as a plain-language scenario. Before Codex implements it, the user states what should happen and why.
+Every meaningful rule begins as a plain-language scenario. Before the AI agent implements it, the user states what should happen and why.
 
 Example:
 
@@ -57,11 +57,11 @@ This provides evidence of judgment without pretending every line of code was man
 
 Each milestone is divided into small end-to-end slices. For every slice:
 
-1. Codex presents the user-visible problem and relevant raw data.
+1. The AI agent presents the user-visible problem and relevant raw data.
 2. The user predicts the correct result in plain English.
-3. Codex explains the smallest implementation needed.
+3. The AI agent explains the smallest implementation needed.
 4. The user completes one hands-on task.
-5. Codex implements or completes the surrounding plumbing.
+5. The AI agent implements or completes the surrounding plumbing.
 6. Tests run against the user's expected result.
 7. The user explains the result and one failure mode before the slice closes.
 

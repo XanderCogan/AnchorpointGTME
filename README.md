@@ -2,7 +2,7 @@
 
 Portco Launch Control is an Apero-style GTM engineering portfolio project built around the fictional client Anchorpoint Fire & Safety. It maps a real market into Salesforce accounts and sites, audits CRM health with deterministic rules, prepares bounded records for enrichment, ranks accounts and people with explainable evidence, requires human approval, routes approved contacts to Lemlist or TitanX, and returns outcomes to Salesforce and a rep work queue.
 
-The system is intentionally gated and read-only at its current stage. No live credentials or external connectors exist.
+The system is intentionally gated and read-only at its current stage. No live credentials or live external connections exist. The Milestone 3 Salesforce connector is read-only and has run only against synthetic recorded responses.
 
 ## Portfolio context
 
@@ -13,9 +13,11 @@ This is a GTM engineering work sample for Apero Advisors. Anchorpoint Fire & Saf
 - Milestone 0 is complete.
 - Milestone 1 was accepted on 2026-10-17.
 - Milestone 2 is complete, with the preview deployed on Vercel and Railway.
+- Milestone 3, the read-only Salesforce connector, is built and verified against synthetic recorded responses; live acceptance waits for the user's Developer Edition org.
+- The Georgia senior-living and skilled-nursing sample is the first of about five Georgia segments, worked in depth.
 - The current application is a read-only Next.js findings board backed by the frozen `inspection-v1` fixture and the deterministic audit engine.
 - The fixture proves CRM audit behavior. It is not valid evidence for ICP discovery, score calibration, or TAM sizing.
-- Later Anchorpoint history must be benchmarked against real regional service-company evidence before generation. The target is a plausible, unexceptional PE-backed operator, not an idealized company or a collection of convenient demo outcomes.
+- No fictional CRM history exists or will be generated (decision 0010). The market is real and sourced; assumptions about Anchorpoint are labelled; CRM-history analysis is shown as a method and a pipeline tested on labelled fixtures.
 
 Read [`STATE.md`](STATE.md) for the current gate, active decisions, and immediate next work. Use [`docs/README.md`](docs/README.md) to jump directly to the authoritative document for a specific question. Do not read the entire documentation set by default.
 
@@ -52,7 +54,7 @@ docs/milestones/   implementation evidence and remaining work
 docs/decisions/    durable decision records
 ```
 
-Connector packages are created only when their gated milestone begins.
+Connector packages are created only when their gated milestone begins. `packages/connectors/` holds the Milestone 3 read-only Salesforce connector.
 
 ## Local verification
 
@@ -65,6 +67,7 @@ npm run build
 npm run db:up
 npm run foundation:setup
 npm run foundation:verify
+npm run salesforce:verify-recorded
 ```
 
 `inspection-v1` must produce 22 findings: 15 critical and 7 warning. After the foundation setup succeeds, run `npm run api` and `npm run dev` in separate terminals to open the authenticated read-only application. Local development uses the documented fixture-only credentials shown on the login screen; production requires all secrets in `.env.example` to be replaced.

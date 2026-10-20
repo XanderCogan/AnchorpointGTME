@@ -1,0 +1,22 @@
+{
+  "totalSize": 3,
+  "done": true,
+  "records": [
+    {
+      "attributes": { "type": "Contact", "url": "/services/data/v62.0/sobjects/Contact/003SYN000000003AAA" },
+      "Id": "003SYN000000003AAA",
+      "AccountId": "001SYN000000003AAA",
+      "FirstName": "Morgan",
+      "LastName": "Fixture-Maintenance",
+      "Title": "Maintenance Supervisor",
+      "Email": "morgan.maint@south-operator.example",
+      "Phone": "+1 555 0101",
+      "HasOptedOutOfEmail": false,
+      "DoNotCall": true,
+      "OwnerId": "005SYN000000002AAA",
+      "CreatedDate": "2026-02-03T09:00:00.000+0000",
+      "LastModifiedDate": "2026-08-22T17:05:00.000+0000",
+      "SystemModstamp": "2026-08-22T17:05:00.000+0000"
+    }
+  ]
+}

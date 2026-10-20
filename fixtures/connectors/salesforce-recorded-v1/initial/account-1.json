@@ -1,0 +1,37 @@
+{
+  "totalSize": 3,
+  "done": false,
+  "nextRecordsUrl": "/services/data/v62.0/query/01gSYN000000001AAA-2",
+  "records": [
+    {
+      "attributes": { "type": "Account", "url": "/services/data/v62.0/sobjects/Account/001SYN000000001AAA" },
+      "Id": "001SYN000000001AAA",
+      "Name": "Synthetic Parent Operator (fixture)",
+      "ParentId": null,
+      "OwnerId": "005SYN000000001AAA",
+      "Type": "Prospect",
+      "Industry": "Healthcare",
+      "BillingCity": "Fixtureville",
+      "BillingState": "GA",
+      "Website": "https://parent-operator.example",
+      "CreatedDate": "2026-01-12T14:00:00.000+0000",
+      "LastModifiedDate": "2026-04-02T18:45:10.000+0000",
+      "SystemModstamp": "2026-04-02T18:45:10.000+0000"
+    },
+    {
+      "attributes": { "type": "Account", "url": "/services/data/v62.0/sobjects/Account/001SYN000000002AAA" },
+      "Id": "001SYN000000002AAA",
+      "Name": "Synthetic Regional Operator North (fixture)",
+      "ParentId": "001SYN000000001AAA",
+      "OwnerId": "005SYN000000001AAA",
+      "Type": "Prospect",
+      "Industry": "Healthcare",
+      "BillingCity": "Fixtureville",
+      "BillingState": "GA",
+      "Website": null,
+      "CreatedDate": "2026-01-12T14:05:00.000+0000",
+      "LastModifiedDate": "2026-05-20T11:00:00.000+0000",
+      "SystemModstamp": "2026-06-03T07:12:44.000+0000"
+    }
+  ]
+}

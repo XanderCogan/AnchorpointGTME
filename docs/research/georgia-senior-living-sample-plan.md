@@ -203,7 +203,7 @@ The detailed design is in `georgia-clay-people-pass.md`. Only for serviceable, t
 
 ### Stage 7: load
 
-Under the 2026-10-19 amendments to decisions 0005 and 0008, real Georgia operators and facilities load into the Developer Edition org as Accounts and Sites, and Track A's fictional history may attach to them. Real people's contact details stay out of the public repository.
+Real Georgia operators and facilities load into the Developer Edition org as Accounts and Sites. Under decision 0010 no fictional history attaches to them. Real people's contact details stay out of the public repository.
 
 ## Budget
 

@@ -1,0 +1,16 @@
+{
+  "synthetic": true,
+  "note": "SYNTHETIC. Second window after the initial scenario: one Account renamed, one Account re-read at the inclusive watermark boundary, every other object empty.",
+  "instanceUrl": "https://anchorpoint-synthetic.example",
+  "apiVersion": "v62.0",
+  "responses": [
+    { "object": "Account", "file": "account-1.json" },
+    { "object": "User", "file": "empty.json" },
+    { "object": "Site__c", "file": "empty.json" },
+    { "object": "Contact", "file": "empty.json" },
+    { "object": "Lead", "file": "empty.json" },
+    { "object": "Campaign", "file": "empty.json" },
+    { "object": "Opportunity", "file": "empty.json" },
+    { "object": "Task", "file": "empty.json" }
+  ]
+}
