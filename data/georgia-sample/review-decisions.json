@@ -61,9 +61,6 @@
       "ccn": "115275",
       "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
       "operatorName": "A.G. Rhodes Home, Inc.",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "A.G. Rhodes, a nonprofit, lists three metro Atlanta homes (Atlanta, Cobb, and DeKalb, formerly Wesley Woods) on its own site; Aegis Therapies (therapy), Unidine (dining) and Washburne Dialysis are service contractors. The three CMS legal entities are one operator.",
       "sources": [
         {
@@ -74,15 +71,15 @@
           "source": "https://www.agrhodes.org/our-homes/dekalb/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115002",
       "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
       "operatorName": "A.G. Rhodes Home, Inc.",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "A.G. Rhodes, a nonprofit, lists three metro Atlanta homes (Atlanta, Cobb, and DeKalb, formerly Wesley Woods) on its own site; Unidine, the only organization with operational or managerial control, is a dining contractor. The three CMS legal entities are one operator.",
       "sources": [
         {
@@ -93,15 +90,15 @@
           "source": "https://www.agrhodes.org/our-homes/dekalb/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115521",
       "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
       "operatorName": "A.G. Rhodes Home, Inc.",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "A.G. Rhodes, a nonprofit, lists three metro Atlanta homes (Atlanta, Cobb, and DeKalb, formerly Wesley Woods) on its own site; Aegis Therapies (therapy), Unidine (dining) and Ameris Bank (lender) are contractors, not the operator. The three CMS legal entities are one operator.",
       "sources": [
         {
@@ -112,15 +109,15 @@
           "source": "https://www.agrhodes.org/our-homes/dekalb/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115146",
       "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
       "operatorName": "Hospital Authority of Columbus GA",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "The Hospital Authority of Columbus says it operates Ridgecrest, Orchard View, and Muscogee Manor; the only other organization with operational or managerial control, Broad River Rehabilitation, is a therapy contractor (it merged with Aegis Therapies, per McKnight's).",
       "sources": [
         {
@@ -135,15 +132,15 @@
           "source": "https://www.mcknights.com/news/broad/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115351",
       "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
       "operatorName": "Hospital Authority of Columbus GA",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "The Hospital Authority of Columbus says it operates Ridgecrest, Orchard View, and Muscogee Manor; the only other organization with operational or managerial control, Broad River Rehabilitation, is a therapy contractor (it merged with Aegis Therapies, per McKnight's).",
       "sources": [
         {
@@ -158,15 +155,15 @@
           "source": "https://www.mcknights.com/news/broad/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115478",
       "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
       "operatorName": "Hospital Authority of Columbus GA",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "The Hospital Authority of Columbus says it operates Ridgecrest, Orchard View, and Muscogee Manor; the only other organization with operational or managerial control, Broad River Rehabilitation, is a therapy contractor (it merged with Aegis Therapies, per McKnight's).",
       "sources": [
         {
@@ -181,14 +178,14 @@
           "source": "https://www.mcknights.com/news/broad/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115265",
       "operatorId": "ga-op-chain-246",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "Both organizations with operational or managerial control are Harborview LLCs, and the facility's own site carries the header 'Harborview Health Systems Satilla', which matches CMS chain 246 (Harborview Health Systems).",
       "sources": [
         {
@@ -199,15 +196,15 @@
           "source": "https://www.satillahbrv.com/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115338",
       "operatorId": "ga-op-lbn-miona-geriatric-and-dementia-center-llc",
       "operatorName": "Miona Geriatric & Dementia Center, LLC",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "The facility's site says WindCorp Management, a family-owned firm, provides Miona with additional management and consulting services; WindCorp has control of no other Georgia home in CMS, so the facility's own legal entity stays the single-site operator.",
       "sources": [
         {
@@ -218,15 +215,15 @@
           "source": "https://mionawebsite.com/about-us/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115348",
       "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
       "operatorName": "Pyramid Healthcare Management LLC",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "Pyramid Healthcare Management LLC has operational or managerial control of Etowah Landing and River Towne Center, and Georgia Pyramid Venture LLC owns 100% of both (CMS); trade press describes Pyramid as a regional operator that bought two Georgia nursing homes in 2017.",
       "sources": [
         {
@@ -241,15 +238,15 @@
           "source": "https://seniorcare.levinassociates.com/2017/10/13/pyramid-healthcare-management-enters-skilled-nursing-market/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115566",
       "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
       "operatorName": "Pyramid Healthcare Management LLC",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "Pyramid Healthcare Management LLC has operational or managerial control of Etowah Landing and River Towne Center, and Georgia Pyramid Venture LLC owns 100% of both (CMS); trade press describes Pyramid as a regional operator that bought two Georgia nursing homes in 2017.",
       "sources": [
         {
@@ -264,15 +261,15 @@
           "source": "https://seniorcare.levinassociates.com/2017/10/13/pyramid-healthcare-management-enters-skilled-nursing-market/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115365",
       "operatorId": "ga-op-org-peach-health-group-llc",
       "operatorName": "Peach Health Group LLC",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "CMS lists Peach Health Group LLC with operational or managerial control of PHG Thomson LLC since 2021. Peach Health Group LLC also has operational or managerial control of the PHG Thomson, PHG Wrightsville and PHG McRae homes (CMS), and ProPublica's CMS-derived affiliation pages group these homes under Peach Health Group.",
       "sources": [
         {
@@ -287,15 +284,15 @@
           "source": "https://projects.propublica.org/nursing-homes/homes/h-115727",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115406",
       "operatorId": "ga-op-org-peach-health-group-llc",
       "operatorName": "Peach Health Group LLC",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "CMS lists Peach Health Group LLC with operational or managerial control of PHG Wrightsville LLC since 2019. Peach Health Group LLC also has operational or managerial control of the PHG Thomson, PHG Wrightsville and PHG McRae homes (CMS), and ProPublica's CMS-derived affiliation pages group these homes under Peach Health Group.",
       "sources": [
         {
@@ -310,15 +307,15 @@
           "source": "https://projects.propublica.org/nursing-homes/homes/h-115727",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115494",
       "operatorId": "ga-op-org-peach-health-group-llc",
       "operatorName": "Peach Health Group LLC",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "CMS lists Peach Health Group LLC with operational or managerial control of PHG McRae LLC since 2024. Peach Health Group LLC also has operational or managerial control of the PHG Thomson, PHG Wrightsville and PHG McRae homes (CMS), and ProPublica's CMS-derived affiliation pages group these homes under Peach Health Group.",
       "sources": [
         {
@@ -333,15 +330,15 @@
           "source": "https://projects.propublica.org/nursing-homes/homes/h-115727",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115727",
       "operatorId": "ga-op-org-peach-health-group-llc",
       "operatorName": "Peach Health Group LLC",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "CMS has no legal name or ownership for Jeffersonville Care Center; ProPublica shows it affiliated with Peach Health Group, and a 2016 Savannah Morning News report names Peach Health as AdCare's partner for the Jeffersonville home. Peach Health Group LLC also has operational or managerial control of the PHG Thomson, PHG Wrightsville and PHG McRae homes (CMS), and ProPublica's CMS-derived affiliation pages group these homes under Peach Health Group.",
       "sources": [
         {
@@ -360,14 +357,14 @@
           "source": "https://www.savannahnow.com/story/business/2016/07/20/peach-health-group-takes-over-tybee-nursing-home/13972977007/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115680",
       "operatorId": "ga-op-org-atrium-health-inc",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "Carlyle Place is the life plan community of Atrium Health Navicent; Navicent Health owns 100% of Central Georgia Senior Health and Atrium Health Inc has operational or managerial control (CMS). Broad River Rehabilitation, Gayco and the others are contractors. Atrium Health Inc already operates Atrium Health Navicent Baldwin in the sample.",
       "sources": [
         {
@@ -382,14 +379,14 @@
           "source": "https://carlyleplace.org/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115684",
       "operatorId": "ga-op-chain-434",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "CMS lists PruittHealth St. Marys with operational or managerial control since 09/01/2024; PruittHealth's locator lists the home as \"PruittHealth - St. Marys at Southeast Georgia Health System\", part of the PruittHealth family, after a September 2024 partnership with Southeast Georgia Health System, which still holds the license.",
       "sources": [
         {
@@ -404,14 +401,14 @@
           "source": "https://www.sghs.org/services/long-term-care/senior-care-centers/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115721",
       "operatorId": "ga-op-chain-434",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "CMS lists PruittHealth Brunswick with operational or managerial control since 07/03/2024; PruittHealth's locator lists the home as \"PruittHealth - Brunswick at Southeast Georgia Health System\", part of the PruittHealth family, after a September 2024 partnership with Southeast Georgia Health System, which still holds the license.",
       "sources": [
         {
@@ -426,15 +423,15 @@
           "source": "https://www.sghs.org/services/long-term-care/senior-care-centers/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115694",
       "operatorId": "ga-op-org-isakson-living-inc",
       "operatorName": "Isakson Living, Inc.",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "Isakson Living, Inc. has operational or managerial control of both Park Springs and Peachtree Hills Place (CMS), and the Peachtree Hills Place site announces that Isakson Living opened The Terraces.",
       "sources": [
         {
@@ -445,15 +442,15 @@
           "source": "https://www.peachtreehillsplace.com/wp-content/uploads/2020/09/Isakson-Living-opens-The-Terraces-at-Peachtree-Hills-Place.pdf",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115773",
       "operatorId": "ga-op-org-isakson-living-inc",
       "operatorName": "Isakson Living, Inc.",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "Isakson Living, Inc. has operational or managerial control of both Park Springs and Peachtree Hills Place (CMS), and the Peachtree Hills Place site announces that Isakson Living opened The Terraces.",
       "sources": [
         {
@@ -464,14 +461,14 @@
           "source": "https://www.peachtreehillsplace.com/wp-content/uploads/2020/09/Isakson-Living-opens-The-Terraces-at-Peachtree-Hills-Place.pdf",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115368",
       "operatorId": "ga-op-chain-766",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "CMS lists no legal business name or ownership; the federal NPI registry lists Carrollton Crossing of Journey LLC at the same address (2327 N Highway 27, Carrollton; NPI 1821967225, updated 2025-11-03), which follows the Journey naming pattern of the five approved Journey merges.",
       "sources": [
         {
@@ -482,14 +479,14 @@
           "source": "https://npiregistry.cms.hhs.gov/api/?version=2.1&number=1821967225",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115381",
       "operatorId": "ga-op-chain-728",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "CMS lists no legal business name or ownership; Reliable Health Care Management (CMS chain 728) lists The Cottages at Rockmart among its centers on its own site.",
       "sources": [
         {
@@ -500,15 +497,15 @@
           "source": "https://reliablemgt.com/centers/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115498",
       "operatorId": "ga-op-org-presbyterian-homes-of-georgia",
       "operatorName": "Presbyterian Homes of Georgia",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "CMS lists no legal name or ownership; the Valdosta Daily Times reported on 2025-06-03 that Presbyterian Homes of Georgia leases the Quitman home to the Brooks County Hospital Authority and manages its daily skilled nursing operations.",
       "sources": [
         {
@@ -519,14 +516,14 @@
           "source": "https://valdostadailytimes.com/2025/06/03/presbyterian-homes-brooks-county-hospital-authority-sign-lease-management-agreement/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115682",
       "operatorId": "ga-op-chain-769",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "CMS lists no legal business name or ownership; the facility's site gives a parksidegrp.com contact address and says it was acquired from Emory Healthcare, and The Parkside Group runs the Parkside-named homes of CMS chain 769 (see the chain 769 decision).",
       "sources": [
         {
@@ -537,15 +534,15 @@
           "source": "https://www.parksidebuddterrace.com/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "115690",
       "operatorId": "ga-op-org-annandale-village",
       "operatorName": "Annandale Village",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "CMS lists no legal name or ownership; the facility sits on the Annandale Village campus (3500 Annandale Lane, Suwanee), and Annandale Village's own site presents the D. Scott Hudgens Center for Skilled Nursing as its skilled nursing program.",
       "sources": [
         {
@@ -556,15 +553,15 @@
           "source": "https://annandale.org/our-campus/d-scott-hudgens-center-for-skilled-nursing/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "11A186",
       "operatorId": "ga-op-org-georgia-dbhdd",
       "operatorName": "Georgia Department of Behavioral Health and Developmental Disabilities",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "State-owned skilled nursing unit of Georgia Regional Hospital at Atlanta, which the Georgia Department of Behavioral Health and Developmental Disabilities runs; CMS lists ownership as Government - State with no legal name.",
       "sources": [
         {
@@ -575,15 +572,15 @@
           "source": "https://dbhdd.georgia.gov/be-caring/georgia-regional-hospital-atlanta-grha-atlanta-ga",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "ccn": "11A200",
       "operatorId": "ga-op-org-georgia-dbhdd",
       "operatorName": "Georgia Department of Behavioral Health and Developmental Disabilities",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "State-owned skilled nursing unit of East Central Regional Hospital (Gracewood campus), which the Georgia Department of Behavioral Health and Developmental Disabilities runs; CMS lists ownership as Government - State with no legal name.",
       "sources": [
         {
@@ -594,16 +591,16 @@
           "source": "https://dbhdd.georgia.gov/be-caring/east-central-regional-hospital-ecrh-augusta-and-gracewood-ga",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     }
   ],
   "chainDecisions": [
     {
       "cmsChainId": "769",
       "operatorName": "The Parkside Group",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "The Parkside Group lists Cumming Senior Living at 2775 Castleberry Road, the address of chain member Cumming Operating Company LLC; the Ellijay member runs as Parkside Care Center; and a public post by a Parkside Group employee (not linked here because it names an individual; cached in raw/serper) says the group acquired Park Place Nursing and Rehab in Monroe.",
       "sources": [
         {
@@ -618,14 +615,14 @@
           "source": "https://www.parksideellijay.com/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     },
     {
       "cmsChainId": "771",
       "mergeIntoOperatorId": "ga-op-chain-202",
-      "status": "proposed",
-      "proposedOn": "2026-10-20",
-      "approvedBy": null,
       "evidence": "The chain's only Georgia home, Lake City Center for Nursing and Healing, appears on Empire Care Centers' own careers page and in Empire Care Centers job postings, and follows Empire's 'Center for Nursing and Healing' naming; CMS still reports it as a separate two-home chain, so Empire likely manages it under contract.",
       "sources": [
         {
@@ -640,7 +637,10 @@
           "source": "https://lakecitynursing.com/",
           "retrievedOn": "2026-10-20"
         }
-      ]
+      ],
+      "status": "approved",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user"
     }
   ]
 }

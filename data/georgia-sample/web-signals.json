@@ -7,14 +7,14 @@
     "jobRule": "single job pages on job boards or careers sites whose title names a maintenance, facilities, or plant operations role and whose title or address names the operator or facility; search, salary, and review pages excluded; found by search, not confirmed open"
   },
   "summary": {
-    "operatorsSearched": 120,
+    "operatorsSearched": 105,
     "domainsNameMatched": 30,
-    "domainsWordMatched": 24,
-    "domainsUnconfirmed": 65,
+    "domainsWordMatched": 26,
+    "domainsUnconfirmed": 48,
     "domainsNone": 1,
-    "footprintOperatorsSearchedForJobs": 82,
-    "operatorsWithPostingCandidates": 4,
-    "creditsSpentThisRun": 0,
+    "footprintOperatorsSearchedForJobs": 71,
+    "operatorsWithPostingCandidates": 5,
+    "creditsSpentThisRun": 19,
     "stopReason": null
   },
   "domains": [
@@ -108,6 +108,17 @@
       "matchedOn": "operator_name"
     },
     {
+      "operatorId": "ga-op-chain-728",
+      "query": "RELIABLE HEALTH CARE MANAGEMENT Georgia nursing official website",
+      "queriedBy": "operator_name",
+      "domain": null,
+      "candidateDomain": "reliablemgt.com",
+      "confidence": "unconfirmed",
+      "evidenceUrl": null,
+      "matchedWords": [],
+      "matchedOn": null
+    },
+    {
       "operatorId": "ga-op-chain-172",
       "query": "CROSSROADS MEDICAL MANAGEMENT Georgia nursing official website",
       "queriedBy": "operator_name",
@@ -121,15 +132,17 @@
       "matchedOn": "facility_name"
     },
     {
-      "operatorId": "ga-op-chain-728",
-      "query": "RELIABLE HEALTH CARE MANAGEMENT Georgia nursing official website",
+      "operatorId": "ga-op-chain-769",
+      "query": "The Parkside Group Georgia nursing official website",
       "queriedBy": "operator_name",
-      "domain": null,
-      "candidateDomain": "reliablemgt.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
+      "domain": "parksidehc.com",
+      "candidateDomain": null,
+      "confidence": "word_match",
+      "evidenceUrl": "https://www.parksidehc.com/",
+      "matchedWords": [
+        "PARKSIDE"
+      ],
+      "matchedOn": "operator_name"
     },
     {
       "operatorId": "ga-op-chain-176",
@@ -141,19 +154,6 @@
       "evidenceUrl": "https://www.universitynursingandrehabilitationathens.com/",
       "matchedWords": [
         "UNIVERSITY NURSING AND REHAB"
-      ],
-      "matchedOn": "facility_name"
-    },
-    {
-      "operatorId": "ga-op-chain-769",
-      "query": "\"Park Place Nursing Facility\" Monroe GA official website",
-      "queriedBy": "facility_name",
-      "domain": "parkplacenursingandrehab.com",
-      "candidateDomain": null,
-      "confidence": "name_match",
-      "evidenceUrl": "https://www.parkplacenursingandrehab.com/",
-      "matchedWords": [
-        "PARK PLACE NURSING"
       ],
       "matchedOn": "facility_name"
     },
@@ -182,6 +182,19 @@
       "matchedOn": "operator_name"
     },
     {
+      "operatorId": "ga-op-org-peach-health-group-llc",
+      "query": "Peach Health Group LLC Georgia nursing official website",
+      "queriedBy": "operator_name",
+      "domain": "peachstatenursingagency.com",
+      "candidateDomain": null,
+      "confidence": "word_match",
+      "evidenceUrl": "https://peachstatenursingagency.com/",
+      "matchedWords": [
+        "PEACH"
+      ],
+      "matchedOn": "operator_name"
+    },
+    {
       "operatorId": "ga-op-chain-311",
       "query": "LIFE CARE CENTERS OF AMERICA Georgia nursing official website",
       "queriedBy": "operator_name",
@@ -204,6 +217,19 @@
       "evidenceUrl": null,
       "matchedWords": [],
       "matchedOn": null
+    },
+    {
+      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
+      "query": "A.G. Rhodes Home, Inc. Georgia nursing official website",
+      "queriedBy": "operator_name",
+      "domain": "agrhodes.org",
+      "candidateDomain": null,
+      "confidence": "name_match",
+      "evidenceUrl": "https://www.agrhodes.org/",
+      "matchedWords": [
+        "A G RHODES"
+      ],
+      "matchedOn": "operator_name"
     },
     {
       "operatorId": "ga-op-chain-180",
@@ -271,26 +297,43 @@
       "matchedOn": "operator_name"
     },
     {
-      "operatorId": "ga-op-ccn-115368",
-      "query": "\"BHM Carrollton Opco LLC\" Carrollton GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "assistocare.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
+      "operatorId": "ga-op-org-atrium-health-inc",
+      "query": "ATRIUM HEALTH INC Georgia nursing official website",
+      "queriedBy": "operator_name",
+      "domain": "atriumhealth.org",
+      "candidateDomain": null,
+      "confidence": "name_match",
+      "evidenceUrl": "https://atriumhealth.org/",
+      "matchedWords": [
+        "ATRIUM HEALTH"
+      ],
+      "matchedOn": "operator_name"
     },
     {
-      "operatorId": "ga-op-ccn-115381",
-      "query": "\"COTTAGES AT ROCKMART, THE\" ROCKMART GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "mylivingchoice.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
+      "operatorId": "ga-op-org-georgia-dbhdd",
+      "query": "Georgia Department of Behavioral Health and Developmental Disabilities Georgia nursing official website",
+      "queriedBy": "operator_name",
+      "domain": "dfcs.resources.uniteus.io",
+      "candidateDomain": null,
+      "confidence": "word_match",
+      "evidenceUrl": "https://dfcs.resources.uniteus.io/program/5e439919-5ea6-42be-81e4-884747589a83/a0c0d66b-369d-41a3-a53f-3ed1905947b7?backToResults=true&locale=en",
+      "matchedWords": [
+        "UNIT"
+      ],
+      "matchedOn": "facility_name"
+    },
+    {
+      "operatorId": "ga-op-org-isakson-living-inc",
+      "query": "Isakson Living, Inc. Georgia nursing official website",
+      "queriedBy": "operator_name",
+      "domain": "isaksonliving.com",
+      "candidateDomain": null,
+      "confidence": "name_match",
+      "evidenceUrl": "https://isaksonliving.com/",
+      "matchedWords": [
+        "ISAKSON LIVING"
+      ],
+      "matchedOn": "operator_name"
     },
     {
       "operatorId": "ga-op-ccn-115579",
@@ -306,61 +349,6 @@
     {
       "operatorId": "ga-op-ccn-115580",
       "query": "\"Sandtown Health and Rehabilitation\" MARIETTA GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "eldervoice.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115682",
-      "query": "\"PARKSIDE AT BUDD TERRACE OPERATING COMPANY LLC\" ATLANTA GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "mylivingchoice.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115690",
-      "query": "\"D SCOTT HUDGENS CENTER FOR SKILLED NURSING, THE\" SUWANEE GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "elderlifefinancial.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115727",
-      "query": "\"Jeffersonville Care Center LLC\" Jeffersonville GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "mylivingchoice.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-ccn-11A186",
-      "query": "\"Georgia Regional Atlanta LTC\" DECATUR GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "nursa.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-chain-771",
-      "query": "\"Lake City Center for Nursing and Healing LLC\" LAKE CITY GA official website",
       "queriedBy": "facility_name",
       "domain": null,
       "candidateDomain": "eldervoice.com",
@@ -420,41 +408,6 @@
       "matchedOn": null
     },
     {
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-cobb-inc",
-      "query": "\"A.G. RHODES HOME, INC - COBB\" MARIETTA GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "nursa.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
-      "query": "\"A.G. RHODES HOME, INC, THE\" ATLANTA GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "nursa.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc-at-wesley-woods",
-      "query": "\"A.G. RHODES HOME WESLEY WOODS\" ATLANTA GA official website",
-      "queriedBy": "facility_name",
-      "domain": "agrhodes.org",
-      "candidateDomain": null,
-      "confidence": "name_match",
-      "evidenceUrl": "https://www.agrhodes.org/our-homes/dekalb/",
-      "matchedWords": [
-        "A G RHODES"
-      ],
-      "matchedOn": "operator_name"
-    },
-    {
       "operatorId": "ga-op-lbn-atlanta-association-for-convalescent-aged-persons-inc",
       "query": "\"SADIE G. MAYS HEALTH & REHABILITATION CENTER\" ATLANTA GA official website",
       "queriedBy": "facility_name",
@@ -477,19 +430,6 @@
       "evidenceUrl": null,
       "matchedWords": [],
       "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-lbn-central-georgia-senior-health-inc",
-      "query": "\"CARLYLE PLACE\" MACON GA official website",
-      "queriedBy": "facility_name",
-      "domain": "carlyleplace.org",
-      "candidateDomain": null,
-      "confidence": "name_match",
-      "evidenceUrl": "https://carlyleplace.org/contact-us/",
-      "matchedWords": [
-        "CARLYLE PLACE"
-      ],
-      "matchedOn": "facility_name"
     },
     {
       "operatorId": "ga-op-lbn-church-home-rehabilitation-and-healthcare-llc",
@@ -622,14 +562,16 @@
     },
     {
       "operatorId": "ga-op-lbn-miona-geriatric-and-dementia-center-llc",
-      "query": "\"MIONA GERIATRIC & DEMENTIA CENTER\" IDEAL GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "mionawebsite.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
+      "query": "Miona Geriatric & Dementia Center, LLC Georgia nursing official website",
+      "queriedBy": "operator_name",
+      "domain": "mionawebsite.com",
+      "candidateDomain": null,
+      "confidence": "word_match",
+      "evidenceUrl": "https://mionawebsite.com/",
+      "matchedWords": [
+        "MIONA"
+      ],
+      "matchedOn": "operator_name"
     },
     {
       "operatorId": "ga-op-lbn-mlh-salude-gwinnett-llc",
@@ -680,28 +622,6 @@
       "matchedOn": null
     },
     {
-      "operatorId": "ga-op-lbn-park-springs-llc",
-      "query": "\"Pebblebrook Health Center at Park Springs\" Stone Mountain GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "nursa.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-lbn-phg-wrightsville-llc",
-      "query": "\"Wrightsville Manor Health and Rehab\" Wrightsville GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "carechanges.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
       "operatorId": "ga-op-lbn-presbyterian-village-austell-inc",
       "query": "\"PRESBYTERIAN VILLAGE\" AUSTELL GA official website",
       "queriedBy": "facility_name",
@@ -711,19 +631,6 @@
       "evidenceUrl": null,
       "matchedWords": [],
       "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-lbn-pt-hills-place-terraces-llc",
-      "query": "\"TERRACES AT PEACHTREE HILLS PLACE, THE\" ATLANTA GA official website",
-      "queriedBy": "facility_name",
-      "domain": "peachtreehillsplace.com",
-      "candidateDomain": null,
-      "confidence": "word_match",
-      "evidenceUrl": "https://www.peachtreehillsplace.com/wp-content/uploads/2020/09/Isakson-Living-opens-The-Terraces-at-Peachtree-Hills-Place.pdf",
-      "matchedWords": [
-        "HILLS"
-      ],
-      "matchedOn": "operator_name"
     },
     {
       "operatorId": "ga-op-lbn-smith-medical-nursing-care-center-inc",
@@ -774,17 +681,15 @@
       "matchedOn": "facility_name"
     },
     {
-      "operatorId": "ga-op-org-atrium-health-inc",
-      "query": "ATRIUM HEALTH INC Georgia nursing official website",
+      "operatorId": "ga-op-org-annandale-village",
+      "query": "Annandale Village Georgia nursing official website",
       "queriedBy": "operator_name",
-      "domain": "atriumhealth.org",
-      "candidateDomain": null,
-      "confidence": "name_match",
-      "evidenceUrl": "https://atriumhealth.org/",
-      "matchedWords": [
-        "ATRIUM HEALTH"
-      ],
-      "matchedOn": "operator_name"
+      "domain": null,
+      "candidateDomain": "annandale.org",
+      "confidence": "unconfirmed",
+      "evidenceUrl": null,
+      "matchedWords": [],
+      "matchedOn": null
     },
     {
       "operatorId": "ga-op-org-brightmoor-management-services-llc",
@@ -849,7 +754,7 @@
     },
     {
       "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
-      "query": "HOSPITAL AUTHORITY OF COLUMBUS GA Georgia nursing official website",
+      "query": "Hospital Authority of Columbus GA Georgia nursing official website",
       "queriedBy": "operator_name",
       "domain": null,
       "candidateDomain": "hacga.com",
@@ -859,22 +764,24 @@
       "matchedOn": null
     },
     {
+      "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
+      "query": "Pyramid Healthcare Management LLC Georgia nursing official website",
+      "queriedBy": "operator_name",
+      "domain": "pyramid-healthcare.com",
+      "candidateDomain": null,
+      "confidence": "name_match",
+      "evidenceUrl": "https://www.pyramid-healthcare.com/",
+      "matchedWords": [
+        "PYRAMID HEALTHCARE"
+      ],
+      "matchedOn": "operator_name"
+    },
+    {
       "operatorId": "ga-op-lbn-carrollton-manor-inc",
       "query": "\"CARROLLTON MANOR, INCORPORATED\" CARROLLTON GA official website",
       "queriedBy": "facility_name",
       "domain": null,
       "candidateDomain": "nursa.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-lbn-columbus-center-llc",
-      "query": "\"RIVER TOWNE CENTER\" COLUMBUS GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "elderlifefinancial.com",
       "confidence": "unconfirmed",
       "evidenceUrl": null,
       "matchedWords": [],
@@ -951,28 +858,6 @@
       "matchedOn": null
     },
     {
-      "operatorId": "ga-op-lbn-phg-mcrae-llc",
-      "query": "\"MCRAE MANOR NURSING HOME\" MC RAE GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "elderlifefinancial.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-lbn-rome-center-llc",
-      "query": "\"Etowah Landing\" Rome GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "nursa.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
       "operatorId": "ga-op-lbn-union-county-hospital-authority",
       "query": "\"UNION COUNTY NURSING HOME\" BLAIRSVILLE GA official website",
       "queriedBy": "facility_name",
@@ -1034,44 +919,11 @@
       "matchedOn": "facility_name"
     },
     {
-      "operatorId": "ga-op-lbn-southeast-georgia-health-system-inc",
-      "query": "SOUTHEAST GEORGIA HEALTH SYSTEM, INC Georgia nursing official website",
-      "queriedBy": "operator_name",
-      "domain": null,
-      "candidateDomain": "sghs.org",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
       "operatorId": "ga-op-lbn-the-hospital-authority-of-miller-county",
       "query": "THE HOSPITAL AUTHORITY OF MILLER COUNTY Georgia nursing official website",
       "queriedBy": "operator_name",
       "domain": null,
       "candidateDomain": "millercountyhospital.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115498",
-      "query": "\"HOSPITAL AUTHORITY OF BROOKS COUNTY, GEORGIA, THE\" QUITMAN GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "www-stage.openplacement.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-ccn-11A200",
-      "query": "\"GRACEWOOD NSG FACILITY(UNIT 9)\" GRACEWOOD GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "nursa.com",
       "confidence": "unconfirmed",
       "evidenceUrl": null,
       "matchedWords": [],
@@ -1246,19 +1098,6 @@
       "matchedOn": null
     },
     {
-      "operatorId": "ga-op-lbn-harborview-waycross-llc",
-      "query": "\"HARBORVIEW SATILLA\" WAYCROSS GA official website",
-      "queriedBy": "facility_name",
-      "domain": "satillahbrv.com",
-      "candidateDomain": null,
-      "confidence": "word_match",
-      "evidenceUrl": "https://www.satillahbrv.com/careers",
-      "matchedWords": [
-        "SATILLA"
-      ],
-      "matchedOn": "facility_name"
-    },
-    {
       "operatorId": "ga-op-lbn-hospital-authority-of-liberty-county",
       "query": "\"COASTAL MANOR\" LUDOWICI GA official website",
       "queriedBy": "facility_name",
@@ -1320,17 +1159,6 @@
     {
       "operatorId": "ga-op-lbn-lifebrite-hospital-group-of-early-llc",
       "query": "\"EARLY MEMORIAL NURSING FACILITY\" BLAKELY GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "nursa.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-lbn-phg-thomson-llc",
-      "query": "\"THOMSON HEALTH AND REHABILITATION\" THOMSON GA official website",
       "queriedBy": "facility_name",
       "domain": null,
       "candidateDomain": "nursa.com",
@@ -1445,6 +1273,17 @@
         "ARCHBOLD"
       ],
       "matchedOn": "operator_name"
+    },
+    {
+      "operatorId": "ga-op-org-presbyterian-homes-of-georgia",
+      "query": "Presbyterian Homes of Georgia Georgia nursing official website",
+      "queriedBy": "operator_name",
+      "domain": null,
+      "candidateDomain": "phgainc.org",
+      "confidence": "unconfirmed",
+      "evidenceUrl": null,
+      "matchedWords": [],
+      "matchedOn": null
     }
   ],
   "jobs": [
@@ -1506,23 +1345,23 @@
       ]
     },
     {
-      "operatorId": "ga-op-chain-172",
-      "query": "\"CROSSROADS MEDICAL MANAGEMENT\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
       "operatorId": "ga-op-chain-728",
       "query": "\"RELIABLE HEALTH CARE MANAGEMENT\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
     },
     {
-      "operatorId": "ga-op-chain-176",
-      "query": "\"CYPRESS SKILLED NURSING\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
+      "operatorId": "ga-op-chain-172",
+      "query": "\"CROSSROADS MEDICAL MANAGEMENT\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
     },
     {
       "operatorId": "ga-op-chain-769",
-      "query": "\"Park Place Nursing Facility\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
+      "query": "\"The Parkside Group\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
+      "postings": []
+    },
+    {
+      "operatorId": "ga-op-chain-176",
+      "query": "\"CYPRESS SKILLED NURSING\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
     },
     {
@@ -1533,6 +1372,11 @@
     {
       "operatorId": "ga-op-chain-686",
       "query": "\"ELEVATION HEALTHCARE\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
+      "postings": []
+    },
+    {
+      "operatorId": "ga-op-org-peach-health-group-llc",
+      "query": "\"Peach Health Group LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
     },
     {
@@ -1549,6 +1393,11 @@
     {
       "operatorId": "ga-op-chain-685",
       "query": "\"BLUE RIDGE CARE CENTER LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
+      "postings": []
+    },
+    {
+      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
+      "query": "\"A.G. Rhodes Home, Inc.\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
     },
     {
@@ -1577,13 +1426,18 @@
       "postings": []
     },
     {
-      "operatorId": "ga-op-ccn-115368",
-      "query": "\"BHM Carrollton Opco LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
+      "operatorId": "ga-op-org-atrium-health-inc",
+      "query": "\"ATRIUM HEALTH INC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
     },
     {
-      "operatorId": "ga-op-ccn-115381",
-      "query": "\"COTTAGES AT ROCKMART, THE\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
+      "operatorId": "ga-op-org-georgia-dbhdd",
+      "query": "\"Georgia Department of Behavioral Health and Developmental Disabilities\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
+      "postings": []
+    },
+    {
+      "operatorId": "ga-op-org-isakson-living-inc",
+      "query": "\"Isakson Living, Inc.\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
     },
     {
@@ -1594,31 +1448,6 @@
     {
       "operatorId": "ga-op-ccn-115580",
       "query": "\"Sandtown Health and Rehabilitation\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
-      "operatorId": "ga-op-ccn-115682",
-      "query": "\"PARKSIDE AT BUDD TERRACE OPERATING COMPANY LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
-      "operatorId": "ga-op-ccn-115690",
-      "query": "\"D SCOTT HUDGENS CENTER FOR SKILLED NURSING, THE\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
-      "operatorId": "ga-op-ccn-115727",
-      "query": "\"Jeffersonville Care Center LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
-      "operatorId": "ga-op-ccn-11A186",
-      "query": "\"Georgia Regional Atlanta LTC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
-      "operatorId": "ga-op-chain-771",
-      "query": "\"Lake City Center for Nursing and Healing LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
     },
     {
@@ -1642,21 +1471,6 @@
       "postings": []
     },
     {
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-cobb-inc",
-      "query": "\"A.G. RHODES HOME, INC - COBB\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
-      "query": "\"A.G. RHODES HOME, INC, THE\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc-at-wesley-woods",
-      "query": "\"A.G. RHODES HOME WESLEY WOODS\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
       "operatorId": "ga-op-lbn-atlanta-association-for-convalescent-aged-persons-inc",
       "query": "\"SADIE G. MAYS HEALTH & REHABILITATION CENTER\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
@@ -1664,11 +1478,6 @@
     {
       "operatorId": "ga-op-lbn-az-operator-llc",
       "query": "\"HEART OF GEORGIA NURSING HOME\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
-      "operatorId": "ga-op-lbn-central-georgia-senior-health-inc",
-      "query": "\"CARLYLE PLACE\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
     },
     {
@@ -1728,7 +1537,7 @@
     },
     {
       "operatorId": "ga-op-lbn-miona-geriatric-and-dementia-center-llc",
-      "query": "\"MIONA GERIATRIC & DEMENTIA CENTER\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
+      "query": "\"Miona Geriatric & Dementia Center, LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
     },
     {
@@ -1752,23 +1561,8 @@
       "postings": []
     },
     {
-      "operatorId": "ga-op-lbn-park-springs-llc",
-      "query": "\"Pebblebrook Health Center at Park Springs\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
-      "operatorId": "ga-op-lbn-phg-wrightsville-llc",
-      "query": "\"Wrightsville Manor Health and Rehab\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
       "operatorId": "ga-op-lbn-presbyterian-village-austell-inc",
       "query": "\"PRESBYTERIAN VILLAGE\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
-      "operatorId": "ga-op-lbn-pt-hills-place-terraces-llc",
-      "query": "\"TERRACES AT PEACHTREE HILLS PLACE, THE\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
     },
     {
@@ -1792,9 +1586,15 @@
       "postings": []
     },
     {
-      "operatorId": "ga-op-org-atrium-health-inc",
-      "query": "\"ATRIUM HEALTH INC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
+      "operatorId": "ga-op-org-annandale-village",
+      "query": "\"Annandale Village\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
+      "postings": [
+        {
+          "title": "Annandale At Suwanee MAINTENANCE TECHNICIAN Job ...",
+          "url": "https://www.ziprecruiter.com/c/Annandale-At-Suwanee,-Inc./Job/MAINTENANCE-TECHNICIAN/-in-Suwanee,GA?jid=80f0a730703abe6b",
+          "date": null
+        }
+      ]
     },
     {
       "operatorId": "ga-op-org-brightmoor-management-services-llc",
@@ -1823,17 +1623,17 @@
     },
     {
       "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
-      "query": "\"HOSPITAL AUTHORITY OF COLUMBUS GA\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
+      "query": "\"Hospital Authority of Columbus GA\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
+      "postings": []
+    },
+    {
+      "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
+      "query": "\"Pyramid Healthcare Management LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
     },
     {
       "operatorId": "ga-op-lbn-carrollton-manor-inc",
       "query": "\"CARROLLTON MANOR, INCORPORATED\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
-      "operatorId": "ga-op-lbn-columbus-center-llc",
-      "query": "\"RIVER TOWNE CENTER\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
     },
     {
@@ -1871,16 +1671,6 @@
           "date": null
         }
       ]
-    },
-    {
-      "operatorId": "ga-op-lbn-phg-mcrae-llc",
-      "query": "\"MCRAE MANOR NURSING HOME\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
-    },
-    {
-      "operatorId": "ga-op-lbn-rome-center-llc",
-      "query": "\"Etowah Landing\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": []
     },
     {
       "operatorId": "ga-op-lbn-union-county-hospital-authority",

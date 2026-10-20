@@ -190,189 +190,6 @@
   },
   "operators": [
     {
-      "operatorId": "ga-op-ccn-115368",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 7,
-      "recentServiceLineCitations": 4,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 2,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_alarm_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 3,
-          "recentCitations": 2,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "fire_door_itm": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "firestopping": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115381",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 3,
-      "recentServiceLineCitations": 0,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_alarm_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "emergency_lighting": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_door_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "firestopping": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115498",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 6,
-      "recentServiceLineCitations": 2,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 3,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "fire_alarm_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_door_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "firestopping": {
-          "citations": 2,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
       "operatorId": "ga-op-ccn-115579",
       "facilities": 1,
       "facilitiesWithServiceLineCitations": 1,
@@ -488,311 +305,6 @@
           "facilitiesRepeated": 0,
           "uncorrected": 0,
           "maxSeverity": "D"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115682",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 6,
-      "recentServiceLineCitations": 2,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_alarm_itm": {
-          "citations": 3,
-          "recentCitations": 2,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "emergency_lighting": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_door_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "firestopping": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115690",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 2,
-      "recentServiceLineCitations": 0,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_alarm_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_door_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "firestopping": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115727",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 19,
-      "recentServiceLineCitations": 14,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 4,
-          "recentCitations": 3,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "fire_alarm_itm": {
-          "citations": 2,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "extinguisher": {
-          "citations": 2,
-          "recentCitations": 2,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "kitchen_hood": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "emergency_lighting": {
-          "citations": 3,
-          "recentCitations": 2,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_door_itm": {
-          "citations": 5,
-          "recentCitations": 4,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "firestopping": {
-          "citations": 2,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-11A186",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 1,
-      "recentServiceLineCitations": 0,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_alarm_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_door_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "firestopping": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-11A200",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 1,
-      "recentServiceLineCitations": 1,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_alarm_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_door_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "firestopping": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
         }
       },
       "facilitiesWithOwnershipChange": 0,
@@ -984,34 +496,34 @@
     },
     {
       "operatorId": "ga-op-chain-202",
-      "facilities": 21,
-      "facilitiesWithServiceLineCitations": 19,
-      "serviceLineCitations": 97,
-      "recentServiceLineCitations": 36,
+      "facilities": 22,
+      "facilitiesWithServiceLineCitations": 20,
+      "serviceLineCitations": 107,
+      "recentServiceLineCitations": 39,
       "byLine": {
         "sprinkler_itm": {
-          "citations": 23,
-          "recentCitations": 11,
-          "facilitiesRepeated": 6,
+          "citations": 26,
+          "recentCitations": 12,
+          "facilitiesRepeated": 7,
           "uncorrected": 0,
           "maxSeverity": "F"
         },
         "fire_alarm_itm": {
-          "citations": 16,
-          "recentCitations": 4,
-          "facilitiesRepeated": 2,
+          "citations": 19,
+          "recentCitations": 6,
+          "facilitiesRepeated": 3,
           "uncorrected": 0,
           "maxSeverity": "F"
         },
         "extinguisher": {
-          "citations": 7,
+          "citations": 8,
           "recentCitations": 2,
           "facilitiesRepeated": 1,
           "uncorrected": 0,
           "maxSeverity": "F"
         },
         "kitchen_hood": {
-          "citations": 7,
+          "citations": 8,
           "recentCitations": 2,
           "facilitiesRepeated": 1,
           "uncorrected": 0,
@@ -1025,14 +537,14 @@
           "maxSeverity": "E"
         },
         "fire_door_itm": {
-          "citations": 24,
+          "citations": 25,
           "recentCitations": 12,
           "facilitiesRepeated": 5,
           "uncorrected": 0,
           "maxSeverity": "E"
         },
         "firestopping": {
-          "citations": 10,
+          "citations": 11,
           "recentCitations": 3,
           "facilitiesRepeated": 2,
           "uncorrected": 0,
@@ -1106,22 +618,22 @@
     },
     {
       "operatorId": "ga-op-chain-246",
-      "facilities": 12,
-      "facilitiesWithServiceLineCitations": 11,
-      "serviceLineCitations": 69,
-      "recentServiceLineCitations": 31,
+      "facilities": 13,
+      "facilitiesWithServiceLineCitations": 12,
+      "serviceLineCitations": 82,
+      "recentServiceLineCitations": 42,
       "byLine": {
         "sprinkler_itm": {
-          "citations": 22,
-          "recentCitations": 11,
-          "facilitiesRepeated": 8,
+          "citations": 25,
+          "recentCitations": 13,
+          "facilitiesRepeated": 9,
           "uncorrected": 1,
           "maxSeverity": "F"
         },
         "fire_alarm_itm": {
-          "citations": 13,
-          "recentCitations": 5,
-          "facilitiesRepeated": 3,
+          "citations": 15,
+          "recentCitations": 7,
+          "facilitiesRepeated": 4,
           "uncorrected": 1,
           "maxSeverity": "F"
         },
@@ -1133,30 +645,30 @@
           "maxSeverity": "F"
         },
         "kitchen_hood": {
-          "citations": 1,
-          "recentCitations": 0,
+          "citations": 2,
+          "recentCitations": 1,
           "facilitiesRepeated": 0,
           "uncorrected": 0,
           "maxSeverity": "D"
         },
         "emergency_lighting": {
-          "citations": 6,
-          "recentCitations": 4,
+          "citations": 7,
+          "recentCitations": 5,
           "facilitiesRepeated": 2,
           "uncorrected": 1,
           "maxSeverity": "F"
         },
         "fire_door_itm": {
-          "citations": 13,
-          "recentCitations": 5,
-          "facilitiesRepeated": 2,
+          "citations": 16,
+          "recentCitations": 8,
+          "facilitiesRepeated": 3,
           "uncorrected": 0,
           "maxSeverity": "F"
         },
         "firestopping": {
-          "citations": 9,
-          "recentCitations": 5,
-          "facilitiesRepeated": 1,
+          "citations": 12,
+          "recentCitations": 7,
+          "facilitiesRepeated": 2,
           "uncorrected": 0,
           "maxSeverity": "F"
         }
@@ -1411,21 +923,21 @@
     },
     {
       "operatorId": "ga-op-chain-434",
-      "facilities": 63,
-      "facilitiesWithServiceLineCitations": 56,
-      "serviceLineCitations": 261,
-      "recentServiceLineCitations": 115,
+      "facilities": 65,
+      "facilitiesWithServiceLineCitations": 58,
+      "serviceLineCitations": 275,
+      "recentServiceLineCitations": 123,
       "byLine": {
         "sprinkler_itm": {
-          "citations": 75,
-          "recentCitations": 36,
-          "facilitiesRepeated": 20,
-          "uncorrected": 0,
+          "citations": 81,
+          "recentCitations": 38,
+          "facilitiesRepeated": 22,
+          "uncorrected": 1,
           "maxSeverity": "F"
         },
         "fire_alarm_itm": {
-          "citations": 39,
-          "recentCitations": 11,
+          "citations": 40,
+          "recentCitations": 12,
           "facilitiesRepeated": 4,
           "uncorrected": 0,
           "maxSeverity": "F"
@@ -1438,31 +950,31 @@
           "maxSeverity": "E"
         },
         "kitchen_hood": {
-          "citations": 16,
-          "recentCitations": 8,
-          "facilitiesRepeated": 2,
+          "citations": 18,
+          "recentCitations": 9,
+          "facilitiesRepeated": 3,
           "uncorrected": 0,
           "maxSeverity": "F"
         },
         "emergency_lighting": {
-          "citations": 27,
-          "recentCitations": 14,
+          "citations": 29,
+          "recentCitations": 16,
           "facilitiesRepeated": 4,
-          "uncorrected": 0,
+          "uncorrected": 1,
           "maxSeverity": "F"
         },
         "fire_door_itm": {
-          "citations": 61,
-          "recentCitations": 27,
+          "citations": 62,
+          "recentCitations": 28,
           "facilitiesRepeated": 10,
           "uncorrected": 2,
           "maxSeverity": "F"
         },
         "firestopping": {
-          "citations": 31,
-          "recentCitations": 14,
-          "facilitiesRepeated": 3,
-          "uncorrected": 0,
+          "citations": 33,
+          "recentCitations": 15,
+          "facilitiesRepeated": 4,
+          "uncorrected": 1,
           "maxSeverity": "F"
         }
       },
@@ -1899,24 +1411,24 @@
     },
     {
       "operatorId": "ga-op-chain-728",
-      "facilities": 6,
-      "facilitiesWithServiceLineCitations": 6,
-      "serviceLineCitations": 22,
+      "facilities": 7,
+      "facilitiesWithServiceLineCitations": 7,
+      "serviceLineCitations": 25,
       "recentServiceLineCitations": 13,
       "byLine": {
         "sprinkler_itm": {
-          "citations": 4,
+          "citations": 5,
           "recentCitations": 3,
           "facilitiesRepeated": 1,
           "uncorrected": 0,
           "maxSeverity": "F"
         },
         "fire_alarm_itm": {
-          "citations": 3,
+          "citations": 4,
           "recentCitations": 1,
           "facilitiesRepeated": 0,
           "uncorrected": 0,
-          "maxSeverity": "E"
+          "maxSeverity": "F"
         },
         "extinguisher": {
           "citations": 1,
@@ -1926,11 +1438,11 @@
           "maxSeverity": "D"
         },
         "kitchen_hood": {
-          "citations": 3,
+          "citations": 4,
           "recentCitations": 1,
           "facilitiesRepeated": 0,
           "uncorrected": 0,
-          "maxSeverity": "D"
+          "maxSeverity": "E"
         },
         "emergency_lighting": {
           "citations": 7,
@@ -1960,13 +1472,13 @@
     },
     {
       "operatorId": "ga-op-chain-766",
-      "facilities": 27,
-      "facilitiesWithServiceLineCitations": 26,
-      "serviceLineCitations": 204,
-      "recentServiceLineCitations": 80,
+      "facilities": 28,
+      "facilitiesWithServiceLineCitations": 27,
+      "serviceLineCitations": 211,
+      "recentServiceLineCitations": 84,
       "byLine": {
         "sprinkler_itm": {
-          "citations": 48,
+          "citations": 50,
           "recentCitations": 20,
           "facilitiesRepeated": 14,
           "uncorrected": 1,
@@ -1994,22 +1506,22 @@
           "maxSeverity": "F"
         },
         "emergency_lighting": {
-          "citations": 32,
-          "recentCitations": 15,
-          "facilitiesRepeated": 7,
+          "citations": 35,
+          "recentCitations": 17,
+          "facilitiesRepeated": 8,
           "uncorrected": 1,
           "maxSeverity": "F"
         },
         "fire_door_itm": {
-          "citations": 36,
-          "recentCitations": 14,
+          "citations": 37,
+          "recentCitations": 15,
           "facilitiesRepeated": 9,
           "uncorrected": 0,
           "maxSeverity": "F"
         },
         "firestopping": {
-          "citations": 20,
-          "recentCitations": 9,
+          "citations": 21,
+          "recentCitations": 10,
           "facilitiesRepeated": 3,
           "uncorrected": 0,
           "maxSeverity": "F"
@@ -2021,22 +1533,22 @@
     },
     {
       "operatorId": "ga-op-chain-769",
-      "facilities": 5,
-      "facilitiesWithServiceLineCitations": 5,
-      "serviceLineCitations": 26,
-      "recentServiceLineCitations": 11,
+      "facilities": 6,
+      "facilitiesWithServiceLineCitations": 6,
+      "serviceLineCitations": 32,
+      "recentServiceLineCitations": 13,
       "byLine": {
         "sprinkler_itm": {
-          "citations": 11,
+          "citations": 12,
           "recentCitations": 5,
           "facilitiesRepeated": 3,
           "uncorrected": 0,
           "maxSeverity": "F"
         },
         "fire_alarm_itm": {
-          "citations": 5,
-          "recentCitations": 3,
-          "facilitiesRepeated": 2,
+          "citations": 8,
+          "recentCitations": 5,
+          "facilitiesRepeated": 3,
           "uncorrected": 0,
           "maxSeverity": "D"
         },
@@ -2048,7 +1560,7 @@
           "maxSeverity": "D"
         },
         "kitchen_hood": {
-          "citations": 2,
+          "citations": 3,
           "recentCitations": 0,
           "facilitiesRepeated": 0,
           "uncorrected": 0,
@@ -2062,7 +1574,7 @@
           "maxSeverity": "D"
         },
         "fire_door_itm": {
-          "citations": 4,
+          "citations": 5,
           "recentCitations": 1,
           "facilitiesRepeated": 1,
           "uncorrected": 0,
@@ -2079,67 +1591,6 @@
       "facilitiesWithOwnershipChange": 0,
       "facilitiesWithManagementChange": 0,
       "latestOwnershipAssociation": "2023-12-01"
-    },
-    {
-      "operatorId": "ga-op-chain-771",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 10,
-      "recentServiceLineCitations": 3,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 3,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "fire_alarm_itm": {
-          "citations": 3,
-          "recentCitations": 2,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "extinguisher": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "kitchen_hood": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "emergency_lighting": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_door_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "firestopping": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": "2008-05-23"
     },
     {
       "operatorId": "ga-op-chain-834",
@@ -2630,82 +2081,21 @@
       "latestOwnershipAssociation": "2024-10-06"
     },
     {
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-cobb-inc",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 6,
-      "recentServiceLineCitations": 2,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 2,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_alarm_itm": {
-          "citations": 2,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_door_itm": {
-          "citations": 2,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "firestopping": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": "2022-09-15"
-    },
-    {
       "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 6,
-      "recentServiceLineCitations": 2,
+      "facilities": 3,
+      "facilitiesWithServiceLineCitations": 2,
+      "serviceLineCitations": 12,
+      "recentServiceLineCitations": 4,
       "byLine": {
         "sprinkler_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
+          "citations": 3,
+          "recentCitations": 1,
+          "facilitiesRepeated": 1,
           "uncorrected": 0,
           "maxSeverity": "D"
         },
         "fire_alarm_itm": {
-          "citations": 1,
+          "citations": 3,
           "recentCitations": 0,
           "facilitiesRepeated": 0,
           "uncorrected": 0,
@@ -2733,11 +2123,11 @@
           "maxSeverity": "D"
         },
         "fire_door_itm": {
-          "citations": 2,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
+          "citations": 4,
+          "recentCitations": 2,
+          "facilitiesRepeated": 2,
           "uncorrected": 0,
-          "maxSeverity": "D"
+          "maxSeverity": "E"
         },
         "firestopping": {
           "citations": 1,
@@ -2745,67 +2135,6 @@
           "facilitiesRepeated": 0,
           "uncorrected": 0,
           "maxSeverity": "E"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc-at-wesley-woods",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 0,
-      "serviceLineCitations": 0,
-      "recentServiceLineCitations": 0,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_alarm_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_door_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "firestopping": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
         }
       },
       "facilitiesWithOwnershipChange": 0,
@@ -3240,67 +2569,6 @@
       "latestOwnershipAssociation": "2007-02-01"
     },
     {
-      "operatorId": "ga-op-lbn-central-georgia-senior-health-inc",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 1,
-      "recentServiceLineCitations": 0,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_alarm_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_door_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "firestopping": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": "2020-12-01"
-    },
-    {
       "operatorId": "ga-op-lbn-chatuge-regional-hospital-inc",
       "facilities": 1,
       "facilitiesWithServiceLineCitations": 1,
@@ -3482,67 +2750,6 @@
       "facilitiesWithOwnershipChange": 0,
       "facilitiesWithManagementChange": 0,
       "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-lbn-columbus-center-llc",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 11,
-      "recentServiceLineCitations": 5,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 2,
-          "recentCitations": 2,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_alarm_itm": {
-          "citations": 2,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 2,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "emergency_lighting": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_door_itm": {
-          "citations": 4,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "firestopping": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": "2017-10-01"
     },
     {
       "operatorId": "ga-op-lbn-columbus-regional-senior-living-inc",
@@ -4275,67 +3482,6 @@
       "facilitiesWithOwnershipChange": 0,
       "facilitiesWithManagementChange": 0,
       "latestOwnershipAssociation": "2016-07-01"
-    },
-    {
-      "operatorId": "ga-op-lbn-harborview-waycross-llc",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 13,
-      "recentServiceLineCitations": 11,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 3,
-          "recentCitations": 2,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "fire_alarm_itm": {
-          "citations": 2,
-          "recentCitations": 2,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "emergency_lighting": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_door_itm": {
-          "citations": 3,
-          "recentCitations": 3,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "firestopping": {
-          "citations": 3,
-          "recentCitations": 2,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": "2017-05-01"
     },
     {
       "operatorId": "ga-op-lbn-hart-care-center-inc",
@@ -5802,250 +4948,6 @@
       "latestOwnershipAssociation": "2007-07-09"
     },
     {
-      "operatorId": "ga-op-lbn-park-springs-llc",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 7,
-      "recentServiceLineCitations": 0,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 2,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "fire_alarm_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "emergency_lighting": {
-          "citations": 2,
-          "recentCitations": 0,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "fire_door_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "firestopping": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": "2023-01-01"
-    },
-    {
-      "operatorId": "ga-op-lbn-phg-mcrae-llc",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 14,
-      "recentServiceLineCitations": 2,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 4,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "fire_alarm_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "emergency_lighting": {
-          "citations": 2,
-          "recentCitations": 0,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "fire_door_itm": {
-          "citations": 5,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "firestopping": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-lbn-phg-thomson-llc",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 9,
-      "recentServiceLineCitations": 2,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 3,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_alarm_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 3,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_door_itm": {
-          "citations": 2,
-          "recentCitations": 0,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "firestopping": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": "2021-07-01"
-    },
-    {
-      "operatorId": "ga-op-lbn-phg-wrightsville-llc",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 5,
-      "recentServiceLineCitations": 4,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_alarm_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_door_itm": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "firestopping": {
-          "citations": 2,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": "2019-05-14"
-    },
-    {
       "operatorId": "ga-op-lbn-pine-leaf-investment-inc",
       "facilities": 2,
       "facilitiesWithServiceLineCitations": 2,
@@ -6166,67 +5068,6 @@
       "facilitiesWithOwnershipChange": 0,
       "facilitiesWithManagementChange": 0,
       "latestOwnershipAssociation": "1988-06-01"
-    },
-    {
-      "operatorId": "ga-op-lbn-pt-hills-place-terraces-llc",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 5,
-      "recentServiceLineCitations": 2,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_alarm_itm": {
-          "citations": 2,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "emergency_lighting": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_door_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "firestopping": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": "2020-03-14"
     },
     {
       "operatorId": "ga-op-lbn-resorts-at-pooler-inc",
@@ -6351,67 +5192,6 @@
       "latestOwnershipAssociation": null
     },
     {
-      "operatorId": "ga-op-lbn-rome-center-llc",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 6,
-      "recentServiceLineCitations": 2,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "fire_alarm_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "emergency_lighting": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "fire_door_itm": {
-          "citations": 2,
-          "recentCitations": 2,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "firestopping": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": "2017-10-01"
-    },
-    {
       "operatorId": "ga-op-lbn-smith-medical-nursing-care-center-inc",
       "facilities": 1,
       "facilitiesWithServiceLineCitations": 1,
@@ -6532,67 +5312,6 @@
       "facilitiesWithOwnershipChange": 0,
       "facilitiesWithManagementChange": 0,
       "latestOwnershipAssociation": "2023-11-01"
-    },
-    {
-      "operatorId": "ga-op-lbn-southeast-georgia-health-system-inc",
-      "facilities": 2,
-      "facilitiesWithServiceLineCitations": 2,
-      "serviceLineCitations": 14,
-      "recentServiceLineCitations": 8,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 6,
-          "recentCitations": 2,
-          "facilitiesRepeated": 2,
-          "uncorrected": 1,
-          "maxSeverity": "F"
-        },
-        "fire_alarm_itm": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 2,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "emergency_lighting": {
-          "citations": 2,
-          "recentCitations": 2,
-          "facilitiesRepeated": 0,
-          "uncorrected": 1,
-          "maxSeverity": "F"
-        },
-        "fire_door_itm": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "firestopping": {
-          "citations": 2,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 1,
-          "maxSeverity": "F"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
     },
     {
       "operatorId": "ga-op-lbn-taylor-regional-hospital",
@@ -7205,14 +5924,75 @@
       "latestOwnershipAssociation": "2019-12-01"
     },
     {
-      "operatorId": "ga-op-org-atrium-health-inc",
+      "operatorId": "ga-op-org-annandale-village",
       "facilities": 1,
       "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 5,
+      "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "byLine": {
         "sprinkler_itm": {
-          "citations": 3,
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "fire_alarm_itm": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "extinguisher": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "kitchen_hood": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "emergency_lighting": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "fire_door_itm": {
+          "citations": 1,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": "D"
+        },
+        "firestopping": {
+          "citations": 1,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": "D"
+        }
+      },
+      "facilitiesWithOwnershipChange": 0,
+      "facilitiesWithManagementChange": 0,
+      "latestOwnershipAssociation": null
+    },
+    {
+      "operatorId": "ga-op-org-atrium-health-inc",
+      "facilities": 2,
+      "facilitiesWithServiceLineCitations": 2,
+      "serviceLineCitations": 6,
+      "recentServiceLineCitations": 0,
+      "byLine": {
+        "sprinkler_itm": {
+          "citations": 4,
           "recentCitations": 0,
           "facilitiesRepeated": 1,
           "uncorrected": 0,
@@ -7388,6 +6168,128 @@
       "latestOwnershipAssociation": "2016-07-15"
     },
     {
+      "operatorId": "ga-op-org-georgia-dbhdd",
+      "facilities": 2,
+      "facilitiesWithServiceLineCitations": 2,
+      "serviceLineCitations": 2,
+      "recentServiceLineCitations": 1,
+      "byLine": {
+        "sprinkler_itm": {
+          "citations": 2,
+          "recentCitations": 1,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": "D"
+        },
+        "fire_alarm_itm": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "extinguisher": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "kitchen_hood": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "emergency_lighting": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "fire_door_itm": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "firestopping": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        }
+      },
+      "facilitiesWithOwnershipChange": 0,
+      "facilitiesWithManagementChange": 0,
+      "latestOwnershipAssociation": null
+    },
+    {
+      "operatorId": "ga-op-org-isakson-living-inc",
+      "facilities": 2,
+      "facilitiesWithServiceLineCitations": 2,
+      "serviceLineCitations": 12,
+      "recentServiceLineCitations": 2,
+      "byLine": {
+        "sprinkler_itm": {
+          "citations": 2,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": "F"
+        },
+        "fire_alarm_itm": {
+          "citations": 3,
+          "recentCitations": 1,
+          "facilitiesRepeated": 1,
+          "uncorrected": 0,
+          "maxSeverity": "F"
+        },
+        "extinguisher": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "kitchen_hood": {
+          "citations": 2,
+          "recentCitations": 1,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": "F"
+        },
+        "emergency_lighting": {
+          "citations": 2,
+          "recentCitations": 0,
+          "facilitiesRepeated": 1,
+          "uncorrected": 0,
+          "maxSeverity": "F"
+        },
+        "fire_door_itm": {
+          "citations": 1,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": "D"
+        },
+        "firestopping": {
+          "citations": 2,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": "D"
+        }
+      },
+      "facilitiesWithOwnershipChange": 0,
+      "facilitiesWithManagementChange": 0,
+      "latestOwnershipAssociation": "2023-01-01"
+    },
+    {
       "operatorId": "ga-op-org-john-d-archbold-memorial-hospital-inc",
       "facilities": 1,
       "facilitiesWithServiceLineCitations": 1,
@@ -7449,6 +6351,128 @@
       "latestOwnershipAssociation": "2009-10-01"
     },
     {
+      "operatorId": "ga-op-org-peach-health-group-llc",
+      "facilities": 4,
+      "facilitiesWithServiceLineCitations": 4,
+      "serviceLineCitations": 47,
+      "recentServiceLineCitations": 22,
+      "byLine": {
+        "sprinkler_itm": {
+          "citations": 12,
+          "recentCitations": 6,
+          "facilitiesRepeated": 3,
+          "uncorrected": 0,
+          "maxSeverity": "F"
+        },
+        "fire_alarm_itm": {
+          "citations": 4,
+          "recentCitations": 1,
+          "facilitiesRepeated": 1,
+          "uncorrected": 0,
+          "maxSeverity": "F"
+        },
+        "extinguisher": {
+          "citations": 2,
+          "recentCitations": 2,
+          "facilitiesRepeated": 1,
+          "uncorrected": 0,
+          "maxSeverity": "F"
+        },
+        "kitchen_hood": {
+          "citations": 2,
+          "recentCitations": 1,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": "F"
+        },
+        "emergency_lighting": {
+          "citations": 9,
+          "recentCitations": 4,
+          "facilitiesRepeated": 3,
+          "uncorrected": 0,
+          "maxSeverity": "E"
+        },
+        "fire_door_itm": {
+          "citations": 13,
+          "recentCitations": 6,
+          "facilitiesRepeated": 3,
+          "uncorrected": 0,
+          "maxSeverity": "E"
+        },
+        "firestopping": {
+          "citations": 5,
+          "recentCitations": 2,
+          "facilitiesRepeated": 2,
+          "uncorrected": 0,
+          "maxSeverity": "E"
+        }
+      },
+      "facilitiesWithOwnershipChange": 0,
+      "facilitiesWithManagementChange": 0,
+      "latestOwnershipAssociation": "2021-07-01"
+    },
+    {
+      "operatorId": "ga-op-org-presbyterian-homes-of-georgia",
+      "facilities": 1,
+      "facilitiesWithServiceLineCitations": 1,
+      "serviceLineCitations": 6,
+      "recentServiceLineCitations": 2,
+      "byLine": {
+        "sprinkler_itm": {
+          "citations": 3,
+          "recentCitations": 1,
+          "facilitiesRepeated": 1,
+          "uncorrected": 0,
+          "maxSeverity": "F"
+        },
+        "fire_alarm_itm": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "extinguisher": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "kitchen_hood": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "emergency_lighting": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "fire_door_itm": {
+          "citations": 1,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": "D"
+        },
+        "firestopping": {
+          "citations": 2,
+          "recentCitations": 1,
+          "facilitiesRepeated": 1,
+          "uncorrected": 0,
+          "maxSeverity": "E"
+        }
+      },
+      "facilitiesWithOwnershipChange": 0,
+      "facilitiesWithManagementChange": 0,
+      "latestOwnershipAssociation": null
+    },
+    {
       "operatorId": "ga-op-org-prince-equities-llc",
       "facilities": 1,
       "facilitiesWithServiceLineCitations": 1,
@@ -7508,12 +6532,73 @@
       "facilitiesWithOwnershipChange": 0,
       "facilitiesWithManagementChange": 0,
       "latestOwnershipAssociation": "2019-01-04"
+    },
+    {
+      "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
+      "facilities": 2,
+      "facilitiesWithServiceLineCitations": 2,
+      "serviceLineCitations": 17,
+      "recentServiceLineCitations": 7,
+      "byLine": {
+        "sprinkler_itm": {
+          "citations": 3,
+          "recentCitations": 2,
+          "facilitiesRepeated": 1,
+          "uncorrected": 0,
+          "maxSeverity": "F"
+        },
+        "fire_alarm_itm": {
+          "citations": 3,
+          "recentCitations": 1,
+          "facilitiesRepeated": 1,
+          "uncorrected": 0,
+          "maxSeverity": "F"
+        },
+        "extinguisher": {
+          "citations": 0,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": null
+        },
+        "kitchen_hood": {
+          "citations": 3,
+          "recentCitations": 1,
+          "facilitiesRepeated": 1,
+          "uncorrected": 0,
+          "maxSeverity": "E"
+        },
+        "emergency_lighting": {
+          "citations": 1,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": "D"
+        },
+        "fire_door_itm": {
+          "citations": 6,
+          "recentCitations": 3,
+          "facilitiesRepeated": 1,
+          "uncorrected": 0,
+          "maxSeverity": "F"
+        },
+        "firestopping": {
+          "citations": 1,
+          "recentCitations": 0,
+          "facilitiesRepeated": 0,
+          "uncorrected": 0,
+          "maxSeverity": "D"
+        }
+      },
+      "facilitiesWithOwnershipChange": 0,
+      "facilitiesWithManagementChange": 0,
+      "latestOwnershipAssociation": "2017-10-01"
     }
   ],
   "facilities": [
     {
       "ccn": "115002",
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc-at-wesley-woods",
+      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
       "lines": {
         "sprinkler_itm": {
           "citations": 0,
@@ -11546,7 +10631,7 @@
     },
     {
       "ccn": "115265",
-      "operatorId": "ga-op-lbn-harborview-waycross-llc",
+      "operatorId": "ga-op-chain-246",
       "lines": {
         "sprinkler_itm": {
           "citations": 3,
@@ -17674,7 +16759,7 @@
     },
     {
       "ccn": "115348",
-      "operatorId": "ga-op-lbn-rome-center-llc",
+      "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
       "lines": {
         "sprinkler_itm": {
           "citations": 1,
@@ -19196,7 +18281,7 @@
     },
     {
       "ccn": "115365",
-      "operatorId": "ga-op-lbn-phg-thomson-llc",
+      "operatorId": "ga-op-org-peach-health-group-llc",
       "lines": {
         "sprinkler_itm": {
           "citations": 3,
@@ -19364,7 +18449,7 @@
     },
     {
       "ccn": "115368",
-      "operatorId": "ga-op-ccn-115368",
+      "operatorId": "ga-op-chain-766",
       "lines": {
         "sprinkler_itm": {
           "citations": 2,
@@ -20290,7 +19375,7 @@
     },
     {
       "ccn": "115381",
-      "operatorId": "ga-op-ccn-115381",
+      "operatorId": "ga-op-chain-728",
       "lines": {
         "sprinkler_itm": {
           "citations": 1,
@@ -22045,7 +21130,7 @@
     },
     {
       "ccn": "115406",
-      "operatorId": "ga-op-lbn-phg-wrightsville-llc",
+      "operatorId": "ga-op-org-peach-health-group-llc",
       "lines": {
         "sprinkler_itm": {
           "citations": 1,
@@ -28226,7 +27311,7 @@
     },
     {
       "ccn": "115494",
-      "operatorId": "ga-op-lbn-phg-mcrae-llc",
+      "operatorId": "ga-op-org-peach-health-group-llc",
       "lines": {
         "sprinkler_itm": {
           "citations": 4,
@@ -28676,7 +27761,7 @@
     },
     {
       "ccn": "115498",
-      "operatorId": "ga-op-ccn-115498",
+      "operatorId": "ga-op-org-presbyterian-homes-of-georgia",
       "lines": {
         "sprinkler_itm": {
           "citations": 3,
@@ -30664,7 +29749,7 @@
     },
     {
       "ccn": "115521",
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-cobb-inc",
+      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
       "lines": {
         "sprinkler_itm": {
           "citations": 2,
@@ -32138,7 +31223,7 @@
     },
     {
       "ccn": "115535",
-      "operatorId": "ga-op-chain-771",
+      "operatorId": "ga-op-chain-202",
       "lines": {
         "sprinkler_itm": {
           "citations": 3,
@@ -35963,7 +35048,7 @@
     },
     {
       "ccn": "115566",
-      "operatorId": "ga-op-lbn-columbus-center-llc",
+      "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
       "lines": {
         "sprinkler_itm": {
           "citations": 2,
@@ -47407,7 +46492,7 @@
     },
     {
       "ccn": "115680",
-      "operatorId": "ga-op-lbn-central-georgia-senior-health-inc",
+      "operatorId": "ga-op-org-atrium-health-inc",
       "lines": {
         "sprinkler_itm": {
           "citations": 1,
@@ -47677,7 +46762,7 @@
     },
     {
       "ccn": "115682",
-      "operatorId": "ga-op-ccn-115682",
+      "operatorId": "ga-op-chain-769",
       "lines": {
         "sprinkler_itm": {
           "citations": 1,
@@ -47971,7 +47056,7 @@
     },
     {
       "ccn": "115684",
-      "operatorId": "ga-op-lbn-southeast-georgia-health-system-inc",
+      "operatorId": "ga-op-chain-434",
       "lines": {
         "sprinkler_itm": {
           "citations": 3,
@@ -48913,7 +47998,7 @@
     },
     {
       "ccn": "115690",
-      "operatorId": "ga-op-ccn-115690",
+      "operatorId": "ga-op-org-annandale-village",
       "lines": {
         "sprinkler_itm": {
           "citations": 0,
@@ -49331,7 +48416,7 @@
     },
     {
       "ccn": "115694",
-      "operatorId": "ga-op-lbn-park-springs-llc",
+      "operatorId": "ga-op-org-isakson-living-inc",
       "lines": {
         "sprinkler_itm": {
           "citations": 2,
@@ -52707,7 +51792,7 @@
     },
     {
       "ccn": "115721",
-      "operatorId": "ga-op-lbn-southeast-georgia-health-system-inc",
+      "operatorId": "ga-op-chain-434",
       "lines": {
         "sprinkler_itm": {
           "citations": 3,
@@ -53455,7 +52540,7 @@
     },
     {
       "ccn": "115727",
-      "operatorId": "ga-op-ccn-115727",
+      "operatorId": "ga-op-org-peach-health-group-llc",
       "lines": {
         "sprinkler_itm": {
           "citations": 4,
@@ -54658,7 +53743,7 @@
     },
     {
       "ccn": "115773",
-      "operatorId": "ga-op-lbn-pt-hills-place-terraces-llc",
+      "operatorId": "ga-op-org-isakson-living-inc",
       "lines": {
         "sprinkler_itm": {
           "citations": 0,
@@ -55471,7 +54556,7 @@
     },
     {
       "ccn": "11A186",
-      "operatorId": "ga-op-ccn-11A186",
+      "operatorId": "ga-op-org-georgia-dbhdd",
       "lines": {
         "sprinkler_itm": {
           "citations": 1,
@@ -55569,7 +54654,7 @@
     },
     {
       "ccn": "11A200",
-      "operatorId": "ga-op-ccn-11A200",
+      "operatorId": "ga-op-org-georgia-dbhdd",
       "lines": {
         "sprinkler_itm": {
           "citations": 1,

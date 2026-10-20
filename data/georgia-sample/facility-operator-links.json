@@ -5058,27 +5058,6 @@
       }
     },
     {
-      "ccn": "115535",
-      "facilityName": "Lake City Center for Nursing and Healing LLC",
-      "legalBusinessName": "LAKE CITY NURSING AND REHABILITATION CENTER, LLC",
-      "address": "2055 REX ROAD",
-      "city": "LAKE CITY",
-      "zip": "30260",
-      "county": "Clayton",
-      "certifiedBeds": 242,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-chain-771",
-      "resolutionRule": "chain_id",
-      "status": "resolved",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "chain_id",
-        "value": "[withheld: may name an individual]",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
       "ccn": "115587",
       "facilityName": "Buchanan Healthcare Center",
       "legalBusinessName": "BUCHANAN HEALTHCARE CENTER LLC",
@@ -5226,6 +5205,90 @@
       }
     },
     {
+      "ccn": "115535",
+      "facilityName": "Lake City Center for Nursing and Healing LLC",
+      "legalBusinessName": "LAKE CITY NURSING AND REHABILITATION CENTER, LLC",
+      "address": "2055 REX ROAD",
+      "city": "LAKE CITY",
+      "zip": "30260",
+      "county": "Clayton",
+      "certifiedBeds": 242,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-chain-202",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "chain decision for 771",
+        "value": "ga-op-chain-202",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115265",
+      "facilityName": "HARBORVIEW SATILLA",
+      "legalBusinessName": "HARBORVIEW WAYCROSS LLC",
+      "address": "1600 RIVERSIDE AVE",
+      "city": "WAYCROSS",
+      "zip": "31501",
+      "county": "Ware",
+      "certifiedBeds": 174,
+      "ownershipType": "For profit - Corporation",
+      "operatorId": "ga-op-chain-246",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115265",
+        "value": "ga-op-chain-246",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115368",
+      "facilityName": "BHM Carrollton Opco LLC",
+      "legalBusinessName": "[not available in CMS]",
+      "address": "2327 North Highway 27",
+      "city": "Carrollton",
+      "zip": "30117",
+      "county": "Carroll",
+      "certifiedBeds": 159,
+      "ownershipType": "For profit - Corporation",
+      "operatorId": "ga-op-chain-766",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115368",
+        "value": "ga-op-chain-766",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115381",
+      "facilityName": "COTTAGES AT ROCKMART, THE",
+      "legalBusinessName": "[not available in CMS]",
+      "address": "750 GOODYEAR AVENUE",
+      "city": "ROCKMART",
+      "zip": "30153",
+      "county": "Polk",
+      "certifiedBeds": 116,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-chain-728",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115381",
+        "value": "ga-op-chain-728",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
       "ccn": "115443",
       "facilityName": "Pine Knoll Path of Journey LLC",
       "legalBusinessName": "[not available in CMS]",
@@ -5352,6 +5415,69 @@
       }
     },
     {
+      "ccn": "115682",
+      "facilityName": "PARKSIDE AT BUDD TERRACE OPERATING COMPANY LLC",
+      "legalBusinessName": "[not available in CMS]",
+      "address": "1833 CLIFTON ROAD, NE",
+      "city": "ATLANTA",
+      "zip": "30329",
+      "county": "De Kalb",
+      "certifiedBeds": 250,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-chain-769",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115682",
+        "value": "ga-op-chain-769",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115684",
+      "facilityName": "SENIOR CARE CENTER - ST MARYS",
+      "legalBusinessName": "SOUTHEAST GEORGIA HEALTH SYSTEM, INC",
+      "address": "805 DILWORTH STREET",
+      "city": "SAINT MARYS",
+      "zip": "31558",
+      "county": "Camden",
+      "certifiedBeds": 78,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-chain-434",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115684",
+        "value": "ga-op-chain-434",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115721",
+      "facilityName": "SENIOR CARE CENTER - BRUNSWICK",
+      "legalBusinessName": "SOUTHEAST GEORGIA HEALTH SYSTEM, INC",
+      "address": "2611 WILDWOOD DRIVE",
+      "city": "BRUNSWICK",
+      "zip": "31520",
+      "county": "Glynn",
+      "certifiedBeds": 200,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-chain-434",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115721",
+        "value": "ga-op-chain-434",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
       "ccn": "115730",
       "facilityName": "Rosewood at Tybee Island of Journey LLC, The",
       "legalBusinessName": "[not available in CMS]",
@@ -5391,27 +5517,6 @@
         "value": "ga-op-chain-766",
         "cmsModified": "2026-09-30",
         "retrievedOn": "2026-10-20"
-      }
-    },
-    {
-      "ccn": "115002",
-      "facilityName": "A.G. RHODES HOME WESLEY WOODS",
-      "legalBusinessName": "A. G. RHODES HOME INC. AT WESLEY WOODS",
-      "address": "1819 CLIFTON ROAD, N.E.",
-      "city": "ATLANTA",
-      "zip": "30329",
-      "county": "De Kalb",
-      "certifiedBeds": 150,
-      "ownershipType": "Non profit - Corporation",
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc-at-wesley-woods",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "A. G. RHODES HOME INC. AT WESLEY WOODS",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
       }
     },
     {
@@ -5499,27 +5604,6 @@
       }
     },
     {
-      "ccn": "115146",
-      "facilityName": "ORCHARD VIEW REHABILITATION & SKILLED NURSING CTR",
-      "legalBusinessName": "HOSPITAL AUTHORITY OF COLUMBUS GA",
-      "address": "8414 WHITESVILLE ROAD",
-      "city": "COLUMBUS",
-      "zip": "31907",
-      "county": "Muscogee",
-      "certifiedBeds": 200,
-      "ownershipType": "Government - City/county",
-      "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "HOSPITAL AUTHORITY OF COLUMBUS GA",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
       "ccn": "115262",
       "facilityName": "APPLING NURSING AND REHABILITATION PAVILION",
       "legalBusinessName": "THE BAXLEY AND APPLING COUNTY HOSPITAL AUTHORITY",
@@ -5562,27 +5646,6 @@
       }
     },
     {
-      "ccn": "115265",
-      "facilityName": "HARBORVIEW SATILLA",
-      "legalBusinessName": "HARBORVIEW WAYCROSS LLC",
-      "address": "1600 RIVERSIDE AVE",
-      "city": "WAYCROSS",
-      "zip": "31501",
-      "county": "Ware",
-      "certifiedBeds": 174,
-      "ownershipType": "For profit - Corporation",
-      "operatorId": "ga-op-lbn-harborview-waycross-llc",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "HARBORVIEW WAYCROSS LLC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
       "ccn": "115266",
       "facilityName": "ARCHBOLD LIVING CAMILLA",
       "legalBusinessName": "HOSPITAL AUTHORITY OF MITCHELL COUNTY",
@@ -5620,27 +5683,6 @@
         "dataset": "4pq5-n9py",
         "field": "legal_business_name",
         "value": "LIFEBRITE HOSPITAL GROUP OF EARLY LLC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115275",
-      "facilityName": "A.G. RHODES HOME, INC, THE",
-      "legalBusinessName": "A G RHODES HOME INC",
-      "address": "350 BOULVARD, S.E.",
-      "city": "ATLANTA",
-      "zip": "30312",
-      "county": "Fulton",
-      "certifiedBeds": 138,
-      "ownershipType": "Non profit - Corporation",
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "A G RHODES HOME INC",
         "cmsModified": "2026-09-30",
         "retrievedOn": "2026-10-19"
       }
@@ -5751,27 +5793,6 @@
       }
     },
     {
-      "ccn": "115338",
-      "facilityName": "MIONA GERIATRIC & DEMENTIA CENTER",
-      "legalBusinessName": "MIONA GERIATRIC & DEMENTIA CENTER, LLC",
-      "address": "201 POPLAR STREET",
-      "city": "IDEAL",
-      "zip": "31041",
-      "county": "Macon",
-      "certifiedBeds": 88,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-lbn-miona-geriatric-and-dementia-center-llc",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "MIONA GERIATRIC & DEMENTIA CENTER, LLC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
       "ccn": "115341",
       "facilityName": "RIDGEWOOD MANOR HEALTH AND REHABILITATION",
       "legalBusinessName": "HLTC INC",
@@ -5788,111 +5809,6 @@
         "dataset": "4pq5-n9py",
         "field": "legal_business_name",
         "value": "HLTC INC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115348",
-      "facilityName": "Etowah Landing",
-      "legalBusinessName": "ROME CENTER LLC",
-      "address": "809 South Broad Street",
-      "city": "Rome",
-      "zip": "30161",
-      "county": "Floyd",
-      "certifiedBeds": 100,
-      "ownershipType": "For profit - Individual",
-      "operatorId": "ga-op-lbn-rome-center-llc",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "ROME CENTER LLC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115351",
-      "facilityName": "MUSCOGEE MANOR & REHABILITATION CTR",
-      "legalBusinessName": "HOSPITAL AUTHORITY OF COLUMBUS GA",
-      "address": "7150 MANOR ROAD",
-      "city": "COLUMBUS",
-      "zip": "31907",
-      "county": "Muscogee",
-      "certifiedBeds": 196,
-      "ownershipType": "Government - City",
-      "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "HOSPITAL AUTHORITY OF COLUMBUS GA",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115365",
-      "facilityName": "THOMSON HEALTH AND REHABILITATION",
-      "legalBusinessName": "PHG THOMSON LLC",
-      "address": "511 MT. PLEASANT ROAD",
-      "city": "THOMSON",
-      "zip": "30824",
-      "county": "Mc Duffie",
-      "certifiedBeds": 150,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-lbn-phg-thomson-llc",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "PHG THOMSON LLC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115368",
-      "facilityName": "BHM Carrollton Opco LLC",
-      "legalBusinessName": "[not available in CMS]",
-      "address": "2327 North Highway 27",
-      "city": "Carrollton",
-      "zip": "30117",
-      "county": "Carroll",
-      "certifiedBeds": 159,
-      "ownershipType": "For profit - Corporation",
-      "operatorId": "ga-op-ccn-115368",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115381",
-      "facilityName": "COTTAGES AT ROCKMART, THE",
-      "legalBusinessName": "[not available in CMS]",
-      "address": "750 GOODYEAR AVENUE",
-      "city": "ROCKMART",
-      "zip": "30153",
-      "county": "Polk",
-      "certifiedBeds": 116,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-ccn-115381",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
         "cmsModified": "2026-09-30",
         "retrievedOn": "2026-10-19"
       }
@@ -5935,27 +5851,6 @@
         "dataset": "4pq5-n9py",
         "field": "legal_business_name",
         "value": "HLTC INC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115406",
-      "facilityName": "Wrightsville Manor Health and Rehab",
-      "legalBusinessName": "PHG WRIGHTSVILLE LLC",
-      "address": "337 West Court Street",
-      "city": "Wrightsville",
-      "zip": "31096",
-      "county": "Johnson",
-      "certifiedBeds": 94,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-lbn-phg-wrightsville-llc",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "PHG WRIGHTSVILLE LLC",
         "cmsModified": "2026-09-30",
         "retrievedOn": "2026-10-19"
       }
@@ -6066,27 +5961,6 @@
       }
     },
     {
-      "ccn": "115478",
-      "facilityName": "RIDGECREST REHAB & SKILLED NURSING CENTER",
-      "legalBusinessName": "HOSPITAL AUTHORITY OF COLUMBUS GA",
-      "address": "8329 STEVENS LANE",
-      "city": "COLUMBUS",
-      "zip": "31909",
-      "county": "Muscogee",
-      "certifiedBeds": 84,
-      "ownershipType": "Government - City/county",
-      "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "HOSPITAL AUTHORITY OF COLUMBUS GA",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
       "ccn": "115480",
       "facilityName": "ARCHBOLD LIVING THOMASVILLE",
       "legalBusinessName": "JOHN D ARCHBOLD MEMORIAL HOSPITAL INC",
@@ -6150,48 +6024,6 @@
       }
     },
     {
-      "ccn": "115494",
-      "facilityName": "MCRAE MANOR NURSING HOME",
-      "legalBusinessName": "PHG MCRAE LLC",
-      "address": "160 SOUTH FIRST AVENUE",
-      "city": "MC RAE",
-      "zip": "31055",
-      "county": "Telfair",
-      "certifiedBeds": 133,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-lbn-phg-mcrae-llc",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "PHG MCRAE LLC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115498",
-      "facilityName": "HOSPITAL AUTHORITY OF BROOKS COUNTY, GEORGIA, THE",
-      "legalBusinessName": "[not available in CMS]",
-      "address": "1901 WEST SCREVEN STREET",
-      "city": "QUITMAN",
-      "zip": "31643",
-      "county": "Brooks",
-      "certifiedBeds": 188,
-      "ownershipType": "Government - Hospital district",
-      "operatorId": "ga-op-ccn-115498",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
       "ccn": "115513",
       "facilityName": "TWIN OAKS CONVALESCENT CENTER",
       "legalBusinessName": "BACON COUNTY HEALTH SERVICES, INC.",
@@ -6208,27 +6040,6 @@
         "dataset": "4pq5-n9py",
         "field": "legal_business_name",
         "value": "BACON COUNTY HEALTH SERVICES, INC.",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115521",
-      "facilityName": "A.G. RHODES HOME, INC - COBB",
-      "legalBusinessName": "A G RHODES HOME COBB INC",
-      "address": "900 WYLIE ROAD",
-      "city": "MARIETTA",
-      "zip": "30067",
-      "county": "Cobb",
-      "certifiedBeds": 130,
-      "ownershipType": "Non profit - Corporation",
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-cobb-inc",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "A G RHODES HOME COBB INC",
         "cmsModified": "2026-09-30",
         "retrievedOn": "2026-10-19"
       }
@@ -6313,27 +6124,6 @@
         "dataset": "y2hd-n93e",
         "field": "owner_name where role_played_by_owner_or_manager_in_facility = OPERATIONAL/MANAGERIAL CONTROL and owner_type = Organization",
         "value": "BRIGHTMOOR MANAGEMENT SERVICES LLC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115566",
-      "facilityName": "RIVER TOWNE CENTER",
-      "legalBusinessName": "COLUMBUS CENTER LLC",
-      "address": "5131 WARM SPRINGS RD",
-      "city": "COLUMBUS",
-      "zip": "31909",
-      "county": "Muscogee",
-      "certifiedBeds": 210,
-      "ownershipType": "For profit - Corporation",
-      "operatorId": "ga-op-lbn-columbus-center-llc",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "COLUMBUS CENTER LLC",
         "cmsModified": "2026-09-30",
         "retrievedOn": "2026-10-19"
       }
@@ -6801,69 +6591,6 @@
       }
     },
     {
-      "ccn": "115680",
-      "facilityName": "CARLYLE PLACE",
-      "legalBusinessName": "CENTRAL GEORGIA SENIOR HEALTH, INC.",
-      "address": "5300 ZEBULON ROAD",
-      "city": "MACON",
-      "zip": "31210",
-      "county": "Bibb",
-      "certifiedBeds": 40,
-      "ownershipType": "Non profit - Corporation",
-      "operatorId": "ga-op-lbn-central-georgia-senior-health-inc",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "CENTRAL GEORGIA SENIOR HEALTH, INC.",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115682",
-      "facilityName": "PARKSIDE AT BUDD TERRACE OPERATING COMPANY LLC",
-      "legalBusinessName": "[not available in CMS]",
-      "address": "1833 CLIFTON ROAD, NE",
-      "city": "ATLANTA",
-      "zip": "30329",
-      "county": "De Kalb",
-      "certifiedBeds": 250,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-ccn-115682",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115684",
-      "facilityName": "SENIOR CARE CENTER - ST MARYS",
-      "legalBusinessName": "SOUTHEAST GEORGIA HEALTH SYSTEM, INC",
-      "address": "805 DILWORTH STREET",
-      "city": "SAINT MARYS",
-      "zip": "31558",
-      "county": "Camden",
-      "certifiedBeds": 78,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-lbn-southeast-georgia-health-system-inc",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "SOUTHEAST GEORGIA HEALTH SYSTEM, INC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
       "ccn": "115685",
       "facilityName": "HEARDMONT HEALTH AND REHABILITATION",
       "legalBusinessName": "HEARDMONT HEALTH PROPERTIES LLC",
@@ -6906,27 +6633,6 @@
       }
     },
     {
-      "ccn": "115690",
-      "facilityName": "D SCOTT HUDGENS CENTER FOR SKILLED NURSING, THE",
-      "legalBusinessName": "[not available in CMS]",
-      "address": "3500 ANNANDALE LANE",
-      "city": "SUWANEE",
-      "zip": "30024",
-      "county": "Gwinnett",
-      "certifiedBeds": 32,
-      "ownershipType": "Non profit - Corporation",
-      "operatorId": "ga-op-ccn-115690",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
       "ccn": "115691",
       "facilityName": "SMITH MEDICAL NURSING CARE CTR",
       "legalBusinessName": "SMITH MEDICAL NURSING CARE CENTER, INC.",
@@ -6943,27 +6649,6 @@
         "dataset": "4pq5-n9py",
         "field": "legal_business_name",
         "value": "SMITH MEDICAL NURSING CARE CENTER, INC.",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115694",
-      "facilityName": "Pebblebrook Health Center at Park Springs",
-      "legalBusinessName": "PARK SPRINGS LLC",
-      "address": "5610 New Bermuda Road",
-      "city": "Stone Mountain",
-      "zip": "30087",
-      "county": "Gwinnett",
-      "certifiedBeds": 60,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-lbn-park-springs-llc",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "PARK SPRINGS LLC",
         "cmsModified": "2026-09-30",
         "retrievedOn": "2026-10-19"
       }
@@ -7242,27 +6927,6 @@
       }
     },
     {
-      "ccn": "115721",
-      "facilityName": "SENIOR CARE CENTER - BRUNSWICK",
-      "legalBusinessName": "SOUTHEAST GEORGIA HEALTH SYSTEM, INC",
-      "address": "2611 WILDWOOD DRIVE",
-      "city": "BRUNSWICK",
-      "zip": "31520",
-      "county": "Glynn",
-      "certifiedBeds": 200,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-lbn-southeast-georgia-health-system-inc",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "SOUTHEAST GEORGIA HEALTH SYSTEM, INC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
       "ccn": "115723",
       "facilityName": "SALUDE - THE ART OF RECOVERY",
       "legalBusinessName": "MLH SALUDE - GWINNETT LLC",
@@ -7279,27 +6943,6 @@
         "dataset": "4pq5-n9py",
         "field": "legal_business_name",
         "value": "MLH SALUDE - GWINNETT LLC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115727",
-      "facilityName": "Jeffersonville Care Center LLC",
-      "legalBusinessName": "[not available in CMS]",
-      "address": "113 Spring Valley Road",
-      "city": "Jeffersonville",
-      "zip": "31044",
-      "county": "Twiggs",
-      "certifiedBeds": 131,
-      "ownershipType": "For profit - Corporation",
-      "operatorId": "ga-op-ccn-115727",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
         "cmsModified": "2026-09-30",
         "retrievedOn": "2026-10-19"
       }
@@ -7342,27 +6985,6 @@
         "dataset": "4pq5-n9py",
         "field": "legal_business_name",
         "value": "MESUN HEALTH SERVICES INC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115773",
-      "facilityName": "TERRACES AT PEACHTREE HILLS PLACE, THE",
-      "legalBusinessName": "PT HILLS PLACE TERRACES LLC",
-      "address": "229 PEACHTREE HILLS AVENUE, NE",
-      "city": "ATLANTA",
-      "zip": "30305",
-      "county": "Fulton",
-      "certifiedBeds": 25,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-lbn-pt-hills-place-terraces-llc",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "PT HILLS PLACE TERRACES LLC",
         "cmsModified": "2026-09-30",
         "retrievedOn": "2026-10-19"
       }
@@ -7452,6 +7074,384 @@
       }
     },
     {
+      "ccn": "115002",
+      "facilityName": "A.G. RHODES HOME WESLEY WOODS",
+      "legalBusinessName": "A. G. RHODES HOME INC. AT WESLEY WOODS",
+      "address": "1819 CLIFTON ROAD, N.E.",
+      "city": "ATLANTA",
+      "zip": "30329",
+      "county": "De Kalb",
+      "certifiedBeds": 150,
+      "ownershipType": "Non profit - Corporation",
+      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115002",
+        "value": "ga-op-lbn-a-g-rhodes-home-inc",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115146",
+      "facilityName": "ORCHARD VIEW REHABILITATION & SKILLED NURSING CTR",
+      "legalBusinessName": "HOSPITAL AUTHORITY OF COLUMBUS GA",
+      "address": "8414 WHITESVILLE ROAD",
+      "city": "COLUMBUS",
+      "zip": "31907",
+      "county": "Muscogee",
+      "certifiedBeds": 200,
+      "ownershipType": "Government - City/county",
+      "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115146",
+        "value": "ga-op-lbn-hospital-authority-of-columbus-ga",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115275",
+      "facilityName": "A.G. RHODES HOME, INC, THE",
+      "legalBusinessName": "A G RHODES HOME INC",
+      "address": "350 BOULVARD, S.E.",
+      "city": "ATLANTA",
+      "zip": "30312",
+      "county": "Fulton",
+      "certifiedBeds": 138,
+      "ownershipType": "Non profit - Corporation",
+      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115275",
+        "value": "ga-op-lbn-a-g-rhodes-home-inc",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115338",
+      "facilityName": "MIONA GERIATRIC & DEMENTIA CENTER",
+      "legalBusinessName": "MIONA GERIATRIC & DEMENTIA CENTER, LLC",
+      "address": "201 POPLAR STREET",
+      "city": "IDEAL",
+      "zip": "31041",
+      "county": "Macon",
+      "certifiedBeds": 88,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-lbn-miona-geriatric-and-dementia-center-llc",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115338",
+        "value": "ga-op-lbn-miona-geriatric-and-dementia-center-llc",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115348",
+      "facilityName": "Etowah Landing",
+      "legalBusinessName": "ROME CENTER LLC",
+      "address": "809 South Broad Street",
+      "city": "Rome",
+      "zip": "30161",
+      "county": "Floyd",
+      "certifiedBeds": 100,
+      "ownershipType": "For profit - Individual",
+      "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115348",
+        "value": "ga-op-org-pyramid-healthcare-management-llc",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115351",
+      "facilityName": "MUSCOGEE MANOR & REHABILITATION CTR",
+      "legalBusinessName": "HOSPITAL AUTHORITY OF COLUMBUS GA",
+      "address": "7150 MANOR ROAD",
+      "city": "COLUMBUS",
+      "zip": "31907",
+      "county": "Muscogee",
+      "certifiedBeds": 196,
+      "ownershipType": "Government - City",
+      "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115351",
+        "value": "ga-op-lbn-hospital-authority-of-columbus-ga",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115365",
+      "facilityName": "THOMSON HEALTH AND REHABILITATION",
+      "legalBusinessName": "PHG THOMSON LLC",
+      "address": "511 MT. PLEASANT ROAD",
+      "city": "THOMSON",
+      "zip": "30824",
+      "county": "Mc Duffie",
+      "certifiedBeds": 150,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-org-peach-health-group-llc",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115365",
+        "value": "ga-op-org-peach-health-group-llc",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115406",
+      "facilityName": "Wrightsville Manor Health and Rehab",
+      "legalBusinessName": "PHG WRIGHTSVILLE LLC",
+      "address": "337 West Court Street",
+      "city": "Wrightsville",
+      "zip": "31096",
+      "county": "Johnson",
+      "certifiedBeds": 94,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-org-peach-health-group-llc",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115406",
+        "value": "ga-op-org-peach-health-group-llc",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115478",
+      "facilityName": "RIDGECREST REHAB & SKILLED NURSING CENTER",
+      "legalBusinessName": "HOSPITAL AUTHORITY OF COLUMBUS GA",
+      "address": "8329 STEVENS LANE",
+      "city": "COLUMBUS",
+      "zip": "31909",
+      "county": "Muscogee",
+      "certifiedBeds": 84,
+      "ownershipType": "Government - City/county",
+      "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115478",
+        "value": "ga-op-lbn-hospital-authority-of-columbus-ga",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115494",
+      "facilityName": "MCRAE MANOR NURSING HOME",
+      "legalBusinessName": "PHG MCRAE LLC",
+      "address": "160 SOUTH FIRST AVENUE",
+      "city": "MC RAE",
+      "zip": "31055",
+      "county": "Telfair",
+      "certifiedBeds": 133,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-org-peach-health-group-llc",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115494",
+        "value": "ga-op-org-peach-health-group-llc",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115498",
+      "facilityName": "HOSPITAL AUTHORITY OF BROOKS COUNTY, GEORGIA, THE",
+      "legalBusinessName": "[not available in CMS]",
+      "address": "1901 WEST SCREVEN STREET",
+      "city": "QUITMAN",
+      "zip": "31643",
+      "county": "Brooks",
+      "certifiedBeds": 188,
+      "ownershipType": "Government - Hospital district",
+      "operatorId": "ga-op-org-presbyterian-homes-of-georgia",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115498",
+        "value": "ga-op-org-presbyterian-homes-of-georgia",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115521",
+      "facilityName": "A.G. RHODES HOME, INC - COBB",
+      "legalBusinessName": "A G RHODES HOME COBB INC",
+      "address": "900 WYLIE ROAD",
+      "city": "MARIETTA",
+      "zip": "30067",
+      "county": "Cobb",
+      "certifiedBeds": 130,
+      "ownershipType": "Non profit - Corporation",
+      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115521",
+        "value": "ga-op-lbn-a-g-rhodes-home-inc",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115566",
+      "facilityName": "RIVER TOWNE CENTER",
+      "legalBusinessName": "COLUMBUS CENTER LLC",
+      "address": "5131 WARM SPRINGS RD",
+      "city": "COLUMBUS",
+      "zip": "31909",
+      "county": "Muscogee",
+      "certifiedBeds": 210,
+      "ownershipType": "For profit - Corporation",
+      "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115566",
+        "value": "ga-op-org-pyramid-healthcare-management-llc",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115680",
+      "facilityName": "CARLYLE PLACE",
+      "legalBusinessName": "CENTRAL GEORGIA SENIOR HEALTH, INC.",
+      "address": "5300 ZEBULON ROAD",
+      "city": "MACON",
+      "zip": "31210",
+      "county": "Bibb",
+      "certifiedBeds": 40,
+      "ownershipType": "Non profit - Corporation",
+      "operatorId": "ga-op-org-atrium-health-inc",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115680",
+        "value": "ga-op-org-atrium-health-inc",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115690",
+      "facilityName": "D SCOTT HUDGENS CENTER FOR SKILLED NURSING, THE",
+      "legalBusinessName": "[not available in CMS]",
+      "address": "3500 ANNANDALE LANE",
+      "city": "SUWANEE",
+      "zip": "30024",
+      "county": "Gwinnett",
+      "certifiedBeds": 32,
+      "ownershipType": "Non profit - Corporation",
+      "operatorId": "ga-op-org-annandale-village",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115690",
+        "value": "ga-op-org-annandale-village",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115694",
+      "facilityName": "Pebblebrook Health Center at Park Springs",
+      "legalBusinessName": "PARK SPRINGS LLC",
+      "address": "5610 New Bermuda Road",
+      "city": "Stone Mountain",
+      "zip": "30087",
+      "county": "Gwinnett",
+      "certifiedBeds": 60,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-org-isakson-living-inc",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115694",
+        "value": "ga-op-org-isakson-living-inc",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115727",
+      "facilityName": "Jeffersonville Care Center LLC",
+      "legalBusinessName": "[not available in CMS]",
+      "address": "113 Spring Valley Road",
+      "city": "Jeffersonville",
+      "zip": "31044",
+      "county": "Twiggs",
+      "certifiedBeds": 131,
+      "ownershipType": "For profit - Corporation",
+      "operatorId": "ga-op-org-peach-health-group-llc",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115727",
+        "value": "ga-op-org-peach-health-group-llc",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115773",
+      "facilityName": "TERRACES AT PEACHTREE HILLS PLACE, THE",
+      "legalBusinessName": "PT HILLS PLACE TERRACES LLC",
+      "address": "229 PEACHTREE HILLS AVENUE, NE",
+      "city": "ATLANTA",
+      "zip": "30305",
+      "county": "Fulton",
+      "certifiedBeds": 25,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-org-isakson-living-inc",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115773",
+        "value": "ga-op-org-isakson-living-inc",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
       "ccn": "11A186",
       "facilityName": "Georgia Regional Atlanta LTC",
       "legalBusinessName": "[not available in CMS]",
@@ -7461,15 +7461,15 @@
       "county": "De Kalb",
       "certifiedBeds": 66,
       "ownershipType": "Government - State",
-      "operatorId": "ga-op-ccn-11A186",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
+      "operatorId": "ga-op-org-georgia-dbhdd",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
       "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
+        "dataset": "review-decisions.json",
+        "field": "decision for 11A186",
+        "value": "ga-op-org-georgia-dbhdd",
         "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
+        "retrievedOn": "2026-10-20"
       }
     },
     {
@@ -7482,15 +7482,15 @@
       "county": "Richmond",
       "certifiedBeds": 56,
       "ownershipType": "Government - State",
-      "operatorId": "ga-op-ccn-11A200",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
+      "operatorId": "ga-op-org-georgia-dbhdd",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
       "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
+        "dataset": "review-decisions.json",
+        "field": "decision for 11A200",
+        "value": "ga-op-org-georgia-dbhdd",
         "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
+        "retrievedOn": "2026-10-20"
       }
     }
   ]

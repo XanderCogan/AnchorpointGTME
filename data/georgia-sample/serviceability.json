@@ -79,30 +79,6 @@
   },
   "operators": [
     {
-      "operatorId": "ga-op-ccn-115368",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-ccn-115381",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-ccn-115498",
-      "facilities": 1,
-      "anchorServiceable": 0,
-      "anchorConditional": 0,
-      "fullyServiceable": 0,
-      "state": "not_serviceable"
-    },
-    {
       "operatorId": "ga-op-ccn-115579",
       "facilities": 1,
       "anchorServiceable": 1,
@@ -117,46 +93,6 @@
       "anchorConditional": 0,
       "fullyServiceable": 1,
       "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-ccn-115682",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-ccn-115690",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-ccn-115727",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-ccn-11A186",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-ccn-11A200",
-      "facilities": 1,
-      "anchorServiceable": 0,
-      "anchorConditional": 0,
-      "fullyServiceable": 0,
-      "state": "not_serviceable"
     },
     {
       "operatorId": "ga-op-chain-172",
@@ -184,10 +120,10 @@
     },
     {
       "operatorId": "ga-op-chain-202",
-      "facilities": 21,
-      "anchorServiceable": 21,
+      "facilities": 22,
+      "anchorServiceable": 22,
       "anchorConditional": 0,
-      "fullyServiceable": 21,
+      "fullyServiceable": 22,
       "state": "serviceable"
     },
     {
@@ -200,7 +136,7 @@
     },
     {
       "operatorId": "ga-op-chain-246",
-      "facilities": 12,
+      "facilities": 13,
       "anchorServiceable": 5,
       "anchorConditional": 3,
       "fullyServiceable": 5,
@@ -240,7 +176,7 @@
     },
     {
       "operatorId": "ga-op-chain-434",
-      "facilities": 63,
+      "facilities": 65,
       "anchorServiceable": 31,
       "anchorConditional": 10,
       "fullyServiceable": 31,
@@ -304,34 +240,26 @@
     },
     {
       "operatorId": "ga-op-chain-728",
-      "facilities": 6,
-      "anchorServiceable": 3,
-      "anchorConditional": 2,
-      "fullyServiceable": 3,
-      "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-chain-766",
-      "facilities": 27,
-      "anchorServiceable": 14,
-      "anchorConditional": 3,
-      "fullyServiceable": 14,
-      "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-chain-769",
-      "facilities": 5,
+      "facilities": 7,
       "anchorServiceable": 4,
-      "anchorConditional": 1,
+      "anchorConditional": 2,
       "fullyServiceable": 4,
       "state": "serviceable"
     },
     {
-      "operatorId": "ga-op-chain-771",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
+      "operatorId": "ga-op-chain-766",
+      "facilities": 28,
+      "anchorServiceable": 15,
+      "anchorConditional": 3,
+      "fullyServiceable": 15,
+      "state": "serviceable"
+    },
+    {
+      "operatorId": "ga-op-chain-769",
+      "facilities": 6,
+      "anchorServiceable": 5,
+      "anchorConditional": 1,
+      "fullyServiceable": 5,
       "state": "serviceable"
     },
     {
@@ -399,27 +327,11 @@
       "state": "serviceable"
     },
     {
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-cobb-inc",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
       "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
-      "facilities": 1,
-      "anchorServiceable": 1,
+      "facilities": 3,
+      "anchorServiceable": 3,
       "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc-at-wesley-woods",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
+      "fullyServiceable": 3,
       "state": "serviceable"
     },
     {
@@ -479,14 +391,6 @@
       "state": "conditional"
     },
     {
-      "operatorId": "ga-op-lbn-central-georgia-senior-health-inc",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
       "operatorId": "ga-op-lbn-chatuge-regional-hospital-inc",
       "facilities": 1,
       "anchorServiceable": 0,
@@ -509,14 +413,6 @@
       "anchorConditional": 0,
       "fullyServiceable": 0,
       "state": "not_serviceable"
-    },
-    {
-      "operatorId": "ga-op-lbn-columbus-center-llc",
-      "facilities": 1,
-      "anchorServiceable": 0,
-      "anchorConditional": 1,
-      "fullyServiceable": 0,
-      "state": "conditional"
     },
     {
       "operatorId": "ga-op-lbn-columbus-regional-senior-living-inc",
@@ -613,14 +509,6 @@
       "anchorConditional": 0,
       "fullyServiceable": 1,
       "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-lbn-harborview-waycross-llc",
-      "facilities": 1,
-      "anchorServiceable": 0,
-      "anchorConditional": 0,
-      "fullyServiceable": 0,
-      "state": "not_serviceable"
     },
     {
       "operatorId": "ga-op-lbn-hart-care-center-inc",
@@ -815,38 +703,6 @@
       "state": "serviceable"
     },
     {
-      "operatorId": "ga-op-lbn-park-springs-llc",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-lbn-phg-mcrae-llc",
-      "facilities": 1,
-      "anchorServiceable": 0,
-      "anchorConditional": 1,
-      "fullyServiceable": 0,
-      "state": "conditional"
-    },
-    {
-      "operatorId": "ga-op-lbn-phg-thomson-llc",
-      "facilities": 1,
-      "anchorServiceable": 0,
-      "anchorConditional": 0,
-      "fullyServiceable": 0,
-      "state": "not_serviceable"
-    },
-    {
-      "operatorId": "ga-op-lbn-phg-wrightsville-llc",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
       "operatorId": "ga-op-lbn-pine-leaf-investment-inc",
       "facilities": 2,
       "anchorServiceable": 2,
@@ -856,14 +712,6 @@
     },
     {
       "operatorId": "ga-op-lbn-presbyterian-village-austell-inc",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-lbn-pt-hills-place-terraces-llc",
       "facilities": 1,
       "anchorServiceable": 1,
       "anchorConditional": 0,
@@ -887,14 +735,6 @@
       "state": "not_serviceable"
     },
     {
-      "operatorId": "ga-op-lbn-rome-center-llc",
-      "facilities": 1,
-      "anchorServiceable": 0,
-      "anchorConditional": 1,
-      "fullyServiceable": 0,
-      "state": "conditional"
-    },
-    {
       "operatorId": "ga-op-lbn-smith-medical-nursing-care-center-inc",
       "facilities": 1,
       "anchorServiceable": 1,
@@ -905,14 +745,6 @@
     {
       "operatorId": "ga-op-lbn-south-georgia-medical-center-inc",
       "facilities": 1,
-      "anchorServiceable": 0,
-      "anchorConditional": 0,
-      "fullyServiceable": 0,
-      "state": "not_serviceable"
-    },
-    {
-      "operatorId": "ga-op-lbn-southeast-georgia-health-system-inc",
-      "facilities": 2,
       "anchorServiceable": 0,
       "anchorConditional": 0,
       "fullyServiceable": 0,
@@ -999,11 +831,19 @@
       "state": "not_serviceable"
     },
     {
-      "operatorId": "ga-op-org-atrium-health-inc",
+      "operatorId": "ga-op-org-annandale-village",
       "facilities": 1,
       "anchorServiceable": 1,
       "anchorConditional": 0,
       "fullyServiceable": 1,
+      "state": "serviceable"
+    },
+    {
+      "operatorId": "ga-op-org-atrium-health-inc",
+      "facilities": 2,
+      "anchorServiceable": 2,
+      "anchorConditional": 0,
+      "fullyServiceable": 2,
       "state": "serviceable"
     },
     {
@@ -1023,7 +863,39 @@
       "state": "serviceable"
     },
     {
+      "operatorId": "ga-op-org-georgia-dbhdd",
+      "facilities": 2,
+      "anchorServiceable": 1,
+      "anchorConditional": 0,
+      "fullyServiceable": 1,
+      "state": "serviceable"
+    },
+    {
+      "operatorId": "ga-op-org-isakson-living-inc",
+      "facilities": 2,
+      "anchorServiceable": 2,
+      "anchorConditional": 0,
+      "fullyServiceable": 2,
+      "state": "serviceable"
+    },
+    {
       "operatorId": "ga-op-org-john-d-archbold-memorial-hospital-inc",
+      "facilities": 1,
+      "anchorServiceable": 0,
+      "anchorConditional": 0,
+      "fullyServiceable": 0,
+      "state": "not_serviceable"
+    },
+    {
+      "operatorId": "ga-op-org-peach-health-group-llc",
+      "facilities": 4,
+      "anchorServiceable": 2,
+      "anchorConditional": 1,
+      "fullyServiceable": 2,
+      "state": "serviceable"
+    },
+    {
+      "operatorId": "ga-op-org-presbyterian-homes-of-georgia",
       "facilities": 1,
       "anchorServiceable": 0,
       "anchorConditional": 0,
@@ -1037,6 +909,14 @@
       "anchorConditional": 1,
       "fullyServiceable": 0,
       "state": "conditional"
+    },
+    {
+      "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
+      "facilities": 2,
+      "anchorServiceable": 0,
+      "anchorConditional": 2,
+      "fullyServiceable": 0,
+      "state": "conditional"
     }
   ],
   "facilities": [
@@ -1044,7 +924,7 @@
       "ccn": "115002",
       "facilityName": "A.G. RHODES HOME WESLEY WOODS",
       "city": "ATLANTA",
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc-at-wesley-woods",
+      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
       "coordinates": {
         "latitude": 33.8252,
         "longitude": -84.32,
@@ -3544,7 +3424,7 @@
       "ccn": "115265",
       "facilityName": "HARBORVIEW SATILLA",
       "city": "WAYCROSS",
-      "operatorId": "ga-op-lbn-harborview-waycross-llc",
+      "operatorId": "ga-op-chain-246",
       "coordinates": {
         "latitude": 31.2333,
         "longitude": -82.353,
@@ -7140,7 +7020,7 @@
       "ccn": "115348",
       "facilityName": "Etowah Landing",
       "city": "Rome",
-      "operatorId": "ga-op-lbn-rome-center-llc",
+      "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
       "coordinates": {
         "latitude": 34.2405,
         "longitude": -85.183,
@@ -8108,7 +7988,7 @@
       "ccn": "115365",
       "facilityName": "THOMSON HEALTH AND REHABILITATION",
       "city": "THOMSON",
-      "operatorId": "ga-op-lbn-phg-thomson-llc",
+      "operatorId": "ga-op-org-peach-health-group-llc",
       "coordinates": {
         "latitude": 33.4577,
         "longitude": -82.512,
@@ -8184,7 +8064,7 @@
       "ccn": "115368",
       "facilityName": "BHM Carrollton Opco LLC",
       "city": "Carrollton",
-      "operatorId": "ga-op-ccn-115368",
+      "operatorId": "ga-op-chain-766",
       "coordinates": {
         "latitude": 33.5276,
         "longitude": -85.074,
@@ -8756,7 +8636,7 @@
       "ccn": "115381",
       "facilityName": "COTTAGES AT ROCKMART, THE",
       "city": "ROCKMART",
-      "operatorId": "ga-op-ccn-115381",
+      "operatorId": "ga-op-chain-728",
       "coordinates": {
         "latitude": 34.0034,
         "longitude": -85.033,
@@ -9884,7 +9764,7 @@
       "ccn": "115406",
       "facilityName": "Wrightsville Manor Health and Rehab",
       "city": "Wrightsville",
-      "operatorId": "ga-op-lbn-phg-wrightsville-llc",
+      "operatorId": "ga-op-org-peach-health-group-llc",
       "coordinates": {
         "latitude": 32.7296,
         "longitude": -82.73,
@@ -13776,7 +13656,7 @@
       "ccn": "115494",
       "facilityName": "MCRAE MANOR NURSING HOME",
       "city": "MC RAE",
-      "operatorId": "ga-op-lbn-phg-mcrae-llc",
+      "operatorId": "ga-op-org-peach-health-group-llc",
       "coordinates": {
         "latitude": 32.0597,
         "longitude": -82.901,
@@ -13936,7 +13816,7 @@
       "ccn": "115498",
       "facilityName": "HOSPITAL AUTHORITY OF BROOKS COUNTY, GEORGIA, THE",
       "city": "QUITMAN",
-      "operatorId": "ga-op-ccn-115498",
+      "operatorId": "ga-op-org-presbyterian-homes-of-georgia",
       "coordinates": {
         "latitude": 30.7856,
         "longitude": -83.577,
@@ -15156,7 +15036,7 @@
       "ccn": "115521",
       "facilityName": "A.G. RHODES HOME, INC - COBB",
       "city": "MARIETTA",
-      "operatorId": "ga-op-lbn-a-g-rhodes-home-cobb-inc",
+      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
       "coordinates": {
         "latitude": 33.9301,
         "longitude": -84.507,
@@ -16056,7 +15936,7 @@
       "ccn": "115535",
       "facilityName": "Lake City Center for Nursing and Healing LLC",
       "city": "LAKE CITY",
-      "operatorId": "ga-op-chain-771",
+      "operatorId": "ga-op-chain-202",
       "coordinates": {
         "latitude": 33.5994,
         "longitude": -84.322,
@@ -18188,7 +18068,7 @@
       "ccn": "115566",
       "facilityName": "RIVER TOWNE CENTER",
       "city": "COLUMBUS",
-      "operatorId": "ga-op-lbn-columbus-center-llc",
+      "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
       "coordinates": {
         "latitude": 32.5355,
         "longitude": -84.906,
@@ -24908,7 +24788,7 @@
       "ccn": "115680",
       "facilityName": "CARLYLE PLACE",
       "city": "MACON",
-      "operatorId": "ga-op-lbn-central-georgia-senior-health-inc",
+      "operatorId": "ga-op-org-atrium-health-inc",
       "coordinates": {
         "latitude": 32.8796,
         "longitude": -83.739,
@@ -25068,7 +24948,7 @@
       "ccn": "115682",
       "facilityName": "PARKSIDE AT BUDD TERRACE OPERATING COMPANY LLC",
       "city": "ATLANTA",
-      "operatorId": "ga-op-ccn-115682",
+      "operatorId": "ga-op-chain-769",
       "coordinates": {
         "latitude": 33.8022,
         "longitude": -84.332,
@@ -25228,7 +25108,7 @@
       "ccn": "115684",
       "facilityName": "SENIOR CARE CENTER - ST MARYS",
       "city": "SAINT MARYS",
-      "operatorId": "ga-op-lbn-southeast-georgia-health-system-inc",
+      "operatorId": "ga-op-chain-434",
       "coordinates": {
         "latitude": 30.7323,
         "longitude": -81.557,
@@ -25700,7 +25580,7 @@
       "ccn": "115690",
       "facilityName": "D SCOTT HUDGENS CENTER FOR SKILLED NURSING, THE",
       "city": "SUWANEE",
-      "operatorId": "ga-op-ccn-115690",
+      "operatorId": "ga-op-org-annandale-village",
       "coordinates": {
         "latitude": 34.038,
         "longitude": -84.063,
@@ -25952,7 +25832,7 @@
       "ccn": "115694",
       "facilityName": "Pebblebrook Health Center at Park Springs",
       "city": "Stone Mountain",
-      "operatorId": "ga-op-lbn-park-springs-llc",
+      "operatorId": "ga-op-org-isakson-living-inc",
       "coordinates": {
         "latitude": 33.8016,
         "longitude": -84.138,
@@ -27920,7 +27800,7 @@
       "ccn": "115721",
       "facilityName": "SENIOR CARE CENTER - BRUNSWICK",
       "city": "BRUNSWICK",
-      "operatorId": "ga-op-lbn-southeast-georgia-health-system-inc",
+      "operatorId": "ga-op-chain-434",
       "coordinates": {
         "latitude": 31.1752,
         "longitude": -81.483,
@@ -28404,7 +28284,7 @@
       "ccn": "115727",
       "facilityName": "Jeffersonville Care Center LLC",
       "city": "Jeffersonville",
-      "operatorId": "ga-op-ccn-115727",
+      "operatorId": "ga-op-org-peach-health-group-llc",
       "coordinates": {
         "latitude": 32.676,
         "longitude": -83.324,
@@ -29064,7 +28944,7 @@
       "ccn": "115773",
       "facilityName": "TERRACES AT PEACHTREE HILLS PLACE, THE",
       "city": "ATLANTA",
-      "operatorId": "ga-op-lbn-pt-hills-place-terraces-llc",
+      "operatorId": "ga-op-org-isakson-living-inc",
       "coordinates": {
         "latitude": 33.8179,
         "longitude": -84.38,
@@ -29544,7 +29424,7 @@
       "ccn": "11A186",
       "facilityName": "Georgia Regional Atlanta LTC",
       "city": "DECATUR",
-      "operatorId": "ga-op-ccn-11A186",
+      "operatorId": "ga-op-org-georgia-dbhdd",
       "coordinates": {
         "latitude": 33.6892,
         "longitude": -84.247,
@@ -29628,7 +29508,7 @@
       "ccn": "11A200",
       "facilityName": "GRACEWOOD NSG FACILITY(UNIT 9)",
       "city": "GRACEWOOD",
-      "operatorId": "ga-op-ccn-11A200",
+      "operatorId": "ga-op-org-georgia-dbhdd",
       "coordinates": {
         "latitude": 33.3739,
         "longitude": -82.026,
