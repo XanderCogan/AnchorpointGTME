@@ -1,0 +1,61 @@
+{
+  "description": "Manual review decisions applied by scripts/georgia-sample/resolve-operators.ts on every run. Each decision assigns one facility (by CMS CCN) to an existing operator and replaces that facility's review case. Add decisions here instead of editing outputs.",
+  "decisions": [
+    {
+      "ccn": "115473",
+      "operatorId": "ga-op-chain-434",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user",
+      "evidence": "CMS lists no legal business name or ownership; facility name 'PruittHealth - Lithonia, LLC' carries the chain name; PruittHealth job pages found by Serper on 2026-10-19."
+    },
+    {
+      "ccn": "115552",
+      "operatorId": "ga-op-chain-434",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user",
+      "evidence": "CMS lists no legal business name or ownership; facility name 'Pruitthealth - The Lodge, LLC' carries the chain name; PruittHealth job pages found by Serper on 2026-10-19."
+    },
+    {
+      "ccn": "115656",
+      "operatorId": "ga-op-chain-434",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user",
+      "evidence": "CMS lists no legal business name or ownership; facility name 'PruittHealth - Lakeside, LLC' carries the chain name; PruittHealth job pages found by Serper on 2026-10-19."
+    },
+    {
+      "ccn": "115443",
+      "operatorId": "ga-op-chain-766",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user",
+      "evidence": "CMS lists no legal business name or ownership; facility name 'Pine Knoll Path of Journey LLC' follows the Journey naming pattern; job pages name Journey Care Team of Georgia LLC (Serper, 2026-10-19)."
+    },
+    {
+      "ccn": "115622",
+      "operatorId": "ga-op-chain-766",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user",
+      "evidence": "CMS lists no legal business name or ownership; facility name 'Eastman Trails of Journey LLC' follows the Journey naming pattern; job pages name Journey Care Team of Georgia LLC (Serper, 2026-10-19)."
+    },
+    {
+      "ccn": "115633",
+      "operatorId": "ga-op-chain-766",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user",
+      "evidence": "CMS lists no legal business name or ownership; facility name 'Tybee Island Trails of Journey LLC' follows the Journey naming pattern."
+    },
+    {
+      "ccn": "115730",
+      "operatorId": "ga-op-chain-766",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user",
+      "evidence": "CMS lists no legal business name or ownership; facility name 'Rosewood at Tybee Island of Journey LLC, The' follows the Journey naming pattern."
+    },
+    {
+      "ccn": "115733",
+      "operatorId": "ga-op-chain-766",
+      "decidedOn": "2026-10-20",
+      "approvedBy": "user",
+      "evidence": "CMS lists no legal business name or ownership; facility name 'Abbeville Crossing of Journey LLC' follows the Journey naming pattern; job pages name Journey Care Team of Georgia LLC (Serper, 2026-10-19)."
+    }
+  ]
+}

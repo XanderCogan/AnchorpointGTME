@@ -44,32 +44,6 @@
       ]
     },
     {
-      "operatorId": "ga-op-ccn-115443",
-      "name": "Pine Knoll Path of Journey LLC",
-      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "cmsChainId": null,
-      "cmsChainFacilitiesNationwide": null,
-      "georgiaFacilityCount": 1,
-      "facilityCcns": [
-        "115443"
-      ]
-    },
-    {
-      "operatorId": "ga-op-ccn-115473",
-      "name": "PruittHealth - Lithonia, LLC",
-      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "cmsChainId": null,
-      "cmsChainFacilitiesNationwide": null,
-      "georgiaFacilityCount": 1,
-      "facilityCcns": [
-        "115473"
-      ]
-    },
-    {
       "operatorId": "ga-op-ccn-115498",
       "name": "HOSPITAL AUTHORITY OF BROOKS COUNTY, GEORGIA, THE",
       "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
@@ -80,19 +54,6 @@
       "georgiaFacilityCount": 1,
       "facilityCcns": [
         "115498"
-      ]
-    },
-    {
-      "operatorId": "ga-op-ccn-115552",
-      "name": "Pruitthealth - The Lodge, LLC",
-      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "cmsChainId": null,
-      "cmsChainFacilitiesNationwide": null,
-      "georgiaFacilityCount": 1,
-      "facilityCcns": [
-        "115552"
       ]
     },
     {
@@ -119,45 +80,6 @@
       "georgiaFacilityCount": 1,
       "facilityCcns": [
         "115580"
-      ]
-    },
-    {
-      "operatorId": "ga-op-ccn-115622",
-      "name": "Eastman Trails of Journey LLC",
-      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "cmsChainId": null,
-      "cmsChainFacilitiesNationwide": null,
-      "georgiaFacilityCount": 1,
-      "facilityCcns": [
-        "115622"
-      ]
-    },
-    {
-      "operatorId": "ga-op-ccn-115633",
-      "name": "Tybee Island Trails of Journey LLC",
-      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "cmsChainId": null,
-      "cmsChainFacilitiesNationwide": null,
-      "georgiaFacilityCount": 1,
-      "facilityCcns": [
-        "115633"
-      ]
-    },
-    {
-      "operatorId": "ga-op-ccn-115656",
-      "name": "PruittHealth - Lakeside, LLC",
-      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "cmsChainId": null,
-      "cmsChainFacilitiesNationwide": null,
-      "georgiaFacilityCount": 1,
-      "facilityCcns": [
-        "115656"
       ]
     },
     {
@@ -197,32 +119,6 @@
       "georgiaFacilityCount": 1,
       "facilityCcns": [
         "115727"
-      ]
-    },
-    {
-      "operatorId": "ga-op-ccn-115730",
-      "name": "Rosewood at Tybee Island of Journey LLC, The",
-      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "cmsChainId": null,
-      "cmsChainFacilitiesNationwide": null,
-      "georgiaFacilityCount": 1,
-      "facilityCcns": [
-        "115730"
-      ]
-    },
-    {
-      "operatorId": "ga-op-ccn-115733",
-      "name": "Abbeville Crossing of Journey LLC",
-      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "cmsChainId": null,
-      "cmsChainFacilitiesNationwide": null,
-      "georgiaFacilityCount": 1,
-      "facilityCcns": [
-        "115733"
       ]
     },
     {
@@ -438,7 +334,7 @@
       "status": "resolved",
       "cmsChainId": "434",
       "cmsChainFacilitiesNationwide": 96,
-      "georgiaFacilityCount": 60,
+      "georgiaFacilityCount": 63,
       "facilityCcns": [
         "115147",
         "115276",
@@ -499,7 +395,10 @@
         "115700",
         "115705",
         "115719",
-        "115777"
+        "115777",
+        "115473",
+        "115552",
+        "115656"
       ]
     },
     {
@@ -644,7 +543,7 @@
       "status": "resolved",
       "cmsChainId": "766",
       "cmsChainFacilitiesNationwide": 33,
-      "georgiaFacilityCount": 22,
+      "georgiaFacilityCount": 27,
       "facilityCcns": [
         "115280",
         "115298",
@@ -667,7 +566,12 @@
         "115561",
         "115565",
         "115651",
-        "115696"
+        "115696",
+        "115443",
+        "115622",
+        "115633",
+        "115730",
+        "115733"
       ]
     },
     {

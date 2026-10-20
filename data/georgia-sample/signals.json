@@ -224,100 +224,6 @@
       "latestOwnershipAssociation": null
     },
     {
-      "operatorId": "ga-op-ccn-115443",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 3,
-      "recentServiceLineCitations": 2,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_alarm_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115473",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 2,
-      "recentServiceLineCitations": 2,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_alarm_itm": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
       "operatorId": "ga-op-ccn-115498",
       "facilities": 1,
       "facilitiesWithServiceLineCitations": 1,
@@ -337,53 +243,6 @@
           "facilitiesRepeated": 0,
           "uncorrected": 0,
           "maxSeverity": null
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115552",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 4,
-      "recentServiceLineCitations": 2,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 3,
-          "recentCitations": 2,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "fire_alarm_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
         },
         "extinguisher": {
           "citations": 0,
@@ -499,147 +358,6 @@
           "facilitiesRepeated": 0,
           "uncorrected": 0,
           "maxSeverity": "D"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115622",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 11,
-      "recentServiceLineCitations": 3,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 4,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_alarm_itm": {
-          "citations": 2,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "extinguisher": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "kitchen_hood": {
-          "citations": 3,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "emergency_lighting": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115633",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 7,
-      "recentServiceLineCitations": 2,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 2,
-          "recentCitations": 0,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "fire_alarm_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "extinguisher": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 4,
-          "recentCitations": 2,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115656",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 4,
-      "recentServiceLineCitations": 2,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "fire_alarm_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "extinguisher": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "E"
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
         }
       },
       "facilitiesWithOwnershipChange": 0,
@@ -781,100 +499,6 @@
           "facilitiesRepeated": 1,
           "uncorrected": 0,
           "maxSeverity": "D"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115730",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 7,
-      "recentServiceLineCitations": 6,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "fire_alarm_itm": {
-          "citations": 2,
-          "recentCitations": 2,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "extinguisher": {
-          "citations": 2,
-          "recentCitations": 1,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "kitchen_hood": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        },
-        "emergency_lighting": {
-          "citations": 1,
-          "recentCitations": 1,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "D"
-        }
-      },
-      "facilitiesWithOwnershipChange": 0,
-      "facilitiesWithManagementChange": 0,
-      "latestOwnershipAssociation": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115733",
-      "facilities": 1,
-      "facilitiesWithServiceLineCitations": 1,
-      "serviceLineCitations": 6,
-      "recentServiceLineCitations": 0,
-      "byLine": {
-        "sprinkler_itm": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "fire_alarm_itm": {
-          "citations": 3,
-          "recentCitations": 0,
-          "facilitiesRepeated": 1,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "extinguisher": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
-        },
-        "kitchen_hood": {
-          "citations": 0,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": null
-        },
-        "emergency_lighting": {
-          "citations": 1,
-          "recentCitations": 0,
-          "facilitiesRepeated": 0,
-          "uncorrected": 0,
-          "maxSeverity": "F"
         }
       },
       "facilitiesWithOwnershipChange": 0,
@@ -1447,31 +1071,31 @@
     },
     {
       "operatorId": "ga-op-chain-434",
-      "facilities": 60,
-      "facilitiesWithServiceLineCitations": 49,
-      "serviceLineCitations": 159,
-      "recentServiceLineCitations": 68,
+      "facilities": 63,
+      "facilitiesWithServiceLineCitations": 52,
+      "serviceLineCitations": 169,
+      "recentServiceLineCitations": 74,
       "byLine": {
         "sprinkler_itm": {
-          "citations": 70,
-          "recentCitations": 32,
-          "facilitiesRepeated": 19,
+          "citations": 75,
+          "recentCitations": 36,
+          "facilitiesRepeated": 20,
           "uncorrected": 0,
           "maxSeverity": "F"
         },
         "fire_alarm_itm": {
-          "citations": 36,
-          "recentCitations": 10,
+          "citations": 39,
+          "recentCitations": 11,
           "facilitiesRepeated": 4,
           "uncorrected": 0,
           "maxSeverity": "F"
         },
         "extinguisher": {
-          "citations": 11,
+          "citations": 12,
           "recentCitations": 5,
           "facilitiesRepeated": 3,
           "uncorrected": 0,
-          "maxSeverity": "D"
+          "maxSeverity": "E"
         },
         "kitchen_hood": {
           "citations": 16,
@@ -1481,8 +1105,8 @@
           "maxSeverity": "F"
         },
         "emergency_lighting": {
-          "citations": 26,
-          "recentCitations": 13,
+          "citations": 27,
+          "recentCitations": 14,
           "facilitiesRepeated": 4,
           "uncorrected": 0,
           "maxSeverity": "F"
@@ -1870,43 +1494,43 @@
     },
     {
       "operatorId": "ga-op-chain-766",
-      "facilities": 22,
-      "facilitiesWithServiceLineCitations": 21,
-      "serviceLineCitations": 114,
-      "recentServiceLineCitations": 44,
+      "facilities": 27,
+      "facilitiesWithServiceLineCitations": 26,
+      "serviceLineCitations": 148,
+      "recentServiceLineCitations": 57,
       "byLine": {
         "sprinkler_itm": {
-          "citations": 39,
-          "recentCitations": 17,
-          "facilitiesRepeated": 12,
+          "citations": 48,
+          "recentCitations": 20,
+          "facilitiesRepeated": 14,
           "uncorrected": 1,
           "maxSeverity": "F"
         },
         "fire_alarm_itm": {
-          "citations": 28,
-          "recentCitations": 11,
-          "facilitiesRepeated": 7,
+          "citations": 37,
+          "recentCitations": 13,
+          "facilitiesRepeated": 9,
           "uncorrected": 0,
           "maxSeverity": "F"
         },
         "extinguisher": {
-          "citations": 8,
-          "recentCitations": 3,
-          "facilitiesRepeated": 2,
+          "citations": 12,
+          "recentCitations": 4,
+          "facilitiesRepeated": 3,
           "uncorrected": 0,
           "maxSeverity": "F"
         },
         "kitchen_hood": {
-          "citations": 15,
-          "recentCitations": 3,
-          "facilitiesRepeated": 2,
+          "citations": 19,
+          "recentCitations": 5,
+          "facilitiesRepeated": 3,
           "uncorrected": 0,
           "maxSeverity": "F"
         },
         "emergency_lighting": {
-          "citations": 24,
-          "recentCitations": 10,
-          "facilitiesRepeated": 6,
+          "citations": 32,
+          "recentCitations": 15,
+          "facilitiesRepeated": 7,
           "uncorrected": 1,
           "maxSeverity": "F"
         }
@@ -6207,6 +5831,7 @@
       "latestOwnershipAssociation": "2022-09-15",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2017-11-17",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -6296,6 +5921,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -6410,6 +6036,7 @@
       "latestOwnershipAssociation": "2021-11-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -6480,6 +6107,7 @@
       "latestOwnershipAssociation": "2022-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -6554,6 +6182,7 @@
       "latestOwnershipAssociation": "2012-01-10",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -6637,6 +6266,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -6751,6 +6381,7 @@
       "latestOwnershipAssociation": "2022-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -6845,6 +6476,7 @@
       "latestOwnershipAssociation": "1966-10-26",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -6951,6 +6583,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -7094,6 +6727,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 10,
       "recentServiceLineCitations": 6,
       "citedLines": [
@@ -7197,6 +6831,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-01-01",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -7321,6 +6956,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2014-04-01",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -7400,6 +7036,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -7468,6 +7105,7 @@
       "latestOwnershipAssociation": "2024-11-08",
       "ownershipChangesSince": 1,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2002-01-01",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -7542,6 +7180,7 @@
       "latestOwnershipAssociation": "2016-11-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -7649,6 +7288,7 @@
       "latestOwnershipAssociation": "2022-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2022-10-01",
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -7743,6 +7383,7 @@
       "latestOwnershipAssociation": "2024-02-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2024-02-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -7836,6 +7477,7 @@
       "latestOwnershipAssociation": "2024-02-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2024-02-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -7958,6 +7600,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-01-01",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -8044,6 +7687,7 @@
       "latestOwnershipAssociation": "2012-01-10",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -8136,6 +7780,7 @@
       "latestOwnershipAssociation": "2017-11-12",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2014-05-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -8221,6 +7866,7 @@
       "latestOwnershipAssociation": "2010-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2010-04-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -8298,6 +7944,7 @@
       "latestOwnershipAssociation": "2019-08-19",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2019-08-19",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -8382,6 +8029,7 @@
       "latestOwnershipAssociation": "2022-05-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2022-05-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -8481,6 +8129,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2025-11-01",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -8581,6 +8230,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -8666,6 +8316,7 @@
       "latestOwnershipAssociation": "2022-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2022-10-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -8734,6 +8385,7 @@
       "latestOwnershipAssociation": "2023-01-04",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2023-01-04",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -8823,6 +8475,7 @@
       "latestOwnershipAssociation": "2025-01-08",
       "ownershipChangesSince": 5,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -8916,6 +8569,7 @@
       "latestOwnershipAssociation": "2000-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2000-01-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -8986,6 +8640,7 @@
       "latestOwnershipAssociation": "2013-02-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -9105,6 +8760,7 @@
       "latestOwnershipAssociation": "2017-05-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2017-05-01",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 6,
       "citedLines": [
@@ -9191,6 +8847,7 @@
       "latestOwnershipAssociation": "2009-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "1990-10-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -9267,6 +8924,7 @@
       "latestOwnershipAssociation": "2022-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -9343,6 +9001,7 @@
       "latestOwnershipAssociation": "2023-02-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -9426,6 +9085,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2021-02-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -9539,6 +9199,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2025-11-01",
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -9633,6 +9294,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2023-06-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -9718,6 +9380,7 @@
       "latestOwnershipAssociation": "2020-08-12",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -9786,6 +9449,7 @@
       "latestOwnershipAssociation": "2025-01-08",
       "ownershipChangesSince": 5,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -9860,6 +9524,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2014-10-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -9974,6 +9639,7 @@
       "latestOwnershipAssociation": "2024-11-01",
       "ownershipChangesSince": 9,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2024-11-01",
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -10053,6 +9719,7 @@
       "latestOwnershipAssociation": "2023-01-04",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2023-01-04",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -10121,6 +9788,7 @@
       "latestOwnershipAssociation": "2025-12-16",
       "ownershipChangesSince": 2,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -10218,6 +9886,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -10320,6 +9989,7 @@
       "latestOwnershipAssociation": "2014-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2014-04-01",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -10415,6 +10085,7 @@
       "latestOwnershipAssociation": "2006-03-08",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -10516,6 +10187,7 @@
       "latestOwnershipAssociation": "2022-04-27",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -10594,6 +10266,7 @@
       "latestOwnershipAssociation": "2019-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -10670,6 +10343,7 @@
       "latestOwnershipAssociation": "2009-09-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2009-09-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -10754,6 +10428,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2012-05-11",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -10823,6 +10498,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -10912,6 +10588,7 @@
       "latestOwnershipAssociation": "2024-11-01",
       "ownershipChangesSince": 9,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2024-11-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -10996,6 +10673,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -11109,6 +10787,7 @@
       "latestOwnershipAssociation": "2006-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 5,
       "citedLines": [
@@ -11218,6 +10897,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -11289,6 +10969,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-09-19",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -11363,6 +11044,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -11485,6 +11167,7 @@
       "latestOwnershipAssociation": "2021-06-21",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2021-06-21",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 6,
       "citedLines": [
@@ -11565,6 +11248,7 @@
       "latestOwnershipAssociation": "2022-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -11641,6 +11325,7 @@
       "latestOwnershipAssociation": "2015-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2015-01-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -11725,6 +11410,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -11831,6 +11517,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -11960,6 +11647,7 @@
       "latestOwnershipAssociation": "2024-11-01",
       "ownershipChangesSince": 9,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2024-11-01",
       "serviceLineCitations": 8,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -12047,6 +11735,7 @@
       "latestOwnershipAssociation": "2016-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -12132,6 +11821,7 @@
       "latestOwnershipAssociation": "2013-04-10",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2005-04-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -12225,6 +11915,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2008-12-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -12355,6 +12046,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 8,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -12458,6 +12150,7 @@
       "latestOwnershipAssociation": "2008-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2008-07-01",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -12632,6 +12325,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-09-24",
       "serviceLineCitations": 14,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -12756,6 +12450,7 @@
       "latestOwnershipAssociation": "2024-11-01",
       "ownershipChangesSince": 9,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2024-11-01",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -12850,6 +12545,7 @@
       "latestOwnershipAssociation": "2009-06-08",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -13002,6 +12698,7 @@
       "latestOwnershipAssociation": "2024-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 11,
       "recentServiceLineCitations": 9,
       "citedLines": [
@@ -13098,6 +12795,7 @@
       "latestOwnershipAssociation": "2007-09-27",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-09-27",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -13183,6 +12881,7 @@
       "latestOwnershipAssociation": "2005-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2005-07-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -13274,6 +12973,7 @@
       "latestOwnershipAssociation": "1976-01-06",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "1991-10-31",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -13367,6 +13067,7 @@
       "latestOwnershipAssociation": "2017-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2017-10-02",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -13445,6 +13146,7 @@
       "latestOwnershipAssociation": "2013-04-10",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2005-04-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -13536,6 +13238,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2025-11-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -13605,6 +13308,7 @@
       "latestOwnershipAssociation": "2003-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-07-01",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -13732,6 +13436,7 @@
       "latestOwnershipAssociation": "2024-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2024-04-01",
       "serviceLineCitations": 8,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -13864,6 +13569,7 @@
       "latestOwnershipAssociation": "2018-08-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 8,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -13935,6 +13641,7 @@
       "latestOwnershipAssociation": "2009-03-30",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2009-03-30",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -14009,6 +13716,7 @@
       "latestOwnershipAssociation": "2021-05-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2021-05-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -14108,6 +13816,7 @@
       "latestOwnershipAssociation": "2023-05-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -14194,6 +13903,7 @@
       "latestOwnershipAssociation": "2018-12-21",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -14271,6 +13981,7 @@
       "latestOwnershipAssociation": "2022-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -14347,6 +14058,7 @@
       "latestOwnershipAssociation": "2003-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-10-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -14467,6 +14179,7 @@
       "latestOwnershipAssociation": "2021-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2021-07-01",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -14574,6 +14287,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -14651,6 +14365,7 @@
       "latestOwnershipAssociation": "2003-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-09-30",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -14719,6 +14434,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -14793,6 +14509,7 @@
       "latestOwnershipAssociation": "2015-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -14920,6 +14637,7 @@
       "latestOwnershipAssociation": "2025-04-01",
       "ownershipChangesSince": 2,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 8,
       "recentServiceLineCitations": 5,
       "citedLines": [
@@ -15022,6 +14740,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -15101,6 +14820,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -15193,6 +14913,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -15293,6 +15014,7 @@
       "latestOwnershipAssociation": "2023-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-09-30",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -15370,6 +15092,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -15476,6 +15199,7 @@
       "latestOwnershipAssociation": "2020-08-12",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -15584,6 +15308,7 @@
       "latestOwnershipAssociation": "2003-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-10-01",
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -15654,6 +15379,7 @@
       "latestOwnershipAssociation": "2020-08-12",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -15751,6 +15477,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2010-11-03",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -15837,6 +15564,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -15914,6 +15642,7 @@
       "latestOwnershipAssociation": "2003-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-10-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -16013,6 +15742,7 @@
       "latestOwnershipAssociation": "2013-05-15",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -16114,6 +15844,7 @@
       "latestOwnershipAssociation": "2026-01-15",
       "ownershipChangesSince": 9,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2026-01-15",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -16192,6 +15923,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-09-27",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -16276,6 +16008,7 @@
       "latestOwnershipAssociation": "2019-01-28",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "1997-10-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -16345,6 +16078,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2022-12-07",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -16427,6 +16161,7 @@
       "latestOwnershipAssociation": "2019-05-14",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2019-07-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -16519,6 +16254,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-09-24",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -16588,6 +16324,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -16684,6 +16421,7 @@
       "latestOwnershipAssociation": "2016-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2016-07-01",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -16820,6 +16558,7 @@
       "latestOwnershipAssociation": "2022-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 9,
       "recentServiceLineCitations": 5,
       "citedLines": [
@@ -16951,6 +16690,7 @@
       "latestOwnershipAssociation": "2016-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 8,
       "recentServiceLineCitations": 5,
       "citedLines": [
@@ -17038,6 +16778,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -17123,6 +16864,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2004-09-24",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -17208,6 +16950,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2025-05-12",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -17309,6 +17052,7 @@
       "latestOwnershipAssociation": "2025-05-12",
       "ownershipChangesSince": 6,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2025-05-12",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -17455,6 +17199,7 @@
       "latestOwnershipAssociation": "2013-11-12",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2014-01-01",
       "serviceLineCitations": 10,
       "recentServiceLineCitations": 5,
       "citedLines": [
@@ -17559,6 +17304,7 @@
       "latestOwnershipAssociation": "2023-01-30",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2023-01-30",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -17718,6 +17464,7 @@
       "latestOwnershipAssociation": "2024-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2024-04-01",
       "serviceLineCitations": 12,
       "recentServiceLineCitations": 6,
       "citedLines": [
@@ -17789,6 +17536,7 @@
       "latestOwnershipAssociation": "2003-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-10-01",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -17901,6 +17649,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -18002,6 +17751,7 @@
       "latestOwnershipAssociation": "2003-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2004-07-01",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -18079,6 +17829,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2014-01-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -18155,6 +17906,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2014-03-26",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -18260,6 +18012,7 @@
       "latestOwnershipAssociation": "2013-11-12",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2014-01-01",
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -18271,7 +18024,7 @@
     },
     {
       "ccn": "115443",
-      "operatorId": "ga-op-ccn-115443",
+      "operatorId": "ga-op-chain-766",
       "lines": {
         "sprinkler_itm": {
           "citations": 1,
@@ -18353,6 +18106,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -18423,6 +18177,7 @@
       "latestOwnershipAssociation": "1987-05-31",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-10-01",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -18534,6 +18289,7 @@
       "latestOwnershipAssociation": "2012-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -18627,6 +18383,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -18734,6 +18491,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-09-28",
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -18820,6 +18578,7 @@
       "latestOwnershipAssociation": "2013-05-15",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -18905,6 +18664,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2009-03-27",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -18997,6 +18757,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2011-01-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -19105,6 +18866,7 @@
       "latestOwnershipAssociation": "2021-05-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2021-05-01",
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -19176,6 +18938,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2009-03-30",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -19288,6 +19051,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2014-01-01",
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -19375,6 +19139,7 @@
       "latestOwnershipAssociation": "2021-06-22",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -19459,6 +19224,7 @@
       "latestOwnershipAssociation": "2021-05-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2021-05-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -19564,6 +19330,7 @@
       "latestOwnershipAssociation": "2013-06-04",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -19575,7 +19342,7 @@
     },
     {
       "ccn": "115473",
-      "operatorId": "ga-op-ccn-115473",
+      "operatorId": "ga-op-chain-434",
       "lines": {
         "sprinkler_itm": {
           "citations": 1,
@@ -19649,6 +19416,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -19718,6 +19486,7 @@
       "latestOwnershipAssociation": "2003-03-31",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-10-01",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -19784,6 +19553,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2009-05-04",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -19858,6 +19628,7 @@
       "latestOwnershipAssociation": "2012-03-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2025-08-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -19949,6 +19720,7 @@
       "latestOwnershipAssociation": "2017-06-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2017-06-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -20048,6 +19820,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "1994-07-01",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -20117,6 +19890,7 @@
       "latestOwnershipAssociation": "2003-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-09-30",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -20198,6 +19972,7 @@
       "latestOwnershipAssociation": "2024-11-01",
       "ownershipChangesSince": 9,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2024-11-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -20274,6 +20049,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-09-30",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -20350,6 +20126,7 @@
       "latestOwnershipAssociation": "2017-09-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2017-09-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -20464,6 +20241,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2008-02-04",
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 6,
       "citedLines": [
@@ -20551,6 +20329,7 @@
       "latestOwnershipAssociation": "2007-11-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-11-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -20628,6 +20407,7 @@
       "latestOwnershipAssociation": "1988-06-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -20704,6 +20484,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-09-19",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -20780,6 +20561,7 @@
       "latestOwnershipAssociation": "2024-11-08",
       "ownershipChangesSince": 1,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "1989-09-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -20908,6 +20690,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2024-07-01",
       "serviceLineCitations": 8,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -21075,6 +20858,7 @@
       "latestOwnershipAssociation": "2024-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2024-10-01",
       "serviceLineCitations": 13,
       "recentServiceLineCitations": 7,
       "citedLines": [
@@ -21169,6 +20953,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -21260,6 +21045,7 @@
       "latestOwnershipAssociation": "2022-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -21352,6 +21138,7 @@
       "latestOwnershipAssociation": "2024-11-01",
       "ownershipChangesSince": 9,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2024-11-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -21474,6 +21261,7 @@
       "latestOwnershipAssociation": "2015-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2015-01-01",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -21553,6 +21341,7 @@
       "latestOwnershipAssociation": "2022-05-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2022-05-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -21629,6 +21418,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -21713,6 +21503,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -21790,6 +21581,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -21874,6 +21666,7 @@
       "latestOwnershipAssociation": "2022-05-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2022-05-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -21982,6 +21775,7 @@
       "latestOwnershipAssociation": "2021-06-22",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -22068,6 +21862,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -22180,6 +21975,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-11-26",
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 6,
       "citedLines": [
@@ -22265,6 +22061,7 @@
       "latestOwnershipAssociation": "2023-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -22358,6 +22155,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -22474,6 +22272,7 @@
       "latestOwnershipAssociation": "2016-06-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2004-07-01",
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -22575,6 +22374,7 @@
       "latestOwnershipAssociation": "2022-09-15",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2023-07-01",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -22697,6 +22497,7 @@
       "latestOwnershipAssociation": "2025-11-01",
       "ownershipChangesSince": 1,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2006-11-01",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 5,
       "citedLines": [
@@ -22784,6 +22585,7 @@
       "latestOwnershipAssociation": "2015-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2015-01-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -22883,6 +22685,7 @@
       "latestOwnershipAssociation": "2026-05-01",
       "ownershipChangesSince": 7,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2018-08-17",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -22968,6 +22771,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2008-04-22",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -23045,6 +22849,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2009-03-27",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -23121,6 +22926,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -23205,6 +23011,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -23298,6 +23105,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2014-01-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -23398,6 +23206,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-09-27",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -23505,6 +23314,7 @@
       "latestOwnershipAssociation": "2017-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -23635,6 +23445,7 @@
       "latestOwnershipAssociation": "2008-05-23",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 8,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -23758,6 +23569,7 @@
       "latestOwnershipAssociation": "2023-02-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2023-01-04",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -23866,6 +23678,7 @@
       "latestOwnershipAssociation": "2023-05-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2023-05-01",
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -23936,6 +23749,7 @@
       "latestOwnershipAssociation": "2020-12-10",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -24055,6 +23869,7 @@
       "latestOwnershipAssociation": "2025-10-01",
       "ownershipChangesSince": 4,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2025-10-01",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -24179,6 +23994,7 @@
       "latestOwnershipAssociation": "2015-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2015-02-22",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -24289,6 +24105,7 @@
       "latestOwnershipAssociation": "2016-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2016-01-01",
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -24390,6 +24207,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -24504,6 +24322,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2024-11-01",
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -24620,6 +24439,7 @@
       "latestOwnershipAssociation": "2021-11-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -24773,6 +24593,7 @@
       "latestOwnershipAssociation": "2025-11-01",
       "ownershipChangesSince": 6,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2025-11-01",
       "serviceLineCitations": 11,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -24876,6 +24697,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -24968,6 +24790,7 @@
       "latestOwnershipAssociation": "2025-10-01",
       "ownershipChangesSince": 3,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2025-10-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -25096,6 +24919,7 @@
       "latestOwnershipAssociation": "2023-12-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 8,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -25109,7 +24933,7 @@
     },
     {
       "ccn": "115552",
-      "operatorId": "ga-op-ccn-115552",
+      "operatorId": "ga-op-chain-434",
       "lines": {
         "sprinkler_itm": {
           "citations": 3,
@@ -25197,6 +25021,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -25298,6 +25123,7 @@
       "latestOwnershipAssociation": "2019-09-10",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -25393,6 +25219,7 @@
       "latestOwnershipAssociation": "2016-06-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -25493,6 +25320,7 @@
       "latestOwnershipAssociation": "2017-01-28",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -25562,6 +25390,7 @@
       "latestOwnershipAssociation": "2021-09-30",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2021-09-30",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -25667,6 +25496,7 @@
       "latestOwnershipAssociation": "2025-12-16",
       "ownershipChangesSince": 2,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -25792,6 +25622,7 @@
       "latestOwnershipAssociation": "2025-12-16",
       "ownershipChangesSince": 2,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -25888,6 +25719,7 @@
       "latestOwnershipAssociation": "2025-12-16",
       "ownershipChangesSince": 2,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -25981,6 +25813,7 @@
       "latestOwnershipAssociation": "2015-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2015-01-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -26073,6 +25906,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2020-04-22",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -26142,6 +25976,7 @@
       "latestOwnershipAssociation": "2021-05-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2021-05-01",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -26239,6 +26074,7 @@
       "latestOwnershipAssociation": "2024-11-01",
       "ownershipChangesSince": 9,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2024-11-01",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -26362,6 +26198,7 @@
       "latestOwnershipAssociation": "2017-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2017-10-02",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -26472,6 +26309,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -26559,6 +26397,7 @@
       "latestOwnershipAssociation": "2022-10-13",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2019-08-19",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -26673,6 +26512,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "1980-04-01",
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -26789,6 +26629,7 @@
       "latestOwnershipAssociation": "2019-08-19",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2019-08-19",
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -26884,6 +26725,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -26978,6 +26820,7 @@
       "latestOwnershipAssociation": "2016-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2016-07-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -27085,6 +26928,7 @@
       "latestOwnershipAssociation": "1973-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-09-30",
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -27177,6 +27021,7 @@
       "latestOwnershipAssociation": "2016-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2016-07-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -27254,6 +27099,7 @@
       "latestOwnershipAssociation": "2003-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-10-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -27360,6 +27206,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -27461,6 +27308,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -27598,6 +27446,7 @@
       "latestOwnershipAssociation": "2025-03-01",
       "ownershipChangesSince": 1,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2025-03-01",
       "serviceLineCitations": 9,
       "recentServiceLineCitations": 5,
       "citedLines": [
@@ -27669,6 +27518,7 @@
       "latestOwnershipAssociation": "2003-03-14",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2019-01-01",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -27751,6 +27601,7 @@
       "latestOwnershipAssociation": "2017-01-28",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -27895,6 +27746,7 @@
       "latestOwnershipAssociation": "2014-12-23",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 10,
       "recentServiceLineCitations": 7,
       "citedLines": [
@@ -28041,6 +27893,7 @@
       "latestOwnershipAssociation": "2020-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 10,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -28112,6 +27965,7 @@
       "latestOwnershipAssociation": "2021-06-22",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -28209,6 +28063,7 @@
       "latestOwnershipAssociation": "2025-07-01",
       "ownershipChangesSince": 2,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -28368,6 +28223,7 @@
       "latestOwnershipAssociation": "2010-02-25",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2004-07-01",
       "serviceLineCitations": 12,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -28448,6 +28304,7 @@
       "latestOwnershipAssociation": "2023-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2008-01-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -28516,6 +28373,7 @@
       "latestOwnershipAssociation": "2023-08-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -28590,6 +28448,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-11-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -28673,6 +28532,7 @@
       "latestOwnershipAssociation": "2025-11-01",
       "ownershipChangesSince": 1,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2005-10-25",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -28756,6 +28616,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2004-07-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -28832,6 +28693,7 @@
       "latestOwnershipAssociation": "2013-11-27",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -28930,6 +28792,7 @@
       "latestOwnershipAssociation": "2019-12-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -29014,6 +28877,7 @@
       "latestOwnershipAssociation": "2009-10-30",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -29090,6 +28954,7 @@
       "latestOwnershipAssociation": "2025-05-01",
       "ownershipChangesSince": 4,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -29203,6 +29068,7 @@
       "latestOwnershipAssociation": "2003-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-09-30",
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -29297,6 +29163,7 @@
       "latestOwnershipAssociation": "2021-12-20",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2021-12-20",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -29435,6 +29302,7 @@
       "latestOwnershipAssociation": "2025-05-01",
       "ownershipChangesSince": 4,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 9,
       "recentServiceLineCitations": 5,
       "citedLines": [
@@ -29507,6 +29375,7 @@
       "latestOwnershipAssociation": "2020-08-12",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -29573,6 +29442,7 @@
       "latestOwnershipAssociation": "1997-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -29655,6 +29525,7 @@
       "latestOwnershipAssociation": "2009-04-03",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2009-04-03",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -29799,6 +29670,7 @@
       "latestOwnershipAssociation": "2017-11-12",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-10-01",
       "serviceLineCitations": 10,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -29901,6 +29773,7 @@
       "latestOwnershipAssociation": "2023-11-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -29993,6 +29866,7 @@
       "latestOwnershipAssociation": "2003-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2009-02-19",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -30107,6 +29981,7 @@
       "latestOwnershipAssociation": "1966-12-21",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -30177,6 +30052,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -30274,6 +30150,7 @@
       "latestOwnershipAssociation": "2020-08-18",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -30367,6 +30244,7 @@
       "latestOwnershipAssociation": "2025-11-01",
       "ownershipChangesSince": 1,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2006-11-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -30473,6 +30351,7 @@
       "latestOwnershipAssociation": "2022-08-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -30608,6 +30487,7 @@
       "latestOwnershipAssociation": "2013-05-31",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 9,
       "recentServiceLineCitations": 6,
       "citedLines": [
@@ -30620,7 +30500,7 @@
     },
     {
       "ccn": "115622",
-      "operatorId": "ga-op-ccn-115622",
+      "operatorId": "ga-op-chain-766",
       "lines": {
         "sprinkler_itm": {
           "citations": 4,
@@ -30760,6 +30640,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 11,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -30840,6 +30721,7 @@
       "latestOwnershipAssociation": "2012-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2012-01-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -30945,6 +30827,7 @@
       "latestOwnershipAssociation": "2017-02-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2017-02-01",
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -31030,6 +30913,7 @@
       "latestOwnershipAssociation": "2007-07-09",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -31107,6 +30991,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -31183,6 +31068,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2012-05-21",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -31290,6 +31176,7 @@
       "latestOwnershipAssociation": "2017-02-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2017-02-01",
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -31369,6 +31256,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-09-19",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -31379,7 +31267,7 @@
     },
     {
       "ccn": "115633",
-      "operatorId": "ga-op-ccn-115633",
+      "operatorId": "ga-op-chain-766",
       "lines": {
         "sprinkler_itm": {
           "citations": 2,
@@ -31489,6 +31377,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -31597,6 +31486,7 @@
       "latestOwnershipAssociation": "2016-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2016-07-01",
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -31719,6 +31609,7 @@
       "latestOwnershipAssociation": "2017-08-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -31805,6 +31696,7 @@
       "latestOwnershipAssociation": "2007-02-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -31912,6 +31804,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -31997,6 +31890,7 @@
       "latestOwnershipAssociation": "2025-11-01",
       "ownershipChangesSince": 1,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2005-10-25",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -32089,6 +31983,7 @@
       "latestOwnershipAssociation": "2018-09-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -32191,6 +32086,7 @@
       "latestOwnershipAssociation": "2019-08-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -32285,6 +32181,7 @@
       "latestOwnershipAssociation": "2025-01-14",
       "ownershipChangesSince": 1,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2009-11-05",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -32384,6 +32281,7 @@
       "latestOwnershipAssociation": "2021-07-03",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2022-12-02",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -32499,6 +32397,7 @@
       "latestOwnershipAssociation": "2015-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2015-01-01",
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -32593,6 +32492,7 @@
       "latestOwnershipAssociation": "1989-11-21",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-09-30",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -32699,6 +32599,7 @@
       "latestOwnershipAssociation": "2025-05-01",
       "ownershipChangesSince": 4,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -32784,6 +32685,7 @@
       "latestOwnershipAssociation": "2020-03-23",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2019-03-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -32795,7 +32697,7 @@
     },
     {
       "ccn": "115656",
-      "operatorId": "ga-op-ccn-115656",
+      "operatorId": "ga-op-chain-434",
       "lines": {
         "sprinkler_itm": {
           "citations": 1,
@@ -32885,6 +32787,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -32988,6 +32891,7 @@
       "latestOwnershipAssociation": "2025-12-31",
       "ownershipChangesSince": 9,
       "managementOrganizationChangesSince": 1,
+      "latestManagementOrganizationAssociation": "2024-12-31",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -33059,6 +32963,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-09-19",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -33148,6 +33053,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "1995-01-03",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -33254,6 +33160,7 @@
       "latestOwnershipAssociation": "2022-04-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -33331,6 +33238,7 @@
       "latestOwnershipAssociation": "2007-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -33466,6 +33374,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 9,
       "recentServiceLineCitations": 5,
       "citedLines": [
@@ -33583,6 +33492,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -33654,6 +33564,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -33720,6 +33631,7 @@
       "latestOwnershipAssociation": "2012-01-10",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -33839,6 +33751,7 @@
       "latestOwnershipAssociation": "2025-11-01",
       "ownershipChangesSince": 1,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2006-11-01",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -33933,6 +33846,7 @@
       "latestOwnershipAssociation": "2025-01-14",
       "ownershipChangesSince": 2,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -34002,6 +33916,7 @@
       "latestOwnershipAssociation": "2020-08-18",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -34076,6 +33991,7 @@
       "latestOwnershipAssociation": "2012-01-10",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -34160,6 +34076,7 @@
       "latestOwnershipAssociation": "2000-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2000-01-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -34296,6 +34213,7 @@
       "latestOwnershipAssociation": "2014-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 9,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -34367,6 +34285,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2007-09-25",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -34441,6 +34360,7 @@
       "latestOwnershipAssociation": "2018-12-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2018-12-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -34517,6 +34437,7 @@
       "latestOwnershipAssociation": "2020-12-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2024-09-19",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -34638,6 +34559,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -34747,6 +34669,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -34861,6 +34784,7 @@
       "latestOwnershipAssociation": "2019-01-16",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -34960,6 +34884,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2024-09-01",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -35068,6 +34993,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 5,
       "citedLines": [
@@ -35192,6 +35118,7 @@
       "latestOwnershipAssociation": "2024-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -35293,6 +35220,7 @@
       "latestOwnershipAssociation": "2024-11-01",
       "ownershipChangesSince": 1,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2022-12-31",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -35408,6 +35336,7 @@
       "latestOwnershipAssociation": "2020-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 6,
       "citedLines": [
@@ -35525,6 +35454,7 @@
       "latestOwnershipAssociation": "2020-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -35596,6 +35526,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -35692,6 +35623,7 @@
       "latestOwnershipAssociation": "1967-03-07",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -35806,6 +35738,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -35922,6 +35855,7 @@
       "latestOwnershipAssociation": "2023-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2014-07-01",
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -36001,6 +35935,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -36077,6 +36012,7 @@
       "latestOwnershipAssociation": "2015-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2015-01-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -36145,6 +36081,7 @@
       "latestOwnershipAssociation": "2005-06-15",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -36234,6 +36171,7 @@
       "latestOwnershipAssociation": "2021-06-22",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2010-11-01",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -36319,6 +36257,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -36403,6 +36342,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -36546,6 +36486,7 @@
       "latestOwnershipAssociation": "2025-05-01",
       "ownershipChangesSince": 4,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 10,
       "recentServiceLineCitations": 6,
       "citedLines": [
@@ -36626,6 +36567,7 @@
       "latestOwnershipAssociation": "1966-01-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -36724,6 +36666,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -36854,6 +36797,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 8,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -36956,6 +36900,7 @@
       "latestOwnershipAssociation": "2023-11-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -37063,6 +37008,7 @@
       "latestOwnershipAssociation": "2011-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -37157,6 +37103,7 @@
       "latestOwnershipAssociation": "2025-01-08",
       "ownershipChangesSince": 5,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -37294,6 +37241,7 @@
       "latestOwnershipAssociation": "2024-03-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 9,
       "recentServiceLineCitations": 7,
       "citedLines": [
@@ -37365,6 +37313,7 @@
       "latestOwnershipAssociation": "2025-02-13",
       "ownershipChangesSince": 1,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -37431,6 +37380,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -37542,6 +37492,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 3,
       "citedLines": [
@@ -37642,6 +37593,7 @@
       "latestOwnershipAssociation": "2024-07-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2014-01-01",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -37764,6 +37716,7 @@
       "latestOwnershipAssociation": "1999-09-21",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2003-11-19",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -37858,6 +37811,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -37943,6 +37897,7 @@
       "latestOwnershipAssociation": "2025-12-16",
       "ownershipChangesSince": 2,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -38057,6 +38012,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2008-06-27",
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -38149,6 +38105,7 @@
       "latestOwnershipAssociation": "2020-08-12",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -38240,6 +38197,7 @@
       "latestOwnershipAssociation": "2019-01-04",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2019-03-16",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -38362,6 +38320,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2024-07-03",
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -38441,6 +38400,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2013-04-22",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -38517,6 +38477,7 @@
       "latestOwnershipAssociation": "2019-10-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -38601,6 +38562,7 @@
       "latestOwnershipAssociation": "2015-03-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2015-01-01",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -38709,6 +38671,7 @@
       "latestOwnershipAssociation": "2014-10-23",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2015-01-01",
       "serviceLineCitations": 5,
       "recentServiceLineCitations": 5,
       "citedLines": [
@@ -38788,6 +38751,7 @@
       "latestOwnershipAssociation": "2014-10-23",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2015-01-01",
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [
@@ -38945,6 +38909,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 12,
       "recentServiceLineCitations": 9,
       "citedLines": [
@@ -39033,6 +38998,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2016-12-12",
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -39102,6 +39068,7 @@
       "latestOwnershipAssociation": "2016-08-03",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2016-08-05",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -39110,7 +39077,7 @@
     },
     {
       "ccn": "115730",
-      "operatorId": "ga-op-ccn-115730",
+      "operatorId": "ga-op-chain-766",
       "lines": {
         "sprinkler_itm": {
           "citations": 1,
@@ -39222,6 +39189,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 7,
       "recentServiceLineCitations": 6,
       "citedLines": [
@@ -39323,6 +39291,7 @@
       "latestOwnershipAssociation": "2016-07-15",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2016-07-15",
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -39333,7 +39302,7 @@
     },
     {
       "ccn": "115733",
-      "operatorId": "ga-op-ccn-115733",
+      "operatorId": "ga-op-chain-766",
       "lines": {
         "sprinkler_itm": {
           "citations": 1,
@@ -39437,6 +39406,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -39538,6 +39508,7 @@
       "latestOwnershipAssociation": "2012-01-10",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 4,
       "recentServiceLineCitations": 4,
       "citedLines": [
@@ -39615,6 +39586,7 @@
       "latestOwnershipAssociation": "2022-03-28",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -39706,6 +39678,7 @@
       "latestOwnershipAssociation": "2020-03-14",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2017-10-06",
       "serviceLineCitations": 3,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -39775,6 +39748,7 @@
       "latestOwnershipAssociation": "2025-07-17",
       "ownershipChangesSince": 1,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": "2015-07-17",
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -39856,6 +39830,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 2,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -39924,6 +39899,7 @@
       "latestOwnershipAssociation": "2023-09-26",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 0,
       "recentServiceLineCitations": 0,
       "citedLines": [],
@@ -40035,6 +40011,7 @@
       "latestOwnershipAssociation": "2022-09-01",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 6,
       "recentServiceLineCitations": 2,
       "citedLines": [
@@ -40166,6 +40143,7 @@
       "latestOwnershipAssociation": "2024-10-06",
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 8,
       "recentServiceLineCitations": 6,
       "citedLines": [
@@ -40246,6 +40224,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 0,
       "citedLines": [
@@ -40322,6 +40301,7 @@
       "latestOwnershipAssociation": null,
       "ownershipChangesSince": 0,
       "managementOrganizationChangesSince": 0,
+      "latestManagementOrganizationAssociation": null,
       "serviceLineCitations": 1,
       "recentServiceLineCitations": 1,
       "citedLines": [

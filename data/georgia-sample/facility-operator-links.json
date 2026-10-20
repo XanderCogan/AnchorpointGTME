@@ -5226,6 +5226,174 @@
       }
     },
     {
+      "ccn": "115443",
+      "facilityName": "Pine Knoll Path of Journey LLC",
+      "legalBusinessName": "[not available in CMS]",
+      "address": "156 Pine Knoll Drive",
+      "city": "Carrollton",
+      "zip": "30117",
+      "county": "Carroll",
+      "certifiedBeds": 122,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-chain-766",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115443",
+        "value": "ga-op-chain-766",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115473",
+      "facilityName": "PruittHealth - Lithonia, LLC",
+      "legalBusinessName": "[not available in CMS]",
+      "address": "2816 EVANS MILL ROAD",
+      "city": "LITHONIA",
+      "zip": "30058",
+      "county": "De Kalb",
+      "certifiedBeds": 150,
+      "ownershipType": "Non profit - Corporation",
+      "operatorId": "ga-op-chain-434",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115473",
+        "value": "ga-op-chain-434",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115552",
+      "facilityName": "Pruitthealth - The Lodge, LLC",
+      "legalBusinessName": "[not available in CMS]",
+      "address": "200 SOUTH KIMBERLY ROAD",
+      "city": "WARNER ROBINS",
+      "zip": "31088",
+      "county": "Houston",
+      "certifiedBeds": 106,
+      "ownershipType": "For profit - Corporation",
+      "operatorId": "ga-op-chain-434",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115552",
+        "value": "ga-op-chain-434",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115622",
+      "facilityName": "Eastman Trails of Journey LLC",
+      "legalBusinessName": "[not available in CMS]",
+      "address": "556 CHESTER HIGHWAY",
+      "city": "EASTMAN",
+      "zip": "31023",
+      "county": "Dodge",
+      "certifiedBeds": 100,
+      "ownershipType": "For profit - Corporation",
+      "operatorId": "ga-op-chain-766",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115622",
+        "value": "ga-op-chain-766",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115633",
+      "facilityName": "Tybee Island Trails of Journey LLC",
+      "legalBusinessName": "[not available in CMS]",
+      "address": "26 VAN HORNE STREET",
+      "city": "TYBEE ISLAND",
+      "zip": "31328",
+      "county": "Chatham",
+      "certifiedBeds": 50,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-chain-766",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115633",
+        "value": "ga-op-chain-766",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115656",
+      "facilityName": "PruittHealth - Lakeside, LLC",
+      "legalBusinessName": "[not available in CMS]",
+      "address": "3020 JEFFERSONVILLE ROAD",
+      "city": "MACON",
+      "zip": "31217",
+      "county": "Bibb",
+      "certifiedBeds": 92,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-chain-434",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115656",
+        "value": "ga-op-chain-434",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115730",
+      "facilityName": "Rosewood at Tybee Island of Journey LLC, The",
+      "legalBusinessName": "[not available in CMS]",
+      "address": "7 Rosewood Avenue",
+      "city": "Tybee Island",
+      "zip": "31328",
+      "county": "Chatham",
+      "certifiedBeds": 85,
+      "ownershipType": "For profit - Limited Liability company",
+      "operatorId": "ga-op-chain-766",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115730",
+        "value": "ga-op-chain-766",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
+      "ccn": "115733",
+      "facilityName": "Abbeville Crossing of Journey LLC",
+      "legalBusinessName": "[not available in CMS]",
+      "address": "206 MAIN STREET EAST",
+      "city": "ABBEVILLE",
+      "zip": "31001",
+      "county": "Wilcox",
+      "certifiedBeds": 101,
+      "ownershipType": "For profit - Corporation",
+      "operatorId": "ga-op-chain-766",
+      "resolutionRule": "review_decision",
+      "status": "resolved",
+      "source": {
+        "dataset": "review-decisions.json",
+        "field": "decision for 115733",
+        "value": "ga-op-chain-766",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-20"
+      }
+    },
+    {
       "ccn": "115002",
       "facilityName": "A.G. RHODES HOME WESLEY WOODS",
       "legalBusinessName": "A. G. RHODES HOME INC. AT WESLEY WOODS",
@@ -5835,27 +6003,6 @@
       }
     },
     {
-      "ccn": "115443",
-      "facilityName": "Pine Knoll Path of Journey LLC",
-      "legalBusinessName": "[not available in CMS]",
-      "address": "156 Pine Knoll Drive",
-      "city": "Carrollton",
-      "zip": "30117",
-      "county": "Carroll",
-      "certifiedBeds": 122,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-ccn-115443",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
       "ccn": "115449",
       "facilityName": "Hart Care Center",
       "legalBusinessName": "HART CARE CENTER INC",
@@ -5914,27 +6061,6 @@
         "dataset": "4pq5-n9py",
         "field": "legal_business_name",
         "value": "AZ OPERATOR LLC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115473",
-      "facilityName": "PruittHealth - Lithonia, LLC",
-      "legalBusinessName": "[not available in CMS]",
-      "address": "2816 EVANS MILL ROAD",
-      "city": "LITHONIA",
-      "zip": "30058",
-      "county": "De Kalb",
-      "certifiedBeds": 150,
-      "ownershipType": "Non profit - Corporation",
-      "operatorId": "ga-op-ccn-115473",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
         "cmsModified": "2026-09-30",
         "retrievedOn": "2026-10-19"
       }
@@ -6166,27 +6292,6 @@
         "dataset": "4pq5-n9py",
         "field": "legal_business_name",
         "value": "ATLANTA ASSOCIATION FOR CONVALESCENT AGED PERSONS, INC.",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115552",
-      "facilityName": "Pruitthealth - The Lodge, LLC",
-      "legalBusinessName": "[not available in CMS]",
-      "address": "200 SOUTH KIMBERLY ROAD",
-      "city": "WARNER ROBINS",
-      "zip": "31088",
-      "county": "Houston",
-      "certifiedBeds": 106,
-      "ownershipType": "For profit - Corporation",
-      "operatorId": "ga-op-ccn-115552",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
         "cmsModified": "2026-09-30",
         "retrievedOn": "2026-10-19"
       }
@@ -6465,27 +6570,6 @@
       }
     },
     {
-      "ccn": "115622",
-      "facilityName": "Eastman Trails of Journey LLC",
-      "legalBusinessName": "[not available in CMS]",
-      "address": "556 CHESTER HIGHWAY",
-      "city": "EASTMAN",
-      "zip": "31023",
-      "county": "Dodge",
-      "certifiedBeds": 100,
-      "ownershipType": "For profit - Corporation",
-      "operatorId": "ga-op-ccn-115622",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
       "ccn": "115627",
       "facilityName": "Oaks Nursing Home, Inc, The",
       "legalBusinessName": "OAKS NURSING HOME, INC.",
@@ -6502,27 +6586,6 @@
         "dataset": "4pq5-n9py",
         "field": "legal_business_name",
         "value": "OAKS NURSING HOME, INC.",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115633",
-      "facilityName": "Tybee Island Trails of Journey LLC",
-      "legalBusinessName": "[not available in CMS]",
-      "address": "26 VAN HORNE STREET",
-      "city": "TYBEE ISLAND",
-      "zip": "31328",
-      "county": "Chatham",
-      "certifiedBeds": 50,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-ccn-115633",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
         "cmsModified": "2026-09-30",
         "retrievedOn": "2026-10-19"
       }
@@ -6649,27 +6712,6 @@
         "dataset": "4pq5-n9py",
         "field": "legal_business_name",
         "value": "TIFT REGIONAL HEALTH SYSTEM INC",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115656",
-      "facilityName": "PruittHealth - Lakeside, LLC",
-      "legalBusinessName": "[not available in CMS]",
-      "address": "3020 JEFFERSONVILLE ROAD",
-      "city": "MACON",
-      "zip": "31217",
-      "county": "Bibb",
-      "certifiedBeds": 92,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-ccn-115656",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
         "cmsModified": "2026-09-30",
         "retrievedOn": "2026-10-19"
       }
@@ -7263,27 +7305,6 @@
       }
     },
     {
-      "ccn": "115730",
-      "facilityName": "Rosewood at Tybee Island of Journey LLC, The",
-      "legalBusinessName": "[not available in CMS]",
-      "address": "7 Rosewood Avenue",
-      "city": "Tybee Island",
-      "zip": "31328",
-      "county": "Chatham",
-      "certifiedBeds": 85,
-      "ownershipType": "For profit - Limited Liability company",
-      "operatorId": "ga-op-ccn-115730",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
       "ccn": "115732",
       "facilityName": "BOSTICK NURSING CENTER",
       "legalBusinessName": "CORRECTLIFE BOSTICK, LLC",
@@ -7300,27 +7321,6 @@
         "dataset": "y2hd-n93e",
         "field": "owner_name where role_played_by_owner_or_manager_in_facility = OPERATIONAL/MANAGERIAL CONTROL and owner_type = Organization",
         "value": "CORRECTLIFE, INC.",
-        "cmsModified": "2026-09-30",
-        "retrievedOn": "2026-10-19"
-      }
-    },
-    {
-      "ccn": "115733",
-      "facilityName": "Abbeville Crossing of Journey LLC",
-      "legalBusinessName": "[not available in CMS]",
-      "address": "206 MAIN STREET EAST",
-      "city": "ABBEVILLE",
-      "zip": "31001",
-      "county": "Wilcox",
-      "certifiedBeds": 101,
-      "ownershipType": "For profit - Corporation",
-      "operatorId": "ga-op-ccn-115733",
-      "resolutionRule": "legal_business_name",
-      "status": "provisional",
-      "source": {
-        "dataset": "4pq5-n9py",
-        "field": "legal_business_name",
-        "value": "[withheld: may name an individual]",
         "cmsModified": "2026-09-30",
         "retrievedOn": "2026-10-19"
       }

@@ -113,6 +113,7 @@ const facilities = new Map(
       latestOwnershipAssociation: null as string | null,
       ownershipChangesSince: 0,
       managementOrganizationChangesSince: 0,
+      latestManagementOrganizationAssociation: null as string | null,
     },
   ]),
 );
@@ -152,8 +153,11 @@ for (const row of ownership) {
   if (OWNERSHIP_ROLES.test(role)) {
     if (!facility.latestOwnershipAssociation || date > facility.latestOwnershipAssociation) facility.latestOwnershipAssociation = date;
     if (date >= changeSince) facility.ownershipChangesSince += 1;
-  } else if (role === MANAGEMENT_ROLE && row.owner_type === "Organization" && date >= changeSince) {
-    facility.managementOrganizationChangesSince += 1;
+  } else if (role === MANAGEMENT_ROLE && row.owner_type === "Organization") {
+    if (!facility.latestManagementOrganizationAssociation || date > facility.latestManagementOrganizationAssociation) {
+      facility.latestManagementOrganizationAssociation = date;
+    }
+    if (date >= changeSince) facility.managementOrganizationChangesSince += 1;
   }
 }
 

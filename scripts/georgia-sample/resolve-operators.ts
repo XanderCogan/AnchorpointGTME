@@ -15,7 +15,7 @@ const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const sampleRoot = resolve(projectRoot, "data/georgia-sample");
 
 type Row = Record<string, string>;
-type Rule = "chain_id" | "operational_managerial_control" | "legal_business_name";
+type Rule = "chain_id" | "operational_managerial_control" | "legal_business_name" | "review_decision";
 
 const PROVIDER = "4pq5-n9py";
 const OWNERSHIP = "y2hd-n93e";
@@ -175,6 +175,12 @@ type ReviewCase = {
   candidates: { name: string; sourceField: string; corroboration: string[] }[];
 };
 
+// Approved manual review decisions, applied on every run.
+const { decisions } = JSON.parse(await readFile(resolve(sampleRoot, "review-decisions.json"), "utf8")) as {
+  decisions: { ccn: string; operatorId: string; decidedOn: string; approvedBy: string; evidence: string }[];
+};
+const decisionByCcn = new Map(decisions.map((decision) => [decision.ccn, decision]));
+
 const operators = new Map<string, Operator>();
 const links: Link[] = [];
 const reviewCases: ReviewCase[] = [];
@@ -200,7 +206,14 @@ function attach(operator: Omit<Operator, "georgiaFacilityCount" | "facilityCcns"
     operatorId: existing.operatorId,
     resolutionRule: operator.resolutionRule,
     status: operator.status,
-    source: { dataset: datasetId, field, value: publish(value), cmsModified: dataset.cmsModified, retrievedOn: dataset.retrievedOn },
+    // A review decision cites an operator ID, which is not a name.
+    source: {
+      dataset: datasetId,
+      field,
+      value: datasetId === "review-decisions.json" ? value : publish(value),
+      cmsModified: dataset.cmsModified,
+      retrievedOn: dataset.retrievedOn,
+    },
   });
 }
 
@@ -272,9 +285,27 @@ for (const [chainId, facilities] of chainFacilities) {
   }
 }
 
+// Approved review decisions place a facility under an operator the rules already built.
+for (const facility of providers) {
+  const decision = decisionByCcn.get(ccnOf(facility));
+  if (!decision || facility.chain_id) continue;
+  const target = operators.get(decision.operatorId);
+  if (!target) throw new Error(`Review decision for ${decision.ccn} names unknown operator ${decision.operatorId}`);
+  const { georgiaFacilityCount: _count, facilityCcns: _ccns, ...operator } = target;
+  attach(
+    operator,
+    facility,
+    `decision for ${decision.ccn}`,
+    decision.operatorId,
+    { ...provider, cmsModified: provider.cmsModified, retrievedOn: decision.decidedOn },
+    "review-decisions.json",
+  );
+  links[links.length - 1]!.resolutionRule = "review_decision";
+}
+
 // Rules 2 and 3 for facilities outside a CMS chain.
 for (const facility of providers) {
-  if (facility.chain_id) continue;
+  if (facility.chain_id || decisionByCcn.has(ccnOf(facility))) continue;
   const { candidates } = omcCandidates(facility);
   const corroborated = candidates.filter((candidate) => candidate.corroboration.length > 0);
 

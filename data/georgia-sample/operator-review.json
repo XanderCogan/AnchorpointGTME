@@ -235,24 +235,6 @@
       ]
     },
     {
-      "caseId": "facility-115443",
-      "ccn": "115443",
-      "facilityName": "Pine Knoll Path of Journey LLC",
-      "cmsChainId": null,
-      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
-      "provisionalOperatorId": "ga-op-ccn-115443",
-      "candidates": []
-    },
-    {
-      "caseId": "facility-115473",
-      "ccn": "115473",
-      "facilityName": "PruittHealth - Lithonia, LLC",
-      "cmsChainId": null,
-      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
-      "provisionalOperatorId": "ga-op-ccn-115473",
-      "candidates": []
-    },
-    {
       "caseId": "facility-115478",
       "ccn": "115478",
       "facilityName": "RIDGECREST REHAB & SKILLED NURSING CENTER",
@@ -317,15 +299,6 @@
       ]
     },
     {
-      "caseId": "facility-115552",
-      "ccn": "115552",
-      "facilityName": "Pruitthealth - The Lodge, LLC",
-      "cmsChainId": null,
-      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
-      "provisionalOperatorId": "ga-op-ccn-115552",
-      "candidates": []
-    },
-    {
       "caseId": "facility-115566",
       "ccn": "115566",
       "facilityName": "RIVER TOWNE CENTER",
@@ -356,33 +329,6 @@
       "cmsChainId": null,
       "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
       "provisionalOperatorId": "ga-op-ccn-115580",
-      "candidates": []
-    },
-    {
-      "caseId": "facility-115622",
-      "ccn": "115622",
-      "facilityName": "Eastman Trails of Journey LLC",
-      "cmsChainId": null,
-      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
-      "provisionalOperatorId": "ga-op-ccn-115622",
-      "candidates": []
-    },
-    {
-      "caseId": "facility-115633",
-      "ccn": "115633",
-      "facilityName": "Tybee Island Trails of Journey LLC",
-      "cmsChainId": null,
-      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
-      "provisionalOperatorId": "ga-op-ccn-115633",
-      "candidates": []
-    },
-    {
-      "caseId": "facility-115656",
-      "ccn": "115656",
-      "facilityName": "PruittHealth - Lakeside, LLC",
-      "cmsChainId": null,
-      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
-      "provisionalOperatorId": "ga-op-ccn-115656",
       "candidates": []
     },
     {
@@ -495,24 +441,6 @@
       "cmsChainId": null,
       "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
       "provisionalOperatorId": "ga-op-ccn-115727",
-      "candidates": []
-    },
-    {
-      "caseId": "facility-115730",
-      "ccn": "115730",
-      "facilityName": "Rosewood at Tybee Island of Journey LLC, The",
-      "cmsChainId": null,
-      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
-      "provisionalOperatorId": "ga-op-ccn-115730",
-      "candidates": []
-    },
-    {
-      "caseId": "facility-115733",
-      "ccn": "115733",
-      "facilityName": "Abbeville Crossing of Journey LLC",
-      "cmsChainId": null,
-      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
-      "provisionalOperatorId": "ga-op-ccn-115733",
       "candidates": []
     },
     {

@@ -5,7 +5,7 @@
       "service": "OSRM public demo server, table service, car profile",
       "endpoint": "https://router.project-osrm.org/table/v1/driving",
       "data": "OpenStreetMap contributors (ODbL)",
-      "retrievedOn": "2026-10-19",
+      "retrievedOn": "2026-10-20",
       "caveat": "Free-flow road times without traffic; metro Atlanta peak times run longer.",
       "terms": "Non-commercial use, at most one request per second; approved by the user on 2026-10-19."
     },
@@ -91,36 +91,12 @@
       "state": "serviceable"
     },
     {
-      "operatorId": "ga-op-ccn-115443",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-ccn-115473",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
       "operatorId": "ga-op-ccn-115498",
       "facilities": 1,
       "anchorServiceable": 0,
       "anchorConditional": 0,
       "fullyServiceable": 0,
       "state": "not_serviceable"
-    },
-    {
-      "operatorId": "ga-op-ccn-115552",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
     },
     {
       "operatorId": "ga-op-ccn-115579",
@@ -132,30 +108,6 @@
     },
     {
       "operatorId": "ga-op-ccn-115580",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-ccn-115622",
-      "facilities": 1,
-      "anchorServiceable": 1,
-      "anchorConditional": 0,
-      "fullyServiceable": 1,
-      "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-ccn-115633",
-      "facilities": 1,
-      "anchorServiceable": 0,
-      "anchorConditional": 0,
-      "fullyServiceable": 0,
-      "state": "not_serviceable"
-    },
-    {
-      "operatorId": "ga-op-ccn-115656",
       "facilities": 1,
       "anchorServiceable": 1,
       "anchorConditional": 0,
@@ -185,22 +137,6 @@
       "anchorConditional": 0,
       "fullyServiceable": 1,
       "state": "serviceable"
-    },
-    {
-      "operatorId": "ga-op-ccn-115730",
-      "facilities": 1,
-      "anchorServiceable": 0,
-      "anchorConditional": 0,
-      "fullyServiceable": 0,
-      "state": "not_serviceable"
-    },
-    {
-      "operatorId": "ga-op-ccn-115733",
-      "facilities": 1,
-      "anchorServiceable": 0,
-      "anchorConditional": 1,
-      "fullyServiceable": 0,
-      "state": "conditional"
     },
     {
       "operatorId": "ga-op-ccn-11A186",
@@ -300,10 +236,10 @@
     },
     {
       "operatorId": "ga-op-chain-434",
-      "facilities": 60,
-      "anchorServiceable": 28,
+      "facilities": 63,
+      "anchorServiceable": 31,
       "anchorConditional": 10,
-      "fullyServiceable": 28,
+      "fullyServiceable": 31,
       "state": "serviceable"
     },
     {
@@ -372,10 +308,10 @@
     },
     {
       "operatorId": "ga-op-chain-766",
-      "facilities": 22,
-      "anchorServiceable": 12,
-      "anchorConditional": 2,
-      "fullyServiceable": 12,
+      "facilities": 27,
+      "anchorServiceable": 14,
+      "anchorConditional": 3,
+      "fullyServiceable": 14,
       "state": "serviceable"
     },
     {
@@ -9278,7 +9214,7 @@
       "ccn": "115443",
       "facilityName": "Pine Knoll Path of Journey LLC",
       "city": "Carrollton",
-      "operatorId": "ga-op-ccn-115443",
+      "operatorId": "ga-op-chain-766",
       "coordinates": {
         "latitude": 33.5875,
         "longitude": -85.061,
@@ -10188,7 +10124,7 @@
       "ccn": "115473",
       "facilityName": "PruittHealth - Lithonia, LLC",
       "city": "LITHONIA",
-      "operatorId": "ga-op-ccn-115473",
+      "operatorId": "ga-op-chain-434",
       "coordinates": {
         "latitude": 33.703,
         "longitude": -84.116,
@@ -13842,7 +13778,7 @@
       "ccn": "115552",
       "facilityName": "Pruitthealth - The Lodge, LLC",
       "city": "WARNER ROBINS",
-      "operatorId": "ga-op-ccn-115552",
+      "operatorId": "ga-op-chain-434",
       "coordinates": {
         "latitude": 32.5951,
         "longitude": -83.637,
@@ -17388,7 +17324,7 @@
       "ccn": "115622",
       "facilityName": "Eastman Trails of Journey LLC",
       "city": "EASTMAN",
-      "operatorId": "ga-op-ccn-115622",
+      "operatorId": "ga-op-chain-766",
       "coordinates": {
         "latitude": 32.2162,
         "longitude": -83.177,
@@ -17886,7 +17822,7 @@
       "ccn": "115633",
       "facilityName": "Tybee Island Trails of Journey LLC",
       "city": "TYBEE ISLAND",
-      "operatorId": "ga-op-ccn-115633",
+      "operatorId": "ga-op-chain-766",
       "coordinates": {
         "latitude": 32.0178,
         "longitude": -80.846,
@@ -18774,7 +18710,7 @@
       "ccn": "115656",
       "facilityName": "PruittHealth - Lakeside, LLC",
       "city": "MACON",
-      "operatorId": "ga-op-ccn-115656",
+      "operatorId": "ga-op-chain-434",
       "coordinates": {
         "latitude": 32.8419,
         "longitude": -83.572,
@@ -22872,7 +22808,7 @@
       "ccn": "115730",
       "facilityName": "Rosewood at Tybee Island of Journey LLC, The",
       "city": "Tybee Island",
-      "operatorId": "ga-op-ccn-115730",
+      "operatorId": "ga-op-chain-766",
       "coordinates": {
         "latitude": 32.0167,
         "longitude": -80.844,
@@ -23002,7 +22938,7 @@
       "ccn": "115733",
       "facilityName": "Abbeville Crossing of Journey LLC",
       "city": "ABBEVILLE",
-      "operatorId": "ga-op-ccn-115733",
+      "operatorId": "ga-op-chain-766",
       "coordinates": {
         "latitude": 31.9924,
         "longitude": -83.305,

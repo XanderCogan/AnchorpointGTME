@@ -7,13 +7,13 @@
     "jobRule": "single job pages on job boards or careers sites whose title names a maintenance, facilities, or plant operations role and whose title or address names the operator or facility; search, salary, and review pages excluded; found by search, not confirmed open"
   },
   "summary": {
-    "operatorsSearched": 128,
+    "operatorsSearched": 120,
     "domainsNameMatched": 30,
     "domainsWordMatched": 24,
-    "domainsUnconfirmed": 73,
+    "domainsUnconfirmed": 65,
     "domainsNone": 1,
-    "footprintOperatorsSearchedForJobs": 88,
-    "operatorsWithPostingCandidates": 10,
+    "footprintOperatorsSearchedForJobs": 82,
+    "operatorsWithPostingCandidates": 4,
     "creditsSpentThisRun": 0,
     "stopReason": null
   },
@@ -293,39 +293,6 @@
       "matchedOn": null
     },
     {
-      "operatorId": "ga-op-ccn-115443",
-      "query": "\"Pine Knoll Path of Journey LLC\" Carrollton GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "digitalcare60.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115473",
-      "query": "\"PruittHealth - Lithonia, LLC\" LITHONIA GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "nursinghomerater.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115552",
-      "query": "\"Pruitthealth - The Lodge, LLC\" WARNER ROBINS GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "findcandor.org",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
       "operatorId": "ga-op-ccn-115579",
       "query": "\"Healthcare at College Park, LLC\" COLLEGE PARK GA official website",
       "queriedBy": "facility_name",
@@ -342,28 +309,6 @@
       "queriedBy": "facility_name",
       "domain": null,
       "candidateDomain": "eldervoice.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115622",
-      "query": "\"Eastman Trails of Journey LLC\" EASTMAN GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "npidb.org",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115656",
-      "query": "\"PruittHealth - Lakeside, LLC\" MACON GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "mylivingchoice.com",
       "confidence": "unconfirmed",
       "evidenceUrl": null,
       "matchedWords": [],
@@ -914,17 +859,6 @@
       "matchedOn": null
     },
     {
-      "operatorId": "ga-op-ccn-115733",
-      "query": "\"Abbeville Crossing of Journey LLC\" ABBEVILLE GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "npidb.org",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
       "operatorId": "ga-op-lbn-carrollton-manor-inc",
       "query": "\"CARROLLTON MANOR, INCORPORATED\" CARROLLTON GA official website",
       "queriedBy": "facility_name",
@@ -1127,28 +1061,6 @@
       "queriedBy": "facility_name",
       "domain": null,
       "candidateDomain": "www-stage.openplacement.com",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115633",
-      "query": "\"Tybee Island Trails of Journey LLC\" TYBEE ISLAND GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "npidb.org",
-      "confidence": "unconfirmed",
-      "evidenceUrl": null,
-      "matchedWords": [],
-      "matchedOn": null
-    },
-    {
-      "operatorId": "ga-op-ccn-115730",
-      "query": "\"Rosewood at Tybee Island of Journey LLC, The\" Tybee Island GA official website",
-      "queriedBy": "facility_name",
-      "domain": null,
-      "candidateDomain": "careavailability.com",
       "confidence": "unconfirmed",
       "evidenceUrl": null,
       "matchedWords": [],
@@ -1675,54 +1587,6 @@
       "postings": []
     },
     {
-      "operatorId": "ga-op-ccn-115443",
-      "query": "\"Pine Knoll Path of Journey LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": [
-        {
-          "title": "Maintenance Director - Journey Care Team of Georgia LLC",
-          "url": "https://www.simplyhired.com/job/52VGMUOQWLMxQjnHwfJL5_hIX8QMf7gn-r5kB37wg1tKZPoYowbt_Q",
-          "date": "Sep 30, 2026"
-        }
-      ]
-    },
-    {
-      "operatorId": "ga-op-ccn-115473",
-      "query": "\"PruittHealth - Lithonia, LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": [
-        {
-          "title": "Maintenance Director - Fort Oglethorpe, GA",
-          "url": "https://www.linkedin.com/jobs/view/maintenance-director-at-pruitthealth-4476764734",
-          "date": "Oct 5, 2026"
-        },
-        {
-          "title": "PruittHealth Maintenance Director Job in Greenville, GA",
-          "url": "https://www.ziprecruiter.com/c/PruittHealth/Job/Maintenance-Director/-in-Greenville,GA?jid=cc32f4dab31798d2",
-          "date": null
-        },
-        {
-          "title": "Maintenance/ Housekeeping",
-          "url": "https://careers.pruitthealth.com/us/en/c/maintenancehousekeeping-jobs",
-          "date": null
-        }
-      ]
-    },
-    {
-      "operatorId": "ga-op-ccn-115552",
-      "query": "\"Pruitthealth - The Lodge, LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": [
-        {
-          "title": "Maintenance Director - Fort Oglethorpe, GA",
-          "url": "https://www.linkedin.com/jobs/view/maintenance-director-at-pruitthealth-4476764734",
-          "date": "Oct 5, 2026"
-        },
-        {
-          "title": "Maintenance/ Housekeeping",
-          "url": "https://careers.pruitthealth.com/us/en/c/maintenancehousekeeping-jobs",
-          "date": null
-        }
-      ]
-    },
-    {
       "operatorId": "ga-op-ccn-115579",
       "query": "\"Healthcare at College Park, LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
@@ -1731,33 +1595,6 @@
       "operatorId": "ga-op-ccn-115580",
       "query": "\"Sandtown Health and Rehabilitation\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
-    },
-    {
-      "operatorId": "ga-op-ccn-115622",
-      "query": "\"Eastman Trails of Journey LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": [
-        {
-          "title": "Maintenance Director - Journey Care Team of Georgia LLC ...",
-          "url": "https://www.simplyhired.com/job/a6GQdywBYB6ShkxtivKCKR_TsI6bDBIE56sx2GI8b52A9HyDqQEq8Q",
-          "date": null
-        }
-      ]
-    },
-    {
-      "operatorId": "ga-op-ccn-115656",
-      "query": "\"PruittHealth - Lakeside, LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": [
-        {
-          "title": "Maintenance Director - Fort Oglethorpe, GA",
-          "url": "https://www.linkedin.com/jobs/view/maintenance-director-at-pruitthealth-4476764734",
-          "date": "Oct 5, 2026"
-        },
-        {
-          "title": "Maintenance/ Housekeeping",
-          "url": "https://careers.pruitthealth.com/us/en/c/maintenancehousekeeping-jobs",
-          "date": null
-        }
-      ]
     },
     {
       "operatorId": "ga-op-ccn-115682",
@@ -1988,22 +1825,6 @@
       "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
       "query": "\"HOSPITAL AUTHORITY OF COLUMBUS GA\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
       "postings": []
-    },
-    {
-      "operatorId": "ga-op-ccn-115733",
-      "query": "\"Abbeville Crossing of Journey LLC\" (\"maintenance director\" OR \"director of maintenance\" OR \"maintenance supervisor\" OR \"facilities director\" OR \"plant operations\") Georgia job",
-      "postings": [
-        {
-          "title": "Capital Square Living hiring Service (Maintenance) Manager",
-          "url": "https://www.linkedin.com/jobs/view/service-maintenance-manager-capstone-at-banks-crossing-at-capital-square-living-4478563722",
-          "date": null
-        },
-        {
-          "title": "Maintenance Director - Journey Care Team of Georgia LLC",
-          "url": "https://www.simplyhired.com/job/52VGMUOQWLMxQjnHwfJL5_hIX8QMf7gn-r5kB37wg1tKZPoYowbt_Q",
-          "date": "Sep 30, 2026"
-        }
-      ]
     },
     {
       "operatorId": "ga-op-lbn-carrollton-manor-inc",

@@ -135,6 +135,31 @@ Stage 2 finding from these lookups: several of the 18 facilities with no CMS leg
 
 Tier operators 1 to 4 using the priority bands and soft-scoring rules in `docs/contracts/scoring-contract.md` and decision 0001. No new weights are invented here. Any weight the contract leaves open is proposed separately for approval. The output is a tiered operator list with visible reasons, which is the artifact an executive would sign off.
 
+### Review decisions and the one-command pipeline, 2026-10-20
+
+Approved review decisions live in `data/georgia-sample/review-decisions.json`, and the resolver applies them on every run. Each decision names a CCN, the operator it joins, the approval date, and the evidence. On 2026-10-20 the user approved eight merges. Three facilities with no CMS legal name join PruittHealth (chain 434), which now has 63 Georgia facilities. Five join Journey (chain 766), which now has 27. After the merges, 356 facilities resolve to 120 operators, and 33 review cases remain.
+
+`npm run sample:georgia` reruns resolution, serviceability, signals, Serper lookups, and tiering from the raw data, with OSRM and Serper served from cache. `npm run sample:georgia:pull` refreshes the CMS pull separately.
+
+### Stage 5: tiering proposal, 2026-10-20, awaiting approval
+
+`scripts/georgia-sample/tier.ts` writes `data/georgia-sample/tiers.json`. It applies `account-score-v1.1`. Every value the contract leaves open sits in one labeled proposal block, `georgia-account-proposal-1`, and is marked as a proposal on each scored component until the user approves it.
+
+- Hard gate: an operator needs one or more facilities serviceable or conditional for sprinkler or alarm work. 82 operators pass and 38 sit outside the footprint.
+- Change propensity, using 24 of 40 points. Ownership or management change gets up to 10 points, decaying over 24 months from the latest association date. Hiring gets up to 8: 4 for an undated posting candidate, more for a dated one decaying over 120 days. A service-line citation is proposed as the contract's "approved timely trigger", up to 6 points decaying over 24 months.
+- Operational need, 35 points. Footprint earns up to 15 on a smooth curve over facilities within 120 minutes of a capable branch, with no cutoffs. Every nursing home gets 5 for its regulated environment. Up to 10 go to the share of footprint facilities cited for a service line since 2025, and up to 5 to the share with repeated sprinkler or alarm citations.
+- Data confidence, using 6 of 10 points. Domain earns 2 for a name match and 1 for a word match. Geography earns 2 if any facility is within 90 minutes, 1 if all are conditional. Location provenance earns 2 for a resolved operator, 1 for a provisional one.
+- People-based inputs score zero as unknown until Stage 6: role change (16), engagement (6, used by the citation trigger proposal), and persona and channel (4). Today's maximum is therefore 65 of 100.
+- Proposed bands on the raw score, after inspecting the distribution: A from 40, B from 30, C from 20. That gives 5 A, 14 B, 35 C, and 28 Watch. Scores run from 7 to 48.6 with a median of 24.5.
+- Band A: PruittHealth, Journey Healthcare, Harborview Health Systems, Empire Care Centers, and Ethica Health.
+
+Known effects to weigh before approval:
+
+- Citation scores are shares, so a single-site operator with one recent citation earns the full 15 citation points. That lifts many single-site operators into band C, where 31 of 35 operators are single-site.
+- Larger chains have more chances to show an ownership change at some facility.
+- 20 eligible operators are provisional, pending manual review.
+- A Serper result during domain lookup suggested a Chapter 7 bankruptcy case for C. Ross Management. It is unverified and not scored, because the contract allows only inputs that are captured with a source.
+
 ### Stage 6: people (free tier only)
 
 Only for serviceable, tiered operators, highest tier first. Run on Clay's free plan only: prove the table design for roles at the operator level and the site level, and measure the share of operators where named people can be found at all. The pass stops when free credits run out and reports how many operators it covered. There is no upgrade to a paid plan. Emails are checked for verifiability on a capped subset, and only whether a verified channel exists is recorded. Phone enrichment stays excluded.
