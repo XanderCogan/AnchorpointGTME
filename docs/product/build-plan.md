@@ -1,6 +1,6 @@
 # Gated Build Plan
 
-The project is active. Each milestone must be reviewed before the next one begins. The one exception is the early Milestone 4 data work, which runs alongside Milestone 3 in two tracks under `../decisions/0008-parallel-data-tracks.md`.
+The project is active. Each milestone must be reviewed before the next one begins. The one exception is the early Milestone 4 market work, the Georgia sample, which runs alongside Milestone 3 under `../decisions/0008-parallel-data-tracks.md`. Decision 0010 removes all fictional CRM history from the plan.
 
 ## Milestone 0: Operating contract
 
@@ -52,22 +52,23 @@ Exit gate: a clean environment can load the fixtures, run the audit, and display
 
 Status: in progress. The read-only connector is built and verified against synthetic recorded responses; live acceptance waits for the Developer Edition org. See `../milestones/milestone-3-salesforce-connector-notes.md`.
 
-Connect a Salesforce Developer Edition org holding Anchorpoint's fictional history, using read-only permissions. Import bounded Account, Site, Contact, Lead, Opportunity, User, Task, and Campaign data, preserve source timestamps, and reconcile paginated data safely. The object mapping follows `docs/decisions/0005-crm-system-of-record.md`.
+Connect a Salesforce Developer Edition org using read-only permissions. Import bounded Account, Site, Contact, Lead, Opportunity, User, Task, and Campaign data, preserve source timestamps, and reconcile paginated data safely. The object mapping follows `docs/decisions/0005-crm-system-of-record.md`.
 
-The org's data is the first historical fixture release from decision 0006, which may use real company names under the amended decision 0005, loaded as a setup step separate from the read-only connector. Under decision 0008, this milestone is Track A and runs alongside the Georgia market sample.
+Under decision 0010 the org holds only real Georgia operators and facilities from the market sample, as Accounts and Sites, loaded as a setup step separate from the read-only connector. There is no fictional history, so the other objects may be empty in the org; synthetic recorded responses prove them.
 
 Exit gate: repeated syncs are idempotent and no Salesforce records are changed.
 
 ## Milestone 4: Clay enrichment loop
 
-Before automating enrichment, create and inspect the historical customer dataset described in `../research/tam-construction-plan.md`, derive user-reviewed ICP hypotheses, and construct a bounded Georgia-first market sample. Then send only eligible incomplete target records to Clay. Validate returned fields, retain provenance, and distinguish unknown values from negative values.
+Size about five Georgia segments coarsely, construct the first segment sample in depth, and derive user-reviewed ICP hypotheses from public evidence and labelled assumptions under decision 0010. Show that a client's real CRM history could be analysed with a playbook and a pipeline verified on labelled test fixtures. Then send only eligible incomplete target records to Clay. Validate returned fields, retain provenance, and distinguish unknown values from negative values.
 
-Under decision 0008, the historical dataset and the Georgia sample are built before or alongside Milestone 3. Applying ICP hypotheses to real accounts, enrichment automation, and this exit gate wait for Milestone 3 acceptance.
+Under decision 0008, the Georgia sample is built alongside Milestone 3. Applying ICP hypotheses to real accounts, enrichment automation, and this exit gate wait for Milestone 3 acceptance.
 
 Deliverables:
 
-- Historical won-and-lost discovery dataset joined to fictional operating truth
-- User-reviewed ICP hypotheses
+- Coarse sizing of about five Georgia segments, documenting why senior living and skilled nursing went first
+- CRM ICP analysis playbook and pipeline, verified on labelled test fixtures (`../research/crm-icp-analysis-playbook.md`)
+- User-reviewed ICP hypotheses from public evidence and labelled assumptions
 - Bounded external market sample with parent and site resolution
 - Serviceability evidence
 - Progressive enrichment workflow with cost and freshness controls

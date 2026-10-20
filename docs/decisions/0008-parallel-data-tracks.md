@@ -1,6 +1,6 @@
 # Decision 0008: Parallel Historical-Fixture and Market-Sample Tracks
 
-Status: approved on 2026-10-19. Amended on 2026-10-20: Track A is cancelled. The user judged synthetic history low value for the Apero work sample, where the real-data TAM is the centerpiece. Its unmerged branch (tip 26de530) was deleted. Track B continues alone; the Track A text below is kept for history only.
+Status: approved on 2026-10-19. Amended on 2026-10-20: Track A is cancelled. The user judged synthetic history low value for the Apero work sample, where the real-data TAM is the centerpiece. Its unmerged branch (tip 26de530) was deleted. Track B continues alone; the Track A text below is kept for history only. Decision 0010 replaces the join point: no fictional history exists, the Developer Edition org holds real Georgia operators and facilities only, and ICP drafting waits on the Georgia sample and a coarse segment sizing pass rather than a historical dataset.
 
 Date: 2026-10-19  
 Decision owner: User  

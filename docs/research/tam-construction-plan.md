@@ -1,64 +1,41 @@
 # Anchorpoint TAM Construction Plan
 
-**Status:** Proposed discovery plan. Company-specific assumptions require confirmation.
+**Status:** Proposed discovery plan. Company-specific assumptions require confirmation. Revised on 2026-10-20 under decision 0010: no fictional CRM history exists.
 
 ## Purpose
 
-Construct a defensible serviceable market for Anchorpoint Fire & Safety from historical customer evidence and external market sources. Preserve parent, site, contact, source, and confidence relationships so the resulting universe can support account-based selling, enrichment, and routing.
+Construct a defensible serviceable market for Anchorpoint Fire & Safety from external market sources and labelled assumptions about Anchorpoint. Preserve parent, site, contact, source, and confidence relationships so the resulting universe can support account-based selling, enrichment, and routing.
 
 ## Core distinction
 
-Historical customer and opportunity data helps identify an ICP. External market research constructs the TAM. The work is iterative: early ICP hypotheses guide sourcing, and inspection of the resulting market can reveal that the initial hypotheses were incomplete.
+On a real client, historical customer and opportunity data helps identify an ICP; here, public evidence on real records and labelled assumptions stand in for it. External market research constructs the TAM. The work is iterative: early ICP hypotheses guide sourcing, and inspection of the resulting market can reveal that the initial hypotheses were incomplete.
 
 For Anchorpoint, the market cannot be represented by a flat lead list. The model needs parent operators, regional or brand entities where relevant, physical facilities, installed-system context, and buying contacts.
 
-## Synthetic evidence standard
+## Evidence standard
 
-Anchorpoint's internal customer, deal, service, billing, renewal, and churn history is fictional, but it must not be free-form generated filler. Before producing the historical dataset, define a benchmark model from public evidence about comparable regional fire and life-safety service companies and growth private-equity-backed operators.
+Decision 0010 removes all fictional CRM history from the project. Anchorpoint has no generated deals, activities, customers, or outcomes, because analysing history the project wrote itself can only rediscover the ICP written into it.
 
-Model Anchorpoint as a deliberately ordinary, operationally plausible company: neither distressed nor exceptional, neither perfectly clean nor conveniently chaotic, and without growth, win rates, retention, or outbound results selected to flatter the application. Establish the following assumptions before generating records:
+The TAM keeps two layers apart:
 
-- platform and acquired-company age;
-- branch footprint, licensing, technician capacity, and travel-time coverage;
-- service and customer mix;
-- plausible account, facility, contact, and activity volumes;
-- contract values, sales-cycle lengths, stage conversion, and loss distributions;
-- renewal, expansion, and churn behavior; and
-- acquisition-era CRM and operating-system inconsistencies.
+- facts with a public source and retrieval date, such as real companies, facilities, domains, parent-site relationships, citations, and drive times; and
+- assumptions about Anchorpoint itself, such as prices, retention, and capacity in decisions 0006 and 0009, each labelled, versioned, and individually challengeable.
 
-Use real companies, facilities, domains, parent-site relationships, and other sourced public facts when constructing the external market. Anchorpoint's customer relationships, opportunities, commercial outcomes, ownership, and activity history may be fictional. Keep one project-level disclosure of that distinction; row-by-row simulation labels are not required for this private portfolio exercise.
+Never present an assumption as a fact, and never write an invented value into a field that holds sourced data.
 
-Record the benchmark sources, assumptions, generation method, and random seed where applicable. Do not treat synthetic distributions as market evidence, and do not tune the generated history to produce a predetermined ICP, score ranking, or success story.
+## CRM history analysis
 
-## Historical discovery dataset
-
-Use 24 to 36 months of closed-won, closed-lost, customer, service, renewal, expansion, and churn history. Reconcile CRM records with field-service, invoicing, or ERP records before treating commercial outcomes as truth.
-
-Required fields include:
-
-- Canonical parent and physical facility identifiers
-- Anchorpoint branch and serviceability evidence
-- Vertical and facility type
-- Number of serviceable locations
-- Fire systems present
-- Service lines purchased
-- Recurring contract value
-- One-time project value
-- Deal outcome and dates
-- Sales-cycle length
-- Incumbent provider
-- Trigger that created the opportunity
-- Buying personas involved
-- Won or lost reason
-- Lead source
-- Renewal, expansion, and churn outcomes
-- Field provenance, confidence, and freshness
+On a real client, ICP work starts from 24 to 36 months of closed-won, closed-lost, renewal, expansion, and churn history reconciled with billing. Anchorpoint has none, so the project shows the capability instead of a result: `crm-icp-analysis-playbook.md` describes the method, and Milestone 4 builds its pipeline over the Salesforce mirror, verified on labelled test fixtures whose outputs are never findings.
 
 Do not infer the ICP from the existing `inspection-v1` fixture. It contains one closed-won deal and deliberate data contradictions built to test audit rules.
 
+## Segment sizing
+
+Before going deep on any segment, size about five Georgia segments coarsely: senior living and skilled nursing, healthcare, education, multifamily, and commercial and industrial property. For each, record a public establishment count, a rough value per site from the decision 0009 method, and which need signals are publicly available. Senior living and skilled nursing went first because it alone has public, dated fire-safety citation evidence; the sizing pass documents that choice, and the Georgia sample is the deep dive one slice would normally receive.
+
 ## ICP hypotheses
 
-Analyze outcomes without imposing hard cutoffs. Compare patterns across:
+Analyze evidence without imposing hard cutoffs. In this project the evidence is public signals on real records; on a client's CRM it would also include their outcomes. Compare patterns across:
 
 - Parent and site footprint
 - Facility type and regulatory context
@@ -194,7 +171,7 @@ The first application fixture remains approximately 200 companies and 600 contac
 
 - Service catalog, branch locations, travel-time rules, and licensing and capability constraints are resolved in `docs/decisions/0003-service-catalog-and-footprint.md`
 - The field-service source system and its reconciliation with the Salesforce CRM are resolved in `docs/decisions/0004-operating-source-system.md` and `docs/decisions/0005-crm-system-of-record.md`
-- Anchorpoint platform age, acquired-company history, operating profile, and historical dataset parameters are resolved in `docs/decisions/0006-ordinary-company-profile.md`
+- Anchorpoint platform age, acquired-company history, and operating profile are resolved in `docs/decisions/0006-ordinary-company-profile.md`; its generated-dataset section is cancelled under `docs/decisions/0010-no-fictional-crm-history.md`
 - The first Georgia sample, its sources, and the enrichment budget are resolved in `docs/decisions/0007-first-georgia-sample-and-enrichment.md`
 - Which signals deserve ongoing monitoring
 - Which role owns the play table and approval workflow

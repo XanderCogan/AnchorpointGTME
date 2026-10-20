@@ -85,7 +85,7 @@ ITM-led service is the common shape of regional fire and life-safety companies a
 - Savannah-area sprinkler opportunities are not serviceable until a capability change is recorded.
 - Facility records need a nearest-capable-branch reference, estimated drive time, the time source and date, and the serviceability state with its reason.
 - The later Georgia segment sample decision must fall inside these coverage areas.
-- The historical dataset must reflect the catalog: mostly recurring ITM contracts, with project revenue tied to deficiencies.
+- The historical dataset must reflect the catalog: mostly recurring ITM contracts, with project revenue tied to deficiencies. No historical dataset is generated under decision 0010; the account value model in decision 0009 applies this mix instead.
 
 ## Open within this decision
 

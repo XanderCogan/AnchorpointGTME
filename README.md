@@ -13,9 +13,11 @@ This is a GTM engineering work sample for Apero Advisors. Anchorpoint Fire & Saf
 - Milestone 0 is complete.
 - Milestone 1 was accepted on 2026-10-17.
 - Milestone 2 is complete, with the preview deployed on Vercel and Railway.
+- Milestone 3, the read-only Salesforce connector, is built and verified against synthetic recorded responses; live acceptance waits for the user's Developer Edition org.
+- The Georgia senior-living and skilled-nursing sample is the first of about five Georgia segments, worked in depth.
 - The current application is a read-only Next.js findings board backed by the frozen `inspection-v1` fixture and the deterministic audit engine.
 - The fixture proves CRM audit behavior. It is not valid evidence for ICP discovery, score calibration, or TAM sizing.
-- Later Anchorpoint history must be benchmarked against real regional service-company evidence before generation. The target is a plausible, unexceptional PE-backed operator, not an idealized company or a collection of convenient demo outcomes.
+- No fictional CRM history exists or will be generated (decision 0010). The market is real and sourced; assumptions about Anchorpoint are labelled; CRM-history analysis is shown as a method and a pipeline tested on labelled fixtures.
 
 Read [`STATE.md`](STATE.md) for the current gate, active decisions, and immediate next work. Use [`docs/README.md`](docs/README.md) to jump directly to the authoritative document for a specific question. Do not read the entire documentation set by default.
 
