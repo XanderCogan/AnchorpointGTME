@@ -7,6 +7,7 @@
   "additionalProperties": false,
   "required": [
     "roleMapVersion",
+    "roleChangeRule",
     "clayRunDates",
     "retrievedOn",
     "credits",
@@ -17,6 +18,10 @@
   "properties": {
     "roleMapVersion": {
       "const": "georgia-clay-role-map-1"
+    },
+    "roleChangeRule": {
+      "type": "string",
+      "pattern": "^role-change-proposal-[0-9]+: "
     },
     "clayRunDates": {
       "type": "array",
@@ -127,7 +132,7 @@
       "properties": {
         "operatorId": {
           "type": "string",
-          "pattern": "^ga-op-(chain|org|lbn|ccn)-[a-z0-9-]+$"
+          "pattern": "^ga-op-(chain|org|lbn|ccn)-[A-Za-z0-9-]+$"
         },
         "band": {
           "enum": [
@@ -199,7 +204,7 @@
         },
         "operatorId": {
           "type": "string",
-          "pattern": "^ga-op-(chain|org|lbn|ccn)-[a-z0-9-]+$"
+          "pattern": "^ga-op-(chain|org|lbn|ccn)-[A-Za-z0-9-]+$"
         },
         "band": {
           "enum": [

@@ -34,7 +34,7 @@ A single-site operator has no regional layer, so its operator row is marked `sit
 
 ## Clay table design
 
-Both tables are built from committed business facts only. An export script, not yet written, writes the input CSVs into the gitignored `data/georgia-sample/private/clay/` folder for upload.
+Both tables are built from committed business facts only. `npm run sample:georgia:clay-export` (`scripts/georgia-sample/clay-export.ts`) writes the input CSVs into the gitignored `data/georgia-sample/private/clay/input/` folder for upload: `operators.csv` with 20 rows, `sites-band-a.csv` with 124, and `sites-band-bc.csv` with 96.
 
 ### Operator table (20 multi-site operator rows)
 
@@ -157,7 +157,16 @@ Stays in Clay, never in git:
 
 Phones are never requested.
 
-Clay exports go to `data/georgia-sample/private/`, which is gitignored. A reduction script, not yet written, turns an export into `data/georgia-sample/people-coverage.json` and validates it against `people-coverage.schema.json` before writing. Every object in the schema forbids extra properties and no field holds free text, so a name or link cannot pass. The script also fails if any value contains an `@`, a URL, or a run of seven or more digits.
+Clay exports go to `data/georgia-sample/private/clay/export/`, which is gitignored, with the same file names as the inputs plus a hand-written `run.json` holding run dates, credits, actions, dollars, and the stop reason. `npm run sample:georgia:clay-reduce` (`scripts/georgia-sample/clay-reduce.ts`) turns them into `data/georgia-sample/people-coverage.json`. It reads only the reduction columns below and ignores every other column, validates the result against `people-coverage.schema.json`, and scans it for anything shaped like an email, a link, the word LinkedIn, or a phone number. If either check fails, nothing is written. `tests/clay-people-pass.test.ts` feeds it a fake export full of names, links, emails, and phones and checks that none get through.
+
+Each Clay table ends with formula columns named `<slot>__<field>`, where the slot is a role slot id from the role map:
+
+- `__searched`: true once the slot's search ran
+- `__found`: people found, 0 to 2 at the operator and 0 to 1 at a site
+- `__persona_verified`: true when a found title matches the slot's include patterns and none of its excludes
+- `__employment_verified`: true when the profile shows the operator or facility as the current employer
+- `__tenure_band`: the most recent verified person's band, which the reducer turns into points and never writes out
+- `__channel`: one of the channel outcomes in the role map
 
 Comes back into the repository, per operator row and per site row, and nothing else:
 
@@ -174,7 +183,7 @@ The demo may show names only to authenticated users, from the database, as decis
 
 No weights change. Stage 6 fills components that `tiers.json` already holds at zero as "unknown until Stage 6", plus person relevance, which has no component yet. Wiring them into `tier.ts` belongs to the session that owns it.
 
-- `roleChange`, up to 16: from the most recent tenure band among the account's verified people. The contract leaves the decay function to the scoring milestone, so the curve is a proposal for that owner. Unknown tenure scores zero, and long tenure is never a penalty.
+- `roleChange`, up to 16: from the most recent tenure band among the account's verified people. The contract leaves the decay function to the scoring milestone, so the reducer applies `role-change-proposal-1`, pending approval: 16 times one minus the band's midpoint months over 24, giving 14, 10, and 4 points for the under 6, 6 to 12, and 12 to 24 month bands. This mirrors the 24-month decay tier.ts proposes for ownership change. Unknown tenure scores zero, and long tenure is never a penalty.
 - Person relevance, up to 15: the highest proposed slot value among verified people at the operator or its covered sites. Taking the best person rather than a sum is a proposed rollup rule.
 - `personaAndChannel`, up to 4: 2 if any verified person has persona and current employment confirmed, 2 if any of them has a validated channel.
 - `engagement` stays as it is, used by the citation trigger proposal.
@@ -186,7 +195,8 @@ Each awarded point carries its input (a slot, a band, or an outcome, never a per
 1. Can a free-plan account buy a one-time top-up? Clay's docs do not say. Resolved 2026-10-20: the run pays for speed, so this only decides between top-ups and a Launch month.
 2. Review later: the two provisional senior-living personas in the operating contract, and any generic persona that does not fit, once Stage 6 shows which titles actually exist.
 3. Approve the proposed person-relevance points per slot (13, 7, 10, 7) and the best-person rollup.
-4. Resolved 2026-10-20: tenure bands stay in `private/`, and only account-level role-change points with a generic reason are committed.
+4. Approve `role-change-proposal-1`, the role-change decay the reducer applies.
+5. Resolved 2026-10-20: tenure bands stay in `private/`, and only account-level role-change points with a generic reason are committed.
 
 ## Sources
 
