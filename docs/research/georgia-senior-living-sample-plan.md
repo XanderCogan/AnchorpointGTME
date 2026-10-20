@@ -26,7 +26,7 @@ What the counts mean for the plan:
 ### Georgia licensed assisted living and personal care homes: no bulk source yet
 
 - GaMap2Care, named in decision 0007, appears retired. Its address returns HTTP 404 behind an expired certificate.
-- The live replacement appears to be the Healthcare Facility Regulation public search in the Georgia MMIS portal. It is a form-based search with no export.
+- Corrected 2026-10-20: the live replacement is the Healthcare Facility Regulation inspection report search at https://weblink.dch.georgia.gov/WebLink/CustomSearch.aspx?SearchName=InspectionReportSearch&repo=WEB, linked from https://forms.dch.georgia.gov/HFRD/. The earlier MMIS link pointed to an attachment-upload page. The search is public, covers about 24,000 surveys from the past three years across nursing homes, assisted living communities, and personal care homes, and posts surveys within about a day. It has no export, but the page loads results from a JSON endpoint (`SearchService.aspx/GetSearchListing`) that returns facility, address, administrator, licensed beds, citation count, survey date, and violation flag per report. Reports are scanned state licensure surveys, not federal Life Safety Code findings; see `cms-fire-citations-georgia.md`.
 - Approved path, chosen by the user on 2026-10-19: a small, polite scraper of that public search. No records request is sent. Before it runs, the scraper's build checks the portal's terms of use and robots rules, keeps requests slow and sequential, and stores raw pages only in the gitignored raw-data folder. If the terms forbid automated access, the scraper is not built and the sample stays nursing-home-only.
 
 ### Repository visibility
@@ -101,7 +101,8 @@ Tag mapping. Thirteen Life Safety Code tags map to the five catalog lines. Each 
 - Extinguishers: K-0355.
 - Kitchen hood: K-0324. Its CMS wording covers cooking facility protection broadly, so it is a looser match.
 - Emergency lighting: K-0291 as testing; K-0293 and K-0281 as install or repair.
-- Tags for doors, barriers, electrical, generators, and medical gas map to no catalog line and are not counted. They include K-0511, the second most common Georgia tag.
+- Electrical, generator, medical gas, egress, and staff-procedure tags map to no catalog line and are not counted. They include K-0511, the second most common Georgia tag.
+- Amended 2026-10-20 under decision 0003: fire door inspection (K-0761) and door and barrier repairs (K-0363, K-0374, K-0223, K-0372) now map to two new lines, `fire_door_itm` and `firestopping`. Inspections are self-performed; the repairs and K-0351 sprinkler installation are marked `delivery: "subcontract"`.
 
 Results from 3,482 Georgia fire safety citations:
 
@@ -111,6 +112,13 @@ Results from 3,482 Georgia fire safety citations:
 - Only 8 service-line citations lack a correction date, so correction status carries little signal in Georgia.
 - 41 facilities show an ownership or partnership interest dated within the 24 months before retrieval, or the CMS change-of-ownership flag. 20 show a new management organization. Individuals with managerial control are excluded, because their dates mostly track administrator turnover; including them had flagged 138 facilities.
 - Of the 88 operators in the serviceable or conditional footprint, 82 have service-line citations, 59 have recent ones, 13 have an ownership change, and 7 a management change.
+
+Rerun 2026-10-20 with the two added lines:
+
+- 1,816 of 3,482 citations (52%) map to a service line. The new lines add fire doors 347 and firestopping 212.
+- 332 of 356 facilities have one or more service-line citations, and 262 have one since 2025-01-01.
+- Correction dates are the facility's committed date, clustered at 45 days after the survey in Georgia, not the repair date. They are recorded as such in `signals.json` and not used to measure repair time.
+- The release's newest survey is 2026-07-16 against a 2026-09-01 processing date, a minimum lag of 47 days and more by publication. Citations therefore arrive after the correction window and serve as a targeting and history signal, not a real-time trigger.
 
 ### Stage 4: Serper domain and job lookups, 2026-10-19
 
@@ -150,7 +158,7 @@ Approved review decisions live in `data/georgia-sample/review-decisions.json`, a
 - Operational need, 35 points. Footprint earns up to 15 on a smooth curve over facilities within 120 minutes of a capable branch, with no cutoffs. Every nursing home gets 5 for its regulated environment. Up to 10 go to the share of footprint facilities cited for a service line since 2025, and up to 5 to the share with repeated sprinkler or alarm citations.
 - Data confidence, using 6 of 10 points. Domain earns 2 for a name match and 1 for a word match. Geography earns 2 if any facility is within 90 minutes, 1 if all are conditional. Location provenance earns 2 for a resolved operator, 1 for a provisional one.
 - People-based inputs score zero as unknown until Stage 6: role change (16), engagement (6, used by the citation trigger proposal), and persona and channel (4). Today's maximum is therefore 65 of 100.
-- Proposed bands on the raw score, after inspecting the distribution: A from 40, B from 30, C from 20. That gives 5 A, 14 B, 35 C, and 28 Watch. Scores run from 7 to 48.6 with a median of 24.5.
+- Proposed bands on the raw score, after inspecting the distribution: A from 40, B from 30, C from 20. After the 2026-10-20 rerun with fire door and firestopping lines, that gives 5 A, 15 B, 38 C, and 24 Watch, with scores from 8 to 48.8 and a median of 26.3. The first run gave 5 A, 14 B, 35 C, and 28 Watch. Five operators moved up one band; band A is unchanged.
 - Band A: PruittHealth, Journey Healthcare, Harborview Health Systems, Empire Care Centers, and Ethica Health.
 
 Known effects to weigh before approval:
@@ -184,5 +192,5 @@ Retrieved 2026-10-19.
 
 - CMS Provider Data Catalog, nursing home datasets `4pq5-n9py`, `ifjz-ge4w`, `y2hd-n93e`, and `tagd-9999`: https://data.cms.gov/provider-data/
 - Georgia Department of Community Health, GaMap2Care find-facility page: https://dch.georgia.gov/node/32796
-- Georgia MMIS Healthcare Facility Regulation public search: https://www.mmis.georgia.gov/portal/PubAccess.HFRD/tabId/57/Default.aspx
+- Georgia DCH Healthcare Facility Regulation inspection report search (retrieved 2026-10-20): https://weblink.dch.georgia.gov/WebLink/CustomSearch.aspx?SearchName=InspectionReportSearch&repo=WEB
 - Georgia licensing chapters for personal care homes and assisted living communities, as cited in HUD's 2025 Georgia certification: https://www.hud.gov/sites/dfiles/Housing/documents/Georgia_2025.pdf

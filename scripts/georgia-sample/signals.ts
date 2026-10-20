@@ -12,17 +12,27 @@ const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const sampleRoot = resolve(projectRoot, "data/georgia-sample");
 
 type Row = Record<string, string>;
-type ServiceLine = "sprinkler_itm" | "fire_alarm_itm" | "extinguisher" | "kitchen_hood" | "emergency_lighting";
+type ServiceLine =
+  | "sprinkler_itm"
+  | "fire_alarm_itm"
+  | "extinguisher"
+  | "kitchen_hood"
+  | "emergency_lighting"
+  | "fire_door_itm"
+  | "firestopping";
 type WorkKind = "itm" | "install_or_repair";
+type Delivery = "self" | "subcontract";
 
 // Life Safety Code K-tags mapped to decision 0003's catalog. "itm" tags cite the inspection,
 // testing, and maintenance program itself; "install_or_repair" tags cite missing or faulty
-// equipment, which is deficiency-repair or retrofit project work. Tags for doors, barriers,
-// electrical, generators, and medical gas map to no catalog line and are not counted.
-const TAG_MAP: Record<string, { line: ServiceLine; kind: WorkKind }> = {
+// equipment, which is deficiency-repair or retrofit project work. Anchorpoint self-performs
+// inspections and catalog repairs; new sprinkler installation and door or barrier repair are
+// subcontracted while Anchorpoint keeps the customer. Electrical, generator, medical gas, egress,
+// and staff-procedure tags map to no catalog line and are not counted.
+const TAG_MAP: Record<string, { line: ServiceLine; kind: WorkKind; delivery?: Delivery }> = {
   "K-0353": { line: "sprinkler_itm", kind: "itm" },
   "K-0352": { line: "sprinkler_itm", kind: "itm" },
-  "K-0351": { line: "sprinkler_itm", kind: "install_or_repair" },
+  "K-0351": { line: "sprinkler_itm", kind: "install_or_repair", delivery: "subcontract" },
   "K-0345": { line: "fire_alarm_itm", kind: "itm" },
   "K-0341": { line: "fire_alarm_itm", kind: "install_or_repair" },
   "K-0342": { line: "fire_alarm_itm", kind: "install_or_repair" },
@@ -33,9 +43,22 @@ const TAG_MAP: Record<string, { line: ServiceLine; kind: WorkKind }> = {
   "K-0291": { line: "emergency_lighting", kind: "itm" },
   "K-0293": { line: "emergency_lighting", kind: "install_or_repair" },
   "K-0281": { line: "emergency_lighting", kind: "install_or_repair" },
+  "K-0761": { line: "fire_door_itm", kind: "itm" },
+  "K-0363": { line: "fire_door_itm", kind: "install_or_repair", delivery: "subcontract" },
+  "K-0374": { line: "fire_door_itm", kind: "install_or_repair", delivery: "subcontract" },
+  "K-0223": { line: "fire_door_itm", kind: "install_or_repair", delivery: "subcontract" },
+  "K-0372": { line: "firestopping", kind: "install_or_repair", delivery: "subcontract" },
 };
 
-const SERVICE_LINES: ServiceLine[] = ["sprinkler_itm", "fire_alarm_itm", "extinguisher", "kitchen_hood", "emergency_lighting"];
+const SERVICE_LINES: ServiceLine[] = [
+  "sprinkler_itm",
+  "fire_alarm_itm",
+  "extinguisher",
+  "kitchen_hood",
+  "emergency_lighting",
+  "fire_door_itm",
+  "firestopping",
+];
 const RECENT_SINCE = "2025-01-01";
 const OWNERSHIP_CHANGE_MONTHS = 24;
 const CORRECTED = "Deficient, Provider has date of correction";
@@ -62,7 +85,7 @@ const tagDescriptions = new Map(lookup.map((row) => [row.deficiency_prefix_and_n
 const tagMap = Object.entries(TAG_MAP).map(([tag, mapping]) => {
   const row = tagDescriptions.get(tag);
   if (!row) throw new Error(`${tag} is not in the CMS Citation Code Look-up (tagd-9999)`);
-  return { tag, ...mapping, cmsDescription: row.deficiency_description ?? "", cmsCategory: row.deficiency_category ?? "" };
+  return { tag, ...mapping, delivery: mapping.delivery ?? "self", cmsDescription: row.deficiency_description ?? "", cmsCategory: row.deficiency_category ?? "" };
 });
 
 const retrievedOn = manifest.datasets.find((dataset) => dataset.datasetId === "y2hd-n93e")?.retrievedOn ?? "";
@@ -78,7 +101,7 @@ function associationDate(value: string): string | null {
   return match ? `${match[3]}-${match[1]}-${match[2]}` : null;
 }
 
-type Evidence = { tag: string; surveyDate: string; severity: string; corrected: boolean; kind: WorkKind };
+type Evidence = { tag: string; surveyDate: string; severity: string; corrected: boolean; kind: WorkKind; delivery: Delivery };
 type LineSignal = {
   citations: number;
   recentCitations: number;
@@ -134,7 +157,7 @@ for (const citation of citations) {
   if (!corrected) signal.uncorrected += 1;
   if (!signal.maxSeverity || severity > signal.maxSeverity) signal.maxSeverity = severity;
   if (!signal.latestSurveyDate || surveyDate > signal.latestSurveyDate) signal.latestSurveyDate = surveyDate;
-  signal.evidence.push({ tag, surveyDate, severity, corrected, kind: mapping.kind });
+  signal.evidence.push({ tag, surveyDate, severity, corrected, kind: mapping.kind, delivery: mapping.delivery ?? "self" });
 }
 
 for (const facility of facilities.values()) {
@@ -231,6 +254,13 @@ const sources = ["ifjz-ge4w", "y2hd-n93e", "4pq5-n9py", "tagd-9999"].map((id) =>
   const entry = manifest.datasets.find((dataset) => dataset.datasetId === id);
   return { datasetId: id, cmsModified: entry?.cmsModified ?? null, retrievedOn: entry?.retrievedOn ?? null, sha256: entry?.sha256 ?? null };
 });
+// CMS publishes on a lag: the newest survey in a release trails its processing date by weeks.
+const latestSurveyInRelease = citations.reduce((latest, row) => ((row.survey_date ?? "") > latest ? (row.survey_date ?? "") : latest), "");
+const processingDate = citations.find((row) => row.processing_date)?.processing_date ?? null;
+const publicationLagDays = processingDate
+  ? Math.round((Date.parse(`${processingDate}T00:00:00Z`) - Date.parse(`${latestSurveyInRelease}T00:00:00Z`)) / 86_400_000)
+  : null;
+
 const method = {
   script: "scripts/georgia-sample/signals.ts",
   sources,
@@ -239,6 +269,15 @@ const method = {
   severityScale: "CMS scope and severity code, A (least) to L (most); D to F is no actual harm with potential for more than minimal harm",
   repeated: "the same service line was cited on more than one survey date",
   corrected: `deficiency_corrected = "${CORRECTED}"`,
+  correctionDate:
+    "the date the facility committed to in its plan of correction, clustered on each state's customary deadline (45 days in Georgia); it is not the date the repair was done and is not used as a repair-time measure",
+  publicationLag: {
+    latestSurveyInRelease,
+    processingDate,
+    minimumLagDays: publicationLagDays,
+    consequence:
+      "citations usually reach the public file after the roughly 45-day correction window, so they are a targeting and history signal, not a real-time trigger",
+  },
   ownershipChange: `an ownership or partnership interest association dated on or after ${changeSince} (${OWNERSHIP_CHANGE_MONTHS} months before retrieval), or the CMS change-of-ownership flag`,
   managementChange: `an organization associated with operational or managerial control on or after ${changeSince}; individual managers are excluded as routine staff turnover`,
   personalData: "owner names are never read into the output; only dates and roles are used",
@@ -254,6 +293,7 @@ process.stdout.write(
   `${JSON.stringify(
     {
       fireCitations: citations.length,
+      publicationLagDays,
       serviceLineCitations: facilityList.reduce((sum, facility) => sum + facility.serviceLineCitations, 0),
       byLine: Object.fromEntries(
         SERVICE_LINES.map((line) => [

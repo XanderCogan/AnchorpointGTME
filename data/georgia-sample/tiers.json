@@ -64,9 +64,9 @@
       "gate": null,
       "identityStatus": "resolved",
       "band": "A",
-      "score": 48.6,
+      "score": 48.8,
       "footprintFacilities": 41,
-      "explanation": "Band A because Anchorpoint reaches 31 of its 41 footprint sites within 90 minutes, it runs 41 nursing homes within 120 minutes of a capable branch, 61% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, ownership or management changed recently, and it appears to be hiring maintenance or facilities staff.",
+      "explanation": "Band A because Anchorpoint reaches 31 of its 41 footprint sites within 90 minutes, it runs 41 nursing homes within 120 minutes of a capable branch, 63% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, ownership or management changed recently, and it appears to be hiring maintenance or facilities staff.",
       "components": {
         "ownershipChange": {
           "points": 6,
@@ -118,9 +118,9 @@
           "proposal": true
         },
         "citationBreadth": {
-          "points": 6.1,
+          "points": 6.3,
           "max": 10,
-          "input": "61% of footprint facilities cited for a service line since 2025",
+          "input": "63% of footprint facilities cited for a service line since 2025",
           "source": "ifjz-ge4w via signals.json",
           "proposal": true
         },
@@ -168,9 +168,9 @@
       "gate": null,
       "identityStatus": "resolved",
       "band": "A",
-      "score": 47.1,
+      "score": 47.7,
       "footprintFacilities": 17,
-      "explanation": "Band A because Anchorpoint reaches 14 of its 17 footprint sites within 90 minutes, it runs 17 nursing homes within 120 minutes of a capable branch, 76% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
+      "explanation": "Band A because Anchorpoint reaches 14 of its 17 footprint sites within 90 minutes, it runs 17 nursing homes within 120 minutes of a capable branch, 82% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
       "components": {
         "ownershipChange": {
           "points": 6.2,
@@ -222,9 +222,9 @@
           "proposal": true
         },
         "citationBreadth": {
-          "points": 7.6,
+          "points": 8.2,
           "max": 10,
-          "input": "76% of footprint facilities cited for a service line since 2025",
+          "input": "82% of footprint facilities cited for a service line since 2025",
           "source": "ifjz-ge4w via signals.json",
           "proposal": true
         },
@@ -246,6 +246,110 @@
           "points": 2,
           "max": 2,
           "input": "14 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      }
+    },
+    {
+      "operatorId": "ga-op-chain-202",
+      "name": "EMPIRE CARE CENTERS",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "A",
+      "score": 45.1,
+      "footprintFacilities": 21,
+      "explanation": "Band A because Anchorpoint reaches all 21 of its footprint sites within 90 minutes, it runs 21 nursing homes within 120 minutes of a capable branch, 71% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
+      "components": {
+        "ownershipChange": {
+          "points": 5.2,
+          "max": 10,
+          "input": "latest ownership or management change 11.6 months before 2026-10-19",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": true
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": true
+        },
+        "citationTrigger": {
+          "points": 5.2,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2026-07-16",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": true
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the citation trigger proposal",
+          "source": "none",
+          "proposal": true
+        },
+        "footprint": {
+          "points": 14.9,
+          "max": 15,
+          "input": "21 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": true
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": true
+        },
+        "citationBreadth": {
+          "points": 7.1,
+          "max": 10,
+          "input": "71% of footprint facilities cited for a service line since 2025",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "citationRepetition": {
+          "points": 1.7,
+          "max": 5,
+          "input": "33% of footprint facilities with sprinkler or alarm cited on more than one survey",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "domain": {
+          "points": 2,
+          "max": 2,
+          "input": "empirecarecenters.com (name_match)",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "21 facilities within 90 minutes",
           "source": "serviceability.json (OSRM, 2026-10-20)",
           "proposal": false
         },
@@ -370,119 +474,15 @@
       }
     },
     {
-      "operatorId": "ga-op-chain-202",
-      "name": "EMPIRE CARE CENTERS",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "resolved",
-      "band": "A",
-      "score": 43.7,
-      "footprintFacilities": 21,
-      "explanation": "Band A because Anchorpoint reaches all 21 of its footprint sites within 90 minutes, it runs 21 nursing homes within 120 minutes of a capable branch, 57% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
-      "components": {
-        "ownershipChange": {
-          "points": 5.2,
-          "max": 10,
-          "input": "latest ownership or management change 11.6 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": true
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": true
-        },
-        "citationTrigger": {
-          "points": 5.2,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2026-07-16",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": true
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the citation trigger proposal",
-          "source": "none",
-          "proposal": true
-        },
-        "footprint": {
-          "points": 14.9,
-          "max": 15,
-          "input": "21 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": true
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": true
-        },
-        "citationBreadth": {
-          "points": 5.7,
-          "max": 10,
-          "input": "57% of footprint facilities cited for a service line since 2025",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "citationRepetition": {
-          "points": 1.7,
-          "max": 5,
-          "input": "33% of footprint facilities with sprinkler or alarm cited on more than one survey",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "domain": {
-          "points": 2,
-          "max": 2,
-          "input": "empirecarecenters.com (name_match)",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "21 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 2,
-          "max": 2,
-          "input": "facility list resolved from CMS",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      }
-    },
-    {
       "operatorId": "ga-op-chain-834",
       "name": "ETHICA HEALTH",
       "eligible": true,
       "gate": null,
       "identityStatus": "resolved",
       "band": "A",
-      "score": 42,
+      "score": 43.4,
       "footprintFacilities": 37,
-      "explanation": "Band A because Anchorpoint reaches 27 of its 37 footprint sites within 90 minutes, it runs 37 nursing homes within 120 minutes of a capable branch, 51% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
+      "explanation": "Band A because Anchorpoint reaches 27 of its 37 footprint sites within 90 minutes, it runs 37 nursing homes within 120 minutes of a capable branch, 65% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
       "components": {
         "ownershipChange": {
           "points": 5.2,
@@ -534,9 +534,9 @@
           "proposal": true
         },
         "citationBreadth": {
-          "points": 5.1,
+          "points": 6.5,
           "max": 10,
-          "input": "51% of footprint facilities cited for a service line since 2025",
+          "input": "65% of footprint facilities cited for a service line since 2025",
           "source": "ifjz-ge4w via signals.json",
           "proposal": true
         },
@@ -558,6 +558,110 @@
           "points": 2,
           "max": 2,
           "input": "27 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      }
+    },
+    {
+      "operatorId": "ga-op-chain-176",
+      "name": "CYPRESS SKILLED NURSING",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "B",
+      "score": 38.5,
+      "footprintFacilities": 5,
+      "explanation": "Band B because Anchorpoint reaches 4 of its 5 footprint sites within 90 minutes, it runs 5 nursing homes within 120 minutes of a capable branch, 100% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+      "components": {
+        "ownershipChange": {
+          "points": 0,
+          "max": 10,
+          "input": "latest ownership or management change 153.5 months before 2026-10-19",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": true
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": true
+        },
+        "citationTrigger": {
+          "points": 5,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2026-06-15",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": true
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the citation trigger proposal",
+          "source": "none",
+          "proposal": true
+        },
+        "footprint": {
+          "points": 9.5,
+          "max": 15,
+          "input": "5 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": true
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": true
+        },
+        "citationBreadth": {
+          "points": 10,
+          "max": 10,
+          "input": "100% of footprint facilities cited for a service line since 2025",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "citationRepetition": {
+          "points": 3,
+          "max": 5,
+          "input": "60% of footprint facilities with sprinkler or alarm cited on more than one survey",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "domain": {
+          "points": 2,
+          "max": 2,
+          "input": "universitynursingandrehabilitationathens.com (name_match)",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "4 facilities within 90 minutes",
           "source": "serviceability.json (OSRM, 2026-10-20)",
           "proposal": false
         },
@@ -786,20 +890,20 @@
       }
     },
     {
-      "operatorId": "ga-op-chain-176",
-      "name": "CYPRESS SKILLED NURSING",
+      "operatorId": "ga-op-chain-769",
+      "name": "CMS chain 769 [withheld: may name an individual]",
       "eligible": true,
       "gate": null,
       "identityStatus": "resolved",
       "band": "B",
-      "score": 36.5,
+      "score": 36.4,
       "footprintFacilities": 5,
       "explanation": "Band B because Anchorpoint reaches 4 of its 5 footprint sites within 90 minutes, it runs 5 nursing homes within 120 minutes of a capable branch, 80% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
       "components": {
         "ownershipChange": {
           "points": 0,
           "max": 10,
-          "input": "latest ownership or management change 153.5 months before 2026-10-19",
+          "input": "latest ownership or management change 34.6 months before 2026-10-19",
           "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
           "proposal": true
         },
@@ -811,9 +915,9 @@
           "proposal": true
         },
         "citationTrigger": {
-          "points": 5,
+          "points": 4.9,
           "max": 6,
-          "input": "latest service-line fire citation surveyed 2026-06-15",
+          "input": "latest service-line fire citation surveyed 2026-06-11",
           "source": "ifjz-ge4w.survey_date via signals.json",
           "proposal": true
         },
@@ -862,7 +966,7 @@
         "domain": {
           "points": 2,
           "max": 2,
-          "input": "universitynursingandrehabilitationathens.com (name_match)",
+          "input": "parkplacenursingandrehab.com (name_match)",
           "source": "web-signals.json domains (Serper, 2026-10-20)",
           "proposal": false
         },
@@ -976,6 +1080,110 @@
           "input": "conditional only: 90 to 120 minutes, needs manager approval",
           "source": "serviceability.json (OSRM, 2026-10-20)",
           "proposal": true
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      }
+    },
+    {
+      "operatorId": "ga-op-chain-95",
+      "name": "C. ROSS MANAGEMENT",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "B",
+      "score": 35.7,
+      "footprintFacilities": 5,
+      "explanation": "Band B because Anchorpoint reaches 4 of its 5 footprint sites within 90 minutes, it runs 5 nursing homes within 120 minutes of a capable branch, 80% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+      "components": {
+        "ownershipChange": {
+          "points": 0,
+          "max": 10,
+          "input": "latest ownership or management change 81.6 months before 2026-10-19",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": true
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": true
+        },
+        "citationTrigger": {
+          "points": 5.2,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2026-07-12",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": true
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the citation trigger proposal",
+          "source": "none",
+          "proposal": true
+        },
+        "footprint": {
+          "points": 9.5,
+          "max": 15,
+          "input": "5 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": true
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": true
+        },
+        "citationBreadth": {
+          "points": 8,
+          "max": 10,
+          "input": "80% of footprint facilities cited for a service line since 2025",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "citationRepetition": {
+          "points": 4,
+          "max": 5,
+          "input": "80% of footprint facilities with sprinkler or alarm cited on more than one survey",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "domain": {
+          "points": 0,
+          "max": 2,
+          "input": "no confirmed domain",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "4 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
         },
         "locationProvenance": {
           "points": 2,
@@ -1202,110 +1410,6 @@
       }
     },
     {
-      "operatorId": "ga-op-chain-769",
-      "name": "CMS chain 769 [withheld: may name an individual]",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "resolved",
-      "band": "B",
-      "score": 34.4,
-      "footprintFacilities": 5,
-      "explanation": "Band B because Anchorpoint reaches 4 of its 5 footprint sites within 90 minutes, it runs 5 nursing homes within 120 minutes of a capable branch, 60% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 34.6 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": true
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": true
-        },
-        "citationTrigger": {
-          "points": 4.9,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2026-06-11",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": true
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the citation trigger proposal",
-          "source": "none",
-          "proposal": true
-        },
-        "footprint": {
-          "points": 9.5,
-          "max": 15,
-          "input": "5 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": true
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": true
-        },
-        "citationBreadth": {
-          "points": 6,
-          "max": 10,
-          "input": "60% of footprint facilities cited for a service line since 2025",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "citationRepetition": {
-          "points": 3,
-          "max": 5,
-          "input": "60% of footprint facilities with sprinkler or alarm cited on more than one survey",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "domain": {
-          "points": 2,
-          "max": 2,
-          "input": "parkplacenursingandrehab.com (name_match)",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "4 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 2,
-          "max": 2,
-          "input": "facility list resolved from CMS",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      }
-    },
-    {
       "operatorId": "ga-op-lbn-crisp-regional-hospital-inc",
       "name": "CRISP REGIONAL HOSPITAL INC",
       "eligible": true,
@@ -1410,119 +1514,15 @@
       }
     },
     {
-      "operatorId": "ga-op-chain-95",
-      "name": "C. ROSS MANAGEMENT",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "resolved",
-      "band": "B",
-      "score": 33.7,
-      "footprintFacilities": 5,
-      "explanation": "Band B because Anchorpoint reaches 4 of its 5 footprint sites within 90 minutes, it runs 5 nursing homes within 120 minutes of a capable branch, 60% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 81.6 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": true
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": true
-        },
-        "citationTrigger": {
-          "points": 5.2,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2026-07-12",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": true
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the citation trigger proposal",
-          "source": "none",
-          "proposal": true
-        },
-        "footprint": {
-          "points": 9.5,
-          "max": 15,
-          "input": "5 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": true
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": true
-        },
-        "citationBreadth": {
-          "points": 6,
-          "max": 10,
-          "input": "60% of footprint facilities cited for a service line since 2025",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "citationRepetition": {
-          "points": 4,
-          "max": 5,
-          "input": "80% of footprint facilities with sprinkler or alarm cited on more than one survey",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "4 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 2,
-          "max": 2,
-          "input": "facility list resolved from CMS",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      }
-    },
-    {
       "operatorId": "ga-op-chain-559",
       "name": "WELLINGTON HEALTH CARE SERVICES",
       "eligible": true,
       "gate": null,
       "identityStatus": "resolved",
       "band": "B",
-      "score": 33.1,
+      "score": 34.1,
       "footprintFacilities": 10,
-      "explanation": "Band B because Anchorpoint reaches all 10 of its footprint sites within 90 minutes, it runs 10 nursing homes within 120 minutes of a capable branch, 50% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+      "explanation": "Band B because Anchorpoint reaches all 10 of its footprint sites within 90 minutes, it runs 10 nursing homes within 120 minutes of a capable branch, 60% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
       "components": {
         "ownershipChange": {
           "points": 0,
@@ -1574,9 +1574,9 @@
           "proposal": true
         },
         "citationBreadth": {
-          "points": 5,
+          "points": 6,
           "max": 10,
-          "input": "50% of footprint facilities cited for a service line since 2025",
+          "input": "60% of footprint facilities cited for a service line since 2025",
           "source": "ifjz-ge4w via signals.json",
           "proposal": true
         },
@@ -1806,6 +1806,110 @@
           "points": 2,
           "max": 2,
           "input": "1 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      }
+    },
+    {
+      "operatorId": "ga-op-lbn-pine-leaf-investment-inc",
+      "name": "PINE LEAF INVESTMENT INC",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "B",
+      "score": 30.8,
+      "footprintFacilities": 2,
+      "explanation": "Band B because Anchorpoint reaches all 2 of its footprint sites within 90 minutes, it runs 2 nursing homes within 120 minutes of a capable branch, 100% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+      "components": {
+        "ownershipChange": {
+          "points": 0,
+          "max": 10,
+          "input": "latest ownership or management change 161.1 months before 2026-10-19",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": true
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": true
+        },
+        "citationTrigger": {
+          "points": 4,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2026-02-18",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": true
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the citation trigger proposal",
+          "source": "none",
+          "proposal": true
+        },
+        "footprint": {
+          "points": 3.3,
+          "max": 15,
+          "input": "2 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": true
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": true
+        },
+        "citationBreadth": {
+          "points": 10,
+          "max": 10,
+          "input": "100% of footprint facilities cited for a service line since 2025",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "citationRepetition": {
+          "points": 2.5,
+          "max": 5,
+          "input": "50% of footprint facilities with sprinkler or alarm cited on more than one survey",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "domain": {
+          "points": 2,
+          "max": 2,
+          "input": "pineleafinc.com (name_match)",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "2 facilities within 90 minutes",
           "source": "serviceability.json (OSRM, 2026-10-20)",
           "proposal": false
         },
@@ -2866,6 +2970,110 @@
       }
     },
     {
+      "operatorId": "ga-op-lbn-westminster-presbyterian-homes-inc",
+      "name": "WESTMINSTER PRESBYTERIAN HOMES, INC",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "C",
+      "score": 28.2,
+      "footprintFacilities": 1,
+      "explanation": "Band C because Anchorpoint reaches its site within 90 minutes, 100% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+      "components": {
+        "ownershipChange": {
+          "points": 0,
+          "max": 10,
+          "input": "no dated ownership or management change",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": true
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": true
+        },
+        "citationTrigger": {
+          "points": 3.2,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2025-11-18",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": true
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the citation trigger proposal",
+          "source": "none",
+          "proposal": true
+        },
+        "footprint": {
+          "points": 0,
+          "max": 15,
+          "input": "1 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": true
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": true
+        },
+        "citationBreadth": {
+          "points": 10,
+          "max": 10,
+          "input": "100% of footprint facilities cited for a service line since 2025",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "citationRepetition": {
+          "points": 5,
+          "max": 5,
+          "input": "100% of footprint facilities with sprinkler or alarm cited on more than one survey",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "domain": {
+          "points": 1,
+          "max": 2,
+          "input": "pvathens.org (word_match)",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": true
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "1 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      }
+    },
+    {
       "operatorId": "ga-op-lbn-hospital-authority-of-washington-county",
       "name": "HOSPITAL AUTHORITY OF WASHINGTON COUNTY",
       "eligible": true,
@@ -2998,6 +3206,110 @@
           "points": 3.7,
           "max": 6,
           "input": "latest service-line fire citation surveyed 2026-01-11",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": true
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the citation trigger proposal",
+          "source": "none",
+          "proposal": true
+        },
+        "footprint": {
+          "points": 0,
+          "max": 15,
+          "input": "1 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": true
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": true
+        },
+        "citationBreadth": {
+          "points": 10,
+          "max": 10,
+          "input": "100% of footprint facilities cited for a service line since 2025",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "citationRepetition": {
+          "points": 5,
+          "max": 5,
+          "input": "100% of footprint facilities with sprinkler or alarm cited on more than one survey",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "domain": {
+          "points": 0,
+          "max": 2,
+          "input": "no confirmed domain",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "1 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      }
+    },
+    {
+      "operatorId": "ga-op-lbn-macon-operating-llc",
+      "name": "MACON OPERATING LLC",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "C",
+      "score": 27.7,
+      "footprintFacilities": 1,
+      "explanation": "Band C because Anchorpoint reaches its site within 90 minutes, 100% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+      "components": {
+        "ownershipChange": {
+          "points": 0,
+          "max": 10,
+          "input": "latest ownership or management change 110.6 months before 2026-10-19",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": true
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": true
+        },
+        "citationTrigger": {
+          "points": 3.7,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2026-01-08",
           "source": "ifjz-ge4w.survey_date via signals.json",
           "proposal": true
         },
@@ -3479,6 +3791,110 @@
           "input": "provisional: a facility awaits manual review",
           "source": "operators.json",
           "proposal": true
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      }
+    },
+    {
+      "operatorId": "ga-op-chain-685",
+      "name": "CMS chain 685 [withheld: may name an individual]",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "C",
+      "score": 27.3,
+      "footprintFacilities": 3,
+      "explanation": "Band C because Anchorpoint reaches 1 of its 3 footprint sites within 90 minutes, it runs 3 nursing homes within 120 minutes of a capable branch, 67% of those sites were cited for a service line since 2025, and ownership or management changed recently.",
+      "components": {
+        "ownershipChange": {
+          "points": 1.1,
+          "max": 10,
+          "input": "latest ownership or management change 21.3 months before 2026-10-19",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": true
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": true
+        },
+        "citationTrigger": {
+          "points": 4.6,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2026-04-26",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": true
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the citation trigger proposal",
+          "source": "none",
+          "proposal": true
+        },
+        "footprint": {
+          "points": 5.9,
+          "max": 15,
+          "input": "3 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": true
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": true
+        },
+        "citationBreadth": {
+          "points": 6.7,
+          "max": 10,
+          "input": "67% of footprint facilities cited for a service line since 2025",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "citationRepetition": {
+          "points": 0,
+          "max": 5,
+          "input": "0% of footprint facilities with sprinkler or alarm cited on more than one survey",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "domain": {
+          "points": 0,
+          "max": 2,
+          "input": "no confirmed domain",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "1 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
         },
         "personaAndChannel": {
           "points": 0,
@@ -4114,6 +4530,110 @@
       }
     },
     {
+      "operatorId": "ga-op-lbn-233-carrollton-opco-llc",
+      "name": "233 CARROLLTON OPCO LLC",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "C",
+      "score": 26,
+      "footprintFacilities": 1,
+      "explanation": "Band C because Anchorpoint reaches its site within 90 minutes, 100% of those sites were cited for a service line since 2025, and ownership or management changed recently.",
+      "components": {
+        "ownershipChange": {
+          "points": 3.5,
+          "max": 10,
+          "input": "latest ownership or management change 15.6 months before 2026-10-19",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": true
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": true
+        },
+        "citationTrigger": {
+          "points": 2.5,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2025-08-21",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": true
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the citation trigger proposal",
+          "source": "none",
+          "proposal": true
+        },
+        "footprint": {
+          "points": 0,
+          "max": 15,
+          "input": "1 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": true
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": true
+        },
+        "citationBreadth": {
+          "points": 10,
+          "max": 10,
+          "input": "100% of footprint facilities cited for a service line since 2025",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "citationRepetition": {
+          "points": 0,
+          "max": 5,
+          "input": "0% of footprint facilities with sprinkler or alarm cited on more than one survey",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "domain": {
+          "points": 1,
+          "max": 2,
+          "input": "countryside.health (word_match)",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": true
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "1 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      }
+    },
+    {
       "operatorId": "ga-op-lbn-phg-mcrae-llc",
       "name": "PHG MCRAE LLC",
       "eligible": true,
@@ -4207,6 +4727,110 @@
           "input": "provisional: a facility awaits manual review",
           "source": "operators.json",
           "proposal": true
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      }
+    },
+    {
+      "operatorId": "ga-op-lbn-the-william-breman-jewish-home-inc",
+      "name": "THE WILLIAM BREMAN JEWISH HOME, INC",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "C",
+      "score": 24.9,
+      "footprintFacilities": 1,
+      "explanation": "Band C because Anchorpoint reaches its site within 90 minutes, and 100% of those sites were cited for a service line since 2025.",
+      "components": {
+        "ownershipChange": {
+          "points": 0,
+          "max": 10,
+          "input": "no dated ownership or management change",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": true
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": true
+        },
+        "citationTrigger": {
+          "points": 4.9,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2026-06-11",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": true
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the citation trigger proposal",
+          "source": "none",
+          "proposal": true
+        },
+        "footprint": {
+          "points": 0,
+          "max": 15,
+          "input": "1 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": true
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": true
+        },
+        "citationBreadth": {
+          "points": 10,
+          "max": 10,
+          "input": "100% of footprint facilities cited for a service line since 2025",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "citationRepetition": {
+          "points": 0,
+          "max": 5,
+          "input": "0% of footprint facilities with sprinkler or alarm cited on more than one survey",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "domain": {
+          "points": 1,
+          "max": 2,
+          "input": "jewishhomelife.org (word_match)",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": true
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "1 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
         },
         "personaAndChannel": {
           "points": 0,
@@ -4426,110 +5050,6 @@
       }
     },
     {
-      "operatorId": "ga-op-chain-685",
-      "name": "CMS chain 685 [withheld: may name an individual]",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "resolved",
-      "band": "C",
-      "score": 23.9,
-      "footprintFacilities": 3,
-      "explanation": "Band C because Anchorpoint reaches 1 of its 3 footprint sites within 90 minutes, it runs 3 nursing homes within 120 minutes of a capable branch, 33% of those sites were cited for a service line since 2025, and ownership or management changed recently.",
-      "components": {
-        "ownershipChange": {
-          "points": 1.1,
-          "max": 10,
-          "input": "latest ownership or management change 21.3 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": true
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": true
-        },
-        "citationTrigger": {
-          "points": 4.6,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2026-04-26",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": true
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the citation trigger proposal",
-          "source": "none",
-          "proposal": true
-        },
-        "footprint": {
-          "points": 5.9,
-          "max": 15,
-          "input": "3 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": true
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": true
-        },
-        "citationBreadth": {
-          "points": 3.3,
-          "max": 10,
-          "input": "33% of footprint facilities cited for a service line since 2025",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "citationRepetition": {
-          "points": 0,
-          "max": 5,
-          "input": "0% of footprint facilities with sprinkler or alarm cited on more than one survey",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 2,
-          "max": 2,
-          "input": "facility list resolved from CMS",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      }
-    },
-    {
       "operatorId": "ga-op-lbn-jasper-health-services-inc",
       "name": "JASPER HEALTH SERVICES INC.",
       "eligible": true,
@@ -4614,110 +5134,6 @@
           "points": 2,
           "max": 2,
           "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 2,
-          "max": 2,
-          "input": "facility list resolved from CMS",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      }
-    },
-    {
-      "operatorId": "ga-op-lbn-pine-leaf-investment-inc",
-      "name": "PINE LEAF INVESTMENT INC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "resolved",
-      "band": "C",
-      "score": 23.6,
-      "footprintFacilities": 2,
-      "explanation": "Band C because Anchorpoint reaches all 2 of its footprint sites within 90 minutes, it runs 2 nursing homes within 120 minutes of a capable branch, 50% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 161.1 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": true
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": true
-        },
-        "citationTrigger": {
-          "points": 1.8,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2025-05-21",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": true
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the citation trigger proposal",
-          "source": "none",
-          "proposal": true
-        },
-        "footprint": {
-          "points": 3.3,
-          "max": 15,
-          "input": "2 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": true
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": true
-        },
-        "citationBreadth": {
-          "points": 5,
-          "max": 10,
-          "input": "50% of footprint facilities cited for a service line since 2025",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "citationRepetition": {
-          "points": 2.5,
-          "max": 5,
-          "input": "50% of footprint facilities with sprinkler or alarm cited on more than one survey",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "domain": {
-          "points": 2,
-          "max": 2,
-          "input": "pineleafinc.com (name_match)",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "2 facilities within 90 minutes",
           "source": "serviceability.json (OSRM, 2026-10-20)",
           "proposal": false
         },
@@ -5674,6 +6090,110 @@
       }
     },
     {
+      "operatorId": "ga-op-lbn-rome-center-llc",
+      "name": "ROME CENTER LLC",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "provisional",
+      "band": "Watch",
+      "score": 18.9,
+      "footprintFacilities": 1,
+      "explanation": "Band Watch because its sites sit 90 to 120 minutes from a capable branch, and 100% of those sites were cited for a service line since 2025.",
+      "components": {
+        "ownershipChange": {
+          "points": 0,
+          "max": 10,
+          "input": "latest ownership or management change 108.5 months before 2026-10-19",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": true
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": true
+        },
+        "citationTrigger": {
+          "points": 1.9,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2025-06-12",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": true
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the citation trigger proposal",
+          "source": "none",
+          "proposal": true
+        },
+        "footprint": {
+          "points": 0,
+          "max": 15,
+          "input": "1 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": true
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": true
+        },
+        "citationBreadth": {
+          "points": 10,
+          "max": 10,
+          "input": "100% of footprint facilities cited for a service line since 2025",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "citationRepetition": {
+          "points": 0,
+          "max": 5,
+          "input": "0% of footprint facilities with sprinkler or alarm cited on more than one survey",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "domain": {
+          "points": 0,
+          "max": 2,
+          "input": "no confirmed domain",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": false
+        },
+        "geography": {
+          "points": 1,
+          "max": 2,
+          "input": "conditional only: 90 to 120 minutes, needs manager approval",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": true
+        },
+        "locationProvenance": {
+          "points": 1,
+          "max": 2,
+          "input": "provisional: a facility awaits manual review",
+          "source": "operators.json",
+          "proposal": true
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      }
+    },
+    {
       "operatorId": "ga-op-org-atrium-health-inc",
       "name": "ATRIUM HEALTH INC",
       "eligible": true,
@@ -5986,110 +6506,6 @@
       }
     },
     {
-      "operatorId": "ga-op-lbn-westminster-presbyterian-homes-inc",
-      "name": "WESTMINSTER PRESBYTERIAN HOMES, INC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "resolved",
-      "band": "Watch",
-      "score": 15,
-      "footprintFacilities": 1,
-      "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "no dated ownership or management change",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": true
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": true
-        },
-        "citationTrigger": {
-          "points": 0,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2024-07-22",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": true
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the citation trigger proposal",
-          "source": "none",
-          "proposal": true
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": true
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": true
-        },
-        "citationBreadth": {
-          "points": 0,
-          "max": 10,
-          "input": "0% of footprint facilities cited for a service line since 2025",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "citationRepetition": {
-          "points": 5,
-          "max": 5,
-          "input": "100% of footprint facilities with sprinkler or alarm cited on more than one survey",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "domain": {
-          "points": 1,
-          "max": 2,
-          "input": "pvathens.org (word_match)",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": true
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 2,
-          "max": 2,
-          "input": "facility list resolved from CMS",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      }
-    },
-    {
       "operatorId": "ga-op-chain-180",
       "name": "DELMAR GARDENS",
       "eligible": true,
@@ -6174,214 +6590,6 @@
           "points": 2,
           "max": 2,
           "input": "2 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 2,
-          "max": 2,
-          "input": "facility list resolved from CMS",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      }
-    },
-    {
-      "operatorId": "ga-op-lbn-macon-operating-llc",
-      "name": "MACON OPERATING LLC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "resolved",
-      "band": "Watch",
-      "score": 14,
-      "footprintFacilities": 1,
-      "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes, and sprinkler or alarm deficiencies repeat across surveys.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 110.6 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": true
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": true
-        },
-        "citationTrigger": {
-          "points": 0,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2024-10-03",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": true
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the citation trigger proposal",
-          "source": "none",
-          "proposal": true
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": true
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": true
-        },
-        "citationBreadth": {
-          "points": 0,
-          "max": 10,
-          "input": "0% of footprint facilities cited for a service line since 2025",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "citationRepetition": {
-          "points": 5,
-          "max": 5,
-          "input": "100% of footprint facilities with sprinkler or alarm cited on more than one survey",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 2,
-          "max": 2,
-          "input": "facility list resolved from CMS",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      }
-    },
-    {
-      "operatorId": "ga-op-lbn-233-carrollton-opco-llc",
-      "name": "233 CARROLLTON OPCO LLC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "resolved",
-      "band": "Watch",
-      "score": 13.5,
-      "footprintFacilities": 1,
-      "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes, and ownership or management changed recently.",
-      "components": {
-        "ownershipChange": {
-          "points": 3.5,
-          "max": 10,
-          "input": "latest ownership or management change 15.6 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": true
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": true
-        },
-        "citationTrigger": {
-          "points": 0,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2024-04-18",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": true
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the citation trigger proposal",
-          "source": "none",
-          "proposal": true
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": true
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": true
-        },
-        "citationBreadth": {
-          "points": 0,
-          "max": 10,
-          "input": "0% of footprint facilities cited for a service line since 2025",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "citationRepetition": {
-          "points": 0,
-          "max": 5,
-          "input": "0% of footprint facilities with sprinkler or alarm cited on more than one survey",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "domain": {
-          "points": 1,
-          "max": 2,
-          "input": "countryside.health (word_match)",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": true
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
           "source": "serviceability.json (OSRM, 2026-10-20)",
           "proposal": false
         },
@@ -7234,110 +7442,6 @@
       }
     },
     {
-      "operatorId": "ga-op-lbn-the-william-breman-jewish-home-inc",
-      "name": "THE WILLIAM BREMAN JEWISH HOME, INC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "resolved",
-      "band": "Watch",
-      "score": 10,
-      "footprintFacilities": 1,
-      "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "no dated ownership or management change",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": true
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": true
-        },
-        "citationTrigger": {
-          "points": 0,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2022-07-31",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": true
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the citation trigger proposal",
-          "source": "none",
-          "proposal": true
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": true
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": true
-        },
-        "citationBreadth": {
-          "points": 0,
-          "max": 10,
-          "input": "0% of footprint facilities cited for a service line since 2025",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "citationRepetition": {
-          "points": 0,
-          "max": 5,
-          "input": "0% of footprint facilities with sprinkler or alarm cited on more than one survey",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "domain": {
-          "points": 1,
-          "max": 2,
-          "input": "jewishhomelife.org (word_match)",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": true
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 2,
-          "max": 2,
-          "input": "facility list resolved from CMS",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      }
-    },
-    {
       "operatorId": "ga-op-org-brightmoor-management-services-llc",
       "name": "BRIGHTMOOR MANAGEMENT SERVICES LLC",
       "eligible": true,
@@ -7417,6 +7521,110 @@
           "input": "brightmoorhealthcare.com (word_match)",
           "source": "web-signals.json domains (Serper, 2026-10-20)",
           "proposal": true
+        },
+        "geography": {
+          "points": 2,
+          "max": 2,
+          "input": "1 facilities within 90 minutes",
+          "source": "serviceability.json (OSRM, 2026-10-20)",
+          "proposal": false
+        },
+        "locationProvenance": {
+          "points": 2,
+          "max": 2,
+          "input": "facility list resolved from CMS",
+          "source": "operators.json",
+          "proposal": false
+        },
+        "personaAndChannel": {
+          "points": 0,
+          "max": 4,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        }
+      }
+    },
+    {
+      "operatorId": "ga-op-lbn-presbyterian-village-austell-inc",
+      "name": "PRESBYTERIAN VILLAGE, AUSTELL, INC.",
+      "eligible": true,
+      "gate": null,
+      "identityStatus": "resolved",
+      "band": "Watch",
+      "score": 9.2,
+      "footprintFacilities": 1,
+      "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes.",
+      "components": {
+        "ownershipChange": {
+          "points": 0,
+          "max": 10,
+          "input": "latest ownership or management change 460.5 months before 2026-10-19",
+          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+          "proposal": true
+        },
+        "hiring": {
+          "points": 0,
+          "max": 8,
+          "input": "no maintenance or facilities posting found",
+          "source": "web-signals.json jobs (Serper, 2026-10-20)",
+          "proposal": true
+        },
+        "citationTrigger": {
+          "points": 0.2,
+          "max": 6,
+          "input": "latest service-line fire citation surveyed 2024-11-14",
+          "source": "ifjz-ge4w.survey_date via signals.json",
+          "proposal": true
+        },
+        "roleChange": {
+          "points": 0,
+          "max": 16,
+          "input": "unknown until Stage 6 people pass",
+          "source": "none yet",
+          "proposal": false
+        },
+        "engagement": {
+          "points": 0,
+          "max": 0,
+          "input": "slot used by the citation trigger proposal",
+          "source": "none",
+          "proposal": true
+        },
+        "footprint": {
+          "points": 0,
+          "max": 15,
+          "input": "1 Georgia facilities inside the footprint",
+          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+          "proposal": true
+        },
+        "regulatedEnvironment": {
+          "points": 5,
+          "max": 5,
+          "input": "CMS-certified nursing homes under federal life-safety surveys",
+          "source": "4pq5-n9py",
+          "proposal": true
+        },
+        "citationBreadth": {
+          "points": 0,
+          "max": 10,
+          "input": "0% of footprint facilities cited for a service line since 2025",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "citationRepetition": {
+          "points": 0,
+          "max": 5,
+          "input": "0% of footprint facilities with sprinkler or alarm cited on more than one survey",
+          "source": "ifjz-ge4w via signals.json",
+          "proposal": true
+        },
+        "domain": {
+          "points": 0,
+          "max": 2,
+          "input": "no confirmed domain",
+          "source": "web-signals.json domains (Serper, 2026-10-20)",
+          "proposal": false
         },
         "geography": {
           "points": 2,
@@ -7573,7 +7781,7 @@
         "citationTrigger": {
           "points": 0,
           "max": 6,
-          "input": "no service-line fire citation",
+          "input": "latest service-line fire citation surveyed 2024-01-18",
           "source": "ifjz-ge4w.survey_date via signals.json",
           "proposal": true
         },
@@ -7677,7 +7885,7 @@
         "citationTrigger": {
           "points": 0,
           "max": 6,
-          "input": "latest service-line fire citation surveyed 2023-02-02",
+          "input": "latest service-line fire citation surveyed 2024-03-07",
           "source": "ifjz-ge4w.survey_date via signals.json",
           "proposal": true
         },
@@ -7782,110 +7990,6 @@
           "points": 0,
           "max": 6,
           "input": "latest service-line fire citation surveyed 2024-07-18",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": true
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the citation trigger proposal",
-          "source": "none",
-          "proposal": true
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": true
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": true
-        },
-        "citationBreadth": {
-          "points": 0,
-          "max": 10,
-          "input": "0% of footprint facilities cited for a service line since 2025",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "citationRepetition": {
-          "points": 0,
-          "max": 5,
-          "input": "0% of footprint facilities with sprinkler or alarm cited on more than one survey",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 2,
-          "max": 2,
-          "input": "1 facilities within 90 minutes",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": false
-        },
-        "locationProvenance": {
-          "points": 2,
-          "max": 2,
-          "input": "facility list resolved from CMS",
-          "source": "operators.json",
-          "proposal": false
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      }
-    },
-    {
-      "operatorId": "ga-op-lbn-presbyterian-village-austell-inc",
-      "name": "PRESBYTERIAN VILLAGE, AUSTELL, INC.",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "resolved",
-      "band": "Watch",
-      "score": 9,
-      "footprintFacilities": 1,
-      "explanation": "Band Watch because Anchorpoint reaches its site within 90 minutes.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 460.5 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": true
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": true
-        },
-        "citationTrigger": {
-          "points": 0,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2022-07-14",
           "source": "ifjz-ge4w.survey_date via signals.json",
           "proposal": true
         },
@@ -8197,7 +8301,7 @@
         "citationTrigger": {
           "points": 0,
           "max": 6,
-          "input": "no service-line fire citation",
+          "input": "latest service-line fire citation surveyed 2024-06-16",
           "source": "ifjz-ge4w.survey_date via signals.json",
           "proposal": true
         },
@@ -8464,110 +8568,6 @@
           "input": "1 facilities within 90 minutes",
           "source": "serviceability.json (OSRM, 2026-10-20)",
           "proposal": false
-        },
-        "locationProvenance": {
-          "points": 1,
-          "max": 2,
-          "input": "provisional: a facility awaits manual review",
-          "source": "operators.json",
-          "proposal": true
-        },
-        "personaAndChannel": {
-          "points": 0,
-          "max": 4,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        }
-      }
-    },
-    {
-      "operatorId": "ga-op-lbn-rome-center-llc",
-      "name": "ROME CENTER LLC",
-      "eligible": true,
-      "gate": null,
-      "identityStatus": "provisional",
-      "band": "Watch",
-      "score": 7,
-      "footprintFacilities": 1,
-      "explanation": "Band Watch because its sites sit 90 to 120 minutes from a capable branch.",
-      "components": {
-        "ownershipChange": {
-          "points": 0,
-          "max": 10,
-          "input": "latest ownership or management change 108.5 months before 2026-10-19",
-          "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-          "proposal": true
-        },
-        "hiring": {
-          "points": 0,
-          "max": 8,
-          "input": "no maintenance or facilities posting found",
-          "source": "web-signals.json jobs (Serper, 2026-10-20)",
-          "proposal": true
-        },
-        "citationTrigger": {
-          "points": 0,
-          "max": 6,
-          "input": "latest service-line fire citation surveyed 2024-02-12",
-          "source": "ifjz-ge4w.survey_date via signals.json",
-          "proposal": true
-        },
-        "roleChange": {
-          "points": 0,
-          "max": 16,
-          "input": "unknown until Stage 6 people pass",
-          "source": "none yet",
-          "proposal": false
-        },
-        "engagement": {
-          "points": 0,
-          "max": 0,
-          "input": "slot used by the citation trigger proposal",
-          "source": "none",
-          "proposal": true
-        },
-        "footprint": {
-          "points": 0,
-          "max": 15,
-          "input": "1 Georgia facilities inside the footprint",
-          "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-          "proposal": true
-        },
-        "regulatedEnvironment": {
-          "points": 5,
-          "max": 5,
-          "input": "CMS-certified nursing homes under federal life-safety surveys",
-          "source": "4pq5-n9py",
-          "proposal": true
-        },
-        "citationBreadth": {
-          "points": 0,
-          "max": 10,
-          "input": "0% of footprint facilities cited for a service line since 2025",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "citationRepetition": {
-          "points": 0,
-          "max": 5,
-          "input": "0% of footprint facilities with sprinkler or alarm cited on more than one survey",
-          "source": "ifjz-ge4w via signals.json",
-          "proposal": true
-        },
-        "domain": {
-          "points": 0,
-          "max": 2,
-          "input": "no confirmed domain",
-          "source": "web-signals.json domains (Serper, 2026-10-20)",
-          "proposal": false
-        },
-        "geography": {
-          "points": 1,
-          "max": 2,
-          "input": "conditional only: 90 to 120 minutes, needs manager approval",
-          "source": "serviceability.json (OSRM, 2026-10-20)",
-          "proposal": true
         },
         "locationProvenance": {
           "points": 1,

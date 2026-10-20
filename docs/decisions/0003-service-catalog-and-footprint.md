@@ -1,6 +1,6 @@
 # Decision 0003: Service Catalog, Branch Footprint, Licensing, and Travel Time
 
-Status: approved on 2026-10-19. Items listed under "Open within this decision" remain open. Amended on 2026-10-20 to add subcontracted large sprinkler work.
+Status: approved on 2026-10-19. Items listed under "Open within this decision" remain open. Amended on 2026-10-20 to add subcontracted large sprinkler work and fire door and firestopping lines.
 
 Date: 2026-10-19  
 Decision owner: User  
@@ -30,6 +30,12 @@ Project and one-time lines:
 - Deficiency repair identified during inspection
 - Small tenant-improvement sprinkler and alarm modifications
 - Device and panel replacement or retrofit
+
+Added 2026-10-20:
+
+- Fire door inspection and testing under NFPA 80, self-performed from the Atlanta and Macon branches
+- Smoke barrier and firestopping inspection, self-performed from the same branches
+- Fire door, smoke door, hold-open device, and firestopping repairs, subcontracted to specialists with Anchorpoint keeping the customer
 
 Subcontracted: sprinkler work too large for the catalog, such as adding coverage to an unsprinklered wing, is subcontracted to a licensed installer while Anchorpoint keeps the customer relationship and manages the job. This keeps cited customers from going to a competitor. Added 2026-10-20.
 

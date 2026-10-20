@@ -16,27 +16,43 @@ const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const sampleRoot = resolve(projectRoot, "data/georgia-sample");
 
 type Row = Record<string, string>;
-type ServiceLine = "sprinkler_itm" | "fire_alarm_itm" | "extinguisher" | "kitchen_hood" | "emergency_lighting";
+type ServiceLine =
+  | "sprinkler_itm"
+  | "fire_alarm_itm"
+  | "extinguisher"
+  | "kitchen_hood"
+  | "emergency_lighting"
+  | "fire_door_itm"
+  | "firestopping";
 type State = "serviceable" | "conditional" | "not_serviceable";
 
-const SERVICE_LINES: ServiceLine[] = ["sprinkler_itm", "fire_alarm_itm", "extinguisher", "kitchen_hood", "emergency_lighting"];
+const SERVICE_LINES: ServiceLine[] = [
+  "sprinkler_itm",
+  "fire_alarm_itm",
+  "extinguisher",
+  "kitchen_hood",
+  "emergency_lighting",
+  "fire_door_itm",
+  "firestopping",
+];
 
 // Branches and capabilities from decision 0003. Branch sites are fictional, so each is placed
-// at its city's center; the coordinates are approximate public geography.
+// at its city's center; the coordinates are approximate public geography. Fire door inspection
+// and firestopping inspection run from the two full-line Georgia branches (amended 2026-10-20).
 const BRANCHES: { id: string; name: string; latitude: number; longitude: number; lines: ServiceLine[] }[] = [
   {
     id: "atlanta",
     name: "Atlanta metro (Norcross)",
     latitude: 33.9412,
     longitude: -84.2135,
-    lines: ["sprinkler_itm", "fire_alarm_itm", "extinguisher", "kitchen_hood", "emergency_lighting"],
+    lines: ["sprinkler_itm", "fire_alarm_itm", "extinguisher", "kitchen_hood", "emergency_lighting", "fire_door_itm", "firestopping"],
   },
   {
     id: "macon",
     name: "Macon",
     latitude: 32.8407,
     longitude: -83.6324,
-    lines: ["sprinkler_itm", "fire_alarm_itm", "extinguisher", "kitchen_hood", "emergency_lighting"],
+    lines: ["sprinkler_itm", "fire_alarm_itm", "extinguisher", "kitchen_hood", "emergency_lighting", "fire_door_itm", "firestopping"],
   },
   { id: "savannah", name: "Savannah", latitude: 32.0809, longitude: -81.0912, lines: ["extinguisher", "kitchen_hood", "emergency_lighting"] },
   {
