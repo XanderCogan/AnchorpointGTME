@@ -1,0 +1,25 @@
+{
+  "totalSize": 1,
+  "done": true,
+  "records": [
+    {
+      "attributes": { "type": "Lead", "url": "/services/data/v62.0/sobjects/Lead/00QSYN000000001AAA" },
+      "Id": "00QSYN000000001AAA",
+      "FirstName": "Quinn",
+      "LastName": "Fixture-Inbound",
+      "Company": "Unmatched Synthetic Care Home (fixture)",
+      "Email": "quinn.inbound@unmatched-care.example",
+      "Status": "Open - Not Contacted",
+      "LeadSource": "Web",
+      "IsConverted": false,
+      "ConvertedAccountId": null,
+      "ConvertedContactId": null,
+      "HasOptedOutOfEmail": false,
+      "DoNotCall": false,
+      "OwnerId": "005SYN000000002AAA",
+      "CreatedDate": "2026-09-02T19:40:00.000+0000",
+      "LastModifiedDate": "2026-09-02T19:40:00.000+0000",
+      "SystemModstamp": "2026-09-02T19:40:00.000+0000"
+    }
+  ]
+}

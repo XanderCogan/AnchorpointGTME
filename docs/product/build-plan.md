@@ -50,6 +50,8 @@ Exit gate: a clean environment can load the fixtures, run the audit, and display
 
 ## Milestone 3: Read-only Salesforce connection
 
+Status: in progress. The read-only connector is built and verified against synthetic recorded responses; live acceptance waits for the Developer Edition org. See `../milestones/milestone-3-salesforce-connector-notes.md`.
+
 Connect a Salesforce Developer Edition org holding Anchorpoint's fictional history, using read-only permissions. Import bounded Account, Site, Contact, Lead, Opportunity, User, Task, and Campaign data, preserve source timestamps, and reconcile paginated data safely. The object mapping follows `docs/decisions/0005-crm-system-of-record.md`.
 
 The org's data is the first historical fixture release from decision 0006, which may use real company names under the amended decision 0005, loaded as a setup step separate from the read-only connector. Under decision 0008, this milestone is Track A and runs alongside the Georgia market sample.

@@ -10,3 +10,7 @@ Do not edit an approved release in place. Create a new release when adding or ch
 
 Generated findings belong under `artifacts/` and are not source fixtures.
 
+
+## Connector recordings
+
+`connectors/salesforce-recorded-v1` holds hand-written, synthetic Salesforce REST query responses for the Milestone 3 read-only connector tests. They follow the same rules: fictional, reserved domains, and never edited in place once tests depend on them.

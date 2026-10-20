@@ -17,6 +17,8 @@
     "inspect": "node scripts/run-inspection.ts",
     "sample:georgia": "node scripts/georgia-sample/resolve-operators.ts && node scripts/georgia-sample/serviceability.ts && node scripts/georgia-sample/signals.ts && node scripts/georgia-sample/serper-lookups.ts && node scripts/georgia-sample/tier.ts",
     "sample:georgia:pull": "node scripts/georgia-sample/pull-cms.ts",
+    "salesforce:sync": "node scripts/salesforce-sync.ts",
+    "salesforce:verify-recorded": "node scripts/verify-salesforce-recorded.ts",
     "qa:visual": "node scripts/visual-qa.ts",
     "qa:visual:failed-job": "node scripts/visual-qa.ts --expect-failed-job",
     "test": "node --test tests/*.test.ts",

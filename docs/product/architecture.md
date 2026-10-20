@@ -27,6 +27,7 @@ Anchorpoint/
     core/       implemented audit types and deterministic rules
     contracts/  runtime fixture validation
     db/         schema, migrations, queries, repositories, and job state
+    connectors/ read-only Salesforce connector (Milestone 3 groundwork)
   fixtures/     immutable synthetic inputs and expected outcomes
   tests/        executable acceptance evidence
   scripts/      inspection and artifact builders
@@ -38,7 +39,7 @@ Anchorpoint/
     decisions/  durable product rationale
 ```
 
-The current code path stores validated fixture input in PostgreSQL, runs the audit in a background worker, persists findings and job state, exposes them through a protected API, and renders them for an authenticated RevOps user. The complete local path is accepted against PostgreSQL, including retry exhaustion and authenticated desktop and narrow-viewport QA. Preview deployment remains pending. Connector packages are not implemented.
+The current code path stores validated fixture input in PostgreSQL, runs the audit in a background worker, persists findings and job state, exposes them through a protected API, and renders them for an authenticated RevOps user. The complete local path is accepted against PostgreSQL, including retry exhaustion and authenticated desktop and narrow-viewport QA. Preview deployment remains pending. The read-only Salesforce connector in `packages/connectors/` is verified only against synthetic recorded responses; see `../milestones/milestone-3-salesforce-connector-notes.md`.
 
 ## Planned repository shape
 

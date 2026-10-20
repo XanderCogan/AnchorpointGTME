@@ -1,0 +1,26 @@
+{
+  "totalSize": 2,
+  "done": true,
+  "records": [
+    {
+      "attributes": { "type": "User", "url": "/services/data/v62.0/sobjects/User/005SYN000000001AAA" },
+      "Id": "005SYN000000001AAA",
+      "Name": "Avery Synthetic-Owner",
+      "Email": "avery.owner@anchorpoint.example",
+      "IsActive": true,
+      "CreatedDate": "2026-01-05T15:00:00.000+0000",
+      "LastModifiedDate": "2026-02-10T16:30:00.000+0000",
+      "SystemModstamp": "2026-02-10T16:30:00.000+0000"
+    },
+    {
+      "attributes": { "type": "User", "url": "/services/data/v62.0/sobjects/User/005SYN000000002AAA" },
+      "Id": "005SYN000000002AAA",
+      "Name": "Jordan Synthetic-Rep",
+      "Email": "jordan.rep@anchorpoint.example",
+      "IsActive": true,
+      "CreatedDate": "2026-01-05T15:05:00.000+0000",
+      "LastModifiedDate": "2026-03-01T09:00:00.000+0000",
+      "SystemModstamp": "2026-03-01T09:00:00.000+0000"
+    }
+  ]
+}

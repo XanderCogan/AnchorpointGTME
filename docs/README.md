@@ -39,6 +39,7 @@ Use the discovery log only when a question ID, assumption owner, answer basis, o
 
 - Accepted Milestone 1 fixture contents, 22-finding result, contract correction, and verification evidence: [`milestones/milestone-1-inspection-report.md`](milestones/milestone-1-inspection-report.md)
 - Implemented Milestone 2 slice, last verification, and remaining foundation work: [`milestones/milestone-2-foundation-notes.md`](milestones/milestone-2-foundation-notes.md)
+- Milestone 3 read-only Salesforce connector, recorded-response verification, and what waits for the real org: [`milestones/milestone-3-salesforce-connector-notes.md`](milestones/milestone-3-salesforce-connector-notes.md)
 
 Milestone reports are evidence records. Update `STATE.md`, not an old report, when only the live next step changes.
 

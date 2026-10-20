@@ -1,0 +1,39 @@
+{
+  "totalSize": 3,
+  "done": false,
+  "nextRecordsUrl": "/services/data/v62.0/query/01gSYN000000002AAA-2",
+  "records": [
+    {
+      "attributes": { "type": "Contact", "url": "/services/data/v62.0/sobjects/Contact/003SYN000000001AAA" },
+      "Id": "003SYN000000001AAA",
+      "AccountId": "001SYN000000002AAA",
+      "FirstName": "Casey",
+      "LastName": "Fixture-Director",
+      "Title": "Director of Facilities",
+      "Email": "casey.director@north-operator.example",
+      "Phone": "+1 555 0100",
+      "HasOptedOutOfEmail": false,
+      "DoNotCall": false,
+      "OwnerId": "005SYN000000001AAA",
+      "CreatedDate": "2026-02-01T12:00:00.000+0000",
+      "LastModifiedDate": "2026-02-01T12:00:00.000+0000",
+      "SystemModstamp": "2026-02-01T12:00:00.000+0000"
+    },
+    {
+      "attributes": { "type": "Contact", "url": "/services/data/v62.0/sobjects/Contact/003SYN000000002AAA" },
+      "Id": "003SYN000000002AAA",
+      "AccountId": "001SYN000000002AAA",
+      "FirstName": "Riley",
+      "LastName": "Fixture-Administrator",
+      "Title": "Administrator",
+      "Email": "riley.admin@north-operator.example",
+      "Phone": null,
+      "HasOptedOutOfEmail": true,
+      "DoNotCall": false,
+      "OwnerId": "005SYN000000001AAA",
+      "CreatedDate": "2026-02-01T12:10:00.000+0000",
+      "LastModifiedDate": "2026-07-14T08:30:00.000+0000",
+      "SystemModstamp": "2026-07-14T08:30:00.000+0000"
+    }
+  ]
+}

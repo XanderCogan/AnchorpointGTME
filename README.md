@@ -2,7 +2,7 @@
 
 Portco Launch Control is an Apero-style GTM engineering portfolio project built around the fictional client Anchorpoint Fire & Safety. It maps a real market into Salesforce accounts and sites, audits CRM health with deterministic rules, prepares bounded records for enrichment, ranks accounts and people with explainable evidence, requires human approval, routes approved contacts to Lemlist or TitanX, and returns outcomes to Salesforce and a rep work queue.
 
-The system is intentionally gated and read-only at its current stage. No live credentials or external connectors exist.
+The system is intentionally gated and read-only at its current stage. No live credentials or live external connections exist. The Milestone 3 Salesforce connector is read-only and has run only against synthetic recorded responses.
 
 ## Portfolio context
 
@@ -52,7 +52,7 @@ docs/milestones/   implementation evidence and remaining work
 docs/decisions/    durable decision records
 ```
 
-Connector packages are created only when their gated milestone begins.
+Connector packages are created only when their gated milestone begins. `packages/connectors/` holds the Milestone 3 read-only Salesforce connector.
 
 ## Local verification
 
@@ -65,6 +65,7 @@ npm run build
 npm run db:up
 npm run foundation:setup
 npm run foundation:verify
+npm run salesforce:verify-recorded
 ```
 
 `inspection-v1` must produce 22 findings: 15 critical and 7 warning. After the foundation setup succeeds, run `npm run api` and `npm run dev` in separate terminals to open the authenticated read-only application. Local development uses the documented fixture-only credentials shown on the login screen; production requires all secrets in `.env.example` to be replaced.
