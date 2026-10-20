@@ -199,7 +199,7 @@ Top five operators by five-year value:
 
 ### Stage 6: people (free tier, then up to $20)
 
-Only for serviceable, tiered operators, highest tier first. Start on Clay's free plan: prove the table design for roles at the operator level and the site level, and measure the share of operators where named people can be found at all. When free credits run out, up to $20 of paid Clay credit continues the pass, confirmed with the user before purchase. The pass stops when that is spent and reports how many operators it covered. Emails are checked for verifiability on a capped subset, and only whether a verified channel exists is recorded. Phone enrichment stays excluded.
+The detailed design is in `georgia-clay-people-pass.md`. Only for serviceable, tiered operators, highest tier first. Start on Clay's free plan: prove the table design for roles at the operator level and the site level, and measure the share of operators where named people can be found at all. When free credits run out, up to $20 of paid Clay credit continues the pass, confirmed with the user before purchase. The pass stops when that is spent and reports how many operators it covered. Emails are checked for verifiability on a capped subset, and only whether a verified channel exists is recorded. Phone enrichment stays excluded.
 
 ### Stage 7: load
 

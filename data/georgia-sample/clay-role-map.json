@@ -1,0 +1,176 @@
+{
+  "version": "georgia-clay-role-map-1",
+  "status": "proposal, not yet approved; see docs/research/georgia-clay-people-pass.md",
+  "scoringContract": "account-score-v1.1",
+  "note": "Title keywords are generic job-title patterns used as Clay search filters. They are not anyone's title. Person-relevance points are proposals inside the contract's existing caps (8 direct ownership, 5 influence, 2 adjacent); no new weights.",
+  "roleSlots": [
+    {
+      "id": "operator_regional_facilities",
+      "level": "operator",
+      "description": "Regional or corporate maintenance, facilities, or plant operations director",
+      "titleInclude": [
+        "regional director of maintenance",
+        "regional maintenance director",
+        "regional director of facilities",
+        "regional facilities director",
+        "regional director of plant operations",
+        "regional facilities manager",
+        "director of facilities",
+        "vice president of facilities",
+        "director of plant operations",
+        "director of environmental services",
+        "director of life safety"
+      ],
+      "titleExclude": [
+        "intern",
+        "assistant",
+        "coordinator",
+        "housekeeping",
+        "sales",
+        "recruiter"
+      ],
+      "maxPeople": 2,
+      "persona": "Regional Facilities Manager",
+      "personaAlternate": "Vice President or Director of Facilities, when the title is corporate rather than regional",
+      "personRelevanceProposal": {
+        "directOwnership": 8,
+        "influence": 5,
+        "adjacent": 0,
+        "total": 13
+      },
+      "influenceEvidence": "regional or corporate scope in the title",
+      "fills": [
+        "roleChange",
+        "personRelevance",
+        "personaAndChannel"
+      ],
+      "buyingRole": "champion and first contact"
+    },
+    {
+      "id": "operator_operations_vp",
+      "level": "operator",
+      "description": "Regional or corporate vice president or director of operations",
+      "titleInclude": [
+        "regional vice president of operations",
+        "vice president of operations",
+        "regional director of operations",
+        "chief operating officer",
+        "senior vice president of operations"
+      ],
+      "titleExclude": [
+        "clinical",
+        "nursing",
+        "revenue",
+        "sales",
+        "marketing",
+        "finance",
+        "assistant"
+      ],
+      "maxPeople": 2,
+      "persona": "Senior-Living Operations Leader (provisional)",
+      "personaMappingConfidence": "provisional persona added 2026-10-20; review after Stage 6 titles are seen",
+      "personRelevanceProposal": {
+        "directOwnership": 0,
+        "influence": 5,
+        "adjacent": 2,
+        "total": 7
+      },
+      "influenceEvidence": "regional or corporate operations scope in the title",
+      "fills": [
+        "roleChange",
+        "personRelevance",
+        "personaAndChannel"
+      ],
+      "buyingRole": "economic buyer",
+      "firstContactWhen": "no verified operator_regional_facilities person is found at the operator"
+    },
+    {
+      "id": "site_maintenance_director",
+      "level": "site",
+      "description": "Facility maintenance director or plant operations director at one nursing home",
+      "titleInclude": [
+        "maintenance director",
+        "director of maintenance",
+        "maintenance supervisor",
+        "director of plant operations",
+        "plant operations director",
+        "facilities director",
+        "maintenance manager"
+      ],
+      "titleExclude": [
+        "regional",
+        "assistant",
+        "technician",
+        "housekeeping",
+        "laundry"
+      ],
+      "maxPeople": 1,
+      "persona": "Director of Property Operations",
+      "personaMappingConfidence": "site-level holder of the property-operations persona",
+      "personRelevanceProposal": {
+        "directOwnership": 8,
+        "influence": 2,
+        "adjacent": 0,
+        "total": 10
+      },
+      "influenceEvidence": "implementation influence at one site; regional or budget influence only with recorded evidence",
+      "fills": [
+        "roleChange",
+        "personRelevance",
+        "personaAndChannel"
+      ]
+    },
+    {
+      "id": "site_executive_director",
+      "level": "site",
+      "description": "Nursing home administrator or executive director at one facility",
+      "titleInclude": [
+        "executive director",
+        "administrator",
+        "nursing home administrator",
+        "licensed nursing home administrator"
+      ],
+      "titleExclude": [
+        "assistant",
+        "admissions",
+        "medical director",
+        "director of nursing",
+        "activities",
+        "business office",
+        "regional",
+        "intern"
+      ],
+      "maxPeople": 1,
+      "persona": "Site Administrator (provisional)",
+      "personaMappingConfidence": "provisional persona added 2026-10-20; review after Stage 6 titles are seen",
+      "personRelevanceProposal": {
+        "directOwnership": 0,
+        "influence": 5,
+        "adjacent": 2,
+        "total": 7
+      },
+      "influenceEvidence": "site budget and vendor approval held by the licensed administrator",
+      "fills": [
+        "roleChange",
+        "personRelevance",
+        "personaAndChannel"
+      ]
+    }
+  ],
+  "tenureBands": {
+    "storedIn": "data/georgia-sample/private/ only",
+    "values": [
+      "under_6_months",
+      "6_to_12_months",
+      "12_to_24_months",
+      "over_24_months",
+      "unknown"
+    ]
+  },
+  "channelMethods": [
+    "clay_email_waterfall_validated",
+    "not_checked",
+    "not_found",
+    "found_not_valid"
+  ]
+}
