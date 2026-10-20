@@ -154,7 +154,8 @@
         "roleChange",
         "personRelevance",
         "personaAndChannel"
-      ]
+      ],
+      "personRelevanceConfidence": "low"
     }
   ],
   "tenureBands": {
@@ -172,5 +173,6 @@
     "not_checked",
     "not_found",
     "found_not_valid"
-  ]
+  ],
+  "personRelevanceStatus": "approved by the user on 2026-10-20 with the best-person rollup; site_executive_director's 7 is low confidence and is reviewed with the provisional personas"
 }

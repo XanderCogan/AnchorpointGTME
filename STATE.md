@@ -36,7 +36,7 @@ Timeline, set by the user on 2026-10-20: the project is finished in one day. Pre
 
 When Clay is connected, follow "Runbook: when Clay is connected" in `docs/research/georgia-clay-people-pass.md`. The reducer needs summary columns named exactly as listed there.
 
-Flagged for later review: the two provisional senior-living personas in `docs/contracts/operating-contract.md`, once Stage 6 shows which job titles exist.
+Flagged for later review: the two provisional senior-living personas in `docs/contracts/operating-contract.md`, once Stage 6 shows which job titles exist. Review the site administrator's low-confidence 7 person-relevance points at the same time.
 
 Milestone 2 has no remaining implementation or preview blocker. All four decisions required before ICP, TAM, or enrichment work were approved on 2026-10-19. Decision 0008 originally ran the next work as two parallel tracks. On 2026-10-20 the user cancelled Track A, the synthetic historical fixture, because a real-data TAM is the portfolio's centerpiece; its branch was deleted unmerged. Track B, the first Georgia market sample under decision 0007, is the active work. Each decision's open items are settled when that work reaches them. On 2026-10-20 the user approved tiering proposal 2 and the account value model in `docs/decisions/0009-account-value-model.md`. Parallel work now covers the value model in code, the operator review cases, the Stage 6 Clay table design, and Milestone 3 groundwork for the read-only Salesforce connector.
 
