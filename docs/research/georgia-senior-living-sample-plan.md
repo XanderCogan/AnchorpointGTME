@@ -151,7 +151,7 @@ Approved review decisions live in `data/georgia-sample/review-decisions.json`, a
 
 ### Stage 5: tiering, proposal 2 approved on 2026-10-20
 
-`scripts/georgia-sample/tier.ts` writes `data/georgia-sample/tiers.json`. It applies `account-score-v1.1`. Every value the contract leaves open sits in one labeled proposal block, now `georgia-account-proposal-2`, and is marked as a proposal on each scored component until the user approves it.
+`scripts/georgia-sample/tier.ts` writes `data/georgia-sample/tiers.json`. It applies `account-score-v1.1`. Every value the contract leaves open sits in one labeled parameter block, `georgia-account-proposal-2`, which the user approved on 2026-10-20. Scored components no longer carry a proposal marker.
 
 - Hard gate: an operator needs one or more facilities serviceable or conditional for sprinkler or alarm work. 82 operators pass and 38 sit outside the footprint.
 - Change propensity, using 24 of 40 points. Ownership or management change gets up to 10 points, decaying over 24 months from the latest association date. Hiring gets up to 8: 4 for an undated posting candidate, more for a dated one decaying over 120 days. A service-line citation is proposed as the contract's "approved timely trigger", up to 6 points decaying over 24 months.
@@ -168,6 +168,26 @@ Known effects to weigh before approval:
 - Larger chains have more chances to show an ownership change at some facility.
 - 20 eligible operators are provisional, pending manual review.
 - A Serper result during domain lookup suggested a Chapter 7 bankruptcy case for C. Ross Management. It is unverified and not scored, because the contract allows only inputs that are captured with a source.
+
+### Stage 5: account value, decision 0009, run on 2026-10-20
+
+`tier.ts` now adds a value block beside the score on each eligible operator, under assumptions version `georgia-value-1`. All prices in it are assumptions from decision 0009, not market evidence. Beds are the only sourced input, from CMS `4pq5-n9py` (CMS modified 2026-09-30, retrieved 2026-10-19).
+
+- Method: each in-footprint site is worth $9,300 a year times (certified beds / 100) to the power 0.7, and conditional sites count at 75 percent. Five-year value is annual value times 4.0. Landing value is the five-year value of the largest serviceable site. Value bands are Large from $500,000 of five-year value, Mid from $100,000, and Small below.
+- Value never changes a score or band. A rerun after adding value left every score, band, and explanation identical, and a test now checks this. Within a priority band, operators are ordered by five-year value.
+- Value bands: 4 Large, 11 Mid, and 67 Small. All four Large operators are in band A. Band A also holds one Mid, band B holds 9 Mid and 2 Small, band C holds 1 Mid and 40 Small, and Watch is all Small.
+- The eligible footprint comes to about $2.33 million a year if every site were won. This is lower than the $2.5 million illustration in decision 0009 because the 75 percent distance factor is now applied.
+- The median single-site operator comes to about $34,000 over five years. One serviceable single-site facility has no CMS bed count and is valued at zero.
+- Near-the-jaws rule: 58 Small single-site operators sit in band C or Watch. 30 of them have their site within 60 minutes of a capable branch and stay rep-eligible; the other 28 wait for a low-touch path.
+- Effort proxies are recorded and not scored. 23 eligible operators carry a CMS chain id, the proxy for central procurement. No national incumbent vendor is identified yet for any operator.
+
+Top five operators by five-year value:
+
+- PruittHealth, band A, 41 footprint sites: about $381,000 a year, $1.53 million over five years, landing value about $66,000.
+- Ethica Health, band A, 37 sites: about $310,000 a year, $1.24 million over five years, landing value about $53,000.
+- Empire Care Centers, band A, 21 sites: about $273,000 a year, $1.09 million over five years, landing value about $74,000.
+- Journey Healthcare, band A, 17 sites: about $154,000 a year, $616,000 over five years, landing value about $49,000.
+- Wellington Health Care Services, band B, 10 sites: about $116,000 a year, $465,000 over five years, landing value about $65,000.
 
 ### Stage 6: people (free tier, then up to $20)
 
