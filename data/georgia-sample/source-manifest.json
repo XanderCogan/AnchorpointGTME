@@ -1,0 +1,55 @@
+{
+  "description": "Georgia nursing home source pull for the Track B market sample. Raw rows are gitignored; this manifest is the committed record of what was pulled.",
+  "source": "CMS Provider Data Catalog, https://data.cms.gov/provider-data/",
+  "script": "scripts/georgia-sample/pull-cms.ts",
+  "datasets": [
+    {
+      "datasetId": "4pq5-n9py",
+      "title": "Provider Information",
+      "cmsModified": "2026-09-30",
+      "retrievedOn": "2026-10-19",
+      "filter": "state = GA",
+      "rowCount": 356,
+      "rawFile": "data/georgia-sample/raw/cms/4pq5-n9py.json",
+      "sha256": "0cdceae60574f1feb1030ad7cf17045f7819f3168aa5a649e32ebaf47f955eca",
+      "endpoint": "https://data.cms.gov/provider-data/api/1/datastore/query/4pq5-n9py/0",
+      "sourceFile": "https://data.cms.gov/provider-data/sites/default/files/resources/4b708f7ece9ed1ef3060686c5546ddf1_1790792149/NH_ProviderInfo_Sep2026_3.csv"
+    },
+    {
+      "datasetId": "ifjz-ge4w",
+      "title": "Fire Safety Deficiencies",
+      "cmsModified": "2026-09-30",
+      "retrievedOn": "2026-10-19",
+      "filter": "state = GA",
+      "rowCount": 3482,
+      "rawFile": "data/georgia-sample/raw/cms/ifjz-ge4w.json",
+      "sha256": "6915cb3e95213856b01a555d7a2d6d2c776f2e9767033679c0ff676464cf329e",
+      "endpoint": "https://data.cms.gov/provider-data/api/1/datastore/query/ifjz-ge4w/0",
+      "sourceFile": "https://data.cms.gov/provider-data/sites/default/files/resources/98aa3596a9af76e285beb7aa7c7244d9_1790792146/NH_FireSafetyCitations_Sep2026_2.csv"
+    },
+    {
+      "datasetId": "y2hd-n93e",
+      "title": "Ownership",
+      "cmsModified": "2026-09-30",
+      "retrievedOn": "2026-10-19",
+      "filter": "state = GA",
+      "rowCount": 5385,
+      "rawFile": "data/georgia-sample/raw/cms/y2hd-n93e.json",
+      "sha256": "d7e3dd6e7c52742c2232483eed4fee3015f165f44ebfab1fbeda8ac4c4e202bb",
+      "endpoint": "https://data.cms.gov/provider-data/api/1/datastore/query/y2hd-n93e/0",
+      "sourceFile": "https://data.cms.gov/provider-data/sites/default/files/resources/7ed9b3e04f5da2fabf1b0ec13f423734_1790792148/NH_Ownership_Sep2026_2.csv"
+    },
+    {
+      "datasetId": "tagd-9999",
+      "title": "Citation Code Look-up",
+      "cmsModified": "2026-09-30",
+      "retrievedOn": "2026-10-19",
+      "filter": "none (national lookup table)",
+      "rowCount": 643,
+      "rawFile": "data/georgia-sample/raw/cms/tagd-9999.json",
+      "sha256": "6b2809921459681fddb0986a0b807902970b773232239148332c5a2de0af22a6",
+      "endpoint": "https://data.cms.gov/provider-data/api/1/datastore/query/tagd-9999/0",
+      "sourceFile": "https://data.cms.gov/provider-data/sites/default/files/resources/a287029babaa02156654fca375b43f5d_1790792152/NH_CitationDescriptions_Sep2026_2.csv"
+    }
+  ]
+}

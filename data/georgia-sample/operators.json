@@ -1,0 +1,1817 @@
+{
+  "generatedFrom": {
+    "script": "scripts/georgia-sample/resolve-operators.ts",
+    "sources": [
+      {
+        "datasetId": "4pq5-n9py",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-19",
+        "sha256": "0cdceae60574f1feb1030ad7cf17045f7819f3168aa5a649e32ebaf47f955eca"
+      },
+      {
+        "datasetId": "y2hd-n93e",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-19",
+        "sha256": "d7e3dd6e7c52742c2232483eed4fee3015f165f44ebfab1fbeda8ac4c4e202bb"
+      }
+    ]
+  },
+  "operators": [
+    {
+      "operatorId": "ga-op-ccn-115368",
+      "name": "BHM Carrollton Opco LLC",
+      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115368"
+      ]
+    },
+    {
+      "operatorId": "ga-op-ccn-115381",
+      "name": "COTTAGES AT ROCKMART, THE",
+      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115381"
+      ]
+    },
+    {
+      "operatorId": "ga-op-ccn-115498",
+      "name": "HOSPITAL AUTHORITY OF BROOKS COUNTY, GEORGIA, THE",
+      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115498"
+      ]
+    },
+    {
+      "operatorId": "ga-op-ccn-115579",
+      "name": "Healthcare at College Park, LLC",
+      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115579"
+      ]
+    },
+    {
+      "operatorId": "ga-op-ccn-115580",
+      "name": "Sandtown Health and Rehabilitation",
+      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115580"
+      ]
+    },
+    {
+      "operatorId": "ga-op-ccn-115682",
+      "name": "PARKSIDE AT BUDD TERRACE OPERATING COMPANY LLC",
+      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115682"
+      ]
+    },
+    {
+      "operatorId": "ga-op-ccn-115690",
+      "name": "D SCOTT HUDGENS CENTER FOR SKILLED NURSING, THE",
+      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115690"
+      ]
+    },
+    {
+      "operatorId": "ga-op-ccn-115727",
+      "name": "Jeffersonville Care Center LLC",
+      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115727"
+      ]
+    },
+    {
+      "operatorId": "ga-op-ccn-11A186",
+      "name": "Georgia Regional Atlanta LTC",
+      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "11A186"
+      ]
+    },
+    {
+      "operatorId": "ga-op-ccn-11A200",
+      "name": "GRACEWOOD NSG FACILITY(UNIT 9)",
+      "nameSource": "4pq5-n9py.provider_name (legal_business_name not available)",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "11A200"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-172",
+      "name": "CROSSROADS MEDICAL MANAGEMENT",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "172",
+      "cmsChainFacilitiesNationwide": 6,
+      "georgiaFacilityCount": 6,
+      "facilityCcns": [
+        "115430",
+        "115520",
+        "115554",
+        "115593",
+        "115676",
+        "115729"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-176",
+      "name": "CYPRESS SKILLED NURSING",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "176",
+      "cmsChainFacilitiesNationwide": 5,
+      "georgiaFacilityCount": 5,
+      "facilityCcns": [
+        "115423",
+        "115431",
+        "115436",
+        "115467",
+        "115532"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-180",
+      "name": "DELMAR GARDENS",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "180",
+      "cmsChainFacilitiesNationwide": 12,
+      "georgiaFacilityCount": 2,
+      "facilityCcns": [
+        "115330",
+        "115350"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-202",
+      "name": "EMPIRE CARE CENTERS",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "202",
+      "cmsChainFacilitiesNationwide": 21,
+      "georgiaFacilityCount": 21,
+      "facilityCcns": [
+        "115110",
+        "115144",
+        "115145",
+        "115206",
+        "115246",
+        "115273",
+        "115283",
+        "115360",
+        "115421",
+        "115422",
+        "115463",
+        "115469",
+        "115504",
+        "115508",
+        "115536",
+        "115538",
+        "115545",
+        "115563",
+        "115569",
+        "115571",
+        "115606"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-205",
+      "name": "CMS chain 205 [withheld: may name an individual]",
+      "nameSource": "4pq5-n9py.chain_id (chain_name withheld)",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "205",
+      "cmsChainFacilitiesNationwide": 22,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115040"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-246",
+      "name": "HARBORVIEW HEALTH SYSTEMS",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "246",
+      "cmsChainFacilitiesNationwide": 22,
+      "georgiaFacilityCount": 12,
+      "facilityCcns": [
+        "115012",
+        "115025",
+        "115044",
+        "115270",
+        "115291",
+        "115322",
+        "115361",
+        "115363",
+        "115412",
+        "115501",
+        "115550",
+        "115660"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-311",
+      "name": "LIFE CARE CENTERS OF AMERICA",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "311",
+      "cmsChainFacilitiesNationwide": 194,
+      "georgiaFacilityCount": 3,
+      "facilityCcns": [
+        "115347",
+        "115570",
+        "115659"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-312",
+      "name": "LIFE CARE SERVICES",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "312",
+      "cmsChainFacilitiesNationwide": 43,
+      "georgiaFacilityCount": 2,
+      "facilityCcns": [
+        "115524",
+        "115715"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-329",
+      "name": "MAGNOLIA MANOR SENIOR LIVING",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "329",
+      "cmsChainFacilitiesNationwide": 5,
+      "georgiaFacilityCount": 5,
+      "facilityCcns": [
+        "115004",
+        "115045",
+        "115124",
+        "115553",
+        "115599"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-364",
+      "name": "NATIONAL HEALTHCARE CORPORATION",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "364",
+      "cmsChainFacilitiesNationwide": 71,
+      "georgiaFacilityCount": 2,
+      "facilityCcns": [
+        "115104",
+        "115492"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-434",
+      "name": "PRUITTHEALTH",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "434",
+      "cmsChainFacilitiesNationwide": 96,
+      "georgiaFacilityCount": 63,
+      "facilityCcns": [
+        "115147",
+        "115276",
+        "115288",
+        "115304",
+        "115313",
+        "115314",
+        "115325",
+        "115326",
+        "115334",
+        "115336",
+        "115339",
+        "115345",
+        "115373",
+        "115377",
+        "115379",
+        "115384",
+        "115385",
+        "115391",
+        "115393",
+        "115394",
+        "115401",
+        "115409",
+        "115410",
+        "115418",
+        "115419",
+        "115452",
+        "115455",
+        "115468",
+        "115491",
+        "115505",
+        "115506",
+        "115509",
+        "115512",
+        "115516",
+        "115529",
+        "115531",
+        "115533",
+        "115547",
+        "115562",
+        "115573",
+        "115588",
+        "115600",
+        "115608",
+        "115616",
+        "115617",
+        "115628",
+        "115629",
+        "115631",
+        "115647",
+        "115657",
+        "115658",
+        "115668",
+        "115672",
+        "115673",
+        "115677",
+        "115681",
+        "115700",
+        "115705",
+        "115719",
+        "115777",
+        "115473",
+        "115552",
+        "115656"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-470",
+      "name": "SENIOR LIVING COMMUNITIES",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "470",
+      "cmsChainFacilitiesNationwide": 9,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115718"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-482",
+      "name": "SOVEREIGN HEALTHCARE HOLDINGS",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "482",
+      "cmsChainFacilitiesNationwide": 43,
+      "georgiaFacilityCount": 2,
+      "facilityCcns": [
+        "115132",
+        "115612"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-559",
+      "name": "WELLINGTON HEALTH CARE SERVICES",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "559",
+      "cmsChainFacilitiesNationwide": 14,
+      "georgiaFacilityCount": 10,
+      "facilityCcns": [
+        "115020",
+        "115129",
+        "115362",
+        "115375",
+        "115555",
+        "115585",
+        "115643",
+        "115670",
+        "115674",
+        "115771"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-685",
+      "name": "CMS chain 685 [withheld: may name an individual]",
+      "nameSource": "4pq5-n9py.chain_id (chain_name withheld)",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "685",
+      "cmsChainFacilitiesNationwide": 16,
+      "georgiaFacilityCount": 3,
+      "facilityCcns": [
+        "115258",
+        "115277",
+        "115709"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-686",
+      "name": "ELEVATION HEALTHCARE",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "686",
+      "cmsChainFacilitiesNationwide": 6,
+      "georgiaFacilityCount": 4,
+      "facilityCcns": [
+        "115115",
+        "115120",
+        "115537",
+        "115539"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-69",
+      "name": "BEACON HEALTH MANAGEMENT",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "69",
+      "cmsChainFacilitiesNationwide": 11,
+      "georgiaFacilityCount": 10,
+      "facilityCcns": [
+        "115411",
+        "115479",
+        "115484",
+        "115541",
+        "115575",
+        "115577",
+        "115626",
+        "115630",
+        "115635",
+        "115679"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-710",
+      "name": "CMS chain 710 [withheld: may name an individual]",
+      "nameSource": "4pq5-n9py.chain_id (chain_name withheld)",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "710",
+      "cmsChainFacilitiesNationwide": 14,
+      "georgiaFacilityCount": 2,
+      "facilityCcns": [
+        "115343",
+        "115544"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-728",
+      "name": "RELIABLE HEALTH CARE MANAGEMENT",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "728",
+      "cmsChainFacilitiesNationwide": 6,
+      "georgiaFacilityCount": 6,
+      "facilityCcns": [
+        "115287",
+        "115319",
+        "115558",
+        "115559",
+        "115560",
+        "115717"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-766",
+      "name": "JOURNEY HEALTHCARE",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "766",
+      "cmsChainFacilitiesNationwide": 33,
+      "georgiaFacilityCount": 27,
+      "facilityCcns": [
+        "115280",
+        "115298",
+        "115321",
+        "115324",
+        "115327",
+        "115340",
+        "115354",
+        "115397",
+        "115404",
+        "115424",
+        "115427",
+        "115482",
+        "115495",
+        "115502",
+        "115503",
+        "115523",
+        "115540",
+        "115543",
+        "115561",
+        "115565",
+        "115651",
+        "115696",
+        "115443",
+        "115622",
+        "115633",
+        "115730",
+        "115733"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-769",
+      "name": "CMS chain 769 [withheld: may name an individual]",
+      "nameSource": "4pq5-n9py.chain_id (chain_name withheld)",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "769",
+      "cmsChainFacilitiesNationwide": 7,
+      "georgiaFacilityCount": 5,
+      "facilityCcns": [
+        "115005",
+        "115515",
+        "115551",
+        "115596",
+        "115683"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-771",
+      "name": "CMS chain 771 [withheld: may name an individual]",
+      "nameSource": "4pq5-n9py.chain_id (chain_name withheld)",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "771",
+      "cmsChainFacilitiesNationwide": 2,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115535"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-834",
+      "name": "ETHICA HEALTH",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "834",
+      "cmsChainFacilitiesNationwide": 50,
+      "georgiaFacilityCount": 50,
+      "facilityCcns": [
+        "115090",
+        "115138",
+        "115272",
+        "115279",
+        "115289",
+        "115294",
+        "115295",
+        "115346",
+        "115353",
+        "115358",
+        "115364",
+        "115369",
+        "115382",
+        "115387",
+        "115395",
+        "115428",
+        "115435",
+        "115447",
+        "115460",
+        "115461",
+        "115466",
+        "115474",
+        "115477",
+        "115481",
+        "115483",
+        "115488",
+        "115507",
+        "115522",
+        "115528",
+        "115576",
+        "115578",
+        "115582",
+        "115584",
+        "115595",
+        "115597",
+        "115598",
+        "115605",
+        "115611",
+        "115614",
+        "115618",
+        "115625",
+        "115642",
+        "115652",
+        "115671",
+        "115714",
+        "115722",
+        "115724",
+        "115725",
+        "115726",
+        "115728"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-84",
+      "name": "BLUE RIDGE HEALTHCARE",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "84",
+      "cmsChainFacilitiesNationwide": 3,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115587"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-848",
+      "name": "BRIGHTON HEALTHCARE",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "848",
+      "cmsChainFacilitiesNationwide": 8,
+      "georgiaFacilityCount": 4,
+      "facilityCcns": [
+        "115604",
+        "115607",
+        "115654",
+        "115703"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-856",
+      "name": "REGIONAL HEALTH PROPERTIES",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "856",
+      "cmsChainFacilitiesNationwide": 5,
+      "georgiaFacilityCount": 2,
+      "facilityCcns": [
+        "115376",
+        "115619"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-9",
+      "name": "ACTS RETIREMENT-LIFE COMMUNITIES",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "9",
+      "cmsChainFacilitiesNationwide": 27,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115687"
+      ]
+    },
+    {
+      "operatorId": "ga-op-chain-95",
+      "name": "C. ROSS MANAGEMENT",
+      "nameSource": "4pq5-n9py.chain_name",
+      "resolutionRule": "chain_id",
+      "status": "resolved",
+      "cmsChainId": "95",
+      "cmsChainFacilitiesNationwide": 5,
+      "georgiaFacilityCount": 5,
+      "facilityCcns": [
+        "115356",
+        "115688",
+        "115689",
+        "115692",
+        "115706"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-233-carrollton-opco-llc",
+      "name": "233 CARROLLTON OPCO LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115592"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-4angels-of-byromville-healthcare-center",
+      "name": "4ANGELS OF BYROMVILLE HEALTHCARE CENTER",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115778"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-a-g-rhodes-home-cobb-inc",
+      "name": "A G RHODES HOME COBB INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115521"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
+      "name": "A G RHODES HOME INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115275"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-a-g-rhodes-home-inc-at-wesley-woods",
+      "name": "A. G. RHODES HOME INC. AT WESLEY WOODS",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115002"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-atlanta-association-for-convalescent-aged-persons-inc",
+      "name": "ATLANTA ASSOCIATION FOR CONVALESCENT AGED PERSONS, INC.",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115542"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-az-operator-llc",
+      "name": "AZ OPERATOR LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115471"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-azalealand-management-inc",
+      "name": "AZALEALAND MANAGEMENT INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115534"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-bacon-county-health-services-inc",
+      "name": "BACON COUNTY HEALTH SERVICES, INC.",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115513"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-baptist-village-inc",
+      "name": "BAPTIST VILLAGE, INC.",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115615"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-candler-hospital-incorporated",
+      "name": "CANDLER HOSPITAL INCORPORATED",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115610"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-carrollton-manor-inc",
+      "name": "CARROLLTON MANOR INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115638"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-central-georgia-senior-health-inc",
+      "name": "CENTRAL GEORGIA SENIOR HEALTH, INC.",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115680"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-chatuge-regional-hospital-inc",
+      "name": "CHATUGE REGIONAL HOSPITAL INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115701"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-church-home-rehabilitation-and-healthcare-llc",
+      "name": "CHURCH HOME REHABILITATION AND HEALTHCARE, LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115708"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-colquitt-regional-medical-center",
+      "name": "COLQUITT REGIONAL MEDICAL CENTER",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115667"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-columbus-center-llc",
+      "name": "COLUMBUS CENTER LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115566"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-columbus-regional-senior-living-inc",
+      "name": "COLUMBUS REGIONAL SENIOR LIVING INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115716"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-cook-management-services-inc",
+      "name": "COOK MANAGEMENT SERVICES INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115621"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-crisp-regional-hospital-inc",
+      "name": "CRISP REGIONAL HOSPITAL INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 2,
+      "facilityCcns": [
+        "115429",
+        "115568"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-donalsonville-hospital-inc",
+      "name": "DONALSONVILLE HOSPITAL INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115712"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-effingham-hospital-inc",
+      "name": "EFFINGHAM HOSPITAL INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115106"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-emanuel-county-hospital-authority",
+      "name": "EMANUEL COUNTY HOSPITAL AUTHORITY",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115704"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-fountainview-center-lp",
+      "name": "FOUNTAINVIEW CENTER LP",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115697"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-gibson-health-opco-llc",
+      "name": "GIBSON HEALTH OPCO LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115613"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-grady-general-hospital",
+      "name": "GRADY GENERAL HOSPITAL",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115776"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-grady-memorial-hospital-corporation",
+      "name": "GRADY MEMORIAL HOSPITAL CORPORATION",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115525"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-harborview-jesup-llc",
+      "name": "HARBORVIEW JESUP LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115414"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-harborview-thomaston-llc",
+      "name": "HARBORVIEW THOMASTON LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115329"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-harborview-waycross-llc",
+      "name": "HARBORVIEW WAYCROSS LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115265"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-hart-care-center-inc",
+      "name": "HART CARE CENTER INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115449"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-heardmont-health-properties-llc",
+      "name": "HEARDMONT HEALTH PROPERTIES LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115685"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-hill-haven-opco-llc",
+      "name": "HILL HAVEN OPCO, LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115710"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-hltc-inc",
+      "name": "HLTC INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 3,
+      "facilityCcns": [
+        "115341",
+        "115403",
+        "115663"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
+      "name": "HOSPITAL AUTHORITY OF COLUMBUS GA",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 3,
+      "facilityCcns": [
+        "115146",
+        "115351",
+        "115478"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-hospital-authority-of-liberty-county",
+      "name": "HOSPITAL AUTHORITY OF LIBERTY COUNTY",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115665"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-hospital-authority-of-the-city-of-bainbridge-and-decatur-county",
+      "name": "HOSPITAL AUTHORITY OF THE CITY OF BAINBRIDGE AND DECATUR COUNTY",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115711"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-hospital-authority-of-washington-county",
+      "name": "HOSPITAL AUTHORITY OF WASHINGTON COUNTY",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115702"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-irwin-county-hospital",
+      "name": "IRWIN COUNTY HOSPITAL",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115713"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-jasper-health-services-inc",
+      "name": "JASPER HEALTH SERVICES INC.",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115675"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-john-d-archbold-memorial-hospital-inc",
+      "name": "JOHN D ARCHBOLD MEMORIAL HOSPITAL INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115480"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-keysville-ltc-management-llc",
+      "name": "KEYSVILLE LTC MANAGEMENT LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115644"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-lavender-mountain-senior-living-inc",
+      "name": "LAVENDER MOUNTAIN SENIOR LIVING, INC.",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115774"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-lenbrook-square-foundation-inc",
+      "name": "LENBROOK SQUARE FOUNDATION, INC.",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115296"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-lifebrite-hospital-group-of-early-llc",
+      "name": "LIFEBRITE HOSPITAL GROUP OF EARLY LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115271"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-macon-operating-llc",
+      "name": "MACON OPERATING LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115636"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-meriwether-healthcare-llc",
+      "name": "MERIWETHER HEALTHCARE LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115603"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-mesun-health-services-inc",
+      "name": "MESUN HEALTH SERVICES INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115772"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-miona-geriatric-and-dementia-center-llc",
+      "name": "MIONA GERIATRIC & DEMENTIA CENTER, LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115338"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-mlh-salude-gwinnett-llc",
+      "name": "MLH SALUDE - GWINNETT LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115723"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-nancy-hart-operation-llc",
+      "name": "NANCY HART OPERATION LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115686"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-northeast-georgia-medical-center-habersham-llc",
+      "name": "NORTHEAST GEORGIA MEDICAL CENTER HABERSHAM LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115099"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-northeast-georgia-medical-center-inc",
+      "name": "NORTHEAST GEORGIA MEDICAL CENTER, INC.",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115487"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-oaks-nursing-home-inc",
+      "name": "OAKS NURSING HOME, INC.",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115627"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-park-springs-llc",
+      "name": "PARK SPRINGS LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115694"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-phg-mcrae-llc",
+      "name": "PHG MCRAE LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115494"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-phg-thomson-llc",
+      "name": "PHG THOMSON LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115365"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-phg-wrightsville-llc",
+      "name": "PHG WRIGHTSVILLE LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115406"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-pine-leaf-investment-inc",
+      "name": "PINE LEAF INVESTMENT INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 2,
+      "facilityCcns": [
+        "115396",
+        "115457"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-presbyterian-village-austell-inc",
+      "name": "PRESBYTERIAN VILLAGE, AUSTELL, INC.",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115490"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-pt-hills-place-terraces-llc",
+      "name": "PT HILLS PLACE TERRACES LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115773"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-resorts-at-pooler-inc",
+      "name": "RESORTS AT POOLER INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115293"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-riverview-health-and-rehabilitation-center-inc",
+      "name": "RIVERVIEW HEALTH AND REHABILITATION CENTER, INC.",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115641"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-rome-center-llc",
+      "name": "ROME CENTER LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115348"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-smith-medical-nursing-care-center-inc",
+      "name": "SMITH MEDICAL NURSING CARE CENTER, INC.",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115691"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-south-georgia-medical-center-inc",
+      "name": "SOUTH GEORGIA MEDICAL CENTER INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115707"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-southeast-georgia-health-system-inc",
+      "name": "SOUTHEAST GEORGIA HEALTH SYSTEM, INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "provisional",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 2,
+      "facilityCcns": [
+        "115684",
+        "115721"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-taylor-regional-hospital",
+      "name": "TAYLOR REGIONAL HOSPITAL",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115586"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-the-baxley-and-appling-county-hospital-authority",
+      "name": "THE BAXLEY AND APPLING COUNTY HOSPITAL AUTHORITY",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115262"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-the-hospital-authority-of-miller-county",
+      "name": "THE HOSPITAL AUTHORITY OF MILLER COUNTY",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 2,
+      "facilityCcns": [
+        "115039",
+        "115264"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-the-place-at-deans-bridge-llc",
+      "name": "THE PLACE AT DEANS BRIDGE, LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115290"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-the-place-at-martinez-llc",
+      "name": "THE PLACE AT MARTINEZ, LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115308"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-the-william-breman-jewish-home-inc",
+      "name": "THE WILLIAM BREMAN JEWISH HOME, INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115022"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-tift-regional-health-system-inc",
+      "name": "TIFT REGIONAL HEALTH SYSTEM INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115655"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-union-county-hospital-authority",
+      "name": "UNION COUNTY HOSPITAL AUTHORITY",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115695"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-westminster-presbyterian-homes-inc",
+      "name": "WESTMINSTER PRESBYTERIAN HOMES, INC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115775"
+      ]
+    },
+    {
+      "operatorId": "ga-op-lbn-westwood-pac-llc",
+      "name": "WESTWOOD PAC LLC",
+      "nameSource": "4pq5-n9py.legal_business_name",
+      "resolutionRule": "legal_business_name",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115601"
+      ]
+    },
+    {
+      "operatorId": "ga-op-org-atrium-health-inc",
+      "name": "ATRIUM HEALTH INC",
+      "nameSource": "y2hd-n93e.owner_name",
+      "resolutionRule": "operational_managerial_control",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115649"
+      ]
+    },
+    {
+      "operatorId": "ga-op-org-brightmoor-management-services-llc",
+      "name": "BRIGHTMOOR MANAGEMENT SERVICES LLC",
+      "nameSource": "y2hd-n93e.owner_name",
+      "resolutionRule": "operational_managerial_control",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115556"
+      ]
+    },
+    {
+      "operatorId": "ga-op-org-correctlife-inc",
+      "name": "CORRECTLIFE, INC.",
+      "nameSource": "y2hd-n93e.owner_name",
+      "resolutionRule": "operational_managerial_control",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115732"
+      ]
+    },
+    {
+      "operatorId": "ga-op-org-john-d-archbold-memorial-hospital-inc",
+      "name": "JOHN D ARCHBOLD MEMORIAL HOSPITAL INC",
+      "nameSource": "y2hd-n93e.owner_name",
+      "resolutionRule": "operational_managerial_control",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115266"
+      ]
+    },
+    {
+      "operatorId": "ga-op-org-prince-equities-llc",
+      "name": "PRINCE EQUITIES LLC",
+      "nameSource": "y2hd-n93e.owner_name",
+      "resolutionRule": "operational_managerial_control",
+      "status": "resolved",
+      "cmsChainId": null,
+      "cmsChainFacilitiesNationwide": null,
+      "georgiaFacilityCount": 1,
+      "facilityCcns": [
+        "115720"
+      ]
+    }
+  ]
+}

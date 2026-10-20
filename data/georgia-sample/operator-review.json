@@ -1,0 +1,480 @@
+{
+  "generatedFrom": {
+    "script": "scripts/georgia-sample/resolve-operators.ts",
+    "sources": [
+      {
+        "datasetId": "4pq5-n9py",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-19",
+        "sha256": "0cdceae60574f1feb1030ad7cf17045f7819f3168aa5a649e32ebaf47f955eca"
+      },
+      {
+        "datasetId": "y2hd-n93e",
+        "cmsModified": "2026-09-30",
+        "retrievedOn": "2026-10-19",
+        "sha256": "d7e3dd6e7c52742c2232483eed4fee3015f165f44ebfab1fbeda8ac4c4e202bb"
+      }
+    ]
+  },
+  "reviewCases": [
+    {
+      "caseId": "chain-name-769",
+      "ccn": null,
+      "facilityName": null,
+      "cmsChainId": "769",
+      "issue": "The CMS chain name may identify an individual, so it is withheld. Facilities stay grouped under the chain; the operator needs a publishable organization name from a public business source.",
+      "provisionalOperatorId": "ga-op-chain-769",
+      "candidates": []
+    },
+    {
+      "caseId": "chain-name-205",
+      "ccn": null,
+      "facilityName": null,
+      "cmsChainId": "205",
+      "issue": "The CMS chain name may identify an individual, so it is withheld. Facilities stay grouped under the chain; the operator needs a publishable organization name from a public business source.",
+      "provisionalOperatorId": "ga-op-chain-205",
+      "candidates": []
+    },
+    {
+      "caseId": "chain-name-685",
+      "ccn": null,
+      "facilityName": null,
+      "cmsChainId": "685",
+      "issue": "The CMS chain name may identify an individual, so it is withheld. Facilities stay grouped under the chain; the operator needs a publishable organization name from a public business source.",
+      "provisionalOperatorId": "ga-op-chain-685",
+      "candidates": []
+    },
+    {
+      "caseId": "chain-name-710",
+      "ccn": null,
+      "facilityName": null,
+      "cmsChainId": "710",
+      "issue": "The CMS chain name may identify an individual, so it is withheld. Facilities stay grouped under the chain; the operator needs a publishable organization name from a public business source.",
+      "provisionalOperatorId": "ga-op-chain-710",
+      "candidates": []
+    },
+    {
+      "caseId": "chain-name-771",
+      "ccn": null,
+      "facilityName": null,
+      "cmsChainId": "771",
+      "issue": "The CMS chain name may identify an individual, so it is withheld. Facilities stay grouped under the chain; the operator needs a publishable organization name from a public business source.",
+      "provisionalOperatorId": "ga-op-chain-771",
+      "candidates": []
+    },
+    {
+      "caseId": "facility-115002",
+      "ccn": "115002",
+      "facilityName": "A.G. RHODES HOME WESLEY WOODS",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-a-g-rhodes-home-inc-at-wesley-woods",
+      "candidates": [
+        {
+          "name": "UNIDINE CORPORATION",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115146",
+      "ccn": "115146",
+      "facilityName": "ORCHARD VIEW REHABILITATION & SKILLED NURSING CTR",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
+      "candidates": [
+        {
+          "name": "BROAD RIVER REHABILITATION",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115265",
+      "ccn": "115265",
+      "facilityName": "HARBORVIEW SATILLA",
+      "cmsChainId": null,
+      "issue": "More than one organization with operational or managerial control is corroborated.",
+      "provisionalOperatorId": "ga-op-lbn-harborview-waycross-llc",
+      "candidates": [
+        {
+          "name": "HARBORVIEW PIERCE COUNTY LLC",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": [
+            "shares the distinctive name word HARBORVIEW with the facility"
+          ]
+        },
+        {
+          "name": "HARBORVIEW SATILLA LLC",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": [
+            "shares the distinctive name word HARBORVIEW, SATILLA with the facility"
+          ]
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115275",
+      "ccn": "115275",
+      "facilityName": "A.G. RHODES HOME, INC, THE",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-a-g-rhodes-home-inc",
+      "candidates": [
+        {
+          "name": "AEGIS THERAPIES, INC.",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        },
+        {
+          "name": "UNIDINE CORPORATION",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        },
+        {
+          "name": "WASHBURNE DIALYSIS LLC",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115338",
+      "ccn": "115338",
+      "facilityName": "MIONA GERIATRIC & DEMENTIA CENTER",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-miona-geriatric-and-dementia-center-llc",
+      "candidates": [
+        {
+          "name": "WINDCORP MANAGEMENT SERVICES, LLC",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115348",
+      "ccn": "115348",
+      "facilityName": "Etowah Landing",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-rome-center-llc",
+      "candidates": [
+        {
+          "name": "PYRAMID HEALTHCARE MANAGEMENT LLC",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115351",
+      "ccn": "115351",
+      "facilityName": "MUSCOGEE MANOR & REHABILITATION CTR",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
+      "candidates": [
+        {
+          "name": "BROAD RIVER REHABILITATION",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115365",
+      "ccn": "115365",
+      "facilityName": "THOMSON HEALTH AND REHABILITATION",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-phg-thomson-llc",
+      "candidates": [
+        {
+          "name": "PEACH HEALTH GROUP LLC",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115368",
+      "ccn": "115368",
+      "facilityName": "BHM Carrollton Opco LLC",
+      "cmsChainId": null,
+      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
+      "provisionalOperatorId": "ga-op-ccn-115368",
+      "candidates": []
+    },
+    {
+      "caseId": "facility-115381",
+      "ccn": "115381",
+      "facilityName": "COTTAGES AT ROCKMART, THE",
+      "cmsChainId": null,
+      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
+      "provisionalOperatorId": "ga-op-ccn-115381",
+      "candidates": []
+    },
+    {
+      "caseId": "facility-115406",
+      "ccn": "115406",
+      "facilityName": "Wrightsville Manor Health and Rehab",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-phg-wrightsville-llc",
+      "candidates": [
+        {
+          "name": "PEACH HEALTH GROUP LLC",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115478",
+      "ccn": "115478",
+      "facilityName": "RIDGECREST REHAB & SKILLED NURSING CENTER",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
+      "candidates": [
+        {
+          "name": "BROAD RIVER REHABILITATION",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115494",
+      "ccn": "115494",
+      "facilityName": "MCRAE MANOR NURSING HOME",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-phg-mcrae-llc",
+      "candidates": [
+        {
+          "name": "PEACH HEALTH GROUP LLC",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115498",
+      "ccn": "115498",
+      "facilityName": "HOSPITAL AUTHORITY OF BROOKS COUNTY, GEORGIA, THE",
+      "cmsChainId": null,
+      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
+      "provisionalOperatorId": "ga-op-ccn-115498",
+      "candidates": []
+    },
+    {
+      "caseId": "facility-115521",
+      "ccn": "115521",
+      "facilityName": "A.G. RHODES HOME, INC - COBB",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-a-g-rhodes-home-cobb-inc",
+      "candidates": [
+        {
+          "name": "AEGIS THERAPIES, INC.",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        },
+        {
+          "name": "[withheld: may name an individual]",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        },
+        {
+          "name": "UNIDINE CORPORATION",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115566",
+      "ccn": "115566",
+      "facilityName": "RIVER TOWNE CENTER",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-columbus-center-llc",
+      "candidates": [
+        {
+          "name": "PYRAMID HEALTHCARE MANAGEMENT LLC",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115579",
+      "ccn": "115579",
+      "facilityName": "Healthcare at College Park, LLC",
+      "cmsChainId": null,
+      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
+      "provisionalOperatorId": "ga-op-ccn-115579",
+      "candidates": []
+    },
+    {
+      "caseId": "facility-115580",
+      "ccn": "115580",
+      "facilityName": "Sandtown Health and Rehabilitation",
+      "cmsChainId": null,
+      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
+      "provisionalOperatorId": "ga-op-ccn-115580",
+      "candidates": []
+    },
+    {
+      "caseId": "facility-115680",
+      "ccn": "115680",
+      "facilityName": "CARLYLE PLACE",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-central-georgia-senior-health-inc",
+      "candidates": [
+        {
+          "name": "ADVOCATE HEALTH INC",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        },
+        {
+          "name": "ASSIST HEALTHCARE SERVICES, INC",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        },
+        {
+          "name": "ATRIUM HEALTH INC",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        },
+        {
+          "name": "BROAD RIVER REHABILITATION",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        },
+        {
+          "name": "GAYCO, INC",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        },
+        {
+          "name": "PRO DIVERSITY PARTNERS, LLC",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115682",
+      "ccn": "115682",
+      "facilityName": "PARKSIDE AT BUDD TERRACE OPERATING COMPANY LLC",
+      "cmsChainId": null,
+      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
+      "provisionalOperatorId": "ga-op-ccn-115682",
+      "candidates": []
+    },
+    {
+      "caseId": "facility-115684",
+      "ccn": "115684",
+      "facilityName": "SENIOR CARE CENTER - ST MARYS",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-southeast-georgia-health-system-inc",
+      "candidates": [
+        {
+          "name": "PRUITTHEALTH ST MARY'S",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115690",
+      "ccn": "115690",
+      "facilityName": "D SCOTT HUDGENS CENTER FOR SKILLED NURSING, THE",
+      "cmsChainId": null,
+      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
+      "provisionalOperatorId": "ga-op-ccn-115690",
+      "candidates": []
+    },
+    {
+      "caseId": "facility-115694",
+      "ccn": "115694",
+      "facilityName": "Pebblebrook Health Center at Park Springs",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-park-springs-llc",
+      "candidates": [
+        {
+          "name": "ISAKSON LIVING, INC.",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115721",
+      "ccn": "115721",
+      "facilityName": "SENIOR CARE CENTER - BRUNSWICK",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-southeast-georgia-health-system-inc",
+      "candidates": [
+        {
+          "name": "PRUITTHEALTH BRUNSWICK",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-115727",
+      "ccn": "115727",
+      "facilityName": "Jeffersonville Care Center LLC",
+      "cmsChainId": null,
+      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
+      "provisionalOperatorId": "ga-op-ccn-115727",
+      "candidates": []
+    },
+    {
+      "caseId": "facility-115773",
+      "ccn": "115773",
+      "facilityName": "TERRACES AT PEACHTREE HILLS PLACE, THE",
+      "cmsChainId": null,
+      "issue": "Organizations with operational or managerial control are not corroborated as the operator; they may be contractors such as therapy, dining, or lending firms.",
+      "provisionalOperatorId": "ga-op-lbn-pt-hills-place-terraces-llc",
+      "candidates": [
+        {
+          "name": "ISAKSON LIVING, INC.",
+          "sourceField": "y2hd-n93e.owner_name (OPERATIONAL/MANAGERIAL CONTROL, Organization)",
+          "corroboration": []
+        }
+      ]
+    },
+    {
+      "caseId": "facility-11A186",
+      "ccn": "11A186",
+      "facilityName": "Georgia Regional Atlanta LTC",
+      "cmsChainId": null,
+      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
+      "provisionalOperatorId": "ga-op-ccn-11A186",
+      "candidates": []
+    },
+    {
+      "caseId": "facility-11A200",
+      "ccn": "11A200",
+      "facilityName": "GRACEWOOD NSG FACILITY(UNIT 9)",
+      "cmsChainId": null,
+      "issue": "CMS lists no legal business name and no ownership data. The facility stands alone as its own operator until a public source names its operator.",
+      "provisionalOperatorId": "ga-op-ccn-11A200",
+      "candidates": []
+    }
+  ]
+}
