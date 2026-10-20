@@ -190,6 +190,24 @@ No weights change. Stage 6 fills components that `tiers.json` already holds at z
 
 Each awarded point carries its input (a slot, a band, or an outcome, never a person), its source (Clay, with run date and role map version), and its freshness, as the contract requires. Rescoring with these inputs adds up to 35 points to an account's current maximum of 65, so bands should be re-inspected after Stage 6 rather than read as moving by themselves.
 
+## Runbook: when Clay is connected
+
+Start here if Clay is connected and nothing seems to work. These steps are in order, and each one has a check.
+
+1. Run `npm run sample:georgia:clay-export`. Check: it reports 20 operator rows, 124 band A site rows, and 96 band B and C site rows, written to `data/georgia-sample/private/clay/input/`.
+2. In Clay, import `operators.csv`, `sites-band-a.csv`, and `sites-band-bc.csv` as three tables. Check: no table is over 200 rows, the free plan's limit.
+3. Add the enrichment columns described under "Clay table design", using the title patterns in `data/georgia-sample/clay-role-map.json`. Before running a whole table, run one row and read the credit cost Clay shows. Check: it is near the assumed 1.5 credits per person. If it is far off, redo the credit math before spending.
+4. Add the summary formula columns, named exactly `<slot>__searched`, `<slot>__found`, `<slot>__persona_verified`, `<slot>__employment_verified`, `<slot>__tenure_band`, and `<slot>__channel`, as described under "Personal data boundary". The slot names are `operator_regional_facilities` and `operator_operations_vp` in the operator table, and `site_executive_director` and `site_maintenance_director` in the site tables. Two underscores separate the slot from the field. Check: the names match exactly. A misspelled name is the most likely reason the reducer fails.
+5. Run band A, then B, then C, following the stopping rule. Ask before any purchase.
+6. Export each table as CSV into `data/georgia-sample/private/clay/export/`, keeping the file names `operators.csv`, `sites-band-a.csv`, and `sites-band-bc.csv`. Write `run.json` beside them with `clayRunDates`, `freeDataCreditsUsed`, `paidDataCreditsUsed`, `actionsUsed`, `paidUsd`, and `stoppedBecause`.
+7. Run `npm run sample:georgia:clay-reduce`. Check: it prints the found-a-person rate per role and writes `data/georgia-sample/people-coverage.json`. Commit only that file.
+
+If the reducer fails, its message says why:
+
+- "Missing ...": the input or export folder, or `run.json`, is not where step 1 or step 6 puts it.
+- "missing reduction columns": a summary column from step 4 is misnamed or missing in an export. The message lists each expected name.
+- A schema error or "personal-data pattern": a value outside the allowed codes, or something shaped like an email, link, or phone number, reached the output. Fix the summary formula in Clay; never loosen the schema or the scan to get past it.
+
 ## Open questions for the user
 
 1. Can a free-plan account buy a one-time top-up? Clay's docs do not say. Resolved 2026-10-20: the run pays for speed, so this only decides between top-ups and a Launch month.

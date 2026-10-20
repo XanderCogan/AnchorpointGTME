@@ -176,6 +176,14 @@ export const reduce = (input: { operatorsIn: Row[]; sitesIn: Row[]; operatorsOut
   };
 };
 
+// Clay column names are typed by hand, so a misnamed reduction column would silently read as
+// "not searched". Every exported table must carry each slot's searched and found columns.
+export const missingReductionColumns = (rows: Row[], slots: readonly string[]) => {
+  if (rows.length === 0) return [];
+  const columns = new Set(Object.keys(rows[0]));
+  return slots.flatMap((slot) => [`${slot}__searched`, `${slot}__found`]).filter((column) => !columns.has(column));
+};
+
 // Found-a-person rate per role, for the stop report.
 export const coverageSummary = (output: ReturnType<typeof reduce>) => {
   const rows = [...output.operators, ...output.sites] as { slots: Record<string, SlotResult> }[];
@@ -199,6 +207,18 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     const files = (await readdir(dir)).filter((file) => file.startsWith(prefix) && file.endsWith(".csv"));
     return (await Promise.all(files.map(async (file) => parseCsv(await readFile(resolve(dir, file), "utf8"))))).flat();
   };
+  const setupProblem = (message: string) => {
+    console.error(`${message}\nSee "Runbook: when Clay is connected" in docs/research/georgia-clay-people-pass.md.`);
+    process.exit(1);
+  };
+  for (const [dir, file] of [[inputDir, "operators.csv"], [exportDir, "run.json"]]) {
+    await readFile(resolve(dir, file)).catch(() => setupProblem(`Missing ${resolve(dir, file)}.`));
+  }
+  const missing = [
+    ...missingReductionColumns(await readCsv(exportDir, "operators"), OPERATOR_SLOTS).map((column) => `operators: ${column}`),
+    ...missingReductionColumns(await readCsv(exportDir, "sites"), SITE_SLOTS).map((column) => `sites: ${column}`),
+  ];
+  if (missing.length) setupProblem(`The Clay export is missing reduction columns:\n${missing.join("\n")}`);
   const { operators: tiers } = JSON.parse(await readFile(resolve(sampleRoot, "tiers.json"), "utf8")) as { operators: { operatorId: string; eligible: boolean; band: string | null }[] };
   const output = reduce({
     operatorsIn: await readCsv(inputDir, "operators"),
