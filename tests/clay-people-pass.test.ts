@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import test from "node:test";
-import { parseCsv, personalDataLeaks, reduce, roleChange, validate } from "../scripts/georgia-sample/clay-reduce.ts";
+import { missingReductionColumns, OPERATOR_SLOTS, parseCsv, personalDataLeaks, reduce, roleChange, validate } from "../scripts/georgia-sample/clay-reduce.ts";
 
 const schema = JSON.parse(await readFile(resolve(import.meta.dirname, "..", "data", "georgia-sample", "people-coverage.schema.json"), "utf8"));
 
@@ -72,4 +72,14 @@ test("the leak scan and schema reject personal data", () => {
   const tampered = structuredClone(output) as Record<string, any>;
   tampered.operators[0].personName = "Pat Example";
   assert.ok(validate(schema, tampered).some((error) => error.includes("personName is not allowed")));
+});
+
+test("misnamed Clay reduction columns are reported, not read as unsearched", () => {
+  assert.deepEqual(missingReductionColumns(operatorsOut, OPERATOR_SLOTS), []);
+  const misnamed = parseCsv("operator_id,regional_facilities_searched,operator_regional_facilities__found\nga-op-chain-1,true,1\n");
+  assert.deepEqual(missingReductionColumns(misnamed, OPERATOR_SLOTS), [
+    "operator_regional_facilities__searched",
+    "operator_operations_vp__searched",
+    "operator_operations_vp__found",
+  ]);
 });

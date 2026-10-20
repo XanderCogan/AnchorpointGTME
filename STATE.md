@@ -33,6 +33,8 @@ Do not derive ICP hypotheses, tune score weights, or size the market from `inspe
 
 Timeline, set by the user on 2026-10-20: the project is finished in one day. Prefer paying for speed over waiting for free-tier refreshes, and confirm each purchase with its price first.
 
+When Clay is connected, follow "Runbook: when Clay is connected" in `docs/research/georgia-clay-people-pass.md`. The reducer needs summary columns named exactly as listed there.
+
 Flagged for later review: the two provisional senior-living personas in `docs/contracts/operating-contract.md`, once Stage 6 shows which job titles exist.
 
 1. Merge any later Milestone 3 connector commits from `claude/salesforce-readonly-connector-f99600`; its committed work up to `d3d3081` is in the trunk.
