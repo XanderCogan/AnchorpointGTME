@@ -36,7 +36,7 @@ A single-site operator has no regional layer, so its operator row is marked `sit
 
 Both tables are built from committed business facts only. `npm run sample:georgia:clay-export` (`scripts/georgia-sample/clay-export.ts`) writes the input CSVs into the gitignored `data/georgia-sample/private/clay/input/` folder for upload: `operators.csv` with 20 rows, `sites-band-a.csv` with 124, and `sites-band-bc.csv` with 96.
 
-### Operator table (20 multi-site operator rows)
+### Operator table (25 multi-site operator rows)
 
 Input columns:
 
@@ -52,7 +52,7 @@ Enrichment columns, in order:
 3. Enrich each found person's profile for current employer, current title, and current-role start date.
 4. Formula columns that reduce each slot to the coverage fields listed under the personal data boundary.
 
-### Site tables (124 band A rows, then 96 band B and C rows, each under the free plan's 200-row limit)
+### Site tables (126 band A rows, then 101 band B and C rows, each under the free plan's 200-row limit)
 
 Input columns:
 
@@ -120,7 +120,7 @@ The whole pass at full depth, worst case:
 - Band C: 4 multi-site operator rows (about 24) and 47 site rows (about 141), about 165 credits.
 - Channel check: about 10 credits.
 
-That is about 790 credits in the worst case, or about 400 at a 50 percent find rate with misses free. Actions are not the constraint.
+That is about 790 credits in the worst case, computed on the earlier 20, 124, and 96 row counts; the current export is about 5 percent larger, so allow about 840, or about 400 at a 50 percent find rate with misses free. Actions are not the constraint.
 
 The run in order:
 
@@ -194,7 +194,7 @@ Each awarded point carries its input (a slot, a band, or an outcome, never a per
 
 Start here if Clay is connected and nothing seems to work. These steps are in order, and each one has a check.
 
-1. Run `npm run sample:georgia:clay-export`. Check: it reports 20 operator rows, 124 band A site rows, and 96 band B and C site rows, written to `data/georgia-sample/private/clay/input/`.
+1. Run `npm run sample:georgia:clay-export`. Check: it reports 25 operator rows, 126 band A site rows, and 101 band B and C site rows (the 2026-10-21 export after the 105-operator rerun), written to `data/georgia-sample/private/clay/input/`.
 2. In Clay, import `operators.csv`, `sites-band-a.csv`, and `sites-band-bc.csv` as three tables. Check: no table is over 200 rows, the free plan's limit.
 3. Add the enrichment columns described under "Clay table design", using the title patterns in `data/georgia-sample/clay-role-map.json`. Before running a whole table, run one row and read the credit cost Clay shows. Check: it is near the assumed 1.5 credits per person. If it is far off, redo the credit math before spending.
 4. Add the summary formula columns, named exactly `<slot>__searched`, `<slot>__found`, `<slot>__persona_verified`, `<slot>__employment_verified`, `<slot>__tenure_band`, and `<slot>__channel`, as described under "Personal data boundary". The slot names are `operator_regional_facilities` and `operator_operations_vp` in the operator table, and `site_executive_director` and `site_maintenance_director` in the site tables. Two underscores separate the slot from the field. Check: the names match exactly. A misspelled name is the most likely reason the reducer fails.
