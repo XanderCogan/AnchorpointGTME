@@ -15,4 +15,4 @@
 - When an external platform, permission, connector, or tooling roadblock prevents the approved next step, stop after bounded verification and tell the user what is blocked and what they need to do. Do not keep retrying, improvise a workaround, or continue into adjacent work unless the user directs it.
 - Before handing work to a new chat, update `STATE.md` only when the current gate, blocker, or immediate next action changed. A fresh chat should be able to resume from `README.md`, `STATE.md`, and at most one routed document.
 - In chat replies, number each major point 1, 2, 3, restarting at 1 in every reply, so the user can refer to points by number. Do not add a separate index or recap list.
-- Keep chat replies short: give results, decisions the user owns, and blockers, never an inventory of what was changed.
+- Keep chat replies short: give results, decisions the user owns, and blockers, never an inventory of what was changed. Do not confirm that a step the user approved happened (a merge, push, commit, or resolved conflict) unless it failed or changed something they must know.
