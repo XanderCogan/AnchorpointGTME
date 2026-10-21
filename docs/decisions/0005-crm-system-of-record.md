@@ -1,6 +1,6 @@
 # Decision 0005: Salesforce as the CRM System of Record
 
-Status: approved on 2026-10-19. Items listed under "Open within this decision" remain open.
+Status: superseded on 2026-10-21 by decision 0011, which makes Attio the CRM system of record. Approved on 2026-10-19.
 
 Date: 2026-10-19  
 Decision owner: User  

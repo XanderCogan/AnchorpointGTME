@@ -50,7 +50,7 @@ Exit gate: a clean environment can load the fixtures, run the audit, and display
 
 ## Milestone 3: Read-only Salesforce connection
 
-Status: in progress. The read-only connector is built and verified against synthetic recorded responses; live acceptance waits for the Developer Edition org. See `../milestones/milestone-3-salesforce-connector-notes.md`.
+Status: retargeted to Attio on 2026-10-21 by decision 0011. The Salesforce connector described below is superseded reference work; this section is rewritten for Attio in a follow-up change.
 
 Connect a Salesforce Developer Edition org using read-only permissions. Import bounded Account, Site, Contact, Lead, Opportunity, User, Task, and Campaign data, preserve source timestamps, and reconcile paginated data safely. The object mapping follows `docs/decisions/0005-crm-system-of-record.md`.
 

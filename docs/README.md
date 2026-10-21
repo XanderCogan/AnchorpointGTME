@@ -52,12 +52,13 @@ Milestone reports are evidence records. Update `STATE.md`, not an old report, wh
 - Approved user hierarchy for the application and Milestone 2 interface: [`decisions/0002-revops-primary-interface.md`](decisions/0002-revops-primary-interface.md)
 - Approved service catalog, branch footprint, licensing gates, and travel-time rules: [`decisions/0003-service-catalog-and-footprint.md`](decisions/0003-service-catalog-and-footprint.md)
 - Approved field-service source system and CRM reconciliation rules: [`decisions/0004-operating-source-system.md`](decisions/0004-operating-source-system.md)
-- Approved move to Salesforce as the CRM system of record after Milestone 2: [`decisions/0005-crm-system-of-record.md`](decisions/0005-crm-system-of-record.md)
+- Move to Salesforce as the CRM system of record after Milestone 2, superseded by 0011: [`decisions/0005-crm-system-of-record.md`](decisions/0005-crm-system-of-record.md)
 - Approved ordinary-company operating profile (its generated-dataset section cancelled by 0010): [`decisions/0006-ordinary-company-profile.md`](decisions/0006-ordinary-company-profile.md)
 - Approved first Georgia segment sample, sources, enrichment budget, and personal data boundary: [`decisions/0007-first-georgia-sample-and-enrichment.md`](decisions/0007-first-georgia-sample-and-enrichment.md)
 - Parallel tracks for Milestone 3 and the Georgia market sample; Track A, the historical fixture, cancelled on 2026-10-20: [`decisions/0008-parallel-data-tracks.md`](decisions/0008-parallel-data-tracks.md)
 - Approved account value model, kept separate from the priority score: [`decisions/0009-account-value-model.md`](decisions/0009-account-value-model.md)
 - Approved removal of all fictional CRM history, real-only org contents, ICP from public evidence, and segment sizing: [`decisions/0010-no-fictional-crm-history.md`](decisions/0010-no-fictional-crm-history.md)
+- Approved switch to Attio as the CRM system of record, superseding Salesforce: [`decisions/0011-attio-crm-system-of-record.md`](decisions/0011-attio-crm-system-of-record.md)
 
 Add a decision record when the user resolves a material ambiguity that changes product behavior, tests, contracts, or milestone scope. Do not create decision records for routine implementation details.
 
