@@ -72,6 +72,8 @@ const standardFields: Record<Exclude<SalesforceObjectKey, "site">, readonly stri
     "IsClosed",
     "IsWon",
     "CampaignId",
+    "LeadSource",
+    "NextStep",
     "OwnerId",
   ],
   user: ["Id", "Name", "Email", "IsActive"],
@@ -85,6 +87,8 @@ const standardFields: Record<Exclude<SalesforceObjectKey, "site">, readonly stri
     "Status",
     "ActivityDate",
     "TaskSubtype",
+    "CallDisposition",
+    "CompletedDateTime",
   ],
   campaign: ["Id", "Name", "Type", "Status", "IsActive", "StartDate", "EndDate", "ParentId", "OwnerId"],
 };

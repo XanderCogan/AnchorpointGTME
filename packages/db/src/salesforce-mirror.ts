@@ -6,6 +6,11 @@ import {
   type ObjectSyncResult,
   type SalesforceMirrorStore,
 } from "../../connectors/src/salesforce/mirror.ts";
+import type {
+  SalesforceRecordPayload,
+  SalesforceSnapshot,
+  SnapshotObjectKey,
+} from "../../core/src/salesforce-mapping.ts";
 import { pool, withTransaction } from "./client.ts";
 
 // PostgreSQL implementation of the Salesforce mirror. Each object batch applies in
@@ -141,4 +146,33 @@ export async function countSalesforceRecords(connectionId: string): Promise<Reco
     [connectionId],
   );
   return Object.fromEntries(result.rows.map((row) => [row.object_type, Number(row.count)]));
+}
+
+// Step 1 of the CRM analysis playbook: read one connection's mirror as a frozen
+// snapshot. The window spans the recorded sync runs; payloads are returned exactly
+// as stored. `objectKeys` maps mirrored API names (such as Site__c) to snapshot keys.
+export async function loadSalesforceSnapshot(
+  connectionId: string,
+  objectKeys: Readonly<Record<string, SnapshotObjectKey>>,
+  provenance: SalesforceSnapshot["provenance"],
+  label: string,
+): Promise<SalesforceSnapshot> {
+  const window = await pool().query<{ start: Date | null; end: Date | null }>(
+    `SELECT min(window_start) AS start, max(window_end) AS end FROM salesforce_sync_runs WHERE connection_id = $1`,
+    [connectionId],
+  );
+  const { start, end } = window.rows[0] ?? { start: null, end: null };
+  if (!start || !end) throw new Error(`No sync runs recorded for connection ${connectionId}.`);
+  const rows = await pool().query<{ object_type: string; payload: SalesforceRecordPayload }>(
+    `SELECT object_type, payload FROM salesforce_records
+     WHERE connection_id = $1 ORDER BY object_type, record_id`,
+    [connectionId],
+  );
+  const records: SalesforceSnapshot["records"] = {};
+  for (const row of rows.rows) {
+    const key = objectKeys[row.object_type];
+    if (!key) throw new Error(`Mirrored object ${row.object_type} has no snapshot key.`);
+    (records[key] ??= []).push(row.payload);
+  }
+  return { provenance, label, window: { start: start.toISOString(), end: end.toISOString() }, records };
 }

@@ -1,0 +1,23 @@
+[
+  { "ruleId": "CRM-ACTIVITY-001", "severity": "warning", "objectType": "activity", "affectedIds": ["00TMAP000000006AAA"] },
+  { "ruleId": "CRM-COMPANY-001", "severity": "critical", "objectType": "company", "affectedIds": ["001MAP000000002AAA", "001MAP000000003AAA"] },
+  { "ruleId": "CRM-COMPANY-002", "severity": "critical", "objectType": "company", "affectedIds": ["001MAP000000004AAA"] },
+  { "ruleId": "CRM-CONTACT-001", "severity": "critical", "objectType": "contact", "affectedIds": ["003MAP000000002AAA"] },
+  { "ruleId": "CRM-CONTACT-002", "severity": "critical", "objectType": "contact", "affectedIds": ["003MAP000000003AAA", "003MAP000000004AAA"] },
+  { "ruleId": "CRM-DATA-001", "severity": "critical", "objectType": "contact", "affectedIds": ["003MAP000000008AAA"] },
+  { "ruleId": "CRM-DATA-002", "severity": "critical", "objectType": "company", "affectedIds": ["001MAP000000007AAA"] },
+  { "ruleId": "CRM-DATA-003", "severity": "warning", "objectType": "company", "affectedIds": ["001MAP000000007AAA"] },
+  { "ruleId": "CRM-DATA-004", "severity": "warning", "objectType": "contact", "affectedIds": ["003MAP000000009AAA"] },
+  { "ruleId": "CRM-DATA-005", "severity": "critical", "objectType": "contact", "affectedIds": ["003MAP000000010AAA"] },
+  { "ruleId": "CRM-DATA-006", "severity": "critical", "objectType": "contact", "affectedIds": ["003MAP000000011AAA"] },
+  { "ruleId": "CRM-DEAL-001", "severity": "critical", "objectType": "deal", "affectedIds": ["006MAP000000003AAA"] },
+  { "ruleId": "CRM-DEAL-002", "severity": "warning", "objectType": "deal", "affectedIds": ["006MAP000000005AAA"] },
+  { "ruleId": "CRM-DEAL-003", "severity": "warning", "objectType": "deal", "affectedIds": ["006MAP000000006AAA"] },
+  { "ruleId": "CRM-LIFECYCLE-001", "severity": "warning", "objectType": "contact", "affectedIds": ["003MAP000000012AAA"] },
+  { "ruleId": "CRM-OWNER-001", "severity": "critical", "objectType": "deal", "affectedIds": ["006MAP000000004AAA"] },
+  { "ruleId": "CRM-OWNER-002", "severity": "critical", "objectType": "contact", "affectedIds": ["003MAP000000005AAA"] },
+  { "ruleId": "CRM-SUPPRESSION-001", "severity": "critical", "objectType": "company", "affectedIds": ["001MAP000000005AAA"] },
+  { "ruleId": "CRM-SUPPRESSION-002", "severity": "critical", "objectType": "company", "affectedIds": ["001MAP000000006AAA"] },
+  { "ruleId": "CRM-SUPPRESSION-003", "severity": "critical", "objectType": "contact", "affectedIds": ["003MAP000000006AAA"] },
+  { "ruleId": "CRM-SUPPRESSION-004", "severity": "critical", "objectType": "contact", "affectedIds": ["003MAP000000007AAA"] }
+]

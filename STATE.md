@@ -37,8 +37,8 @@ When Clay is connected, follow "Runbook: when Clay is connected" in `docs/resear
 Flagged for later review: the two provisional senior-living personas in `docs/contracts/operating-contract.md`, once Stage 6 shows which job titles exist. Review the site administrator's low-confidence 7 person-relevance points at the same time.
 
 1. Merge any later Milestone 3 connector commits from `claude/salesforce-readonly-connector-f99600`; its committed work up to `d3d3081` is in the trunk.
-2. Coarse segment sizing is done in `docs/research/georgia-segment-sizing.md` and recommends industrial as the second segment. Before any spend on it, confirm OSHA fire-protection citation coverage for Georgia and filter counts to the branch footprint.
-3. Build the CRM analysis pipeline from `docs/research/crm-icp-analysis-playbook.md` on labelled test fixtures, together with the Salesforce mapping for the audit rules. It needs no org, and it comes before ICP hypotheses are drafted.
+2. Done on 2026-10-21: coarse segment sizing in `docs/research/georgia-segment-sizing.md`. It is market context only. Senior living and skilled nursing is the one segment drilled into; no work or spend on a second segment is planned.
+3. Done on 2026-10-21: the CRM analysis pipeline and the Salesforce mapping for the audit rules, verified on labelled test fixtures only (`docs/research/crm-icp-analysis-playbook.md`). When the org exists, add the custom fields that document lists to the org and the connector field list.
 4. When the org exists, finish the Milestone 3 exit-gate checks in the milestone note.
 
 ## Active safety boundary

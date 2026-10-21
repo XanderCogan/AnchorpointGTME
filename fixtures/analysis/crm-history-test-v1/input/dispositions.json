@@ -1,0 +1,17 @@
+{
+  "synthetic": true,
+  "note": "Test dispositions standing in for a client's sign-off. Fictional approver; never a real approval.",
+  "dispositions": {
+    "CRM-COMPANY-001:company:001HST000000003AAA+001HST000000014AAA": {
+      "action": "merge",
+      "survivorId": "001HST000000003AAA",
+      "approvedBy": "fixture-client-revops",
+      "note": "Import duplicate of the same operator; count once."
+    },
+    "CRM-DEAL-002:deal:006HST000000026AAA": {
+      "action": "accept",
+      "approvedBy": "fixture-client-revops",
+      "note": "Open opportunity; it is outside the closed-outcome cuts and stays flagged for the rep."
+    }
+  }
+}

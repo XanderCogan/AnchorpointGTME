@@ -8,9 +8,15 @@ All records in this directory are fictional and use reserved `.example` domains.
 
 Do not edit an approved release in place. Create a new release when adding or changing scenarios so historical inspection evidence remains reproducible.
 
+`salesforce-mapping-v1` is its Salesforce-shaped counterpart: synthetic mirror records and a mapping configuration that reproduce every `inspection-v1` rule through the Salesforce mapping, with independently authored expected findings.
+
 Generated findings belong under `artifacts/` and are not source fixtures.
 
 
 ## Connector recordings
 
 `connectors/salesforce-recorded-v1` holds hand-written, synthetic Salesforce REST query responses for the Milestone 3 read-only connector tests. They follow the same rules: fictional, reserved domains, and never edited in place once tests depend on them.
+
+## Analysis fixtures
+
+`analysis/crm-history-test-v1` is a synthetic CRM history, billing, and market input for the CRM history analysis pipeline, with test dispositions standing in for a client's sign-off. Its outputs prove the pipeline runs. They are never findings, market evidence, or Anchorpoint history (decision 0010).

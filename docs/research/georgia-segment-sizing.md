@@ -65,9 +65,11 @@ These are labelled assumptions, not sourced facts, and are not yet versioned in 
 - Hospitals: assumed three to five times the nursing-home base per site, for larger buildings and more systems.
 - K-12 schools, multifamily communities, hotels, and industrial sites with 20-plus employees: assumed roughly $3,000 to $8,000 a year per site, mainly inspection and testing.
 
-## Recommendation for the second segment
+## Ranking of the other segments
 
-Recommend industrial (manufacturing and warehousing sites with 20-plus employees) as the second segment, with hospitals as a cheap follow-on to the senior-living work.
+Scope: senior living and skilled nursing is the one segment this project drills into. The ranking below is market context for a client conversation about where to go next. It does not plan any work or spend on a second segment.
+
+If a second segment were chosen, industrial (manufacturing and warehousing sites with 20-plus employees) would rank first, with hospitals as a cheap follow-on to the senior-living work.
 
 - It has the largest serviceable site count, around 3,000, several times the senior-living universe.
 - It is the only other segment with a likely dated, facility-level public need signal (OSHA citations), which mirrors what made CMS K-tags useful. This must be confirmed with one bounded check before any enrichment spend.
@@ -75,7 +77,7 @@ Recommend industrial (manufacturing and warehousing sites with 20-plus employees
 - Hospitals are the fallback: few sites, high value per site, likely the same Life Safety Code evidence, but concentrated in health systems that probably use national vendors, as the senior-living work found for large chains.
 - Education, multifamily, and hospitality are deferred: no public fire signal, and their buying entities (districts, management companies, brands) need parent resolution before sizing means much.
 
-## Open items
+## Open items if a second segment is ever chosen
 
 - Filter all counts to the decision 0003 branch footprint before comparing value.
 - Confirm OSHA fire-protection citation coverage for Georgia sites, and whether CMS publishes hospital K-tags.

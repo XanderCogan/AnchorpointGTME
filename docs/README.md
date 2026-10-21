@@ -30,7 +30,7 @@ Treat frozen contract versions as authoritative for implemented behavior. If a p
 
 - Portfolio purpose, Apero audience, why the Anchorpoint scenario was selected, and what the work sample must prove: [`research/apero-portfolio-context.md`](research/apero-portfolio-context.md)
 - Evidence standard, segment sizing, ICP method, Georgia-first source plan, parent-site resolution, and TAM acceptance criteria: [`research/tam-construction-plan.md`](research/tam-construction-plan.md)
-- Georgia coarse segment sizing: establishment counts by segment, public need signals, value-per-site assumptions, and the second-segment recommendation: [`research/georgia-segment-sizing.md`](research/georgia-segment-sizing.md)
+- Georgia coarse segment sizing: establishment counts by segment, public need signals, value-per-site assumptions, and a context-only ranking of the other segments: [`research/georgia-segment-sizing.md`](research/georgia-segment-sizing.md)
 - Method for analysing a client's real CRM history into ICP hypotheses, and what is built for it: [`research/crm-icp-analysis-playbook.md`](research/crm-icp-analysis-playbook.md)
 - Georgia nursing-home fire-safety citations from CMS: fixable-tag mapping, repeat offenders, correction-date pattern, and publication lag: [`research/cms-fire-citations-georgia.md`](research/cms-fire-citations-georgia.md)
 - Georgia sample Stage 6 Clay people pass: table design, role-to-persona map, credit math, stopping rule, and personal data boundary: [`research/georgia-clay-people-pass.md`](research/georgia-clay-people-pass.md)

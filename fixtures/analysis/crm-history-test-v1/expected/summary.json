@@ -1,0 +1,26 @@
+{
+  "note": "Control totals authored from the fixture's design, not from pipeline output. Test expectations only; never findings.",
+  "status": "complete",
+  "presentation": "test-output-not-findings",
+  "windowMonths": 35,
+  "analysisFindingIds": [
+    "CRM-COMPANY-001:company:001HST000000003AAA+001HST000000014AAA",
+    "CRM-DEAL-002:deal:006HST000000026AAA"
+  ],
+  "mergedAccountIds": { "001HST000000014AAA": "001HST000000003AAA" },
+  "parentCount": 25,
+  "rolledUpChild": { "accountId": "001HST000000002AAA", "parentId": "001HST000000001AAA", "parentSiteCount": 3 },
+  "reconciledWinCount": 15,
+  "wonNotInvoiced": ["006HST000000025AAA"],
+  "customerFlagButChurned": ["001HST000000011AAA", "001HST000000016AAA"],
+  "marketJoin": { "domain": 21, "name-state": 2, "none": 2 },
+  "chainSize": {
+    "1 site": { "won": [5, 12], "retained": [2, 5] },
+    "2-5 sites": { "won": [10, 12], "retained": [9, 10] }
+  },
+  "draftHypotheses": [
+    "Operators with chain size \"2-5 sites\" won more often: 10 of 12 against 5 of 12 for the rest.",
+    "Operators with facility type \"nursing_home\" won more often: 10 of 12 against 5 of 11 for the rest.",
+    "Operators with drive time to branch \"within 60 minutes\" won more often: 11 of 11 against 4 of 12 for the rest."
+  ]
+}

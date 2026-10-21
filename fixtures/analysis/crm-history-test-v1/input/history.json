@@ -1,0 +1,3356 @@
+{
+  "synthetic": true,
+  "note": "Synthetic CRM history test fixture for the analysis pipeline. Fictional operators on reserved .example domains; outputs prove the queries run and are never findings, market evidence, or Anchorpoint history (decision 0010).",
+  "mapping": {
+    "release": "crm-history-test-v1",
+    "healthRuleVersion": "health-rules-v1",
+    "config": {
+      "asOf": "2026-10-01T00:00:00.000Z",
+      "reportingTimeZone": "America/New_York",
+      "staleDealDays": 14,
+      "staleContactDays": 90,
+      "newBusinessPipeline": "new_business"
+    },
+    "customerAccountTypes": [
+      "Customer"
+    ],
+    "formerCustomerAccountTypes": [
+      "Former Customer"
+    ],
+    "prospectAccountTypes": [
+      "Prospect"
+    ],
+    "servicedStates": [
+      "GA"
+    ],
+    "pipelineByOpportunityType": {
+      "New Business": "new_business",
+      "Renewal": "renewal"
+    },
+    "defaultPipeline": "new_business",
+    "openStageByStageName": {
+      "Qualification": "qualification",
+      "Evaluation": "evaluation",
+      "Proposal": "proposal"
+    },
+    "unaccountableUserIds": [],
+    "siteAccountField": "Account__c",
+    "customFields": {
+      "targetCandidate": "Target_Candidate__c",
+      "persona": "Persona__c",
+      "emailStatus": "Email_Status__c",
+      "phoneStatus": "Phone_Status__c",
+      "enrichmentVerifiedAt": "Enrichment_Verified_At__c",
+      "lifecycleStage": "Lifecycle_Stage__c"
+    }
+  },
+  "snapshot": {
+    "provenance": "synthetic-test-fixture",
+    "label": "crm-history-test-v1",
+    "window": {
+      "start": "2023-10-01T00:00:00.000Z",
+      "end": "2026-09-30T00:00:00.000Z"
+    },
+    "records": {
+      "user": [
+        {
+          "Id": "005HST000000001AAA",
+          "Name": "Fixture Rep One",
+          "Email": "rep.one@fixture.example",
+          "IsActive": true,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        }
+      ],
+      "account": [
+        {
+          "Id": "001HST000000001AAA",
+          "Name": "Multi Fixture Operator 01",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://multi-01.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000002AAA",
+          "Name": "Multi Fixture Operator 01 Regional",
+          "ParentId": "001HST000000001AAA",
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": null,
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000003AAA",
+          "Name": "Multi Fixture Operator 02",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://multi-02.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000004AAA",
+          "Name": "Multi Fixture Operator 03",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://multi-03.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000005AAA",
+          "Name": "Multi Fixture Operator 04",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://multi-04.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000006AAA",
+          "Name": "Multi Fixture Operator 05",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://multi-05.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000007AAA",
+          "Name": "Multi Fixture Operator 06",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://multi-06.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000008AAA",
+          "Name": "Multi Fixture Operator 07",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://multi-07.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000009AAA",
+          "Name": "Multi Fixture Operator 08",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://multi-08.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000010AAA",
+          "Name": "Multi Fixture Operator 09",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://multi-09.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000011AAA",
+          "Name": "Multi Fixture Operator 10",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://multi-10.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000012AAA",
+          "Name": "Multi Fixture Operator 11",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Prospect",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://multi-11.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000013AAA",
+          "Name": "Multi Fixture Operator 12",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Prospect",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://multi-12.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000014AAA",
+          "Name": "Multi Fixture Operator 02 LLC",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "http://www.multi-02.example/",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000015AAA",
+          "Name": "Single Fixture Operator 01",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://single-01.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000016AAA",
+          "Name": "Single Fixture Operator 02",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://single-02.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000017AAA",
+          "Name": "Single Fixture Operator 03",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://single-03.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000018AAA",
+          "Name": "Single Fixture Operator 04",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Former Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://single-04.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000019AAA",
+          "Name": "Single Fixture Operator 05",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Former Customer",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://single-05.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000020AAA",
+          "Name": "Single Fixture Operator 06",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Prospect",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://single-06.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000021AAA",
+          "Name": "Single Fixture Operator 07",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Prospect",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://single-07.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000022AAA",
+          "Name": "Single Fixture Operator 08",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Prospect",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://single-08.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000023AAA",
+          "Name": "Single Fixture Operator 09",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Prospect",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://single-09.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000024AAA",
+          "Name": "Single Fixture Operator 10",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Prospect",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": null,
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000025AAA",
+          "Name": "Single Fixture Operator 11",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Prospect",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": null,
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000026AAA",
+          "Name": "Single Fixture Operator 12",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Prospect",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": null,
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "001HST000000027AAA",
+          "Name": "Single Fixture Operator 13",
+          "ParentId": null,
+          "OwnerId": "005HST000000001AAA",
+          "Type": "Prospect",
+          "Industry": "Healthcare",
+          "BillingCity": "Fixtureville",
+          "BillingState": "GA",
+          "Website": "https://single-13.example",
+          "Target_Candidate__c": false,
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        }
+      ],
+      "site": [
+        {
+          "Id": "a00HST000000001AAA",
+          "Name": "Fixture Site 1",
+          "Account__c": "001HST000000001AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000002AAA",
+          "Name": "Fixture Site 2",
+          "Account__c": "001HST000000002AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000003AAA",
+          "Name": "Fixture Site 3",
+          "Account__c": "001HST000000002AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000004AAA",
+          "Name": "Fixture Site 4",
+          "Account__c": "001HST000000003AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000005AAA",
+          "Name": "Fixture Site 5",
+          "Account__c": "001HST000000003AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000006AAA",
+          "Name": "Fixture Site 6",
+          "Account__c": "001HST000000003AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000007AAA",
+          "Name": "Fixture Site 7",
+          "Account__c": "001HST000000004AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000008AAA",
+          "Name": "Fixture Site 8",
+          "Account__c": "001HST000000004AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000009AAA",
+          "Name": "Fixture Site 9",
+          "Account__c": "001HST000000004AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000010AAA",
+          "Name": "Fixture Site 10",
+          "Account__c": "001HST000000005AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000011AAA",
+          "Name": "Fixture Site 11",
+          "Account__c": "001HST000000005AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000012AAA",
+          "Name": "Fixture Site 12",
+          "Account__c": "001HST000000005AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000013AAA",
+          "Name": "Fixture Site 13",
+          "Account__c": "001HST000000006AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000014AAA",
+          "Name": "Fixture Site 14",
+          "Account__c": "001HST000000006AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000015AAA",
+          "Name": "Fixture Site 15",
+          "Account__c": "001HST000000006AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000016AAA",
+          "Name": "Fixture Site 16",
+          "Account__c": "001HST000000007AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000017AAA",
+          "Name": "Fixture Site 17",
+          "Account__c": "001HST000000007AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000018AAA",
+          "Name": "Fixture Site 18",
+          "Account__c": "001HST000000007AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000019AAA",
+          "Name": "Fixture Site 19",
+          "Account__c": "001HST000000008AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000020AAA",
+          "Name": "Fixture Site 20",
+          "Account__c": "001HST000000008AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000021AAA",
+          "Name": "Fixture Site 21",
+          "Account__c": "001HST000000008AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000022AAA",
+          "Name": "Fixture Site 22",
+          "Account__c": "001HST000000009AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000023AAA",
+          "Name": "Fixture Site 23",
+          "Account__c": "001HST000000009AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000024AAA",
+          "Name": "Fixture Site 24",
+          "Account__c": "001HST000000009AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000025AAA",
+          "Name": "Fixture Site 25",
+          "Account__c": "001HST000000010AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000026AAA",
+          "Name": "Fixture Site 26",
+          "Account__c": "001HST000000010AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000027AAA",
+          "Name": "Fixture Site 27",
+          "Account__c": "001HST000000010AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000028AAA",
+          "Name": "Fixture Site 28",
+          "Account__c": "001HST000000011AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000029AAA",
+          "Name": "Fixture Site 29",
+          "Account__c": "001HST000000011AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000030AAA",
+          "Name": "Fixture Site 30",
+          "Account__c": "001HST000000011AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000031AAA",
+          "Name": "Fixture Site 31",
+          "Account__c": "001HST000000012AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000032AAA",
+          "Name": "Fixture Site 32",
+          "Account__c": "001HST000000012AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000033AAA",
+          "Name": "Fixture Site 33",
+          "Account__c": "001HST000000012AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000034AAA",
+          "Name": "Fixture Site 34",
+          "Account__c": "001HST000000013AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000035AAA",
+          "Name": "Fixture Site 35",
+          "Account__c": "001HST000000013AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000036AAA",
+          "Name": "Fixture Site 36",
+          "Account__c": "001HST000000013AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000037AAA",
+          "Name": "Fixture Site 37",
+          "Account__c": "001HST000000014AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000038AAA",
+          "Name": "Fixture Site 38",
+          "Account__c": "001HST000000015AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000039AAA",
+          "Name": "Fixture Site 39",
+          "Account__c": "001HST000000016AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000040AAA",
+          "Name": "Fixture Site 40",
+          "Account__c": "001HST000000017AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000041AAA",
+          "Name": "Fixture Site 41",
+          "Account__c": "001HST000000018AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000042AAA",
+          "Name": "Fixture Site 42",
+          "Account__c": "001HST000000019AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000043AAA",
+          "Name": "Fixture Site 43",
+          "Account__c": "001HST000000020AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000044AAA",
+          "Name": "Fixture Site 44",
+          "Account__c": "001HST000000021AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000045AAA",
+          "Name": "Fixture Site 45",
+          "Account__c": "001HST000000022AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000046AAA",
+          "Name": "Fixture Site 46",
+          "Account__c": "001HST000000023AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000047AAA",
+          "Name": "Fixture Site 47",
+          "Account__c": "001HST000000024AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000048AAA",
+          "Name": "Fixture Site 48",
+          "Account__c": "001HST000000025AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000049AAA",
+          "Name": "Fixture Site 49",
+          "Account__c": "001HST000000026AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "a00HST000000050AAA",
+          "Name": "Fixture Site 50",
+          "Account__c": "001HST000000027AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        }
+      ],
+      "opportunity": [
+        {
+          "Id": "006HST000000001AAA",
+          "AccountId": "001HST000000002AAA",
+          "Name": "Fixture History Opportunity 1",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2024-01-20",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Referral",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2023-01-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000002AAA",
+          "AccountId": "001HST000000003AAA",
+          "Name": "Fixture History Opportunity 2",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2024-03-10",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Referral",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2024-03-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000003AAA",
+          "AccountId": "001HST000000004AAA",
+          "Name": "Fixture History Opportunity 3",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2024-05-05",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Web",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2023-05-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000004AAA",
+          "AccountId": "001HST000000005AAA",
+          "Name": "Fixture History Opportunity 4",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2024-07-15",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Referral",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2024-07-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000005AAA",
+          "AccountId": "001HST000000006AAA",
+          "Name": "Fixture History Opportunity 5",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2024-09-01",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Referral",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2023-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000006AAA",
+          "AccountId": "001HST000000007AAA",
+          "Name": "Fixture History Opportunity 6",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2024-11-12",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Web",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2024-11-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000007AAA",
+          "AccountId": "001HST000000008AAA",
+          "Name": "Fixture History Opportunity 7",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2025-01-08",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Referral",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2024-01-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000008AAA",
+          "AccountId": "001HST000000009AAA",
+          "Name": "Fixture History Opportunity 8",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2025-02-20",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Referral",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2025-02-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000009AAA",
+          "AccountId": "001HST000000010AAA",
+          "Name": "Fixture History Opportunity 9",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2025-04-02",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Web",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2024-04-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000010AAA",
+          "AccountId": "001HST000000011AAA",
+          "Name": "Fixture History Opportunity 10",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2025-05-15",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Referral",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2025-05-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000011AAA",
+          "AccountId": "001HST000000012AAA",
+          "Name": "Fixture History Opportunity 11",
+          "StageName": "Closed Lost",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2025-06-10",
+          "IsClosed": true,
+          "IsWon": false,
+          "CampaignId": null,
+          "LeadSource": "Referral",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2024-06-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000012AAA",
+          "AccountId": "001HST000000013AAA",
+          "Name": "Fixture History Opportunity 12",
+          "StageName": "Closed Lost",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2025-06-25",
+          "IsClosed": true,
+          "IsWon": false,
+          "CampaignId": null,
+          "LeadSource": "Web",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2025-06-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000013AAA",
+          "AccountId": "001HST000000015AAA",
+          "Name": "Fixture History Opportunity 13",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2025-06-25",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Web",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2025-06-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000014AAA",
+          "AccountId": "001HST000000016AAA",
+          "Name": "Fixture History Opportunity 14",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2025-06-10",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Event",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2025-06-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000015AAA",
+          "AccountId": "001HST000000017AAA",
+          "Name": "Fixture History Opportunity 15",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2025-05-15",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Web",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2025-05-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000016AAA",
+          "AccountId": "001HST000000018AAA",
+          "Name": "Fixture History Opportunity 16",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2025-04-02",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Event",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2025-04-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000017AAA",
+          "AccountId": "001HST000000019AAA",
+          "Name": "Fixture History Opportunity 17",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2025-02-20",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Web",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2025-02-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000018AAA",
+          "AccountId": "001HST000000020AAA",
+          "Name": "Fixture History Opportunity 18",
+          "StageName": "Closed Lost",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2025-01-08",
+          "IsClosed": true,
+          "IsWon": false,
+          "CampaignId": null,
+          "LeadSource": "Event",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2025-01-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000019AAA",
+          "AccountId": "001HST000000021AAA",
+          "Name": "Fixture History Opportunity 19",
+          "StageName": "Closed Lost",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2024-11-12",
+          "IsClosed": true,
+          "IsWon": false,
+          "CampaignId": null,
+          "LeadSource": "Web",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2024-11-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000020AAA",
+          "AccountId": "001HST000000022AAA",
+          "Name": "Fixture History Opportunity 20",
+          "StageName": "Closed Lost",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2024-09-01",
+          "IsClosed": true,
+          "IsWon": false,
+          "CampaignId": null,
+          "LeadSource": "Event",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2024-09-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000021AAA",
+          "AccountId": "001HST000000023AAA",
+          "Name": "Fixture History Opportunity 21",
+          "StageName": "Closed Lost",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2024-07-15",
+          "IsClosed": true,
+          "IsWon": false,
+          "CampaignId": null,
+          "LeadSource": "Web",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2024-07-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000022AAA",
+          "AccountId": "001HST000000024AAA",
+          "Name": "Fixture History Opportunity 22",
+          "StageName": "Closed Lost",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2024-05-05",
+          "IsClosed": true,
+          "IsWon": false,
+          "CampaignId": null,
+          "LeadSource": "Event",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2024-05-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000023AAA",
+          "AccountId": "001HST000000025AAA",
+          "Name": "Fixture History Opportunity 23",
+          "StageName": "Closed Lost",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2024-03-10",
+          "IsClosed": true,
+          "IsWon": false,
+          "CampaignId": null,
+          "LeadSource": "Web",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2024-03-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000024AAA",
+          "AccountId": "001HST000000026AAA",
+          "Name": "Fixture History Opportunity 24",
+          "StageName": "Closed Lost",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2024-01-20",
+          "IsClosed": true,
+          "IsWon": false,
+          "CampaignId": null,
+          "LeadSource": "Event",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2024-01-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000025AAA",
+          "AccountId": "001HST000000027AAA",
+          "Name": "Fixture History Opportunity 25",
+          "StageName": "Closed Won",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2025-03-31",
+          "IsClosed": true,
+          "IsWon": true,
+          "CampaignId": null,
+          "LeadSource": "Web",
+          "NextStep": null,
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2025-02-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        },
+        {
+          "Id": "006HST000000026AAA",
+          "AccountId": "001HST000000026AAA",
+          "Name": "Fixture History Opportunity 26",
+          "StageName": "Proposal",
+          "Type": "New Business",
+          "Amount": 30000,
+          "CloseDate": "2025-09-30",
+          "IsClosed": false,
+          "IsWon": false,
+          "CampaignId": null,
+          "LeadSource": "Web",
+          "NextStep": "Chase decision",
+          "OwnerId": "005HST000000001AAA",
+          "CreatedDate": "2025-06-01T12:00:00.000+0000",
+          "LastModifiedDate": "2026-09-30T12:00:00.000+0000",
+          "SystemModstamp": "2026-09-30T12:00:00.000+0000"
+        }
+      ]
+    }
+  },
+  "invoices": [
+    {
+      "id": "INV-HST-00001",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2024-02-04T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00002",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2024-03-04T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00003",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2024-04-04T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00004",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2024-05-04T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00005",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2024-06-04T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00006",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2024-07-04T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00007",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2024-08-04T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00008",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2024-09-04T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00009",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2024-10-04T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00010",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2024-11-04T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00011",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2024-12-04T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00012",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2025-01-04T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00013",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2025-02-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00014",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2025-03-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00015",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2025-04-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00016",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2025-05-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00017",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2025-06-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00018",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2025-07-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00019",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2025-08-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00020",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2025-09-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00021",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2025-10-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00022",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2025-11-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00023",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2025-12-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00024",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2026-01-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00025",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2026-02-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00026",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2026-03-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00027",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2026-04-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00028",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2026-05-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00029",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2026-06-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00030",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2026-07-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00031",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2026-08-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00032",
+      "accountId": "001HST000000002AAA",
+      "invoicedAt": "2026-09-04T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00033",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2024-03-25T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00034",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2024-04-25T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00035",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2024-05-25T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00036",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2024-06-25T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00037",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2024-07-25T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00038",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2024-08-25T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00039",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2024-09-25T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00040",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2024-10-25T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00041",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2024-11-25T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00042",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2024-12-25T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00043",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2025-01-25T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00044",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2025-02-25T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00045",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2025-03-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00046",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2025-04-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00047",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2025-05-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00048",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2025-06-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00049",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2025-07-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00050",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2025-08-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00051",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2025-09-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00052",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2025-10-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00053",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2025-11-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00054",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2025-12-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00055",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2026-01-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00056",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2026-02-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00057",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2026-03-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00058",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2026-04-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00059",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2026-05-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00060",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2026-06-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00061",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2026-07-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00062",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2026-08-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00063",
+      "accountId": "001HST000000003AAA",
+      "invoicedAt": "2026-09-25T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00064",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2024-05-20T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00065",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2024-06-20T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00066",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2024-07-20T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00067",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2024-08-20T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00068",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2024-09-20T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00069",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2024-10-20T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00070",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2024-11-20T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00071",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2024-12-20T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00072",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2025-01-20T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00073",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2025-02-20T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00074",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2025-03-20T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00075",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2025-04-20T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00076",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2025-05-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00077",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2025-06-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00078",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2025-07-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00079",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2025-08-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00080",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2025-09-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00081",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2025-10-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00082",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2025-11-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00083",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2025-12-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00084",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2026-01-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00085",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2026-02-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00086",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2026-03-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00087",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2026-04-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00088",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2026-05-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00089",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2026-06-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00090",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2026-07-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00091",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2026-08-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00092",
+      "accountId": "001HST000000004AAA",
+      "invoicedAt": "2026-09-20T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00093",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2024-07-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00094",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2024-08-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00095",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2024-09-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00096",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2024-10-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00097",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2024-11-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00098",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2024-12-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00099",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2025-01-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00100",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2025-03-02T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00101",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2025-03-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00102",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2025-04-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00103",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2025-05-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00104",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2025-06-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00105",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2025-07-30T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00106",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2025-08-30T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00107",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2025-09-30T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00108",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2025-10-30T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00109",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2025-11-30T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00110",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2025-12-30T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00111",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2026-01-30T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00112",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2026-03-02T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00113",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2026-03-30T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00114",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2026-04-30T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00115",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2026-05-30T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00116",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2026-06-30T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00117",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2026-07-30T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00118",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2026-08-30T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00119",
+      "accountId": "001HST000000005AAA",
+      "invoicedAt": "2026-09-30T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00120",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2024-09-16T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00121",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2024-10-16T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00122",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2024-11-16T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00123",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2024-12-16T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00124",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2025-01-16T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00125",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2025-02-16T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00126",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2025-03-16T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00127",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2025-04-16T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00128",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2025-05-16T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00129",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2025-06-16T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00130",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2025-07-16T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00131",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2025-08-16T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00132",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2025-09-16T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00133",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2025-10-16T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00134",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2025-11-16T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00135",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2025-12-16T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00136",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2026-01-16T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00137",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2026-02-16T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00138",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2026-03-16T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00139",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2026-04-16T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00140",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2026-05-16T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00141",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2026-06-16T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00142",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2026-07-16T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00143",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2026-08-16T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00144",
+      "accountId": "001HST000000006AAA",
+      "invoicedAt": "2026-09-16T00:00:00.000Z",
+      "amount": 3600
+    },
+    {
+      "id": "INV-HST-00145",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2024-11-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00146",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2024-12-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00147",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2025-01-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00148",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2025-02-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00149",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2025-03-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00150",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2025-04-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00151",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2025-05-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00152",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2025-06-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00153",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2025-07-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00154",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2025-08-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00155",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2025-09-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00156",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2025-10-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00157",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2025-11-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00158",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2025-12-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00159",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2026-01-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00160",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2026-02-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00161",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2026-03-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00162",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2026-04-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00163",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2026-05-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00164",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2026-06-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00165",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2026-07-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00166",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2026-08-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00167",
+      "accountId": "001HST000000007AAA",
+      "invoicedAt": "2026-09-27T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00168",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2025-01-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00169",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2025-02-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00170",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2025-03-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00171",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2025-04-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00172",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2025-05-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00173",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2025-06-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00174",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2025-07-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00175",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2025-08-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00176",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2025-09-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00177",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2025-10-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00178",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2025-11-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00179",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2025-12-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00180",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2026-01-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00181",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2026-02-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00182",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2026-03-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00183",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2026-04-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00184",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2026-05-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00185",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2026-06-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00186",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2026-07-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00187",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2026-08-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00188",
+      "accountId": "001HST000000008AAA",
+      "invoicedAt": "2026-09-23T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00189",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2025-03-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00190",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2025-04-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00191",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2025-05-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00192",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2025-06-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00193",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2025-07-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00194",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2025-08-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00195",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2025-09-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00196",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2025-10-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00197",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2025-11-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00198",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2025-12-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00199",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2026-01-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00200",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2026-02-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00201",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2026-03-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00202",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2026-04-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00203",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2026-05-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00204",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2026-06-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00205",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2026-07-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00206",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2026-08-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00207",
+      "accountId": "001HST000000009AAA",
+      "invoicedAt": "2026-09-07T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00208",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2025-04-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00209",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2025-05-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00210",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2025-06-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00211",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2025-07-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00212",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2025-08-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00213",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2025-09-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00214",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2025-10-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00215",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2025-11-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00216",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2025-12-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00217",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2026-01-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00218",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2026-02-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00219",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2026-03-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00220",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2026-04-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00221",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2026-05-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00222",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2026-06-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00223",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2026-07-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00224",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2026-08-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00225",
+      "accountId": "001HST000000010AAA",
+      "invoicedAt": "2026-09-17T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00226",
+      "accountId": "001HST000000011AAA",
+      "invoicedAt": "2025-05-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00227",
+      "accountId": "001HST000000011AAA",
+      "invoicedAt": "2025-06-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00228",
+      "accountId": "001HST000000011AAA",
+      "invoicedAt": "2025-07-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00229",
+      "accountId": "001HST000000011AAA",
+      "invoicedAt": "2025-08-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00230",
+      "accountId": "001HST000000011AAA",
+      "invoicedAt": "2025-09-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00231",
+      "accountId": "001HST000000011AAA",
+      "invoicedAt": "2025-10-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00232",
+      "accountId": "001HST000000011AAA",
+      "invoicedAt": "2025-11-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00233",
+      "accountId": "001HST000000011AAA",
+      "invoicedAt": "2025-12-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00234",
+      "accountId": "001HST000000011AAA",
+      "invoicedAt": "2026-01-30T00:00:00.000Z",
+      "amount": 3000
+    },
+    {
+      "id": "INV-HST-00235",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2025-07-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00236",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2025-08-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00237",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2025-09-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00238",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2025-10-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00239",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2025-11-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00240",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2025-12-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00241",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2026-01-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00242",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2026-02-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00243",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2026-03-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00244",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2026-04-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00245",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2026-05-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00246",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2026-06-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00247",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2026-07-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00248",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2026-08-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00249",
+      "accountId": "001HST000000015AAA",
+      "invoicedAt": "2026-09-10T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00250",
+      "accountId": "001HST000000016AAA",
+      "invoicedAt": "2025-06-25T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00251",
+      "accountId": "001HST000000016AAA",
+      "invoicedAt": "2025-07-25T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00252",
+      "accountId": "001HST000000016AAA",
+      "invoicedAt": "2025-08-25T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00253",
+      "accountId": "001HST000000016AAA",
+      "invoicedAt": "2025-09-25T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00254",
+      "accountId": "001HST000000016AAA",
+      "invoicedAt": "2025-10-25T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00255",
+      "accountId": "001HST000000016AAA",
+      "invoicedAt": "2025-11-25T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00256",
+      "accountId": "001HST000000016AAA",
+      "invoicedAt": "2025-12-25T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00257",
+      "accountId": "001HST000000016AAA",
+      "invoicedAt": "2026-01-25T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00258",
+      "accountId": "001HST000000016AAA",
+      "invoicedAt": "2026-02-25T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00259",
+      "accountId": "001HST000000016AAA",
+      "invoicedAt": "2026-03-25T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00260",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2025-05-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00261",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2025-06-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00262",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2025-07-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00263",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2025-08-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00264",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2025-09-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00265",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2025-10-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00266",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2025-11-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00267",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2025-12-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00268",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2026-01-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00269",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2026-03-02T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00270",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2026-03-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00271",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2026-04-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00272",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2026-05-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00273",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2026-06-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00274",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2026-07-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00275",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2026-08-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00276",
+      "accountId": "001HST000000017AAA",
+      "invoicedAt": "2026-09-30T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00277",
+      "accountId": "001HST000000018AAA",
+      "invoicedAt": "2025-04-17T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00278",
+      "accountId": "001HST000000018AAA",
+      "invoicedAt": "2025-05-17T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00279",
+      "accountId": "001HST000000018AAA",
+      "invoicedAt": "2025-06-17T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00280",
+      "accountId": "001HST000000018AAA",
+      "invoicedAt": "2025-07-17T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00281",
+      "accountId": "001HST000000018AAA",
+      "invoicedAt": "2025-08-17T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00282",
+      "accountId": "001HST000000018AAA",
+      "invoicedAt": "2025-09-17T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00283",
+      "accountId": "001HST000000018AAA",
+      "invoicedAt": "2025-10-17T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00284",
+      "accountId": "001HST000000018AAA",
+      "invoicedAt": "2025-11-17T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00285",
+      "accountId": "001HST000000018AAA",
+      "invoicedAt": "2025-12-17T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00286",
+      "accountId": "001HST000000018AAA",
+      "invoicedAt": "2026-01-17T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00287",
+      "accountId": "001HST000000019AAA",
+      "invoicedAt": "2025-03-07T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00288",
+      "accountId": "001HST000000019AAA",
+      "invoicedAt": "2025-04-07T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00289",
+      "accountId": "001HST000000019AAA",
+      "invoicedAt": "2025-05-07T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00290",
+      "accountId": "001HST000000019AAA",
+      "invoicedAt": "2025-06-07T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00291",
+      "accountId": "001HST000000019AAA",
+      "invoicedAt": "2025-07-07T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00292",
+      "accountId": "001HST000000019AAA",
+      "invoicedAt": "2025-08-07T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00293",
+      "accountId": "001HST000000019AAA",
+      "invoicedAt": "2025-09-07T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00294",
+      "accountId": "001HST000000019AAA",
+      "invoicedAt": "2025-10-07T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00295",
+      "accountId": "001HST000000019AAA",
+      "invoicedAt": "2025-11-07T00:00:00.000Z",
+      "amount": 1000
+    },
+    {
+      "id": "INV-HST-00296",
+      "accountId": "001HST000000019AAA",
+      "invoicedAt": "2025-12-07T00:00:00.000Z",
+      "amount": 1000
+    }
+  ],
+  "market": [
+    {
+      "marketId": "MKT-HST-M01",
+      "name": "Multi Fixture Operator 01",
+      "state": "GA",
+      "domain": "multi-01.example",
+      "facilityType": "nursing_home",
+      "citationDates": [
+        "2023-06-01"
+      ],
+      "driveTimeMinutes": 35
+    },
+    {
+      "marketId": "MKT-HST-M02",
+      "name": "Multi Fixture Operator 02",
+      "state": "GA",
+      "domain": "multi-02.example",
+      "facilityType": "nursing_home",
+      "citationDates": [],
+      "driveTimeMinutes": 40
+    },
+    {
+      "marketId": "MKT-HST-M03",
+      "name": "Multi Fixture Operator 03",
+      "state": "GA",
+      "domain": "multi-03.example",
+      "facilityType": "nursing_home",
+      "citationDates": [
+        "2023-06-01"
+      ],
+      "driveTimeMinutes": 45
+    },
+    {
+      "marketId": "MKT-HST-M04",
+      "name": "Multi Fixture Operator 04",
+      "state": "GA",
+      "domain": "multi-04.example",
+      "facilityType": "nursing_home",
+      "citationDates": [],
+      "driveTimeMinutes": 50
+    },
+    {
+      "marketId": "MKT-HST-M05",
+      "name": "Multi Fixture Operator 05",
+      "state": "GA",
+      "domain": "multi-05.example",
+      "facilityType": "nursing_home",
+      "citationDates": [
+        "2023-06-01"
+      ],
+      "driveTimeMinutes": 55
+    },
+    {
+      "marketId": "MKT-HST-M06",
+      "name": "Multi Fixture Operator 06",
+      "state": "GA",
+      "domain": "multi-06.example",
+      "facilityType": "nursing_home",
+      "citationDates": [],
+      "driveTimeMinutes": 60
+    },
+    {
+      "marketId": "MKT-HST-M07",
+      "name": "Multi Fixture Operator 07",
+      "state": "GA",
+      "domain": "multi-07.example",
+      "facilityType": "nursing_home",
+      "citationDates": [
+        "2023-06-01"
+      ],
+      "driveTimeMinutes": 65
+    },
+    {
+      "marketId": "MKT-HST-M08",
+      "name": "Multi Fixture Operator 08",
+      "state": "GA",
+      "domain": "multi-08.example",
+      "facilityType": "nursing_home",
+      "citationDates": [],
+      "driveTimeMinutes": 70
+    },
+    {
+      "marketId": "MKT-HST-M09",
+      "name": "Multi Fixture Operator 09",
+      "state": "GA",
+      "domain": "multi-09.example",
+      "facilityType": "nursing_home",
+      "citationDates": [
+        "2023-06-01"
+      ],
+      "driveTimeMinutes": 75
+    },
+    {
+      "marketId": "MKT-HST-M10",
+      "name": "Multi Fixture Operator 10",
+      "state": "GA",
+      "domain": "multi-10.example",
+      "facilityType": "nursing_home",
+      "citationDates": [],
+      "driveTimeMinutes": 80
+    },
+    {
+      "marketId": "MKT-HST-M11",
+      "name": "Multi Fixture Operator 11",
+      "state": "GA",
+      "domain": "multi-11.example",
+      "facilityType": "nursing_home",
+      "citationDates": [
+        "2023-06-01"
+      ],
+      "driveTimeMinutes": 85
+    },
+    {
+      "marketId": "MKT-HST-M12",
+      "name": "Multi Fixture Operator 12",
+      "state": "GA",
+      "domain": "multi-12.example",
+      "facilityType": "nursing_home",
+      "citationDates": [],
+      "driveTimeMinutes": 90
+    },
+    {
+      "marketId": "MKT-HST-S01",
+      "name": "Single Fixture Operator 01",
+      "state": "GA",
+      "domain": "single-01.example",
+      "facilityType": "assisted_living",
+      "citationDates": [],
+      "driveTimeMinutes": 44
+    },
+    {
+      "marketId": "MKT-HST-S02",
+      "name": "Single Fixture Operator 02",
+      "state": "GA",
+      "domain": "single-02.example",
+      "facilityType": "assisted_living",
+      "citationDates": [
+        "2023-08-15"
+      ],
+      "driveTimeMinutes": 48
+    },
+    {
+      "marketId": "MKT-HST-S03",
+      "name": "Single Fixture Operator 03",
+      "state": "GA",
+      "domain": "single-03.example",
+      "facilityType": "assisted_living",
+      "citationDates": [],
+      "driveTimeMinutes": 52
+    },
+    {
+      "marketId": "MKT-HST-S04",
+      "name": "Single Fixture Operator 04",
+      "state": "GA",
+      "domain": "single-04.example",
+      "facilityType": "assisted_living",
+      "citationDates": [
+        "2023-08-15"
+      ],
+      "driveTimeMinutes": 56
+    },
+    {
+      "marketId": "MKT-HST-S05",
+      "name": "Single Fixture Operator 05",
+      "state": "GA",
+      "domain": "single-05.example",
+      "facilityType": "assisted_living",
+      "citationDates": [],
+      "driveTimeMinutes": 60
+    },
+    {
+      "marketId": "MKT-HST-S06",
+      "name": "Single Fixture Operator 06",
+      "state": "GA",
+      "domain": "single-06.example",
+      "facilityType": "assisted_living",
+      "citationDates": [
+        "2023-08-15"
+      ],
+      "driveTimeMinutes": 64
+    },
+    {
+      "marketId": "MKT-HST-S07",
+      "name": "Single Fixture Operator 07",
+      "state": "GA",
+      "domain": "single-07.example",
+      "facilityType": "assisted_living",
+      "citationDates": [],
+      "driveTimeMinutes": 68
+    },
+    {
+      "marketId": "MKT-HST-S08",
+      "name": "Single Fixture Operator 08",
+      "state": "GA",
+      "domain": "single-08.example",
+      "facilityType": "assisted_living",
+      "citationDates": [
+        "2023-08-15"
+      ],
+      "driveTimeMinutes": 72
+    },
+    {
+      "marketId": "MKT-HST-S09",
+      "name": "Single Fixture Operator 09",
+      "state": "GA",
+      "domain": "single-09.example",
+      "facilityType": "assisted_living",
+      "citationDates": [],
+      "driveTimeMinutes": 76
+    },
+    {
+      "marketId": "MKT-HST-S11",
+      "name": "Single Fixture Operator 11 Inc",
+      "state": "GA",
+      "domain": null,
+      "facilityType": "assisted_living",
+      "citationDates": [],
+      "driveTimeMinutes": 84
+    },
+    {
+      "marketId": "MKT-HST-S12",
+      "name": "Single Fixture Operator 12 Inc",
+      "state": "GA",
+      "domain": null,
+      "facilityType": "assisted_living",
+      "citationDates": [
+        "2023-08-15"
+      ],
+      "driveTimeMinutes": 88
+    }
+  ]
+}
