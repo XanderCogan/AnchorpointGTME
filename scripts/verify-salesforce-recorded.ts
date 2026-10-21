@@ -5,10 +5,12 @@ import { resolve } from "node:path";
 import { recordedSalesforce } from "../packages/connectors/src/salesforce/connect.ts";
 import { objectSpecs } from "../packages/connectors/src/salesforce/objects.ts";
 import { changeCount, syncObjects, type SyncBounds } from "../packages/connectors/src/salesforce/sync.ts";
+import { snapshotChecksum } from "../packages/core/src/crm-history.ts";
 import { closePool } from "../packages/db/src/client.ts";
 import { migrate } from "../packages/db/src/migrate.ts";
 import {
   countSalesforceRecords,
+  loadSalesforceSnapshot,
   PostgresSalesforceMirror,
   resetSalesforceConnection,
 } from "../packages/db/src/salesforce-mirror.ts";
@@ -48,10 +50,18 @@ try {
   const requests = [...initial.requests, ...replay.requests, ...incremental.requests];
   assert.ok(requests.every((request) => request.method === "GET"), "Only GET requests reached Salesforce.");
 
+  // The analysis pipeline reads the mirror as a frozen snapshot; two reads must agree.
+  const objectKeys = Object.fromEntries(specs.map((spec) => [spec.apiName, spec.key]));
+  const snapshot = await loadSalesforceSnapshot(connectionId, objectKeys, "synthetic-test-fixture", connectionId);
+  const again = await loadSalesforceSnapshot(connectionId, objectKeys, "synthetic-test-fixture", connectionId);
+  const mirrored = Object.values(await countSalesforceRecords(connectionId)).reduce((total, count) => total + count, 0);
+  assert.equal(Object.values(snapshot.records).reduce((total, list) => total + (list?.length ?? 0), 0), mirrored);
+  assert.equal(snapshotChecksum(snapshot), snapshotChecksum(again), "Snapshot reads are stable.");
+
   console.log(
     `Salesforce recorded verification passed: ${requests.length} GET requests, mirror counts ${JSON.stringify(
       await countSalesforceRecords(connectionId),
-    )}, resync changes 0.`,
+    )}, resync changes 0, snapshot sha256 ${snapshotChecksum(snapshot).slice(0, 12)}.`,
   );
 } finally {
   await closePool();

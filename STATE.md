@@ -39,7 +39,7 @@ Flagged for later review: the two provisional senior-living personas in `docs/co
 
 1. Merge any later Milestone 3 connector commits from `claude/salesforce-readonly-connector-f99600`; its committed work up to `d3d3081` is in the trunk.
 2. Run the coarse segment sizing pass described in `docs/research/tam-construction-plan.md`. It does not block the nursing-home Clay pass, but it comes before any second segment or new enrichment spend.
-3. Build the CRM analysis pipeline from `docs/research/crm-icp-analysis-playbook.md` on labelled test fixtures, together with the Salesforce mapping for the audit rules. It needs no org, and it comes before ICP hypotheses are drafted.
+3. Done on 2026-10-21: the CRM analysis pipeline and the Salesforce mapping for the audit rules, verified on labelled test fixtures only (`docs/research/crm-icp-analysis-playbook.md`). When the org exists, add the custom fields that document lists to the org and the connector field list.
 4. When the org exists, finish the Milestone 3 exit-gate checks in the milestone note.
 
 ## Active safety boundary
