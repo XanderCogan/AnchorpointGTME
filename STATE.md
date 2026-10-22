@@ -14,12 +14,15 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 - Attio: Georgia operators and facilities were loaded once as Companies and Sites. The read-only connector syncs them to the Postgres mirror, where the audit runs.
 - Clay: run once so far, by hand, as a CSV round trip, keeping only coverage (`data/georgia-sample/people-coverage.json`). Attio holds no people yet.
-- Planned path (decision 0012, amended 2026-10-22 to run as a real company): Attio sends accounts to Clay, Clay runs the waterfall and writes contacts (with work email) back to Attio as People, then scoring and approval, then Lemlist (never launched) and an Attio List for TitanX (never dialed). Writeback is automated under the write policy, with conflicts and uncertain matches sent to review. Not built; needs a paid Clay plan (confirm price first) and the integration method is pending.
-- Lemlist: the connector, enrollment ledger, kill switch, and webhook receiver are built and verified on practice fixtures (Milestone 6, `docs/milestones/milestone-6-lemlist-notes.md`). Approved real contacts from Attio will feed enrollment.
+- Planned path (decision 0012, amended 2026-10-22 to run as a real company): Attio sends accounts to Clay, Clay runs the waterfall and writes contacts (with work email) back to Attio as People, then scoring and approval, then Lemlist (never launched) and an Attio List for TitanX (never dialed). Writeback is automated under the write policy, with conflicts and uncertain matches sent to review.
+- Clay to Attio automation: not built. The user will not pay for Clay (Growth, about $446 to $495 a month, unlocks webhooks and CRM sync). It is unconfirmed whether the free plan allows Clay's native Attio integration; the user is checking. Fallbacks: a script-driven CSV round trip, or an own-worker waterfall that replaces Clay (needs a decision record).
+- Attio writeback: built and tested on fixtures on unmerged branch `refs/heads/worktree-agent-ae6da434c7a515151` (migration 0005 not applied). `ATTIO_WRITEBACK_TOKEN` is in `.env` (records read-write, object configuration read). The recreated attributes got the slugs `persona_verified_7` (checkbox) and `enrichment_date_3` (date) because Attio reserves deleted slugs; the code still expects `persona_verified` and `enrichment_date`.
+- Lemlist: connector, ledger, kill switch, and webhook receiver verified on practice fixtures (`docs/milestones/milestone-6-lemlist-notes.md`). Feeding from Attio, with no domain or single-campaign limit and a sender-attached guard, is on unmerged branch `refs/heads/worktree-agent-a396da4a14abff1db`; it conflicts with this branch in decision 0012.
 - TitanX: no code yet (Milestone 7). Salesforce: superseded reference code only.
 
 ## Next work
 
+0. With the user's OK, merge the two agent branches, then point the writeback at the suffixed attribute slugs.
 1. Milestone 4: Clay proposes a domain and primary location for the 71 eligible operators, which clears the 142 live audit findings.
 2. Re-inspect the tier bands with the Stage 6 people coverage before treating them as final.
 3. Review the two provisional senior-living personas in `docs/contracts/operating-contract.md`, and the site administrator's low-confidence 7 person-relevance points.
@@ -32,6 +35,6 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 ## Safety boundary
 
-- The Attio sync connector is read-only. Writeback uses a separate standing write token scoped to its objects and fields; the user must create it, and none exists yet.
+- The Attio sync connector is read-only. Writeback uses a separate standing write token scoped to records read-write and object configuration read.
 - No outreach ever: no sending domain or mailbox, no launched campaign, no dialing. Budget limits hold; confirm each purchase.
 - Human approval before enrollment, deny-first suppression, the kill switch, and the review queue are built as specified. Synthetic fixtures are test inputs, never market evidence.
