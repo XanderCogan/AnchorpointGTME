@@ -7,7 +7,7 @@ Status lives in [`STATE.md`](STATE.md). This file summarises it; if they disagre
 ## The result
 
 - 105 Georgia operators resolved from CMS facility records, each with its facilities, serviceability, and signals in `data/georgia-sample/`.
-- 71 operators tiered: 5 in A, 12 in B, 36 in C, and 18 in Watch (`data/georgia-sample/tiers.json`). Watch holds operators the rules could not place; whether it is a tier or an undecided bucket is still the user's call.
+- 71 operators tiered: 5 in A, 12 in B, 36 in C, and 18 in Watch (`data/georgia-sample/tiers.json`). Watch is the fourth and lowest band in the scoring contract: serviceable and potentially relevant, but below the C threshold, so it stays out of the current work queue and is revisited when signals change.
 - 53 operators with people coverage from a Clay role-slot pass (`data/georgia-sample/people-coverage.json`).
 - One operator, Tift Regional (now branded Southwell), traced end to end: CMS row, operator resolution, tiering, Clay domain and address and contact enrichment, then written into Attio as a Company with four linked People, one carrying a mobile number. Caveat: Tift Regional sits about 140 minutes from the nearest planned branch, so it is gated out of the tiers and was chosen only to prove the pipeline, not as a target. The lineage trace is in `artifacts/portfolio/`.
 - The 105 operators and their facilities were loaded into Attio once as Companies and Sites, and the read-only connector mirrors them into Postgres, where the deterministic CRM audit runs.
