@@ -1,6 +1,8 @@
 import assert from "node:assert/strict";
 import { resolve } from "node:path";
 import test from "node:test";
+import type { AttioRecordPayload } from "../packages/core/src/attio-mapping.ts";
+import { candidatesFromAttio, parseApprovals } from "../packages/connectors/src/lemlist/attio-source.ts";
 import { LemlistClient } from "../packages/connectors/src/lemlist/client.ts";
 import { lemlistConfigFromEnv } from "../packages/connectors/src/lemlist/config.ts";
 import {
@@ -17,18 +19,20 @@ import {
   assertAllowedRequest,
   LemlistGuardError,
   LemlistTransport,
+  sendersAttachedTo,
   type FetchLike,
   type TransportGuards,
 } from "../packages/connectors/src/lemlist/transport.ts";
 
 const campaignId = "cam_practice";
-const guards: TransportGuards = { campaignId, allowedLeadDomains: ["example.com"], launchEnabled: false };
+const guards: TransportGuards = { launchEnabled: false };
 const practice = loadPracticeContacts(resolve(import.meta.dirname, "..", "fixtures", "lemlist-practice-v1", "contacts.json"));
 
 // A stand-in for the Lemlist API that keeps one campaign's leads and answers the
 // way the reference documents: 400 for a repeat add, 409 with deduplicate when the
-// contact is in another campaign.
-function fakeLemlist(options: { otherCampaignEmails?: string[]; failFirstAddFor?: string } = {}) {
+// contact is in another campaign. GET /api/team/senders lists `senderCampaigns`
+// as the campaigns of one sender (none by default).
+function fakeLemlist(options: { otherCampaignEmails?: string[]; failFirstAddFor?: string; senderCampaigns?: string[] } = {}) {
   const leads = new Map<string, string>();
   const requests: { method: string; url: URL; body: Record<string, unknown> | null; authorization: string }[] = [];
   let failed = false;
@@ -37,6 +41,10 @@ function fakeLemlist(options: { otherCampaignEmails?: string[]; failFirstAddFor?
     const body = typeof init?.body === "string" ? (JSON.parse(init.body) as Record<string, unknown>) : null;
     const authorization = String((init?.headers as Record<string, string>).Authorization);
     requests.push({ method: init?.method ?? "GET", url, body, authorization });
+    if (url.pathname === "/api/team/senders") {
+      const campaigns = (options.senderCampaigns ?? []).map((_id) => ({ _id, name: "Fictional", status: "draft", sendingChannels: ["email"] }));
+      return Response.json([{ userId: "usr_fictional", campaigns }]);
+    }
     if (url.pathname === "/api/unsubscribes") return Response.json([{ _id: "uns_1", email: "jo.kim@savannah-assisted.example.com" }]);
     if (url.pathname.endsWith("/pause")) return Response.json({ _id: campaignId, state: "paused" });
     if (url.pathname === `/api/campaigns/${campaignId}/leads/`) {
@@ -54,7 +62,7 @@ function fakeLemlist(options: { otherCampaignEmails?: string[]; failFirstAddFor?
     return new Response("not found", { status: 404 });
   };
   const client = new LemlistClient(new LemlistTransport({ apiKey: "test-key", guards, fetch: fetchImpl }));
-  return { client, leads, requests };
+  return { client, leads, requests, fetchImpl };
 }
 
 async function remoteSuppressions(client: LemlistClient): Promise<string[]> {
@@ -153,15 +161,105 @@ test("the transport never launches a campaign while launch is off", async () => 
   assert.equal(lemlistConfigFromEnv({ LEMLIST_API_KEY: "k", LEMLIST_LAUNCH_ENABLED: "yes" })?.launchEnabled, false);
 });
 
-test("writes are limited to the test campaign and allowed lead domains", () => {
+test("any campaign and lead domain may be written, but only listed resources", () => {
   const add = (path: string, email: string) => ({ method: "POST" as const, path, body: { email } });
-  assert.throws(() => assertAllowedRequest(add("/api/campaigns/cam_other/leads/", "a@example.com"), guards), LemlistGuardError);
-  assert.throws(() => assertAllowedRequest(add(`/api/campaigns/${campaignId}/leads/`, "a@realcompany.com"), guards), LemlistGuardError);
-  assert.throws(() => assertAllowedRequest(add(`/api/campaigns/${campaignId}/leads/`, "a@notexample.com"), guards), LemlistGuardError);
-  assert.doesNotThrow(() => assertAllowedRequest(add(`/api/campaigns/${campaignId}/leads/`, "a@x.example.com"), guards));
-  assert.throws(() => assertAllowedRequest({ method: "POST", path: "/api/campaigns/cam_other/pause" }, guards), LemlistGuardError);
+  assert.doesNotThrow(() => assertAllowedRequest(add("/api/campaigns/cam_other/leads/", "a@example.com"), guards));
+  assert.doesNotThrow(() => assertAllowedRequest(add(`/api/campaigns/${campaignId}/leads/`, "a@another.example.org"), guards));
+  assert.throws(() => assertAllowedRequest(add(`/api/campaigns/${campaignId}/leads/`, "no-address"), guards), LemlistGuardError);
+  assert.doesNotThrow(() => assertAllowedRequest({ method: "POST", path: "/api/campaigns/cam_other/pause" }, guards));
+  assert.throws(() => assertAllowedRequest({ method: "POST", path: "/api/campaigns/cam_other/start" }, guards), LemlistGuardError);
   assert.throws(() => assertAllowedRequest({ method: "POST", path: "/api/team" }, guards), LemlistGuardError);
   assert.throws(() => assertAllowedRequest({ method: "GET", path: "/api/campaigns/x/export" }, guards), LemlistGuardError);
+});
+
+test("enrollment into a campaign with a sender attached is refused before any add", async () => {
+  const { client, leads, requests } = fakeLemlist({ senderCampaigns: [campaignId] });
+  const ledger = new InMemoryEnrollmentLedger();
+  await assert.rejects(executeEnrollment(client, ledger, campaignId, await plan(client, ledger)), /has a sender attached/);
+  assert.equal(leads.size, 0);
+  assert.ok(!requests.some((request) => request.method === "POST"), "no write reaches Lemlist");
+  assert.ok([...ledger.entries.values()].every((entry) => entry.status === "failed"), "the refused claim stays retryable");
+
+  // A sender on a different campaign does not block this one.
+  const other = fakeLemlist({ senderCampaigns: ["cam_with_mailbox"] });
+  const outcomes = await executeEnrollment(other.client, new InMemoryEnrollmentLedger(), campaignId, await plan(other.client, new InMemoryEnrollmentLedger()));
+  assert.equal(outcomes.filter((outcome) => outcome.result === "enrolled").length, 2);
+});
+
+test("the sender check fails closed and also guards a launch", async () => {
+  assert.deepEqual(sendersAttachedTo({ data: [] }, campaignId), ["unreadable /api/team/senders response"]);
+  assert.deepEqual(sendersAttachedTo([{ userId: "usr_x" }], campaignId), ["usr_x"]);
+  assert.deepEqual(sendersAttachedTo([{ userId: "usr_x", campaigns: [{ _id: "cam_else" }] }], campaignId), []);
+
+  const unreachable: FetchLike = async (input) =>
+    new URL(input).pathname === "/api/team/senders" ? new Response("down", { status: 503 }) : Response.json({ _id: "lea_1" });
+  const client = new LemlistClient(new LemlistTransport({ apiKey: "k", guards, fetch: unreachable }));
+  await assert.rejects(client.addLead(campaignId, { email: "a@example.com" }), /503/);
+
+  // Even with launch switched on, a campaign with a sender is never started.
+  const { fetchImpl } = fakeLemlist({ senderCampaigns: [campaignId] });
+  const enabled = new LemlistClient(new LemlistTransport({ apiKey: "k", guards: { launchEnabled: true }, fetch: fetchImpl }));
+  await assert.rejects(enabled.startCampaign(campaignId), LemlistGuardError);
+});
+
+const attioRecord = (recordId: string, values: Record<string, Record<string, unknown>[]>): AttioRecordPayload => ({
+  id: { record_id: recordId },
+  created_at: "2026-10-22T12:00:00Z",
+  values,
+});
+
+test("Attio mirror people linked to companies pass the same deny-first plan", async () => {
+  const companies = [attioRecord("co_1", { name: [{ value: "Fictional Oaks Living" }], domains: [{ domain: "oaks.example.com" }] })];
+  const person = (id: string, email: string | null, extra: Record<string, Record<string, unknown>[]> = {}) =>
+    attioRecord(id, {
+      name: [{ first_name: "Pat", last_name: id }],
+      company: [{ target_record_id: "co_1" }],
+      ...(email ? { email_addresses: [{ email_address: email }] } : {}),
+      ...extra,
+    });
+  const source = candidatesFromAttio({
+    companies,
+    people: [
+      person("pe_1", "pat.one@oaks.example.com", { job_title: [{ value: "Executive Director" }] }),
+      person("pe_2", "pat.two@oaks.example.com"),
+      person("pe_3", null),
+      person("pe_4", "pat.four@oaks.example.com", { email_opt_out: [{ value: true }] }),
+      attioRecord("pe_5", { email_addresses: [{ email_address: "pat.five@oaks.example.com" }] }),
+    ],
+    approvals: parseApprovals(
+      ["pe_1", "pe_3", "pe_4"].map((contactKey) => ({ contactKey, approvedBy: "fictional-rep", approvedAt: "2026-10-22T13:00:00Z" })),
+    ),
+  });
+  assert.deepEqual(source.unlinked, ["pe_5"]);
+  assert.deepEqual(source.candidates[0], {
+    contactKey: "pe_1",
+    email: "pat.one@oaks.example.com",
+    firstName: "Pat",
+    lastName: "pe_1",
+    companyName: "Fictional Oaks Living",
+    companyDomain: "oaks.example.com",
+    jobTitle: "Executive Director",
+    approval: { approvedBy: "fictional-rep", approvedAt: "2026-10-22T13:00:00Z" },
+  });
+
+  const ledger = new InMemoryEnrollmentLedger();
+  const decisions = planEnrollment({
+    campaignId: "cam_any",
+    candidates: source.candidates,
+    suppressions: suppressionsFrom([], source.localDoNotContact),
+    activeKeys: await ledger.activeKeys("cam_any"),
+    killSwitchEngaged: false,
+  });
+  assert.deepEqual(
+    decisions.map((decision) => [decision.contactKey, decision.action === "enroll" ? "enroll" : decision.reason]),
+    [
+      ["pe_1", "enroll"],
+      ["pe_2", "not_approved"],
+      ["pe_3", "missing_email"],
+      ["pe_4", "suppressed_email"],
+    ],
+  );
+  assert.throws(() => parseApprovals([{ contactKey: "pe_1" }]));
 });
 
 test("requests use Basic auth with an empty login and the API key", async () => {

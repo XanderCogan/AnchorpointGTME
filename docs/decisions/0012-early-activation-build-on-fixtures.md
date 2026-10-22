@@ -33,6 +33,7 @@ Amended on 2026-10-22 by the user. Anchorpoint is treated as a real company, so 
 - No sending infrastructure is set up. No sending domain is bought, no mailbox is connected, and no warm-up period is run. With no sender attached, Lemlist cannot send even if a campaign were launched by mistake. Switching on for real would need a company's own warmed mailboxes, which is out of scope here.
 - Anchorpoint has no real SDRs. The manager and two representatives in the brief are fictional roles inside the application. They approve contacts in the app, and are never Lemlist senders.
 - Lemlist campaigns are kept as drafts or paused and never launched. Approved real contacts from Attio may be enrolled under the amendment below.
+- The connector no longer limits leads to `example.com` or writes to one configured campaign. In their place, the transport refuses any lead add or launch into a campaign that has a sender attached. Details are in `docs/milestones/milestone-6-lemlist-notes.md`.
 
 ## Boundaries that still hold
 
