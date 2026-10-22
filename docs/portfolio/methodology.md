@@ -76,7 +76,7 @@ Decision 0009 kept account value beside the priority score rather than inside it
 
 Decision 0010 removed all fictional CRM history, rejecting both Track A and a small seeded set, because analysing history the project wrote itself is circular and fake records put guesses where facts should be.
 
-Decision 0011 replaced Salesforce with Attio. The record states the approval and the object mapping but does not state a reason.
+Decision 0011 replaced Salesforce with Attio. The reason, added to the record on 2026-10-22, is that I found Attio easy to work with and well integrated, and it dropped the Salesforce JWT and sandbox setup under the one-day timeline. That is my judgment, not a vendor comparison.
 
 Decision 0012 built Milestones 5 to 7 early on labelled practice fixtures instead of waiting for earlier acceptance. Its question cites the one-day timeline; the record gives no further reason. Its amendments added no outreach ever and the scoped write policy in place of per-write approval.
 

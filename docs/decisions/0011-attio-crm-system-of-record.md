@@ -14,6 +14,10 @@ Milestone 2 stays as built and accepted. `inspection-v1` remains an immutable Hu
 
 Decision 0010 is unchanged: the Attio workspace holds real Georgia operators and facilities only, with no fictional deals, activity, or history.
 
+## Rationale
+
+Stated by the user on 2026-10-22, after the record was first written: Attio is a good CRM that is easy to work with and has good integrations. Labelled as the user's judgment, not a vendor comparison; no bounded comparison against HubSpot or Salesforce was run. It also removed the Salesforce JWT and sandbox setup cost under the one-day timeline.
+
 ## Object mapping, proposed
 
 - Parent operators and regional operating entities become Company records, linked by a parent-company record-reference attribute, since Attio has no built-in account hierarchy.
