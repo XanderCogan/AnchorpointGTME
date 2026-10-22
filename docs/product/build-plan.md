@@ -48,15 +48,15 @@ Deliverables:
 
 Exit gate: a clean environment can load the fixtures, run the audit, and display the same expected findings.
 
-## Milestone 3: Read-only Salesforce connection
+## Milestone 3: Read-only Attio connection
 
-Status: retargeted to Attio on 2026-10-21 by decision 0011. The Salesforce connector described below is superseded reference work; this section is rewritten for Attio in a follow-up change.
+Status: retargeted to Attio on 2026-10-21 by decision 0011. The workspace exists (`10-x-media`); the connector is not built. The earlier Salesforce connector, described in `../milestones/milestone-3-salesforce-connector-notes.md`, is superseded reference work and is not evidence for this milestone.
 
-Connect a Salesforce Developer Edition org using read-only permissions. Import bounded Account, Site, Contact, Lead, Opportunity, User, Task, and Campaign data, preserve source timestamps, and reconcile paginated data safely. The object mapping follows `docs/decisions/0005-crm-system-of-record.md`.
+Connect the Attio workspace with an access token limited to read scopes. Import bounded Company, Site, People, Deal, workspace member, Task, Note, and List data, preserve source timestamps, and reconcile paginated data safely. The object mapping follows `docs/decisions/0011-attio-crm-system-of-record.md`.
 
-Under decision 0010 the org holds only real Georgia operators and facilities from the market sample, as Accounts and Sites, loaded as a setup step separate from the read-only connector. There is no fictional history, so the other objects may be empty in the org; synthetic recorded responses prove them.
+Under decision 0010 the workspace holds only real Georgia operators and facilities from the market sample, as Companies and Sites, loaded as a setup step separate from the read-only connector. There is no fictional history, so the other objects may be empty; synthetic recorded responses prove them.
 
-Exit gate: repeated syncs are idempotent and no Salesforce records are changed.
+Exit gate: repeated syncs are idempotent and no Attio records are changed.
 
 ## Milestone 4: Clay enrichment loop
 
@@ -89,7 +89,7 @@ Exit gate: fixtures prove that duplicate delivery, retries, and suppression conf
 
 ## Milestone 7: TitanX handoff
 
-Create a controlled Salesforce Campaign for approved phone-ready contacts. Configure the supported TitanX Salesforce integration, confirmed under decision 0005, and map dispositions and follow-up expectations. Use fixtures or a documented manual import if the accessible integration cannot return all required events.
+Create a controlled Attio List for approved phone-ready contacts. Connect TitanX to it, natively or through an application bridge as decision 0011 settles, and map dispositions and follow-up expectations. Use fixtures or a documented manual import if the accessible integration cannot return all required events.
 
 Exit gate: call-ready contacts are traceable from approval through disposition without claiming unsupported API behavior.
 

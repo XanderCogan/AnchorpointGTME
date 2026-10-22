@@ -1,6 +1,6 @@
 # Operating Contract
 
-Status: approved and amended after Milestone 1 review on 2026-10-17; amended on 2026-10-19 for decisions 0003, 0004, and 0005.
+Status: approved and amended after Milestone 1 review on 2026-10-17; amended on 2026-10-19 for decisions 0003, 0004, and 0005; amended on 2026-10-21 for decision 0011, which replaces Salesforce with Attio.
 
 Frozen version: `operating-contract-v1.3`
 
@@ -10,7 +10,7 @@ Version `v1.2` named HubSpot as the CRM and remains the governing contract for t
 
 Anchorpoint Fire & Safety is a fictional private-equity-backed commercial fire and life-safety services company. It performs recurring inspection, testing, maintenance, and repair for multi-location commercial operators from branches in Georgia and South Carolina. Its service catalog, branches, licensing gates, and travel-time rules are defined in `docs/decisions/0003-service-catalog-and-footprint.md`. North Carolina operators appear in the CRM but are not serviceable because Anchorpoint holds no North Carolina licenses.
 
-The company recently consolidated several local operators. Its Salesforce org contains imported records, inconsistent ownership, duplicated companies, stale deals, and contacts without clear personas. Leadership wants to add structured outbound without contacting customers, duplicating active opportunities, or handing representatives unusable lists.
+The company recently consolidated several local operators. Its CRM contains imported records, inconsistent ownership, duplicated companies, stale deals, and contacts without clear personas. Leadership wants to add structured outbound without contacting customers, duplicating active opportunities, or handing representatives unusable lists.
 
 ## First sales motion
 
@@ -39,9 +39,9 @@ Provisional senior-living personas, added on 2026-10-20 for the Georgia sample. 
 
 ## Systems of record
 
-Salesforce is the operational source of truth for CRM identity, ownership, lifecycle, opportunity state, consent, and activity. The object mapping is defined in `docs/decisions/0005-crm-system-of-record.md`: Accounts with a parent hierarchy, a custom Site object for physical facilities, Contacts, Leads only for unmatched inbound, Opportunities, Users as owners, Tasks and Events, and Campaigns for controlled audiences. The application keeps a versioned, CRM-neutral mirror for audits and processing but does not become the sales team's primary CRM.
+Attio is the operational source of truth for CRM identity, ownership, lifecycle, opportunity state, consent, and activity. The object mapping is defined in `docs/decisions/0011-attio-crm-system-of-record.md`: Companies linked by a parent-company reference, a custom Site object for physical facilities, People, Deals, workspace members as owners, Tasks and Notes, and Lists for controlled audiences. How unmatched inbound hand-raisers are held is open under that decision. The application keeps a versioned, CRM-neutral mirror for audits and processing but does not become the sales team's primary CRM.
 
-The field-service management platform is the source of truth for service delivery, contracts, invoices, and therefore customer status, as defined in `docs/decisions/0004-operating-source-system.md`. Where it disagrees with Salesforce, the disagreement is a reconciliation finding rather than a silent override.
+The field-service management platform is the source of truth for service delivery, contracts, invoices, and therefore customer status, as defined in `docs/decisions/0004-operating-source-system.md`. Where it disagrees with Attio, the disagreement is a reconciliation finding rather than a silent override.
 
 Clay supplies enrichment with field-level provenance. Enriched values are proposed inputs until they pass validation and, where required, human review.
 
@@ -59,7 +59,7 @@ A logged sales activity for deal staleness includes a completed call, one-to-one
 
 A future task is an incomplete owner-assigned sales task with a due timestamp after the audit timestamp. Tasks without owners do not satisfy the requirement.
 
-Suppression is deny-first. If Salesforce, Lemlist, or TitanX disagree, the most restrictive applicable signal wins until the conflict is resolved.
+Suppression is deny-first. If Attio, Lemlist, or TitanX disagree, the most restrictive applicable signal wins until the conflict is resolved.
 
 ## Company identity
 
@@ -154,11 +154,11 @@ A manager may move a non-engaged contact to the other channel after the first pl
 
 ## Ownership policy
 
-Every activated contact must have a named Salesforce owner. The owner is responsible for interested replies, scheduled follow-ups, and disposition quality. The application may recommend an owner but may not assign one without an approved ownership rule.
+Every activated contact must have a named Attio owner, a workspace member. The owner is responsible for interested replies, scheduled follow-ups, and disposition quality. The application may recommend an owner but may not assign one without an approved ownership rule.
 
 ## Write policy
 
-The first live Salesforce connector is read-only and connects only to a Developer Edition org holding real Georgia operators and facilities from public sources, with no fictional CRM history under decision 0010. Later approved writes are limited to versioned custom fields, Tasks, and controlled Campaign membership.
+The first live Attio connector is read-only, uses an access token limited to read scopes, and connects only to the project workspace holding real Georgia operators and facilities from public sources, with no fictional CRM history under decision 0010. Later approved writes are limited to versioned custom attributes, Tasks, and controlled List entries.
 
 An inbound Lead is matched to an existing Account before any follow-up. A matched Lead inherits the Account's customer, opportunity, and suppression state. An unmatched Lead cannot be activated.
 

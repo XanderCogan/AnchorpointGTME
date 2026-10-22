@@ -30,7 +30,7 @@ Decision 0010 is unchanged: the Attio workspace holds real Georgia operators and
 - Milestone 3 becomes a read-only Attio connection using an access token limited to read scopes. Its exit gate is unchanged in substance: repeated syncs are idempotent and no Attio records are changed.
 - The Salesforce connector, mirror migration, mapping, recorded fixtures, and tests built under decision 0005 are superseded. They stay in the repository as reference until the Attio connector replaces them, and are not milestone evidence for Attio.
 - The audit rules gain an Attio mapping, reusing the CRM-neutral model and the analysis pipeline in `docs/research/crm-icp-analysis-playbook.md`.
-- The owning documents that name Salesforce are revised in a follow-up change: the operating contract, activation state machine, health rule catalog, architecture, build plan, brief, and the Milestone 3 note.
+- The owning documents that named Salesforce were revised on 2026-10-21. The project workspace is `10-x-media` at https://app.attio.com/10-x-media.
 - Railway PostgreSQL stays. Supabase remains out of the plan.
 
 ## Open within this decision

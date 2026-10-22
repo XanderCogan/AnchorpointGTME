@@ -8,14 +8,14 @@ All records in this directory are fictional and use reserved `.example` domains.
 
 Do not edit an approved release in place. Create a new release when adding or changing scenarios so historical inspection evidence remains reproducible.
 
-`salesforce-mapping-v1` is its Salesforce-shaped counterpart: synthetic mirror records and a mapping configuration that reproduce every `inspection-v1` rule through the Salesforce mapping, with independently authored expected findings.
+`salesforce-mapping-v1` is its Salesforce-shaped counterpart: synthetic mirror records and a mapping configuration that reproduce every `inspection-v1` rule through the Salesforce mapping, with independently authored expected findings. It was built under decision 0005 and is superseded by decision 0011; an Attio-shaped counterpart replaces it.
 
 Generated findings belong under `artifacts/` and are not source fixtures.
 
 
 ## Connector recordings
 
-`connectors/salesforce-recorded-v1` holds hand-written, synthetic Salesforce REST query responses for the Milestone 3 read-only connector tests. They follow the same rules: fictional, reserved domains, and never edited in place once tests depend on them.
+`connectors/salesforce-recorded-v1` holds hand-written, synthetic Salesforce REST query responses for the superseded Salesforce connector tests. They follow the same rules: fictional, reserved domains, and never edited in place once tests depend on them.
 
 ## Analysis fixtures
 

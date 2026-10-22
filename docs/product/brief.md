@@ -16,14 +16,14 @@ Portco Launch Control tells the operator what is broken, which accounts deserve 
 
 ## Core workflow
 
-1. Read accounts, sites, contacts, leads, opportunities, owners, and relevant activities from Salesforce.
+1. Read accounts, sites, contacts, leads, opportunities, owners, and relevant activities from Attio.
 2. Evaluate CRM health using explicit deterministic rules.
 3. Send only approved incomplete target records to Clay for enrichment.
 4. Score and tier accounts using visible customer-approved rules.
 5. Suppress customers, open opportunities, unsubscribed contacts, duplicate records, and contacts with unresolved data risks.
 6. Present the proposed play to a manager for approval.
-7. Route email-ready contacts to Lemlist and phone-ready contacts to a controlled Salesforce Campaign used by TitanX.
-8. Return replies, bounces, calls, dispositions, meetings, and follow-ups to Salesforce and the application work queue.
+7. Route email-ready contacts to Lemlist and phone-ready contacts to a controlled Attio List handed to TitanX.
+8. Return replies, bounces, calls, dispositions, meetings, and follow-ups to Attio and the application work queue.
 
 ## CRM health model
 

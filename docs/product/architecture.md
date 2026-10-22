@@ -10,10 +10,10 @@ Browser
             -> Postgres-backed job queue
             -> Railway background worker
             -> Railway scheduled reconciliation jobs
-            -> Salesforce, Clay, Lemlist, and TitanX handoffs
+            -> Attio, Clay, Lemlist, and TitanX handoffs
 ```
 
-Vercel is the human interface. Railway is the integration and processing layer. Salesforce is the operational CRM system of record under decision 0005, and the field-service platform is the source of service and customer truth under decision 0004. PostgreSQL stores the application mirror, findings, proposals, approvals, job state, connector events, and audit evidence.
+Vercel is the human interface. Railway is the integration and processing layer. Attio is the operational CRM system of record under decision 0011, and the field-service platform is the source of service and customer truth under decision 0004. PostgreSQL stores the application mirror, findings, proposals, approvals, job state, connector events, and audit evidence.
 
 ## Current repository shape
 
@@ -27,7 +27,7 @@ Anchorpoint/
     core/       implemented audit types and deterministic rules
     contracts/  runtime fixture validation
     db/         schema, migrations, queries, repositories, and job state
-    connectors/ read-only Salesforce connector (Milestone 3 groundwork)
+    connectors/ superseded read-only Salesforce connector (reference until the Attio connector lands)
   fixtures/     immutable synthetic inputs and expected outcomes
   tests/        executable acceptance evidence
   scripts/      inspection and artifact builders
@@ -39,7 +39,7 @@ Anchorpoint/
     decisions/  durable product rationale
 ```
 
-The current code path stores validated fixture input in PostgreSQL, runs the audit in a background worker, persists findings and job state, exposes them through a protected API, and renders them for an authenticated RevOps user. The complete local path is accepted against PostgreSQL, including retry exhaustion and authenticated desktop and narrow-viewport QA. Preview deployment remains pending. The read-only Salesforce connector in `packages/connectors/` is verified only against synthetic recorded responses; see `../milestones/milestone-3-salesforce-connector-notes.md`.
+The current code path stores validated fixture input in PostgreSQL, runs the audit in a background worker, persists findings and job state, exposes them through a protected API, and renders them for an authenticated RevOps user. The complete local path is accepted against PostgreSQL, including retry exhaustion and authenticated desktop and narrow-viewport QA. Preview deployment remains pending. The read-only Salesforce connector in `packages/connectors/` was verified only against synthetic recorded responses and is superseded by decision 0011; the Attio connector is not built.
 
 ## Planned repository shape
 
@@ -52,7 +52,7 @@ Anchorpoint/
   packages/
     core/      health rules, scoring, suppression, and state transitions
     db/        schema, migrations, queries, and repositories
-    connectors/ Salesforce, Clay, Lemlist, and TitanX adapters
+    connectors/ Attio, Clay, Lemlist, and TitanX adapters
     contracts/ shared validated request and event schemas
   fixtures/    synthetic connector inputs and expected outcomes
   docs/        routed product, contract, research, milestone, and decision records
@@ -75,7 +75,7 @@ The folders beyond `docs/` will be created only when their milestone begins.
 ### API
 
 - Authenticated dashboard endpoints
-- Salesforce change events and Lemlist webhook receivers
+- Attio and Lemlist webhook receivers
 - Clay callback receiver
 - Approval commands
 - Connector credential boundaries
@@ -83,12 +83,12 @@ The folders beyond `docs/` will be created only when their milestone begins.
 
 ### Worker
 
-- Paginated Salesforce synchronization
+- Paginated Attio synchronization
 - Health-rule evaluation
 - Clay enrichment requests and result processing
 - Account score recalculation
 - Lemlist enrollment
-- Salesforce Campaign membership and field updates for TitanX handoff
+- Attio List entries and attribute updates for the TitanX handoff
 - Retry, dead-letter, and reconciliation processing
 
 ### Database
@@ -104,7 +104,7 @@ The folders beyond `docs/` will be created only when their milestone begins.
 
 ## Connector boundaries
 
-Salesforce is read first. Writes are limited to explicitly approved custom fields, Tasks, and Campaign membership. Clay receives bounded enrichment requests and returns structured fields. Lemlist receives approved email-ready contacts and returns activity events. TitanX is reached through a controlled Salesforce Campaign and its supported Salesforce integration rather than an assumed private API.
+Attio is read first. Writes are limited to explicitly approved custom attributes, Tasks, and List entries. Clay receives bounded enrichment requests and returns structured fields. Lemlist receives approved email-ready contacts and returns activity events. TitanX is reached through a controlled Attio List; whether TitanX reads Attio directly or the application bridges it is open under decision 0011, and no private API is assumed.
 
 ## Reliability requirements
 

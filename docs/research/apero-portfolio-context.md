@@ -64,9 +64,9 @@ He has also described Apero as, in practice, an AI-augmented ABM team that gener
 
 - The real-data TAM and tiering work is the centerpiece. It matches Apero's step 1 directly.
 - Facility operators in senior living and similar verticals are a good fit for the website-scraping approach he describes, because their administrators are often not on LinkedIn.
-- A signal-layer demonstration (an inbound reply matched to account and tier, written to Salesforce, posted to Slack) maps to step 2 without needing a warmed sending domain.
+- A signal-layer demonstration (an inbound reply matched to account and tier, written to Attio, posted to Slack) maps to step 2 without needing a warmed sending domain.
 - The synthetic CRM audit from Milestones 1 and 2 is supporting evidence of software discipline, not the headline.
-- Salesforce is the CRM for all new work under decision 0005.
+- Attio is the CRM for all new work under decision 0011, replacing Salesforce under decision 0005.
 
 ## Why Anchorpoint
 

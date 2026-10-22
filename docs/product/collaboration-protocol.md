@@ -75,10 +75,10 @@ The user's work should be operationally meaningful rather than artificial typing
 - Trace one request from the browser through the API to stored data.
 - Change one validation rule or query with guidance and verify its test.
 
-### Salesforce connection
+### Attio connection
 
-- Configure the Developer Edition org and a read-only connected app.
-- Map the org's objects and fields to the canonical contract.
+- Configure the Attio workspace and a read-only access token.
+- Map the workspace's objects and attributes to the canonical contract.
 - Classify at least ten ambiguous records and explain the treatment.
 
 ### Clay enrichment

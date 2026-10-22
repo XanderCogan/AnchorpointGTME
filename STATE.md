@@ -25,7 +25,7 @@ Do not derive ICP hypotheses, tune score weights, or size the market from `inspe
 
 ## Blockers
 
-- Milestone 3 live acceptance needs the user's Attio workspace, the Site custom object, and a read-only access token.
+- Milestone 3 live acceptance needs the Site custom object and a read-only access token in the Attio workspace `10-x-media` (https://app.attio.com/10-x-media).
 - The remote branch `origin/claude/tender-tesla-9lfwvn` proposes Supabase without Railway and reuses decision numbers 0003 and 0004 for different decisions. It is not part of the plan; ignore it until the user decides whether to delete it.
 
 ## Immediate next work
@@ -36,10 +36,10 @@ When Clay is connected, follow "Runbook: when Clay is connected" in `docs/resear
 
 Flagged for later review: the two provisional senior-living personas in `docs/contracts/operating-contract.md`, once Stage 6 shows which job titles exist. Review the site administrator's low-confidence 7 person-relevance points at the same time.
 
-1. Revise the documents decision 0011 lists, then build the read-only Attio connector and Attio audit mapping.
+1. Done on 2026-10-21: owning documents revised for Attio. Next, build the read-only Attio connector and Attio audit mapping.
 2. Done on 2026-10-21: coarse segment sizing in `docs/research/georgia-segment-sizing.md`. It is market context only. Senior living and skilled nursing is the one segment drilled into; no work or spend on a second segment is planned.
 3. Done on 2026-10-21: the CRM analysis pipeline and the Salesforce mapping for the audit rules (superseded by 0011; the pipeline itself is CRM-neutral), verified on labelled test fixtures only (`docs/research/crm-icp-analysis-playbook.md`).
-4. When the Attio workspace exists, finish the Milestone 3 exit-gate checks.
+4. When the connector is built and the token exists, finish the Milestone 3 exit-gate checks.
 
 ## Active safety boundary
 

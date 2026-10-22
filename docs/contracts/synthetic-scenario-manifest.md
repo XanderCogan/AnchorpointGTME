@@ -71,7 +71,7 @@ Expected outcome: no critical findings. Eligible records progress to scoring, bu
 
 - Approved email-ready contact is enrolled once in Lemlist.
 - Enrollment job retries after a timeout but does not create a duplicate lead.
-- Approved phone-ready contact enters the controlled TitanX Salesforce Campaign once.
+- Approved phone-ready contact enters the controlled TitanX Attio List once.
 - Contact qualifies for both channels but receives only the approved primary channel.
 - Conflicting active-channel evidence creates a critical finding.
 - Approval is withdrawn before activation.

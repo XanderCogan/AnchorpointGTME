@@ -1,6 +1,6 @@
 # Milestone 3 Salesforce Connector Notes
 
-Status: groundwork built and verified against synthetic recorded responses on 2026-10-20. Not accepted. Live acceptance waits for the user's Salesforce Developer Edition org.
+Status: superseded on 2026-10-21 by decision 0011, which moves the CRM to Attio. This groundwork was built and verified against synthetic recorded responses on 2026-10-20 and was never accepted. It is kept as reference for the Attio connector's read-only transport, paging, and mirror rules, and is not Milestone 3 evidence.
 
 ## What exists
 

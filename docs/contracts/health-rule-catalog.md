@@ -1,6 +1,6 @@
 # CRM Health Rule Catalog
 
-Status: approved for Milestone 1 on 2026-10-17. Wording amended on 2026-10-19 under decision 0005 to name Salesforce as the CRM; rule logic is unchanged, and `inspection-v1` still evaluates these rules against HubSpot-shaped records.
+Status: approved for Milestone 1 on 2026-10-17. Wording amended on 2026-10-19 under decision 0005 and on 2026-10-21 under decision 0011 to name Attio as the CRM; rule logic is unchanged, and `inspection-v1` still evaluates these rules against HubSpot-shaped records.
 
 Frozen version: `health-rules-v1`
 
@@ -81,7 +81,7 @@ Critical. The contact qualifies for email by fit but has an unsubscribe or globa
 
 ### `CRM-SUPPRESSION-004`: Do-not-call conflict
 
-Critical. The contact qualifies for calling but is marked do-not-call or globally suppressed. The application must not place the contact in the controlled TitanX calling Campaign.
+Critical. The contact qualifies for calling but is marked do-not-call or globally suppressed. The application must not place the contact in the controlled TitanX calling List.
 
 ### `CRM-LIFECYCLE-001`: Invalid lifecycle progression
 

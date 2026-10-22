@@ -1,6 +1,6 @@
 # CRM ICP Analysis Playbook
 
-Status: method, approved under decision 0010 on 2026-10-20. It has not been run on real data, because Anchorpoint has no real CRM history. This is what the project would run on a client's Salesforce.
+Status: method, approved under decision 0010 on 2026-10-20. It has not been run on real data, because Anchorpoint has no real CRM history. This is what the project would run on a client's CRM.
 
 ## Purpose
 
@@ -8,7 +8,7 @@ Find which kinds of accounts a client wins, pays the most, and keeps, then turn 
 
 ## Inputs
 
-- The read-only Salesforce mirror from Milestone 3: Accounts, Sites, Contacts, Opportunities, Users, Tasks, and Campaigns with their source timestamps.
+- The read-only CRM mirror from Milestone 3 (Attio under decision 0011; the mirror built so far is Salesforce-shaped): Accounts, Sites, Contacts, Opportunities, Users, Tasks, and Campaigns with their source timestamps.
 - The client's billing or field-service records, which decision 0004 treats as the truth for revenue and service.
 - The public market tables from the TAM pipeline: facility type, beds or size, ownership, citations, drive time, and hiring signals.
 
@@ -51,6 +51,8 @@ The human: choosing the questions, deciding which records to distrust, knowing t
 Built: the read-only Salesforce connector and mirror (Milestone 3), the Milestone 1 audit rules with a Salesforce mapping, and the pipeline for steps 1 to 7 and the machine half of step 9. Steps 8, the judgment in 9, and 10 are human work and wait for a client's real history. Every run in this project uses labelled synthetic test fixtures; the outputs prove the code runs and are never findings (decision 0010).
 
 ### Salesforce mapping for the audit rules
+
+Built under decision 0005 and superseded by decision 0011. An Attio mapping replaces it; the CRM-neutral audit model and pipeline carry over unchanged.
 
 `packages/core/src/salesforce-mapping.ts` turns a mirror snapshot into the CRM-neutral audit model, so `auditCrm` runs unchanged.
 

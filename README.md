@@ -1,8 +1,8 @@
 # Portco Launch Control
 
-Portco Launch Control is an Apero-style GTM engineering portfolio project built around the fictional client Anchorpoint Fire & Safety. It maps a real market into Salesforce accounts and sites, audits CRM health with deterministic rules, prepares bounded records for enrichment, ranks accounts and people with explainable evidence, requires human approval, routes approved contacts to Lemlist or TitanX, and returns outcomes to Salesforce and a rep work queue.
+Portco Launch Control is an Apero-style GTM engineering portfolio project built around the fictional client Anchorpoint Fire & Safety. It maps a real market into Attio companies and sites, audits CRM health with deterministic rules, prepares bounded records for enrichment, ranks accounts and people with explainable evidence, requires human approval, routes approved contacts to Lemlist or TitanX, and returns outcomes to Salesforce and a rep work queue.
 
-The system is intentionally gated and read-only at its current stage. No live credentials or live external connections exist. The Milestone 3 Salesforce connector is read-only and has run only against synthetic recorded responses.
+The system is intentionally gated and read-only at its current stage. No live credentials or live external connections exist. The CRM is Attio under decision 0011; its read-only connector is not built yet.
 
 ## Portfolio context
 
@@ -13,7 +13,7 @@ This is a GTM engineering work sample for Apero Advisors. Anchorpoint Fire & Saf
 - Milestone 0 is complete.
 - Milestone 1 was accepted on 2026-10-17.
 - Milestone 2 is complete, with the preview deployed on Vercel and Railway.
-- Milestone 3, the read-only Salesforce connector, is built and verified against synthetic recorded responses; live acceptance waits for the user's Developer Edition org.
+- Milestone 3 is retargeted to a read-only Attio connection; the workspace exists and the connector is not built. The earlier Salesforce connector is superseded reference code.
 - The Georgia senior-living and skilled-nursing sample is the first of about five Georgia segments, worked in depth.
 - The current application is a read-only Next.js findings board backed by the frozen `inspection-v1` fixture and the deterministic audit engine.
 - The fixture proves CRM audit behavior. It is not valid evidence for ICP discovery, score calibration, or TAM sizing.
@@ -24,7 +24,7 @@ Read [`STATE.md`](STATE.md) for the current gate, active decisions, and immediat
 ## Product flow
 
 ```text
-Salesforce and operating-system data
+Attio and operating-system data
   -> deterministic CRM health audit
   -> historical customer and deal analysis
   -> ICP hypotheses and external market construction
@@ -32,7 +32,7 @@ Salesforce and operating-system data
   -> explainable ranking and play table
   -> human approval
   -> Lemlist or TitanX
-  -> outcomes in Salesforce and the rep work queue
+  -> outcomes in Attio and the rep work queue
 ```
 
 ## Repository shape
@@ -54,7 +54,7 @@ docs/milestones/   implementation evidence and remaining work
 docs/decisions/    durable decision records
 ```
 
-Connector packages are created only when their gated milestone begins. `packages/connectors/` holds the Milestone 3 read-only Salesforce connector.
+Connector packages are created only when their gated milestone begins. `packages/connectors/` holds the superseded read-only Salesforce connector, kept as reference until the Attio connector replaces it.
 
 ## Local verification
 

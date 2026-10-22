@@ -25,7 +25,7 @@ Never present an assumption as a fact, and never write an invented value into a 
 
 ## CRM history analysis
 
-On a real client, ICP work starts from 24 to 36 months of closed-won, closed-lost, renewal, expansion, and churn history reconciled with billing. Anchorpoint has none, so the project shows the capability instead of a result: `crm-icp-analysis-playbook.md` describes the method, and Milestone 4 builds its pipeline over the Salesforce mirror, verified on labelled test fixtures whose outputs are never findings.
+On a real client, ICP work starts from 24 to 36 months of closed-won, closed-lost, renewal, expansion, and churn history reconciled with billing. Anchorpoint has none, so the project shows the capability instead of a result: `crm-icp-analysis-playbook.md` describes the method, and Milestone 4 builds its pipeline over the CRM mirror, verified on labelled test fixtures whose outputs are never findings.
 
 Do not infer the ICP from the existing `inspection-v1` fixture. It contains one closed-won deal and deliberate data contradictions built to test audit rules.
 
@@ -170,7 +170,7 @@ The first application fixture remains approximately 200 companies and 600 contac
 ## Open decisions
 
 - Service catalog, branch locations, travel-time rules, and licensing and capability constraints are resolved in `docs/decisions/0003-service-catalog-and-footprint.md`
-- The field-service source system and its reconciliation with the Salesforce CRM are resolved in `docs/decisions/0004-operating-source-system.md` and `docs/decisions/0005-crm-system-of-record.md`
+- The field-service source system and its reconciliation with the CRM are resolved in `docs/decisions/0004-operating-source-system.md` and `docs/decisions/0011-attio-crm-system-of-record.md`
 - Anchorpoint platform age, acquired-company history, and operating profile are resolved in `docs/decisions/0006-ordinary-company-profile.md`; its generated-dataset section is cancelled under `docs/decisions/0010-no-fictional-crm-history.md`
 - The first Georgia sample, its sources, and the enrichment budget are resolved in `docs/decisions/0007-first-georgia-sample-and-enrichment.md`
 - Which signals deserve ongoing monitoring
