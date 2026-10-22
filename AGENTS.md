@@ -2,7 +2,7 @@
 
 - Load project context on demand rather than reading orientation files automatically. Read `README.md` when a task needs broad project orientation. Read `STATE.md` only for current status, active implementation, blockers, resumption, or handoff work. After conversation compaction, reread only the files needed to restore missing context, and do not reread unchanged files during the same uninterrupted task.
 - Use `docs/README.md` as the documentation router. Open one routed document by default and follow only explicit dependencies needed for the current question; never scan the documentation set broadly.
-- Use `STATE.md` only for the current gate, active blockers, and immediate next work. Put durable knowledge in the appropriate `docs/` bin and remove `STATE.md` when no long-running work remains.
+- Use `STATE.md` only for the current gate, integration status, active blockers, and immediate next work, and keep it under about 40 lines. Delete items once they are done; the evidence belongs in `docs/`. Put durable knowledge in the appropriate `docs/` bin and remove `STATE.md` when no long-running work remains.
 - File product scope and plans in `docs/product/`, approved behavioral definitions in `docs/contracts/`, discovery and market work in `docs/research/`, implementation evidence in `docs/milestones/`, and durable rationale in `docs/decisions/`.
 - Keep project documentation and Anchorpoint work inside this repository unless the user explicitly broadens scope.
 - Do not use tables in project documentation or research deliverables. Prefer concise prose and short lists.
