@@ -19,7 +19,7 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 - Attio writeback: built and tested on fixtures. Migration 0005 is applied to the local database only. `ATTIO_WRITEBACK_TOKEN` is in `.env` (records read-write, object configuration read); suffixed attribute slugs such as `persona_verified_7` and `enrichment_date_3` are mapped through `ATTIO_WRITEBACK_SLUGS`.
 - Lemlist: connector, ledger, kill switch, and webhook receiver verified on practice fixtures and the real API; webhook `hoo_6aaLNM5JX3N33S2oX` delivers to the Render API (`docs/milestones/milestone-6-lemlist-notes.md`). Feeding from Attio, with no domain or single-campaign limit and a sender-attached guard, is built.
 - Dialer: none bought (decision 0014); Milestone 7 ends at the Attio List of approved phone-ready contacts, with no code yet. Salesforce: superseded reference code only.
-- Hosting: Render (decision 0013) serves the API at `https://anchorpoint-api-wyaj.onrender.com`; the worker reproduced 22 findings there. Vercel production points at it with the rotated token (redeployed 2026-10-22); the signed-in dashboard was not checked by the agent. Railway is deleted.
+- Hosting: Render (decision 0013) serves the API at `https://anchorpoint-api-wyaj.onrender.com`; the worker reproduced 22 findings there. Vercel production points at it with the rotated token and shows the 22 findings. Sign-in is off while Vercel has `AUTH_DISABLED=true` (delete it to restore the password). Railway is deleted.
 
 ## Next work
 
