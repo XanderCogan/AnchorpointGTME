@@ -9,6 +9,12 @@ import { loadPracticeContacts } from "../packages/connectors/src/lemlist/practic
 import { closePool } from "../packages/db/src/client.ts";
 import { localSuppressions, PostgresActivationControls, PostgresEnrollmentLedger } from "../packages/db/src/lemlist.ts";
 
+try {
+  process.loadEnvFile(resolve(import.meta.dirname, "..", ".env"));
+} catch {
+  // The key may already be in the environment.
+}
+
 const live = process.argv.includes("--live");
 const config = lemlistConfigFromEnv();
 if (!config?.campaignId) {
