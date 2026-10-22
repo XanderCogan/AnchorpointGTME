@@ -144,18 +144,26 @@
       "persona": "Site Administrator (provisional)",
       "personaMappingConfidence": "provisional persona added 2026-10-20; review after Stage 6 titles are seen",
       "personRelevanceProposal": {
-        "directOwnership": 0,
-        "influence": 5,
-        "adjacent": 2,
-        "total": 7
+        "singleSite": {
+          "directOwnership": 8,
+          "influence": 0,
+          "adjacent": 2,
+          "total": 10
+        },
+        "chainSite": {
+          "directOwnership": 0,
+          "influence": 5,
+          "adjacent": 2,
+          "total": 7
+        }
       },
-      "influenceEvidence": "site budget and vendor approval held by the licensed administrator",
+      "influenceEvidence": "at a single-site independent the licensed administrator usually signs vendor contracts and answers for the life-safety survey; at a chain site corporate or regional facilities sets the vendor and the administrator influences",
       "fills": [
         "roleChange",
         "personRelevance",
         "personaAndChannel"
       ],
-      "personRelevanceConfidence": "low"
+      "personRelevanceRule": "site-admin-split-1: 10 at a single-site operator, 7 at a site of a multi-site operator; approved by the user on 2026-10-22; practice basis is a working assumption to validate"
     }
   ],
   "tenureBands": {
@@ -174,5 +182,5 @@
     "not_found",
     "found_not_valid"
   ],
-  "personRelevanceStatus": "approved by the user on 2026-10-20 with the best-person rollup; site_executive_director's 7 is low confidence and is reviewed with the provisional personas"
+  "personRelevanceStatus": "approved by the user on 2026-10-20 with the best-person rollup; site_executive_director split by operator type on 2026-10-22 (10 single-site, 7 chain site)"
 }

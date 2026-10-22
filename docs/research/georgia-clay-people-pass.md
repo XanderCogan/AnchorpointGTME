@@ -234,7 +234,7 @@ If the reducer fails, its message says why:
 
 1. Can a free-plan account buy a one-time top-up? Clay's docs do not say. Resolved 2026-10-20: the run pays for speed, so this only decides between top-ups and a Launch month.
 2. Review later: the two provisional senior-living personas in the operating contract, and any generic persona that does not fit, once Stage 6 shows which titles actually exist.
-3. Resolved 2026-10-20: person-relevance points 13, 7, 10, and 7 and the best-person rollup are approved. The administrator's 7 is low confidence and is reviewed with the provisional personas.
+3. Resolved 2026-10-20: person-relevance points 13, 7, 10, and 7 and the best-person rollup are approved. Amended 2026-10-22 by the user: the site administrator scores 10 at a single-site operator, where the administrator usually signs vendor contracts and answers for the life-safety survey, and 7 at a site of a multi-site operator, where corporate or regional facilities picks the vendor. The practice basis is a working assumption still to be checked against a source or a buyer conversation.
 4. Resolved 2026-10-20: `role-change-proposal-1` is approved.
 5. Resolved 2026-10-20: tenure bands stay in `private/`, and only account-level role-change points with a generic reason are committed.
 

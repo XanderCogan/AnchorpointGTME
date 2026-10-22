@@ -25,7 +25,7 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 1. Milestone 4: Clay proposes a domain and primary location for the 71 eligible operators, which clears the 142 live audit findings.
 2. Re-inspect the tier bands with the Stage 6 people coverage before treating them as final.
-3. Review the two provisional senior-living personas in `docs/contracts/operating-contract.md`, and the site administrator's low-confidence 7 person-relevance points.
+3. Review the two provisional senior-living personas in `docs/contracts/operating-contract.md`. Stage 6 found matching titles for both (9 operations leaders at 19 operators, 5 administrators at 11 single sites).
 4. Port the CRM history pipeline to Attio snapshots (not started).
 5. Later: find why live Lemlist enrollment runs took tens of seconds (a dry run takes about 2.5 seconds).
 6. Later: get a real Lemlist-originated event to reach the Render webhook without sending email; only self-sent test events have been received so far.
