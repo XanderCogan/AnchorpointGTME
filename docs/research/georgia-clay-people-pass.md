@@ -1,6 +1,6 @@
 # Georgia Sample Stage 6: Clay People Pass Design
 
-Status: run on 2026-10-21 and 2026-10-22 as a manual CSV round trip; see "Run results" below and `data/georgia-sample/people-coverage.json`. Clay is not connected to Attio, and no people were written to Attio. This is Stage 6 of `georgia-senior-living-sample-plan.md`, governed by `docs/decisions/0007-first-georgia-sample-and-enrichment.md` as amended on 2026-10-20.
+Status: run on 2026-10-21 and 2026-10-22 as a manual CSV round trip; see "Run results" below and `data/georgia-sample/people-coverage.json`. Clay is not connected to Attio, and no people were written to Attio. Under decision 0012 as amended on 2026-10-22, later runs are automated from Attio and write contacts back to Attio as People; the integration method is pending. This is Stage 6 of `georgia-senior-living-sample-plan.md`, governed by `docs/decisions/0007-first-georgia-sample-and-enrichment.md` as amended on 2026-10-20.
 
 Date: 2026-10-20
 
@@ -148,12 +148,12 @@ The stop report, written into `people-coverage.json` and summarized in the sampl
 
 ## Personal data boundary
 
-The repository is public, so decision 0007's boundary applies at its strictest.
+Amended on 2026-10-22 under decision 0012 (run as a real company). The 2026-10-21 and 2026-10-22 runs followed the earlier rule: emails deleted after validation, only coverage kept, no people in Attio. From now on, found contacts, including names, titles, and work email, are written from Clay to Attio as People under the operating contract's write policy. The repository is public, so none of it ever goes in git.
 
-Stays in Clay, never in git:
+Stays in Clay and Attio, never in git:
 
 - Names, titles as written, profile links, employer strings, and exact role start dates.
-- Email values, which exist in Clay only long enough to validate and are then deleted from the table.
+- Work email values.
 
 Phones are never requested.
 
@@ -177,7 +177,7 @@ Comes back into the repository, per operator row and per site row, and nothing e
 
 Decided by the user on 2026-10-20: tenure bands (under 6 months, 6 to 12, 12 to 24, over 24, or unknown) stay in `private/`. A band tied to a named facility's maintenance director could help someone identify that person. The repository gets only each operator's account-level role-change points and a generic reason, such as a verified facilities leader who started recently.
 
-The demo may show names only to authenticated users, from the database, as decision 0007 allows. Real-person data is deleted when the project ends, including the Clay workspace tables.
+The demo may show names only to authenticated users, from the database, as decision 0007 allows.
 
 ## How results reach the score
 

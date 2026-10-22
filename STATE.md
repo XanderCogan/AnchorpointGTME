@@ -13,9 +13,9 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 ## Integration status
 
 - Attio: Georgia operators and facilities were loaded once as Companies and Sites. The read-only connector syncs them to the Postgres mirror, where the audit runs.
-- Clay: run once, by hand, as a CSV round trip. Only coverage comes back (`data/georgia-sample/people-coverage.json`). It has no link to Attio, and Attio holds no people.
-- Planned path (decision 0012): Attio, then the Clay waterfall, then writeback to Attio, then scoring and approval, then Lemlist (drafts only) and an Attio List for TitanX (never dialed). The writeback is not built, and writing people to Attio needs the user to approve a test list.
-- Lemlist: the connector, enrollment ledger, kill switch, and webhook receiver are built and verified on practice fixtures only (Milestone 6, `docs/milestones/milestone-6-lemlist-notes.md`). The Claude app connector is signed in, and every write through it needs the user's approval.
+- Clay: run once so far, by hand, as a CSV round trip, keeping only coverage (`data/georgia-sample/people-coverage.json`). Attio holds no people yet.
+- Planned path (decision 0012, amended 2026-10-22 to run as a real company): Attio sends accounts to Clay, Clay runs the waterfall and writes contacts (with work email) back to Attio as People, then scoring and approval, then Lemlist (never launched) and an Attio List for TitanX (never dialed). Writeback is automated under the write policy, with conflicts and uncertain matches sent to review. Not built; needs a paid Clay plan (confirm price first) and the integration method is pending.
+- Lemlist: the connector, enrollment ledger, kill switch, and webhook receiver are built and verified on practice fixtures (Milestone 6, `docs/milestones/milestone-6-lemlist-notes.md`). Approved real contacts from Attio will feed enrollment.
 - TitanX: no code yet (Milestone 7). Salesforce: superseded reference code only.
 
 ## Next work
@@ -32,5 +32,6 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 ## Safety boundary
 
-- The Attio connector is read-only by construction. The temporary Attio setup token was deleted on 2026-10-22, and only the read-only token remains. Any future Attio write needs a new token and the user's approval.
-- Synthetic fixtures are test inputs, never findings or market evidence. Human approval and deny-first suppression are built as specified.
+- The Attio sync connector is read-only. Writeback uses a separate standing write token scoped to its objects and fields; the user must create it, and none exists yet.
+- No outreach ever: no sending domain or mailbox, no launched campaign, no dialing. Budget limits hold; confirm each purchase.
+- Human approval before enrollment, deny-first suppression, the kill switch, and the review queue are built as specified. Synthetic fixtures are test inputs, never market evidence.
