@@ -104,3 +104,21 @@ test("a Clay table row expands into the company and one row per person from the 
   assert.deepEqual(splitClayAddress("somewhere"), {});
   assert.deepEqual(splitPersonName("Jessica Williams CPAR, ACPAR"), { firstName: "Jessica", lastName: "Williams" });
 });
+
+test("the Clay phone goes to the person with the looked-up LinkedIn URL, and a rebranded employer still matches", () => {
+  const url = "https://www.linkedin.com/in/pat-example/";
+  const people = JSON.stringify([
+    { name: "Pat Example", title: "Chief Operating Officer", url, org: "Example Health" },
+    { name: "Sam Sample", title: "Vice President of Operations", url: "https://www.linkedin.com/in/sam-sample/", org: "Example Health" },
+  ]);
+  const rows = expandClayTable(
+    [{ attio_company_id: "c-1", company_name: "OLD LEGAL NAME INC", domain: "", clay_domain: "example.com", Name: "Example Health", "Url People": url, "Mobile Phone": "+12295550100", operator_operations_vp_json: people }],
+    ["operator_operations_vp"],
+  );
+  assert.equal(rows[1]!.mobile_phone, "+12295550100");
+  assert.equal(rows[2]!.mobile_phone, "");
+  const opsSlot: RoleSlot = { id: "operator_operations_vp", maxPeople: 2, titleInclude: ["chief operating officer"], titleExclude: [], persona: "Senior-Living Operations Leader" };
+  const mapped = mapClayRows(rows, { roleSlots: [opsSlot], enrichedOn: "2026-10-22" });
+  assert.equal(mapped.people[0]!.mobilePhone, "+12295550100");
+  assert.equal(mapped.people[0]!.match, "confirmed");
+});

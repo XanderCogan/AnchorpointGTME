@@ -66,7 +66,7 @@ The market sample contains real people. The safety rules already forbid contacti
 
 - Business facts about facilities and operators may be committed to the repository with their source and retrieval date.
 - Personal names, titles, and profile links stay out of version control. They live only in the Clay workspace and the local or deployed database, and the demo interface may show them only to authenticated users.
-- Email addresses and phone numbers are never committed. Amended on 2026-10-22 under decision 0012: work emails are stored in Attio as part of People records and shown only to authenticated users. The original sample recorded only whether a verified channel existed.
+- Email addresses and phone numbers are never committed. Amended on 2026-10-22 under decision 0012: work emails and mobile numbers found by Clay are stored in Attio as part of People records and shown only to authenticated users. The original sample recorded only whether a verified channel existed.
 - Real-person data is deleted when the portfolio project ends.
 
 ## Rationale

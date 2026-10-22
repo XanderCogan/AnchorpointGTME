@@ -38,6 +38,8 @@ export interface PersonEnrichment {
   lastName: string;
   jobTitle?: string;
   workEmail?: string;
+  // E.164 mobile number, such as +12295550100.
+  mobilePhone?: string;
   linkedinUrl?: string;
   persona?: string;
   personaVerified: boolean;
@@ -108,6 +110,10 @@ type Values = AttioRecord["values"];
 const text = (value: string) => value.trim().replace(/\s+/g, " ");
 const lower = (value: string) => text(value).toLowerCase();
 const domainOf = (value: string) => lower(value).replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/.*$/, "");
+const phoneOf = (value: string) => {
+  const digits = value.replace(/[^\d]/g, "");
+  return digits ? `+${digits.length === 10 ? `1${digits}` : digits}` : "";
+};
 const linkedinOf = (value: string) => lower(value).replace(/^https?:\/\//, "").replace(/^www\./, "").replace(/\/+$/, "");
 const nameKey = (first: string, last: string) => `${lower(first)}|${lower(last)}`;
 const locationKey = (location: Location) =>
@@ -151,12 +157,14 @@ function currentValues(values: Values, attribute: string): string[] {
       return entries.filter((entry) => entry.value === true).map(() => "true");
     case "linkedin":
       return entries.map((entry) => linkedinOf(str(entry.value))).filter(Boolean);
+    case "phone_numbers":
+      return entries.map((entry) => phoneOf(str(entry.phone_number) || str(entry.original_phone_number))).filter(Boolean);
     default:
       return entries.map((entry) => lower(str(entry.value))).filter(Boolean);
   }
 }
 
-const multiValued = new Set(["domains", "email_addresses"]);
+const multiValued = new Set(["domains", "email_addresses", "phone_numbers"]);
 
 interface Proposal {
   attribute: string;
@@ -208,6 +216,10 @@ function personProposals(input: PersonEnrichment, includePersona: boolean): Prop
   if (input.workEmail) {
     const email = lower(input.workEmail);
     proposals.push({ attribute: "email_addresses", normalized: email, display: email, write: [email] });
+  }
+  if (input.mobilePhone && phoneOf(input.mobilePhone)) {
+    const phone = phoneOf(input.mobilePhone);
+    proposals.push({ attribute: "phone_numbers", normalized: phone, display: phone, write: [{ original_phone_number: phone, country_code: "US" }] });
   }
   if (input.linkedinUrl) {
     proposals.push({ attribute: "linkedin", normalized: linkedinOf(input.linkedinUrl), display: text(input.linkedinUrl), write: text(input.linkedinUrl) });

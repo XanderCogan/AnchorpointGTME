@@ -36,7 +36,7 @@ export const EXPORT_COLUMNS = [
 // Columns the Clay table adds. Company proposals use the clay_ prefix; a row with a first and
 // last name is a person found by the search column named in `slot`.
 export const COMPANY_PROPOSAL_COLUMNS = ["clay_domain", "clay_line_1", "clay_locality", "clay_region", "clay_postcode", "clay_country_code"] as const;
-export const PERSON_COLUMNS = ["slot", "first_name", "last_name", "job_title", "work_email", "linkedin_url", "person_company_name", "person_company_domain"] as const;
+export const PERSON_COLUMNS = ["slot", "first_name", "last_name", "job_title", "work_email", "mobile_phone", "linkedin_url", "person_company_name", "person_company_domain", "clay_company_name"] as const;
 
 const str = (value: unknown) => (typeof value === "string" ? value : "");
 const first = (values: Record<string, unknown>, attribute: string): Entry | undefined => ((values[attribute] ?? []) as Entry[])[0];
@@ -155,6 +155,10 @@ export function expandClayTable(rows: Row[], slotIds: string[]): Row[] {
       }
       for (const person of Array.isArray(people) ? people : []) {
         const { firstName, lastName } = splitPersonName(person.name ?? "");
+        // Clay's Mobile Phone Number column looks up one person, keyed by the LinkedIn URL in
+        // "Url People"; the number belongs to whoever has that URL.
+        const phoneUrl = cell(row, "Url People");
+        const mobilePhone = phoneUrl && person.url && phoneUrl.replace(/\/+$/, "") === person.url.replace(/\/+$/, "") ? cell(row, "Mobile Phone") : "";
         out.push({
           attio_company_id: cell(row, "attio_company_id"),
           company_name: cell(row, "company_name"),
@@ -166,6 +170,9 @@ export function expandClayTable(rows: Row[], slotIds: string[]): Row[] {
           linkedin_url: person.url ?? "",
           person_company_name: person.org ?? "",
           person_company_domain: "",
+          // The company name Clay's Enrich company returned, which follows rebrands.
+          clay_company_name: cell(row, "Name"),
+          mobile_phone: mobilePhone,
         });
       }
     }
@@ -237,11 +244,14 @@ export function mapClayRows(rows: Row[], options: ImportOptions): ImportResult {
     }
     seenPeople.add(sourceKey);
     const jobTitle = cell(row, "job_title");
-    const employer = employerMatches(
-      { c: cell(row, "person_company_name"), d: cell(row, "person_company_domain") },
-      cell(row, "domain") || domain,
-      cell(row, "company_name"),
-    );
+    // The legal name in Attio can lag a rebrand ("TIFT REGIONAL HEALTH SYSTEM INC" now trades
+    // as Southwell), so the name Clay enriched from the company's domain also counts.
+    const personEmployer = { c: cell(row, "person_company_name"), d: cell(row, "person_company_domain") };
+    const companyDomain = cell(row, "domain") || domain;
+    const clayCompanyName = cell(row, "clay_company_name");
+    const employer =
+      employerMatches(personEmployer, companyDomain, cell(row, "company_name")) ||
+      (clayCompanyName !== "" && employerMatches(personEmployer, companyDomain, clayCompanyName));
     const person: PersonEnrichment = {
       sourceKey,
       companyRecordId,
@@ -256,6 +266,8 @@ export function mapClayRows(rows: Row[], options: ImportOptions): ImportResult {
     if (jobTitle) person.jobTitle = jobTitle;
     const email = cell(row, "work_email");
     if (email) person.workEmail = email;
+    const phone = cell(row, "mobile_phone");
+    if (phone) person.mobilePhone = phone;
     const linkedin = cell(row, "linkedin_url");
     if (linkedin) person.linkedinUrl = linkedin;
     result.people.push(person);

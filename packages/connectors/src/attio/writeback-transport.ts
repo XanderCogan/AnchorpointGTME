@@ -22,6 +22,7 @@ export const personWritebackAttributes = [
   "name",
   "job_title",
   "email_addresses",
+  "phone_numbers",
   "linkedin",
   "persona",
   "persona_verified",
