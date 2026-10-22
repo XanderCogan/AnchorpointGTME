@@ -26,7 +26,7 @@ Amended on 2026-10-22 by the user. This project never contacts anyone, from prac
 
 ## Real integration, switched off
 
-Amended on 2026-10-22 by the user. This is a practice project, but Anchorpoint is treated as a real company, so the integration is built as it would be for one.
+Amended on 2026-10-22 by the user. Anchorpoint is treated as a real company, so the integration is built as it would be for one.
 
 - The Lemlist connector calls the real Lemlist API. It creates campaigns, adds leads, reads activity, and handles unsubscribes through the documented endpoints, not a mock. If a real company switched it on, it should work.
 - The send path is built and tested but switched off. The kill switch defaults to off, and the code never launches a campaign in this project.
