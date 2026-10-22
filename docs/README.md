@@ -63,6 +63,7 @@ Milestone reports are evidence records. Update `STATE.md`, not an old report, wh
 - Approved switch to Attio as the CRM system of record, superseding Salesforce: [`decisions/0011-attio-crm-system-of-record.md`](decisions/0011-attio-crm-system-of-record.md)
 - Approved early build of Milestones 5 to 7 on practice fixtures, amended to run Anchorpoint as a real company with automated Attio writeback; no email or call is ever sent: [`decisions/0012-early-activation-build-on-fixtures.md`](decisions/0012-early-activation-build-on-fixtures.md)
 - Approved move of the API, worker, and database from Railway to Render after the Railway security incident: [`decisions/0013-render-replaces-railway.md`](decisions/0013-render-replaces-railway.md)
+- Approved choice to buy no dialer, ending the call handoff at an Attio List: [`decisions/0014-no-paid-dialer.md`](decisions/0014-no-paid-dialer.md)
 
 Add a decision record when the user resolves a material ambiguity that changes product behavior, tests, contracts, or milestone scope. Do not create decision records for routine implementation details.
 

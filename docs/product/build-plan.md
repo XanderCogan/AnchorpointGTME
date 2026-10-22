@@ -93,7 +93,7 @@ Exit gate: fixtures prove that duplicate delivery, retries, and suppression conf
 
 ## Milestone 7: TitanX handoff
 
-Create a controlled Attio List for approved phone-ready contacts. Connect TitanX to it, natively or through an application bridge as decision 0011 settles, and map dispositions and follow-up expectations. Use fixtures or a documented manual import if the accessible integration cannot return all required events.
+Create a controlled Attio List for approved phone-ready contacts, and map dispositions and follow-up expectations on fixtures. No dialer is connected or bought (decision 0014); TitanX remains the named calling system that would read the List.
 
 TitanX never places a call (decision 0012).
 

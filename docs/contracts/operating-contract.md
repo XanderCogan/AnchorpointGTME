@@ -45,7 +45,7 @@ The field-service management platform is the source of truth for service deliver
 
 Clay supplies enrichment with field-level provenance. Enriched values are proposed inputs until they pass validation and, where required, human review.
 
-Lemlist is the email execution system. TitanX is the calling execution system. The application owns eligibility, approval evidence, idempotency, and cross-channel suppression.
+Lemlist is the email execution system. TitanX is the named calling execution system, reached only through a controlled Attio List; no dialer is connected (decision 0014). The application owns eligibility, approval evidence, idempotency, and cross-channel suppression.
 
 ## Core CRM definitions
 
