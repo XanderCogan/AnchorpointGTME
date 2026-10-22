@@ -29,7 +29,7 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 ## Blockers
 
-- Render (decision 0013) is live at `https://anchorpoint-api-wyaj.onrender.com`; the worker reproduced 22 findings there. Vercel still points at Railway: the user sets `API_BASE_URL` to the Render address and `INTERNAL_API_TOKEN` to `RENDER_INTERNAL_API_TOKEN` from `.env`, then deletes the Railway services.
+- Render (decision 0013) serves the API at `https://anchorpoint-api-wyaj.onrender.com`; the worker reproduced 22 findings there. Vercel production points at it with the rotated token (redeployed 2026-10-22); the signed-in dashboard was not checked by the agent. Railway is deleted.
 - `origin/claude/tender-tesla-9lfwvn` proposes Supabase and reuses decision numbers 0003 and 0004. Ignore it until the user decides whether to delete it.
 
 ## Safety boundary

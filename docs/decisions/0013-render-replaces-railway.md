@@ -1,6 +1,6 @@
 # Decision 0013: Render Replaces Railway for the API, Worker, and Database
 
-Status: approved on 2026-10-22. Render services created the same day; see `STATE.md` for what remains of the cutover.
+Status: approved and carried out on 2026-10-22. Render serves the API, worker, and database; Vercel points at it; Railway is deleted.
 
 Date: 2026-10-22  
 Decision owner: User  
