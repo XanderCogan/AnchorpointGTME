@@ -1,6 +1,6 @@
 # Milestone 6: Lemlist Connector Notes
 
-Status: built and verified on practice fixtures and against the real Lemlist API on 2026-10-22, under decision 0012. Webhook registration is the one open item.
+Status: complete on 2026-10-22, verified on practice fixtures and against the real Lemlist API under decision 0012. Webhook registration follows the next API deployment.
 
 ## What exists
 
@@ -22,7 +22,7 @@ Status: built and verified on practice fixtures and against the real Lemlist API
 - `npm run lemlist:setup` created the test campaign `cam_9aAovP4kPRAf2gAkf`, "Anchorpoint practice (never launched)", and paused it. Lemlist reports it paused with an empty sender pool, so it cannot send.
 - The dry run planned three enrollments and skipped the rest for not approved, duplicate in request, missing email, and suppressed domain. The account has no unsubscribes, so practice-007, suppressed only in the unit test, was planned.
 - The first live run enrolled practice-001, practice-002, and practice-007. A second live run enrolled nothing: every approved contact skipped as already enrolled.
-- Observed, not investigated: each live run took tens of seconds. The cause is not established.
+- Observed, not investigated: each live run took tens of seconds. The cause is not established; the user deferred debugging it on 2026-10-22.
 
 ## Remaining
 

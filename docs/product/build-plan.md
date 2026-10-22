@@ -83,7 +83,7 @@ Exit gate: a manager can understand why every account was included, excluded, or
 
 ## Milestone 6: Lemlist activation
 
-Status: built and verified on practice fixtures and the real Lemlist API on 2026-10-22; webhook registration is open. See `../milestones/milestone-6-lemlist-notes.md`.
+Status: complete on 2026-10-22, verified on practice fixtures and the real Lemlist API. Webhook registration follows the next API deployment. See `../milestones/milestone-6-lemlist-notes.md`.
 
 Add dry-run enrollment, explicit approval, idempotent creation, webhook ingestion, unsubscribe handling, and a kill switch for future steps.
 
