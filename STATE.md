@@ -25,7 +25,7 @@ Do not derive ICP hypotheses, tune score weights, or size the market from `inspe
 
 ## Blockers
 
-- Milestone 3 acceptance needs Attio's 10 sample companies removed and the Georgia Companies and Sites loaded in `10-x-media`; the user must delete the temporary schema setup token.
+- Milestone 3 acceptance needs the user to delete Attio's 10 sample companies and the temporary setup token in `10-x-media`. The Georgia Companies and Sites are loaded.
 - The remote branch `origin/claude/tender-tesla-9lfwvn` proposes Supabase without Railway and reuses decision numbers 0003 and 0004 for different decisions. It is not part of the plan; ignore it until the user decides whether to delete it.
 
 ## Immediate next work

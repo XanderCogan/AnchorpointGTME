@@ -43,7 +43,9 @@ Select options follow the mapping fixtures: customer status Customer, Former Cus
 
 Live sync on 2026-10-22 against local PostgreSQL: the first run inserted 1 workspace member and 10 companies; the second run reported every record unchanged. The 10 companies are Attio's default sample records (Apple, Google, and others), not Georgia operators, so they must be removed before the market sample is loaded under decision 0010.
 
-Remaining exit-gate checks: remove the setup token, remove the sample companies, load the Georgia Companies and Sites, run the audit mapping over the mirrored snapshot and resolve any gaps, and confirm in Attio that no record changed during sync.
+On 2026-10-22 `scripts/attio-load-georgia.ts`, a setup step separate from the connector, loaded the 105 Georgia operators as Companies and their 356 facilities as Sites, with operator ID, identity status, tier band and score, facility count, and CMS facility fields. Attio refuses uniqueness set through the API, so the loader matches existing records on `operator_id` and `ccn`; a rerun created nothing new. The read-only sync then mirrored 115 companies and 356 sites, and a second sync reported everything unchanged.
+
+Remaining exit-gate checks: the user deletes the setup token and the 10 sample companies, run the audit mapping over the mirrored snapshot and resolve any gaps, and confirm in Attio that no record changed during sync.
 
 ## Not done
 
