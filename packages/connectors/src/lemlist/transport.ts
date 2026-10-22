@@ -1,8 +1,10 @@
 // Guarded HTTP boundary for the Lemlist API (decision 0012). Every call passes
 // assertAllowedRequest before fetch is reached: only the listed resources are
-// reachable, campaign writes are limited to the configured test campaign, leads
-// are limited to allowed email domains, and starting a campaign fails closed
-// unless launch is explicitly enabled.
+// reachable and starting a campaign fails closed unless launch is explicitly
+// enabled. Anchorpoint runs as a real company, so any campaign and any lead
+// domain may be written, but no outreach ever happens: before a lead is added
+// or a campaign started, the transport reads GET /api/team/senders and refuses
+// the write if any sender is attached to that campaign.
 
 export type FetchLike = (input: string, init?: RequestInit) => Promise<Response>;
 
@@ -32,8 +34,6 @@ export interface LemlistRequest {
 }
 
 export interface TransportGuards {
-  campaignId: string | null;
-  allowedLeadDomains: string[] | "*";
   launchEnabled: boolean;
 }
 
@@ -42,6 +42,7 @@ export const lemlistApiBaseUrl = "https://api.lemlist.com";
 const segment = "[^/]+";
 const reads = [
   /^\/api\/team$/,
+  /^\/api\/team\/senders$/,
   /^\/api\/campaigns$/,
   new RegExp(`^/api/leads/${segment}$`),
   /^\/api\/activities$/,
@@ -54,14 +55,35 @@ const campaignStatePath = new RegExp(`^/api/campaigns/(${segment})/(start|pause)
 const unsubscribePath = new RegExp(`^/api/unsubscribes/(${segment})$`);
 const hooksPath = /^\/api\/hooks$/;
 
-function domainOf(email: string): string {
-  return email.slice(email.lastIndexOf("@") + 1).toLowerCase();
+const teamSendersPath = "/api/team/senders";
+
+// The campaign whose senders must be checked before this request may run, or null.
+export function senderCheckedCampaign(request: LemlistRequest): string | null {
+  if (request.method !== "POST") return null;
+  const lead = addLeadPath.exec(request.path);
+  if (lead) return decodeURIComponent(lead[1]!);
+  const state = campaignStatePath.exec(request.path);
+  if (state && state[2] === "start") return decodeURIComponent(state[1]!);
+  return null;
 }
 
-function assertCampaign(campaignId: string, guards: TransportGuards): void {
-  if (guards.campaignId === null || decodeURIComponent(campaignId) !== guards.campaignId) {
-    throw new LemlistGuardError(`Refused write to campaign ${campaignId}: only the configured test campaign is writable.`);
+// Reads a GET /api/team/senders response (developer.lemlist.com, retrieved
+// 2026-10-22): an array of { userId, campaigns: [{ _id, name, status,
+// sendingChannels }] }. Anything unreadable counts as a sender, so the check
+// fails closed.
+export function sendersAttachedTo(response: unknown, campaignId: string): string[] {
+  if (!Array.isArray(response)) return ["unreadable /api/team/senders response"];
+  const senders: string[] = [];
+  for (const sender of response) {
+    const campaigns = (sender as { campaigns?: unknown })?.campaigns;
+    const userId = String((sender as { userId?: unknown })?.userId ?? "unknown sender");
+    if (!Array.isArray(campaigns)) {
+      senders.push(userId);
+      continue;
+    }
+    if (campaigns.some((campaign) => (campaign as { _id?: unknown })?._id === campaignId)) senders.push(userId);
   }
+  return senders;
 }
 
 export function assertAllowedRequest(request: LemlistRequest, guards: TransportGuards): void {
@@ -73,23 +95,13 @@ export function assertAllowedRequest(request: LemlistRequest, guards: TransportG
   }
   if (createCampaignPath.test(path) || hooksPath.test(path) || unsubscribePath.test(path)) return;
 
-  const lead = addLeadPath.exec(path);
-  if (lead) {
-    assertCampaign(lead[1]!, guards);
-    const email = String(request.body?.email ?? "");
-    if (!email.includes("@")) throw new LemlistGuardError("Refused lead without an email address.");
-    const domain = domainOf(email);
-    const allowed = guards.allowedLeadDomains === "*" ||
-      guards.allowedLeadDomains.some((allowedDomain) => domain === allowedDomain || domain.endsWith(`.${allowedDomain}`));
-    if (!allowed) {
-      throw new LemlistGuardError(`Refused lead at ${domainOf(email)}: only ${String(guards.allowedLeadDomains)} leads are allowed.`);
-    }
+  if (addLeadPath.test(path)) {
+    if (!String(request.body?.email ?? "").includes("@")) throw new LemlistGuardError("Refused lead without an email address.");
     return;
   }
 
   const state = campaignStatePath.exec(path);
   if (state) {
-    assertCampaign(state[1]!, guards);
     if (state[2] === "start" && !guards.launchEnabled) {
       throw new LemlistGuardError("Refused campaign start: launch is switched off (decision 0012).");
     }
@@ -127,6 +139,18 @@ export class LemlistTransport {
   // Returns the parsed body, or null for a 404 so callers can treat "not found" as data.
   async send(request: LemlistRequest, options: { notFoundAsNull?: boolean } = {}): Promise<unknown> {
     assertAllowedRequest(request, this.#guards);
+    const checked = senderCheckedCampaign(request);
+    if (checked !== null) {
+      // Re-read on every write, so a sender attached mid-run still stops it.
+      const senders = sendersAttachedTo(await this.#call({ method: "GET", path: teamSendersPath }, {}), checked);
+      if (senders.length > 0) {
+        throw new LemlistGuardError(`Refused write to campaign ${checked}: it has a sender attached (${senders.join(", ")}). No outreach ever happens.`);
+      }
+    }
+    return this.#call(request, options);
+  }
+
+  async #call(request: LemlistRequest, options: { notFoundAsNull?: boolean }): Promise<unknown> {
     const target = new URL(request.path, this.#baseUrl);
     for (const [key, value] of Object.entries(request.query ?? {})) {
       if (value !== undefined) target.searchParams.set(key, String(value));

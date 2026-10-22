@@ -1,4 +1,5 @@
 import type { LemlistClient, LeadInput } from "./client.ts";
+import { LemlistGuardError } from "./transport.ts";
 
 // Deny-first enrollment for one Lemlist campaign (Milestone 6, decision 0012). A plan
 // decides every candidate before any write; execution claims an idempotency key in
@@ -154,6 +155,8 @@ export async function executeEnrollment(
     } catch (error) {
       const detail = error instanceof Error ? error.message.slice(0, 500) : String(error);
       await ledger.settle(decision.idempotencyKey, "failed", null, detail);
+      // A guard refusal, such as a sender attached to the campaign, stops the whole run.
+      if (error instanceof LemlistGuardError) throw error;
       outcomes.push({ contactKey: decision.contactKey, result: "failed", leadId: null, detail });
     }
   }

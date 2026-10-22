@@ -19,6 +19,5 @@ if (!config) {
 
 const name = process.argv[2] ?? "Anchorpoint practice (never launched)";
 const created = await connectLemlist(config).createCampaign(name);
-// The pause is a campaign write, so it is scoped to the campaign just created.
-const state = await connectLemlist({ ...config, campaignId: created._id }).pauseCampaign(created._id);
+const state = await connectLemlist(config).pauseCampaign(created._id);
 console.log(`Created campaign ${created._id} (${state}). Set LEMLIST_CAMPAIGN_ID=${created._id}.`);
