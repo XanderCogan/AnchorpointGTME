@@ -6,7 +6,7 @@ This file contains only live execution context. Durable product knowledge belong
 
 ## Current gate
 
-Milestone 3 is retargeted from Salesforce to a read-only Attio connection by decision 0011 (2026-10-21) and is in progress alongside the Milestone 4 Georgia market sample under decision 0008. Under decision 0012 (2026-10-22), Milestones 5 to 7 are also built now on labelled practice fixtures, with no email or call ever sent. Milestones 0 to 2 are complete. Their evidence is in `docs/milestones/`. The deployed Vercel and Railway preview still shows the frozen, HubSpot-shaped `inspection-v1` findings: 22 findings, 15 critical and 7 warning.
+Milestone 3, the read-only Attio connection (decision 0011), was accepted on 2026-10-22. The Milestone 4 Georgia market sample runs the Milestone 4 Georgia market sample under decision 0008. Under decision 0012 (2026-10-22), Milestones 5 to 7 are also built now on labelled practice fixtures, with no email or call ever sent. Milestones 0 to 3 are complete. Their evidence is in `docs/milestones/`. The deployed Vercel and Railway preview still shows the frozen, HubSpot-shaped `inspection-v1` findings: 22 findings, 15 critical and 7 warning.
 
 Decision 0010, approved on 2026-10-20, sets the direction:
 
@@ -20,7 +20,6 @@ Do not derive ICP hypotheses, tune score weights, or size the market from `inspe
 
 ## Work in progress
 
-- Milestone 3: the read-only Attio connector and audit mapping are built, the workspace schema exists, and a live read-only sync is idempotent. See `docs/milestones/milestone-3-attio-connector-notes.md`.
 - Georgia sample: stages 1 to 5, the account value model in code (decision 0009), the 2026-10-20 operator review decisions, and the Stage 6 Clay people pass are merged into the trunk. Tiering is rerun on the 105-operator list.
 
 ## Integration status
@@ -30,13 +29,12 @@ This is the only place that says what each integration does today. Update it in 
 - Attio: real Georgia operators and facilities were loaded once as Companies and Sites by `scripts/attio-load-georgia.ts`. The read-only connector syncs them into the Postgres mirror, and the Milestone 3 audit runs on that mirror.
 - Clay: run once, by hand. The repo exports CSVs, Clay finds contacts, and only a coverage summary comes back (`data/georgia-sample/people-coverage.json`). Clay has no link to Attio in either direction, and no people records are in Attio.
 - Planned path (decision 0012): Attio accounts go to the Clay waterfall, and contacts are written back to Attio. Then come scoring and human approval, then Lemlist (draft campaigns only) and an Attio List for TitanX (never dialed). The Clay-to-Attio writeback is not built, and writing people to Attio needs the user's approval of a target test list.
-- Lemlist: no code yet (Milestone 6).
+- Lemlist: no code yet (Milestone 6). The Lemlist connector is signed in to the Claude app (team "Xander Cogan's Team") and was used once, read-only, on 2026-10-22. It can also enroll, launch, and send, so every write needs the user's explicit approval.
 - TitanX: no code yet (Milestone 7).
 - Salesforce: connector code is superseded reference only (decision 0011).
 
 ## Blockers
 
-- Milestone 3 exit-gate checks pass on the live workspace; acceptance needs the user's review and deletion of the temporary setup token in `10-x-media`.
 - The remote branch `origin/claude/tender-tesla-9lfwvn` proposes Supabase without Railway and reuses decision numbers 0003 and 0004 for different decisions. It is not part of the plan; ignore it until the user decides whether to delete it.
 
 ## Immediate next work
@@ -47,10 +45,10 @@ Done on 2026-10-22: the Stage 6 Clay people pass. `data/georgia-sample/people-co
 
 Flagged for later review: the two provisional senior-living personas in `docs/contracts/operating-contract.md`, once Stage 6 shows which job titles exist. Review the site administrator's low-confidence 7 person-relevance points at the same time.
 
-1. Done on 2026-10-22: the read-only Attio connector and audit mapping. Porting the CRM history pipeline to Attio snapshots is not started.
+1. Done on 2026-10-22: Milestone 3 accepted on the live Attio workspace; evidence in `docs/milestones/milestone-3-attio-connector-notes.md`. The local mirror needs Docker PostgreSQL (`npm run db:up`) and `.env` with the read-only token; run `npm run attio:sync`, then `npm run attio:audit`. Porting the CRM history pipeline to Attio snapshots is not started.
 2. Done on 2026-10-21: coarse segment sizing in `docs/research/georgia-segment-sizing.md`. It is market context only. Senior living and skilled nursing is the one segment drilled into; no work or spend on a second segment is planned.
 3. Done on 2026-10-21: the CRM analysis pipeline and the Salesforce mapping for the audit rules (superseded by 0011; the pipeline itself is CRM-neutral), verified on labelled test fixtures only (`docs/research/crm-icp-analysis-playbook.md`).
-4. Finish the remaining Milestone 3 exit-gate checks in the milestone note.
+4. Milestone 4: Clay proposes a domain and primary location for the 71 eligible operators, which clears the 142 live audit findings.
 
 ## Active safety boundary
 

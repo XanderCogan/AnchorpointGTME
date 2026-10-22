@@ -1,6 +1,6 @@
 # Milestone 3 Attio Connector Notes
 
-Status: built and verified against synthetic recorded responses on 2026-10-22. Not accepted. The workspace schema and a read-only token were set up on 2026-10-22 and the live sync is idempotent; acceptance waits for the remaining exit-gate checks below.
+Status: built and verified against synthetic recorded responses on 2026-10-22. Accepted by the user on 2026-10-22 after the live exit-gate checks below. The temporary setup token was deleted the same day; only the read-only token remains.
 
 ## What exists
 
@@ -49,7 +49,7 @@ The user deleted the 10 sample companies on 2026-10-22. The next sync reported t
 
 `npm run attio:audit` ran the audit mapping over the live snapshot (105 companies, 356 sites, 1 member) with no mapping gaps. It produced 142 critical findings: `CRM-COMPANY-002` and `CRM-DATA-002` on each of the 71 eligible target operators, because the public registry data carries no company domain or primary location. These are real data gaps for Clay to propose in Milestone 4, not mapping defects. Every sync used the read-only token, and the transport guard admits only reads, so no Attio record changed during sync.
 
-Remaining before acceptance: the user deletes the setup token and reviews this exit-gate evidence.
+The 142 findings carry into Milestone 4: Clay should propose a domain and a primary location for the 71 eligible operators.
 
 ## Not done
 

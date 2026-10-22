@@ -13,7 +13,7 @@ This is a GTM engineering work sample for Apero Advisors. Anchorpoint Fire & Saf
 - Milestone 0 is complete.
 - Milestone 1 was accepted on 2026-10-17.
 - Milestone 2 is complete, with the preview deployed on Vercel and Railway.
-- Milestone 3, the read-only Attio connector and audit mapping, is built and verified against synthetic recorded responses; live acceptance waits for the workspace setup and a read-only token. The earlier Salesforce connector is superseded reference code.
+- Milestone 3, the read-only Attio connection, was accepted on 2026-10-22 against the live workspace. The earlier Salesforce connector is superseded reference code.
 - The Georgia senior-living and skilled-nursing sample is the first of about five Georgia segments, worked in depth.
 - The current application is a read-only Next.js findings board backed by the frozen `inspection-v1` fixture and the deterministic audit engine.
 - The fixture proves CRM audit behavior. It is not valid evidence for ICP discovery, score calibration, or TAM sizing.
