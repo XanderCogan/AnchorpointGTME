@@ -32,6 +32,7 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 ## Blockers
 
+- None.
 
 ## Safety boundary
 
