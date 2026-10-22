@@ -32,5 +32,5 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 ## Safety boundary
 
-- The Attio connector is read-only by construction. Attio setup writes go through separate scripts and need user approval.
+- The Attio connector is read-only by construction. The temporary Attio setup token was deleted on 2026-10-22, and only the read-only token remains. Any future Attio write needs a new token and the user's approval.
 - Synthetic fixtures are test inputs, never findings or market evidence. Human approval and deny-first suppression are built as specified.
