@@ -1,60 +1,75 @@
 # Portco Launch Control
 
-Portco Launch Control is an Apero-style GTM engineering portfolio project built around the fictional client Anchorpoint Fire & Safety. It maps a real market into Attio companies and sites, audits CRM health with deterministic rules, prepares bounded records for enrichment, ranks accounts and people with explainable evidence, requires human approval, routes approved contacts to Lemlist or TitanX, and returns outcomes to Salesforce and a rep work queue.
+A GTM engineering work sample built for Apero Advisors. The client, Anchorpoint Fire & Safety, is a fictional private-equity-backed fire and life-safety operator. Its market is real: Georgia senior-living and skilled-nursing facilities, pulled from CMS data, resolved to operators, qualified, tiered, enriched in Clay, and loaded into Attio.
 
-The system is intentionally gated and read-only at its current stage. No live credentials or live external connections exist. The CRM is Attio under decision 0011; its read-only connector has run only against synthetic recorded responses.
+Status lives in [`STATE.md`](STATE.md). This file summarises it; if they disagree, `STATE.md` wins.
 
-## Portfolio context
+## The result
 
-This is a GTM engineering work sample for Apero Advisors. Anchorpoint Fire & Safety is a fictional client; the market data it targets is real and sourced. The project shows the market construction, CRM, outbound, and handoff work Apero does for private-equity-backed operators. Context and evaluation criteria are in [`docs/research/apero-portfolio-context.md`](docs/research/apero-portfolio-context.md).
+- 105 Georgia operators resolved from CMS facility records, each with its facilities, serviceability, and signals in `data/georgia-sample/`.
+- 71 operators tiered: 5 in A, 12 in B, 36 in C, and 18 in Watch (`data/georgia-sample/tiers.json`). Watch holds operators the rules could not place; whether it is a tier or an undecided bucket is still the user's call.
+- 53 operators with people coverage from a Clay role-slot pass (`data/georgia-sample/people-coverage.json`).
+- One operator, Tift Regional (now branded Southwell), traced end to end: CMS row, operator resolution, tiering, Clay domain and address and contact enrichment, then written into Attio as a Company with four linked People, one carrying a mobile number. Caveat: Tift Regional sits about 140 minutes from the nearest planned branch, so it is gated out of the tiers and was chosen only to prove the pipeline, not as a target. The lineage trace is in `artifacts/portfolio/`.
+- The 105 operators and their facilities were loaded into Attio once as Companies and Sites, and the read-only connector mirrors them into Postgres, where the deterministic CRM audit runs.
 
-## Current position
+Senior living is the only segment worked in depth. The other Georgia segments are context, not results.
 
-- Milestone 0 is complete.
-- Milestone 1 was accepted on 2026-10-17.
-- Milestone 2 is complete, with the preview deployed on Vercel and Railway.
-- Milestone 3, the read-only Attio connection, was accepted on 2026-10-22 against the live workspace. The earlier Salesforce connector is superseded reference code.
-- The Georgia senior-living and skilled-nursing sample is the first of about five Georgia segments, worked in depth.
-- The current application is a read-only Next.js findings board backed by the frozen `inspection-v1` fixture and the deterministic audit engine.
-- The fixture proves CRM audit behavior. It is not valid evidence for ICP discovery, score calibration, or TAM sizing.
-- No fictional CRM history exists or will be generated (decision 0010). The market is real and sourced; assumptions about Anchorpoint are labelled; CRM-history analysis is shown as a method and a pipeline tested on labelled fixtures.
+## What is live and what is not
 
-Read [`STATE.md`](STATE.md) for the current gate, active decisions, and immediate next work. Use [`docs/README.md`](docs/README.md) to jump directly to the authoritative document for a specific question. Do not read the entire documentation set by default.
+Live, as of 2026-10-22:
 
-## Product flow
+- Attio read-only sync, accepted as Milestone 3 against the real workspace.
+- Attio writeback under the scoped write policy, run live for one operator (Tift Regional). It wrote the domain, address, and four People, queued two uncertain persona matches for review, and plans nothing on rerun.
+- Clay to Attio round trip as scripts (`clay:export`, `clay:import`, dry run unless `--live`), proven on one Clay row. The remaining Clay tables were not run; about 55 free credits remain.
+- Lemlist connector, enrollment ledger, kill switch, and webhook receiver, verified on practice fixtures and the real Lemlist API. No campaign has ever been launched and no email has ever been sent.
+- Hosting on Vercel (web) and Render (API, worker, PostgreSQL 17). Railway was deleted after its October 2026 security incident (decision 0013).
+
+Not built, or not finished:
+
+- Milestone 4 stopped in progress: 142 live audit findings against the Attio load are open (Clay-proposed domains and primary locations would clear them), and the tier bands have not been re-inspected against people coverage.
+- Milestone 5 (scoring, play table, approval, previews) exists only as the tiering script and its JSON output. There is no approval interface.
+- Milestone 7 (TitanX handoff) has no code. No dialer was bought (decision 0014); the design ends at an Attio List of approved phone-ready contacts.
+- Milestone 8 (rep work queue, reconciliation, runbook) is not built.
+- The CRM history analysis is a method and a fixture-tested pipeline only. No fictional CRM history exists or will be generated (decision 0010).
+- The deployed preview still shows the frozen `inspection-v1` audit fixture, which proves the audit engine and nothing about the market.
+
+The gap statement in [`docs/portfolio/gap-statement.md`](docs/portfolio/gap-statement.md) covers Milestones 5, 7, and 8 in one page.
+
+## Constraints that shaped it
+
+- Fictional client, real sourced market. Every external fact carries a source and retrieval date (`data/georgia-sample/source-manifest.json`).
+- No fictional CRM history. Assumptions about Anchorpoint are labelled as assumptions.
+- About twenty dollars of Clay spend, which is why enrichment is a single-row proof and a CSV round trip rather than a Clay-to-Attio integration.
+- No autodialer purchase.
+- No outreach ever: no sending domain, no mailbox, no launched campaign, no dialing. Human approval precedes any enrollment, suppression is deny-first, and a kill switch exists.
+- One-segment depth over breadth, and a one-day finish once the data foundation held.
+
+## Repository map
 
 ```text
-Attio and operating-system data
-  -> deterministic CRM health audit
-  -> historical customer and deal analysis
-  -> ICP hypotheses and external market construction
-  -> bounded Clay enrichment
-  -> explainable ranking and play table
-  -> human approval
-  -> Lemlist or TitanX
-  -> outcomes in Attio and the rep work queue
+apps/web/            Next.js findings board (sign-in currently disabled on Vercel)
+apps/api/            audit and job-status API, deployed on Render
+apps/worker/         PostgreSQL-backed background audit worker
+packages/core/       deterministic audit types and rules
+packages/contracts/  runtime source validation
+packages/db/         schema, migrations, repositories, job queue
+packages/connectors/ read-only Attio sync, Attio writeback, Lemlist; Salesforce kept as superseded reference
+scripts/             CMS pull, operator resolution, tiering, Clay export and import, Attio load, Lemlist
+data/georgia-sample/ operators, tiers, serviceability, signals, people coverage, source manifest
+fixtures/            synthetic audit inputs and expected outcomes (test inputs only)
+artifacts/           inspection output and the portfolio bundle
+docs/                routed from docs/README.md; decisions in docs/decisions/
 ```
 
-## Repository shape
+## Where to look
 
-```text
-apps/web/          authenticated Next.js read-only interface
-apps/api/          protected audit and job-status API
-apps/worker/       PostgreSQL-backed background audit worker
-packages/core/     deterministic audit types and rules
-packages/contracts/ runtime source validation
-packages/db/       schema, migrations, repositories, and job queue
-fixtures/          immutable synthetic inputs and expected outcomes
-tests/             executable audit acceptance evidence
-scripts/           repeatable inspection and artifact builders
-docs/product/      scope, architecture, milestones, collaboration
-docs/contracts/    approved definitions, rules, scores, and states
-docs/research/     discovery, historical-data, ICP, and TAM material
-docs/milestones/   implementation evidence and remaining work
-docs/decisions/    durable decision records
-```
-
-Connector packages are created only when their gated milestone begins. `packages/connectors/` holds the Milestone 3 read-only Attio connector and the superseded Salesforce connector, kept as reference.
+- [`docs/portfolio/methodology.md`](docs/portfolio/methodology.md): how the problem was approached, what was decided, and what the constraints forced, compiled from the fourteen decision records.
+- [`docs/portfolio/diagrams.md`](docs/portfolio/diagrams.md): Mermaid charts of the data pipeline, the Attio object model, and the activation state machine.
+- [`docs/portfolio/copy-examples.md`](docs/portfolio/copy-examples.md): two cold-email drafts for Tier A operators with the reasoning, labelled never sent.
+- [`docs/portfolio/gap-statement.md`](docs/portfolio/gap-statement.md): what is designed but not built.
+- [`artifacts/portfolio/`](artifacts/portfolio/): JSON copies of tiers, serviceability, people coverage, and signals, plus the Tift Regional lineage trace and an index.
+- [`docs/README.md`](docs/README.md): the documentation router. Open one routed document rather than reading the set.
+- [`docs/research/apero-portfolio-context.md`](docs/research/apero-portfolio-context.md): what the reader asked for and why the repo is shaped this way.
 
 ## Local verification
 
@@ -71,8 +86,8 @@ npm run attio:verify-recorded
 npm run salesforce:verify-recorded
 ```
 
-`inspection-v1` must produce 22 findings: 15 critical and 7 warning. After the foundation setup succeeds, run `npm run api` and `npm run dev` in separate terminals to open the authenticated read-only application. Local development uses the documented fixture-only credentials shown on the login screen; production requires all secrets in `.env.example` to be replaced.
+`inspection-v1` must produce 22 findings: 15 critical and 7 warning. After the foundation setup succeeds, run `npm run api` and `npm run dev` in separate terminals to open the findings board. Scripts that touch Attio, Clay, or Lemlist read their tokens from `.env` and do not load it themselves, so run them with `node --env-file=.env`. Writes are dry runs unless `--live` is passed.
 
 ## Safety boundary
 
-Build one milestone at a time. Start integrations read-only. Never connect live write credentials, mutate CRM records, enroll contacts, or initiate calls before the applicable rules, preview, suppression behavior, approval gate, and audit trail have been reviewed.
+The sync connector is read-only. Writeback uses a separate token scoped to records read-write and object configuration read, and only touches whitelisted attributes. Nothing enrolls, sends, or dials without a human approval that can be withdrawn, and in this project nothing ever has.

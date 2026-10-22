@@ -15,6 +15,7 @@
     "foundation:verify-failure": "node scripts/verify-failed-job.ts",
     "start": "next start apps/web",
     "inspect": "node scripts/run-inspection.ts",
+    "portfolio:bundle": "node scripts/build-portfolio-bundle.ts",
     "sample:georgia": "node scripts/georgia-sample/resolve-operators.ts && node scripts/georgia-sample/serviceability.ts && node scripts/georgia-sample/signals.ts && node scripts/georgia-sample/serper-lookups.ts && node scripts/georgia-sample/tier.ts",
     "sample:georgia:pull": "node scripts/georgia-sample/pull-cms.ts",
     "sample:georgia:clay-export": "node scripts/georgia-sample/clay-export.ts",

@@ -14,6 +14,7 @@ Use this file to retrieve one precise source. Start with the narrowest matching 
 - User, problem, promise, workflow, scope, and top-level safety boundaries: [`product/brief.md`](product/brief.md)
 - Current and planned runtime, repository boundaries, service responsibilities, and reliability requirements: [`product/architecture.md`](product/architecture.md)
 - Milestone order, deliverables, and exit gates: [`product/build-plan.md`](product/build-plan.md)
+- The closing packaging plan, agent tasks, and user-only tasks: [`product/finish-plan.md`](product/finish-plan.md)
 - User and AI agent responsibilities (Claude Code or Codex), decision receipts, and explain-back gates: [`product/collaboration-protocol.md`](product/collaboration-protocol.md)
 
 ## Approved behavioral contracts
