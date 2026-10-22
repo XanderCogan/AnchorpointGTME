@@ -1,6 +1,6 @@
 # Gated Build Plan
 
-The project is active. Each milestone must be reviewed before the next one begins. There are two exceptions. The early Milestone 4 market work, the Georgia sample, runs alongside Milestone 3 under `../decisions/0008-parallel-data-tracks.md`. Milestones 5, 6, and 7 are built now on labelled practice fixtures under `../decisions/0012-early-activation-build-on-fixtures.md`, with nothing sent live from that data. Decision 0010 removes all fictional CRM history from the plan.
+The project is active. Each milestone must be reviewed before the next one begins. There are two exceptions. The early Milestone 4 market work, the Georgia sample, runs alongside Milestone 3 under `../decisions/0008-parallel-data-tracks.md`. Milestones 5, 6, and 7 are built now on labelled practice fixtures under `../decisions/0012-early-activation-build-on-fixtures.md`, and no email or call ever leaves the system. Decision 0010 removes all fictional CRM history from the plan.
 
 ## Milestone 0: Operating contract
 
@@ -85,11 +85,15 @@ Exit gate: a manager can understand why every account was included, excluded, or
 
 Add dry-run enrollment, explicit approval, idempotent creation, webhook ingestion, unsubscribe handling, and a kill switch for future steps.
 
+No campaign is ever launched and no email ever leaves Lemlist (decision 0012).
+
 Exit gate: fixtures prove that duplicate delivery, retries, and suppression conflicts cannot produce duplicate or prohibited enrollment.
 
 ## Milestone 7: TitanX handoff
 
 Create a controlled Attio List for approved phone-ready contacts. Connect TitanX to it, natively or through an application bridge as decision 0011 settles, and map dispositions and follow-up expectations. Use fixtures or a documented manual import if the accessible integration cannot return all required events.
+
+TitanX never places a call (decision 0012).
 
 Exit gate: call-ready contacts are traceable from approval through disposition without claiming unsupported API behavior.
 

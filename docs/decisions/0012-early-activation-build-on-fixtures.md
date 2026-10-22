@@ -1,6 +1,6 @@
 # Decision 0012: Build Milestones 5 to 7 Early on Practice Fixtures
 
-Status: approved on 2026-10-22.
+Status: approved on 2026-10-22. Amended the same day: no email is ever sent and no call is ever placed.
 
 Date: 2026-10-22  
 Decision owner: User  
@@ -16,11 +16,18 @@ No. The code for Milestones 5, 6, and 7 is built now, in parallel with Milestone
 
 The real data path is unchanged: real Georgia accounts flow from Attio through the Clay enrichment waterfall, then into scoring, approval, Lemlist, and TitanX. When that data exists, it replaces the practice fixtures as input.
 
+## No outreach, ever
+
+Amended on 2026-10-22 by the user. This project never contacts anyone, from practice data or real data.
+
+- No email ever leaves Lemlist. No Lemlist campaign is ever launched; enrollment stops at dry runs and draft or paused campaigns.
+- TitanX never places a call. The Attio List that TitanX would read is built and proven, but no dialing is ever started from it.
+- The system is built and demonstrated up to the handoff point and stops there. Milestones 6 and 7 are accepted on dry runs, fixtures, and handoff records, never on sent email or completed calls.
+
 ## Boundaries that still hold
 
-- Nothing goes live from practice data. No Lemlist lead is enrolled in a launched campaign, no email is sent, and no contact is placed on the Attio List that TitanX reads, unless the contact came through the real data path and a human approved it.
-- Practice fixtures use fictional people with reserved addresses, such as `example.com` domains and fictional-use phone numbers, so they cannot reach a real person even by mistake. They are labelled synthetic and are never market evidence, under decision 0010.
-- The human-approval gate, deny-first suppression, kill switch, and idempotent enrollment are built as specified. Building early does not weaken them.
+- Practice fixtures use fictional people with reserved addresses, such as `example.com` domains and fictional-use phone numbers. They are labelled synthetic and are never market evidence, under decision 0010.
+- The human-approval gate, deny-first suppression, kill switch, and idempotent enrollment are built as specified, as they would be for a real client.
 - Writes to Lemlist or Attio during development go only to draft campaigns or test lists the user has named, and only after the user approves each one.
 
 ## Consequences

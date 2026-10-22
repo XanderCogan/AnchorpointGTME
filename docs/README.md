@@ -60,7 +60,7 @@ Milestone reports are evidence records. Update `STATE.md`, not an old report, wh
 - Approved account value model, kept separate from the priority score: [`decisions/0009-account-value-model.md`](decisions/0009-account-value-model.md)
 - Approved removal of all fictional CRM history, real-only org contents, ICP from public evidence, and segment sizing: [`decisions/0010-no-fictional-crm-history.md`](decisions/0010-no-fictional-crm-history.md)
 - Approved switch to Attio as the CRM system of record, superseding Salesforce: [`decisions/0011-attio-crm-system-of-record.md`](decisions/0011-attio-crm-system-of-record.md)
-- Approved early build of Milestones 5 to 7 on practice fixtures, with nothing sent live: [`decisions/0012-early-activation-build-on-fixtures.md`](decisions/0012-early-activation-build-on-fixtures.md)
+- Approved early build of Milestones 5 to 7 on practice fixtures; no email or call is ever sent: [`decisions/0012-early-activation-build-on-fixtures.md`](decisions/0012-early-activation-build-on-fixtures.md)
 
 Add a decision record when the user resolves a material ambiguity that changes product behavior, tests, contracts, or milestone scope. Do not create decision records for routine implementation details.
 
