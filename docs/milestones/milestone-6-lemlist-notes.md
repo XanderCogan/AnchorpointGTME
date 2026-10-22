@@ -1,6 +1,6 @@
 # Milestone 6: Lemlist Connector Notes
 
-Status: complete on 2026-10-22, verified on practice fixtures and against the real Lemlist API under decision 0012. The later revision below (Attio source and sender guard) is verified on mocked transport only. Webhook registration follows the next API deployment.
+Status: complete on 2026-10-22, verified on practice fixtures and against the real Lemlist API under decision 0012. The later revision below (Attio source and sender guard) is verified on mocked transport only.
 
 Revised on 2026-10-22 by the user: Anchorpoint runs as a real company, except that no outreach ever happens. The `example.com` lead-domain limit and the single practice test campaign limit are removed; the campaign is chosen per enrollment run. Safety now rests on the launch refusal, the sender guard, the kill switch, and the deny-first plan.
 
@@ -29,6 +29,6 @@ Revised on 2026-10-22 by the user: Anchorpoint runs as a real company, except th
 - Observed, not investigated: each live run took tens of seconds. The cause is not established; the user deferred debugging it on 2026-10-22.
 - Not yet verified live for the revision: the live shape of `GET /api/team/senders` and an enrollment run from the Attio source.
 
-## Remaining
+## Webhook, 2026-10-22
 
-Registering the webhook needs a public HTTPS URL for the API, `LEMLIST_WEBHOOK_SECRET` set on it, and the "Edit integrations" permission. It is not done yet.
+Webhook `hoo_6aaLNM5JX3N33S2oX` is registered for the test campaign and delivers to `https://anchorpoint-api-wyaj.onrender.com/v1/webhooks/lemlist` on Render (decision 0013). A synthetic event sent with the shared secret was recorded, a repeat was reported as a duplicate, and a wrong secret was refused with 401. The self-test row has activity ID `act_selftest_20261022`.

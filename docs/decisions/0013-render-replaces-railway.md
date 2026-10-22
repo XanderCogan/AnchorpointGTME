@@ -1,6 +1,6 @@
 # Decision 0013: Render Replaces Railway for the API, Worker, and Database
 
-Status: approved on 2026-10-22.
+Status: approved on 2026-10-22. Render services created the same day; see `STATE.md` for what remains of the cutover.
 
 Date: 2026-10-22  
 Decision owner: User  
@@ -23,4 +23,5 @@ Self-hosting on the user's Hetzner server was considered. It keeps secrets off t
 - The Railway database held only the synthetic `inspection-v1` fixture and its audit, so nothing is migrated; Render's pre-deploy step reloads the fixture.
 - Vercel's `API_BASE_URL` moves to the Render API address, and the Lemlist webhook is registered there.
 - Auto-deploy is off in the Blueprint, so pushing to `main` does not deploy without an explicit step.
+- On first deploy the API's pre-deploy migration ran before the new database accepted connections and failed; a manual redeploy succeeded. The worker restarted until the migrations existed, then completed the audit job with the expected 22 findings.
 - Milestone 2's evidence describes the Railway deployment as it was; it is history and is not rewritten.

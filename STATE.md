@@ -17,7 +17,7 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 - Planned path (decision 0012, amended 2026-10-22 to run as a real company): Attio sends accounts to Clay, Clay runs the waterfall and writes contacts (with work email) back to Attio as People, then scoring and approval, then Lemlist (never launched) and an Attio List for TitanX (never dialed). Writeback is automated under the write policy, with conflicts and uncertain matches sent to review.
 - Clay to Attio automation: a script-driven CSV round trip, since the user will not pay for Clay Growth. `npm run clay:export` and `npm run clay:import` (dry run unless `--live`) are built and tested on fixtures. The export ran on 2026-10-22 and wrote 105 Companies to `data/georgia-sample/private/clay/attio/input`; the import has not run. The user only imports and exports one CSV in Clay. Scripts do not load `.env`, so run them with `node --env-file=.env`. Runbook in `docs/research/georgia-clay-people-pass.md`.
 - Attio writeback: built and tested on fixtures. Migration 0005 is applied to the local database only. `ATTIO_WRITEBACK_TOKEN` is in `.env` (records read-write, object configuration read); suffixed attribute slugs such as `persona_verified_7` and `enrichment_date_3` are mapped through `ATTIO_WRITEBACK_SLUGS`.
-- Lemlist: connector, ledger, kill switch, and webhook receiver verified on practice fixtures (`docs/milestones/milestone-6-lemlist-notes.md`). Feeding from Attio, with no domain or single-campaign limit and a sender-attached guard, is built.
+- Lemlist: connector, ledger, kill switch, and webhook receiver verified on practice fixtures and the real API; webhook `hoo_6aaLNM5JX3N33S2oX` delivers to the Render API (`docs/milestones/milestone-6-lemlist-notes.md`). Feeding from Attio, with no domain or single-campaign limit and a sender-attached guard, is built.
 - TitanX: no code yet (Milestone 7). Salesforce: superseded reference code only.
 
 ## Next work
@@ -29,7 +29,7 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 ## Blockers
 
-- Decision 0013 moves the API, worker, and database from Railway to Render. Render services are not created yet; Railway secrets must be rotated, not copied. Milestone 6 webhook registration waits on the Render API.
+- Render (decision 0013) is live at `https://anchorpoint-api-wyaj.onrender.com`; the worker reproduced 22 findings there. Vercel still points at Railway: the user sets `API_BASE_URL` to the Render address and `INTERNAL_API_TOKEN` to `RENDER_INTERNAL_API_TOKEN` from `.env`, then deletes the Railway services.
 - `origin/claude/tender-tesla-9lfwvn` proposes Supabase and reuses decision numbers 0003 and 0004. Ignore it until the user decides whether to delete it.
 
 ## Safety boundary
