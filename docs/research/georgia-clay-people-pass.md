@@ -1,6 +1,6 @@
 # Georgia Sample Stage 6: Clay People Pass Design
 
-Status: proposed design, not yet approved or run. No Clay account is connected and nothing has been bought. This is Stage 6 of `georgia-senior-living-sample-plan.md`, governed by `docs/decisions/0007-first-georgia-sample-and-enrichment.md` as amended on 2026-10-20.
+Status: run on 2026-10-21 and 2026-10-22 as a manual CSV round trip; see "Run results" below and `data/georgia-sample/people-coverage.json`. Clay is not connected to Attio, and no people were written to Attio. This is Stage 6 of `georgia-senior-living-sample-plan.md`, governed by `docs/decisions/0007-first-georgia-sample-and-enrichment.md` as amended on 2026-10-20.
 
 Date: 2026-10-20
 

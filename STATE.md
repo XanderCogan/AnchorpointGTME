@@ -21,7 +21,18 @@ Do not derive ICP hypotheses, tune score weights, or size the market from `inspe
 ## Work in progress
 
 - Milestone 3: the read-only Attio connector and audit mapping are built, the workspace schema exists, and a live read-only sync is idempotent. See `docs/milestones/milestone-3-attio-connector-notes.md`.
-- Georgia sample: stages 1 to 5, the account value model in code (decision 0009), the 2026-10-20 operator review decisions, and the Stage 6 Clay people pass design are merged into the trunk. Tiering is rerun on the 105-operator list.
+- Georgia sample: stages 1 to 5, the account value model in code (decision 0009), the 2026-10-20 operator review decisions, and the Stage 6 Clay people pass are merged into the trunk. Tiering is rerun on the 105-operator list.
+
+## Integration status
+
+This is the only place that says what each integration does today. Update it in the same commit as any change.
+
+- Attio: real Georgia operators and facilities were loaded once as Companies and Sites by `scripts/attio-load-georgia.ts`. The read-only connector syncs them into the Postgres mirror, and the Milestone 3 audit runs on that mirror.
+- Clay: run once, by hand. The repo exports CSVs, Clay finds contacts, and only a coverage summary comes back (`data/georgia-sample/people-coverage.json`). Clay has no link to Attio in either direction, and no people records are in Attio.
+- Planned path (decision 0012): Attio accounts go to the Clay waterfall, and contacts are written back to Attio. Then come scoring and human approval, then Lemlist (draft campaigns only) and an Attio List for TitanX (never dialed). The Clay-to-Attio writeback is not built, and writing people to Attio needs the user's approval of a target test list.
+- Lemlist: no code yet (Milestone 6).
+- TitanX: no code yet (Milestone 7).
+- Salesforce: connector code is superseded reference only (decision 0011).
 
 ## Blockers
 
