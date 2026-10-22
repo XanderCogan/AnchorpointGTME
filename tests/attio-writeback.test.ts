@@ -12,6 +12,7 @@ import {
 import {
   assertWritebackRequest,
   attioWritebackConfigFromEnv,
+  toWritebackNames,
   WritebackScopeError,
   WritebackTransport,
 } from "../packages/connectors/src/attio/writeback-transport.ts";
@@ -189,7 +190,7 @@ test("writeback configuration needs its own token and a connection ID", () => {
     () => attioWritebackConfigFromEnv({ ATTIO_WRITEBACK_TOKEN: "same", ATTIO_ACCESS_TOKEN: "same", ATTIO_CONNECTION_ID: "c" }),
     /must differ/,
   );
-  assert.deepEqual(attioWritebackConfigFromEnv({ ATTIO_WRITEBACK_TOKEN: "w", ATTIO_CONNECTION_ID: "c" }), { connectionId: "c", accessToken: "w" });
+  assert.deepEqual(attioWritebackConfigFromEnv({ ATTIO_WRITEBACK_TOKEN: "w", ATTIO_CONNECTION_ID: "c" }), { connectionId: "c", accessToken: "w", slugs: {} });
 });
 
 test("empty fields are filled and a new person is created under its company", async () => {
@@ -316,4 +317,26 @@ test("a dry run plans writes and reviews without calling the transport or the st
   // A dry run needs no client at all.
   const clientless = await runWriteback({ connectionId, state: attio.state(), companies: companyRows, people: [], store, dryRun: true });
   assert.equal(clientless.plan.operations.length, 1);
+});
+
+test("workspace slug map renames outgoing attributes after the scope check and reverses on read", async () => {
+  const sent: unknown[] = [];
+  const fakeFetch: FetchLike = async (_url, init) => {
+    sent.push(JSON.parse(String(init?.body)));
+    return new Response(JSON.stringify({ data: record("people", "p-1", {}) }), { status: 200 });
+  };
+  const slugs = { persona_verified: "persona_verified_7", enrichment_date: "enrichment_date_3" };
+  const transport = new WritebackTransport({ accessToken: "w", fetch: fakeFetch, slugs });
+  await transport.send({ method: "PATCH", url: "/v2/objects/people/records/p-1", body: { data: { values: { persona_verified: true, enrichment_date: "2026-10-22" } } } });
+  assert.deepEqual(sent[0], { data: { values: { persona_verified_7: true, enrichment_date_3: "2026-10-22" } } });
+  await assert.rejects(
+    transport.send({ method: "PATCH", url: "/v2/objects/people/records/p-1", body: { data: { values: { persona_verified_7: true } } } }),
+    WritebackScopeError,
+  );
+  assert.deepEqual(toWritebackNames({ persona_verified_7: [1], name: [2] }, slugs), { persona_verified: [1], name: [2] });
+  assert.deepEqual(
+    attioWritebackConfigFromEnv({ ATTIO_WRITEBACK_TOKEN: "w", ATTIO_CONNECTION_ID: "c", ATTIO_WRITEBACK_SLUGS: "persona_verified=persona_verified_7" })?.slugs,
+    { persona_verified: "persona_verified_7" },
+  );
+  assert.throws(() => attioWritebackConfigFromEnv({ ATTIO_WRITEBACK_TOKEN: "w", ATTIO_CONNECTION_ID: "c", ATTIO_WRITEBACK_SLUGS: "owner=x" }), /invalid pair/);
 });
