@@ -1,0 +1,552 @@
+{
+  "data": [
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "44402a46-d33f-4888-a48d-fe6dabae1d6a",
+        "record_id": "68fafdd9-0312-453d-afbd-f866b07b0061"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/deals/68fafdd9-0312-453d-afbd-f866b07b0061",
+      "values": {
+        "name": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Fixture Opportunity 1",
+            "attribute_type": "text"
+          }
+        ],
+        "stage": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "status": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "status_id": "1976d232-03ff-48f1-ae45-642ceba1783a"
+              },
+              "title": "Won 🎉",
+              "is_archived": false
+            },
+            "attribute_type": "status"
+          }
+        ],
+        "owner": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "referenced_actor_type": "workspace-member",
+            "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+            "attribute_type": "actor-reference"
+          }
+        ],
+        "value": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "currency_value": 12000,
+            "currency_code": "USD",
+            "attribute_type": "currency"
+          }
+        ],
+        "associated_company": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "companies",
+            "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+            "attribute_type": "record-reference"
+          }
+        ],
+        "deal_type": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "92971cbe-6124-4707-a616-0ceadea6e56b"
+              },
+              "title": "New Business",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "next_step": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Send proposal",
+            "attribute_type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "44402a46-d33f-4888-a48d-fe6dabae1d6a",
+        "record_id": "49e1ec76-ec9f-46ec-a398-04554f0325f3"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/deals/49e1ec76-ec9f-46ec-a398-04554f0325f3",
+      "values": {
+        "name": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Fixture Opportunity 2",
+            "attribute_type": "text"
+          }
+        ],
+        "stage": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "status": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "status_id": "5374c042-f446-4864-a525-9ace3ebd2fa7"
+              },
+              "title": "Proposal",
+              "is_archived": false
+            },
+            "attribute_type": "status"
+          }
+        ],
+        "owner": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "referenced_actor_type": "workspace-member",
+            "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+            "attribute_type": "actor-reference"
+          }
+        ],
+        "value": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "currency_value": 12000,
+            "currency_code": "USD",
+            "attribute_type": "currency"
+          }
+        ],
+        "associated_company": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "companies",
+            "target_record_id": "d7946445-4cea-422a-af1f-6ea89a43757c",
+            "attribute_type": "record-reference"
+          }
+        ],
+        "deal_type": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "92971cbe-6124-4707-a616-0ceadea6e56b"
+              },
+              "title": "New Business",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "next_step": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Send proposal",
+            "attribute_type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "44402a46-d33f-4888-a48d-fe6dabae1d6a",
+        "record_id": "74272ae2-9497-4d13-a741-dc871e2e39ff"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/deals/74272ae2-9497-4d13-a741-dc871e2e39ff",
+      "values": {
+        "name": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Fixture Opportunity 3",
+            "attribute_type": "text"
+          }
+        ],
+        "stage": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "status": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "status_id": "5374c042-f446-4864-a525-9ace3ebd2fa7"
+              },
+              "title": "Proposal",
+              "is_archived": false
+            },
+            "attribute_type": "status"
+          }
+        ],
+        "owner": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "referenced_actor_type": "workspace-member",
+            "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+            "attribute_type": "actor-reference"
+          }
+        ],
+        "value": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "currency_value": 12000,
+            "currency_code": "USD",
+            "attribute_type": "currency"
+          }
+        ],
+        "associated_company": [],
+        "deal_type": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "92971cbe-6124-4707-a616-0ceadea6e56b"
+              },
+              "title": "New Business",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "next_step": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Send proposal",
+            "attribute_type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "44402a46-d33f-4888-a48d-fe6dabae1d6a",
+        "record_id": "c9920268-17ef-4d36-a7a0-b40fa76465d6"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/deals/c9920268-17ef-4d36-a7a0-b40fa76465d6",
+      "values": {
+        "name": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Fixture Opportunity 4",
+            "attribute_type": "text"
+          }
+        ],
+        "stage": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "status": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "status_id": "5374c042-f446-4864-a525-9ace3ebd2fa7"
+              },
+              "title": "Proposal",
+              "is_archived": false
+            },
+            "attribute_type": "status"
+          }
+        ],
+        "owner": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "referenced_actor_type": "workspace-member",
+            "referenced_actor_id": "4c3899bf-6322-4991-a6de-e5060d8c0fe1",
+            "attribute_type": "actor-reference"
+          }
+        ],
+        "value": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "currency_value": 12000,
+            "currency_code": "USD",
+            "attribute_type": "currency"
+          }
+        ],
+        "associated_company": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "companies",
+            "target_record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5",
+            "attribute_type": "record-reference"
+          }
+        ],
+        "deal_type": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "92971cbe-6124-4707-a616-0ceadea6e56b"
+              },
+              "title": "New Business",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "next_step": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Send proposal",
+            "attribute_type": "text"
+          }
+        ]
+      }
+    },
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "44402a46-d33f-4888-a48d-fe6dabae1d6a",
+        "record_id": "b94548b2-f886-4c9a-a974-0c5300f96ba4"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/deals/b94548b2-f886-4c9a-a974-0c5300f96ba4",
+      "values": {
+        "name": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Fixture Opportunity 5",
+            "attribute_type": "text"
+          }
+        ],
+        "stage": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "status": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "status_id": "5374c042-f446-4864-a525-9ace3ebd2fa7"
+              },
+              "title": "Proposal",
+              "is_archived": false
+            },
+            "attribute_type": "status"
+          }
+        ],
+        "owner": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "referenced_actor_type": "workspace-member",
+            "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+            "attribute_type": "actor-reference"
+          }
+        ],
+        "value": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "currency_value": 12000,
+            "currency_code": "USD",
+            "attribute_type": "currency"
+          }
+        ],
+        "associated_company": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "companies",
+            "target_record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5",
+            "attribute_type": "record-reference"
+          }
+        ],
+        "deal_type": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "92971cbe-6124-4707-a616-0ceadea6e56b"
+              },
+              "title": "New Business",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "next_step": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Send proposal",
+            "attribute_type": "text"
+          }
+        ]
+      }
+    }
+  ]
+}

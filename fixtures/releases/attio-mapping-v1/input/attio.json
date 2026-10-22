@@ -1,0 +1,5073 @@
+{
+  "synthetic": true,
+  "note": "Hand-designed synthetic Attio-shaped audit fixture, derived record for record from salesforce-mapping-v1 by scripts/derive-attio-fixtures.ts. Fictional records on reserved .example domains; test input only, never findings or market evidence.",
+  "mapping": {
+    "release": "attio-mapping-v1",
+    "healthRuleVersion": "health-rules-v1",
+    "config": {
+      "asOf": "2026-10-17T20:00:00.000Z",
+      "reportingTimeZone": "America/New_York",
+      "staleDealDays": 14,
+      "staleContactDays": 90,
+      "newBusinessPipeline": "new_business"
+    },
+    "customerStatuses": [
+      "Customer"
+    ],
+    "formerCustomerStatuses": [
+      "Former Customer"
+    ],
+    "prospectStatuses": [
+      "Prospect"
+    ],
+    "servicedRegions": [
+      "GA"
+    ],
+    "pipelineByDealType": {
+      "New Business": "new_business",
+      "Renewal": "renewal",
+      "Implementation": "implementation"
+    },
+    "defaultPipeline": "new_business",
+    "openStageByStatus": {
+      "Qualification": "qualification",
+      "Evaluation": "evaluation",
+      "Proposal": "proposal"
+    },
+    "wonStatuses": [
+      "Won 🎉"
+    ],
+    "lostStatuses": [
+      "Lost"
+    ],
+    "unaccountableMemberIds": [
+      "10e807be-bb90-4bab-aff8-a398fbb6d38b"
+    ],
+    "attributes": {
+      "company": {
+        "customerStatus": "customer_status",
+        "owner": "owner",
+        "targetCandidate": "target_candidate",
+        "industry": "industry_segment",
+        "location": "primary_location"
+      },
+      "person": {
+        "name": "name",
+        "company": "company",
+        "jobTitle": "job_title",
+        "owner": "owner",
+        "email": "email_addresses",
+        "phone": "phone_numbers",
+        "emailOptOut": "email_opt_out",
+        "doNotCall": "do_not_call",
+        "targetCandidate": "target_candidate",
+        "persona": "persona",
+        "emailStatus": "email_status",
+        "phoneStatus": "phone_status",
+        "enrichmentVerifiedAt": "enrichment_verified_at",
+        "lifecycleStage": "lifecycle_stage"
+      },
+      "deal": {
+        "company": "associated_company",
+        "owner": "owner",
+        "stage": "stage",
+        "type": "deal_type",
+        "nextStep": "next_step"
+      },
+      "site": {
+        "company": "company"
+      },
+      "call": {
+        "occurredAt": "occurred_at",
+        "disposition": "disposition",
+        "company": "company",
+        "person": "person",
+        "deal": "deal"
+      }
+    }
+  },
+  "snapshot": {
+    "provenance": "synthetic-test-fixture",
+    "label": "attio-mapping-v1",
+    "window": {
+      "start": "2026-01-01T00:00:00.000Z",
+      "end": "2026-10-17T20:00:00.000Z"
+    },
+    "records": {
+      "member": [
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "workspace_member_id": "8f11a89c-4100-429e-a359-2b778de3d4ea"
+          },
+          "first_name": "Fixture",
+          "last_name": "Rep One",
+          "avatar_url": null,
+          "email_address": "rep.one@fixture.example",
+          "access_level": "member",
+          "created_at": "2026-01-05T15:00:00.000Z"
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "workspace_member_id": "4c3899bf-6322-4991-a6de-e5060d8c0fe1"
+          },
+          "first_name": "Fixture",
+          "last_name": "Departed Rep",
+          "avatar_url": null,
+          "email_address": "departed@fixture.example",
+          "access_level": "suspended",
+          "created_at": "2026-01-05T15:00:00.000Z"
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "workspace_member_id": "10e807be-bb90-4bab-aff8-a398fbb6d38b"
+          },
+          "first_name": "Fixture",
+          "last_name": "Integration User",
+          "avatar_url": null,
+          "email_address": "integration@fixture.example",
+          "access_level": "member",
+          "created_at": "2026-01-05T15:00:00.000Z"
+        }
+      ],
+      "company": [
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "818beaf1-a45b-457b-a394-784ff2573b57",
+            "record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/companies/bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Clean Fixture Operator",
+                "attribute_type": "text"
+              }
+            ],
+            "domains": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "domain": "account-1.example",
+                "root_domain": "account-1.example",
+                "attribute_type": "domain"
+              }
+            ],
+            "customer_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "ef2469d8-20a0-4109-ab1e-2ddb32d7da79"
+                  },
+                  "title": "Prospect",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "industry_segment": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "cb39a2bc-becc-4a27-a81a-6a3a7d76e8d5"
+                  },
+                  "title": "Healthcare",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "parent_company": [],
+            "primary_location": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "line_1": null,
+                "line_2": null,
+                "line_3": null,
+                "line_4": null,
+                "locality": "Fixtureville",
+                "region": "GA",
+                "postcode": null,
+                "country_code": "US",
+                "latitude": null,
+                "longitude": null,
+                "attribute_type": "location"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "818beaf1-a45b-457b-a394-784ff2573b57",
+            "record_id": "bf3b9edc-4d9b-4420-a0da-446ff832dd54"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/companies/bf3b9edc-4d9b-4420-a0da-446ff832dd54",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Duplicate Fixture Operator",
+                "attribute_type": "text"
+              }
+            ],
+            "domains": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "domain": "www.dupe-operator.example",
+                "root_domain": "www.dupe-operator.example",
+                "attribute_type": "domain"
+              }
+            ],
+            "customer_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "ef2469d8-20a0-4109-ab1e-2ddb32d7da79"
+                  },
+                  "title": "Prospect",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "industry_segment": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "cb39a2bc-becc-4a27-a81a-6a3a7d76e8d5"
+                  },
+                  "title": "Healthcare",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "parent_company": [],
+            "primary_location": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "line_1": null,
+                "line_2": null,
+                "line_3": null,
+                "line_4": null,
+                "locality": "Fixtureville",
+                "region": "GA",
+                "postcode": null,
+                "country_code": "US",
+                "latitude": null,
+                "longitude": null,
+                "attribute_type": "location"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "818beaf1-a45b-457b-a394-784ff2573b57",
+            "record_id": "d3062378-c4d9-4d67-ac6b-c6be30f76973"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/companies/d3062378-c4d9-4d67-ac6b-c6be30f76973",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Duplicate Fixture Operator Inc",
+                "attribute_type": "text"
+              }
+            ],
+            "domains": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "domain": "dupe-operator.example",
+                "root_domain": "dupe-operator.example",
+                "attribute_type": "domain"
+              }
+            ],
+            "customer_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "ef2469d8-20a0-4109-ab1e-2ddb32d7da79"
+                  },
+                  "title": "Prospect",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "industry_segment": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "cb39a2bc-becc-4a27-a81a-6a3a7d76e8d5"
+                  },
+                  "title": "Healthcare",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "parent_company": [],
+            "primary_location": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "line_1": null,
+                "line_2": null,
+                "line_3": null,
+                "line_4": null,
+                "locality": "Fixtureville",
+                "region": "GA",
+                "postcode": null,
+                "country_code": "US",
+                "latitude": null,
+                "longitude": null,
+                "attribute_type": "location"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "818beaf1-a45b-457b-a394-784ff2573b57",
+            "record_id": "7aa00ffc-4047-4f8a-a0ea-40c327d59416"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/companies/7aa00ffc-4047-4f8a-a0ea-40c327d59416",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "No Domain Fixture Operator",
+                "attribute_type": "text"
+              }
+            ],
+            "domains": [],
+            "customer_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "ef2469d8-20a0-4109-ab1e-2ddb32d7da79"
+                  },
+                  "title": "Prospect",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "industry_segment": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "cb39a2bc-becc-4a27-a81a-6a3a7d76e8d5"
+                  },
+                  "title": "Healthcare",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "parent_company": [],
+            "primary_location": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "line_1": null,
+                "line_2": null,
+                "line_3": null,
+                "line_4": null,
+                "locality": "Fixtureville",
+                "region": "GA",
+                "postcode": null,
+                "country_code": "US",
+                "latitude": null,
+                "longitude": null,
+                "attribute_type": "location"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "818beaf1-a45b-457b-a394-784ff2573b57",
+            "record_id": "00830eb9-e4b5-42ce-a441-b60cea7675dc"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/companies/00830eb9-e4b5-42ce-a441-b60cea7675dc",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Current Customer Fixture Operator",
+                "attribute_type": "text"
+              }
+            ],
+            "domains": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "domain": "account-5.example",
+                "root_domain": "account-5.example",
+                "attribute_type": "domain"
+              }
+            ],
+            "customer_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "cc92817a-b27c-40ff-a20f-9093f5c01f20"
+                  },
+                  "title": "Customer",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "industry_segment": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "cb39a2bc-becc-4a27-a81a-6a3a7d76e8d5"
+                  },
+                  "title": "Healthcare",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "parent_company": [],
+            "primary_location": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "line_1": null,
+                "line_2": null,
+                "line_3": null,
+                "line_4": null,
+                "locality": "Fixtureville",
+                "region": "GA",
+                "postcode": null,
+                "country_code": "US",
+                "latitude": null,
+                "longitude": null,
+                "attribute_type": "location"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "818beaf1-a45b-457b-a394-784ff2573b57",
+            "record_id": "d7946445-4cea-422a-af1f-6ea89a43757c"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/companies/d7946445-4cea-422a-af1f-6ea89a43757c",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Open Opportunity Fixture Operator",
+                "attribute_type": "text"
+              }
+            ],
+            "domains": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "domain": "account-6.example",
+                "root_domain": "account-6.example",
+                "attribute_type": "domain"
+              }
+            ],
+            "customer_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "ef2469d8-20a0-4109-ab1e-2ddb32d7da79"
+                  },
+                  "title": "Prospect",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "industry_segment": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "cb39a2bc-becc-4a27-a81a-6a3a7d76e8d5"
+                  },
+                  "title": "Healthcare",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "parent_company": [],
+            "primary_location": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "line_1": null,
+                "line_2": null,
+                "line_3": null,
+                "line_4": null,
+                "locality": "Fixtureville",
+                "region": "GA",
+                "postcode": null,
+                "country_code": "US",
+                "latitude": null,
+                "longitude": null,
+                "attribute_type": "location"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "818beaf1-a45b-457b-a394-784ff2573b57",
+            "record_id": "b1968f30-f38e-45df-a988-3b1ffaf1e982"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/companies/b1968f30-f38e-45df-a988-3b1ffaf1e982",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Unknown Geography Fixture Operator",
+                "attribute_type": "text"
+              }
+            ],
+            "domains": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "domain": "account-7.example",
+                "root_domain": "account-7.example",
+                "attribute_type": "domain"
+              }
+            ],
+            "customer_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "ef2469d8-20a0-4109-ab1e-2ddb32d7da79"
+                  },
+                  "title": "Prospect",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "industry_segment": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "cb39a2bc-becc-4a27-a81a-6a3a7d76e8d5"
+                  },
+                  "title": "Healthcare",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "parent_company": [],
+            "primary_location": []
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "818beaf1-a45b-457b-a394-784ff2573b57",
+            "record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/companies/36d640f7-b36e-4a37-a126-69fb375e80b5",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Former Customer Fixture Operator",
+                "attribute_type": "text"
+              }
+            ],
+            "domains": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "domain": "account-8.example",
+                "root_domain": "account-8.example",
+                "attribute_type": "domain"
+              }
+            ],
+            "customer_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "8137e6d7-f193-4693-a5e9-62d5d17c36a8"
+                  },
+                  "title": "Former Customer",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "industry_segment": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "cb39a2bc-becc-4a27-a81a-6a3a7d76e8d5"
+                  },
+                  "title": "Healthcare",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "parent_company": [],
+            "primary_location": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "line_1": null,
+                "line_2": null,
+                "line_3": null,
+                "line_4": null,
+                "locality": "Fixtureville",
+                "region": "GA",
+                "postcode": null,
+                "country_code": "US",
+                "latitude": null,
+                "longitude": null,
+                "attribute_type": "location"
+              }
+            ]
+          }
+        }
+      ],
+      "site": [
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "65afb2df-8b19-4e77-a220-106b79ffe260",
+            "record_id": "6e676914-8607-47bc-af18-8db326652c16"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/sites/6e676914-8607-47bc-af18-8db326652c16",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Site 1",
+                "attribute_type": "text"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+                "attribute_type": "record-reference"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "65afb2df-8b19-4e77-a220-106b79ffe260",
+            "record_id": "e5115696-0cc2-4c83-aaaa-89de54868c7a"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/sites/e5115696-0cc2-4c83-aaaa-89de54868c7a",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Site 2",
+                "attribute_type": "text"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+                "attribute_type": "record-reference"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "65afb2df-8b19-4e77-a220-106b79ffe260",
+            "record_id": "3a4d8c44-543f-4218-af28-9c3aff3bd54c"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/sites/3a4d8c44-543f-4218-af28-9c3aff3bd54c",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Site 3",
+                "attribute_type": "text"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bf3b9edc-4d9b-4420-a0da-446ff832dd54",
+                "attribute_type": "record-reference"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "65afb2df-8b19-4e77-a220-106b79ffe260",
+            "record_id": "6c599fa3-fbf2-426a-acc5-3c126efff24c"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/sites/6c599fa3-fbf2-426a-acc5-3c126efff24c",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Site 4",
+                "attribute_type": "text"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "d3062378-c4d9-4d67-ac6b-c6be30f76973",
+                "attribute_type": "record-reference"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "65afb2df-8b19-4e77-a220-106b79ffe260",
+            "record_id": "6fd4b5a4-926d-4631-a2aa-ccd44a5784b2"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/sites/6fd4b5a4-926d-4631-a2aa-ccd44a5784b2",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Site 5",
+                "attribute_type": "text"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "7aa00ffc-4047-4f8a-a0ea-40c327d59416",
+                "attribute_type": "record-reference"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "65afb2df-8b19-4e77-a220-106b79ffe260",
+            "record_id": "06e45eff-3072-495c-a8f2-f1d308470763"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/sites/06e45eff-3072-495c-a8f2-f1d308470763",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Site 6",
+                "attribute_type": "text"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "00830eb9-e4b5-42ce-a441-b60cea7675dc",
+                "attribute_type": "record-reference"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "65afb2df-8b19-4e77-a220-106b79ffe260",
+            "record_id": "4a2a3b3c-4d4f-4a83-aa40-eef2db4454e1"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/sites/4a2a3b3c-4d4f-4a83-aa40-eef2db4454e1",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Site 7",
+                "attribute_type": "text"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "d7946445-4cea-422a-af1f-6ea89a43757c",
+                "attribute_type": "record-reference"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "65afb2df-8b19-4e77-a220-106b79ffe260",
+            "record_id": "fafbbb38-be9f-4ccd-af80-817ac1e93ebb"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/sites/fafbbb38-be9f-4ccd-af80-817ac1e93ebb",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Site 8",
+                "attribute_type": "text"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5",
+                "attribute_type": "record-reference"
+              }
+            ]
+          }
+        }
+      ],
+      "person": [
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "f93db94b-a1fd-4667-a7f2-c87f1cec0553",
+            "record_id": "6474f5e9-727d-41fb-ac24-6b8ffd351ae1"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/people/6474f5e9-727d-41fb-ac24-6b8ffd351ae1",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "first_name": "Fixture",
+                "last_name": "Contact 1",
+                "full_name": "Fixture Contact 1",
+                "attribute_type": "personal-name"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "job_title": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Administrator",
+                "attribute_type": "text"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "email_addresses": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_email_address": "contact-1@account-1.example",
+                "email_address": "contact-1@account-1.example",
+                "email_domain": "account-1.example",
+                "email_root_domain": "account-1.example",
+                "email_local_specifier": "contact-1",
+                "attribute_type": "email-address"
+              }
+            ],
+            "phone_numbers": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_phone_number": "+1-555-0100",
+                "country_code": "US",
+                "phone_number": "+15550100",
+                "attribute_type": "phone-number"
+              }
+            ],
+            "email_opt_out": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "do_not_call": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "persona": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "1bcd7746-c05f-4dc1-ad07-ad4f31ebf2ec"
+                  },
+                  "title": "Facility administrator",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "email_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "phone_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "enrichment_verified_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-01T00:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "lifecycle_stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "dcf3c950-bdee-4ae5-a5fc-e98ff78a3afe"
+                  },
+                  "title": "Lead",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "f93db94b-a1fd-4667-a7f2-c87f1cec0553",
+            "record_id": "4e26b8ea-8f9e-42ef-a1bd-9ff91e965080"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/people/4e26b8ea-8f9e-42ef-a1bd-9ff91e965080",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "first_name": "Fixture",
+                "last_name": "Contact 2",
+                "full_name": "Fixture Contact 2",
+                "attribute_type": "personal-name"
+              }
+            ],
+            "company": [],
+            "job_title": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Administrator",
+                "attribute_type": "text"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "email_addresses": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_email_address": "contact-2@account-1.example",
+                "email_address": "contact-2@account-1.example",
+                "email_domain": "account-1.example",
+                "email_root_domain": "account-1.example",
+                "email_local_specifier": "contact-2",
+                "attribute_type": "email-address"
+              }
+            ],
+            "phone_numbers": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_phone_number": "+1-555-0100",
+                "country_code": "US",
+                "phone_number": "+15550100",
+                "attribute_type": "phone-number"
+              }
+            ],
+            "email_opt_out": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "do_not_call": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "persona": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "1bcd7746-c05f-4dc1-ad07-ad4f31ebf2ec"
+                  },
+                  "title": "Facility administrator",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "email_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "phone_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "enrichment_verified_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-01T00:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "lifecycle_stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "dcf3c950-bdee-4ae5-a5fc-e98ff78a3afe"
+                  },
+                  "title": "Lead",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "f93db94b-a1fd-4667-a7f2-c87f1cec0553",
+            "record_id": "c6a5fe0f-8ae1-4ae9-a7f6-39c648ed6df5"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/people/c6a5fe0f-8ae1-4ae9-a7f6-39c648ed6df5",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "first_name": "Fixture",
+                "last_name": "Contact 3",
+                "full_name": "Fixture Contact 3",
+                "attribute_type": "personal-name"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "job_title": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Administrator",
+                "attribute_type": "text"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "email_addresses": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_email_address": "Shared.Inbox@account-1.example",
+                "email_address": "Shared.Inbox@account-1.example",
+                "email_domain": "account-1.example",
+                "email_root_domain": "account-1.example",
+                "email_local_specifier": "Shared.Inbox",
+                "attribute_type": "email-address"
+              }
+            ],
+            "phone_numbers": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_phone_number": "+1-555-0100",
+                "country_code": "US",
+                "phone_number": "+15550100",
+                "attribute_type": "phone-number"
+              }
+            ],
+            "email_opt_out": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "do_not_call": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "persona": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "1bcd7746-c05f-4dc1-ad07-ad4f31ebf2ec"
+                  },
+                  "title": "Facility administrator",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "email_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "phone_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "enrichment_verified_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-01T00:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "lifecycle_stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "dcf3c950-bdee-4ae5-a5fc-e98ff78a3afe"
+                  },
+                  "title": "Lead",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "f93db94b-a1fd-4667-a7f2-c87f1cec0553",
+            "record_id": "62ebe09f-8c94-4fcc-a012-0fc2df924f46"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/people/62ebe09f-8c94-4fcc-a012-0fc2df924f46",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "first_name": "Fixture",
+                "last_name": "Contact 4",
+                "full_name": "Fixture Contact 4",
+                "attribute_type": "personal-name"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "job_title": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Administrator",
+                "attribute_type": "text"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "email_addresses": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_email_address": "shared.inbox@account-1.example ",
+                "email_address": "shared.inbox@account-1.example ",
+                "email_domain": "account-1.example ",
+                "email_root_domain": "account-1.example ",
+                "email_local_specifier": "shared.inbox",
+                "attribute_type": "email-address"
+              }
+            ],
+            "phone_numbers": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_phone_number": "+1-555-0100",
+                "country_code": "US",
+                "phone_number": "+15550100",
+                "attribute_type": "phone-number"
+              }
+            ],
+            "email_opt_out": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "do_not_call": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "persona": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "1bcd7746-c05f-4dc1-ad07-ad4f31ebf2ec"
+                  },
+                  "title": "Facility administrator",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "email_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "phone_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "enrichment_verified_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-01T00:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "lifecycle_stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "dcf3c950-bdee-4ae5-a5fc-e98ff78a3afe"
+                  },
+                  "title": "Lead",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "f93db94b-a1fd-4667-a7f2-c87f1cec0553",
+            "record_id": "b6312c2d-dd6d-4e38-a264-dcf7aa76d950"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/people/b6312c2d-dd6d-4e38-a264-dcf7aa76d950",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "first_name": "Fixture",
+                "last_name": "Contact 5",
+                "full_name": "Fixture Contact 5",
+                "attribute_type": "personal-name"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "job_title": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Administrator",
+                "attribute_type": "text"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "10e807be-bb90-4bab-aff8-a398fbb6d38b",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "email_addresses": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_email_address": "contact-5@account-1.example",
+                "email_address": "contact-5@account-1.example",
+                "email_domain": "account-1.example",
+                "email_root_domain": "account-1.example",
+                "email_local_specifier": "contact-5",
+                "attribute_type": "email-address"
+              }
+            ],
+            "phone_numbers": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_phone_number": "+1-555-0100",
+                "country_code": "US",
+                "phone_number": "+15550100",
+                "attribute_type": "phone-number"
+              }
+            ],
+            "email_opt_out": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "do_not_call": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "persona": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "1bcd7746-c05f-4dc1-ad07-ad4f31ebf2ec"
+                  },
+                  "title": "Facility administrator",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "email_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "phone_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "enrichment_verified_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-01T00:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "lifecycle_stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "dcf3c950-bdee-4ae5-a5fc-e98ff78a3afe"
+                  },
+                  "title": "Lead",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "f93db94b-a1fd-4667-a7f2-c87f1cec0553",
+            "record_id": "56c292fb-854c-493d-a878-7f9d721e38ee"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/people/56c292fb-854c-493d-a878-7f9d721e38ee",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "first_name": "Fixture",
+                "last_name": "Contact 6",
+                "full_name": "Fixture Contact 6",
+                "attribute_type": "personal-name"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "job_title": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Administrator",
+                "attribute_type": "text"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "email_addresses": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_email_address": "contact-6@account-1.example",
+                "email_address": "contact-6@account-1.example",
+                "email_domain": "account-1.example",
+                "email_root_domain": "account-1.example",
+                "email_local_specifier": "contact-6",
+                "attribute_type": "email-address"
+              }
+            ],
+            "phone_numbers": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_phone_number": "+1-555-0100",
+                "country_code": "US",
+                "phone_number": "+15550100",
+                "attribute_type": "phone-number"
+              }
+            ],
+            "email_opt_out": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "do_not_call": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "persona": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "1bcd7746-c05f-4dc1-ad07-ad4f31ebf2ec"
+                  },
+                  "title": "Facility administrator",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "email_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "phone_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "enrichment_verified_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-01T00:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "lifecycle_stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "dcf3c950-bdee-4ae5-a5fc-e98ff78a3afe"
+                  },
+                  "title": "Lead",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "f93db94b-a1fd-4667-a7f2-c87f1cec0553",
+            "record_id": "2e623ca2-4eff-45fd-a1c0-ed175df153f6"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/people/2e623ca2-4eff-45fd-a1c0-ed175df153f6",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "first_name": "Fixture",
+                "last_name": "Contact 7",
+                "full_name": "Fixture Contact 7",
+                "attribute_type": "personal-name"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "job_title": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Administrator",
+                "attribute_type": "text"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "email_addresses": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_email_address": "contact-7@account-1.example",
+                "email_address": "contact-7@account-1.example",
+                "email_domain": "account-1.example",
+                "email_root_domain": "account-1.example",
+                "email_local_specifier": "contact-7",
+                "attribute_type": "email-address"
+              }
+            ],
+            "phone_numbers": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_phone_number": "+1-555-0100",
+                "country_code": "US",
+                "phone_number": "+15550100",
+                "attribute_type": "phone-number"
+              }
+            ],
+            "email_opt_out": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "do_not_call": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "persona": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "1bcd7746-c05f-4dc1-ad07-ad4f31ebf2ec"
+                  },
+                  "title": "Facility administrator",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "email_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "phone_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "enrichment_verified_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-01T00:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "lifecycle_stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "dcf3c950-bdee-4ae5-a5fc-e98ff78a3afe"
+                  },
+                  "title": "Lead",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "f93db94b-a1fd-4667-a7f2-c87f1cec0553",
+            "record_id": "dbb0d218-a7e3-4f72-a9c4-30127f582c6a"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/people/dbb0d218-a7e3-4f72-a9c4-30127f582c6a",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "first_name": "Fixture",
+                "last_name": "Contact 8",
+                "full_name": "Fixture Contact 8",
+                "attribute_type": "personal-name"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "job_title": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Chief Vibes Officer",
+                "attribute_type": "text"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "email_addresses": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_email_address": "contact-8@account-1.example",
+                "email_address": "contact-8@account-1.example",
+                "email_domain": "account-1.example",
+                "email_root_domain": "account-1.example",
+                "email_local_specifier": "contact-8",
+                "attribute_type": "email-address"
+              }
+            ],
+            "phone_numbers": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_phone_number": "+1-555-0100",
+                "country_code": "US",
+                "phone_number": "+15550100",
+                "attribute_type": "phone-number"
+              }
+            ],
+            "email_opt_out": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "do_not_call": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "persona": [],
+            "email_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "phone_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "enrichment_verified_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-01T00:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "lifecycle_stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "dcf3c950-bdee-4ae5-a5fc-e98ff78a3afe"
+                  },
+                  "title": "Lead",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "f93db94b-a1fd-4667-a7f2-c87f1cec0553",
+            "record_id": "eeb4b999-00b0-4014-aa76-5e8b73364aa5"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/people/eeb4b999-00b0-4014-aa76-5e8b73364aa5",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "first_name": "Fixture",
+                "last_name": "Contact 9",
+                "full_name": "Fixture Contact 9",
+                "attribute_type": "personal-name"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "job_title": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Administrator",
+                "attribute_type": "text"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "email_addresses": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_email_address": "contact-9@account-1.example",
+                "email_address": "contact-9@account-1.example",
+                "email_domain": "account-1.example",
+                "email_root_domain": "account-1.example",
+                "email_local_specifier": "contact-9",
+                "attribute_type": "email-address"
+              }
+            ],
+            "phone_numbers": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_phone_number": "+1-555-0100",
+                "country_code": "US",
+                "phone_number": "+15550100",
+                "attribute_type": "phone-number"
+              }
+            ],
+            "email_opt_out": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "do_not_call": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "persona": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "1bcd7746-c05f-4dc1-ad07-ad4f31ebf2ec"
+                  },
+                  "title": "Facility administrator",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "email_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "phone_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "enrichment_verified_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-03-01T00:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "lifecycle_stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "dcf3c950-bdee-4ae5-a5fc-e98ff78a3afe"
+                  },
+                  "title": "Lead",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "f93db94b-a1fd-4667-a7f2-c87f1cec0553",
+            "record_id": "3dd9c198-0e0d-4d0d-a73d-5bf8419de7e8"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/people/3dd9c198-0e0d-4d0d-a73d-5bf8419de7e8",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "first_name": "Fixture",
+                "last_name": "Contact 10",
+                "full_name": "Fixture Contact 10",
+                "attribute_type": "personal-name"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "job_title": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Administrator",
+                "attribute_type": "text"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "email_addresses": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_email_address": "contact-10@account-1.example",
+                "email_address": "contact-10@account-1.example",
+                "email_domain": "account-1.example",
+                "email_root_domain": "account-1.example",
+                "email_local_specifier": "contact-10",
+                "attribute_type": "email-address"
+              }
+            ],
+            "phone_numbers": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_phone_number": "+1-555-0100",
+                "country_code": "US",
+                "phone_number": "+15550100",
+                "attribute_type": "phone-number"
+              }
+            ],
+            "email_opt_out": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "do_not_call": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "persona": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "1bcd7746-c05f-4dc1-ad07-ad4f31ebf2ec"
+                  },
+                  "title": "Facility administrator",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "email_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "f1ce8bf4-a564-4f53-af82-d58bd0d54a9c"
+                  },
+                  "title": "Invalid",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "phone_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "enrichment_verified_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-01T00:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "lifecycle_stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "dcf3c950-bdee-4ae5-a5fc-e98ff78a3afe"
+                  },
+                  "title": "Lead",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "f93db94b-a1fd-4667-a7f2-c87f1cec0553",
+            "record_id": "e94970e4-6e80-4a3b-a477-308669ef49b4"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/people/e94970e4-6e80-4a3b-a477-308669ef49b4",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "first_name": "Fixture",
+                "last_name": "Contact 11",
+                "full_name": "Fixture Contact 11",
+                "attribute_type": "personal-name"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "job_title": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Administrator",
+                "attribute_type": "text"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "email_addresses": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_email_address": "contact-11@account-1.example",
+                "email_address": "contact-11@account-1.example",
+                "email_domain": "account-1.example",
+                "email_root_domain": "account-1.example",
+                "email_local_specifier": "contact-11",
+                "attribute_type": "email-address"
+              }
+            ],
+            "phone_numbers": [],
+            "email_opt_out": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "do_not_call": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": true,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "persona": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "1bcd7746-c05f-4dc1-ad07-ad4f31ebf2ec"
+                  },
+                  "title": "Facility administrator",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "email_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "phone_status": [],
+            "enrichment_verified_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-01T00:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "lifecycle_stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "dcf3c950-bdee-4ae5-a5fc-e98ff78a3afe"
+                  },
+                  "title": "Lead",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "f93db94b-a1fd-4667-a7f2-c87f1cec0553",
+            "record_id": "249c9a0f-c10c-447d-afdc-d03e07e35d0e"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/people/249c9a0f-c10c-447d-afdc-d03e07e35d0e",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "first_name": "Fixture",
+                "last_name": "Contact 12",
+                "full_name": "Fixture Contact 12",
+                "attribute_type": "personal-name"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "job_title": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Administrator",
+                "attribute_type": "text"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "email_addresses": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_email_address": "contact-12@account-1.example",
+                "email_address": "contact-12@account-1.example",
+                "email_domain": "account-1.example",
+                "email_root_domain": "account-1.example",
+                "email_local_specifier": "contact-12",
+                "attribute_type": "email-address"
+              }
+            ],
+            "phone_numbers": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "original_phone_number": "+1-555-0100",
+                "country_code": "US",
+                "phone_number": "+15550100",
+                "attribute_type": "phone-number"
+              }
+            ],
+            "email_opt_out": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "do_not_call": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "target_candidate": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": false,
+                "attribute_type": "checkbox"
+              }
+            ],
+            "persona": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "1bcd7746-c05f-4dc1-ad07-ad4f31ebf2ec"
+                  },
+                  "title": "Facility administrator",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "email_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "phone_status": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "618ff1e2-3bef-4116-a3c6-3fc6baf903c5"
+                  },
+                  "title": "Verified",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "enrichment_verified_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-01T00:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "lifecycle_stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "cc92817a-b27c-40ff-a20f-9093f5c01f20"
+                  },
+                  "title": "Customer",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ]
+          }
+        }
+      ],
+      "deal": [
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "44402a46-d33f-4888-a48d-fe6dabae1d6a",
+            "record_id": "68fafdd9-0312-453d-afbd-f866b07b0061"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/deals/68fafdd9-0312-453d-afbd-f866b07b0061",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Opportunity 1",
+                "attribute_type": "text"
+              }
+            ],
+            "stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "status": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "status_id": "1976d232-03ff-48f1-ae45-642ceba1783a"
+                  },
+                  "title": "Won 🎉",
+                  "is_archived": false
+                },
+                "attribute_type": "status"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "value": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "currency_value": 12000,
+                "currency_code": "USD",
+                "attribute_type": "currency"
+              }
+            ],
+            "associated_company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "deal_type": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "92971cbe-6124-4707-a616-0ceadea6e56b"
+                  },
+                  "title": "New Business",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "next_step": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Send proposal",
+                "attribute_type": "text"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "44402a46-d33f-4888-a48d-fe6dabae1d6a",
+            "record_id": "49e1ec76-ec9f-46ec-a398-04554f0325f3"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/deals/49e1ec76-ec9f-46ec-a398-04554f0325f3",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Opportunity 2",
+                "attribute_type": "text"
+              }
+            ],
+            "stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "status": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "status_id": "5374c042-f446-4864-a525-9ace3ebd2fa7"
+                  },
+                  "title": "Proposal",
+                  "is_archived": false
+                },
+                "attribute_type": "status"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "value": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "currency_value": 12000,
+                "currency_code": "USD",
+                "attribute_type": "currency"
+              }
+            ],
+            "associated_company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "d7946445-4cea-422a-af1f-6ea89a43757c",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "deal_type": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "92971cbe-6124-4707-a616-0ceadea6e56b"
+                  },
+                  "title": "New Business",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "next_step": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Send proposal",
+                "attribute_type": "text"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "44402a46-d33f-4888-a48d-fe6dabae1d6a",
+            "record_id": "74272ae2-9497-4d13-a741-dc871e2e39ff"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/deals/74272ae2-9497-4d13-a741-dc871e2e39ff",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Opportunity 3",
+                "attribute_type": "text"
+              }
+            ],
+            "stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "status": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "status_id": "5374c042-f446-4864-a525-9ace3ebd2fa7"
+                  },
+                  "title": "Proposal",
+                  "is_archived": false
+                },
+                "attribute_type": "status"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "value": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "currency_value": 12000,
+                "currency_code": "USD",
+                "attribute_type": "currency"
+              }
+            ],
+            "associated_company": [],
+            "deal_type": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "92971cbe-6124-4707-a616-0ceadea6e56b"
+                  },
+                  "title": "New Business",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "next_step": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Send proposal",
+                "attribute_type": "text"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "44402a46-d33f-4888-a48d-fe6dabae1d6a",
+            "record_id": "c9920268-17ef-4d36-a7a0-b40fa76465d6"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/deals/c9920268-17ef-4d36-a7a0-b40fa76465d6",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Opportunity 4",
+                "attribute_type": "text"
+              }
+            ],
+            "stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "status": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "status_id": "5374c042-f446-4864-a525-9ace3ebd2fa7"
+                  },
+                  "title": "Proposal",
+                  "is_archived": false
+                },
+                "attribute_type": "status"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "4c3899bf-6322-4991-a6de-e5060d8c0fe1",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "value": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "currency_value": 12000,
+                "currency_code": "USD",
+                "attribute_type": "currency"
+              }
+            ],
+            "associated_company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "deal_type": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "92971cbe-6124-4707-a616-0ceadea6e56b"
+                  },
+                  "title": "New Business",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "next_step": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Send proposal",
+                "attribute_type": "text"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "44402a46-d33f-4888-a48d-fe6dabae1d6a",
+            "record_id": "b94548b2-f886-4c9a-a974-0c5300f96ba4"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/deals/b94548b2-f886-4c9a-a974-0c5300f96ba4",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Opportunity 5",
+                "attribute_type": "text"
+              }
+            ],
+            "stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "status": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "status_id": "5374c042-f446-4864-a525-9ace3ebd2fa7"
+                  },
+                  "title": "Proposal",
+                  "is_archived": false
+                },
+                "attribute_type": "status"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "value": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "currency_value": 12000,
+                "currency_code": "USD",
+                "attribute_type": "currency"
+              }
+            ],
+            "associated_company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "deal_type": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "92971cbe-6124-4707-a616-0ceadea6e56b"
+                  },
+                  "title": "New Business",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "next_step": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Send proposal",
+                "attribute_type": "text"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "44402a46-d33f-4888-a48d-fe6dabae1d6a",
+            "record_id": "5a93d967-b381-4d8f-a375-9320f32f1916"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/deals/5a93d967-b381-4d8f-a375-9320f32f1916",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Opportunity 6",
+                "attribute_type": "text"
+              }
+            ],
+            "stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "status": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "status_id": "5374c042-f446-4864-a525-9ace3ebd2fa7"
+                  },
+                  "title": "Proposal",
+                  "is_archived": false
+                },
+                "attribute_type": "status"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "value": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "currency_value": 12000,
+                "currency_code": "USD",
+                "attribute_type": "currency"
+              }
+            ],
+            "associated_company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "deal_type": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "92971cbe-6124-4707-a616-0ceadea6e56b"
+                  },
+                  "title": "New Business",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "next_step": []
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "44402a46-d33f-4888-a48d-fe6dabae1d6a",
+            "record_id": "9b1aabfb-fd71-44a4-ab6f-cd24e907136d"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/deals/9b1aabfb-fd71-44a4-ab6f-cd24e907136d",
+          "values": {
+            "name": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "Fixture Opportunity 7",
+                "attribute_type": "text"
+              }
+            ],
+            "stage": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "status": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "status_id": "5374c042-f446-4864-a525-9ace3ebd2fa7"
+                  },
+                  "title": "Proposal",
+                  "is_archived": false
+                },
+                "attribute_type": "status"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ],
+            "value": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "currency_value": 12000,
+                "currency_code": "USD",
+                "attribute_type": "currency"
+              }
+            ],
+            "associated_company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "deal_type": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "8d67a316-48ab-4d3c-a311-55c9b5122287"
+                  },
+                  "title": "Renewal",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "next_step": []
+          }
+        }
+      ],
+      "call": [
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "2d7507eb-a486-4575-a27a-8db6a959a335",
+            "record_id": "78378028-cd4a-4663-ad74-c1a690131c40"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/calls/78378028-cd4a-4663-ad74-c1a690131c40",
+          "values": {
+            "occurred_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-14T15:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "disposition": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "e49d0ba6-5a21-476a-a463-02e97110d9a0"
+                  },
+                  "title": "Connected",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "d7946445-4cea-422a-af1f-6ea89a43757c",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "person": [],
+            "deal": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "deals",
+                "target_record_id": "49e1ec76-ec9f-46ec-a398-04554f0325f3",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "2d7507eb-a486-4575-a27a-8db6a959a335",
+            "record_id": "f9e6ec23-b145-4227-a695-41fa207cead8"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/calls/f9e6ec23-b145-4227-a695-41fa207cead8",
+          "values": {
+            "occurred_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-14T15:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "disposition": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "e49d0ba6-5a21-476a-a463-02e97110d9a0"
+                  },
+                  "title": "Connected",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "person": [],
+            "deal": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "deals",
+                "target_record_id": "c9920268-17ef-4d36-a7a0-b40fa76465d6",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "2d7507eb-a486-4575-a27a-8db6a959a335",
+            "record_id": "7a08488e-9167-4220-a94c-d5eafe4b5b69"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/calls/7a08488e-9167-4220-a94c-d5eafe4b5b69",
+          "values": {
+            "occurred_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-14T15:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "disposition": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "e49d0ba6-5a21-476a-a463-02e97110d9a0"
+                  },
+                  "title": "Connected",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "person": [],
+            "deal": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "deals",
+                "target_record_id": "5a93d967-b381-4d8f-a375-9320f32f1916",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "2d7507eb-a486-4575-a27a-8db6a959a335",
+            "record_id": "7356c7ba-770b-48f2-ab74-4c42dd69a927"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/calls/7356c7ba-770b-48f2-ab74-4c42dd69a927",
+          "values": {
+            "occurred_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-09-15T15:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "disposition": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "option": {
+                  "id": {
+                    "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                    "option_id": "e49d0ba6-5a21-476a-a463-02e97110d9a0"
+                  },
+                  "title": "Connected",
+                  "is_archived": false
+                },
+                "attribute_type": "select"
+              }
+            ],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "person": [],
+            "deal": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "deals",
+                "target_record_id": "b94548b2-f886-4c9a-a974-0c5300f96ba4",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ]
+          }
+        },
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "object_id": "2d7507eb-a486-4575-a27a-8db6a959a335",
+            "record_id": "447e92e7-f9f1-4ded-a719-a6883177c563"
+          },
+          "created_at": "2026-01-05T15:00:00.000Z",
+          "web_url": "https://app.attio.com/synthetic-fixture/calls/447e92e7-f9f1-4ded-a719-a6883177c563",
+          "values": {
+            "occurred_at": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "value": "2026-10-14T15:00:00.000Z",
+                "attribute_type": "timestamp"
+              }
+            ],
+            "disposition": [],
+            "company": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "target_object": "companies",
+                "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+                "attribute_type": "record-reference"
+              }
+            ],
+            "person": [],
+            "deal": [],
+            "owner": [
+              {
+                "active_from": "2026-10-01T12:00:00.000Z",
+                "active_until": null,
+                "created_by_actor": {
+                  "type": "system",
+                  "id": null
+                },
+                "referenced_actor_type": "workspace-member",
+                "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+                "attribute_type": "actor-reference"
+              }
+            ]
+          }
+        }
+      ],
+      "task": [
+        {
+          "id": {
+            "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+            "task_id": "28340072-52d6-4f76-af32-f706b3a2ceb2"
+          },
+          "content_plaintext": "Fixture task 5",
+          "format": "plaintext",
+          "deadline_at": "2026-10-24T00:00:00.000Z",
+          "is_completed": false,
+          "linked_records": [
+            {
+              "target_object_id": "44402a46-d33f-4888-a48d-fe6dabae1d6a",
+              "target_record_id": "74272ae2-9497-4d13-a741-dc871e2e39ff"
+            }
+          ],
+          "assignees": [
+            {
+              "referenced_actor_type": "workspace-member",
+              "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea"
+            }
+          ],
+          "created_by_actor": {
+            "type": "system",
+            "id": null
+          },
+          "created_at": "2026-01-05T15:00:00.000Z"
+        }
+      ]
+    }
+  }
+}

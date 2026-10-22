@@ -8,7 +8,7 @@ All records in this directory are fictional and use reserved `.example` domains.
 
 Do not edit an approved release in place. Create a new release when adding or changing scenarios so historical inspection evidence remains reproducible.
 
-`salesforce-mapping-v1` is its Salesforce-shaped counterpart: synthetic mirror records and a mapping configuration that reproduce every `inspection-v1` rule through the Salesforce mapping, with independently authored expected findings. It was built under decision 0005 and is superseded by decision 0011; an Attio-shaped counterpart replaces it.
+`salesforce-mapping-v1` is its Salesforce-shaped counterpart: synthetic mirror records and a mapping configuration that reproduce every `inspection-v1` rule through the Salesforce mapping, with independently authored expected findings. It was built under decision 0005 and is superseded by decision 0011. `attio-mapping-v1` is its Attio-shaped counterpart, derived record for record by `scripts/derive-attio-fixtures.ts`, and `connectors/attio-recorded-v1` holds the matching synthetic Attio API responses.
 
 Generated findings belong under `artifacts/` and are not source fixtures.
 

@@ -50,9 +50,9 @@ Exit gate: a clean environment can load the fixtures, run the audit, and display
 
 ## Milestone 3: Read-only Attio connection
 
-Status: retargeted to Attio on 2026-10-21 by decision 0011. The workspace exists (`10-x-media`); the connector is not built. The earlier Salesforce connector, described in `../milestones/milestone-3-salesforce-connector-notes.md`, is superseded reference work and is not evidence for this milestone.
+Status: in progress. Retargeted to Attio on 2026-10-21 by decision 0011. The read-only connector and audit mapping are built and verified against synthetic recorded responses; live acceptance waits for the workspace setup and token listed in `../milestones/milestone-3-attio-connector-notes.md`. The earlier Salesforce connector is superseded reference work and is not evidence for this milestone.
 
-Connect the Attio workspace with an access token limited to read scopes. Import bounded Company, Site, People, Deal, workspace member, Task, Note, and List data, preserve source timestamps, and reconcile paginated data safely. The object mapping follows `docs/decisions/0011-attio-crm-system-of-record.md`.
+Connect the Attio workspace with an access token limited to read scopes. Import bounded Company, Site, People, Deal, call-log, workspace member, and Task data, preserve source timestamps, and reconcile paginated data safely. The object mapping follows `docs/decisions/0011-attio-crm-system-of-record.md`.
 
 Under decision 0010 the workspace holds only real Georgia operators and facilities from the market sample, as Companies and Sites, loaded as a setup step separate from the read-only connector. There is no fictional history, so the other objects may be empty; synthetic recorded responses prove them.
 

@@ -1,0 +1,347 @@
+{
+  "data": [
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "818beaf1-a45b-457b-a394-784ff2573b57",
+        "record_id": "d7946445-4cea-422a-af1f-6ea89a43757c"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/companies/d7946445-4cea-422a-af1f-6ea89a43757c",
+      "values": {
+        "name": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Open Opportunity Fixture Operator",
+            "attribute_type": "text"
+          }
+        ],
+        "domains": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "domain": "account-6.example",
+            "root_domain": "account-6.example",
+            "attribute_type": "domain"
+          }
+        ],
+        "customer_status": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "ef2469d8-20a0-4109-ab1e-2ddb32d7da79"
+              },
+              "title": "Prospect",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "owner": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "referenced_actor_type": "workspace-member",
+            "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+            "attribute_type": "actor-reference"
+          }
+        ],
+        "target_candidate": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": true,
+            "attribute_type": "checkbox"
+          }
+        ],
+        "industry_segment": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "cb39a2bc-becc-4a27-a81a-6a3a7d76e8d5"
+              },
+              "title": "Healthcare",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "parent_company": [],
+        "primary_location": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "line_1": null,
+            "line_2": null,
+            "line_3": null,
+            "line_4": null,
+            "locality": "Fixtureville",
+            "region": "GA",
+            "postcode": null,
+            "country_code": "US",
+            "latitude": null,
+            "longitude": null,
+            "attribute_type": "location"
+          }
+        ]
+      }
+    },
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "818beaf1-a45b-457b-a394-784ff2573b57",
+        "record_id": "b1968f30-f38e-45df-a988-3b1ffaf1e982"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/companies/b1968f30-f38e-45df-a988-3b1ffaf1e982",
+      "values": {
+        "name": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Unknown Geography Fixture Operator",
+            "attribute_type": "text"
+          }
+        ],
+        "domains": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "domain": "account-7.example",
+            "root_domain": "account-7.example",
+            "attribute_type": "domain"
+          }
+        ],
+        "customer_status": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "ef2469d8-20a0-4109-ab1e-2ddb32d7da79"
+              },
+              "title": "Prospect",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "owner": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "referenced_actor_type": "workspace-member",
+            "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+            "attribute_type": "actor-reference"
+          }
+        ],
+        "target_candidate": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": true,
+            "attribute_type": "checkbox"
+          }
+        ],
+        "industry_segment": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "cb39a2bc-becc-4a27-a81a-6a3a7d76e8d5"
+              },
+              "title": "Healthcare",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "parent_company": [],
+        "primary_location": []
+      }
+    },
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "818beaf1-a45b-457b-a394-784ff2573b57",
+        "record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/companies/36d640f7-b36e-4a37-a126-69fb375e80b5",
+      "values": {
+        "name": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Former Customer Fixture Operator",
+            "attribute_type": "text"
+          }
+        ],
+        "domains": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "domain": "account-8.example",
+            "root_domain": "account-8.example",
+            "attribute_type": "domain"
+          }
+        ],
+        "customer_status": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "8137e6d7-f193-4693-a5e9-62d5d17c36a8"
+              },
+              "title": "Former Customer",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "owner": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "referenced_actor_type": "workspace-member",
+            "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+            "attribute_type": "actor-reference"
+          }
+        ],
+        "target_candidate": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": false,
+            "attribute_type": "checkbox"
+          }
+        ],
+        "industry_segment": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "cb39a2bc-becc-4a27-a81a-6a3a7d76e8d5"
+              },
+              "title": "Healthcare",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "parent_company": [],
+        "primary_location": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "line_1": null,
+            "line_2": null,
+            "line_3": null,
+            "line_4": null,
+            "locality": "Fixtureville",
+            "region": "GA",
+            "postcode": null,
+            "country_code": "US",
+            "latitude": null,
+            "longitude": null,
+            "attribute_type": "location"
+          }
+        ]
+      }
+    }
+  ]
+}

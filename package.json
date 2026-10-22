@@ -19,6 +19,8 @@
     "sample:georgia:pull": "node scripts/georgia-sample/pull-cms.ts",
     "sample:georgia:clay-export": "node scripts/georgia-sample/clay-export.ts",
     "sample:georgia:clay-reduce": "node scripts/georgia-sample/clay-reduce.ts",
+    "attio:sync": "node scripts/attio-sync.ts",
+    "attio:verify-recorded": "node scripts/verify-attio-recorded.ts",
     "salesforce:sync": "node scripts/salesforce-sync.ts",
     "salesforce:verify-recorded": "node scripts/verify-salesforce-recorded.ts",
     "qa:visual": "node scripts/visual-qa.ts",

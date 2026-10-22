@@ -2,7 +2,7 @@
 
 Portco Launch Control is an Apero-style GTM engineering portfolio project built around the fictional client Anchorpoint Fire & Safety. It maps a real market into Attio companies and sites, audits CRM health with deterministic rules, prepares bounded records for enrichment, ranks accounts and people with explainable evidence, requires human approval, routes approved contacts to Lemlist or TitanX, and returns outcomes to Salesforce and a rep work queue.
 
-The system is intentionally gated and read-only at its current stage. No live credentials or live external connections exist. The CRM is Attio under decision 0011; its read-only connector is not built yet.
+The system is intentionally gated and read-only at its current stage. No live credentials or live external connections exist. The CRM is Attio under decision 0011; its read-only connector has run only against synthetic recorded responses.
 
 ## Portfolio context
 
@@ -13,7 +13,7 @@ This is a GTM engineering work sample for Apero Advisors. Anchorpoint Fire & Saf
 - Milestone 0 is complete.
 - Milestone 1 was accepted on 2026-10-17.
 - Milestone 2 is complete, with the preview deployed on Vercel and Railway.
-- Milestone 3 is retargeted to a read-only Attio connection; the workspace exists and the connector is not built. The earlier Salesforce connector is superseded reference code.
+- Milestone 3, the read-only Attio connector and audit mapping, is built and verified against synthetic recorded responses; live acceptance waits for the workspace setup and a read-only token. The earlier Salesforce connector is superseded reference code.
 - The Georgia senior-living and skilled-nursing sample is the first of about five Georgia segments, worked in depth.
 - The current application is a read-only Next.js findings board backed by the frozen `inspection-v1` fixture and the deterministic audit engine.
 - The fixture proves CRM audit behavior. It is not valid evidence for ICP discovery, score calibration, or TAM sizing.
@@ -54,7 +54,7 @@ docs/milestones/   implementation evidence and remaining work
 docs/decisions/    durable decision records
 ```
 
-Connector packages are created only when their gated milestone begins. `packages/connectors/` holds the superseded read-only Salesforce connector, kept as reference until the Attio connector replaces it.
+Connector packages are created only when their gated milestone begins. `packages/connectors/` holds the Milestone 3 read-only Attio connector and the superseded Salesforce connector, kept as reference.
 
 ## Local verification
 
@@ -67,6 +67,7 @@ npm run build
 npm run db:up
 npm run foundation:setup
 npm run foundation:verify
+npm run attio:verify-recorded
 npm run salesforce:verify-recorded
 ```
 

@@ -1,6 +1,6 @@
 # Project State
 
-Last updated: 2026-10-21
+Last updated: 2026-10-22
 
 This file contains only live execution context. Durable product knowledge belongs under `docs/`; use `docs/README.md` to locate it.
 
@@ -20,12 +20,12 @@ Do not derive ICP hypotheses, tune score weights, or size the market from `inspe
 
 ## Work in progress
 
-- Milestone 3: the Salesforce connector built under decision 0005 is superseded reference work. The Attio connector is not started.
+- Milestone 3: the read-only Attio connector and audit mapping are built and verified against synthetic recorded responses. See `docs/milestones/milestone-3-attio-connector-notes.md`.
 - Georgia sample: stages 1 to 5, the account value model in code (decision 0009), the 2026-10-20 operator review decisions, and the Stage 6 Clay people pass design are merged into the trunk. Tiering is rerun on the 105-operator list.
 
 ## Blockers
 
-- Milestone 3 live acceptance needs the Site custom object and a read-only access token in the Attio workspace `10-x-media` (https://app.attio.com/10-x-media).
+- Milestone 3 live acceptance needs the custom objects, attributes, and read-only access token listed in the milestone note, in the Attio workspace `10-x-media` (https://app.attio.com/10-x-media).
 - The remote branch `origin/claude/tender-tesla-9lfwvn` proposes Supabase without Railway and reuses decision numbers 0003 and 0004 for different decisions. It is not part of the plan; ignore it until the user decides whether to delete it.
 
 ## Immediate next work
@@ -36,15 +36,15 @@ When Clay is connected, follow "Runbook: when Clay is connected" in `docs/resear
 
 Flagged for later review: the two provisional senior-living personas in `docs/contracts/operating-contract.md`, once Stage 6 shows which job titles exist. Review the site administrator's low-confidence 7 person-relevance points at the same time.
 
-1. Done on 2026-10-21: owning documents revised for Attio. Next, build the read-only Attio connector and Attio audit mapping.
+1. Done on 2026-10-22: the read-only Attio connector and audit mapping. Porting the CRM history pipeline to Attio snapshots is not started.
 2. Done on 2026-10-21: coarse segment sizing in `docs/research/georgia-segment-sizing.md`. It is market context only. Senior living and skilled nursing is the one segment drilled into; no work or spend on a second segment is planned.
 3. Done on 2026-10-21: the CRM analysis pipeline and the Salesforce mapping for the audit rules (superseded by 0011; the pipeline itself is CRM-neutral), verified on labelled test fixtures only (`docs/research/crm-icp-analysis-playbook.md`).
-4. When the connector is built and the token exists, finish the Milestone 3 exit-gate checks.
+4. When the workspace setup and token exist, finish the Milestone 3 exit-gate checks in the milestone note.
 
 ## Active safety boundary
 
 - Deployment-only credentials exist in Railway and Vercel. No live CRM credentials exist.
-- No write-capable connector exists. The superseded Salesforce connector is read-only by construction, and the Attio connector must be too.
+- No write-capable connector exists. The Attio connector allows only reads and record queries by construction, as did the superseded Salesforce connector.
 - Synthetic fixtures are test inputs, never findings or market evidence.
 - Human approval and deny-first suppression remain mandatory before any future activation.
 

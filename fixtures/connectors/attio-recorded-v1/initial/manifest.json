@@ -1,0 +1,79 @@
+{
+  "synthetic": true,
+  "note": "SYNTHETIC. Hand-written responses shaped like the Attio REST API, derived from salesforce-mapping-v1. Not recorded from any workspace; no real people or customers.",
+  "baseUrl": "https://attio-synthetic.example",
+  "responses": [
+    {
+      "method": "GET",
+      "path": "/v2/workspace_members",
+      "offset": 0,
+      "file": "workspace-members.json"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/objects/companies/records/query",
+      "offset": 0,
+      "file": "companies-1.json"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/objects/companies/records/query",
+      "offset": 5,
+      "file": "companies-2.json"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/objects/sites/records/query",
+      "offset": 0,
+      "file": "sites-1.json"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/objects/sites/records/query",
+      "offset": 5,
+      "file": "sites-2.json"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/objects/people/records/query",
+      "offset": 0,
+      "file": "people-1.json"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/objects/people/records/query",
+      "offset": 5,
+      "file": "people-2.json"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/objects/people/records/query",
+      "offset": 10,
+      "file": "people-3.json"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/objects/deals/records/query",
+      "offset": 0,
+      "file": "deals-1.json"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/objects/deals/records/query",
+      "offset": 5,
+      "file": "deals-2.json"
+    },
+    {
+      "method": "POST",
+      "path": "/v2/objects/calls/records/query",
+      "offset": 0,
+      "file": "calls-1.json"
+    },
+    {
+      "method": "GET",
+      "path": "/v2/tasks",
+      "offset": 0,
+      "file": "tasks-1.json"
+    }
+  ]
+}

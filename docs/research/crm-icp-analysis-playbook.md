@@ -52,7 +52,7 @@ Built: the read-only Salesforce connector and mirror (Milestone 3), the Mileston
 
 ### Salesforce mapping for the audit rules
 
-Built under decision 0005 and superseded by decision 0011. An Attio mapping replaces it; the CRM-neutral audit model and pipeline carry over unchanged.
+Built under decision 0005 and superseded by decision 0011. `packages/core/src/attio-mapping.ts` replaces it for the audit rules (see `../milestones/milestone-3-attio-connector-notes.md`). The history pipeline below still reads Salesforce-shaped snapshots.
 
 `packages/core/src/salesforce-mapping.ts` turns a mirror snapshot into the CRM-neutral audit model, so `auditCrm` runs unchanged.
 

@@ -1,0 +1,184 @@
+{
+  "data": [
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "65afb2df-8b19-4e77-a220-106b79ffe260",
+        "record_id": "6e676914-8607-47bc-af18-8db326652c16"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/sites/6e676914-8607-47bc-af18-8db326652c16",
+      "values": {
+        "name": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Fixture Site 1",
+            "attribute_type": "text"
+          }
+        ],
+        "company": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "companies",
+            "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+            "attribute_type": "record-reference"
+          }
+        ]
+      }
+    },
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "65afb2df-8b19-4e77-a220-106b79ffe260",
+        "record_id": "e5115696-0cc2-4c83-aaaa-89de54868c7a"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/sites/e5115696-0cc2-4c83-aaaa-89de54868c7a",
+      "values": {
+        "name": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Fixture Site 2",
+            "attribute_type": "text"
+          }
+        ],
+        "company": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "companies",
+            "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+            "attribute_type": "record-reference"
+          }
+        ]
+      }
+    },
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "65afb2df-8b19-4e77-a220-106b79ffe260",
+        "record_id": "3a4d8c44-543f-4218-af28-9c3aff3bd54c"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/sites/3a4d8c44-543f-4218-af28-9c3aff3bd54c",
+      "values": {
+        "name": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Fixture Site 3",
+            "attribute_type": "text"
+          }
+        ],
+        "company": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "companies",
+            "target_record_id": "bf3b9edc-4d9b-4420-a0da-446ff832dd54",
+            "attribute_type": "record-reference"
+          }
+        ]
+      }
+    },
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "65afb2df-8b19-4e77-a220-106b79ffe260",
+        "record_id": "6c599fa3-fbf2-426a-acc5-3c126efff24c"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/sites/6c599fa3-fbf2-426a-acc5-3c126efff24c",
+      "values": {
+        "name": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Fixture Site 4",
+            "attribute_type": "text"
+          }
+        ],
+        "company": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "companies",
+            "target_record_id": "d3062378-c4d9-4d67-ac6b-c6be30f76973",
+            "attribute_type": "record-reference"
+          }
+        ]
+      }
+    },
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "65afb2df-8b19-4e77-a220-106b79ffe260",
+        "record_id": "6fd4b5a4-926d-4631-a2aa-ccd44a5784b2"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/sites/6fd4b5a4-926d-4631-a2aa-ccd44a5784b2",
+      "values": {
+        "name": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "Fixture Site 5",
+            "attribute_type": "text"
+          }
+        ],
+        "company": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "companies",
+            "target_record_id": "7aa00ffc-4047-4f8a-a0ea-40c327d59416",
+            "attribute_type": "record-reference"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -21,7 +21,7 @@ Decision 0010 is unchanged: the Attio workspace holds real Georgia operators and
 - Buyers and influencers become People records linked to Companies.
 - Opportunities become Deal records.
 - Workspace members replace Salesforce Users as accountable owners.
-- Tasks and Notes replace Tasks and Events.
+- Tasks replace Salesforce Tasks. Calls, which need a disposition Attio tasks cannot hold, are a custom call-log object (added on 2026-10-22 when the connector was built).
 - Lists replace Campaigns for controlled activation audiences, including the phone handoff.
 - Email and call suppression become explicit checkbox attributes on People. Deny-first suppression is unchanged.
 

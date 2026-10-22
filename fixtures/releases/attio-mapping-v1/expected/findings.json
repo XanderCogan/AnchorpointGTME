@@ -1,0 +1,23 @@
+[
+  {"ruleId":"CRM-ACTIVITY-001","severity":"warning","objectType":"activity","affectedIds":["447e92e7-f9f1-4ded-a719-a6883177c563"]},
+  {"ruleId":"CRM-COMPANY-001","severity":"critical","objectType":"company","affectedIds":["bf3b9edc-4d9b-4420-a0da-446ff832dd54","d3062378-c4d9-4d67-ac6b-c6be30f76973"]},
+  {"ruleId":"CRM-COMPANY-002","severity":"critical","objectType":"company","affectedIds":["7aa00ffc-4047-4f8a-a0ea-40c327d59416"]},
+  {"ruleId":"CRM-CONTACT-001","severity":"critical","objectType":"contact","affectedIds":["4e26b8ea-8f9e-42ef-a1bd-9ff91e965080"]},
+  {"ruleId":"CRM-CONTACT-002","severity":"critical","objectType":"contact","affectedIds":["62ebe09f-8c94-4fcc-a012-0fc2df924f46","c6a5fe0f-8ae1-4ae9-a7f6-39c648ed6df5"]},
+  {"ruleId":"CRM-DATA-001","severity":"critical","objectType":"contact","affectedIds":["dbb0d218-a7e3-4f72-a9c4-30127f582c6a"]},
+  {"ruleId":"CRM-DATA-002","severity":"critical","objectType":"company","affectedIds":["b1968f30-f38e-45df-a988-3b1ffaf1e982"]},
+  {"ruleId":"CRM-DATA-003","severity":"warning","objectType":"company","affectedIds":["b1968f30-f38e-45df-a988-3b1ffaf1e982"]},
+  {"ruleId":"CRM-DATA-004","severity":"warning","objectType":"contact","affectedIds":["eeb4b999-00b0-4014-aa76-5e8b73364aa5"]},
+  {"ruleId":"CRM-DATA-005","severity":"critical","objectType":"contact","affectedIds":["3dd9c198-0e0d-4d0d-a73d-5bf8419de7e8"]},
+  {"ruleId":"CRM-DATA-006","severity":"critical","objectType":"contact","affectedIds":["e94970e4-6e80-4a3b-a477-308669ef49b4"]},
+  {"ruleId":"CRM-DEAL-001","severity":"critical","objectType":"deal","affectedIds":["74272ae2-9497-4d13-a741-dc871e2e39ff"]},
+  {"ruleId":"CRM-DEAL-002","severity":"warning","objectType":"deal","affectedIds":["b94548b2-f886-4c9a-a974-0c5300f96ba4"]},
+  {"ruleId":"CRM-DEAL-003","severity":"warning","objectType":"deal","affectedIds":["5a93d967-b381-4d8f-a375-9320f32f1916"]},
+  {"ruleId":"CRM-LIFECYCLE-001","severity":"warning","objectType":"contact","affectedIds":["249c9a0f-c10c-447d-afdc-d03e07e35d0e"]},
+  {"ruleId":"CRM-OWNER-001","severity":"critical","objectType":"deal","affectedIds":["c9920268-17ef-4d36-a7a0-b40fa76465d6"]},
+  {"ruleId":"CRM-OWNER-002","severity":"critical","objectType":"contact","affectedIds":["b6312c2d-dd6d-4e38-a264-dcf7aa76d950"]},
+  {"ruleId":"CRM-SUPPRESSION-001","severity":"critical","objectType":"company","affectedIds":["00830eb9-e4b5-42ce-a441-b60cea7675dc"]},
+  {"ruleId":"CRM-SUPPRESSION-002","severity":"critical","objectType":"company","affectedIds":["d7946445-4cea-422a-af1f-6ea89a43757c"]},
+  {"ruleId":"CRM-SUPPRESSION-003","severity":"critical","objectType":"contact","affectedIds":["56c292fb-854c-493d-a878-7f9d721e38ee"]},
+  {"ruleId":"CRM-SUPPRESSION-004","severity":"critical","objectType":"contact","affectedIds":["2e623ca2-4eff-45fd-a1c0-ed175df153f6"]}
+]

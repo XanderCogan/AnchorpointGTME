@@ -1,0 +1,384 @@
+{
+  "data": [
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "2d7507eb-a486-4575-a27a-8db6a959a335",
+        "record_id": "78378028-cd4a-4663-ad74-c1a690131c40"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/calls/78378028-cd4a-4663-ad74-c1a690131c40",
+      "values": {
+        "occurred_at": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "2026-10-14T15:00:00.000Z",
+            "attribute_type": "timestamp"
+          }
+        ],
+        "disposition": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "e49d0ba6-5a21-476a-a463-02e97110d9a0"
+              },
+              "title": "Connected",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "company": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "companies",
+            "target_record_id": "d7946445-4cea-422a-af1f-6ea89a43757c",
+            "attribute_type": "record-reference"
+          }
+        ],
+        "person": [],
+        "deal": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "deals",
+            "target_record_id": "49e1ec76-ec9f-46ec-a398-04554f0325f3",
+            "attribute_type": "record-reference"
+          }
+        ],
+        "owner": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "referenced_actor_type": "workspace-member",
+            "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+            "attribute_type": "actor-reference"
+          }
+        ]
+      }
+    },
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "2d7507eb-a486-4575-a27a-8db6a959a335",
+        "record_id": "f9e6ec23-b145-4227-a695-41fa207cead8"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/calls/f9e6ec23-b145-4227-a695-41fa207cead8",
+      "values": {
+        "occurred_at": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "2026-10-14T15:00:00.000Z",
+            "attribute_type": "timestamp"
+          }
+        ],
+        "disposition": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "e49d0ba6-5a21-476a-a463-02e97110d9a0"
+              },
+              "title": "Connected",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "company": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "companies",
+            "target_record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5",
+            "attribute_type": "record-reference"
+          }
+        ],
+        "person": [],
+        "deal": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "deals",
+            "target_record_id": "c9920268-17ef-4d36-a7a0-b40fa76465d6",
+            "attribute_type": "record-reference"
+          }
+        ],
+        "owner": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "referenced_actor_type": "workspace-member",
+            "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+            "attribute_type": "actor-reference"
+          }
+        ]
+      }
+    },
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "2d7507eb-a486-4575-a27a-8db6a959a335",
+        "record_id": "7a08488e-9167-4220-a94c-d5eafe4b5b69"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/calls/7a08488e-9167-4220-a94c-d5eafe4b5b69",
+      "values": {
+        "occurred_at": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "2026-10-14T15:00:00.000Z",
+            "attribute_type": "timestamp"
+          }
+        ],
+        "disposition": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "e49d0ba6-5a21-476a-a463-02e97110d9a0"
+              },
+              "title": "Connected",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "company": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "companies",
+            "target_record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5",
+            "attribute_type": "record-reference"
+          }
+        ],
+        "person": [],
+        "deal": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "deals",
+            "target_record_id": "5a93d967-b381-4d8f-a375-9320f32f1916",
+            "attribute_type": "record-reference"
+          }
+        ],
+        "owner": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "referenced_actor_type": "workspace-member",
+            "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+            "attribute_type": "actor-reference"
+          }
+        ]
+      }
+    },
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "2d7507eb-a486-4575-a27a-8db6a959a335",
+        "record_id": "7356c7ba-770b-48f2-ab74-4c42dd69a927"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/calls/7356c7ba-770b-48f2-ab74-4c42dd69a927",
+      "values": {
+        "occurred_at": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "2026-09-15T15:00:00.000Z",
+            "attribute_type": "timestamp"
+          }
+        ],
+        "disposition": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "option": {
+              "id": {
+                "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+                "option_id": "e49d0ba6-5a21-476a-a463-02e97110d9a0"
+              },
+              "title": "Connected",
+              "is_archived": false
+            },
+            "attribute_type": "select"
+          }
+        ],
+        "company": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "companies",
+            "target_record_id": "36d640f7-b36e-4a37-a126-69fb375e80b5",
+            "attribute_type": "record-reference"
+          }
+        ],
+        "person": [],
+        "deal": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "deals",
+            "target_record_id": "b94548b2-f886-4c9a-a974-0c5300f96ba4",
+            "attribute_type": "record-reference"
+          }
+        ],
+        "owner": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "referenced_actor_type": "workspace-member",
+            "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+            "attribute_type": "actor-reference"
+          }
+        ]
+      }
+    },
+    {
+      "id": {
+        "workspace_id": "b0f2f253-8a7b-46f5-a5c1-73ecab8644f8",
+        "object_id": "2d7507eb-a486-4575-a27a-8db6a959a335",
+        "record_id": "447e92e7-f9f1-4ded-a719-a6883177c563"
+      },
+      "created_at": "2026-01-05T15:00:00.000Z",
+      "web_url": "https://app.attio.com/synthetic-fixture/calls/447e92e7-f9f1-4ded-a719-a6883177c563",
+      "values": {
+        "occurred_at": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "value": "2026-10-14T15:00:00.000Z",
+            "attribute_type": "timestamp"
+          }
+        ],
+        "disposition": [],
+        "company": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "target_object": "companies",
+            "target_record_id": "bdfb6d82-d0ff-411f-ad7f-23d1927e6947",
+            "attribute_type": "record-reference"
+          }
+        ],
+        "person": [],
+        "deal": [],
+        "owner": [
+          {
+            "active_from": "2026-10-01T12:00:00.000Z",
+            "active_until": null,
+            "created_by_actor": {
+              "type": "system",
+              "id": null
+            },
+            "referenced_actor_type": "workspace-member",
+            "referenced_actor_id": "8f11a89c-4100-429e-a359-2b778de3d4ea",
+            "attribute_type": "actor-reference"
+          }
+        ]
+      }
+    }
+  ]
+}
