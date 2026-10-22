@@ -1,5 +1,5 @@
 {
-  "version": "georgia-clay-role-map-1",
+  "version": "georgia-clay-role-map-2",
   "status": "proposal, not yet approved; see docs/research/georgia-clay-people-pass.md",
   "scoringContract": "account-score-v1.1",
   "note": "Title keywords are generic job-title patterns used as Clay search filters. They are not anyone's title. Person-relevance points are proposals inside the contract's existing caps (8 direct ownership, 5 influence, 2 adjacent); no new weights.",
@@ -138,7 +138,17 @@
         "activities",
         "business office",
         "regional",
-        "intern"
+        "intern",
+        "systems",
+        "network",
+        "database",
+        "information technology",
+        "it support",
+        "help desk",
+        "software",
+        "server",
+        "cloud",
+        "application"
       ],
       "maxPeople": 1,
       "persona": "Site Administrator",

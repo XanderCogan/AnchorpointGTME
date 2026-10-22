@@ -87,7 +87,7 @@ Every slot fills the same three scoring inputs:
 - Person relevance, up to 15, from the slot's mapped persona.
 - Persona and channel, up to 4 under data confidence: 2 for persona and current employment verified, 2 for a verified channel.
 
-Health rule `CRM-DATA-001` requires persona mapping to follow a versioned deterministic map with uncertain results sent to review. The role map is that map, versioned `georgia-clay-role-map-1`. A found title that matches no include pattern, or matches an exclude pattern, gets `personaVerified: false` and no person-relevance points.
+Health rule `CRM-DATA-001` requires persona mapping to follow a versioned deterministic map with uncertain results sent to review. The role map is that map, now versioned `georgia-clay-role-map-2`; version 2 (2026-10-22) adds IT exclusions such as "systems" and "network" to the site administrator slot after a Systems Administrator passed as a Site Administrator. The Stage 6 coverage file was produced under version 1. A found title that matches no include pattern, or matches an exclude pattern, gets `personaVerified: false` and no person-relevance points.
 
 ## Budget and credit math
 
