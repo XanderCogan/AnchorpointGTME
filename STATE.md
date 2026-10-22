@@ -25,9 +25,8 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 Building has stopped under `docs/product/finish-plan.md` (2026-10-22). Remaining work is packaging only.
 
-1. Agents: README rewrite, `docs/portfolio/` methodology, diagrams, copy examples, gap statement, and `artifacts/portfolio/` bundle with the Tift Regional lineage trace.
-2. User: record the Loom walkthroughs, read the methodology once, decide whether Watch is a tier.
-3. Deferred, recorded in `docs/portfolio/gap-statement.md`: the remaining Clay runs, the 142 live audit findings, tier re-inspection, the CRM history port, Lemlist timing and webhook events, and the Milestone 7 Attio List.
+1. User: record the three Loom walkthroughs and read `docs/portfolio/methodology.md` once for voice.
+2. Deferred, recorded in `docs/portfolio/gap-statement.md`: the remaining Clay runs, the 142 live audit findings, tier re-inspection, the CRM history port, Lemlist timing and webhook events, and the Milestone 7 Attio List.
 
 ## Blockers
 
