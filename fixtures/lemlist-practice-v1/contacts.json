@@ -1,0 +1,70 @@
+{
+  "synthetic": true,
+  "note": "Practice contacts for the Lemlist connector (decision 0012). Fictional people at reserved example.com addresses; never market evidence and never sent.",
+  "localDoNotContact": ["dnc.example.com"],
+  "candidates": [
+    {
+      "contactKey": "practice-001",
+      "email": "dana.whitfield@peachtree-living.example.com",
+      "firstName": "Dana",
+      "lastName": "Whitfield",
+      "companyName": "Peachtree Living (practice)",
+      "jobTitle": "Director of Facilities",
+      "approval": { "approvedBy": "rep-1", "approvedAt": "2026-10-22T14:00:00Z" }
+    },
+    {
+      "contactKey": "practice-002",
+      "email": "Marcus.Hale@peachtree-living.example.com",
+      "firstName": "Marcus",
+      "lastName": "Hale",
+      "companyName": "Peachtree Living (practice)",
+      "jobTitle": "Executive Director",
+      "approval": { "approvedBy": "rep-1", "approvedAt": "2026-10-22T14:01:00Z" }
+    },
+    {
+      "contactKey": "practice-003",
+      "email": "priya.raman@oconee-care.example.com",
+      "firstName": "Priya",
+      "lastName": "Raman",
+      "companyName": "Oconee Care (practice)",
+      "jobTitle": "Maintenance Supervisor",
+      "approval": null
+    },
+    {
+      "contactKey": "practice-004",
+      "email": "marcus.hale@peachtree-living.example.com",
+      "firstName": "Marcus",
+      "lastName": "Hale",
+      "companyName": "Peachtree Living (practice)",
+      "jobTitle": "Executive Director",
+      "approval": { "approvedBy": "manager-1", "approvedAt": "2026-10-22T14:02:00Z" }
+    },
+    {
+      "contactKey": "practice-005",
+      "email": null,
+      "firstName": "Lena",
+      "lastName": "Ortiz",
+      "companyName": "Chattahoochee Senior Homes (practice)",
+      "jobTitle": "Regional Facilities Manager",
+      "approval": { "approvedBy": "rep-2", "approvedAt": "2026-10-22T14:03:00Z" }
+    },
+    {
+      "contactKey": "practice-006",
+      "email": "sam.bell@dnc.example.com",
+      "firstName": "Sam",
+      "lastName": "Bell",
+      "companyName": "Do Not Contact Holdings (practice)",
+      "jobTitle": "Administrator",
+      "approval": { "approvedBy": "rep-2", "approvedAt": "2026-10-22T14:04:00Z" }
+    },
+    {
+      "contactKey": "practice-007",
+      "email": "jo.kim@savannah-assisted.example.com",
+      "firstName": "Jo",
+      "lastName": "Kim",
+      "companyName": "Savannah Assisted (practice)",
+      "jobTitle": "Plant Operations Director",
+      "approval": { "approvedBy": "rep-2", "approvedAt": "2026-10-22T14:05:00Z" }
+    }
+  ]
+}

@@ -25,7 +25,11 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 3. Review the two provisional senior-living personas in `docs/contracts/operating-contract.md`, and the site administrator's low-confidence 7 person-relevance points.
 4. Port the CRM history pipeline to Attio snapshots (not started).
 
+- Milestone 6: the Lemlist connector, enrollment ledger, kill switch, and webhook receiver are built and verified on practice fixtures. See `docs/milestones/milestone-6-lemlist-notes.md`.
+
 ## Blockers
+
+- Milestone 6 live verification needs a Lemlist API key in `LEMLIST_API_KEY`.
 
 - `origin/claude/tender-tesla-9lfwvn` proposes Supabase and reuses decision numbers 0003 and 0004. Ignore it until the user decides whether to delete it.
 

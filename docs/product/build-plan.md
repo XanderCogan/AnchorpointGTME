@@ -83,6 +83,8 @@ Exit gate: a manager can understand why every account was included, excluded, or
 
 ## Milestone 6: Lemlist activation
 
+Status: built and verified on practice fixtures on 2026-10-22; live verification waits on a Lemlist API key. See `../milestones/milestone-6-lemlist-notes.md`.
+
 Add dry-run enrollment, explicit approval, idempotent creation, webhook ingestion, unsubscribe handling, and a kill switch for future steps.
 
 No campaign is ever launched and no email ever leaves Lemlist (decision 0012).

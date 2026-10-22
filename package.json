@@ -23,6 +23,8 @@
     "attio:sync": "node scripts/attio-sync.ts",
     "attio:audit": "node scripts/attio-audit-live.ts",
     "attio:verify-recorded": "node scripts/verify-attio-recorded.ts",
+    "lemlist:setup": "node scripts/lemlist-setup.ts",
+    "lemlist:enroll": "node scripts/lemlist-enroll.ts",
     "salesforce:sync": "node scripts/salesforce-sync.ts",
     "salesforce:verify-recorded": "node scripts/verify-salesforce-recorded.ts",
     "qa:visual": "node scripts/visual-qa.ts",

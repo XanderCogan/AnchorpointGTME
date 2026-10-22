@@ -43,6 +43,7 @@ Use the discovery log only when a question ID, assumption owner, answer basis, o
 - Accepted Milestone 1 fixture contents, 22-finding result, contract correction, and verification evidence: [`milestones/milestone-1-inspection-report.md`](milestones/milestone-1-inspection-report.md)
 - Implemented Milestone 2 slice, last verification, and remaining foundation work: [`milestones/milestone-2-foundation-notes.md`](milestones/milestone-2-foundation-notes.md)
 - Milestone 3 read-only Attio connector and audit mapping, recorded-response verification, and the workspace setup it waits for: [`milestones/milestone-3-attio-connector-notes.md`](milestones/milestone-3-attio-connector-notes.md)
+- Milestone 6 Lemlist connector, idempotent enrollment, kill switch, and webhook receiver, verified on practice fixtures: [`milestones/milestone-6-lemlist-notes.md`](milestones/milestone-6-lemlist-notes.md)
 - Superseded Milestone 3 Salesforce connector groundwork: [`milestones/milestone-3-salesforce-connector-notes.md`](milestones/milestone-3-salesforce-connector-notes.md)
 
 Milestone reports are evidence records. Update `STATE.md`, not an old report, when only the live next step changes.
