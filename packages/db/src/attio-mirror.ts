@@ -129,8 +129,15 @@ export async function loadAttioSnapshot(
   const { start, end } = window.rows[0] ?? { start: null, end: null };
   if (!start || !end) throw new Error(`No sync runs recorded for connection ${connectionId}.`);
   const rows = await pool().query<{ object_type: string; payload: unknown }>(
-    `SELECT object_type, payload FROM attio_records
-     WHERE connection_id = $1 ORDER BY object_type, record_id`,
+    // Records no longer returned by the latest sync of their object stay mirrored but are
+    // left out of the snapshot, so records deleted in Attio are never audited.
+    `SELECT r.object_type, r.payload FROM attio_records r
+     WHERE r.connection_id = $1
+       AND r.last_seen_at >= (
+         SELECT max(s.started_at) FROM attio_sync_runs s
+         WHERE s.connection_id = r.connection_id AND s.object_type = r.object_type
+       )
+     ORDER BY r.object_type, r.record_id`,
     [connectionId],
   );
   const records: AttioSnapshot["records"] = {};
