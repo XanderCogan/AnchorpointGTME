@@ -1,6 +1,6 @@
 # Decision 0012: Build Milestones 5 to 7 Early on Practice Fixtures
 
-Status: approved on 2026-10-22. Amended the same day: no email is ever sent and no call is ever placed.
+Status: approved on 2026-10-22. Amended the same day: no email is ever sent and no call is ever placed, and Anchorpoint is run as a real company would run it (see the last amendment).
 
 Date: 2026-10-22  
 Decision owner: User  
@@ -32,14 +32,24 @@ Amended on 2026-10-22 by the user. This is a practice project, but Anchorpoint i
 - The send path is built and tested but switched off. The kill switch defaults to off, and the code never launches a campaign in this project.
 - No sending infrastructure is set up. No sending domain is bought, no mailbox is connected, and no warm-up period is run. With no sender attached, Lemlist cannot send even if a campaign were launched by mistake. Switching on for real would need a company's own warmed mailboxes, which is out of scope here.
 - Anchorpoint has no real SDRs. The manager and two representatives in the brief are fictional roles inside the application. They approve contacts in the app, and are never Lemlist senders.
-- Live writes go to one test campaign in Lemlist, kept as a draft and holding only `example.com` practice leads. The user gave standing approval for those writes on 2026-10-22; any other live write still needs the user's OK.
+- Lemlist campaigns are kept as drafts or paused and never launched. Approved real contacts from Attio may be enrolled under the amendment below.
 
 ## Boundaries that still hold
 
-- Practice fixtures use fictional people with reserved addresses, such as `example.com` domains and fictional-use phone numbers. They are labelled synthetic and are never market evidence, under decision 0010.
-- The human-approval gate, deny-first suppression, kill switch, and idempotent enrollment are built as specified, as they would be for a real client.
-- Writes to Attio during development go only to test lists the user has named, after the user approves each one. Lemlist writes follow the standing approval above.
+- Practice fixtures use fictional people with reserved addresses, such as `example.com` domains and fictional-use phone numbers. They are labelled synthetic test inputs and are never market evidence, under decision 0010.
+- The human-approval gate, deny-first suppression, kill switch, idempotent enrollment, and an exceptions review queue are built as specified, as they would be for a real client.
+- Attio writes follow the operating contract's write policy, as amended below.
 - The human-approval gate in the application is one simple approve step by a fictional representative or manager, not a chain of reviews.
+
+## Amendment, 2026-10-22: run as a real company
+
+Decided by the user. Every practice-only constraint is dropped except two: budget limits, and no outreach ever as set out above (no sending domain or mailbox, no launched campaign, TitanX never dials).
+
+- Attio writes no longer need per-write user approval or user-named test lists. Writes are automated under the write policy in `../contracts/operating-contract.md`: enrichment fills empty fields, and conflicts with human-entered values, uncertain identity matches, unverified personas (CRM-DATA-001), and possible duplicates go to a review queue instead of being written.
+- The one-time setup token pattern is replaced by a standing write token scoped to the objects and fields the Clay writeback writes. The sync connector stays read-only; writeback is a separate, scoped path. The user must still create that token; none exists yet.
+- Clay is no longer run by hand. Attio sends accounts to Clay, Clay runs the waterfall, and Clay writes contacts back to Attio. This needs a paid Clay plan, because the free plan excludes CRM integrations, the HTTP API, and scheduled runs; any purchase is confirmed with the user at the shown price. The exact integration method is pending a separate lookup.
+- Contacts, including work email, are stored in Attio as People. Real people's details still never go in the public repository.
+- Approved real contacts from Attio feed Lemlist enrollment. Practice fixtures remain as test inputs only.
 
 ## Consequences
 

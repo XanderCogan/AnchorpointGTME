@@ -27,7 +27,7 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 ## Blockers
 
-- Milestone 6 webhook registration needs a public HTTPS URL for the API.
+- Decision 0013 moves the API, worker, and database from Railway to Render. Render services are not created yet; Railway secrets must be rotated, not copied. Milestone 6 webhook registration waits on the Render API.
 - `origin/claude/tender-tesla-9lfwvn` proposes Supabase and reuses decision numbers 0003 and 0004. Ignore it until the user decides whether to delete it.
 
 ## Safety boundary
