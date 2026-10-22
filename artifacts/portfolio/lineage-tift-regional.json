@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T19:39:17.212Z",
+  "generatedAt": "2026-10-22T23:04:19.072Z",
   "operator": {
     "operatorId": "ga-op-lbn-tift-regional-health-system-inc",
     "name": "TIFT REGIONAL HEALTH SYSTEM INC",
@@ -9,7 +9,7 @@
     ]
   },
   "privacy": "Under the personal data boundary in docs/research/georgia-clay-people-pass.md, no person name, title as written, profile link, employer string, start date, email, or phone number appears here. People appear as a role slot and persona status only; individual CMS owners are withheld.",
-  "caveat": "This operator is outside the Anchorpoint footprint (140 minutes from Macon), so it has no band and no people-coverage entry. It was the one-row proof of the Clay to Attio round trip, chosen for the test, not for its tier.",
+  "caveat": "Out-of-footprint pipeline proof: 140 minutes from Macon, so no band and no people-coverage entry. It was the one-row test of the Clay to Attio round trip, chosen for the test, not for its tier.",
   "notFound": [
     "people-coverage-operator: nothing for TIFT REGIONAL HEALTH SYSTEM INC in data/georgia-sample/people-coverage.json",
     "people-coverage-sites: nothing for TIFT REGIONAL HEALTH SYSTEM INC in data/georgia-sample/people-coverage.json"
@@ -992,7 +992,7 @@
     {
       "step": "web-signals-jobs",
       "file": "data/georgia-sample/web-signals.json",
-      "what": "Job posting candidates (footprint operators only, so none expected here)",
+      "what": "Job posting candidates found by Serper search (footprint operators only, not confirmed open)",
       "data": []
     },
     {
