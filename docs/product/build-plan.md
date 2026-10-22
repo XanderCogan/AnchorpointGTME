@@ -36,7 +36,7 @@ Exit gate: every seeded problem is detected once, healthy records remain healthy
 
 Status: complete. The reproducible local foundation passes the exit gate against PostgreSQL and displays the frozen fixture's verified findings through the worker, protected API, authenticated interface, and visible retry-exhaustion state. The Vercel and Railway preview is deployed and reproduces the same 22 findings.
 
-Create the monorepo, database schema, API, worker, job queue, and minimal dashboard. Deploy the web application to Vercel and the backend services and PostgreSQL to Railway.
+Create the monorepo, database schema, API, worker, job queue, and minimal dashboard. Deploy the web application to Vercel and the backend services and PostgreSQL to Render (decision 0013; Railway was used first and is deleted).
 
 Deliverables:
 

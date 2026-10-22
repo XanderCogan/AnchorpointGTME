@@ -51,6 +51,7 @@ Milestone reports are evidence records. Update `STATE.md`, not an old report, wh
 
 ## Decisions
 
+- Which decision governs each subject today, what each record replaced or was replaced by, and the pairwise contradiction check: [`decisions/ledger.md`](decisions/ledger.md)
 - Approved rationale and consequences for soft targeting and change propensity: [`decisions/0001-soft-targeting.md`](decisions/0001-soft-targeting.md)
 - Approved user hierarchy for the application and Milestone 2 interface: [`decisions/0002-revops-primary-interface.md`](decisions/0002-revops-primary-interface.md)
 - Approved service catalog, branch footprint, licensing gates, and travel-time rules: [`decisions/0003-service-catalog-and-footprint.md`](decisions/0003-service-catalog-and-footprint.md)
