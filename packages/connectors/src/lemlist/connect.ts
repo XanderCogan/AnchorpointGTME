@@ -6,11 +6,7 @@ export function connectLemlist(config: LemlistConnectionConfig, fetchImpl: Fetch
   return new LemlistClient(
     new LemlistTransport({
       apiKey: config.apiKey,
-      guards: {
-        campaignId: config.campaignId,
-        allowedLeadDomains: config.allowedLeadDomains,
-        launchEnabled: config.launchEnabled,
-      },
+      guards: { launchEnabled: config.launchEnabled },
       fetch: fetchImpl,
     }),
   );

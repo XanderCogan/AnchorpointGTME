@@ -32,7 +32,7 @@ The initial buying personas are:
 - Compliance or Risk leader with facilities responsibility
 - Regional Facilities Manager
 
-Provisional senior-living personas, added on 2026-10-20 for the Georgia sample. **Review later:** keep, rename, or remove each one, and remove any generic persona above that does not fit, once Stage 6 shows which job titles actually exist at Georgia nursing-home operators. Until then, contacts mapped to these personas count as mapped for scoring but are marked provisional.
+Senior-living personas, added on 2026-10-20 for the Georgia sample and kept by the user on 2026-10-22 after Stage 6 found matching titles at Georgia nursing-home operators:
 
 - Senior-Living Operations Leader: a regional or corporate vice president or director of operations who oversees several facilities' administrators, budgets, and vendors
 - Site Administrator: the licensed nursing home administrator or executive director accountable for one facility's surveys, budget, and vendors
@@ -45,7 +45,7 @@ The field-service management platform is the source of truth for service deliver
 
 Clay supplies enrichment with field-level provenance. Enriched values are proposed inputs until they pass validation and, where required, human review.
 
-Lemlist is the email execution system. TitanX is the calling execution system. The application owns eligibility, approval evidence, idempotency, and cross-channel suppression.
+Lemlist is the email execution system. TitanX is the named calling execution system, reached only through a controlled Attio List; no dialer is connected (decision 0014). The application owns eligibility, approval evidence, idempotency, and cross-channel suppression.
 
 ## Core CRM definitions
 
@@ -158,7 +158,14 @@ Every activated contact must have a named Attio owner, a workspace member. The o
 
 ## Write policy
 
-The first live Attio connector is read-only, uses an access token limited to read scopes, and connects only to the project workspace holding real Georgia operators and facilities from public sources, with no fictional CRM history under decision 0010. Later approved writes are limited to versioned custom attributes, Tasks, and controlled List entries.
+The Attio sync connector is read-only, uses an access token limited to read scopes, and connects only to the project workspace holding real Georgia operators and facilities from public sources, with no fictional CRM history under decision 0010.
+
+Writes run automatically, without per-write approval, under decision 0012 as amended on 2026-10-22. They use a separate standing write token scoped to the objects and fields the Clay writeback writes, and are limited to creating People linked to an existing Company (including their work email and mobile number), filling a Company's domain and primary location, versioned custom attributes, Tasks, and controlled List entries.
+
+- Enrichment fills empty fields only.
+- A value that conflicts with a human-entered value is never overwritten silently; it goes to the review queue.
+- Uncertain identity matches, unverified personas (CRM-DATA-001), and possible duplicates also go to the review queue instead of being written.
+- Every write records its source, retrieval date, and rule version.
 
 An inbound Lead is matched to an existing Account before any follow-up. A matched Lead inherits the Account's customer, opportunity, and suppression state. An unmatched Lead cannot be activated.
 

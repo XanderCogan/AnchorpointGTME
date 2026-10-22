@@ -5,15 +5,15 @@
 ```text
 Browser
   -> Vercel: Next.js dashboard
-       -> Railway: TypeScript API
-            -> Railway PostgreSQL
+       -> Render: TypeScript API
+            -> Render PostgreSQL 17
             -> Postgres-backed job queue
-            -> Railway background worker
-            -> Railway scheduled reconciliation jobs
+            -> Render background worker
+            -> Render scheduled reconciliation jobs
             -> Attio, Clay, Lemlist, and TitanX handoffs
 ```
 
-Vercel is the human interface. Railway is the integration and processing layer. Attio is the operational CRM system of record under decision 0011, and the field-service platform is the source of service and customer truth under decision 0004. PostgreSQL stores the application mirror, findings, proposals, approvals, job state, connector events, and audit evidence.
+Vercel is the human interface. Render is the integration and processing layer, replacing Railway under decision 0013. Attio is the operational CRM system of record under decision 0011, and the field-service platform is the source of service and customer truth under decision 0004. PostgreSQL stores the application mirror, findings, proposals, approvals, job state, connector events, and audit evidence.
 
 ## Current repository shape
 
@@ -47,8 +47,8 @@ The current code path stores validated fixture input in PostgreSQL, runs the aud
 Anchorpoint/
   apps/
     web/       Next.js dashboard deployed to Vercel
-    api/       HTTP API and webhook receivers deployed to Railway
-    worker/    background jobs deployed to Railway
+    api/       HTTP API and webhook receivers deployed to Render
+    worker/    background jobs deployed to Render
   packages/
     core/      health rules, scoring, suppression, and state transitions
     db/        schema, migrations, queries, and repositories

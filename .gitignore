@@ -1,4 +1,4 @@
-artifacts/
+artifacts/*
 node_modules/
 .next/
 *.tsbuildinfo
@@ -17,3 +17,6 @@ data/georgia-sample/private/
 *.pem
 *.key
 *.crt
+
+# Portfolio bundle is shareable output, not raw data
+!artifacts/portfolio/

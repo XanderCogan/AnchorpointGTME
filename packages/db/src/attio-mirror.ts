@@ -4,7 +4,7 @@ import {
   type ObjectSyncBatch,
   type ObjectSyncResult,
 } from "../../connectors/src/attio/mirror.ts";
-import type { AttioSnapshot, AttioSnapshotKey } from "../../core/src/attio-mapping.ts";
+import type { AttioRecordPayload, AttioSnapshot, AttioSnapshotKey } from "../../core/src/attio-mapping.ts";
 import { pool, withTransaction } from "./client.ts";
 
 // PostgreSQL implementation of the Attio mirror. Each object batch applies in one
@@ -147,4 +147,26 @@ export async function loadAttioSnapshot(
     ((records[key] ??= []) as unknown[]).push(row.payload);
   }
   return { provenance, label, window: { start: start.toISOString(), end: end.toISOString() }, records };
+}
+
+// Reads one connection's current People and Companies for Lemlist enrollment.
+// As in loadAttioSnapshot, records the latest sync no longer returned are left out.
+export async function loadAttioPeopleAndCompanies(
+  connectionId: string,
+): Promise<{ people: AttioRecordPayload[]; companies: AttioRecordPayload[] }> {
+  const rows = await pool().query<{ object_type: string; payload: AttioRecordPayload }>(
+    `SELECT r.object_type, r.payload FROM attio_records r
+     WHERE r.connection_id = $1
+       AND r.object_type IN ('people', 'companies')
+       AND r.last_seen_at >= (
+         SELECT max(s.started_at) FROM attio_sync_runs s
+         WHERE s.connection_id = r.connection_id AND s.object_type = r.object_type
+       )
+     ORDER BY r.object_type, r.record_id`,
+    [connectionId],
+  );
+  return {
+    people: rows.rows.filter((row) => row.object_type === "people").map((row) => row.payload),
+    companies: rows.rows.filter((row) => row.object_type === "companies").map((row) => row.payload),
+  };
 }

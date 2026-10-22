@@ -36,7 +36,7 @@ Exit gate: every seeded problem is detected once, healthy records remain healthy
 
 Status: complete. The reproducible local foundation passes the exit gate against PostgreSQL and displays the frozen fixture's verified findings through the worker, protected API, authenticated interface, and visible retry-exhaustion state. The Vercel and Railway preview is deployed and reproduces the same 22 findings.
 
-Create the monorepo, database schema, API, worker, job queue, and minimal dashboard. Deploy the web application to Vercel and the backend services and PostgreSQL to Railway.
+Create the monorepo, database schema, API, worker, job queue, and minimal dashboard. Deploy the web application to Vercel and the backend services and PostgreSQL to Render (decision 0013; Railway was used first and is deleted).
 
 Deliverables:
 
@@ -83,7 +83,7 @@ Exit gate: a manager can understand why every account was included, excluded, or
 
 ## Milestone 6: Lemlist activation
 
-Status: built and verified on practice fixtures on 2026-10-22; live verification waits on a Lemlist API key. See `../milestones/milestone-6-lemlist-notes.md`.
+Status: complete on 2026-10-22, verified on practice fixtures and the real Lemlist API. Webhook registration follows the next API deployment. See `../milestones/milestone-6-lemlist-notes.md`.
 
 Add dry-run enrollment, explicit approval, idempotent creation, webhook ingestion, unsubscribe handling, and a kill switch for future steps.
 
@@ -93,7 +93,7 @@ Exit gate: fixtures prove that duplicate delivery, retries, and suppression conf
 
 ## Milestone 7: TitanX handoff
 
-Create a controlled Attio List for approved phone-ready contacts. Connect TitanX to it, natively or through an application bridge as decision 0011 settles, and map dispositions and follow-up expectations. Use fixtures or a documented manual import if the accessible integration cannot return all required events.
+Create a controlled Attio List for approved phone-ready contacts, and map dispositions and follow-up expectations on fixtures. No dialer is connected or bought (decision 0014); TitanX remains the named calling system that would read the List.
 
 TitanX never places a call (decision 0012).
 

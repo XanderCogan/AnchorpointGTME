@@ -1,6 +1,6 @@
 # Georgia Sample Stage 6: Clay People Pass Design
 
-Status: run on 2026-10-21 and 2026-10-22 as a manual CSV round trip; see "Run results" below and `data/georgia-sample/people-coverage.json`. Clay is not connected to Attio, and no people were written to Attio. This is Stage 6 of `georgia-senior-living-sample-plan.md`, governed by `docs/decisions/0007-first-georgia-sample-and-enrichment.md` as amended on 2026-10-20.
+Status: run on 2026-10-21 and 2026-10-22 as a manual CSV round trip; see "Run results" below and `data/georgia-sample/people-coverage.json`. Clay is not connected to Attio, and no people were written to Attio. Under decision 0012 as amended on 2026-10-22, later runs are automated from Attio and write contacts back to Attio as People; the integration method is pending. This is Stage 6 of `georgia-senior-living-sample-plan.md`, governed by `docs/decisions/0007-first-georgia-sample-and-enrichment.md` as amended on 2026-10-20.
 
 Date: 2026-10-20
 
@@ -77,9 +77,9 @@ Decision 0007 asks for email-verification rates on a capped subset, not for emai
 The role map follows decision 0007's buyer roles and maps each to an approved persona in `docs/contracts/operating-contract.md`. Person-relevance points stay inside the scoring contract's existing caps: up to 8 for direct functional ownership, 5 for regional, budget, vendor, or implementation influence, and 2 for an adjacent role with a credible path to the owner. The split per slot was approved by the user on 2026-10-20.
 
 - Regional or corporate maintenance, facilities, or plant operations director, at the operator: Regional Facilities Manager, or Vice President or Director of Facilities when the title is corporate. Proposed 13 of 15: 8 direct ownership and 5 regional influence.
-- Regional or corporate vice president of operations, at the operator: Senior-Living Operations Leader, a provisional persona added to the operating contract on 2026-10-20. Treated as the economic buyer rather than the first contact, decided by the user on 2026-10-20. When no regional facilities person is found at an operator, the operations leader becomes the first contact. This is a routing rule and changes no points. Proposed 7: 5 influence and 2 adjacent.
+- Regional or corporate vice president of operations, at the operator: Senior-Living Operations Leader, a persona added to the operating contract on 2026-10-20 and kept on 2026-10-22. Treated as the economic buyer rather than the first contact, decided by the user on 2026-10-20. When no regional facilities person is found at an operator, the operations leader becomes the first contact. This is a routing rule and changes no points. Proposed 7: 5 influence and 2 adjacent.
 - Maintenance director, at the site: Director of Property Operations, as its site-level holder. Proposed 10: 8 direct ownership and 2 implementation influence.
-- Executive director or administrator, at the site: Site Administrator, a provisional persona added to the operating contract on 2026-10-20. Proposed 7: 5 influence and 2 adjacent.
+- Executive director or administrator, at the site: Site Administrator, a persona added to the operating contract on 2026-10-20 and kept on 2026-10-22. 10 at a single-site operator (8 direct ownership, 2 adjacent) and 7 at a chain site (5 influence, 2 adjacent).
 
 Every slot fills the same three scoring inputs:
 
@@ -87,7 +87,7 @@ Every slot fills the same three scoring inputs:
 - Person relevance, up to 15, from the slot's mapped persona.
 - Persona and channel, up to 4 under data confidence: 2 for persona and current employment verified, 2 for a verified channel.
 
-Health rule `CRM-DATA-001` requires persona mapping to follow a versioned deterministic map with uncertain results sent to review. The role map is that map, versioned `georgia-clay-role-map-1`. A found title that matches no include pattern, or matches an exclude pattern, gets `personaVerified: false` and no person-relevance points.
+Health rule `CRM-DATA-001` requires persona mapping to follow a versioned deterministic map with uncertain results sent to review. The role map is that map, now versioned `georgia-clay-role-map-2`; version 2 (2026-10-22) adds IT exclusions such as "systems" and "network" to the site administrator slot after a Systems Administrator passed as a Site Administrator. The Stage 6 coverage file was produced under version 1. A found title that matches no include pattern, or matches an exclude pattern, gets `personaVerified: false` and no person-relevance points.
 
 ## Budget and credit math
 
@@ -148,12 +148,12 @@ The stop report, written into `people-coverage.json` and summarized in the sampl
 
 ## Personal data boundary
 
-The repository is public, so decision 0007's boundary applies at its strictest.
+Amended on 2026-10-22 under decision 0012 (run as a real company). The 2026-10-21 and 2026-10-22 runs followed the earlier rule: emails deleted after validation, only coverage kept, no people in Attio. From now on, found contacts, including names, titles, and work email, are written from Clay to Attio as People under the operating contract's write policy. The repository is public, so none of it ever goes in git.
 
-Stays in Clay, never in git:
+Stays in Clay and Attio, never in git:
 
 - Names, titles as written, profile links, employer strings, and exact role start dates.
-- Email values, which exist in Clay only long enough to validate and are then deleted from the table.
+- Work email values.
 
 Phones are never requested.
 
@@ -177,7 +177,7 @@ Comes back into the repository, per operator row and per site row, and nothing e
 
 Decided by the user on 2026-10-20: tenure bands (under 6 months, 6 to 12, 12 to 24, over 24, or unknown) stay in `private/`. A band tied to a named facility's maintenance director could help someone identify that person. The repository gets only each operator's account-level role-change points and a generic reason, such as a verified facilities leader who started recently.
 
-The demo may show names only to authenticated users, from the database, as decision 0007 allows. Real-person data is deleted when the project ends, including the Clay workspace tables.
+The demo may show names only to authenticated users, from the database, as decision 0007 allows.
 
 ## How results reach the score
 
@@ -204,6 +204,17 @@ This is the procedure as actually run on 2026-10-21 and 2026-10-22. It replaces 
 6. Write `run.json` in `private/clay/export/` with `clayRunDates`, `freeDataCreditsUsed`, `paidDataCreditsUsed`, `actionsUsed`, `paidUsd`, and `stoppedBecause`, reading credits from Clay's Credits menu.
 7. Run `npm run sample:georgia:clay-reduce`. Check: it prints the found-a-person rate per role and writes `data/georgia-sample/people-coverage.json`. Commit only that file. Sites of multi-site operators come out as `operator_level_only`.
 
+### Automated round trip (free plan)
+
+Clay's free plan has no CRM integration, HTTP API, webhooks, or scheduled runs, so the Attio round trip is scripted end to end except one CSV import into Clay and one export out of it. Paid automation needs Clay Growth, about $446 to $495 a month (the pricing page gives conflicting figures; https://www.clay.com/pricing, retrieved 2026-10-22). The user declined it on 2026-10-22.
+
+1. `npm run attio:sync` refreshes the local Attio mirror.
+2. `npm run clay:export` writes Companies from the mirror to `data/georgia-sample/private/clay/attio/input/companies-<n>.csv`, 50 rows per file. Columns: `attio_company_id`, `company_name`, `domain`, `line_1`, `locality`, `region`, `postcode`, `country_code`, `needs_domain`, `needs_location`. `--missing-only` keeps only Companies that lack a domain or location.
+3. Import each file into Clay, turn Auto-run off, and run the columns row by row. The table in Clay `companies-3` is the template: Company Domain waterfall as `clay_domain`, Enrich company with its address output as `clay_address`, one Find contacts at company column per role slot named by the slot id, and a formula column per slot named `<slot>_json` with `JSON.stringify(({{<slot>}}?.people || []).map(p => ({name: p.name, title: p.title, url: p.url, org: p.org})))`. The formula columns are needed because Clay exports a people list cell only as the text "Returned N People". The import splits `clay_address` into location fields, expands each `<slot>_json` into one person per row, and takes names from the full name without credentials, because Clay's own first and last name fields pick up credentials such as "FACHE".
+4. Export the table as CSV into `data/georgia-sample/private/clay/attio/export/`.
+5. `npm run clay:import -- <file>` is a dry run: it prints planned creates, updates, and review items by reason, and writes nothing. The persona comes from the role map and is verified only when the title passes the slot's patterns; a person is a confirmed match only when the current employer matches the Company by domain or a distinctive name word.
+6. `npm run clay:import -- <file> --live` writes through the scoped writeback token and queues review items. It needs migration 0005 applied to the database it uses.
+
 ### Run results, 2026-10-22
 
 - Chain sites are not reachable by people search. A city location filter did not place a chain's employees at a facility. Every PruittHealth site returned the same person, located in metro Atlanta, so the 199 sites of multi-site operators are reached through the operator-level roles instead.
@@ -222,8 +233,8 @@ If the reducer fails, its message says why:
 ## Open questions for the user
 
 1. Can a free-plan account buy a one-time top-up? Clay's docs do not say. Resolved 2026-10-20: the run pays for speed, so this only decides between top-ups and a Launch month.
-2. Review later: the two provisional senior-living personas in the operating contract, and any generic persona that does not fit, once Stage 6 shows which titles actually exist.
-3. Resolved 2026-10-20: person-relevance points 13, 7, 10, and 7 and the best-person rollup are approved. The administrator's 7 is low confidence and is reviewed with the provisional personas.
+2. Resolved 2026-10-22: both senior-living personas are kept, since Stage 6 found matching titles (9 operations leaders at 19 operators, 5 administrators at 11 single sites). The generic personas stay because they serve the other segments.
+3. Resolved 2026-10-20: person-relevance points 13, 7, 10, and 7 and the best-person rollup are approved. Amended 2026-10-22 by the user: the site administrator scores 10 at a single-site operator, where the administrator usually signs vendor contracts and answers for the life-safety survey, and 7 at a site of a multi-site operator, where corporate or regional facilities picks the vendor. The practice basis is a working assumption still to be checked against a source or a buyer conversation.
 4. Resolved 2026-10-20: `role-change-proposal-1` is approved.
 5. Resolved 2026-10-20: tenure bands stay in `private/`, and only account-level role-change points with a generic reason are committed.
 

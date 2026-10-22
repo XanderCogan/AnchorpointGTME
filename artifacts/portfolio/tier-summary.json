@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-10-22T19:39:17.212Z",
+  "source": "data/georgia-sample/tiers.json",
+  "method": {
+    "contract": "account-score-v1.1",
+    "parametersVersion": "georgia-account-proposal-2",
+    "status": "approved by the user on 2026-10-20 (tiering proposal 2)",
+    "asOf": "2026-10-19"
+  },
+  "operators": 105,
+  "bands": {
+    "A": 5,
+    "B": 12,
+    "C": 36,
+    "Watch": 18
+  },
+  "eligibility": {
+    "eligible": 71,
+    "outsideFootprint": 34,
+    "gates": {
+      "not serviceable: no facility within 120 minutes of a branch offering sprinkler or alarm work": 34
+    }
+  },
+  "topA": [
+    {
+      "operatorId": "ga-op-chain-434",
+      "name": "PRUITTHEALTH",
+      "score": 49,
+      "explanation": "Band A because Anchorpoint reaches 31 of its 41 footprint sites within 90 minutes, it runs 41 nursing homes within 120 minutes of a capable branch, 64% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, ownership or management changed recently, and it appears to be hiring maintenance or facilities staff."
+    },
+    {
+      "operatorId": "ga-op-chain-766",
+      "name": "JOURNEY HEALTHCARE",
+      "score": 47.5,
+      "explanation": "Band A because Anchorpoint reaches 15 of its 18 footprint sites within 90 minutes, it runs 18 nursing homes within 120 minutes of a capable branch, 82% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently."
+    },
+    {
+      "operatorId": "ga-op-chain-202",
+      "name": "EMPIRE CARE CENTERS",
+      "score": 45.3,
+      "explanation": "Band A because Anchorpoint reaches all 22 of its footprint sites within 90 minutes, it runs 22 nursing homes within 120 minutes of a capable branch, 72% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently."
+    },
+    {
+      "operatorId": "ga-op-chain-246",
+      "name": "HARBORVIEW HEALTH SYSTEMS",
+      "score": 43.9,
+      "explanation": "Band A because Anchorpoint reaches 5 of its 8 footprint sites within 90 minutes, it runs 8 nursing homes within 120 minutes of a capable branch, 64% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently."
+    },
+    {
+      "operatorId": "ga-op-chain-834",
+      "name": "ETHICA HEALTH",
+      "score": 43.5,
+      "explanation": "Band A because Anchorpoint reaches 27 of its 37 footprint sites within 90 minutes, it runs 37 nursing homes within 120 minutes of a capable branch, 65% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently."
+    }
+  ],
+  "note": "Bands order work and never grant eligibility. People-based inputs were unknown when these scores were set, so the maximum was 65 of 100."
+}
