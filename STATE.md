@@ -20,12 +20,12 @@ Do not derive ICP hypotheses, tune score weights, or size the market from `inspe
 
 ## Work in progress
 
-- Milestone 3: the read-only Attio connector and audit mapping are built and verified against synthetic recorded responses. See `docs/milestones/milestone-3-attio-connector-notes.md`.
+- Milestone 3: the read-only Attio connector and audit mapping are built, the workspace schema exists, and a live read-only sync is idempotent. See `docs/milestones/milestone-3-attio-connector-notes.md`.
 - Georgia sample: stages 1 to 5, the account value model in code (decision 0009), the 2026-10-20 operator review decisions, and the Stage 6 Clay people pass design are merged into the trunk. Tiering is rerun on the 105-operator list.
 
 ## Blockers
 
-- Milestone 3 live acceptance needs the custom objects, attributes, and read-only access token listed in the milestone note, in the Attio workspace `10-x-media` (https://app.attio.com/10-x-media).
+- Milestone 3 acceptance needs Attio's 10 sample companies removed and the Georgia Companies and Sites loaded in `10-x-media`; the user must delete the temporary schema setup token.
 - The remote branch `origin/claude/tender-tesla-9lfwvn` proposes Supabase without Railway and reuses decision numbers 0003 and 0004 for different decisions. It is not part of the plan; ignore it until the user decides whether to delete it.
 
 ## Immediate next work
@@ -39,7 +39,7 @@ Flagged for later review: the two provisional senior-living personas in `docs/co
 1. Done on 2026-10-22: the read-only Attio connector and audit mapping. Porting the CRM history pipeline to Attio snapshots is not started.
 2. Done on 2026-10-21: coarse segment sizing in `docs/research/georgia-segment-sizing.md`. It is market context only. Senior living and skilled nursing is the one segment drilled into; no work or spend on a second segment is planned.
 3. Done on 2026-10-21: the CRM analysis pipeline and the Salesforce mapping for the audit rules (superseded by 0011; the pipeline itself is CRM-neutral), verified on labelled test fixtures only (`docs/research/crm-icp-analysis-playbook.md`).
-4. When the workspace setup and token exist, finish the Milestone 3 exit-gate checks in the milestone note.
+4. Finish the remaining Milestone 3 exit-gate checks in the milestone note.
 
 ## Active safety boundary
 
