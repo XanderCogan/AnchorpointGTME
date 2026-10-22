@@ -6,7 +6,7 @@ This file contains only live execution context. Durable product knowledge belong
 
 ## Current gate
 
-Milestone 3 is retargeted from Salesforce to a read-only Attio connection by decision 0011 (2026-10-21) and is in progress alongside the Milestone 4 Georgia market sample under decision 0008. Milestones 0 to 2 are complete. Their evidence is in `docs/milestones/`. The deployed Vercel and Railway preview still shows the frozen, HubSpot-shaped `inspection-v1` findings: 22 findings, 15 critical and 7 warning.
+Milestone 3 is retargeted from Salesforce to a read-only Attio connection by decision 0011 (2026-10-21) and is in progress alongside the Milestone 4 Georgia market sample under decision 0008. Under decision 0012 (2026-10-22), Milestones 5 to 7 are also built now on labelled practice fixtures, with nothing sent live. Milestones 0 to 2 are complete. Their evidence is in `docs/milestones/`. The deployed Vercel and Railway preview still shows the frozen, HubSpot-shaped `inspection-v1` findings: 22 findings, 15 critical and 7 warning.
 
 Decision 0010, approved on 2026-10-20, sets the direction:
 

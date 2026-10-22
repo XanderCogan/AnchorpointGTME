@@ -1,6 +1,6 @@
 # Gated Build Plan
 
-The project is active. Each milestone must be reviewed before the next one begins. The one exception is the early Milestone 4 market work, the Georgia sample, which runs alongside Milestone 3 under `../decisions/0008-parallel-data-tracks.md`. Decision 0010 removes all fictional CRM history from the plan.
+The project is active. Each milestone must be reviewed before the next one begins. There are two exceptions. The early Milestone 4 market work, the Georgia sample, runs alongside Milestone 3 under `../decisions/0008-parallel-data-tracks.md`. Milestones 5, 6, and 7 are built now on labelled practice fixtures under `../decisions/0012-early-activation-build-on-fixtures.md`, with nothing sent live from that data. Decision 0010 removes all fictional CRM history from the plan.
 
 ## Milestone 0: Operating contract
 
