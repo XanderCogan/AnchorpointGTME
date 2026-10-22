@@ -27,7 +27,7 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 ## Blockers
 
-- Milestone 6 live verification needs a Lemlist API key in `LEMLIST_API_KEY`.
+- Milestone 6 webhook registration needs a public HTTPS URL for the API.
 - `origin/claude/tender-tesla-9lfwvn` proposes Supabase and reuses decision numbers 0003 and 0004. Ignore it until the user decides whether to delete it.
 
 ## Safety boundary

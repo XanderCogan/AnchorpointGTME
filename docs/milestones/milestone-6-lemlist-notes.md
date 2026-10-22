@@ -1,6 +1,6 @@
 # Milestone 6: Lemlist Connector Notes
 
-Status: built and verified on practice fixtures on 2026-10-22, under decision 0012. Live verification against the real Lemlist API waits on an API key.
+Status: built and verified on practice fixtures and against the real Lemlist API on 2026-10-22, under decision 0012. Webhook registration is the one open item.
 
 ## What exists
 
@@ -17,11 +17,13 @@ Status: built and verified on practice fixtures on 2026-10-22, under decision 00
 
 `tests/lemlist-connector.test.ts` covers the deny-first plan, repeated and concurrent enrollment, a lead Lemlist already holds, retry after failure, the kill switch, the launch refusal, write scoping, Basic auth, and webhook secret, duplicate, and suppression handling.
 
-## Remaining for live acceptance
+## Live verification, 2026-10-22
 
-1. The user creates a Lemlist API key and sets `LEMLIST_API_KEY` locally.
-2. `npm run lemlist:setup` creates the test campaign with auto-review off and pauses it. Its ID goes in `LEMLIST_CAMPAIGN_ID`.
-3. `npm run lemlist:enroll` prints the dry-run plan; `npm run lemlist:enroll -- --live` adds the practice leads, and a second live run must add nothing.
-4. Unverified until the live run: the created campaign's initial state (the reference example shows `running`; setup pauses it at once, and with no mailbox it has no sender), and whether list endpoints return bare arrays (a wrapped `data` page is also accepted).
+- `npm run lemlist:setup` created the test campaign `cam_9aAovP4kPRAf2gAkf`, "Anchorpoint practice (never launched)", and paused it. Lemlist reports it paused with an empty sender pool, so it cannot send.
+- The dry run planned three enrollments and skipped the rest for not approved, duplicate in request, missing email, and suppressed domain. The account has no unsubscribes, so practice-007, suppressed only in the unit test, was planned.
+- The first live run enrolled practice-001, practice-002, and practice-007. A second live run enrolled nothing: every approved contact skipped as already enrolled.
+- Observed, not investigated: each live run took tens of seconds. The cause is not established.
 
-Registering the webhook needs a public HTTPS URL for the API and the "Edit integrations" permission; it is not done yet.
+## Remaining
+
+Registering the webhook needs a public HTTPS URL for the API, `LEMLIST_WEBHOOK_SECRET` set on it, and the "Edit integrations" permission. It is not done yet.
