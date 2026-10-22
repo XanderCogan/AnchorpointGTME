@@ -1,5 +1,5 @@
 import { redirect } from "next/navigation";
-import { sessionEmail } from "../../lib/auth.ts";
+import { authDisabled, sessionEmail } from "../../lib/auth.ts";
 import { login } from "./actions.ts";
 
 export default async function LoginPage({
@@ -7,7 +7,7 @@ export default async function LoginPage({
 }: {
   searchParams: Promise<{ error?: string }>;
 }) {
-  if (await sessionEmail()) redirect("/");
+  if (authDisabled() || (await sessionEmail())) redirect("/");
   const error = (await searchParams).error;
 
   return (

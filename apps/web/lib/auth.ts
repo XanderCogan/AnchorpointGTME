@@ -81,7 +81,14 @@ export async function sessionEmail(): Promise<string | null> {
   }
 }
 
+// AUTH_DISABLED=true opens the dashboard without sign-in. The board shows only the
+// synthetic inspection-v1 fixture, and the API token stays on the server.
+export function authDisabled(): boolean {
+  return process.env.AUTH_DISABLED === "true";
+}
+
 export async function requireSession(): Promise<string> {
+  if (authDisabled()) return "public demo";
   const email = await sessionEmail();
   if (!email) redirect("/login");
   return email;
