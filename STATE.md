@@ -32,7 +32,6 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 ## Blockers
 
-- `origin/claude/tender-tesla-9lfwvn` proposes Supabase and reuses decision numbers 0003 and 0004. Ignore it until the user decides whether to delete it.
 
 ## Safety boundary
 
