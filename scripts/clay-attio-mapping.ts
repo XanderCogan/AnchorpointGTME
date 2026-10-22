@@ -174,7 +174,8 @@ export function mapClayRows(rows: Row[], options: ImportOptions): ImportResult {
       match: employer ? "confirmed" : "uncertain",
       firstName,
       lastName,
-      persona: slot.persona,
+      // Attio's persona options carry no "(provisional)" marker; the role map keeps it.
+      persona: slot.persona.replace(/\s*\(provisional\)$/i, ""),
       personaVerified: personaMatches(jobTitle, slot),
       source,
       enrichedOn: options.enrichedOn,
