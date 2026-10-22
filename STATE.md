@@ -32,7 +32,7 @@ Do not derive ICP hypotheses, tune score weights, or size the market from `inspe
 
 Timeline, set by the user on 2026-10-20: the project is finished in one day. Prefer paying for speed over waiting for free-tier refreshes, and confirm each purchase with its price first.
 
-When Clay is connected, follow "Runbook: when Clay is connected" in `docs/research/georgia-clay-people-pass.md`. The reducer needs summary columns named exactly as listed there.
+Done on 2026-10-22: the Stage 6 Clay people pass. `data/georgia-sample/people-coverage.json` is written, and the results and the as-run runbook are in `docs/research/georgia-clay-people-pass.md`. Bands should be re-inspected with these inputs before they are read as final.
 
 Flagged for later review: the two provisional senior-living personas in `docs/contracts/operating-contract.md`, once Stage 6 shows which job titles exist. Review the site administrator's low-confidence 7 person-relevance points at the same time.
 

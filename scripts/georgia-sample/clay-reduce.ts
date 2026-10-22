@@ -138,7 +138,9 @@ export const reduce = (input: { operatorsIn: Row[]; sitesIn: Row[]; operatorsOut
         operatorId: row.operator_id,
         band: row.band,
         wave: Number(exported?.wave ?? row.wave ?? 1) === 2 ? 2 : 1,
-        status: reads.some(({ read }) => read.result.searched) ? "covered" : "not_reached",
+        // Clay's people search cannot place a chain employee at one facility, so unsearched sites of
+        // multi-site operators are reached through the operator-level roles instead.
+        status: reads.some(({ read }) => read.result.searched) ? "covered" : multiSite.has(row.operator_id) ? "operator_level_only" : "not_reached",
         slots: Object.fromEntries(reads.map(({ slot, read }) => [slot, read.result])),
       },
       reads,

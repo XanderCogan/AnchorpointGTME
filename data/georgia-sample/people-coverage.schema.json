@@ -222,6 +222,7 @@
         "status": {
           "enum": [
             "covered",
+            "operator_level_only",
             "not_reached"
           ]
         },

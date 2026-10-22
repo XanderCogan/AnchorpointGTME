@@ -194,19 +194,30 @@ Each awarded point carries its input (a slot, a band, or an outcome, never a per
 
 Start here if Clay is connected and nothing seems to work. These steps are in order, and each one has a check.
 
+This is the procedure as actually run on 2026-10-21 and 2026-10-22. It replaces the earlier plan of summary formulas typed into Clay and site searches at every facility.
+
 1. Run `npm run sample:georgia:clay-export`. Check: it reports 25 operator rows, 126 band A site rows, and 101 band B and C site rows (the 2026-10-21 export after the 105-operator rerun), written to `data/georgia-sample/private/clay/input/`.
-2. In Clay, import `operators.csv`, `sites-band-a.csv`, and `sites-band-bc.csv` as three tables. Check: no table is over 200 rows, the free plan's limit.
-3. Add the enrichment columns described under "Clay table design", using the title patterns in `data/georgia-sample/clay-role-map.json`. Before running a whole table, run one row and read the credit cost Clay shows. Check: it is near the assumed 1.5 credits per person. If it is far off, redo the credit math before spending.
-4. Add the summary formula columns, named exactly `<slot>__searched`, `<slot>__found`, `<slot>__persona_verified`, `<slot>__employment_verified`, `<slot>__tenure_band`, and `<slot>__channel`, as described under "Personal data boundary". The slot names are `operator_regional_facilities` and `operator_operations_vp` in the operator table, and `site_executive_director` and `site_maintenance_director` in the site tables. Two underscores separate the slot from the field. Check: the names match exactly. A misspelled name is the most likely reason the reducer fails.
-5. Run band A, then B, then C, following the stopping rule. Ask before any purchase.
-6. Export each table as CSV into `data/georgia-sample/private/clay/export/`, keeping the file names `operators.csv`, `sites-band-a.csv`, and `sites-band-bc.csv`. Write `run.json` beside them with `clayRunDates`, `freeDataCreditsUsed`, `paidDataCreditsUsed`, `actionsUsed`, `paidUsd`, and `stoppedBecause`.
-7. Run `npm run sample:georgia:clay-reduce`. Check: it prints the found-a-person rate per role and writes `data/georgia-sample/people-coverage.json`. Commit only that file.
+2. In Clay, import `operators.csv` as a table. Site searches run only where the operator is the facility itself, so write the single-site rows (operators with one in-scope site) to `private/clay/upload/sites-single.csv` and import that as a second table. Check: each table has 50 rows or fewer, because a free-trial table only shows and runs its first 50 rows.
+3. Use Clay's "Find contacts at company" (0.5 credits a row, whatever the number of people returned). Key it on the domain column (`domain` for operators, `operator_domain` for single sites), because it does not accept a company name. Use the role map's title patterns as include and exclude keywords, with a limit of 2 people at the operator and 1 at a site. Name each search column exactly after its slot: `operator_regional_facilities`, `operator_operations_vp`, `site_executive_director`, and `site_maintenance_director`. Run one row first. Rows with no domain show "Missing input" and cost nothing.
+4. For each search column, add a formula column that writes its people as JSON, with no names or links: `JSON.stringify(({{<slot>}}?.people||[]).map(p=>({t:p.title,cur:(p.current_experience||[]).map(e=>({t:e.title,c:e.company,d:e.company_domain,s:e.start_date}))})))`. Insert the slot's `people` field with the column picker rather than typing the braces. Add the first slot's formula first, so the export names it `Formula` and the second `Formula (2)`. Clay's CSV export keeps only an enrichment's status text, so without these columns the export cannot be verified.
+5. Download both tables as CSV into `private/clay/raw/` as `operators.csv` and `sites-single.csv`. Run `npm run sample:georgia:clay-summarize`. It writes the `<slot>__<field>` summary columns, with no titles or employers, into `private/clay/export/`, checking persona against the role map and current employment by domain or a distinctive operator-name word.
+6. Write `run.json` in `private/clay/export/` with `clayRunDates`, `freeDataCreditsUsed`, `paidDataCreditsUsed`, `actionsUsed`, `paidUsd`, and `stoppedBecause`, reading credits from Clay's Credits menu.
+7. Run `npm run sample:georgia:clay-reduce`. Check: it prints the found-a-person rate per role and writes `data/georgia-sample/people-coverage.json`. Commit only that file. Sites of multi-site operators come out as `operator_level_only`.
+
+### Run results, 2026-10-22
+
+- Chain sites are not reachable by people search. A city location filter did not place a chain's employees at a facility. Every PruittHealth site returned the same person, located in metro Atlanta, so the 199 sites of multi-site operators are reached through the operator-level roles instead.
+- Operators: 19 of the 25 had a domain and were searched. The facilities-leader search found someone at 11 and the operations-leader search at 9. Clay's title matching is loose, so only 4 of the 11 facilities results passed the role map's persona check, against all 9 operations results.
+- Single sites: 11 of the 28 had an operator domain and were searched. An administrator was found and verified at 5, and a maintenance director at 1.
+- Six operators get role-change points from a verified leader who started recently.
+- Cost: 28.5 free-trial data credits, no actions, no dollars. The worst-case plan assumed about 840.
+- Not done: the channel check on a capped subset, so every channel outcome is `not_checked`. Name-keyed rows, meaning the 6 operators and 17 single sites without a known domain, were not searched.
 
 If the reducer fails, its message says why:
 
 - "Missing ...": the input or export folder, or `run.json`, is not where step 1 or step 6 puts it.
 - "missing reduction columns": a summary column from step 4 is misnamed or missing in an export. The message lists each expected name.
-- A schema error or "personal-data pattern": a value outside the allowed codes, or something shaped like an email, link, or phone number, reached the output. Fix the summary formula in Clay; never loosen the schema or the scan to get past it.
+- A schema error or "personal-data pattern": a value outside the allowed codes, or something shaped like an email, link, or phone number, reached the output. Fix the formula column in Clay or the summarize step; never loosen the schema or the scan to get past it.
 
 ## Open questions for the user
 

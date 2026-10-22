@@ -52,7 +52,7 @@ test("rows reduce to coverage codes and account-level role change", () => {
   assert.equal(chain.status, "covered");
   assert.deepEqual(chain.roleChange, { points: 14, reason: "verified_facilities_leader_started_recently" });
   assert.equal(output.operators.find((row) => row.operatorId === "ga-op-lbn-solo")!.status, "site_only");
-  assert.deepEqual(output.sites.map((row) => row.status), ["covered", "not_reached", "not_reached"]);
+  assert.deepEqual(output.sites.map((row) => row.status), ["covered", "operator_level_only", "not_reached"]);
 });
 
 test("role change ignores unverified people and never penalizes long tenure", () => {
