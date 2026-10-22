@@ -32,7 +32,7 @@ The initial buying personas are:
 - Compliance or Risk leader with facilities responsibility
 - Regional Facilities Manager
 
-Provisional senior-living personas, added on 2026-10-20 for the Georgia sample. **Review later:** keep, rename, or remove each one, and remove any generic persona above that does not fit, once Stage 6 shows which job titles actually exist at Georgia nursing-home operators. Until then, contacts mapped to these personas count as mapped for scoring but are marked provisional.
+Senior-living personas, added on 2026-10-20 for the Georgia sample and kept by the user on 2026-10-22 after Stage 6 found matching titles at Georgia nursing-home operators:
 
 - Senior-Living Operations Leader: a regional or corporate vice president or director of operations who oversees several facilities' administrators, budgets, and vendors
 - Site Administrator: the licensed nursing home administrator or executive director accountable for one facility's surveys, budget, and vendors

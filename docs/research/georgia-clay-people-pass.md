@@ -77,9 +77,9 @@ Decision 0007 asks for email-verification rates on a capped subset, not for emai
 The role map follows decision 0007's buyer roles and maps each to an approved persona in `docs/contracts/operating-contract.md`. Person-relevance points stay inside the scoring contract's existing caps: up to 8 for direct functional ownership, 5 for regional, budget, vendor, or implementation influence, and 2 for an adjacent role with a credible path to the owner. The split per slot was approved by the user on 2026-10-20.
 
 - Regional or corporate maintenance, facilities, or plant operations director, at the operator: Regional Facilities Manager, or Vice President or Director of Facilities when the title is corporate. Proposed 13 of 15: 8 direct ownership and 5 regional influence.
-- Regional or corporate vice president of operations, at the operator: Senior-Living Operations Leader, a provisional persona added to the operating contract on 2026-10-20. Treated as the economic buyer rather than the first contact, decided by the user on 2026-10-20. When no regional facilities person is found at an operator, the operations leader becomes the first contact. This is a routing rule and changes no points. Proposed 7: 5 influence and 2 adjacent.
+- Regional or corporate vice president of operations, at the operator: Senior-Living Operations Leader, a persona added to the operating contract on 2026-10-20 and kept on 2026-10-22. Treated as the economic buyer rather than the first contact, decided by the user on 2026-10-20. When no regional facilities person is found at an operator, the operations leader becomes the first contact. This is a routing rule and changes no points. Proposed 7: 5 influence and 2 adjacent.
 - Maintenance director, at the site: Director of Property Operations, as its site-level holder. Proposed 10: 8 direct ownership and 2 implementation influence.
-- Executive director or administrator, at the site: Site Administrator, a provisional persona added to the operating contract on 2026-10-20. Proposed 7: 5 influence and 2 adjacent.
+- Executive director or administrator, at the site: Site Administrator, a persona added to the operating contract on 2026-10-20 and kept on 2026-10-22. 10 at a single-site operator (8 direct ownership, 2 adjacent) and 7 at a chain site (5 influence, 2 adjacent).
 
 Every slot fills the same three scoring inputs:
 
@@ -233,7 +233,7 @@ If the reducer fails, its message says why:
 ## Open questions for the user
 
 1. Can a free-plan account buy a one-time top-up? Clay's docs do not say. Resolved 2026-10-20: the run pays for speed, so this only decides between top-ups and a Launch month.
-2. Review later: the two provisional senior-living personas in the operating contract, and any generic persona that does not fit, once Stage 6 shows which titles actually exist.
+2. Resolved 2026-10-22: both senior-living personas are kept, since Stage 6 found matching titles (9 operations leaders at 19 operators, 5 administrators at 11 single sites). The generic personas stay because they serve the other segments.
 3. Resolved 2026-10-20: person-relevance points 13, 7, 10, and 7 and the best-person rollup are approved. Amended 2026-10-22 by the user: the site administrator scores 10 at a single-site operator, where the administrator usually signs vendor contracts and answers for the life-safety survey, and 7 at a site of a multi-site operator, where corporate or regional facilities picks the vendor. The practice basis is a working assumption still to be checked against a source or a buyer conversation.
 4. Resolved 2026-10-20: `role-change-proposal-1` is approved.
 5. Resolved 2026-10-20: tenure bands stay in `private/`, and only account-level role-change points with a generic reason are committed.

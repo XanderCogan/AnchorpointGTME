@@ -67,8 +67,8 @@
         "assistant"
       ],
       "maxPeople": 2,
-      "persona": "Senior-Living Operations Leader (provisional)",
-      "personaMappingConfidence": "provisional persona added 2026-10-20; review after Stage 6 titles are seen",
+      "persona": "Senior-Living Operations Leader",
+      "personaMappingConfidence": "senior-living persona added 2026-10-20; kept by the user on 2026-10-22 after Stage 6 found matching titles",
       "personRelevanceProposal": {
         "directOwnership": 0,
         "influence": 5,
@@ -141,8 +141,8 @@
         "intern"
       ],
       "maxPeople": 1,
-      "persona": "Site Administrator (provisional)",
-      "personaMappingConfidence": "provisional persona added 2026-10-20; review after Stage 6 titles are seen",
+      "persona": "Site Administrator",
+      "personaMappingConfidence": "senior-living persona added 2026-10-20; kept by the user on 2026-10-22 after Stage 6 found matching titles",
       "personRelevanceProposal": {
         "singleSite": {
           "directOwnership": 8,
