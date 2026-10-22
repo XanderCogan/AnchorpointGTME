@@ -204,6 +204,17 @@ This is the procedure as actually run on 2026-10-21 and 2026-10-22. It replaces 
 6. Write `run.json` in `private/clay/export/` with `clayRunDates`, `freeDataCreditsUsed`, `paidDataCreditsUsed`, `actionsUsed`, `paidUsd`, and `stoppedBecause`, reading credits from Clay's Credits menu.
 7. Run `npm run sample:georgia:clay-reduce`. Check: it prints the found-a-person rate per role and writes `data/georgia-sample/people-coverage.json`. Commit only that file. Sites of multi-site operators come out as `operator_level_only`.
 
+### Automated round trip (free plan)
+
+Clay's free plan has no CRM integration, HTTP API, webhooks, or scheduled runs, so the Attio round trip is scripted end to end except one CSV import into Clay and one export out of it. Paid automation needs Clay Growth, about $446 to $495 a month (the pricing page gives conflicting figures; https://www.clay.com/pricing, retrieved 2026-10-22). The user declined it on 2026-10-22.
+
+1. `npm run attio:sync` refreshes the local Attio mirror.
+2. `npm run clay:export` writes Companies from the mirror to `data/georgia-sample/private/clay/attio/input/companies-<n>.csv`, 50 rows per file. Columns: `attio_company_id`, `company_name`, `domain`, `line_1`, `locality`, `region`, `postcode`, `country_code`, `needs_domain`, `needs_location`. `--missing-only` keeps only Companies that lack a domain or location.
+3. Import each file into Clay and run the columns. Company proposals go in `clay_domain`, `clay_line_1`, `clay_locality`, `clay_region`, `clay_postcode`, and `clay_country_code`. People are written one per row (Clay's "write to table" output), keeping `attio_company_id`, `company_name`, and `domain`, plus `slot` (the role slot id), `first_name`, `last_name`, `job_title`, `work_email`, `linkedin_url`, `person_company_name`, and `person_company_domain`.
+4. Export the table as CSV into `data/georgia-sample/private/clay/attio/export/`.
+5. `npm run clay:import -- <file>` is a dry run: it prints planned creates, updates, and review items by reason, and writes nothing. The persona comes from the role map and is verified only when the title passes the slot's patterns; a person is a confirmed match only when the current employer matches the Company by domain or a distinctive name word.
+6. `npm run clay:import -- <file> --live` writes through the scoped writeback token and queues review items. It needs migration 0005 applied to the database it uses.
+
 ### Run results, 2026-10-22
 
 - Chain sites are not reachable by people search. A city location filter did not place a chain's employees at a facility. Every PruittHealth site returned the same person, located in metro Atlanta, so the 199 sites of multi-site operators are reached through the operator-level roles instead.

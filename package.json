@@ -21,6 +21,8 @@
     "sample:georgia:clay-summarize": "node scripts/georgia-sample/clay-summarize.ts",
     "sample:georgia:clay-reduce": "node scripts/georgia-sample/clay-reduce.ts",
     "attio:sync": "node scripts/attio-sync.ts",
+    "clay:export": "node scripts/clay-attio-export.ts",
+    "clay:import": "node scripts/clay-attio-import.ts",
     "attio:audit": "node scripts/attio-audit-live.ts",
     "attio:verify-recorded": "node scripts/verify-attio-recorded.ts",
     "lemlist:setup": "node scripts/lemlist-setup.ts",
