@@ -29,6 +29,7 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 4. Port the CRM history pipeline to Attio snapshots (not started).
 5. Later: find why live Lemlist enrollment runs took tens of seconds (a dry run takes about 2.5 seconds).
 6. Later: get a real Lemlist-originated event to reach the Render webhook without sending email; only self-sent test events have been received so far.
+7. Milestone 7 test, no dialer and no Clay phone credits (decision 0014): about 3 labelled practice contacts with fictional 555-01xx numbers go through scoring and approval into a real controlled Attio List; prove suppression blocks, no duplicates, withdrawn approval removes the entry, and fake dispositions write back. The writeback token may lack list-entry write scope; check on the first live call. Phone enrichment is deferred for cost (free plan excludes it; Launch required).
 
 ## Blockers
 
