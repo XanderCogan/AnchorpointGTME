@@ -38,12 +38,6 @@ const withholdIndividuals = (row: Record<string, unknown>) =>
 
 interface Operator { operatorId: string; name: string; facilityCcns: string[]; [key: string]: unknown }
 const operatorsFile = await readJson<{ generatedFrom: Json; operators: Operator[] }>(`${sampleDir}/operators.json`);
-const target = operatorsFile.operators.find((op) => /tift regional|southwell/i.test(op.name));
-if (!target) throw new Error("Tift Regional (or Southwell) is not in operators.json");
-const ID = target.operatorId;
-const ccns = new Set(target.facilityCcns);
-const byOperator = (row: { operatorId?: string | null }) => row.operatorId === ID;
-const byCcn = (row: { ccn?: string }) => row.ccn !== undefined && ccns.has(row.ccn);
 
 // ---- straight copies ----------------------------------------------------
 
@@ -88,8 +82,21 @@ const tierSummary = {
 };
 await writeJson("tier-summary.json", tierSummary);
 
-// ---- lineage trace for Tift Regional ------------------------------------
+// ---- lineage traces -----------------------------------------------------
 
+const manifest = await readJson<{ datasets: { datasetId: string; rawFile: string; [key: string]: unknown }[] }>(`${sampleDir}/source-manifest.json`);
+const rawRows: Record<string, Record<string, unknown>[] | null> = {};
+for (const dataset of manifest.datasets) if (dataset.datasetId !== "tagd-9999") rawRows[dataset.datasetId] = await readJsonIfPresent<Record<string, unknown>[]>(dataset.rawFile);
+
+interface TraceSpec { match: RegExp; file: string; tradingAs: string; caveat: string }
+
+async function buildLineage(spec: TraceSpec) {
+const target = operatorsFile.operators.find((op) => spec.match.test(op.name));
+if (!target) throw new Error(`No operator in operators.json matches ${spec.match}`);
+const ID = target.operatorId;
+const ccns = new Set(target.facilityCcns);
+const byOperator = (row: { operatorId?: string | null }) => row.operatorId === ID;
+const byCcn = (row: { ccn?: string }) => row.ccn !== undefined && ccns.has(row.ccn);
 const step = (file: string, what: string, data: unknown) => ({ file, what, data });
 const trace: { step: string; file: string; what: string; data: unknown }[] = [];
 const missing: string[] = [];
@@ -99,11 +106,10 @@ const add = (name: string, file: string, what: string, data: unknown) => {
 };
 
 // 1. Source manifest and raw CMS rows (raw rows are gitignored; the manifest is committed).
-const manifest = await readJson<{ datasets: { datasetId: string; rawFile: string; [key: string]: unknown }[] }>(`${sampleDir}/source-manifest.json`);
 add("source-manifest", `${sampleDir}/source-manifest.json`, "The CMS datasets pulled on 2026-10-19 with their hashes", manifest.datasets);
 for (const dataset of manifest.datasets) {
   if (dataset.datasetId === "tagd-9999") continue; // national lookup table, not per facility
-  const rows = await readJsonIfPresent<Record<string, unknown>[]>(dataset.rawFile);
+  const rows = rawRows[dataset.datasetId] ?? null;
   if (!rows) { missing.push(`raw rows: ${dataset.rawFile} is not on this machine`); continue; }
   const hits = rows.filter((row) => ccns.has(String(row["cms_certification_number_ccn"]))).map(stripContact).map(withholdIndividuals);
   add(`raw-cms-${dataset.datasetId}`, dataset.rawFile, `Raw ${dataset["title"]} rows for CCN ${[...ccns].join(", ")} (facility phone number and individual owner names removed)`, hits);
@@ -127,7 +133,7 @@ add("signals-operator", `${sampleDir}/signals.json`, "Operator-level citation an
 add("signals-facilities", `${sampleDir}/signals.json`, "Per-facility fire safety citations by service line with the CMS tag evidence", signals.facilities.filter(byCcn));
 const web = await readJson<{ domains: { operatorId: string }[]; jobs: { operatorId: string }[] }>(`${sampleDir}/web-signals.json`);
 add("web-signals-domain", `${sampleDir}/web-signals.json`, "Domain found by Serper search", web.domains.filter(byOperator));
-trace.push({ step: "web-signals-jobs", ...step(`${sampleDir}/web-signals.json`, "Job posting candidates (footprint operators only, so none expected here)", web.jobs.filter(byOperator)) });
+trace.push({ step: "web-signals-jobs", ...step(`${sampleDir}/web-signals.json`, "Job posting candidates found by Serper search (footprint operators only, not confirmed open)", web.jobs.filter(byOperator)) });
 
 // 5. Tier record with components.
 add("tier", `${sampleDir}/tiers.json`, "Score, band, gate, and components under account-score-v1.1", allTiered.find(byOperator));
@@ -141,7 +147,7 @@ add("people-coverage-sites", `${sampleDir}/people-coverage.json`, "Site-level Cl
 const attioDir = `${sampleDir}/private/clay/attio`;
 const findCsvRows = async (file: string) => {
   if (!(await exists(file))) return null;
-  return parseCsv(await readFile(resolve(projectRoot, file), "utf8")).filter((row) => /tift regional|southwell/i.test(row["company_name"] ?? ""));
+  return parseCsv(await readFile(resolve(projectRoot, file), "utf8")).filter((row) => spec.match.test(row["company_name"] ?? ""));
 };
 let attioCompanyId: string | null = null;
 for (const name of ["companies-1.csv", "companies-2.csv", "companies-3.csv"]) {
@@ -211,13 +217,29 @@ add("attio-records", attioCompanyId ? `${attioDir}/input/*.csv (attio_company_id
 
 const lineage = {
   generatedAt,
-  operator: { operatorId: ID, name: target.name, tradingAs: "Southwell (facility name SOUTHWELL HEALTH AND REHABILITATION, Clay-enriched company name Southwell)", facilityCcns: target.facilityCcns },
+  operator: { operatorId: ID, name: target.name, tradingAs: spec.tradingAs, facilityCcns: target.facilityCcns },
   privacy: "Under the personal data boundary in docs/research/georgia-clay-people-pass.md, no person name, title as written, profile link, employer string, start date, email, or phone number appears here. People appear as a role slot and persona status only; individual CMS owners are withheld.",
-  caveat: "This operator is outside the Anchorpoint footprint (140 minutes from Macon), so it has no band and no people-coverage entry. It was the one-row proof of the Clay to Attio round trip, chosen for the test, not for its tier.",
+  caveat: spec.caveat,
   notFound: missing,
   steps: trace,
 };
-await writeJson("lineage-tift-regional.json", lineage);
+await writeJson(spec.file, lineage);
+return { target, missing };
+}
+
+const pruitt = await buildLineage({
+  match: /^pruitthealth$/i,
+  file: "lineage-pruitthealth.json",
+  tradingAs: "PruittHealth (CMS chain 434)",
+  caveat: "In-footprint Tier A target: band A, score 49, 41 facilities within 120 minutes of a capable branch. Traced end to end from the CMS rows to the Attio Company and the Clay import plan.",
+});
+const tift = await buildLineage({
+  match: /tift regional|southwell/i,
+  file: "lineage-tift-regional.json",
+  tradingAs: "Southwell (facility name SOUTHWELL HEALTH AND REHABILITATION, Clay-enriched company name Southwell)",
+  caveat: "Out-of-footprint pipeline proof: 140 minutes from Macon, so no band and no people-coverage entry. It was the one-row test of the Clay to Attio round trip, chosen for the test, not for its tier.",
+});
+const missing = [...pruitt.missing.map((m) => `pruitthealth: ${m}`), ...tift.missing.map((m) => `tift-regional: ${m}`)];
 
 // ---- index --------------------------------------------------------------
 
@@ -230,11 +252,12 @@ Generated ${generatedAt} by \`npm run portfolio:bundle\` (scripts/build-portfoli
 - people-coverage.json: copy of data/georgia-sample/people-coverage.json, which Clay role slots were searched for each footprint operator and site, with counts only and no names.
 - signals.json: copy of data/georgia-sample/signals.json, CMS fire safety citations mapped to service lines plus ownership and management change flags, per operator and per facility.
 - tier-summary.json: counts per band, eligibility gate counts, and the top five A-band operators with score and explanation, computed from tiers.json.
-- lineage-tift-regional.json: one end-to-end trace for ${target.name} (trading as Southwell). Each step names the file it was read from: the source manifest and raw CMS rows, operator resolution and facility links, serviceability, signals, the tier record, people coverage, the Clay input and export rows, the import plan recomputed with the same mapping code, and the Attio Company record ID. The notFound list states what no file could supply.
+- lineage-pruitthealth.json: the end-to-end trace for ${pruitt.target.name}, the in-footprint Tier A target (band A, score 49, 41 footprint facilities). Each step names the file it was read from: the source manifest and raw CMS rows, operator resolution and facility links, serviceability, signals, the tier record with components, people coverage, the Clay input and export rows, the import plan recomputed with the same mapping code, and the Attio Company record ID. The notFound list states what no file could supply.
+- lineage-tift-regional.json: the same trace for ${tift.target.name} (trading as Southwell), the out-of-footprint pipeline proof. It sits 140 minutes from the nearest branch, so it has no band and no people coverage; it was the one-row test that proved the Clay to Attio round trip before the Tier A row ran.
 
-Privacy: the raw CMS rows and the Clay CSVs are gitignored private inputs. Under the personal data boundary in docs/research/georgia-clay-people-pass.md the trace holds no person name, title, profile link, employer string, start date, email, or phone number; people appear as a role slot and persona status only, and individual CMS owners are withheld.
+Privacy: the raw CMS rows and the Clay CSVs are gitignored private inputs. Under the personal data boundary in docs/research/georgia-clay-people-pass.md the traces hold no person name, title, profile link, employer string, start date, email, or phone number; people appear as a role slot and persona status only, and individual CMS owners are withheld.
 `;
 await writeFile(resolve(outDir, "index.md"), index, "utf8");
 
-console.log(`Wrote ${copies.length + 3} files to ${outDir}${missing.length ? `; lineage gaps: ${missing.length}` : ""}`);
+console.log(`Wrote ${copies.length + 4} files to ${outDir}${missing.length ? `; lineage gaps: ${missing.length}` : ""}`);
 for (const gap of missing) console.log(`  ${gap}`);
