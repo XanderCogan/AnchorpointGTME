@@ -45,7 +45,11 @@ Live sync on 2026-10-22 against local PostgreSQL: the first run inserted 1 works
 
 On 2026-10-22 `scripts/attio-load-georgia.ts`, a setup step separate from the connector, loaded the 105 Georgia operators as Companies and their 356 facilities as Sites, with operator ID, identity status, tier band and score, facility count, and CMS facility fields. Attio refuses uniqueness set through the API, so the loader matches existing records on `operator_id` and `ccn`; a rerun created nothing new. The read-only sync then mirrored 115 companies and 356 sites, and a second sync reported everything unchanged.
 
-Remaining exit-gate checks: the user deletes the setup token and the 10 sample companies, run the audit mapping over the mirrored snapshot and resolve any gaps, and confirm in Attio that no record changed during sync.
+The user deleted the 10 sample companies on 2026-10-22. The next sync reported them missing; the mirror keeps their payloads, but the audit snapshot now includes only records returned by the latest sync of each object, so deleted records are never audited.
+
+`npm run attio:audit` ran the audit mapping over the live snapshot (105 companies, 356 sites, 1 member) with no mapping gaps. It produced 142 critical findings: `CRM-COMPANY-002` and `CRM-DATA-002` on each of the 71 eligible target operators, because the public registry data carries no company domain or primary location. These are real data gaps for Clay to propose in Milestone 4, not mapping defects. Every sync used the read-only token, and the transport guard admits only reads, so no Attio record changed during sync.
+
+Remaining before acceptance: the user deletes the setup token and reviews this exit-gate evidence.
 
 ## Not done
 

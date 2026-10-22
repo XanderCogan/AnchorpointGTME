@@ -21,6 +21,7 @@
     "sample:georgia:clay-summarize": "node scripts/georgia-sample/clay-summarize.ts",
     "sample:georgia:clay-reduce": "node scripts/georgia-sample/clay-reduce.ts",
     "attio:sync": "node scripts/attio-sync.ts",
+    "attio:audit": "node scripts/attio-audit-live.ts",
     "attio:verify-recorded": "node scripts/verify-attio-recorded.ts",
     "salesforce:sync": "node scripts/salesforce-sync.ts",
     "salesforce:verify-recorded": "node scripts/verify-salesforce-recorded.ts",
