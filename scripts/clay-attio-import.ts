@@ -13,7 +13,7 @@ import { attioWritebackConfigFromEnv, WritebackTransport } from "../packages/con
 import { loadAttioPeopleAndCompanies } from "../packages/db/src/attio-mirror.ts";
 import { PostgresAttioWriteback } from "../packages/db/src/attio-writeback.ts";
 import { closePool } from "../packages/db/src/client.ts";
-import { mapClayRows, toWritebackRecord, type RoleSlot } from "./clay-attio-mapping.ts";
+import { expandClayTable, mapClayRows, toWritebackRecord, type RoleSlot } from "./clay-attio-mapping.ts";
 import { parseCsv } from "./georgia-sample/clay-reduce.ts";
 
 try {
@@ -43,7 +43,8 @@ const roleMap = JSON.parse(
 ) as { roleSlots: RoleSlot[] };
 
 try {
-  const mapped = mapClayRows(parseCsv(await readFile(resolve(file), "utf8")), { roleSlots: roleMap.roleSlots, enrichedOn });
+  const rows = expandClayTable(parseCsv(await readFile(resolve(file), "utf8")), roleMap.roleSlots.map((slot) => slot.id));
+  const mapped = mapClayRows(rows, { roleSlots: roleMap.roleSlots, enrichedOn });
   const mirror = await loadAttioPeopleAndCompanies(config.connectionId);
   const state = {
     companies: mirror.companies.map((payload) => toWritebackRecord(payload, config.slugs)),

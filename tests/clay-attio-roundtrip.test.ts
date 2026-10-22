@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { InMemoryWritebackStore, runWriteback } from "../packages/connectors/src/attio/writeback.ts";
-import { companyExportRow, EXPORT_COLUMNS, mapClayRows, toCsv, toWritebackRecord, type RoleSlot } from "../scripts/clay-attio-mapping.ts";
+import { companyExportRow, expandClayTable, EXPORT_COLUMNS, mapClayRows, splitClayAddress, splitPersonName, toCsv, toWritebackRecord, type RoleSlot } from "../scripts/clay-attio-mapping.ts";
 import { parseCsv } from "../scripts/georgia-sample/clay-reduce.ts";
 
 // Synthetic only: fictional example.com companies and people, no database, no network.
@@ -83,4 +83,24 @@ test("a dry run plans creates, updates, and review items without writing", async
   assert.deepEqual(report.plan.reviews.map((item) => item.reason).sort(), ["persona_unverified", "uncertain_match"]);
   assert.equal(store.reviews.size, 0);
   assert.equal(store.written.size, 0);
+});
+
+test("a Clay table row expands into the company and one row per person from the slot JSON columns", () => {
+  const people = JSON.stringify([{ name: "Pat Example, NHA, FACHE", title: "Chief Operating Officer", url: "https://www.linkedin.com/in/pat-example/", org: "Example Health" }]);
+  const rows = expandClayTable(
+    [{ attio_company_id: "c-1", company_name: "EXAMPLE HEALTH INC", domain: "", clay_domain: "example.com", clay_address: "1 Main Street, Tifton, GA 31794, US", operator_operations_vp_json: people, site_executive_director_json: "[]" }],
+    ["operator_operations_vp", "site_executive_director"],
+  );
+  assert.equal(rows.length, 2);
+  assert.equal(rows[0]!.clay_locality, "Tifton");
+  assert.equal(rows[0]!.clay_region, "GA");
+  assert.equal(rows[0]!.clay_postcode, "31794");
+  assert.equal(rows[0]!.clay_line_1, "1 Main Street");
+  assert.deepEqual(
+    { slot: rows[1]!.slot, first: rows[1]!.first_name, last: rows[1]!.last_name, title: rows[1]!.job_title, domain: rows[1]!.domain },
+    { slot: "operator_operations_vp", first: "Pat", last: "Example", title: "Chief Operating Officer", domain: "example.com" },
+  );
+  assert.deepEqual(splitClayAddress("Tifton, GA 31794, US"), { clay_line_1: "", clay_locality: "Tifton", clay_region: "GA", clay_postcode: "31794", clay_country_code: "US" });
+  assert.deepEqual(splitClayAddress("somewhere"), {});
+  assert.deepEqual(splitPersonName("Jessica Williams CPAR, ACPAR"), { firstName: "Jessica", lastName: "Williams" });
 });

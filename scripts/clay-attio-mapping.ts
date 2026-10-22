@@ -99,6 +99,80 @@ function proposedLocation(row: Row): Location | undefined {
   };
 }
 
+// Clay's Enrich company gives one address string, such as "901 East 18th Street, Tifton, GA
+// 31794, US". Splits it into the clay_ location columns; a shape it cannot read is left out.
+export function splitClayAddress(address: string): Partial<Row> {
+  const parts = address.split(",").map((part) => part.trim()).filter(Boolean);
+  if (parts.length < 3) return {};
+  const country = parts.at(-1)!;
+  const regionPostcode = /^([A-Z]{2})\s+(\d{5})(?:-\d{4})?$/.exec(parts.at(-2)!);
+  if (!regionPostcode) return {};
+  return {
+    clay_line_1: parts.length > 3 ? parts.slice(0, -3).join(", ") : "",
+    clay_locality: parts.at(-3)!,
+    clay_region: regionPostcode[1],
+    clay_postcode: regionPostcode[2],
+    clay_country_code: country.length === 2 ? country : "",
+  };
+}
+
+// Clay puts credentials after the name ("Mark Kimball, NHA, FACHE"; "Jessica Williams CPAR,
+// ACPAR") and its own first and last name fields pick them up, so names come from the full
+// name before the first comma, without trailing all-capital credential words.
+export function splitPersonName(fullName: string): { firstName: string; lastName: string } {
+  const words = (fullName.split(",")[0] ?? "").trim().split(/\s+/).filter(Boolean);
+  while (words.length > 2 && /^[A-Z]{2,}$/.test(words.at(-1)!)) words.pop();
+  if (words.length < 2) return { firstName: words[0] ?? "", lastName: "" };
+  return { firstName: words[0]!, lastName: words.at(-1)! };
+}
+
+interface ClayPerson {
+  name?: string;
+  title?: string;
+  url?: string;
+  org?: string;
+}
+
+// The Clay table holds one row per company. Each role slot's search column is serialized by a
+// formula column named `<slot>_json` (a JSON array of name, title, url, org), because Clay exports
+// list cells only as "Returned N People". Expands each company row into the company row plus one
+// row per person, in the shape mapClayRows reads.
+export function expandClayTable(rows: Row[], slotIds: string[]): Row[] {
+  const out: Row[] = [];
+  for (const row of rows) {
+    const company: Row = { ...row };
+    const address = cell(row, "clay_address");
+    if (address && !cell(row, "clay_locality")) Object.assign(company, splitClayAddress(address));
+    out.push(company);
+    for (const slot of slotIds) {
+      const raw = cell(row, `${slot}_json`);
+      if (!raw) continue;
+      let people: ClayPerson[];
+      try {
+        people = JSON.parse(raw) as ClayPerson[];
+      } catch {
+        continue;
+      }
+      for (const person of Array.isArray(people) ? people : []) {
+        const { firstName, lastName } = splitPersonName(person.name ?? "");
+        out.push({
+          attio_company_id: cell(row, "attio_company_id"),
+          company_name: cell(row, "company_name"),
+          domain: cell(row, "domain") || cell(row, "clay_domain"),
+          slot,
+          first_name: firstName,
+          last_name: lastName,
+          job_title: person.title ?? "",
+          linkedin_url: person.url ?? "",
+          person_company_name: person.org ?? "",
+          person_company_domain: "",
+        });
+      }
+    }
+  }
+  return out;
+}
+
 const personKey = (row: Row) =>
   (cell(row, "linkedin_url") || cell(row, "work_email") || `${cell(row, "first_name")} ${cell(row, "last_name")}`).toLowerCase().replace(/\s+/g, " ");
 
