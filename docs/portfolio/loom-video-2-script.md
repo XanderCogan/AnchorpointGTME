@@ -1,6 +1,6 @@
 # Loom Video 2: One Lead End to End
 
-Status: recording script, revised 2026-10-22 from the user's first take. Facts come from `STATE.md`, `docs/research/georgia-senior-living-sample-plan.md`, `docs/research/cms-fire-citations-georgia.md`, and `docs/portfolio/diagrams.md`. Trace operator: PruittHealth (band A, 63 Georgia facilities, 41 in footprint) or Tift Regional (the first proven row). Pick one and stay on it. Attio and Lemlist get one sentence each; the two things to show off are the dashboard and the drafted email.
+Status: recording script, revised 2026-10-22 from the user's first take. The matching slide deck is the "Anchorpoint Video 2" artifact, one slide per stop below. Facts come from `STATE.md`, `docs/research/georgia-senior-living-sample-plan.md`, `docs/research/cms-fire-citations-georgia.md`, and `docs/portfolio/diagrams.md`. Trace operator: PruittHealth (band A, 63 Georgia facilities, 41 in footprint) or Tift Regional (the first proven row). Pick one and stay on it. Attio and Lemlist get one sentence each; the two things to show off are the dashboard and the drafted email.
 
 ## Corrections to the first take
 
@@ -8,11 +8,11 @@ Keep these out of the recording.
 
 - Nothing is scraped. The source is the CMS Provider Data Catalog API, four public datasets, pulled by a cron on Render on the 3rd of each month. Say "pulled", not "scraped".
 - There is one source list, not two. The "second list" is the CMS ownership dataset, which is how facilities get matched to operators.
-- The enforcement story is softer than the first take. Facilities commit to fixing Life Safety citations within about six weeks. The 3-month payment denial and 6-month termination thresholds are in federal rules but are effectively never reached for these tags in Georgia (9 of 1,224 corrections were due more than 90 days out, none more than 180). Do not say "fines are horrific" or "they stop getting Medicaid at 3 months" as fact. The fire-watch claim is not in the research; drop it. The real pressure point is that 45 percent of Georgia facilities were cited for the same fixable tag at two or more inspections, so the problem keeps coming back on the public record.
+- The enforcement story is softer than the first take. Facilities commit to fixing Life Safety citations within about six weeks. The 3-month payment denial and 6-month termination thresholds are in federal rules but are effectively never reached for these tags in Georgia (9 of 1,224 corrections were due more than 90 days out, none more than 180). Do not say "fines are horrific" or "they stop getting Medicaid at 3 months" as fact. Fire watch is real: the Life Safety Code requires a fire watch or evacuation when an alarm or sprinkler system is out of service for more than a set number of hours. It is not sourced in the research doc, so say it as general knowledge without quoting hours. The real pressure point is that 45 percent of Georgia facilities were cited for the same fixable tag at two or more inspections, so the problem keeps coming back on the public record.
 - Use a real tag. K0353, sprinkler inspection, testing, and maintenance, is the most cited tag in Georgia at 454 citations. Not an invented code.
 - The flow is repo to Attio, then a CSV round trip to Clay and back to Attio. Attio does not push to Clay automatically; that automation was declined on cost.
 - Postgres is a read-only mirror of Attio on Render, not a backup. The CRM health audit runs on that mirror and the Vercel dashboard shows the audit's findings. It is a CRM data-quality audit, not pipeline health, and today it shows a frozen practice fixture of 22 findings, not Georgia data.
-- Lemlist does not draft the email. A repo script has Claude draft it from the operator's cited records, into a file a human must review. The draft never reaches Lemlist until a human marks it reviewed and enrollment runs, which has not happened. Show the draft file, not Lemlist.
+- Lemlist does not draft the email. A repo script has Claude draft it from the operator's cited records, into a file a human must review. Enrollment then carries the reviewed draft into Lemlist as lead variables on a campaign that is never launched. As of this revision that enrollment has not been run, so the draft is in a file and not yet queued in Lemlist; queue it for the labelled practice contact before recording if you want to show it inside Lemlist.
 - The dialer is TitanX, not "Tightnext". It is not integrated and no dialer was bought.
 - Four Anchorpoint branches, placed at city centers, labelled as an assumption.
 
@@ -32,14 +32,14 @@ Four datasets, pulled monthly by a Render cron: provider information, ownership,
 
 Show `scripts/georgia-sample/resolve-operators.ts` and `data/georgia-sample/review-decisions.json`.
 
-Say: a facility is not a customer; the operator that runs it is. CMS gives three ways to find the operator, and the resolver tries them in order.
+The plain version, using the trace operator. PruittHealth runs 63 buildings in Georgia, and each building is its own row in the CMS file. We need one PruittHealth company in the CRM, not 63. So the script asks three questions about every building, in order, and stops at the first one that answers.
 
-- First, the CMS chain id on the provider record. 28 chains cover 248 of the 356 facilities.
-- Second, the ownership dataset: an organization listed with operational or managerial control, corroborated by an ownership interest.
-- Third, the legal business name, which groups the standalones.
-- Anything ambiguous goes to a review file instead of being merged. I approved 34 facility merges and 2 chain decisions by hand, each with its evidence: operator websites, the NPI registry, news, search results. That is how three PruittHealth-branded buildings with no legal name on file joined PruittHealth.
+- Does CMS already say which chain it belongs to? Every PruittHealth building carries the same chain number. That alone groups 248 of the 356 buildings into 28 companies.
+- If not, does the ownership file name the company in charge? CMS lists who has operational or managerial control of each building. When that is an organization that also holds a stake, the building joins that organization.
+- If neither, the building stands alone under its legal business name as a one-building company.
+- If the building is still unclear, say it has no legal name on file but is called "PruittHealth - Lithonia", it does not get merged by the script. It goes to a review file, and I approve or reject the merge by hand with evidence: the operator's website, the federal NPI registry, news, search results. I made 36 of those decisions.
 
-Result: 105 operators, 103 resolved, 2 provisional, 5 review cases still open. One rule worth saying out loud: individual owners' names never enter the output, and the resolver fails the run if one does. Five chains are registered under a person's name, so they are grouped by id and withheld until a publishable organization name is found.
+Result: 356 buildings become 105 companies, 103 of them resolved and 2 still provisional, with 5 review cases open. One rule worth saying out loud: individual owners' names never enter the output, and the script fails the run if one does. Five chains are registered under a person's name, so they are grouped by id and withheld until a publishable organization name is found.
 
 ## Stop 3: serviceability and scoring (about 75 seconds)
 
