@@ -40,7 +40,7 @@ The credit math was planned before spending anything. Clay's verified facts were
 
 The first run, on 2026-10-22, spent 28.5 free credits and no money. Chain sites turned out not to be reachable by people search, since a city filter placed the same metro Atlanta person at every PruittHealth site, so multi-site operators are covered through operator-level roles. Of 25 operators, 19 had a domain and were searched; a facilities leader was found at 11 (4 persona-verified) and an operations leader at 9. Of 28 single sites, 11 were searched and an administrator was verified at 5. The channel check was not done. The coverage file keeps counts and flags only.
 
-A deeper pass was proven end to end on one row. Tift Regional went through Clay's domain waterfall, company enrichment, four role slots, and one mobile number for about 14 credits, and the import wrote its domain, address, and four linked People to Attio with two review items. The remaining tables were not run, because about 55 free credits remained and the user did not approve more spend.
+A deeper pass was proven end to end on one row. Tift Regional went through Clay's domain waterfall, company enrichment, four role slots, and one mobile number for about 14 credits, and the import wrote its domain, address, and four linked People to Attio with two review items. PruittHealth, the top band A operator, ran the same way for about 13 credits: domain, address, five linked People, and five review items. The remaining tables were not run, because about 42 free credits remained and the user did not approve more spend.
 
 The personal data boundary is that the repository is public, so names, titles, profile links, emails, phones, and role start dates never enter git. They live in Clay and Attio, are shown only to authenticated users, and are deleted when the project ends. The reducer that writes the coverage file refuses to write anything shaped like an email, link, or phone number.
 
@@ -88,7 +88,7 @@ Decision 0014 bought no dialer and ended Milestone 7 at an Attio List, because n
 
 No real client data. There is no closed-won history, so the ICP is hypotheses from public evidence rather than something discovered, and the CRM history analysis is a playbook and a fixture-tested pipeline, not findings. Current-customer suppression has no real customers to act on.
 
-About $20 of Clay. The coverage pass ran on 28.5 free credits and kept counts only. The deeper pass that writes domains, addresses, people, and a mobile number to Attio is proven on one row, Tift Regional, not on the other 104 operators. The channel check never ran, and 23 rows without a domain were never searched. The Clay round trip is a hand-carried CSV, not a native integration.
+About $20 of Clay. The coverage pass ran on 28.5 free credits and kept counts only. The deeper pass that writes domains, addresses, people, and a mobile number to Attio is proven on two rows, Tift Regional and PruittHealth, not on the other 103 operators. The channel check never ran, and 23 rows without a domain were never searched. The Clay round trip is a hand-carried CSV, not a native integration.
 
 No dialer. Milestone 7 has no code yet. Its disposition mapping can only be proven on fixtures, and the handoff is an Attio List that nothing reads.
 

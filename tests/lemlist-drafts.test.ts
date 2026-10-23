@@ -121,10 +121,12 @@ test("enrollment refuses a draft without review fields and carries a reviewed on
   const bandC = draftFile();
   bandC.factSheet = { ...sheet, operator: { ...sheet.operator, band: "C" } };
   const unreviewedC = attachDrafts(plan, (key) => (key === "practice-008" ? bandC : null));
-  assert.equal(unreviewedC[0]?.action, "enroll");
-  if (unreviewedC[0]?.action === "enroll") {
-    assert.equal(unreviewedC[0].lead.variables.subject, goodDraft.subject);
-    assert.equal("draftReviewedBy" in unreviewedC[0].lead.variables, false);
+  const leadC = unreviewedC[0];
+  assert.equal(leadC?.action, "enroll");
+  if (leadC?.action === "enroll") {
+    const variables = leadC.lead.variables ?? {};
+    assert.equal(variables.subject, goodDraft.subject);
+    assert.equal("draftReviewedBy" in variables, false);
   }
 
   // A contact with no draft file enrolls exactly as planned.

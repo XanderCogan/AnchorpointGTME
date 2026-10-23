@@ -74,6 +74,7 @@ Milestone reports are evidence records. Update `STATE.md`, not an old report, wh
 - Approved choice to buy no dialer, ending the call handoff at an Attio List: [`decisions/0014-no-paid-dialer.md`](decisions/0014-no-paid-dialer.md)
 - Approved campaign-level approval with automatic enrollment from an Attio List: [`decisions/0015-campaign-level-approval.md`](decisions/0015-campaign-level-approval.md)
 - Approved redefinition of Milestone 5 as explainable scoring plus the approval gate: [`decisions/0016-milestone-5-collapsed-to-scoring-and-approval-gate.md`](decisions/0016-milestone-5-collapsed-to-scoring-and-approval-gate.md)
+- Approved limit of per-email draft review to band A operators: [`decisions/0017-draft-review-only-for-band-a.md`](decisions/0017-draft-review-only-for-band-a.md)
 
 Add a decision record when the user resolves a material ambiguity that changes product behavior, tests, contracts, or milestone scope. Do not create decision records for routine implementation details.
 

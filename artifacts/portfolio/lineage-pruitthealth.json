@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T23:04:19.072Z",
+  "generatedAt": "2026-10-23T17:21:29.449Z",
   "operator": {
     "operatorId": "ga-op-chain-434",
     "name": "PRUITTHEALTH",
@@ -44525,9 +44525,9 @@
         "gate": null,
         "identityStatus": "resolved",
         "band": "A",
-        "score": 49,
+        "score": 65,
         "footprintFacilities": 41,
-        "explanation": "Band A because Anchorpoint reaches 31 of its 41 footprint sites within 90 minutes, it runs 41 nursing homes within 120 minutes of a capable branch, 64% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, ownership or management changed recently, and it appears to be hiring maintenance or facilities staff.",
+        "explanation": "Band A because Anchorpoint reaches 31 of its 41 footprint sites within 90 minutes, it runs 41 nursing homes within 120 minutes of a capable branch, 64% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, ownership or management changed recently, it appears to be hiring maintenance or facilities staff, and a verified leader started there recently.",
         "components": {
           "ownershipChange": {
             "points": 6,
@@ -44551,10 +44551,10 @@
             "proposal": false
           },
           "roleChange": {
-            "points": 0,
+            "points": 14,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "verified leader started recently (role-change-proposal-1)",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -44614,10 +44614,10 @@
             "proposal": false
           },
           "personaAndChannel": {
-            "points": 0,
+            "points": 2,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "a persona and current employment verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },

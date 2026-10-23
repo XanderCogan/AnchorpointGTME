@@ -18,7 +18,7 @@ Keep these out of the recording.
 
 ## Opening on the diagram (about 45 seconds)
 
-Say: this is one Georgia nursing-home operator going from a federal dataset to a scored CRM record with named contacts and a drafted email, stopping one step before anyone is contacted. Point at the four boxes: the repo owns sourcing, scoring, and connectors; Attio is the system of record; Clay finds people; Lemlist is built but never launched. Mention that this ran on Railway until this morning's security incident and now runs on Render.
+Say: this is one Georgia nursing-home operator going from a federal dataset to a scored CRM record with named contacts and a drafted email, stopping one step before anyone is contacted. Point at the four boxes: the repo owns sourcing, scoring, and connectors; Attio is the system of record; Clay finds people; Lemlist is built but never launched. Mention that this ran on Railway until the Railway security incident on 2026-10-21 and now runs on Render.
 
 ## Stop 1: the federal data (about 75 seconds)
 

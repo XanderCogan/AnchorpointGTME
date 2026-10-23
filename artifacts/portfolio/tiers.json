@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-22T23:04:19.072Z",
+  "generatedAt": "2026-10-23T17:21:29.449Z",
   "source": "data/georgia-sample/tiers.json",
   "data": {
     "method": {
@@ -9,6 +9,9 @@
       "status": "approved by the user on 2026-10-20 (tiering proposal 2)",
       "asOf": "2026-10-19",
       "parameters": {
+        "roleChange": {
+          "max": 16
+        },
         "ownershipChange": {
           "max": 10,
           "decayMonths": 24
@@ -36,6 +39,8 @@
           "max": 5
         },
         "citationShrinkFacilities": 2,
+        "personaVerified": 2,
+        "channelVerified": 2,
         "domain": {
           "nameMatch": 2,
           "wordMatch": 1
@@ -70,7 +75,7 @@
       },
       "notes": [
         "Bands order work and never grant eligibility; a manager may select any eligible operator.",
-        "People-based inputs score zero as unknown until Stage 6, so today's maximum is 65 of 100.",
+        "People-based inputs (role change, persona, channel) come from people-coverage.json; an operator the Stage 6 pass has not covered scores them zero as unknown. Channel verification has not run, so no operator has earned the two channel points yet.",
         "Hard gate: at least one facility serviceable or conditional for sprinkler or alarm work.",
         "Value (decision 0009) sits beside the score and never changes a score or band; its prices are assumptions, not market evidence.",
         "Operators are ordered by priority band, then five-year value within a band."
@@ -84,9 +89,9 @@
         "gate": null,
         "identityStatus": "resolved",
         "band": "A",
-        "score": 49,
+        "score": 65,
         "footprintFacilities": 41,
-        "explanation": "Band A because Anchorpoint reaches 31 of its 41 footprint sites within 90 minutes, it runs 41 nursing homes within 120 minutes of a capable branch, 64% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, ownership or management changed recently, and it appears to be hiring maintenance or facilities staff.",
+        "explanation": "Band A because Anchorpoint reaches 31 of its 41 footprint sites within 90 minutes, it runs 41 nursing homes within 120 minutes of a capable branch, 64% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, ownership or management changed recently, it appears to be hiring maintenance or facilities staff, and a verified leader started there recently.",
         "components": {
           "ownershipChange": {
             "points": 6,
@@ -110,10 +115,10 @@
             "proposal": false
           },
           "roleChange": {
-            "points": 0,
+            "points": 14,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "verified leader started recently (role-change-proposal-1)",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -173,10 +178,10 @@
             "proposal": false
           },
           "personaAndChannel": {
-            "points": 0,
+            "points": 2,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "a persona and current employment verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -873,7 +878,7 @@
         "gate": null,
         "identityStatus": "resolved",
         "band": "A",
-        "score": 43.5,
+        "score": 45.5,
         "footprintFacilities": 37,
         "explanation": "Band A because Anchorpoint reaches 27 of its 37 footprint sites within 90 minutes, it runs 37 nursing homes within 120 minutes of a capable branch, 65% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
         "components": {
@@ -901,8 +906,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -962,10 +967,10 @@
             "proposal": false
           },
           "personaAndChannel": {
-            "points": 0,
+            "points": 2,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "a persona and current employment verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -1512,9 +1517,9 @@
         "gate": null,
         "identityStatus": "resolved",
         "band": "A",
-        "score": 45.3,
+        "score": 57.3,
         "footprintFacilities": 22,
-        "explanation": "Band A because Anchorpoint reaches all 22 of its footprint sites within 90 minutes, it runs 22 nursing homes within 120 minutes of a capable branch, 72% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
+        "explanation": "Band A because Anchorpoint reaches all 22 of its footprint sites within 90 minutes, it runs 22 nursing homes within 120 minutes of a capable branch, 72% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, ownership or management changed recently, and a verified leader started there recently.",
         "components": {
           "ownershipChange": {
             "points": 5.2,
@@ -1538,10 +1543,10 @@
             "proposal": false
           },
           "roleChange": {
-            "points": 0,
+            "points": 10,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "verified leader started recently (role-change-proposal-1)",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -1601,10 +1606,10 @@
             "proposal": false
           },
           "personaAndChannel": {
-            "points": 0,
+            "points": 2,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "a persona and current employment verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -1871,9 +1876,9 @@
         "gate": null,
         "identityStatus": "resolved",
         "band": "A",
-        "score": 47.5,
+        "score": 59.5,
         "footprintFacilities": 18,
-        "explanation": "Band A because Anchorpoint reaches 15 of its 18 footprint sites within 90 minutes, it runs 18 nursing homes within 120 minutes of a capable branch, 82% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and ownership or management changed recently.",
+        "explanation": "Band A because Anchorpoint reaches 15 of its 18 footprint sites within 90 minutes, it runs 18 nursing homes within 120 minutes of a capable branch, 82% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, ownership or management changed recently, and a verified leader started there recently.",
         "components": {
           "ownershipChange": {
             "points": 6.2,
@@ -1897,10 +1902,10 @@
             "proposal": false
           },
           "roleChange": {
-            "points": 0,
+            "points": 10,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "verified leader started recently (role-change-proposal-1)",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -1960,10 +1965,10 @@
             "proposal": false
           },
           "personaAndChannel": {
-            "points": 0,
+            "points": 2,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "a persona and current employment verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -2318,8 +2323,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -2381,8 +2386,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -2553,6 +2558,175 @@
         }
       },
       {
+        "operatorId": "ga-op-chain-311",
+        "name": "LIFE CARE CENTERS OF AMERICA",
+        "eligible": true,
+        "gate": null,
+        "identityStatus": "resolved",
+        "band": "A",
+        "score": 45,
+        "footprintFacilities": 2,
+        "explanation": "Band A because Anchorpoint reaches all 2 of its footprint sites within 90 minutes, it runs 2 nursing homes within 120 minutes of a capable branch, 84% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, it appears to be hiring maintenance or facilities staff, and a verified leader started there recently.",
+        "components": {
+          "ownershipChange": {
+            "points": 0,
+            "max": 10,
+            "input": "latest ownership or management change 381.5 months before 2026-10-19",
+            "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+            "proposal": false
+          },
+          "hiring": {
+            "points": 4,
+            "max": 8,
+            "input": "1 posting candidate(s), not confirmed open",
+            "source": "web-signals.json jobs (Serper, 2026-10-20)",
+            "proposal": false
+          },
+          "citationTrigger": {
+            "points": 5,
+            "max": 6,
+            "input": "latest service-line fire citation surveyed 2026-06-18",
+            "source": "ifjz-ge4w.survey_date via signals.json",
+            "proposal": false
+          },
+          "roleChange": {
+            "points": 10,
+            "max": 16,
+            "input": "verified facilities leader started recently (role-change-proposal-1)",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
+            "proposal": false
+          },
+          "engagement": {
+            "points": 0,
+            "max": 0,
+            "input": "slot used by the approved citation trigger",
+            "source": "none",
+            "proposal": false
+          },
+          "footprint": {
+            "points": 3.3,
+            "max": 15,
+            "input": "2 Georgia facilities inside the footprint",
+            "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+            "proposal": false
+          },
+          "regulatedEnvironment": {
+            "points": 5,
+            "max": 5,
+            "input": "CMS-certified nursing homes under federal life-safety surveys",
+            "source": "4pq5-n9py",
+            "proposal": false
+          },
+          "citationBreadth": {
+            "points": 8.4,
+            "max": 10,
+            "input": "2 of 2 footprint facilities cited for a service line since 2025; 84% after pulling toward the 68% statewide rate",
+            "source": "ifjz-ge4w via signals.json",
+            "proposal": false
+          },
+          "citationRepetition": {
+            "points": 2.3,
+            "max": 5,
+            "input": "1 of 2 footprint facilities with sprinkler or alarm cited on more than one survey; 45% after pulling toward the 41% statewide rate",
+            "source": "ifjz-ge4w via signals.json",
+            "proposal": false
+          },
+          "domain": {
+            "points": 1,
+            "max": 2,
+            "input": "lifecarecareers.com (word_match)",
+            "source": "web-signals.json domains (Serper, 2026-10-20)",
+            "proposal": false
+          },
+          "geography": {
+            "points": 2,
+            "max": 2,
+            "input": "2 facilities within 90 minutes",
+            "source": "serviceability.json (OSRM, 2026-10-20)",
+            "proposal": false
+          },
+          "locationProvenance": {
+            "points": 2,
+            "max": 2,
+            "input": "facility list resolved from CMS",
+            "source": "operators.json",
+            "proposal": false
+          },
+          "personaAndChannel": {
+            "points": 2,
+            "max": 4,
+            "input": "a persona and current employment verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
+            "proposal": false
+          }
+        },
+        "value": {
+          "assumptionsVersion": "georgia-value-1",
+          "band": "Small",
+          "annualUsd": 23964,
+          "fiveYearUsd": 95856,
+          "landingUsd": 52368,
+          "landingSite": "115347",
+          "input": "2 footprint sites with 288 certified beds",
+          "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+          "sources": [
+            "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "serviceability.json (OSRM, 2026-10-20)",
+            "docs/decisions/0009-account-value-model.md"
+          ],
+          "nearTheJaws": {
+            "applies": false,
+            "repEligible": true,
+            "input": "rule applies only to Small single-site operators in band C or Watch",
+            "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
+            "assumptionsVersion": "georgia-value-1"
+          },
+          "effort": {
+            "scored": false,
+            "centralProcurementChain": {
+              "value": true,
+              "source": "4pq5-n9py.chain_id via operators.json"
+            },
+            "nationalIncumbentVendor": {
+              "value": "unknown",
+              "source": "not yet collected"
+            }
+          },
+          "sites": [
+            {
+              "ccn": "115347",
+              "certifiedBeds": 163,
+              "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+              "anchorState": "serviceable",
+              "distanceFactor": 1,
+              "anchorDriveMinutes": 18,
+              "annualUsd": 13092,
+              "assumptionsVersion": "georgia-value-1"
+            },
+            {
+              "ccn": "115570",
+              "certifiedBeds": 83,
+              "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+              "anchorState": "not_serviceable",
+              "distanceFactor": 0,
+              "anchorDriveMinutes": null,
+              "annualUsd": 0,
+              "assumptionsVersion": "georgia-value-1"
+            },
+            {
+              "ccn": "115659",
+              "certifiedBeds": 125,
+              "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+              "anchorState": "serviceable",
+              "distanceFactor": 1,
+              "anchorDriveMinutes": 22,
+              "annualUsd": 10872,
+              "assumptionsVersion": "georgia-value-1"
+            }
+          ]
+        }
+      },
+      {
         "operatorId": "ga-op-chain-559",
         "name": "WELLINGTON HEALTH CARE SERVICES",
         "eligible": true,
@@ -2587,8 +2761,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -2650,8 +2824,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -2826,8 +3000,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -2889,8 +3063,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -3025,8 +3199,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -3088,8 +3262,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -3234,8 +3408,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -3297,8 +3471,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -3423,8 +3597,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -3486,8 +3660,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -3584,7 +3758,7 @@
         "gate": null,
         "identityStatus": "resolved",
         "band": "B",
-        "score": 37.1,
+        "score": 39.1,
         "footprintFacilities": 5,
         "explanation": "Band B because Anchorpoint reaches 3 of its 5 footprint sites within 90 minutes, it runs 5 nursing homes within 120 minutes of a capable branch, 62% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and it appears to be hiring maintenance or facilities staff.",
         "components": {
@@ -3612,8 +3786,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -3673,10 +3847,10 @@
             "proposal": false
           },
           "personaAndChannel": {
-            "points": 0,
+            "points": 2,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "a persona and current employment verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -3851,8 +4025,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -3914,8 +4088,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -4006,6 +4180,175 @@
         }
       },
       {
+        "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
+        "name": "A.G. Rhodes Home, Inc.",
+        "eligible": true,
+        "gate": null,
+        "identityStatus": "resolved",
+        "band": "B",
+        "score": 30.8,
+        "footprintFacilities": 3,
+        "explanation": "Band B because Anchorpoint reaches all 3 of its footprint sites within 90 minutes, it runs 3 nursing homes within 120 minutes of a capable branch, 67% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+        "components": {
+          "ownershipChange": {
+            "points": 0,
+            "max": 10,
+            "input": "latest ownership or management change 39.6 months before 2026-10-19",
+            "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+            "proposal": false
+          },
+          "hiring": {
+            "points": 0,
+            "max": 8,
+            "input": "no maintenance or facilities posting found",
+            "source": "web-signals.json jobs (Serper, 2026-10-20)",
+            "proposal": false
+          },
+          "citationTrigger": {
+            "points": 3.4,
+            "max": 6,
+            "input": "latest service-line fire citation surveyed 2025-12-11",
+            "source": "ifjz-ge4w.survey_date via signals.json",
+            "proposal": false
+          },
+          "roleChange": {
+            "points": 0,
+            "max": 16,
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
+            "proposal": false
+          },
+          "engagement": {
+            "points": 0,
+            "max": 0,
+            "input": "slot used by the approved citation trigger",
+            "source": "none",
+            "proposal": false
+          },
+          "footprint": {
+            "points": 5.9,
+            "max": 15,
+            "input": "3 Georgia facilities inside the footprint",
+            "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+            "proposal": false
+          },
+          "regulatedEnvironment": {
+            "points": 5,
+            "max": 5,
+            "input": "CMS-certified nursing homes under federal life-safety surveys",
+            "source": "4pq5-n9py",
+            "proposal": false
+          },
+          "citationBreadth": {
+            "points": 6.7,
+            "max": 10,
+            "input": "2 of 3 footprint facilities cited for a service line since 2025; 67% after pulling toward the 68% statewide rate",
+            "source": "ifjz-ge4w via signals.json",
+            "proposal": false
+          },
+          "citationRepetition": {
+            "points": 1.8,
+            "max": 5,
+            "input": "1 of 3 footprint facilities with sprinkler or alarm cited on more than one survey; 36% after pulling toward the 41% statewide rate",
+            "source": "ifjz-ge4w via signals.json",
+            "proposal": false
+          },
+          "domain": {
+            "points": 2,
+            "max": 2,
+            "input": "agrhodes.org (name_match)",
+            "source": "web-signals.json domains (Serper, 2026-10-20)",
+            "proposal": false
+          },
+          "geography": {
+            "points": 2,
+            "max": 2,
+            "input": "3 facilities within 90 minutes",
+            "source": "serviceability.json (OSRM, 2026-10-20)",
+            "proposal": false
+          },
+          "locationProvenance": {
+            "points": 2,
+            "max": 2,
+            "input": "facility list resolved from CMS",
+            "source": "operators.json",
+            "proposal": false
+          },
+          "personaAndChannel": {
+            "points": 2,
+            "max": 4,
+            "input": "a persona and current employment verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
+            "proposal": false
+          }
+        },
+        "value": {
+          "assumptionsVersion": "georgia-value-1",
+          "band": "Mid",
+          "annualUsd": 35179,
+          "fiveYearUsd": 140716,
+          "landingUsd": 49408,
+          "landingSite": "115002",
+          "input": "3 footprint sites with 418 certified beds",
+          "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+          "sources": [
+            "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "serviceability.json (OSRM, 2026-10-20)",
+            "docs/decisions/0009-account-value-model.md"
+          ],
+          "nearTheJaws": {
+            "applies": false,
+            "repEligible": true,
+            "input": "rule applies only to Small single-site operators in band C or Watch",
+            "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
+            "assumptionsVersion": "georgia-value-1"
+          },
+          "effort": {
+            "scored": false,
+            "centralProcurementChain": {
+              "value": false,
+              "source": "4pq5-n9py.chain_id via operators.json"
+            },
+            "nationalIncumbentVendor": {
+              "value": "unknown",
+              "source": "not yet collected"
+            }
+          },
+          "sites": [
+            {
+              "ccn": "115002",
+              "certifiedBeds": 150,
+              "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+              "anchorState": "serviceable",
+              "distanceFactor": 1,
+              "anchorDriveMinutes": 19,
+              "annualUsd": 12352,
+              "assumptionsVersion": "georgia-value-1"
+            },
+            {
+              "ccn": "115275",
+              "certifiedBeds": 138,
+              "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+              "anchorState": "serviceable",
+              "distanceFactor": 1,
+              "anchorDriveMinutes": 29,
+              "annualUsd": 11652,
+              "assumptionsVersion": "georgia-value-1"
+            },
+            {
+              "ccn": "115521",
+              "certifiedBeds": 130,
+              "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+              "anchorState": "serviceable",
+              "distanceFactor": 1,
+              "anchorDriveMinutes": 30,
+              "annualUsd": 11175,
+              "assumptionsVersion": "georgia-value-1"
+            }
+          ]
+        }
+      },
+      {
         "operatorId": "ga-op-chain-686",
         "name": "ELEVATION HEALTHCARE",
         "eligible": true,
@@ -4040,8 +4383,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -4103,8 +4446,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -4219,8 +4562,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -4282,8 +4625,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -4418,8 +4761,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -4481,8 +4824,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -4563,175 +4906,6 @@
         }
       },
       {
-        "operatorId": "ga-op-chain-311",
-        "name": "LIFE CARE CENTERS OF AMERICA",
-        "eligible": true,
-        "gate": null,
-        "identityStatus": "resolved",
-        "band": "B",
-        "score": 33,
-        "footprintFacilities": 2,
-        "explanation": "Band B because Anchorpoint reaches all 2 of its footprint sites within 90 minutes, it runs 2 nursing homes within 120 minutes of a capable branch, 84% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and it appears to be hiring maintenance or facilities staff.",
-        "components": {
-          "ownershipChange": {
-            "points": 0,
-            "max": 10,
-            "input": "latest ownership or management change 381.5 months before 2026-10-19",
-            "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-            "proposal": false
-          },
-          "hiring": {
-            "points": 4,
-            "max": 8,
-            "input": "1 posting candidate(s), not confirmed open",
-            "source": "web-signals.json jobs (Serper, 2026-10-20)",
-            "proposal": false
-          },
-          "citationTrigger": {
-            "points": 5,
-            "max": 6,
-            "input": "latest service-line fire citation surveyed 2026-06-18",
-            "source": "ifjz-ge4w.survey_date via signals.json",
-            "proposal": false
-          },
-          "roleChange": {
-            "points": 0,
-            "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
-            "proposal": false
-          },
-          "engagement": {
-            "points": 0,
-            "max": 0,
-            "input": "slot used by the approved citation trigger",
-            "source": "none",
-            "proposal": false
-          },
-          "footprint": {
-            "points": 3.3,
-            "max": 15,
-            "input": "2 Georgia facilities inside the footprint",
-            "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-            "proposal": false
-          },
-          "regulatedEnvironment": {
-            "points": 5,
-            "max": 5,
-            "input": "CMS-certified nursing homes under federal life-safety surveys",
-            "source": "4pq5-n9py",
-            "proposal": false
-          },
-          "citationBreadth": {
-            "points": 8.4,
-            "max": 10,
-            "input": "2 of 2 footprint facilities cited for a service line since 2025; 84% after pulling toward the 68% statewide rate",
-            "source": "ifjz-ge4w via signals.json",
-            "proposal": false
-          },
-          "citationRepetition": {
-            "points": 2.3,
-            "max": 5,
-            "input": "1 of 2 footprint facilities with sprinkler or alarm cited on more than one survey; 45% after pulling toward the 41% statewide rate",
-            "source": "ifjz-ge4w via signals.json",
-            "proposal": false
-          },
-          "domain": {
-            "points": 1,
-            "max": 2,
-            "input": "lifecarecareers.com (word_match)",
-            "source": "web-signals.json domains (Serper, 2026-10-20)",
-            "proposal": false
-          },
-          "geography": {
-            "points": 2,
-            "max": 2,
-            "input": "2 facilities within 90 minutes",
-            "source": "serviceability.json (OSRM, 2026-10-20)",
-            "proposal": false
-          },
-          "locationProvenance": {
-            "points": 2,
-            "max": 2,
-            "input": "facility list resolved from CMS",
-            "source": "operators.json",
-            "proposal": false
-          },
-          "personaAndChannel": {
-            "points": 0,
-            "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
-            "proposal": false
-          }
-        },
-        "value": {
-          "assumptionsVersion": "georgia-value-1",
-          "band": "Small",
-          "annualUsd": 23964,
-          "fiveYearUsd": 95856,
-          "landingUsd": 52368,
-          "landingSite": "115347",
-          "input": "2 footprint sites with 288 certified beds",
-          "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "sources": [
-            "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "serviceability.json (OSRM, 2026-10-20)",
-            "docs/decisions/0009-account-value-model.md"
-          ],
-          "nearTheJaws": {
-            "applies": false,
-            "repEligible": true,
-            "input": "rule applies only to Small single-site operators in band C or Watch",
-            "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-            "assumptionsVersion": "georgia-value-1"
-          },
-          "effort": {
-            "scored": false,
-            "centralProcurementChain": {
-              "value": true,
-              "source": "4pq5-n9py.chain_id via operators.json"
-            },
-            "nationalIncumbentVendor": {
-              "value": "unknown",
-              "source": "not yet collected"
-            }
-          },
-          "sites": [
-            {
-              "ccn": "115347",
-              "certifiedBeds": 163,
-              "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-              "anchorState": "serviceable",
-              "distanceFactor": 1,
-              "anchorDriveMinutes": 18,
-              "annualUsd": 13092,
-              "assumptionsVersion": "georgia-value-1"
-            },
-            {
-              "ccn": "115570",
-              "certifiedBeds": 83,
-              "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-              "anchorState": "not_serviceable",
-              "distanceFactor": 0,
-              "anchorDriveMinutes": null,
-              "annualUsd": 0,
-              "assumptionsVersion": "georgia-value-1"
-            },
-            {
-              "ccn": "115659",
-              "certifiedBeds": 125,
-              "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-              "anchorState": "serviceable",
-              "distanceFactor": 1,
-              "anchorDriveMinutes": 22,
-              "annualUsd": 10872,
-              "assumptionsVersion": "georgia-value-1"
-            }
-          ]
-        }
-      },
-      {
         "operatorId": "ga-op-lbn-crisp-regional-hospital-inc",
         "name": "CRISP REGIONAL HOSPITAL INC",
         "eligible": true,
@@ -4766,8 +4940,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -4829,8 +5003,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -4891,20 +5065,20 @@
         }
       },
       {
-        "operatorId": "ga-op-lbn-a-g-rhodes-home-inc",
-        "name": "A.G. Rhodes Home, Inc.",
+        "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
+        "name": "Pyramid Healthcare Management LLC",
         "eligible": true,
         "gate": null,
         "identityStatus": "resolved",
-        "band": "C",
-        "score": 28.8,
-        "footprintFacilities": 3,
-        "explanation": "Band C because Anchorpoint reaches all 3 of its footprint sites within 90 minutes, it runs 3 nursing homes within 120 minutes of a capable branch, 67% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
+        "band": "B",
+        "score": 30.3,
+        "footprintFacilities": 2,
+        "explanation": "Band B because its sites sit 90 to 120 minutes from a capable branch, it runs 2 nursing homes within 120 minutes of a capable branch, 84% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
         "components": {
           "ownershipChange": {
             "points": 0,
             "max": 10,
-            "input": "latest ownership or management change 39.6 months before 2026-10-19",
+            "input": "latest ownership or management change 108.5 months before 2026-10-19",
             "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
             "proposal": false
           },
@@ -4916,17 +5090,17 @@
             "proposal": false
           },
           "citationTrigger": {
-            "points": 3.4,
+            "points": 4.3,
             "max": 6,
-            "input": "latest service-line fire citation surveyed 2025-12-11",
+            "input": "latest service-line fire citation surveyed 2026-04-01",
             "source": "ifjz-ge4w.survey_date via signals.json",
             "proposal": false
           },
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -4937,9 +5111,9 @@
             "proposal": false
           },
           "footprint": {
-            "points": 5.9,
+            "points": 3.3,
             "max": 15,
-            "input": "3 Georgia facilities inside the footprint",
+            "input": "2 Georgia facilities inside the footprint",
             "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
             "proposal": false
           },
@@ -4951,30 +5125,30 @@
             "proposal": false
           },
           "citationBreadth": {
-            "points": 6.7,
+            "points": 8.4,
             "max": 10,
-            "input": "2 of 3 footprint facilities cited for a service line since 2025; 67% after pulling toward the 68% statewide rate",
+            "input": "2 of 2 footprint facilities cited for a service line since 2025; 84% after pulling toward the 68% statewide rate",
             "source": "ifjz-ge4w via signals.json",
             "proposal": false
           },
           "citationRepetition": {
-            "points": 1.8,
+            "points": 2.3,
             "max": 5,
-            "input": "1 of 3 footprint facilities with sprinkler or alarm cited on more than one survey; 36% after pulling toward the 41% statewide rate",
+            "input": "1 of 2 footprint facilities with sprinkler or alarm cited on more than one survey; 45% after pulling toward the 41% statewide rate",
             "source": "ifjz-ge4w via signals.json",
             "proposal": false
           },
           "domain": {
             "points": 2,
             "max": 2,
-            "input": "agrhodes.org (name_match)",
+            "input": "pyramid-healthcare.com (name_match)",
             "source": "web-signals.json domains (Serper, 2026-10-20)",
             "proposal": false
           },
           "geography": {
-            "points": 2,
+            "points": 1,
             "max": 2,
-            "input": "3 facilities within 90 minutes",
+            "input": "conditional only: 90 to 120 minutes, needs manager approval",
             "source": "serviceability.json (OSRM, 2026-10-20)",
             "proposal": false
           },
@@ -4986,21 +5160,21 @@
             "proposal": false
           },
           "personaAndChannel": {
-            "points": 0,
+            "points": 2,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "a persona and current employment verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
         "value": {
           "assumptionsVersion": "georgia-value-1",
-          "band": "Mid",
-          "annualUsd": 35179,
-          "fiveYearUsd": 140716,
-          "landingUsd": 49408,
-          "landingSite": "115002",
-          "input": "3 footprint sites with 418 certified beds",
+          "band": "Small",
+          "annualUsd": 18700,
+          "fiveYearUsd": 74800,
+          "landingUsd": 46900,
+          "landingSite": "115566",
+          "input": "2 footprint sites with 310 certified beds",
           "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
           "sources": [
             "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
@@ -5027,33 +5201,321 @@
           },
           "sites": [
             {
-              "ccn": "115002",
-              "certifiedBeds": 150,
+              "ccn": "115348",
+              "certifiedBeds": 100,
               "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-              "anchorState": "serviceable",
-              "distanceFactor": 1,
-              "anchorDriveMinutes": 19,
-              "annualUsd": 12352,
+              "anchorState": "conditional",
+              "distanceFactor": 0.75,
+              "anchorDriveMinutes": 96,
+              "annualUsd": 6975,
               "assumptionsVersion": "georgia-value-1"
             },
             {
-              "ccn": "115275",
-              "certifiedBeds": 138,
+              "ccn": "115566",
+              "certifiedBeds": 210,
               "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-              "anchorState": "serviceable",
-              "distanceFactor": 1,
-              "anchorDriveMinutes": 29,
-              "annualUsd": 11652,
+              "anchorState": "conditional",
+              "distanceFactor": 0.75,
+              "anchorDriveMinutes": 117,
+              "annualUsd": 11725,
               "assumptionsVersion": "georgia-value-1"
+            }
+          ]
+        }
+      },
+      {
+        "operatorId": "ga-op-lbn-the-william-breman-jewish-home-inc",
+        "name": "THE WILLIAM BREMAN JEWISH HOME, INC",
+        "eligible": true,
+        "gate": null,
+        "identityStatus": "resolved",
+        "band": "B",
+        "score": 34.2,
+        "footprintFacilities": 1,
+        "explanation": "Band B because Anchorpoint reaches its site within 90 minutes, 79% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and a verified leader started there recently.",
+        "components": {
+          "ownershipChange": {
+            "points": 0,
+            "max": 10,
+            "input": "no dated ownership or management change",
+            "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+            "proposal": false
+          },
+          "hiring": {
+            "points": 0,
+            "max": 8,
+            "input": "no maintenance or facilities posting found",
+            "source": "web-signals.json jobs (Serper, 2026-10-20)",
+            "proposal": false
+          },
+          "citationTrigger": {
+            "points": 4.9,
+            "max": 6,
+            "input": "latest service-line fire citation surveyed 2026-06-11",
+            "source": "ifjz-ge4w.survey_date via signals.json",
+            "proposal": false
+          },
+          "roleChange": {
+            "points": 10,
+            "max": 16,
+            "input": "verified leader started recently (role-change-proposal-1)",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
+            "proposal": false
+          },
+          "engagement": {
+            "points": 0,
+            "max": 0,
+            "input": "slot used by the approved citation trigger",
+            "source": "none",
+            "proposal": false
+          },
+          "footprint": {
+            "points": 0,
+            "max": 15,
+            "input": "1 Georgia facilities inside the footprint",
+            "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+            "proposal": false
+          },
+          "regulatedEnvironment": {
+            "points": 5,
+            "max": 5,
+            "input": "CMS-certified nursing homes under federal life-safety surveys",
+            "source": "4pq5-n9py",
+            "proposal": false
+          },
+          "citationBreadth": {
+            "points": 7.9,
+            "max": 10,
+            "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
+            "source": "ifjz-ge4w via signals.json",
+            "proposal": false
+          },
+          "citationRepetition": {
+            "points": 1.4,
+            "max": 5,
+            "input": "0 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 27% after pulling toward the 41% statewide rate",
+            "source": "ifjz-ge4w via signals.json",
+            "proposal": false
+          },
+          "domain": {
+            "points": 1,
+            "max": 2,
+            "input": "jewishhomelife.org (word_match)",
+            "source": "web-signals.json domains (Serper, 2026-10-20)",
+            "proposal": false
+          },
+          "geography": {
+            "points": 2,
+            "max": 2,
+            "input": "1 facilities within 90 minutes",
+            "source": "serviceability.json (OSRM, 2026-10-20)",
+            "proposal": false
+          },
+          "locationProvenance": {
+            "points": 2,
+            "max": 2,
+            "input": "facility list resolved from CMS",
+            "source": "operators.json",
+            "proposal": false
+          },
+          "personaAndChannel": {
+            "points": 0,
+            "max": 4,
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
+            "proposal": false
+          }
+        },
+        "value": {
+          "assumptionsVersion": "georgia-value-1",
+          "band": "Small",
+          "annualUsd": 9038,
+          "fiveYearUsd": 36152,
+          "landingUsd": 36152,
+          "landingSite": "115022",
+          "input": "1 footprint sites with 96 certified beds",
+          "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+          "sources": [
+            "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "serviceability.json (OSRM, 2026-10-20)",
+            "docs/decisions/0009-account-value-model.md"
+          ],
+          "nearTheJaws": {
+            "applies": false,
+            "repEligible": true,
+            "input": "rule applies only to Small single-site operators in band C or Watch",
+            "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
+            "assumptionsVersion": "georgia-value-1"
+          },
+          "effort": {
+            "scored": false,
+            "centralProcurementChain": {
+              "value": false,
+              "source": "4pq5-n9py.chain_id via operators.json"
             },
+            "nationalIncumbentVendor": {
+              "value": "unknown",
+              "source": "not yet collected"
+            }
+          },
+          "sites": [
             {
-              "ccn": "115521",
-              "certifiedBeds": 130,
+              "ccn": "115022",
+              "certifiedBeds": 96,
               "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
               "anchorState": "serviceable",
               "distanceFactor": 1,
-              "anchorDriveMinutes": 30,
-              "annualUsd": 11175,
+              "anchorDriveMinutes": 27,
+              "annualUsd": 9038,
+              "assumptionsVersion": "georgia-value-1"
+            }
+          ]
+        }
+      },
+      {
+        "operatorId": "ga-op-chain-84",
+        "name": "BLUE RIDGE HEALTHCARE",
+        "eligible": true,
+        "gate": null,
+        "identityStatus": "resolved",
+        "band": "B",
+        "score": 30.9,
+        "footprintFacilities": 1,
+        "explanation": "Band B because Anchorpoint reaches its site within 90 minutes, 79% of those sites were cited for a service line since 2025, sprinkler or alarm deficiencies repeat across surveys, and a verified leader started there recently.",
+        "components": {
+          "ownershipChange": {
+            "points": 0,
+            "max": 10,
+            "input": "latest ownership or management change 81.6 months before 2026-10-19",
+            "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
+            "proposal": false
+          },
+          "hiring": {
+            "points": 0,
+            "max": 8,
+            "input": "no maintenance or facilities posting found",
+            "source": "web-signals.json jobs (Serper, 2026-10-20)",
+            "proposal": false
+          },
+          "citationTrigger": {
+            "points": 5,
+            "max": 6,
+            "input": "latest service-line fire citation surveyed 2026-06-18",
+            "source": "ifjz-ge4w.survey_date via signals.json",
+            "proposal": false
+          },
+          "roleChange": {
+            "points": 4,
+            "max": 16,
+            "input": "verified leader started recently (role-change-proposal-1)",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
+            "proposal": false
+          },
+          "engagement": {
+            "points": 0,
+            "max": 0,
+            "input": "slot used by the approved citation trigger",
+            "source": "none",
+            "proposal": false
+          },
+          "footprint": {
+            "points": 0,
+            "max": 15,
+            "input": "1 Georgia facilities inside the footprint",
+            "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
+            "proposal": false
+          },
+          "regulatedEnvironment": {
+            "points": 5,
+            "max": 5,
+            "input": "CMS-certified nursing homes under federal life-safety surveys",
+            "source": "4pq5-n9py",
+            "proposal": false
+          },
+          "citationBreadth": {
+            "points": 7.9,
+            "max": 10,
+            "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
+            "source": "ifjz-ge4w via signals.json",
+            "proposal": false
+          },
+          "citationRepetition": {
+            "points": 3,
+            "max": 5,
+            "input": "1 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 60% after pulling toward the 41% statewide rate",
+            "source": "ifjz-ge4w via signals.json",
+            "proposal": false
+          },
+          "domain": {
+            "points": 2,
+            "max": 2,
+            "input": "blueridgemc.org (name_match)",
+            "source": "web-signals.json domains (Serper, 2026-10-20)",
+            "proposal": false
+          },
+          "geography": {
+            "points": 2,
+            "max": 2,
+            "input": "1 facilities within 90 minutes",
+            "source": "serviceability.json (OSRM, 2026-10-20)",
+            "proposal": false
+          },
+          "locationProvenance": {
+            "points": 2,
+            "max": 2,
+            "input": "facility list resolved from CMS",
+            "source": "operators.json",
+            "proposal": false
+          },
+          "personaAndChannel": {
+            "points": 0,
+            "max": 4,
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
+            "proposal": false
+          }
+        },
+        "value": {
+          "assumptionsVersion": "georgia-value-1",
+          "band": "Small",
+          "annualUsd": 6504,
+          "fiveYearUsd": 26016,
+          "landingUsd": 26016,
+          "landingSite": "115587",
+          "input": "1 footprint sites with 60 certified beds",
+          "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+          "sources": [
+            "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+            "serviceability.json (OSRM, 2026-10-20)",
+            "docs/decisions/0009-account-value-model.md"
+          ],
+          "nearTheJaws": {
+            "applies": false,
+            "repEligible": true,
+            "input": "rule applies only to Small single-site operators in band C or Watch",
+            "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
+            "assumptionsVersion": "georgia-value-1"
+          },
+          "effort": {
+            "scored": false,
+            "centralProcurementChain": {
+              "value": true,
+              "source": "4pq5-n9py.chain_id via operators.json"
+            },
+            "nationalIncumbentVendor": {
+              "value": "unknown",
+              "source": "not yet collected"
+            }
+          },
+          "sites": [
+            {
+              "ccn": "115587",
+              "certifiedBeds": 60,
+              "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
+              "anchorState": "serviceable",
+              "distanceFactor": 1,
+              "anchorDriveMinutes": 89,
+              "annualUsd": 6504,
               "assumptionsVersion": "georgia-value-1"
             }
           ]
@@ -5094,8 +5556,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -5157,8 +5619,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -5263,8 +5725,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -5326,8 +5788,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -5398,165 +5860,6 @@
         }
       },
       {
-        "operatorId": "ga-op-org-pyramid-healthcare-management-llc",
-        "name": "Pyramid Healthcare Management LLC",
-        "eligible": true,
-        "gate": null,
-        "identityStatus": "resolved",
-        "band": "C",
-        "score": 28.3,
-        "footprintFacilities": 2,
-        "explanation": "Band C because its sites sit 90 to 120 minutes from a capable branch, it runs 2 nursing homes within 120 minutes of a capable branch, 84% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-        "components": {
-          "ownershipChange": {
-            "points": 0,
-            "max": 10,
-            "input": "latest ownership or management change 108.5 months before 2026-10-19",
-            "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-            "proposal": false
-          },
-          "hiring": {
-            "points": 0,
-            "max": 8,
-            "input": "no maintenance or facilities posting found",
-            "source": "web-signals.json jobs (Serper, 2026-10-20)",
-            "proposal": false
-          },
-          "citationTrigger": {
-            "points": 4.3,
-            "max": 6,
-            "input": "latest service-line fire citation surveyed 2026-04-01",
-            "source": "ifjz-ge4w.survey_date via signals.json",
-            "proposal": false
-          },
-          "roleChange": {
-            "points": 0,
-            "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
-            "proposal": false
-          },
-          "engagement": {
-            "points": 0,
-            "max": 0,
-            "input": "slot used by the approved citation trigger",
-            "source": "none",
-            "proposal": false
-          },
-          "footprint": {
-            "points": 3.3,
-            "max": 15,
-            "input": "2 Georgia facilities inside the footprint",
-            "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-            "proposal": false
-          },
-          "regulatedEnvironment": {
-            "points": 5,
-            "max": 5,
-            "input": "CMS-certified nursing homes under federal life-safety surveys",
-            "source": "4pq5-n9py",
-            "proposal": false
-          },
-          "citationBreadth": {
-            "points": 8.4,
-            "max": 10,
-            "input": "2 of 2 footprint facilities cited for a service line since 2025; 84% after pulling toward the 68% statewide rate",
-            "source": "ifjz-ge4w via signals.json",
-            "proposal": false
-          },
-          "citationRepetition": {
-            "points": 2.3,
-            "max": 5,
-            "input": "1 of 2 footprint facilities with sprinkler or alarm cited on more than one survey; 45% after pulling toward the 41% statewide rate",
-            "source": "ifjz-ge4w via signals.json",
-            "proposal": false
-          },
-          "domain": {
-            "points": 2,
-            "max": 2,
-            "input": "pyramid-healthcare.com (name_match)",
-            "source": "web-signals.json domains (Serper, 2026-10-20)",
-            "proposal": false
-          },
-          "geography": {
-            "points": 1,
-            "max": 2,
-            "input": "conditional only: 90 to 120 minutes, needs manager approval",
-            "source": "serviceability.json (OSRM, 2026-10-20)",
-            "proposal": false
-          },
-          "locationProvenance": {
-            "points": 2,
-            "max": 2,
-            "input": "facility list resolved from CMS",
-            "source": "operators.json",
-            "proposal": false
-          },
-          "personaAndChannel": {
-            "points": 0,
-            "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
-            "proposal": false
-          }
-        },
-        "value": {
-          "assumptionsVersion": "georgia-value-1",
-          "band": "Small",
-          "annualUsd": 18700,
-          "fiveYearUsd": 74800,
-          "landingUsd": 46900,
-          "landingSite": "115566",
-          "input": "2 footprint sites with 310 certified beds",
-          "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "sources": [
-            "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "serviceability.json (OSRM, 2026-10-20)",
-            "docs/decisions/0009-account-value-model.md"
-          ],
-          "nearTheJaws": {
-            "applies": false,
-            "repEligible": true,
-            "input": "rule applies only to Small single-site operators in band C or Watch",
-            "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-            "assumptionsVersion": "georgia-value-1"
-          },
-          "effort": {
-            "scored": false,
-            "centralProcurementChain": {
-              "value": false,
-              "source": "4pq5-n9py.chain_id via operators.json"
-            },
-            "nationalIncumbentVendor": {
-              "value": "unknown",
-              "source": "not yet collected"
-            }
-          },
-          "sites": [
-            {
-              "ccn": "115348",
-              "certifiedBeds": 100,
-              "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-              "anchorState": "conditional",
-              "distanceFactor": 0.75,
-              "anchorDriveMinutes": 96,
-              "annualUsd": 6975,
-              "assumptionsVersion": "georgia-value-1"
-            },
-            {
-              "ccn": "115566",
-              "certifiedBeds": 210,
-              "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-              "anchorState": "conditional",
-              "distanceFactor": 0.75,
-              "anchorDriveMinutes": 117,
-              "annualUsd": 11725,
-              "assumptionsVersion": "georgia-value-1"
-            }
-          ]
-        }
-      },
-      {
         "operatorId": "ga-op-lbn-hospital-authority-of-columbus-ga",
         "name": "Hospital Authority of Columbus GA",
         "eligible": true,
@@ -5591,8 +5894,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -5654,8 +5957,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -5760,8 +6063,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -5823,8 +6126,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -5919,8 +6222,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -5982,8 +6285,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -6068,8 +6371,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -6131,8 +6434,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -6217,8 +6520,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -6280,8 +6583,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -6376,8 +6679,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -6439,8 +6742,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -6535,8 +6838,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -6598,8 +6901,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -6684,8 +6987,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -6747,8 +7050,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -6843,8 +7146,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -6906,8 +7209,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -6992,8 +7295,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -7055,8 +7358,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -7141,8 +7444,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -7204,8 +7507,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -7256,155 +7559,6 @@
         }
       },
       {
-        "operatorId": "ga-op-lbn-the-william-breman-jewish-home-inc",
-        "name": "THE WILLIAM BREMAN JEWISH HOME, INC",
-        "eligible": true,
-        "gate": null,
-        "identityStatus": "resolved",
-        "band": "C",
-        "score": 24.2,
-        "footprintFacilities": 1,
-        "explanation": "Band C because Anchorpoint reaches its site within 90 minutes, 79% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-        "components": {
-          "ownershipChange": {
-            "points": 0,
-            "max": 10,
-            "input": "no dated ownership or management change",
-            "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-            "proposal": false
-          },
-          "hiring": {
-            "points": 0,
-            "max": 8,
-            "input": "no maintenance or facilities posting found",
-            "source": "web-signals.json jobs (Serper, 2026-10-20)",
-            "proposal": false
-          },
-          "citationTrigger": {
-            "points": 4.9,
-            "max": 6,
-            "input": "latest service-line fire citation surveyed 2026-06-11",
-            "source": "ifjz-ge4w.survey_date via signals.json",
-            "proposal": false
-          },
-          "roleChange": {
-            "points": 0,
-            "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
-            "proposal": false
-          },
-          "engagement": {
-            "points": 0,
-            "max": 0,
-            "input": "slot used by the approved citation trigger",
-            "source": "none",
-            "proposal": false
-          },
-          "footprint": {
-            "points": 0,
-            "max": 15,
-            "input": "1 Georgia facilities inside the footprint",
-            "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-            "proposal": false
-          },
-          "regulatedEnvironment": {
-            "points": 5,
-            "max": 5,
-            "input": "CMS-certified nursing homes under federal life-safety surveys",
-            "source": "4pq5-n9py",
-            "proposal": false
-          },
-          "citationBreadth": {
-            "points": 7.9,
-            "max": 10,
-            "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
-            "source": "ifjz-ge4w via signals.json",
-            "proposal": false
-          },
-          "citationRepetition": {
-            "points": 1.4,
-            "max": 5,
-            "input": "0 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 27% after pulling toward the 41% statewide rate",
-            "source": "ifjz-ge4w via signals.json",
-            "proposal": false
-          },
-          "domain": {
-            "points": 1,
-            "max": 2,
-            "input": "jewishhomelife.org (word_match)",
-            "source": "web-signals.json domains (Serper, 2026-10-20)",
-            "proposal": false
-          },
-          "geography": {
-            "points": 2,
-            "max": 2,
-            "input": "1 facilities within 90 minutes",
-            "source": "serviceability.json (OSRM, 2026-10-20)",
-            "proposal": false
-          },
-          "locationProvenance": {
-            "points": 2,
-            "max": 2,
-            "input": "facility list resolved from CMS",
-            "source": "operators.json",
-            "proposal": false
-          },
-          "personaAndChannel": {
-            "points": 0,
-            "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
-            "proposal": false
-          }
-        },
-        "value": {
-          "assumptionsVersion": "georgia-value-1",
-          "band": "Small",
-          "annualUsd": 9038,
-          "fiveYearUsd": 36152,
-          "landingUsd": 36152,
-          "landingSite": "115022",
-          "input": "1 footprint sites with 96 certified beds",
-          "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "sources": [
-            "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "serviceability.json (OSRM, 2026-10-20)",
-            "docs/decisions/0009-account-value-model.md"
-          ],
-          "nearTheJaws": {
-            "applies": true,
-            "repEligible": true,
-            "input": "Small single-site operator in band C; site 27 minutes from a capable branch against a 60-minute radius",
-            "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-            "assumptionsVersion": "georgia-value-1"
-          },
-          "effort": {
-            "scored": false,
-            "centralProcurementChain": {
-              "value": false,
-              "source": "4pq5-n9py.chain_id via operators.json"
-            },
-            "nationalIncumbentVendor": {
-              "value": "unknown",
-              "source": "not yet collected"
-            }
-          },
-          "sites": [
-            {
-              "ccn": "115022",
-              "certifiedBeds": 96,
-              "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-              "anchorState": "serviceable",
-              "distanceFactor": 1,
-              "anchorDriveMinutes": 27,
-              "annualUsd": 9038,
-              "assumptionsVersion": "georgia-value-1"
-            }
-          ]
-        }
-      },
-      {
         "operatorId": "ga-op-lbn-miona-geriatric-and-dementia-center-llc",
         "name": "Miona Geriatric & Dementia Center, LLC",
         "eligible": true,
@@ -7439,8 +7593,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -7502,8 +7656,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -7588,8 +7742,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -7651,8 +7805,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -7709,7 +7863,7 @@
         "gate": null,
         "identityStatus": "resolved",
         "band": "C",
-        "score": 20.4,
+        "score": 22.4,
         "footprintFacilities": 2,
         "explanation": "Band C because Anchorpoint reaches all 2 of its footprint sites within 90 minutes, it runs 2 nursing homes within 120 minutes of a capable branch, 34% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
         "components": {
@@ -7737,8 +7891,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -7798,10 +7952,10 @@
             "proposal": false
           },
           "personaAndChannel": {
-            "points": 0,
+            "points": 2,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "a persona and current employment verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -7896,8 +8050,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -7959,8 +8113,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -8045,8 +8199,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -8108,8 +8262,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -8194,8 +8348,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -8257,8 +8411,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -8343,8 +8497,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -8406,8 +8560,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -8492,8 +8646,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -8555,8 +8709,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -8607,155 +8761,6 @@
         }
       },
       {
-        "operatorId": "ga-op-chain-84",
-        "name": "BLUE RIDGE HEALTHCARE",
-        "eligible": true,
-        "gate": null,
-        "identityStatus": "resolved",
-        "band": "C",
-        "score": 26.9,
-        "footprintFacilities": 1,
-        "explanation": "Band C because Anchorpoint reaches its site within 90 minutes, 79% of those sites were cited for a service line since 2025, and sprinkler or alarm deficiencies repeat across surveys.",
-        "components": {
-          "ownershipChange": {
-            "points": 0,
-            "max": 10,
-            "input": "latest ownership or management change 81.6 months before 2026-10-19",
-            "source": "y2hd-n93e.association_date; 4pq5-n9py.provider_changed_ownership_in_last_12_months",
-            "proposal": false
-          },
-          "hiring": {
-            "points": 0,
-            "max": 8,
-            "input": "no maintenance or facilities posting found",
-            "source": "web-signals.json jobs (Serper, 2026-10-20)",
-            "proposal": false
-          },
-          "citationTrigger": {
-            "points": 5,
-            "max": 6,
-            "input": "latest service-line fire citation surveyed 2026-06-18",
-            "source": "ifjz-ge4w.survey_date via signals.json",
-            "proposal": false
-          },
-          "roleChange": {
-            "points": 0,
-            "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
-            "proposal": false
-          },
-          "engagement": {
-            "points": 0,
-            "max": 0,
-            "input": "slot used by the approved citation trigger",
-            "source": "none",
-            "proposal": false
-          },
-          "footprint": {
-            "points": 0,
-            "max": 15,
-            "input": "1 Georgia facilities inside the footprint",
-            "source": "serviceability.json (OSRM drive times, decision 0003 bands)",
-            "proposal": false
-          },
-          "regulatedEnvironment": {
-            "points": 5,
-            "max": 5,
-            "input": "CMS-certified nursing homes under federal life-safety surveys",
-            "source": "4pq5-n9py",
-            "proposal": false
-          },
-          "citationBreadth": {
-            "points": 7.9,
-            "max": 10,
-            "input": "1 of 1 footprint facilities cited for a service line since 2025; 79% after pulling toward the 68% statewide rate",
-            "source": "ifjz-ge4w via signals.json",
-            "proposal": false
-          },
-          "citationRepetition": {
-            "points": 3,
-            "max": 5,
-            "input": "1 of 1 footprint facilities with sprinkler or alarm cited on more than one survey; 60% after pulling toward the 41% statewide rate",
-            "source": "ifjz-ge4w via signals.json",
-            "proposal": false
-          },
-          "domain": {
-            "points": 2,
-            "max": 2,
-            "input": "blueridgemc.org (name_match)",
-            "source": "web-signals.json domains (Serper, 2026-10-20)",
-            "proposal": false
-          },
-          "geography": {
-            "points": 2,
-            "max": 2,
-            "input": "1 facilities within 90 minutes",
-            "source": "serviceability.json (OSRM, 2026-10-20)",
-            "proposal": false
-          },
-          "locationProvenance": {
-            "points": 2,
-            "max": 2,
-            "input": "facility list resolved from CMS",
-            "source": "operators.json",
-            "proposal": false
-          },
-          "personaAndChannel": {
-            "points": 0,
-            "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
-            "proposal": false
-          }
-        },
-        "value": {
-          "assumptionsVersion": "georgia-value-1",
-          "band": "Small",
-          "annualUsd": 6504,
-          "fiveYearUsd": 26016,
-          "landingUsd": 26016,
-          "landingSite": "115587",
-          "input": "1 footprint sites with 60 certified beds",
-          "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-          "sources": [
-            "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-            "serviceability.json (OSRM, 2026-10-20)",
-            "docs/decisions/0009-account-value-model.md"
-          ],
-          "nearTheJaws": {
-            "applies": true,
-            "repEligible": false,
-            "input": "Small single-site operator in band C; site 89 minutes from a capable branch against a 60-minute radius",
-            "source": "serviceability.json sprinkler and alarm drive minutes (OSRM, 2026-10-20)",
-            "assumptionsVersion": "georgia-value-1"
-          },
-          "effort": {
-            "scored": false,
-            "centralProcurementChain": {
-              "value": true,
-              "source": "4pq5-n9py.chain_id via operators.json"
-            },
-            "nationalIncumbentVendor": {
-              "value": "unknown",
-              "source": "not yet collected"
-            }
-          },
-          "sites": [
-            {
-              "ccn": "115587",
-              "certifiedBeds": 60,
-              "bedSource": "4pq5-n9py.number_of_certified_beds (CMS modified 2026-09-30, retrieved 2026-10-19) via facility-operator-links.json",
-              "anchorState": "serviceable",
-              "distanceFactor": 1,
-              "anchorDriveMinutes": 89,
-              "annualUsd": 6504,
-              "assumptionsVersion": "georgia-value-1"
-            }
-          ]
-        }
-      },
-      {
         "operatorId": "ga-op-lbn-hospital-authority-of-washington-county",
         "name": "HOSPITAL AUTHORITY OF WASHINGTON COUNTY",
         "eligible": true,
@@ -8790,8 +8795,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -8853,8 +8858,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -8939,8 +8944,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -9002,8 +9007,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -9088,8 +9093,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -9151,8 +9156,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -9237,8 +9242,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -9300,8 +9305,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -9386,8 +9391,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -9449,8 +9454,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -9535,8 +9540,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -9598,8 +9603,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -9684,8 +9689,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -9747,8 +9752,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -9833,8 +9838,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -9896,8 +9901,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -10012,8 +10017,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -10075,8 +10080,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -10161,8 +10166,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -10224,8 +10229,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -10310,8 +10315,8 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no verified leader started within 24 months",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           },
           "engagement": {
@@ -10373,8 +10378,8 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
-            "source": "none yet",
+            "input": "no persona verified; channel not checked",
+            "source": "people-coverage.json (Clay role-slot pass, 2026-10-22)",
             "proposal": false
           }
         },
@@ -10459,7 +10464,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -10522,7 +10527,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -10608,7 +10613,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -10671,7 +10676,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -10757,7 +10762,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -10820,7 +10825,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -10916,7 +10921,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -10979,7 +10984,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -11065,7 +11070,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -11128,7 +11133,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -11214,7 +11219,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -11277,7 +11282,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -11363,7 +11368,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -11426,7 +11431,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -11512,7 +11517,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -11575,7 +11580,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -11661,7 +11666,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -11724,7 +11729,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -11810,7 +11815,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -11873,7 +11878,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -11959,7 +11964,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -12022,7 +12027,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -12108,7 +12113,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -12171,7 +12176,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -12257,7 +12262,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -12320,7 +12325,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -12416,7 +12421,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -12479,7 +12484,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -12565,7 +12570,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -12628,7 +12633,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -12714,7 +12719,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -12777,7 +12782,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -12863,7 +12868,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -12926,7 +12931,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }
@@ -13012,7 +13017,7 @@
           "roleChange": {
             "points": 0,
             "max": 16,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           },
@@ -13075,7 +13080,7 @@
           "personaAndChannel": {
             "points": 0,
             "max": 4,
-            "input": "unknown until Stage 6 people pass",
+            "input": "unknown: operator not yet covered by the people pass",
             "source": "none yet",
             "proposal": false
           }

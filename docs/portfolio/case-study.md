@@ -33,7 +33,7 @@ PruittHealth runs 63 buildings in Georgia, 41 of them within reach of a branch. 
 
 ## What was left
 
-The project was scoped to one day and ran to three. Clay ran on free credits, so the remaining 69 eligible operators wait on a credit decision, and the 142 audit findings their missing domains produce are the next thing to clear. No dialer was bought, so the call handoff ends at an Attio List. The rep work queue and approvals table are designed but not built. The gap statement in `docs/portfolio/gap-statement.md` names each item and what the next engineer does first.
+The project was scoped to one day and ran to three. Clay ran on free credits, so the remaining 70 eligible operators wait on a credit decision, and the 142 audit findings their missing domains produce are the next thing to clear. No dialer was bought, so the call handoff ends at an Attio List. The rep work queue and approvals table are designed but not built. The gap statement in `docs/portfolio/gap-statement.md` names each item and what the next engineer does first.
 
 ## What it shows
 

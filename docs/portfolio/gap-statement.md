@@ -7,7 +7,7 @@ Status: written 2026-10-22 under `docs/product/finish-plan.md`. Building stopped
 Three reasons, in order of weight.
 
 - The one-day timeline. The project was scoped to finish in one day (2026-10-20) and ran to 2026-10-22. The finish plan chose to package what exists rather than start work that could not be verified in the time left.
-- Budget. Clay runs on free credits (about 55 remain this month, and the user will not pay for Clay Growth). No dialer was bought (decision 0014). Each paid step needs a per-purchase confirmation.
+- Budget. Clay runs on free credits (about 42 remain this month, and the user will not pay for Clay Growth). No dialer was bought (decision 0014). Each paid step needs a per-purchase confirmation.
 - A deliberate choice. Milestones 7 and 8 are declared designed-not-built. Their contracts, decisions, and fixtures exist; their code, tables, and screens do not.
 
 ## 2. Milestone 4: Clay enrichment loop, unfinished parts
@@ -17,17 +17,17 @@ What the plan asked for: size about five Georgia segments, build the senior-livi
 What exists today:
 
 - 105 Georgia operators resolved from CMS, 71 eligible and tiered (6 A, 15 B, 32 C, 18 Watch), serviceability from OSRM drive times, citation signals, and web signals, all in `data/georgia-sample/` with sources and retrieval dates.
-- The Clay round trip (`npm run clay:export`, `npm run clay:import`) built and tested on fixtures, and proven live on one operator. Tift Regional's domain, address, and four linked People (one with a mobile number) were written to Attio on 2026-10-22, with two persona-unverified items in the review queue. That is the only operator traced end to end.
+- The Clay round trip (`npm run clay:export`, `npm run clay:import`) built and tested on fixtures, and proven live on two operators. Tift Regional's domain, address, and four linked People (one with a mobile number) were written to Attio on 2026-10-22, with two persona-unverified items in the review queue; it sits outside the footprint, so it proved the pipeline without entering the tiers. PruittHealth, band A with 41 facilities in footprint, got its domain, address, and five linked People the same day, with five review items. Those are the only operators traced end to end.
 - Stage 6 people coverage for 53 operators, kept as coverage counts only in `people-coverage.json` from an earlier hand-run CSV pass. Those people are not in Attio.
 
 What is not done:
 
-- 70 of the 71 eligible operators are not enriched. Clay tables `companies-1` and `companies-2` still lack the proven columns from `companies-3`.
-- The 142 live audit findings (`CRM-COMPANY-002` and `CRM-DATA-002`, no domain and no primary location, on each of the 71 eligible operators) are not cleared. Only Tift Regional's pair is resolved.
+- 70 of the 71 eligible operators are not enriched (PruittHealth is the one that is). Clay tables `companies-1` and `companies-2` still lack the proven columns from `companies-3`.
+- The 142 live audit findings (`CRM-COMPANY-002` and `CRM-DATA-002`, no domain and no primary location, on each of the 71 eligible operators) are not cleared. PruittHealth's pair was filled by the live writeback, but the audit has not been re-run against the Attio load since.
 - The two channel-verification points are unearned for every operator, because no email or phone verification has run. Role change and persona from `people-coverage.json` were folded into `tiers.json` on 2026-10-22; operators the people pass did not cover still score those inputs as unknown.
 - The CRM history pipeline was not ported to Attio snapshots.
 
-Exit gate status: not met. The trace exists for one operator, and the suppression half is proven only by unit tests on fixtures, not by a live record moving from enrichment to eligibility.
+Exit gate status: not met. The trace exists for two operators, one of them eligible, and the suppression half is proven only by unit tests on fixtures, not by a live record moving from enrichment to eligibility.
 
 What the next engineer does first: get the user's OK on credits, add the `companies-3` columns to `companies-1` and `companies-2`, run them with Auto-run off, import one CSV, run `clay:import` as a dry run, read the review items, then `--live`. Then re-run `npm run attio:audit` and confirm the 142 findings fall. Then rerun `tier.ts`, which now reads the people inputs, and look at which operators cross a band edge.
 
@@ -71,7 +71,7 @@ What the next engineer does first: write the operating runbook from `README.md`,
 
 ## 6. Exit gates, in one place
 
-- Milestone 4: not met. One operator traced; 70 not enriched; 142 findings open; tiers not re-inspected.
+- Milestone 4: not met. Two operators traced, one eligible; 70 not enriched; 142 findings open; tiers not re-inspected.
 - Milestone 5: met as redefined by decision 0016. Approvals table and operator page moved to Milestone 8.
 - Milestone 7: not met. No code; the Attio List does not exist.
 - Milestone 8: not met. Nothing built.

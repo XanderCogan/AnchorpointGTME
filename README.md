@@ -20,7 +20,7 @@ Live, as of 2026-10-22:
 
 - Attio read-only sync, accepted as Milestone 3 against the real workspace.
 - Attio writeback under the scoped write policy, run live for two operators. Tift Regional got its domain, address, and four People with two review items; PruittHealth got its domain, address, and five People with five review items. Both plan nothing on rerun.
-- Clay to Attio round trip as scripts (`clay:export`, `clay:import`, dry run unless `--live`), proven on one Clay row. The remaining Clay tables were not run; about 55 free credits remain.
+- Clay to Attio round trip as scripts (`clay:export`, `clay:import`, dry run unless `--live`), proven on two Clay rows, Tift Regional and PruittHealth. The remaining Clay tables were not run; about 42 free credits remain.
 - Lemlist connector, enrollment ledger, kill switch, and webhook receiver, verified on practice fixtures and the real Lemlist API. No campaign has ever been launched and no email has ever been sent.
 - Hosting on Vercel (web) and Render (API, worker, PostgreSQL 17). Railway was deleted after its October 2026 security incident (decision 0013).
 
@@ -63,11 +63,11 @@ docs/                routed from docs/README.md; decisions in docs/decisions/
 ## Where to look
 
 - [`docs/portfolio/case-study.md`](docs/portfolio/case-study.md): the one-page case study, the shortest full account of the work.
-- [`docs/portfolio/methodology.md`](docs/portfolio/methodology.md): how the problem was approached, what was decided, and what the constraints forced, compiled from the fourteen decision records.
+- [`docs/portfolio/methodology.md`](docs/portfolio/methodology.md): how the problem was approached, what was decided, and what the constraints forced, compiled from the seventeen decision records.
 - [`docs/portfolio/diagrams.md`](docs/portfolio/diagrams.md): Mermaid charts of the data pipeline, the Attio object model, and the activation state machine.
 - [`docs/portfolio/copy-examples.md`](docs/portfolio/copy-examples.md): two cold-email drafts for Tier A operators with the reasoning, labelled never sent.
 - [`docs/portfolio/gap-statement.md`](docs/portfolio/gap-statement.md): what is designed but not built.
-- [`artifacts/portfolio/`](artifacts/portfolio/): JSON copies of tiers, serviceability, people coverage, and signals, plus the Tift Regional lineage trace and an index.
+- [`artifacts/portfolio/`](artifacts/portfolio/): JSON copies of tiers, serviceability, people coverage, and signals, plus the PruittHealth and Tift Regional lineage traces and an index.
 - [`docs/README.md`](docs/README.md): the documentation router. Open one routed document rather than reading the set.
 - [`docs/research/apero-portfolio-context.md`](docs/research/apero-portfolio-context.md): what the reader asked for and why the repo is shaped this way.
 

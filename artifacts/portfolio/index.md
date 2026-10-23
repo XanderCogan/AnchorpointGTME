@@ -1,6 +1,6 @@
 # Portfolio bundle
 
-Generated 2026-10-22T23:04:19.072Z by `npm run portfolio:bundle` (scripts/build-portfolio-bundle.ts). Every file carries a generatedAt stamp and the path it was read from. Nothing here calls an API or a database; the script only reads files already in the repository.
+Generated 2026-10-23T17:21:29.449Z by `npm run portfolio:bundle` (scripts/build-portfolio-bundle.ts). Every file carries a generatedAt stamp and the path it was read from. Nothing here calls an API or a database; the script only reads files already in the repository.
 
 - tiers.json: copy of data/georgia-sample/tiers.json, the 105 Georgia operators scored and banded under account-score-v1.1 with tiering proposal 2 parameters, wrapped with generatedAt and source.
 - serviceability.json: copy of data/georgia-sample/serviceability.json, OSRM drive times from each facility to the nearest branch per service line and the resulting footprint state.
