@@ -1,6 +1,6 @@
 # Project State
 
-Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (route via `docs/README.md`). Keep this file under about 40 lines.
+Last updated: 2026-10-23. Live context only; durable knowledge is in `docs/` (route via `docs/README.md`). Keep this file under about 40 lines.
 
 ## Current gate
 
@@ -24,10 +24,9 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 ## Next work
 
-Building has stopped under `docs/product/finish-plan.md` (2026-10-22). Remaining work is packaging only.
+Building has stopped under `docs/product/finish-plan.md` (2026-10-22). The three Loom walkthroughs were recorded on 2026-10-23. The generated `artifacts/` folder is gitignored; `npm run portfolio:bundle` rebuilds the portfolio bundle locally.
 
-1. User: record the three Loom walkthroughs (video 2 script in `docs/portfolio/loom-video-2-script.md`) and read `docs/portfolio/methodology.md` once for voice.
-2. Deferred, recorded in `docs/portfolio/gap-statement.md`: the remaining Clay runs, the 142 live audit findings, the CRM history port, Lemlist timing and webhook events, the Milestone 7 Attio List, and committing cron outputs back to the repo.
+1. Deferred, recorded in `docs/portfolio/gap-statement.md`: the remaining Clay runs, the 142 live audit findings, the CRM history port, Lemlist timing and webhook events, the Milestone 7 Attio List, and committing cron outputs back to the repo.
 
 ## Blockers
 

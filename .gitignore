@@ -18,5 +18,3 @@ data/georgia-sample/private/
 *.key
 *.crt
 
-# Portfolio bundle is shareable output, not raw data
-!artifacts/portfolio/

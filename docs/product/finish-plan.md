@@ -15,14 +15,14 @@ Status: active, 2026-10-22. This is the last plan. Building stops here; what rem
 ## Agent tasks, run in parallel, one file set each
 
 1. README rewrite. Reconcile with STATE.md, lead with the Georgia tier results and the Tift Regional trace, state honestly what is live and what is not. File: README.md only.
-2. Methodology narrative. One document in the user's voice compiling the fourteen decision records and STATE into how the problem was approached, what was decided and why, and what the constraints forced. File: docs/portfolio/methodology.md.
+2. Methodology narrative. One document in the user's voice compiling the decision records and STATE into how the problem was approached, what was decided and why, and what the constraints forced. File: docs/portfolio/methodology.md.
 3. Diagrams. Three Mermaid charts with a paragraph each: the data pipeline, the Attio object model, the activation state machine. File: docs/portfolio/diagrams.md.
-4. Artifact bundle. Copy tiers, serviceability, people coverage, and signals into artifacts/portfolio/, plus one lineage trace for Tift Regional from raw CMS row to Attio record, and an index. Files: artifacts/portfolio/ and scripts/build-portfolio-bundle.ts.
+4. Artifact bundle. Copy tiers, serviceability, people coverage, and signals into artifacts/portfolio/, plus one lineage trace per traced operator from raw CMS row to Attio record, and an index, generated locally and not committed. Files: scripts/build-portfolio-bundle.ts.
 5. Copy and gaps. Two cold-email drafts for Tier A operators with the reasoning stated and labelled never sent, plus a one-page gap statement for Milestones 5, 7, and 8. Files: docs/portfolio/copy-examples.md and docs/portfolio/gap-statement.md.
 
 ## User-only tasks
 
-- Record the Loom walkthroughs: the repo in three minutes, the Tift Regional trace, the tier logic.
+- Record the Loom walkthroughs: the repo in three minutes, the one-lead trace, the gaps and next steps. Recorded 2026-10-23.
 - Read the methodology document once and fix anything that is not in your voice.
 - Decide whether Watch is a tier or an undecided bucket.
 

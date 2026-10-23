@@ -232,10 +232,9 @@ Real Georgia operators and facilities load into the Developer Edition org as Acc
 
 ## Budget
 
-The budget for the whole sample is $40, set by the user on 2026-10-20.
+The budget is deliberately small, set under decision 0007 on 2026-10-20.
 
-- Clay: up to $20, after the free plan runs out.
-- One other service: up to $20, assigned when the build shows where it helps most, such as more Serper queries or email verification.
+- Clay: paid credit only after the free plan runs out, bought for speed under the one-day timeline.
 - Free allowances come first for every service. Free-tier limits must be confirmed on each vendor's pricing page before relying on them, and each purchase is confirmed with the user before it is made.
 
 ## Decisions this plan needs from the user

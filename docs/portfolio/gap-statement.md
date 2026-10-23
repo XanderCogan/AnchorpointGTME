@@ -63,7 +63,7 @@ What exists today: nothing built for this milestone. Pieces that overlap it exis
 - The kill switch and activation controls table from Milestone 6, which stop Lemlist enrollment but are not surfaced anywhere a rep would look.
 - This page, which is the gap assessment.
 
-What is not done: no work queue, no SLA indicators (the one-business-hour interested-reply target is defined but never measured), no reconciliation jobs between Attio and the field-service system (decision 0004 defines the rule; nothing runs it), no demo recording (the Loom walkthroughs are a user task in the finish plan and were not recorded at the time of writing).
+What is not done: no work queue, no SLA indicators (the one-business-hour interested-reply target is defined but never measured), no reconciliation jobs between Attio and the field-service system (decision 0004 defines the rule; nothing runs it). The three Loom walkthroughs recorded on 2026-10-23 stand in for the demo.
 
 Exit gate status: not met.
 

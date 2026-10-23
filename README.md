@@ -9,7 +9,7 @@ Status lives in [`STATE.md`](STATE.md). This file summarises it; if they disagre
 - 105 Georgia operators resolved from CMS facility records, each with its facilities, serviceability, and signals in `data/georgia-sample/`.
 - 71 operators tiered: 6 in A, 15 in B, 32 in C, and 18 in Watch (`data/georgia-sample/tiers.json`). Watch is the fourth and lowest band in the scoring contract: serviceable and potentially relevant, but below the C threshold, so it stays out of the current work queue and is revisited when signals change.
 - 53 operators with people coverage from a Clay role-slot pass (`data/georgia-sample/people-coverage.json`).
-- Two operators traced end to end: PruittHealth, the top Tier A target with 41 facilities in footprint (CMS rows, operator resolution, tiering, Clay domain, address and six contacts across four role slots, one mobile number, live Attio writeback of the domain, address and five People with five review items), and Tift Regional, which proved the pipeline first but sits about 140 minutes from the nearest planned branch and is gated out of the tiers. Both lineage traces are in `artifacts/portfolio/`.
+- Two operators traced end to end: PruittHealth, the top Tier A target with 41 facilities in footprint (CMS rows, operator resolution, tiering, Clay domain, address and six contacts across four role slots, one mobile number, live Attio writeback of the domain, address and five People with five review items), and Tift Regional, which proved the pipeline first but sits about 140 minutes from the nearest planned branch and is gated out of the tiers. `npm run portfolio:bundle` writes both lineage traces locally.
 - The 105 operators and their facilities were loaded into Attio once as Companies and Sites, and the read-only connector mirrors them into Postgres, where the deterministic CRM audit runs.
 
 Senior living is the only segment worked in depth. The other Georgia segments are context, not results.
@@ -56,7 +56,7 @@ packages/connectors/ read-only Attio sync, Attio writeback, Lemlist; Salesforce 
 scripts/             CMS pull, operator resolution, tiering, Clay export and import, Attio load, Lemlist
 data/georgia-sample/ operators, tiers, serviceability, signals, people coverage, source manifest
 fixtures/            synthetic audit inputs and expected outcomes (test inputs only)
-artifacts/           inspection output and the portfolio bundle
+artifacts/           generated inspection output and portfolio bundle, gitignored
 docs/                routed from docs/README.md; decisions in docs/decisions/
 ```
 
@@ -67,7 +67,7 @@ docs/                routed from docs/README.md; decisions in docs/decisions/
 - [`docs/portfolio/diagrams.md`](docs/portfolio/diagrams.md): Mermaid charts of the data pipeline, the Attio object model, and the activation state machine.
 - [`docs/portfolio/copy-examples.md`](docs/portfolio/copy-examples.md): two cold-email drafts for Tier A operators with the reasoning, labelled never sent.
 - [`docs/portfolio/gap-statement.md`](docs/portfolio/gap-statement.md): what is designed but not built.
-- [`artifacts/portfolio/`](artifacts/portfolio/): JSON copies of tiers, serviceability, people coverage, and signals, plus the PruittHealth and Tift Regional lineage traces and an index.
+- `npm run portfolio:bundle`: writes JSON copies of tiers, serviceability, people coverage, and signals, plus the PruittHealth and Tift Regional lineage traces and an index, to a local `artifacts/portfolio/` folder.
 - [`docs/README.md`](docs/README.md): the documentation router. Open one routed document rather than reading the set.
 - [`docs/research/apero-portfolio-context.md`](docs/research/apero-portfolio-context.md): what the reader asked for and why the repo is shaped this way.
 

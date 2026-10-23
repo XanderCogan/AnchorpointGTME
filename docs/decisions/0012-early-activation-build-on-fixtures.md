@@ -47,8 +47,8 @@ Amended on 2026-10-22 by the user. Anchorpoint is treated as a real company, so 
 Decided by the user. Every practice-only constraint is dropped except two: budget limits, and no outreach ever as set out above (no sending domain or mailbox, no launched campaign, TitanX never dials).
 
 - Attio writes no longer need per-write user approval or user-named test lists. Writes are automated under the write policy in `../contracts/operating-contract.md`: enrichment fills empty fields, and conflicts with human-entered values, uncertain identity matches, unverified personas (CRM-DATA-001), and possible duplicates go to a review queue instead of being written.
-- The one-time setup token pattern is replaced by a standing write token scoped to the objects and fields the Clay writeback writes. The sync connector stays read-only; writeback is a separate, scoped path. The user must still create that token; none exists yet.
-- Clay is no longer run by hand. Attio sends accounts to Clay, Clay runs the waterfall, and Clay writes contacts back to Attio. This needs a paid Clay plan, because the free plan excludes CRM integrations, the HTTP API, and scheduled runs; any purchase is confirmed with the user at the shown price. The exact integration method is pending a separate lookup.
+- The one-time setup token pattern is replaced by a standing write token scoped to the objects and fields the Clay writeback writes. The sync connector stays read-only; writeback is a separate, scoped path.
+- The Clay loop is scripted at both ends: an export writes Attio accounts to Clay's input, Clay runs the waterfall, and an import writes contacts back to Attio under the write policy. A native Clay-to-Attio integration needs a paid Clay plan and was declined on cost; the scripted round trip gives the same result with one upload and one download in Clay.
 - Contacts, including work email, are stored in Attio as People. Real people's details still never go in the public repository.
 - Approved real contacts from Attio feed Lemlist enrollment. Practice fixtures remain as test inputs only.
 
@@ -56,4 +56,4 @@ Decided by the user. Every practice-only constraint is dropped except two: budge
 
 - The build plan's rule that each milestone is reviewed before the next gains a second exception, alongside decision 0008.
 - Milestones 6 and 7 still follow Milestone 5 in design: enrollment and handoff consume approval decisions. Building them in parallel means building against fixture approval decisions until the real approval table exists.
-- Whether Lemlist and TitanX integrate with Attio natively, which is open under decision 0011, still needs one bounded lookup each. It shapes the Milestone 7 bridge but does not block building against fixtures.
+- Lemlist's native Attio app was adopted under decision 0015; TitanX is moot under decision 0014.

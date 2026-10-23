@@ -30,7 +30,7 @@ All runs use synthetic fixtures derived record for record from `salesforce-mappi
 
 ## Workspace setup
 
-On 2026-10-22 a one-time script, using a separate token scoped only to object configuration, created this schema in `10-x-media`:
+On 2026-10-22 a one-time script, using a separate token scoped only to object configuration, created this schema in the Attio workspace:
 
 1. A custom Site object (`sites`) with a `company` record reference to Companies.
 2. A custom call-log object (`call_logs`, set through `ATTIO_CALL_OBJECT`, because Attio reserves `calls`) with `occurred_at` (timestamp), `disposition` (select), and `company`, `person`, and `deal` record references.

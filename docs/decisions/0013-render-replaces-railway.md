@@ -4,7 +4,7 @@ Status: approved and carried out on 2026-10-22. Render serves the API, worker, a
 
 Date: 2026-10-22  
 Decision owner: User  
-AI role: compared Render with self-hosting on the user's Hetzner server and drafted the record
+AI role: compared Render with self-hosting and drafted the record
 
 ## Question
 
@@ -14,7 +14,7 @@ Railway disclosed a security incident on 2026-10-21 in which customer environmen
 
 Render hosts the API as a web service, the worker as a background worker, and PostgreSQL 17 as a managed database, defined in `render.yaml`. Vercel still serves the web application. Railway is retired once Render is serving.
 
-Self-hosting on the user's Hetzner server was considered. It keeps secrets off third-party platforms but adds patching, TLS, backups, and uptime to the project; the user chose Render.
+Self-hosting was considered. It keeps secrets off third-party platforms but adds patching, TLS, backups, and uptime that the work sample does not need to prove; Render was chosen.
 
 ## Consequences
 
@@ -23,5 +23,5 @@ Self-hosting on the user's Hetzner server was considered. It keeps secrets off t
 - The Railway database held only the synthetic `inspection-v1` fixture and its audit, so nothing is migrated; Render's pre-deploy step reloads the fixture.
 - Vercel's `API_BASE_URL` moves to the Render API address, and the Lemlist webhook is registered there.
 - Auto-deploy is off in the Blueprint, so pushing to `main` does not deploy without an explicit step.
-- On first deploy the API's pre-deploy migration ran before the new database accepted connections and failed; a manual redeploy succeeded. The worker restarted until the migrations existed, then completed the audit job with the expected 22 findings.
+- The first Render deploy reproduced the expected 22 findings once the migrations had run.
 - Milestone 2's evidence describes the Railway deployment as it was; it is history and is not rewritten.

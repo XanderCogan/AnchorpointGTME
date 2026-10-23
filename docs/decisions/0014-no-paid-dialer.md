@@ -8,7 +8,7 @@ AI role: priced TitanX alternatives and drafted the record
 
 ## Question
 
-TitanX needs a costly subscription. Nooks was proposed as a cheaper alternative. Which dialer should Milestone 7 connect to?
+Milestone 7 was planned around TitanX, a paid dialer. Since no call is ever placed in this project, should any dialer be connected, and which?
 
 ## Decision
 

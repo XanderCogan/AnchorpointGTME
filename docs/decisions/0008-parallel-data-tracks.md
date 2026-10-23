@@ -1,66 +1,30 @@
-# Decision 0008: Parallel Historical-Fixture and Market-Sample Tracks
+# Decision 0008: Georgia Market Sample in Parallel with Milestone 3
 
-Status: approved on 2026-10-19. Amended on 2026-10-20: Track A is cancelled. The user judged synthetic history low value for the Apero work sample, where the real-data TAM is the centerpiece. Its unmerged branch (tip 26de530) was deleted. Track B continues alone; the Track A text below is kept for history only. Decision 0010 replaces the join point: no fictional history exists, the Developer Edition org holds real Georgia operators and facilities only, and ICP drafting waits on the Georgia sample and a coarse segment sizing pass rather than a historical dataset.
+Status: approved on 2026-10-19. Amended on 2026-10-20: the parallel historical-fixture track was cancelled in favour of the real-data market sample, and decision 0010 records what replaced it. The Georgia sample continued alone.
 
-Date: 2026-10-19  
-Decision owner: User  
+Date: 2026-10-19
+Decision owner: User
 AI role: drafted the proposal from the build plan, `STATE.md`, and decisions 0005, 0006, and 0007
 
 ## Question
 
-The build plan says each milestone must be reviewed before the next begins. After Milestone 2, the approved next work is the historical fixture generator under decision 0006 and the first Georgia market sample under decision 0007. Both belong to Milestone 4, while Milestone 3, the read-only Salesforce connection, has not started. Must this work wait for Milestone 3, and must the two pieces run one after the other?
+The build plan says each milestone is reviewed before the next begins. The first Georgia market sample under decision 0007 belongs to Milestone 4, while Milestone 3, the read-only CRM connection, had not started. Must the sample wait for Milestone 3?
 
-## Proposed decision
+## Decision
 
-Two tracks run in parallel. Each track is ordered internally, and both join at a defined point inside Milestone 4.
+No. The Georgia sample runs in parallel with Milestone 3, keeping decision 0007's budget, stopping rule, source and retrieval-date requirement, and personal data boundary. Milestone 4 is still accepted as one milestone; applying the sample's results to serviceability evidence, enrichment automation, and the exit gate waits for Milestone 3 acceptance.
 
-### Track A: historical fixture, Salesforce org, Milestone 3
-
-1. Build the historical fixture generator under decision 0006 and produce a new, versioned fixture release.
-2. Load the release's Salesforce-shaped records into the free Developer Edition org named in decision 0005. The user creates the org.
-3. Build Milestone 3 against that org. Its scope and exit gate are unchanged.
-
-Step 2 is environment setup, not product behavior. The loader is a one-off setup tool kept apart from the application's connector, which stays read-only. The org holds the fictional history, which may sit on real company names under the amendment to decision 0005.
-
-### Track B: Georgia market sample
-
-Build the first Georgia sample under decision 0007, keeping its budget of $20 for Clay and $20 for one other service, stopping rule, source and retrieval-date requirement, and personal data boundary.
-
-### How the tracks relate
-
-Amended on 2026-10-19 after the user confirmed the project is openly fictional and disclosed as such.
-
-- Track A's generator may build Anchorpoint's fictional history on real companies, including real Georgia operators from Track B's operator resolution. For segments Track B does not cover, it may use other public business sources or fictional names.
-- The fictional history is never market evidence. Fit assumptions are written down before generation, and ICP analysis on the history tests whether the method recovers them. Real fit and need come from public evidence on real records, such as citations, chain size, hiring, and competitors' published customer segments.
-- If both tracks touch shared code, that code lands in one track at a time.
-
-### Join point
-
-- Drafting ICP hypotheses for user review may start once Track A's historical dataset exists and has been reviewed.
-- Applying those hypotheses to real accounts, serviceability evidence on the joined data, Clay enrichment automation, and the Milestone 4 exit gate wait for Milestone 3 acceptance and a completed Track B sample.
-- Milestone 4 is still accepted as one milestone.
-
-### Unchanged order
-
-Milestone 5 still follows Milestone 4. Milestones 6 and 7 still follow Milestone 5, because outreach requires the approval gate first. Milestone 8 is still last. This decision does not reorder Milestones 6 and 7.
+A second parallel track, a generated 30-month commercial history loaded into the CRM so that Milestone 3 had data to sync, was approved at the same time and cancelled the next day. Synthetic history can only rediscover the ICP written into it, and the real-data market model is the centrepiece of the work sample. Decision 0010 governs what replaced it.
 
 ## Rationale
 
-Milestone 3 needs data to sync, and the historical fixture is that data, already shaped by decisions 0005 and 0006. Building the fixture first gives Milestone 3 a realistic org instead of a hand-made one. The Georgia sample depends on neither. Track A can build its generator while Track B resolves operators, then bind its first release to that real operator list. Running the two in parallel removes idle time without weakening any review gate, read-only boundary, or approval requirement.
+The Georgia sample depends on public records, not on a CRM connection. Running it alongside Milestone 3 removes idle time without weakening any review gate, read-only boundary, or approval requirement.
 
 ## Consequences
 
-- The build plan's rule that each milestone is reviewed before the next begins gains one stated exception: the early Milestone 4 data work described here.
-- `STATE.md` lists both tracks as current work instead of asking which comes first.
-- Milestone 3 cannot start until the user creates the Developer Edition org and the first historical release is loaded.
-
-## Open within this decision
-
-- How the fixture is loaded into the org: the Salesforce Data Import Wizard, Data Loader, or a small setup script
-- Whether Track A and Track B run in separate Claude Code sessions or in sequence within one
+- The build plan's review-before-next rule gains one stated exception: the early Milestone 4 data work described here. Decision 0012 adds a second.
+- When two tracks touch shared code, that code lands in one track at a time.
 
 ## Required future tests
 
-- The Milestone 3 connector has no create, update, or delete path, and repeated syncs leave every org record unchanged.
-- The generator's fit assumptions are committed before the release they shape, and ICP analysis reports whether it recovered them.
-- The historical fixture release loaded into the org matches its committed release byte for byte, or by recorded checksum.
+- The Milestone 3 connector has no create, update, or delete path, and repeated syncs leave every CRM record unchanged.

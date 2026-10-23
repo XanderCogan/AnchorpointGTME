@@ -1,14 +1,14 @@
 # Decision 0010: No Fictional CRM History; Real Market, Proven Analysis Tools
 
-Status: approved by the user in conversation on 2026-10-20.
+Status: approved on 2026-10-20.
 
 Date: 2026-10-20  
 Decision owner: User  
-AI role: mapped where the planning documents still assumed the cancelled Track A history, argued for and against a small fictional CRM set, and drafted this record
+AI role: mapped where the planning documents still assumed the cancelled generated history, argued for and against a small fictional CRM set, and drafted this record
 
 ## Question
 
-Track A, the generated 30-month Anchorpoint history, was cancelled on 2026-10-20 under the amendment to decision 0008. Several documents still depended on it: the Salesforce org's contents, the Milestone 4 historical dataset, and the method for deriving ICP hypotheses. What replaces it, and should a smaller fictional CRM set exist instead?
+The generated 30-month Anchorpoint history was cancelled on 2026-10-20 under the amendment to decision 0008. Several documents still depended on it: the Salesforce org's contents, the Milestone 4 historical dataset, and the method for deriving ICP hypotheses. What replaces it, and should a smaller fictional CRM set exist instead?
 
 ## Decision
 
@@ -40,7 +40,7 @@ Senior living and skilled nursing is the first of about five Georgia segments, c
 ## Consequences
 
 - Decision 0006 keeps its operating profile, which decision 0009 uses, and its generated-dataset section is cancelled.
-- Decision 0008's join point, which waited on Track A's historical dataset, no longer applies. ICP drafting waits only on the Georgia sample and the segment sizing pass.
+- Decision 0008's join point, which waited on the generated historical dataset, no longer applies. ICP drafting waits only on the Georgia sample and the segment sizing pass.
 - The build plan's Milestone 3 and Milestone 4 sections, the TAM construction plan, the operating contract's write policy, the Apero portfolio narrative, and the Georgia sample plan's load stage are revised to match.
 - Current-customer suppression has no real customers to act on in this project. It stays implemented and tested on fixtures.
 - No write-capable loader for fictional history is needed. Loading real Accounts and Sites into the org remains a separate setup step from the read-only connector.

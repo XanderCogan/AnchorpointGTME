@@ -31,7 +31,7 @@ Exit gate, as redefined: every tiered operator has a written explanation of its 
 
 ## User rationale
 
-The user did not want to carry an unmet milestone whose remaining scope the Attio List gate had already replaced, and preferred the build plan to describe the system as it is rather than a screen nobody now needs.
+The build plan should describe the system as it is. A per-contact approval screen that the Attio List gate had already replaced is not carried as unmet scope.
 
 ## Consequences
 
