@@ -10,7 +10,7 @@ flowchart TD
     review["Manual review decisions (operator sites, NPI registry, news, Serper)"]
     resolve["Operator resolution: chain_id, controlling owner, legal name"]
     serv["Serviceability: OSRM drive time from the Anchorpoint base"]
-    tier["Tiering: 71 eligible of 105 operators (5 A, 12 B, 36 C, 18 Watch)"]
+    tier["Tiering: 71 eligible of 105 operators (6 A, 15 B, 32 C, 18 Watch)"]
     load["Attio load: Companies and Sites, one-time script"]
     mirror["Read-only Attio sync to the Postgres mirror, audit runs there"]
     export["clay:export CSV: companies needing domain or location"]

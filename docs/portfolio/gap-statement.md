@@ -16,7 +16,7 @@ What the plan asked for: size about five Georgia segments, build the senior-livi
 
 What exists today:
 
-- 105 Georgia operators resolved from CMS, 71 eligible and tiered (5 A, 12 B, 36 C, 18 Watch), serviceability from OSRM drive times, citation signals, and web signals, all in `data/georgia-sample/` with sources and retrieval dates.
+- 105 Georgia operators resolved from CMS, 71 eligible and tiered (6 A, 15 B, 32 C, 18 Watch), serviceability from OSRM drive times, citation signals, and web signals, all in `data/georgia-sample/` with sources and retrieval dates.
 - The Clay round trip (`npm run clay:export`, `npm run clay:import`) built and tested on fixtures, and proven live on one operator. Tift Regional's domain, address, and four linked People (one with a mobile number) were written to Attio on 2026-10-22, with two persona-unverified items in the review queue. That is the only operator traced end to end.
 - Stage 6 people coverage for 53 operators, kept as coverage counts only in `people-coverage.json` from an earlier hand-run CSV pass. Those people are not in Attio.
 
@@ -24,12 +24,12 @@ What is not done:
 
 - 70 of the 71 eligible operators are not enriched. Clay tables `companies-1` and `companies-2` still lack the proven columns from `companies-3`.
 - The 142 live audit findings (`CRM-COMPANY-002` and `CRM-DATA-002`, no domain and no primary location, on each of the 71 eligible operators) are not cleared. Only Tift Regional's pair is resolved.
-- The tier bands were not re-inspected after the people pass. `tiers.json` scores role change and persona as zero (unknown), so today's maximum is 65 of 100, while `people-coverage.json` holds role-change points for some operators that were never folded back in.
+- The two channel-verification points are unearned for every operator, because no email or phone verification has run. Role change and persona from `people-coverage.json` were folded into `tiers.json` on 2026-10-22; operators the people pass did not cover still score those inputs as unknown.
 - The CRM history pipeline was not ported to Attio snapshots.
 
 Exit gate status: not met. The trace exists for one operator, and the suppression half is proven only by unit tests on fixtures, not by a live record moving from enrichment to eligibility.
 
-What the next engineer does first: get the user's OK on credits, add the `companies-3` columns to `companies-1` and `companies-2`, run them with Auto-run off, import one CSV, run `clay:import` as a dry run, read the review items, then `--live`. Then re-run `npm run attio:audit` and confirm the 142 findings fall. Then rerun `tier.ts` with the people inputs and look at which operators cross a band edge.
+What the next engineer does first: get the user's OK on credits, add the `companies-3` columns to `companies-1` and `companies-2`, run them with Auto-run off, import one CSV, run `clay:import` as a dry run, read the review items, then `--live`. Then re-run `npm run attio:audit` and confirm the 142 findings fall. Then rerun `tier.ts`, which now reads the people inputs, and look at which operators cross a band edge.
 
 ## 3. Milestone 5: Play table and approval
 

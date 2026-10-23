@@ -210,6 +210,14 @@ The full pipeline was rerun on the 105-operator list from cached CMS, OSRM, and 
 - 22 eligible operators carry a CMS chain id.
 - 2 eligible operators are provisional: Sandtown Health and Rehabilitation (band C) and Healthcare at College Park (Watch).
 
+### Stage 5: people inputs folded in, 2026-10-22
+
+`tier.ts` now reads `people-coverage.json` when it exists. Role change takes the operator's account-level points from the people pass (role-change-proposal-1, up to 16). Persona earns 2 when any role slot has a persona and current employment verified, and channel earns 2 only when a slot's channel is verified, which no slot is yet. Operators the people pass did not cover score these inputs as unknown, never as negative evidence.
+
+- Bands moved from 5 A, 12 B, 36 C, 18 Watch to 6 A, 15 B, 32 C, 18 Watch, with scores from 15 to 65 and the median unchanged at 24.
+- Life Care Centers of America moved from B to A on a verified leader who started recently. A.G. Rhodes Home, Pyramid Healthcare Management, The William Breman Jewish Home, and Blue Ridge Healthcare moved from C to B. No operator moved down.
+- PruittHealth leads at 65: 14 role-change points and 2 persona points on top of its earlier 49.
+
 ### Stage 6: people (free tier, then up to $20)
 
 The detailed design is in `georgia-clay-people-pass.md`. Only for serviceable, tiered operators, highest tier first. Start on Clay's free plan: prove the table design for roles at the operator level and the site level, and measure the share of operators where named people can be found at all. When free credits run out, up to $20 of paid Clay credit continues the pass, confirmed with the user before purchase. The pass stops when that is spent and reports how many operators it covered. Emails are checked for verifiability on a capped subset, and only whether a verified channel exists is recorded. Phone enrichment stays excluded.

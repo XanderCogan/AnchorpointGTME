@@ -6,8 +6,9 @@
 //
 // Hard gate: an operator with no facility serviceable or conditional for sprinkler or alarm
 // work is outside the footprint and is not banded. Bands order work; they never grant
-// eligibility. People-based inputs (role change, person relevance, persona, channel) wait
-// for Stage 6 and score zero as unknown, never as negative evidence.
+// eligibility. People-based inputs (role change, persona, channel) come from the Stage 6
+// people pass in people-coverage.json when it exists; an operator the pass has not covered
+// scores them zero as unknown, never as negative evidence.
 //
 // Account value (decision 0009) sits beside the score, never inside it. Every assumed price
 // sits in VALUE_ASSUMPTIONS, and value is computed only after the score and band are fixed.
@@ -24,7 +25,8 @@ const PARAMETERS_VERSION = "georgia-account-proposal-2";
 
 // Approved by the user on 2026-10-20 as tiering proposal 2. The contract caps are noted.
 export const PARAMETERS = {
-  // Change propensity, cap 40 (16 role change and 6 engagement need people data).
+  // Change propensity, cap 40 (the 6 engagement points are used by the citation trigger).
+  roleChange: { max: 16 }, // contract: role change, up to 16; points come from people-coverage.json under role-change-proposal-1
   ownershipChange: { max: 10, decayMonths: 24 }, // contract: acquisition or operating-model change, up to 10
   hiring: { max: 8, undated: 4, decayDays: 120 }, // contract: relevant facilities hiring, up to 8
   citationTrigger: { max: 6, decayMonths: 24 }, // contract: "another approved timely trigger", up to 6
@@ -36,7 +38,9 @@ export const PARAMETERS = {
   // Both citation shares are pulled toward the statewide footprint rate, as if each operator also had
   // this many average facilities, so one cited building no longer earns full credit.
   citationShrinkFacilities: 2,
-  // Data confidence, cap 10 (persona and channel need people data).
+  // Data confidence, cap 10.
+  personaVerified: 2, // contract: persona and current employment verified, 2
+  channelVerified: 2, // contract: at least one channel-specific contact method verified, 2
   domain: { nameMatch: 2, wordMatch: 1 },
   geography: { serviceable: 2, conditional: 1 },
   locationProvenance: { resolved: 2, provisional: 1 },
@@ -87,6 +91,9 @@ type Domain = { operatorId: string; domain: string | null; confidence: string; e
 type Job = { operatorId: string; postings: { title: string; url: string; date: string | null }[] };
 type Link = { ccn: string; certifiedBeds: number | null };
 type Dataset = { datasetId: string; retrievedOn: string; cmsModified: string };
+type CoverageSlot = { searched: boolean; peopleFound: number; personaVerified: boolean; currentEmploymentVerified: boolean; channel: string };
+type Coverage = { operatorId: string; status: string; slots?: Record<string, CoverageSlot>; roleChange?: { points: number; reason: string } };
+export type PeopleCoverage = { roleChangeRule: string; retrievedOn: string; operators: Coverage[] };
 
 export type TierInputs = {
   operators: Operator[];
@@ -95,6 +102,7 @@ export type TierInputs = {
   web: { domains: Domain[]; jobs: Job[]; method: { retrievedOn: string } };
   manifest: { datasets: Dataset[] };
   links: { links: Link[] };
+  people: PeopleCoverage | null;
 };
 
 export const loadInputs = async (): Promise<TierInputs> => ({
@@ -104,6 +112,7 @@ export const loadInputs = async (): Promise<TierInputs> => ({
   web: await read("web-signals.json"),
   manifest: await read("source-manifest.json"),
   links: await read("facility-operator-links.json"),
+  people: await read<PeopleCoverage>("people-coverage.json").catch(() => null),
 });
 
 type Component = { points: number; max: number; input: string; source: string; proposal: boolean };
@@ -143,6 +152,8 @@ export function tierOperators(inputs: TierInputs, assumptions: ValueAssumptions 
   const domainOf = new Map(web.domains.map((domain) => [domain.operatorId, domain]));
   const jobsOf = new Map(web.jobs.map((job) => [job.operatorId, job]));
   const bedsOf = new Map(inputs.links.links.map((link) => [link.ccn, link.certifiedBeds]));
+  const coverageOf = new Map((inputs.people?.operators ?? []).map((coverage) => [coverage.operatorId, coverage]));
+  const peopleSource = inputs.people ? `people-coverage.json (Clay role-slot pass, ${inputs.people.retrievedOn})` : "none yet";
 
   // Statewide rates across every in-footprint facility, used as the prior for the citation shares.
   const footprintSignals = serviceability.facilities
@@ -220,7 +231,19 @@ export function tierOperators(inputs: TierInputs, assumptions: ValueAssumptions 
       source: "ifjz-ge4w.survey_date via signals.json",
       proposal: false,
     };
-    components.roleChange = { points: 0, max: 16, input: "unknown until Stage 6 people pass", source: "none yet", proposal: false };
+    const coverage = coverageOf.get(operator.operatorId);
+    const roleChangePoints = Math.min(PARAMETERS.roleChange.max, coverage?.roleChange?.points ?? 0);
+    components.roleChange = {
+      points: round(roleChangePoints),
+      max: PARAMETERS.roleChange.max,
+      input: !coverage
+        ? "unknown: operator not yet covered by the people pass"
+        : roleChangePoints > 0
+          ? `${coverage.roleChange?.reason.replaceAll("_", " ")} (${inputs.people?.roleChangeRule.split(":")[0]})`
+          : "no verified leader started within 24 months",
+      source: coverage ? peopleSource : "none yet",
+      proposal: false,
+    };
     components.engagement = { points: 0, max: 0, input: "slot used by the approved citation trigger", source: "none", proposal: false };
 
     // Operational need and account context.
@@ -281,7 +304,18 @@ export function tierOperators(inputs: TierInputs, assumptions: ValueAssumptions 
       source: "operators.json",
       proposal: false,
     };
-    components.personaAndChannel = { points: 0, max: 4, input: "unknown until Stage 6 people pass", source: "none yet", proposal: false };
+    const slots = Object.values(coverage?.slots ?? {});
+    const personaVerified = slots.some((slot) => slot.personaVerified && slot.currentEmploymentVerified);
+    const channelVerified = slots.some((slot) => slot.channel === "verified");
+    components.personaAndChannel = {
+      points: (personaVerified ? PARAMETERS.personaVerified : 0) + (channelVerified ? PARAMETERS.channelVerified : 0),
+      max: PARAMETERS.personaVerified + PARAMETERS.channelVerified,
+      input: !coverage
+        ? "unknown: operator not yet covered by the people pass"
+        : `${personaVerified ? "a persona and current employment verified" : "no persona verified"}; ${channelVerified ? "a channel verified" : "channel not checked"}`,
+      source: coverage ? peopleSource : "none yet",
+      proposal: false,
+    };
 
     const score = round(Object.values(components).reduce((sum, component) => sum + component.points, 0));
     const band = score >= PARAMETERS.bands.A ? "A" : score >= PARAMETERS.bands.B ? "B" : score >= PARAMETERS.bands.C ? "C" : "Watch";
@@ -300,6 +334,7 @@ export function tierOperators(inputs: TierInputs, assumptions: ValueAssumptions 
     if (components.citationRepetition.points > 0) reasons.push("sprinkler or alarm deficiencies repeat across surveys");
     if (components.ownershipChange.points > 0) reasons.push("ownership or management changed recently");
     if (components.hiring.points > 0) reasons.push("it appears to be hiring maintenance or facilities staff");
+    if (components.roleChange.points > 0) reasons.push("a verified leader started there recently");
     const joined = reasons.length > 1 ? `${reasons.slice(0, -1).join(", ")}, and ${reasons.at(-1)}` : reasons[0];
     const explanation = `Band ${band} because ${joined}.`;
 
@@ -409,7 +444,7 @@ if (isMain) {
           valueAssumptions: VALUE_ASSUMPTIONS,
           notes: [
             "Bands order work and never grant eligibility; a manager may select any eligible operator.",
-            "People-based inputs score zero as unknown until Stage 6, so today's maximum is 65 of 100.",
+            "People-based inputs (role change, persona, channel) come from people-coverage.json; an operator the Stage 6 pass has not covered scores them zero as unknown. Channel verification has not run, so no operator has earned the two channel points yet.",
             "Hard gate: at least one facility serviceable or conditional for sprinkler or alarm work.",
             "Value (decision 0009) sits beside the score and never changes a score or band; its prices are assumptions, not market evidence.",
             "Operators are ordered by priority band, then five-year value within a band.",

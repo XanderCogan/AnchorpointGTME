@@ -7,9 +7,9 @@ Status lives in [`STATE.md`](STATE.md). This file summarises it; if they disagre
 ## The result
 
 - 105 Georgia operators resolved from CMS facility records, each with its facilities, serviceability, and signals in `data/georgia-sample/`.
-- 71 operators tiered: 5 in A, 12 in B, 36 in C, and 18 in Watch (`data/georgia-sample/tiers.json`). Watch is the fourth and lowest band in the scoring contract: serviceable and potentially relevant, but below the C threshold, so it stays out of the current work queue and is revisited when signals change.
+- 71 operators tiered: 6 in A, 15 in B, 32 in C, and 18 in Watch (`data/georgia-sample/tiers.json`). Watch is the fourth and lowest band in the scoring contract: serviceable and potentially relevant, but below the C threshold, so it stays out of the current work queue and is revisited when signals change.
 - 53 operators with people coverage from a Clay role-slot pass (`data/georgia-sample/people-coverage.json`).
-- Two operators traced end to end: PruittHealth, the top Tier A target with 41 facilities in footprint (CMS rows, operator resolution, tiering, Clay domain, address and six contacts across four role slots, one mobile number, planned Attio writeback with two review items), and Tift Regional, which proved the pipeline first but sits about 140 minutes from the nearest planned branch and is gated out of the tiers. Both lineage traces are in `artifacts/portfolio/`.
+- Two operators traced end to end: PruittHealth, the top Tier A target with 41 facilities in footprint (CMS rows, operator resolution, tiering, Clay domain, address and six contacts across four role slots, one mobile number, live Attio writeback of the domain, address and five People with five review items), and Tift Regional, which proved the pipeline first but sits about 140 minutes from the nearest planned branch and is gated out of the tiers. Both lineage traces are in `artifacts/portfolio/`.
 - The 105 operators and their facilities were loaded into Attio once as Companies and Sites, and the read-only connector mirrors them into Postgres, where the deterministic CRM audit runs.
 
 Senior living is the only segment worked in depth. The other Georgia segments are context, not results.
@@ -19,7 +19,7 @@ Senior living is the only segment worked in depth. The other Georgia segments ar
 Live, as of 2026-10-22:
 
 - Attio read-only sync, accepted as Milestone 3 against the real workspace.
-- Attio writeback under the scoped write policy, run live for one operator (Tift Regional). It wrote the domain, address, and four People, queued two uncertain persona matches for review, and plans nothing on rerun.
+- Attio writeback under the scoped write policy, run live for two operators. Tift Regional got its domain, address, and four People with two review items; PruittHealth got its domain, address, and five People with five review items. Both plan nothing on rerun.
 - Clay to Attio round trip as scripts (`clay:export`, `clay:import`, dry run unless `--live`), proven on one Clay row. The remaining Clay tables were not run; about 55 free credits remain.
 - Lemlist connector, enrollment ledger, kill switch, and webhook receiver, verified on practice fixtures and the real Lemlist API. No campaign has ever been launched and no email has ever been sent.
 - Hosting on Vercel (web) and Render (API, worker, PostgreSQL 17). Railway was deleted after its October 2026 security incident (decision 0013).

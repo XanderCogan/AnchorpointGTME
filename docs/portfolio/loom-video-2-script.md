@@ -29,9 +29,9 @@ Say why in one breath each:
 - Change propensity: ownership or management change, hiring, a recent service-line citation, all decaying with age. An operator that just changed hands or just got cited is the one most likely to switch vendors.
 - Operational need: facilities in footprint, the regulated environment, share cited since 2025, share with repeat sprinkler or alarm citations. That is the work being sold.
 - Data confidence: domain match, geography, resolved versus provisional operator.
-- People inputs are unknown until enrichment, so the ceiling today is 65 of 100.
+- People inputs come in two stages: accounts are scored from public data first to decide who gets enrichment credits, then role change and persona from the Clay pass are added. Channel verification has not run, so those two points are unearned.
 
-Bands: A from 40, B from 30, C from 20, Watch below. 5 A, 12 B, 36 C, 18 Watch. Account value sits beside the score, never changes it, and orders operators within a band. Say the prices in it are labelled assumptions.
+Bands: A from 40, B from 30, C from 20, Watch below. 6 A, 15 B, 32 C, 18 Watch. Account value sits beside the score, never changes it, and orders operators within a band. Say the prices in it are labelled assumptions.
 
 ## Stop 3: Attio, the load (about 45 seconds)
 

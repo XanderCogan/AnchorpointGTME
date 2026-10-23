@@ -5,7 +5,7 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 ## Current gate
 
 - Milestones 0 to 3 are complete; evidence is in `docs/milestones/`. Milestone 3 (read-only Attio, decision 0011) was accepted on 2026-10-22.
-- Milestone 4, the Georgia market sample, is in progress (decision 0008). Senior living is the only segment worked in depth.
+- Milestone 4, the Georgia market sample, is in progress (decision 0008). Senior living is the only segment worked in depth. Tiers now include the people-pass inputs (2026-10-22): 6 A, 15 B, 32 C, 18 Watch.
 - Milestone 6 (Lemlist) is built on labelled practice fixtures (decision 0012). Milestone 5 is a scoring script and JSON only; Milestones 7 and 8 are not built. No email or call is ever sent.
 - The deployed preview still shows the frozen HubSpot-shaped `inspection-v1`: 22 findings, 15 critical and 7 warning. Never use it to derive the ICP, scores, or market size.
 - Timeline: the project finishes in one day. Pay for speed, and confirm each purchase with its price first.
@@ -25,8 +25,9 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 Building has stopped under `docs/product/finish-plan.md` (2026-10-22). Remaining work is packaging only.
 
-1. User: record the three Loom walkthroughs and read `docs/portfolio/methodology.md` once for voice.
-2. Deferred, recorded in `docs/portfolio/gap-statement.md`: the remaining Clay runs, the 142 live audit findings, tier re-inspection, the CRM history port, Lemlist timing and webhook events, and the Milestone 7 Attio List.
+1. User: record the three Loom walkthroughs (video 2 script in `docs/portfolio/loom-video-2-script.md`) and read `docs/portfolio/methodology.md` once for voice.
+2. In flight: a Render cron for the monthly CMS refresh, on its own branch.
+3. Deferred, recorded in `docs/portfolio/gap-statement.md`: the remaining Clay runs, the 142 live audit findings, tier re-inspection, the CRM history port, Lemlist timing and webhook events, and the Milestone 7 Attio List.
 
 ## Blockers
 
