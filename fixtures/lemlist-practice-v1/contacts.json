@@ -65,6 +65,17 @@
       "companyName": "Savannah Assisted (practice)",
       "jobTitle": "Plant Operations Director",
       "approval": { "approvedBy": "rep-2", "approvedAt": "2026-10-22T14:05:00Z" }
+    },
+    {
+      "contactKey": "practice-008",
+      "email": "avery.lane@practice-contact.example.com",
+      "firstName": "Avery",
+      "lastName": "Lane",
+      "companyName": "PruittHealth (practice contact, fictional person)",
+      "jobTitle": "Vice President of Operations",
+      "operatorId": "ga-op-chain-434",
+      "persona": "Senior-Living Operations Leader",
+      "approval": null
     }
   ]
 }

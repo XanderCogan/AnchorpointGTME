@@ -9,15 +9,17 @@
 //                          ATTIO_CONNECTION_ID; requires --approvals <file.json>,
 //                          [{ contactKey, approvedBy, approvedAt }] keyed by Attio
 //                          person record ID, until Milestone 5's approval table exists.
-import { readFileSync } from "node:fs";
+//   --drafts <dir>         reviewed draft files from lemlist:draft (default
+//                          data/georgia-sample/private/drafts); a contact whose draft
+//                          is not marked reviewed is skipped, one with no draft enrolls
+//                          without copy variables.
 import { resolve } from "node:path";
 import { parseArgs } from "node:util";
-import { candidatesFromAttio, parseApprovals } from "../packages/connectors/src/lemlist/attio-source.ts";
 import { lemlistConfigFromEnv } from "../packages/connectors/src/lemlist/config.ts";
 import { connectLemlist } from "../packages/connectors/src/lemlist/connect.ts";
-import { executeEnrollment, planEnrollment, suppressionsFrom, type EnrollmentCandidate } from "../packages/connectors/src/lemlist/enrollment.ts";
-import { loadPracticeContacts } from "../packages/connectors/src/lemlist/practice.ts";
-import { loadAttioPeopleAndCompanies } from "../packages/db/src/attio-mirror.ts";
+import { attachDrafts, DEFAULT_DRAFTS_DIR, readDraftFile } from "../packages/connectors/src/lemlist/drafts.ts";
+import { executeEnrollment, planEnrollment, suppressionsFrom } from "../packages/connectors/src/lemlist/enrollment.ts";
+import { loadEnrollmentSource } from "../packages/connectors/src/lemlist/source.ts";
 import { closePool } from "../packages/db/src/client.ts";
 import { localSuppressions, PostgresActivationControls, PostgresEnrollmentLedger } from "../packages/db/src/lemlist.ts";
 
@@ -33,6 +35,7 @@ const { values: args } = parseArgs({
     campaign: { type: "string" },
     source: { type: "string", default: "practice" },
     approvals: { type: "string" },
+    drafts: { type: "string", default: resolve(import.meta.dirname, "..", DEFAULT_DRAFTS_DIR) },
   },
 });
 const config = lemlistConfigFromEnv();
@@ -42,39 +45,31 @@ if (!config || !campaignId) {
   process.exit(1);
 }
 
-async function loadSource(): Promise<{ candidates: EnrollmentCandidate[]; localDoNotContact: string[] }> {
-  if (args.source === "practice") {
-    return loadPracticeContacts(resolve(import.meta.dirname, "..", "fixtures", "lemlist-practice-v1", "contacts.json"));
-  }
-  if (args.source === "attio") {
-    const connectionId = process.env.ATTIO_CONNECTION_ID;
-    if (!connectionId) throw new Error("Set ATTIO_CONNECTION_ID to read the Attio mirror.");
-    if (!args.approvals) throw new Error("--source attio needs --approvals <file.json> until Milestone 5's approval table exists.");
-    const approvals = parseApprovals(JSON.parse(readFileSync(resolve(args.approvals), "utf8")));
-    const source = candidatesFromAttio({ ...(await loadAttioPeopleAndCompanies(connectionId)), approvals });
-    if (source.unlinked.length > 0) console.log(`${source.unlinked.length} people skipped: not linked to a mirrored company.`);
-    return source;
-  }
-  throw new Error(`Unknown --source ${args.source}; use practice or attio.`);
-}
-
 try {
-  const source = await loadSource();
+  const source = await loadEnrollmentSource({
+    source: args.source,
+    approvals: args.approvals,
+    practicePath: resolve(import.meta.dirname, "..", "fixtures", "lemlist-practice-v1", "contacts.json"),
+  });
   const client = connectLemlist(config);
   const ledger = new PostgresEnrollmentLedger();
   const remote: string[] = [];
   for await (const page of client.listUnsubscribes({ pageSize: 100, maxPages: 50 })) {
     for (const row of page) remote.push(row.email ?? row.value ?? "");
   }
-  const decisions = planEnrollment({
-    campaignId,
-    candidates: source.candidates,
-    suppressions: suppressionsFrom(remote, [...source.localDoNotContact, ...(await localSuppressions())]),
-    activeKeys: await ledger.activeKeys(campaignId),
-    killSwitchEngaged: await new PostgresActivationControls().killSwitchEngaged(campaignId),
-  });
+  const decisions = attachDrafts(
+    planEnrollment({
+      campaignId,
+      candidates: source.candidates,
+      suppressions: suppressionsFrom(remote, [...source.localDoNotContact, ...(await localSuppressions())]),
+      activeKeys: await ledger.activeKeys(campaignId),
+      killSwitchEngaged: await new PostgresActivationControls().killSwitchEngaged(campaignId),
+    }),
+    (contactKey) => readDraftFile(args.drafts, contactKey),
+  );
   for (const decision of decisions) {
-    console.log(`${decision.contactKey}: ${decision.action === "enroll" ? "enroll" : `skip (${decision.reason})`}`);
+    const withDraft = decision.action === "enroll" && "subject" in (decision.lead.variables ?? {}) ? " with reviewed draft variables" : "";
+    console.log(`${decision.contactKey}: ${decision.action === "enroll" ? `enroll${withDraft}` : `skip (${decision.reason})`}`);
   }
   if (!args.live) {
     console.log(`Dry run: no Lemlist write was made. Pass --live to add the planned leads to campaign ${campaignId}.`);

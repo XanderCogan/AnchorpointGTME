@@ -94,6 +94,8 @@ test("the dry-run plan is deny-first and explains every skip", async () => {
       ["practice-005", "missing_email"],
       ["practice-006", "suppressed_domain"],
       ["practice-007", "suppressed_email"],
+      // The PruittHealth-linked practice contact exists for lemlist:draft and is not approved.
+      ["practice-008", "not_approved"],
     ],
   );
   assert.ok(requests.every((request) => request.method === "GET"), "planning makes no write");

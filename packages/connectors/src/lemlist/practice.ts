@@ -13,6 +13,8 @@ const practiceSchema = z.object({
       lastName: z.string().optional(),
       companyName: z.string().optional(),
       jobTitle: z.string().optional(),
+      operatorId: z.string().optional(),
+      persona: z.string().optional(),
       approval: z.object({ approvedBy: z.string(), approvedAt: z.string() }).nullable(),
     }),
   ),

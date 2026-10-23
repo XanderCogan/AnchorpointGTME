@@ -14,6 +14,9 @@ export interface EnrollmentCandidate {
   companyName?: string;
   companyDomain?: string;
   jobTitle?: string;
+  // Scoring operator and role-map persona, when known; they select the draft fact sheet.
+  operatorId?: string;
+  persona?: string;
   // One approve step by a representative or manager inside the application.
   approval: { approvedBy: string; approvedAt: string } | null;
 }
@@ -25,7 +28,9 @@ export type SkipReason =
   | "suppressed_domain"
   | "not_approved"
   | "already_enrolled"
-  | "duplicate_in_request";
+  | "duplicate_in_request"
+  // A draft file exists for the contact but no human has marked it reviewed.
+  | "draft_not_reviewed";
 
 export type EnrollmentDecision =
   | { contactKey: string; action: "enroll"; idempotencyKey: string; lead: LeadInput }

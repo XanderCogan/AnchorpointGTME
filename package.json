@@ -27,6 +27,7 @@
     "attio:audit": "node scripts/attio-audit-live.ts",
     "attio:verify-recorded": "node scripts/verify-attio-recorded.ts",
     "lemlist:setup": "node scripts/lemlist-setup.ts",
+    "lemlist:draft": "node scripts/lemlist-draft.ts",
     "lemlist:enroll": "node scripts/lemlist-enroll.ts",
     "lemlist:webhook": "node scripts/lemlist-register-webhook.ts",
     "salesforce:sync": "node scripts/salesforce-sync.ts",
@@ -50,6 +51,7 @@
     "typescript": "^7.0.2"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^1.1.0",
     "next": "^16.4.2",
     "pg": "^8.23.1",
     "react": "^19.3.1",

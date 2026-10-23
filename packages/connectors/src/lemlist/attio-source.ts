@@ -20,6 +20,9 @@ export interface AttioPersonSlugs {
   company: string;
   // A checked opt-out becomes a local suppression.
   emailOptOut: string;
+  // Role-map persona written by the Clay round trip; the company's scoring operator ID.
+  persona: string;
+  companyOperatorId: string;
 }
 
 export const defaultAttioPersonSlugs: AttioPersonSlugs = {
@@ -28,6 +31,8 @@ export const defaultAttioPersonSlugs: AttioPersonSlugs = {
   jobTitle: "job_title",
   company: "company",
   emailOptOut: "email_opt_out",
+  persona: "persona",
+  companyOperatorId: "operator_id",
 };
 
 export interface AttioEnrollmentSource {
@@ -48,6 +53,7 @@ export function parseApprovals(raw: unknown): Map<string, Approval> {
 
 type Value = Record<string, unknown>;
 const firstValue = (record: AttioRecordPayload, slug: string): Value | undefined => record.values[slug]?.[0];
+const optional = (key: string, value: string | undefined): Record<string, string> => (value === undefined ? {} : { [key]: value });
 const str = (value: unknown): string | undefined => (typeof value === "string" && value.trim() !== "" ? value.trim() : undefined);
 
 export function candidatesFromAttio(input: {
@@ -77,6 +83,8 @@ export function candidatesFromAttio(input: {
       companyName: str(firstValue(company, "name")?.value),
       companyDomain: str(firstValue(company, "domains")?.domain),
       jobTitle: str(firstValue(person, slugs.jobTitle)?.value),
+      ...optional("operatorId", str(firstValue(company, slugs.companyOperatorId)?.value)),
+      ...optional("persona", str(firstValue(person, slugs.persona)?.value) ?? str((firstValue(person, slugs.persona)?.option as Value | undefined)?.title)),
       approval: input.approvals.get(recordId) ?? null,
     });
   }
