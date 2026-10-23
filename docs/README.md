@@ -27,6 +27,12 @@ Use this file to retrieve one precise source. Start with the narrowest matching 
 
 Treat frozen contract versions as authoritative for implemented behavior. If a proposed change conflicts with a frozen contract, record the decision first and create a new version instead of silently editing behavior.
 
+## Portfolio
+
+- One-page case study of the whole work sample: [`portfolio/case-study.md`](portfolio/case-study.md)
+- How the work was approached and what the decisions forced, in long form: [`portfolio/methodology.md`](portfolio/methodology.md)
+- What is designed but not built: [`portfolio/gap-statement.md`](portfolio/gap-statement.md)
+
 ## Research and discovery
 
 - Portfolio purpose, Apero audience, why the Anchorpoint scenario was selected, and what the work sample must prove: [`research/apero-portfolio-context.md`](research/apero-portfolio-context.md)

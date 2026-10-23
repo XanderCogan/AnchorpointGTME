@@ -62,6 +62,7 @@ docs/                routed from docs/README.md; decisions in docs/decisions/
 
 ## Where to look
 
+- [`docs/portfolio/case-study.md`](docs/portfolio/case-study.md): the one-page case study, the shortest full account of the work.
 - [`docs/portfolio/methodology.md`](docs/portfolio/methodology.md): how the problem was approached, what was decided, and what the constraints forced, compiled from the fourteen decision records.
 - [`docs/portfolio/diagrams.md`](docs/portfolio/diagrams.md): Mermaid charts of the data pipeline, the Attio object model, and the activation state machine.
 - [`docs/portfolio/copy-examples.md`](docs/portfolio/copy-examples.md): two cold-email drafts for Tier A operators with the reasoning, labelled never sent.
