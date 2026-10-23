@@ -49,7 +49,9 @@ Show `scripts/georgia-sample/serviceability.ts`, then the operator in `tiers.jso
 
 Say: a van has to drive there. Drive time from every facility to the nearest capable branch comes from OSRM, the free OpenStreetMap router, four requests for the whole state. The four branches are assumptions placed at city centers. The hard gate is at least one facility in drive range for sprinkler or alarm work; 71 of 105 operators pass.
 
-Then the score, one breath each: change propensity (ownership change, hiring, recent service-line citation, decaying with age), operational need (facilities in footprint, share cited since 2025, share with repeat sprinkler or alarm citations), data confidence (domain, geography, resolved versus provisional), and people inputs from the Clay pass. Bands A from 40, B from 30, C from 20, Watch below: 6 A, 15 B, 32 C, 18 Watch. Account value sits beside the score with labelled price assumptions and never changes it.
+Then the score, one breath each: new owner or new hire, cited recently and cited repeatedly, many buildings in range, and the right people found by Clay. Bands A from 40, B from 30, C from 20, Watch below: 6 A, 15 B, 32 C, 18 Watch. Account value sits beside the score with labelled price assumptions and never changes it.
+
+Data confidence is in the score but off the slide. If asked, it is not an admission of bad data: it rewards operators identified with certainty, a matched domain and a resolved parent, so a rep never calls a provisional match.
 
 ## Stop 4: Attio and Clay in one breath (about 30 seconds)
 
