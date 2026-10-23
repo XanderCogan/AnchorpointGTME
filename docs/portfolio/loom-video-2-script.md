@@ -32,12 +32,14 @@ Four datasets, pulled monthly by a Render cron: provider information, ownership,
 
 Show `scripts/georgia-sample/resolve-operators.ts` and `data/georgia-sample/review-decisions.json`.
 
+This stop produces the company, not the people. The buyers' names come from Clay at Stop 4, so do not try to explain contacts here.
+
 The plain version, using the trace operator. PruittHealth runs 63 buildings in Georgia, and each building is its own row in the CMS file. We need one PruittHealth company in the CRM, not 63. So the script asks three questions about every building, in order, and stops at the first one that answers.
 
 - Does CMS already say which chain it belongs to? Every PruittHealth building carries the same chain number. That alone groups 248 of the 356 buildings into 28 companies.
 - If not, does the ownership file name the company in charge? CMS lists who has operational or managerial control of each building. When that is an organization that also holds a stake, the building joins that organization.
 - If neither, the building stands alone under its legal business name as a one-building company.
-- If the building is still unclear, say it has no legal name on file but is called "PruittHealth - Lithonia", it does not get merged by the script. It goes to a review file, and I approve or reject the merge by hand with evidence: the operator's website, the federal NPI registry, news, search results. I made 36 of those decisions.
+- If the building is still unclear, say it has no legal name on file but is called "PruittHealth - Lithonia", it does not get merged by the script. It waits in a review queue with the evidence attached: the operator's website, the federal NPI registry, news, search results. Call it a review queue on camera, which is the standard exception path, not "I decide by hand".
 
 Result: 356 buildings become 105 companies, 103 of them resolved and 2 still provisional, with 5 review cases open. One rule worth saying out loud: individual owners' names never enter the output, and the script fails the run if one does. Five chains are registered under a person's name, so they are grouped by id and withheld until a publishable organization name is found.
 
@@ -59,7 +61,7 @@ Open the Vercel dashboard.
 
 Say: Attio syncs one way into a Postgres mirror on Render through a read-only connector, and the CRM health audit runs against that mirror. This is the RevOps view. It is not a lead board. It answers whether the CRM can be trusted: missing owners, stale stages, duplicate accounts, contacts with no account, fields that disagree with their source. Every finding has a severity and a rule behind it, so the person who owns the CRM gets a list of things to fix, not a chart.
 
-Be honest on camera: what is on screen right now is the frozen practice fixture, 22 findings, 15 critical and 7 warning. Running the audit against the live Georgia mirror produced 142 findings, and wiring those into this screen is listed in the gap statement.
+Do not say pipeline problems show up here. Nothing on this screen watches the cron, Clay, or Lemlist; a pipeline failure shows in the cron's stage log on Render. These checks are the standard CRM hygiene set that RevOps teams run, so there is nothing to defend. What is on screen is the frozen practice fixture of 22 findings; say so only if asked. The live Georgia audit found 142, and wiring those in is in the gap statement.
 
 ## Stop 6: the drafted email and the stop line (about 60 seconds)
 
@@ -67,7 +69,7 @@ Show the output of `npm run lemlist:draft` for the trace contact (the gitignored
 
 Say: the drafting step builds a fact sheet from the operator's own public record, the K-tags cited, the dates, the repeats, and has Claude write one subject, opener, and body per contact. Read the draft aloud. It names the specific tag and the pattern, something like a sprinkler ITM citation recurring at three inspections since 2024, and offers the fix, never a generic pitch.
 
-Then the stop line: the draft sits in a file with empty review fields. Enrollment reads Attio, checks opt-out and do-not-call, requires approval by membership of an Attio List, writes an idempotent ledger entry, and has a kill switch. Only after a human marks the draft reviewed does enrollment carry it to Lemlist as variables. No campaign has been launched, no mailbox or sending domain exists, no real contact has been enrolled, and the phone handoff to TitanX is not built.
+Then the stop line. Approval is campaign-level under decision 0015: a person approves the campaign, and membership of an Attio List is the approval. Enrollment reads Attio, checks opt-out and do-not-call, writes an idempotent ledger entry, has a kill switch, and carries the draft into Lemlist as variables. As built, the drafting step also makes each draft wait for a review mark; the user's direction on 2026-10-22 is to keep per-email review for band A only and let approved templates carry the rest, which is not yet built or recorded as a decision. No campaign has been launched, no mailbox or sending domain exists, no real contact has been enrolled, and the phone handoff to TitanX is not built.
 
 ## Closing (about 15 seconds)
 
