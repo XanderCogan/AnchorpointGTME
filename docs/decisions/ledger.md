@@ -70,6 +70,10 @@ Status: active. Decided that approval is per campaign, with automatic enrollment
 
 Status: active. Redefined Milestone 5 around what decision 0015 left necessary, marked it complete on fixtures, and moved the approvals table and operator page to Milestone 8. Amends the build plan; replaces no decision.
 
+### 0017 Per-email review only for band A
+
+Status: active. Within an approved campaign, model-drafted emails carry into Lemlist on the campaign approval alone; a person reads each draft only for band A operators. The approvals file also applies to the practice source. Extends decision 0015; replaces no decision.
+
 ## 2. Checked for contradictions
 
 Each pair below was read side by side. "Consistent" means the newer record states that it changes the older one or the two agree. A conflict is quoted with its file name.
@@ -107,4 +111,4 @@ Consistent. `docs/product/build-plan.md` names "two exceptions", the Georgia sam
 - Fictional data: none, decision 0010. The CRM holds real Georgia operators and facilities only; synthetic fixtures are labelled test inputs.
 - Enrichment budget: decision 0007 as amended, kept in force by decision 0012. Free tiers first, Clay may exceed $20 under the one-day timeline, and every purchase is confirmed at the shown price.
 - Gate order: the build plan, with its two exceptions under decisions 0008 and 0012 and the Milestone 5 redefinition under 0016. Milestones 5, 6, and 7 are accepted on dry runs, fixtures, and handoff records.
-- Approval: campaign-level, decision 0015. A manager approves a campaign, its audience definition, and its senders once; enrollment is automatic from an Attio List through the native Lemlist app. Suppression stays deny-first and no outreach ever happens.
+- Approval: campaign-level, decision 0015. A manager approves a campaign, its audience definition, and its senders once; enrollment is automatic from an Attio List through the native Lemlist app. Suppression stays deny-first and no outreach ever happens. Per-email review of model drafts is limited to band A operators, decision 0017.

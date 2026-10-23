@@ -117,6 +117,16 @@ test("enrollment refuses a draft without review fields and carries a reviewed on
     draftReviewedBy: "manager-1",
     draftReviewedOn: "2026-10-22",
   });
+  // Decision 0017: a draft for an operator outside band A carries without review marks.
+  const bandC = draftFile();
+  bandC.factSheet = { ...sheet, operator: { ...sheet.operator, band: "C" } };
+  const unreviewedC = attachDrafts(plan, (key) => (key === "practice-008" ? bandC : null));
+  assert.equal(unreviewedC[0]?.action, "enroll");
+  if (unreviewedC[0]?.action === "enroll") {
+    assert.equal(unreviewedC[0].lead.variables.subject, goodDraft.subject);
+    assert.equal("draftReviewedBy" in unreviewedC[0].lead.variables, false);
+  }
+
   // A contact with no draft file enrolls exactly as planned.
   assert.deepEqual(reviewed[1], plan[1]);
 });

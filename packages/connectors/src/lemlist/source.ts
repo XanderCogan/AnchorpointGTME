@@ -30,7 +30,16 @@ export async function loadEnrollmentSource(args: { source: string; approvals?: s
   candidates: EnrollmentCandidate[];
   localDoNotContact: string[];
 }> {
-  if (args.source === "practice") return loadPracticeContacts(args.practicePath);
+  if (args.source === "practice") {
+    const practice = loadPracticeContacts(args.practicePath);
+    if (!args.approvals) return practice;
+    // Decision 0017: an approvals file overlays the fixture, which stays unchanged.
+    const approvals = parseApprovals(JSON.parse(readFileSync(resolve(args.approvals), "utf8")));
+    return {
+      ...practice,
+      candidates: practice.candidates.map((c) => (approvals.has(c.contactKey) ? { ...c, approval: approvals.get(c.contactKey)! } : c)),
+    };
+  }
   if (args.source === "attio") {
     const connectionId = process.env.ATTIO_CONNECTION_ID;
     if (!connectionId) throw new Error("Set ATTIO_CONNECTION_ID to read the Attio mirror.");

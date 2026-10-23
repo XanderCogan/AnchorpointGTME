@@ -103,15 +103,31 @@ export function assertReviewed(file: Pick<DraftFile, "contactKey" | "reviewedBy"
   if (!isReviewed(file)) throw new DraftNotReviewedError(file.contactKey);
 }
 
-// The Lemlist custom variables a reviewed draft contributes to its lead.
+// Decision 0017: a person reads each draft only for band A operators. Other drafts
+// travel on the campaign approval alone, inside the validator's limits.
+export const REVIEWED_BANDS: ReadonlySet<string> = new Set(["A"]);
+
+export function requiresReview(file: Pick<DraftFile, "factSheet">): boolean {
+  return REVIEWED_BANDS.has(String(file.factSheet?.operator?.band ?? ""));
+}
+
+export function assertReviewedIfRequired(file: Pick<DraftFile, "contactKey" | "factSheet" | "reviewedBy" | "reviewedOn">): void {
+  if (requiresReview(file)) assertReviewed(file);
+}
+
+// The Lemlist custom variables a draft contributes to its lead. The review variables
+// are present only when a person filled them.
 export function draftVariables(file: DraftFile): Record<string, string> {
-  assertReviewed(file);
-  return {
+  assertReviewedIfRequired(file);
+  const variables: Record<string, string> = {
     subject: file.draft.subject,
     icebreaker: file.draft.icebreaker,
     hook_fact: file.draft.hook_fact,
     body: file.draft.body,
-    draftReviewedBy: file.reviewedBy as string,
-    draftReviewedOn: file.reviewedOn as string,
   };
+  if (isReviewed(file)) {
+    variables.draftReviewedBy = file.reviewedBy as string;
+    variables.draftReviewedOn = file.reviewedOn as string;
+  }
+  return variables;
 }
