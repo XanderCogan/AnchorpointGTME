@@ -25,9 +25,13 @@ const datasets: { id: string; title: string; stateFiltered: boolean }[] = [
   { id: "tagd-9999", title: "Citation Code Look-up", stateFiltered: false },
 ];
 
+// CMS fronts the Provider Data Catalog with Akamai, which returns 403 to Node's default
+// user agent (checked 2026-10-22). An identifying agent is accepted.
+const USER_AGENT = "AnchorpointGTME/1.0 (+https://github.com/XanderCogan/AnchorpointGTME)";
+
 async function getJson(url: string): Promise<unknown> {
   for (let attempt = 1; ; attempt++) {
-    const response = await fetch(url);
+    const response = await fetch(url, { headers: { "User-Agent": USER_AGENT } });
     if (response.ok) return response.json();
     if (attempt >= 3) throw new Error(`${response.status} from ${url}`);
     await new Promise((done) => setTimeout(done, 2000 * attempt));
