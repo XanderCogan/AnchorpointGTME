@@ -1,12 +1,15 @@
 import { z } from "zod";
 import type { AttioRecordPayload } from "../../../core/src/attio-mapping.ts";
+import type { AttioListEntry } from "../attio/client.ts";
 import type { EnrollmentCandidate } from "./enrollment.ts";
 
 // Enrollment input from the read-only Attio mirror: People linked to a mirrored
-// Company. Attio never supplies approval. Approval is the application's decision,
-// which Milestone 5's approval table will hold; until it exists, approvals are an
-// explicit input keyed by Attio person record ID. A person with no approval entry
-// is planned as not_approved, so a missing input denies rather than allows.
+// Company. Approval is campaign-level (decision 0015): a manager approves the
+// campaign and its audience definition once, and a Person is approved when they
+// are a member of that campaign's audience List in Attio. An explicit approvals
+// file keyed by Attio person record ID remains for tests and offline runs. A
+// person with no approval is planned as not_approved, so a missing input denies
+// rather than allows.
 
 export interface Approval {
   approvedBy: string;
@@ -44,6 +47,23 @@ const approvalsSchema = z.array(
 // Parses an explicit approvals input: [{ contactKey, approvedBy, approvedAt }].
 export function parseApprovals(raw: unknown): Map<string, Approval> {
   return new Map(approvalsSchema.parse(raw).map(({ contactKey, ...approval }) => [contactKey, approval]));
+}
+
+// Approval from audience List membership. Only People entries count; a Company on
+// the List approves nobody. approvedBy names the List, approvedAt is the entry time.
+export function approvalsFromListEntries(
+  entries: readonly AttioListEntry[],
+  listSlug: string,
+  peopleObjectSlug = "people",
+): Map<string, Approval> {
+  const approvals = new Map<string, Approval>();
+  for (const entry of entries) {
+    if (entry.parent_object !== peopleObjectSlug) continue;
+    const existing = approvals.get(entry.parent_record_id);
+    if (existing && existing.approvedAt <= entry.created_at) continue;
+    approvals.set(entry.parent_record_id, { approvedBy: `attio-list:${listSlug}`, approvedAt: entry.created_at });
+  }
+  return approvals;
 }
 
 type Value = Record<string, unknown>;

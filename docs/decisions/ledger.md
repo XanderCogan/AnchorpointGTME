@@ -99,3 +99,4 @@ Consistent. `docs/product/build-plan.md` names "two exceptions", the Georgia sam
 - Fictional data: none, decision 0010. The CRM holds real Georgia operators and facilities only; synthetic fixtures are labelled test inputs.
 - Enrichment budget: decision 0007 as amended, kept in force by decision 0012. Free tiers first, Clay may exceed $20 under the one-day timeline, and every purchase is confirmed at the shown price.
 - Gate order: the build plan, with its two exceptions under decisions 0008 and 0012. Milestones 6 and 7 are accepted on dry runs, fixtures, and handoff records.
+- Approval: campaign-level, decision 0015. A manager approves a campaign, its audience definition, and its senders once; enrollment is automatic from an Attio List through the native Lemlist app. Suppression stays deny-first and no outreach ever happens.

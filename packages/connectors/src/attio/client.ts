@@ -33,11 +33,20 @@ export const taskSchema = z.object({
   created_at: isoDateTime,
 }).catchall(z.unknown());
 
+export const listEntrySchema = z.object({
+  id: z.object({ workspace_id: z.string(), list_id: z.string(), entry_id: z.string().min(1) }),
+  parent_record_id: z.string().min(1),
+  parent_object: z.string().min(1),
+  created_at: isoDateTime,
+  entry_values: z.record(z.string(), z.array(attributeValueSchema)).optional(),
+}).catchall(z.unknown());
+
 const listOf = <T extends z.ZodType>(item: T) => z.object({ data: z.array(item) });
 
 export type AttioRecord = z.infer<typeof attioRecordSchema>;
 export type AttioWorkspaceMember = z.infer<typeof workspaceMemberSchema>;
 export type AttioTask = z.infer<typeof taskSchema>;
+export type AttioListEntry = z.infer<typeof listEntrySchema>;
 
 export interface PageOptions {
   pageSize: number;
@@ -72,6 +81,26 @@ export class AttioReadClient {
           method: "POST",
           url: `/v2/objects/${encodeURIComponent(objectSlug)}/records/query`,
           body: { limit: options.pageSize, offset: page * options.pageSize, sorts: [{ direction: "asc", attribute: "created_at" }] },
+        }),
+      );
+      yield response.data;
+      if (response.data.length < options.pageSize) return;
+    }
+  }
+
+  // Entries of a List, by slug or ID. Used for the approved audience List
+  // (decision 0015): membership is the approval.
+  async *queryListEntries(listSlug: string, options: PageOptions): AsyncGenerator<AttioListEntry[]> {
+    assertPageOptions(options);
+    for (let page = 0; ; page += 1) {
+      if (page >= options.maxPages) {
+        throw new Error(`list ${listSlug} exceeded the ${options.maxPages}-page bound before the last page.`);
+      }
+      const response = listOf(listEntrySchema).parse(
+        await this.#transport.send({
+          method: "POST",
+          url: `/v2/lists/${encodeURIComponent(listSlug)}/entries/query`,
+          body: { limit: options.pageSize, offset: page * options.pageSize },
         }),
       );
       yield response.data;

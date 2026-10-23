@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { resolve } from "node:path";
 import test from "node:test";
 import type { AttioRecordPayload } from "../packages/core/src/attio-mapping.ts";
-import { candidatesFromAttio, parseApprovals } from "../packages/connectors/src/lemlist/attio-source.ts";
+import { approvalsFromListEntries, candidatesFromAttio, parseApprovals } from "../packages/connectors/src/lemlist/attio-source.ts";
 import { LemlistClient } from "../packages/connectors/src/lemlist/client.ts";
 import { lemlistConfigFromEnv } from "../packages/connectors/src/lemlist/config.ts";
 import {
@@ -260,6 +260,32 @@ test("Attio mirror people linked to companies pass the same deny-first plan", as
     ],
   );
   assert.throws(() => parseApprovals([{ contactKey: "pe_1" }]));
+});
+
+test("membership of the approved audience List is the approval (decision 0015)", () => {
+  const entry = (entry_id: string, parent_object: string, parent_record_id: string, created_at: string) => ({
+    id: { workspace_id: "ws", list_id: "li_1", entry_id },
+    parent_object,
+    parent_record_id,
+    created_at,
+  });
+  const approvals = approvalsFromListEntries(
+    [
+      entry("en_1", "people", "pe_1", "2026-10-22T14:00:00.000Z"),
+      entry("en_2", "people", "pe_1", "2026-10-22T13:00:00.000Z"),
+      entry("en_3", "companies", "co_1", "2026-10-22T13:00:00.000Z"),
+      entry("en_4", "people", "pe_3", "2026-10-22T15:00:00.000Z"),
+    ],
+    "approved-tier-a",
+  );
+  assert.deepEqual(
+    [...approvals.entries()],
+    [
+      ["pe_1", { approvedBy: "attio-list:approved-tier-a", approvedAt: "2026-10-22T13:00:00.000Z" }],
+      ["pe_3", { approvedBy: "attio-list:approved-tier-a", approvedAt: "2026-10-22T15:00:00.000Z" }],
+    ],
+  );
+  assert.equal(approvalsFromListEntries([], "approved-tier-a").size, 0);
 });
 
 test("requests use Basic auth with an empty login and the API key", async () => {

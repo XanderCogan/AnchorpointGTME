@@ -39,6 +39,6 @@ Stated by the user on 2026-10-22, after the record was first written: Attio is a
 
 ## Open within this decision
 
-- Whether Lemlist and TitanX integrate with Attio natively or need the application to bridge them, confirmed through one bounded lookup each. TitanX was previously reached through its Salesforce integration.
+- Whether Lemlist and TitanX integrate with Attio natively or need the application to bridge them, confirmed through one bounded lookup each. Lemlist: resolved on 2026-10-22. Lemlist publishes a native Attio app in the Attio app store (push a contact or a bulk selection into a campaign from the record, duplicate skip, email finding at enrollment, opens, clicks, replies and bounces written back as Attio activities, status and deal automations). Sources: https://attio.com/help/reference/apps/data-and-enrichment-apps/lemlist-app, https://www.lemlist.com/integrations/attio, https://help.lemlist.com/en/articles/15554084-how-to-connect-attio-and-lemlist, retrieved 2026-10-22. It is not installed and not used: the native push bypasses this project's deny-first planner, approval record, suppression and kill switch, so enrollment stays in the application and the native app is a candidate only for activity sync back to Attio. TitanX remains open. TitanX was previously reached through its Salesforce integration.
 - Whether the Lead concept for unmatched inbound hand-raisers is a separate Attio object or a status on People.
 - Whether Deal types use one pipeline with a type attribute or separate lists.

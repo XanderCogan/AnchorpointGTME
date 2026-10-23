@@ -6,13 +6,18 @@
 //   --campaign <id>        campaign for this run (default LEMLIST_CAMPAIGN_ID)
 //   --source practice      practice fixture contacts (default)
 //   --source attio         People linked to Companies in the Attio mirror of
-//                          ATTIO_CONNECTION_ID; requires --approvals <file.json>,
-//                          [{ contactKey, approvedBy, approvedAt }] keyed by Attio
-//                          person record ID, until Milestone 5's approval table exists.
+//                          ATTIO_CONNECTION_ID. Approval is membership of the
+//                          campaign's audience List (decision 0015):
+//   --approved-list <slug> the Attio List whose People members are approved
+//                          (default ATTIO_APPROVED_LIST); read live, read-only
+//   --approvals <file>     offline alternative: [{ contactKey, approvedBy, approvedAt }]
+//                          keyed by Attio person record ID
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { parseArgs } from "node:util";
-import { candidatesFromAttio, parseApprovals } from "../packages/connectors/src/lemlist/attio-source.ts";
+import { attioConfigFromEnv } from "../packages/connectors/src/attio/config.ts";
+import { connectAttio } from "../packages/connectors/src/attio/connect.ts";
+import { approvalsFromListEntries, candidatesFromAttio, parseApprovals, type Approval } from "../packages/connectors/src/lemlist/attio-source.ts";
 import { lemlistConfigFromEnv } from "../packages/connectors/src/lemlist/config.ts";
 import { connectLemlist } from "../packages/connectors/src/lemlist/connect.ts";
 import { executeEnrollment, planEnrollment, suppressionsFrom, type EnrollmentCandidate } from "../packages/connectors/src/lemlist/enrollment.ts";
@@ -33,6 +38,7 @@ const { values: args } = parseArgs({
     campaign: { type: "string" },
     source: { type: "string", default: "practice" },
     approvals: { type: "string" },
+    "approved-list": { type: "string" },
   },
 });
 const config = lemlistConfigFromEnv();
@@ -42,6 +48,22 @@ if (!config || !campaignId) {
   process.exit(1);
 }
 
+// Decision 0015: approval is membership of the approved campaign's audience List.
+async function loadApprovals(): Promise<ReadonlyMap<string, Approval>> {
+  const listSlug = args["approved-list"] ?? process.env.ATTIO_APPROVED_LIST;
+  if (listSlug) {
+    const attioConfig = attioConfigFromEnv();
+    if (!attioConfig) throw new Error("Set ATTIO_ACCESS_TOKEN to read the approved List.");
+    const entries = [];
+    for await (const page of connectAttio(attioConfig).queryListEntries(listSlug, { pageSize: 500, maxPages: 20 })) entries.push(...page);
+    const approvals = approvalsFromListEntries(entries, listSlug);
+    console.log(`${approvals.size} people approved by membership of Attio List ${listSlug}.`);
+    return approvals;
+  }
+  if (args.approvals) return parseApprovals(JSON.parse(readFileSync(resolve(args.approvals), "utf8")));
+  throw new Error("--source attio needs --approved-list <slug> (or ATTIO_APPROVED_LIST), or --approvals <file.json> for an offline run.");
+}
+
 async function loadSource(): Promise<{ candidates: EnrollmentCandidate[]; localDoNotContact: string[] }> {
   if (args.source === "practice") {
     return loadPracticeContacts(resolve(import.meta.dirname, "..", "fixtures", "lemlist-practice-v1", "contacts.json"));
@@ -49,8 +71,7 @@ async function loadSource(): Promise<{ candidates: EnrollmentCandidate[]; localD
   if (args.source === "attio") {
     const connectionId = process.env.ATTIO_CONNECTION_ID;
     if (!connectionId) throw new Error("Set ATTIO_CONNECTION_ID to read the Attio mirror.");
-    if (!args.approvals) throw new Error("--source attio needs --approvals <file.json> until Milestone 5's approval table exists.");
-    const approvals = parseApprovals(JSON.parse(readFileSync(resolve(args.approvals), "utf8")));
+    const approvals = await loadApprovals();
     const source = candidatesFromAttio({ ...(await loadAttioPeopleAndCompanies(connectionId)), approvals });
     if (source.unlinked.length > 0) console.log(`${source.unlinked.length} people skipped: not linked to a mirrored company.`);
     return source;

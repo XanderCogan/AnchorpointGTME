@@ -67,6 +67,9 @@ test("the transport refuses every write before the network is reached", async ()
     { method: "DELETE", url: "/v2/objects/deals/records/abc" },
     { method: "POST", url: "/v2/tasks", body: { data: {} } },
     { method: "POST", url: "/v2/objects/companies/records/query", body: { limit: 5, data: { name: "x" } } },
+    { method: "POST", url: "/v2/lists/approved/entries/query", body: { limit: 5, data: { parent_record_id: "x" } } },
+    { method: "POST", url: "/v2/lists/approved/entries", body: { data: {} } },
+    { method: "DELETE", url: "/v2/lists/approved/entries/abc" },
     { method: "GET", url: "/v2/objects/companies/attributes" },
     { method: "GET", url: "https://evil.example/v2/tasks" },
   ];
@@ -81,6 +84,9 @@ test("allowed reads pass the guard", () => {
   assert.doesNotThrow(() => assertReadOnlyRequest({ method: "GET", url: "/v2/workspace_members" }, base));
   assert.doesNotThrow(() =>
     assertReadOnlyRequest({ method: "post", url: "/v2/objects/sites/records/query", body: { limit: 5, offset: 0 } }, base),
+  );
+  assert.doesNotThrow(() =>
+    assertReadOnlyRequest({ method: "POST", url: "/v2/lists/approved-tier-a/entries/query", body: { limit: 5, offset: 0 } }, base),
   );
 });
 

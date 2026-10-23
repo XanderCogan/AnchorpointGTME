@@ -92,3 +92,7 @@ What the next engineer does first: write the operating runbook from `README.md`,
 - Milestone 8: not met. Nothing built.
 
 Milestones 0 to 3 and 6 are accepted and are not covered here.
+
+## Added 2026-10-22, decision 0015
+
+The native Lemlist app for Attio is installed and the planner reads approval from membership of the campaign's audience List (the approvals file remains for offline runs). Not done: no audience List has been created in the workspace, so the List path is verified on fixtures and not against Attio.

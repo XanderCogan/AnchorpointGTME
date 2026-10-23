@@ -1,6 +1,6 @@
 # Decision 0006: Ordinary-Company Operating Profile
 
-Status: approved on 2026-10-19. Items listed under "Open within this decision" remain open. Amended on 2026-10-20 under decision 0010: the operating profile stands and feeds decision 0009 as labelled assumptions, but no history is generated, and the "Generated dataset scope" section is cancelled and kept for history only.
+Status: approved on 2026-10-19. Items listed under "Open within this decision" remain open. Amended on 2026-10-20 under decision 0010: the operating profile stands and feeds decision 0009 as labelled assumptions, but no history is generated, and the "Generated dataset scope" section is cancelled and kept for history only. Amended on 2026-10-22 under decision 0011: the Salesforce backstory is dropped. Anchorpoint is standing up Attio as the roll-up's first shared commercial system; before that, each branch ran its own records. The "Data quality by era" section is kept for history only and is not part of the narrative.
 
 Date: 2026-10-19  
 Decision owner: User  
@@ -22,7 +22,7 @@ Public benchmarks for regional fire and life-safety service companies are thin. 
 - Macon was acquired in 2023 and migrated to the field-service platform in 2025, two years after close.
 - Savannah was acquired in 2024 and has not migrated. Integration slipped behind other priorities, which is common and explains its legacy systems under decision 0004.
 - Greenville was acquired in 2026 and migrated at close, because the sponsor learned from Savannah.
-- Salesforce was introduced at the platform in 2023, after the sponsor's acquisition. Earlier platform history exists only as imported Accounts and closed Opportunities with sparse activity.
+- Dropped on 2026-10-22 under decision 0011: the Salesforce backstory. Attio is the first shared commercial system across the branches.
 
 This order matches decision 0003, where Greenville is the newest add-on, and decision 0004, where Savannah is the least integrated.
 

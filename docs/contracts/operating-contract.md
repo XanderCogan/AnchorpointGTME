@@ -1,6 +1,6 @@
 # Operating Contract
 
-Status: approved and amended after Milestone 1 review on 2026-10-17; amended on 2026-10-19 for decisions 0003, 0004, and 0005; amended on 2026-10-21 for decision 0011, which replaces Salesforce with Attio.
+Status: approved and amended after Milestone 1 review on 2026-10-17; amended on 2026-10-19 for decisions 0003, 0004, and 0005; amended on 2026-10-21 for decision 0011, which replaces Salesforce with Attio; amended on 2026-10-22 for decision 0015, which moves approval from the contact to the campaign.
 
 Frozen version: `operating-contract-v1.3`
 
@@ -130,7 +130,7 @@ A contact is email-ready only when all of the following are true:
 - The contact maps to an approved persona.
 - A CRM owner exists.
 - No unresolved critical health finding applies.
-- A manager has approved the contact, campaign, and message version.
+- A manager has approved the campaign, its audience definition, and its message version, and the contact is a member of that campaign's audience List (decision 0015).
 
 ## Phone-ready definition
 
@@ -144,7 +144,7 @@ A contact is phone-ready only when all of the following are true:
 - Territory and time zone are known.
 - A CRM owner exists.
 - No unresolved critical health finding applies.
-- A manager has approved the contact and call play.
+- A manager has approved the call play and its audience definition, and the contact is a member of that play's audience List (decision 0015).
 
 ## Proposed channel policy
 

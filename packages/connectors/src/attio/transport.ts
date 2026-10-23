@@ -1,6 +1,6 @@
 // Read-only HTTP boundary for the Attio REST API (decision 0011). Every call passes
-// through assertReadOnlyRequest before fetch is reached. Attio's record query is a
-// POST that reads, so POST is allowed only on the record query resource and only
+// through assertReadOnlyRequest before fetch is reached. Attio's record and list-entry
+// queries are POSTs that read, so POST is allowed only on those query resources and only
 // with a body made of query keys; every other POST, PUT, PATCH, or DELETE fails closed.
 
 export type FetchLike = (input: string, init?: RequestInit) => Promise<Response>;
@@ -22,6 +22,8 @@ export const attioApiBaseUrl = "https://api.attio.com";
 
 const getPaths = [/^\/v2\/self$/, /^\/v2\/workspace_members$/, /^\/v2\/tasks$/];
 const recordQueryPath = /^\/v2\/objects\/[a-z0-9_-]+\/records\/query$/;
+// List entries are read the same way (decision 0015: audience List membership is approval).
+const listEntryQueryPath = /^\/v2\/lists\/[a-z0-9_-]+\/entries\/query$/;
 const queryBodyKeys = new Set(["filter", "sorts", "limit", "offset"]);
 
 export function assertReadOnlyRequest(request: ReadOnlyRequest, baseUrl: string): URL {
@@ -38,7 +40,7 @@ export function assertReadOnlyRequest(request: ReadOnlyRequest, baseUrl: string)
     }
     return target;
   }
-  if (method === "POST" && recordQueryPath.test(target.pathname)) {
+  if (method === "POST" && (recordQueryPath.test(target.pathname) || listEntryQueryPath.test(target.pathname))) {
     const keys = Object.keys(request.body ?? {});
     const foreign = keys.filter((key) => !queryBodyKeys.has(key));
     if (foreign.length > 0) {

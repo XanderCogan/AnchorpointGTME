@@ -14,7 +14,7 @@ Which field-service, billing, or ERP source holds Anchorpoint's operational trut
 
 Anchorpoint's operational system of record is a field-service management (FSM) platform shaped like ServiceTrade, a fire-protection-focused FSM product. Only the export shape is modeled. Every record in it is fictional, and no ServiceTrade connector is planned or implied.
 
-The CRM is Salesforce under decision 0005. The FSM, not the CRM, is the truth for whether a site is a customer, what was serviced, what was invoiced, and when service stopped.
+The CRM is Attio under decision 0011, which superseded Salesforce; Salesforce names below are kept as written and read as Attio Companies and Sites. The FSM, not the CRM, is the truth for whether a site is a customer, what was serviced, what was invoiced, and when service stopped.
 
 ### Why an FSM rather than an ERP
 
