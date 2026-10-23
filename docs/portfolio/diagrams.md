@@ -2,6 +2,75 @@
 
 Status: portfolio reference, 2026-10-22. Status facts come from `STATE.md`; object and field names come from the code under `packages/connectors/src/attio/`, `packages/core/src/attio-mapping.ts`, `scripts/attio-load-georgia.ts`, and `scripts/clay-attio-mapping.ts`. Dashed nodes are steps that were never run or never built.
 
+## 0. System overview
+
+```mermaid
+flowchart TB
+    subgraph sources["Public sources and tools"]
+        direction LR
+        cms["CMS Provider Data Catalog"]
+        osrm["OSRM drive time"]
+        clay["Clay (CSV round trip, two rows enriched)"]
+    end
+
+    subgraph local["scripts/ run by hand with node --env-file=.env"]
+        direction LR
+        sample["georgia-sample: pull, resolve, serviceability, signals, tier"]
+        ops[("data/georgia-sample/: operators, facilities, tiers, signals, people coverage, source manifest")]
+        load["attio-load-georgia: one-time load"]
+        clayio["clay:export and clay:import"]
+    end
+
+    subgraph crm["Attio workspace (system of record)"]
+        direction LR
+        attio["Companies, Sites, People"]
+        titanx["Attio List for TitanX calling handoff (not built)"]
+    end
+
+    subgraph render["Render"]
+        direction LR
+        pg[("PostgreSQL 17: mirror, findings, jobs, enrollment ledger")]
+        worker["apps/worker: audit worker"]
+        api["apps/api: audit and job-status API"]
+        cron["cron: monthly CMS refresh reruns the sample scripts and the Attio load"]
+    end
+
+    web["Vercel: apps/web Next.js findings board"]
+    lem["lemlist scripts: draft, enroll, webhook"]
+    lemlist["Lemlist (connected, no campaign ever launched)"]
+
+    subgraph packages["packages/ shared by every app and script"]
+        direction LR
+        core["core: audit rules, scoring, Attio mapping"]
+        contracts["contracts: runtime validation"]
+        db["db: schema, migrations, repositories, job queue"]
+        conn["connectors: Attio read-only sync, Attio writeback, Lemlist"]
+        sf["connectors: Salesforce (superseded reference)"]
+    end
+
+    cms --> sample
+    osrm --> sample
+    clay <--> clayio
+    sample --> ops --> load --> attio
+    attio --> clayio
+    clayio -- "scoped writeback: domain, address, People" --> attio
+    attio -- "read-only sync" --> pg
+    pg <--> worker
+    pg <--> api
+    api --> web
+    pg --> lem
+    lem -. "human approval and kill switch" .-> lemlist
+    attio -. "no code" .-> titanx
+    web ~~~ packages
+
+    classDef unbuilt stroke-dasharray:6 4,stroke:#8a8a8a,color:#555,fill:#f7f7f7;
+    class titanx,sf unbuilt;
+```
+
+The four layers are the local scripts that build the market sample, the Attio workspace that holds it, the Render services that mirror and audit it, and the Vercel board that shows the audit. Scripts talk to CMS, OSRM, Clay, Attio, and Lemlist directly and are run by hand; the deployed stack only reads Attio through the read-only connector and never writes to it. The `packages/` group is the shared code every app and script imports, so it is drawn once rather than wired to each consumer. The dashed nodes are the superseded Salesforce connector, kept as reference only, and the TitanX handoff, which has no code.
+
+Rendered SVGs of every chart on this page live in [`diagrams/`](diagrams/) and are regenerated with `npm run diagrams`.
+
 ## 1. Data pipeline
 
 ```mermaid

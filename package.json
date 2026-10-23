@@ -38,7 +38,8 @@
     "test": "node --test tests/*.test.ts",
     "typecheck": "tsc --noEmit && tsc --noEmit --project apps/web/tsconfig.json",
     "worker": "node apps/worker/src/worker.ts",
-    "worker:once": "node apps/worker/src/worker.ts --once"
+    "worker:once": "node apps/worker/src/worker.ts --once",
+    "diagrams": "node scripts/render-diagrams.ts"
   },
   "engines": {
     "node": ">=24"

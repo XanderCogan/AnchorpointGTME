@@ -32,6 +32,7 @@ Treat frozen contract versions as authoritative for implemented behavior. If a p
 - One-page case study of the whole work sample: [`portfolio/case-study.md`](portfolio/case-study.md)
 - How the work was approached and what the decisions forced, in long form: [`portfolio/methodology.md`](portfolio/methodology.md)
 - What is designed but not built: [`portfolio/gap-statement.md`](portfolio/gap-statement.md)
+- Mermaid charts of the system, data pipeline, Attio object model, and activation states, with rendered SVGs: [`portfolio/diagrams.md`](portfolio/diagrams.md)
 
 ## Research and discovery
 

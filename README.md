@@ -64,7 +64,7 @@ docs/                routed from docs/README.md; decisions in docs/decisions/
 
 - [`docs/portfolio/case-study.md`](docs/portfolio/case-study.md): the one-page case study, the shortest full account of the work.
 - [`docs/portfolio/methodology.md`](docs/portfolio/methodology.md): how the problem was approached, what was decided, and what the constraints forced, compiled from the seventeen decision records.
-- [`docs/portfolio/diagrams.md`](docs/portfolio/diagrams.md): Mermaid charts of the data pipeline, the Attio object model, and the activation state machine.
+- [`docs/portfolio/diagrams.md`](docs/portfolio/diagrams.md): Mermaid charts of the system overview, the data pipeline, the Attio object model, and the activation state machine, rendered as SVGs in [`docs/portfolio/diagrams/`](docs/portfolio/diagrams/) (`npm run diagrams` regenerates them).
 - [`docs/portfolio/copy-examples.md`](docs/portfolio/copy-examples.md): two cold-email drafts for Tier A operators with the reasoning, labelled never sent.
 - [`docs/portfolio/gap-statement.md`](docs/portfolio/gap-statement.md): what is designed but not built.
 - `npm run portfolio:bundle`: writes JSON copies of tiers, serviceability, people coverage, and signals, plus the PruittHealth and Tift Regional lineage traces and an index, to a local `artifacts/portfolio/` folder.
