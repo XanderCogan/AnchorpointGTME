@@ -10,10 +10,11 @@ Browser
             -> Postgres-backed job queue
             -> Render background worker
             -> Render scheduled reconciliation jobs
+            -> Render cron anchorpoint-cms-refresh (monthly Georgia CMS refresh into Attio)
             -> Attio, Clay, Lemlist, and TitanX handoffs
 ```
 
-Vercel is the human interface. Render is the integration and processing layer, replacing Railway under decision 0013. Attio is the operational CRM system of record under decision 0011, and the field-service platform is the source of service and customer truth under decision 0004. PostgreSQL stores the application mirror, findings, proposals, approvals, job state, connector events, and audit evidence.
+Vercel is the human interface. Render is the integration and processing layer, replacing Railway under decision 0013. Attio is the operational CRM system of record under decision 0011, and the field-service platform is the source of service and customer truth under decision 0004. PostgreSQL stores the application mirror, findings, proposals, approvals, job state, connector events, and audit evidence. The `anchorpoint-cms-refresh` cron in `render.yaml` runs `npm run sample:georgia:refresh` on the 3rd of each month at 06:00 UTC, a few days after CMS refreshes its datasets, and ends with the Attio load and the read-only sync into the mirror.
 
 ## Current repository shape
 

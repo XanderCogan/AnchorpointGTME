@@ -53,3 +53,37 @@ services:
         fromDatabase:
           name: anchorpoint-postgres
           property: connectionString
+
+  # Monthly Georgia CMS refresh (docs/research/georgia-senior-living-sample-plan.md): pull, resolve,
+  # serviceability, signals, Serper lookups, tiering, then the Attio load and read-only sync.
+  # The 3rd at 06:00 UTC runs a few days after CMS's monthly dataset refresh.
+  - type: cron
+    name: anchorpoint-cms-refresh
+    runtime: node
+    plan: starter
+    region: virginia
+    schedule: "0 6 3 * *"
+    buildCommand: npm ci
+    startCommand: npm run sample:georgia:refresh
+    autoDeploy: false
+    envVars:
+      - key: NODE_VERSION
+        value: "24"
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: anchorpoint-postgres
+          property: connectionString
+      - key: ATTIO_SITE_OBJECT
+        value: sites
+      - key: ATTIO_CALL_OBJECT
+        value: call_logs
+      - key: ATTIO_CONNECTION_ID
+        value: anchorpoint-attio
+      - key: ATTIO_SETUP_TOKEN
+        sync: false
+      - key: ATTIO_ACCESS_TOKEN
+        sync: false
+      - key: SERPER_API_KEY
+        sync: false
