@@ -27,13 +27,12 @@ Live, as of 2026-10-22:
 Not built, or not finished:
 
 - Milestone 4 stopped in progress: 142 live audit findings against the Attio load are open (Clay-proposed domains and primary locations would clear them), and the tier bands have not been re-inspected against people coverage.
-- Milestone 5 (scoring, play table, approval, previews) exists only as the tiering script and its JSON output. There is no approval interface.
 - Milestone 7 (TitanX handoff) has no code. No dialer was bought (decision 0014); the design ends at an Attio List of approved phone-ready contacts.
-- Milestone 8 (rep work queue, reconciliation, runbook) is not built.
+- Milestone 8 (rep work queue, approvals table, reconciliation, runbook) is not built.
 - The CRM history analysis is a method and a fixture-tested pipeline only. No fictional CRM history exists or will be generated (decision 0010).
 - The deployed preview still shows the frozen `inspection-v1` audit fixture, which proves the audit engine and nothing about the market.
 
-The gap statement in [`docs/portfolio/gap-statement.md`](docs/portfolio/gap-statement.md) covers Milestones 5, 7, and 8 in one page.
+The gap statement in [`docs/portfolio/gap-statement.md`](docs/portfolio/gap-statement.md) covers Milestones 7 and 8 in one page.
 
 ## Constraints that shaped it
 

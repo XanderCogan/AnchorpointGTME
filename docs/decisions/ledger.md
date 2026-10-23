@@ -2,7 +2,7 @@
 
 Status: maintained. Last checked against every decision record, `STATE.md`, and `docs/product/build-plan.md` on 2026-10-22.
 
-This ledger exists so that nobody has to work out from fourteen separate records which one governs. Each record keeps its original text, including text that later records override. Where an older record still says something a newer one changed, that older text is historical and the newer record governs. Current status lives only in `STATE.md`; this ledger records which decision owns each answer, not what is built.
+This ledger exists so that nobody has to work out from sixteen separate records which one governs. Each record keeps its original text, including text that later records override. Where an older record still says something a newer one changed, that older text is historical and the newer record governs. Current status lives only in `STATE.md`; this ledger records which decision owns each answer, not what is built.
 
 ## 1. Decisions in order
 
@@ -62,6 +62,14 @@ Status: active and carried out. Decided that Render hosts the API, worker, and P
 
 Status: active. Decided that no dialer subscription is bought and that Milestone 7 ends at the controlled Attio List any dialer would read, with TitanX still the named planned calling system and Allo the unconfirmed fallback. Replaced the assumption in decisions 0011 and 0012 that TitanX would be connected and might need an Attio bridge. Nothing has replaced it.
 
+### 0015 Campaign-level approval and native Lemlist enrollment from Attio
+
+Status: active. Decided that approval is per campaign, with automatic enrollment from an Attio audience List. Amended decision 0001's human-approval gate; decision 0016 follows from it.
+
+### 0016 Milestone 5 collapsed to explainable scoring and the approval gate
+
+Status: active. Redefined Milestone 5 around what decision 0015 left necessary, marked it complete on fixtures, and moved the approvals table and operator page to Milestone 8. Amends the build plan; replaces no decision.
+
 ## 2. Checked for contradictions
 
 Each pair below was read side by side. "Consistent" means the newer record states that it changes the older one or the two agree. A conflict is quoted with its file name.
@@ -98,5 +106,5 @@ Consistent. `docs/product/build-plan.md` names "two exceptions", the Georgia sam
 - Outreach: never, decision 0012 as amended. No sending domain, mailbox, launched campaign, or dial.
 - Fictional data: none, decision 0010. The CRM holds real Georgia operators and facilities only; synthetic fixtures are labelled test inputs.
 - Enrichment budget: decision 0007 as amended, kept in force by decision 0012. Free tiers first, Clay may exceed $20 under the one-day timeline, and every purchase is confirmed at the shown price.
-- Gate order: the build plan, with its two exceptions under decisions 0008 and 0012. Milestones 6 and 7 are accepted on dry runs, fixtures, and handoff records.
+- Gate order: the build plan, with its two exceptions under decisions 0008 and 0012 and the Milestone 5 redefinition under 0016. Milestones 5, 6, and 7 are accepted on dry runs, fixtures, and handoff records.
 - Approval: campaign-level, decision 0015. A manager approves a campaign, its audience definition, and its senders once; enrollment is automatic from an Attio List through the native Lemlist app. Suppression stays deny-first and no outreach ever happens.

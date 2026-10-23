@@ -6,7 +6,7 @@ Status: active, 2026-10-22. This is the last plan. Building stops here; what rem
 
 - Milestones 0 to 3 and 6 are accepted. The audit engine, Attio read-only sync, Attio writeback, Clay round trip, and Lemlist connector are built and tested (88 tests).
 - Milestone 4 holds 105 Georgia operators, 71 tiered (6 A, 15 B, 32 C, 18 Watch), 53 with people coverage, and one operator (Tift Regional) traced end to end from Clay into Attio.
-- Milestone 5 exists as a scoring script and JSON output only. Milestones 7 and 8 are not built. They are declared designed-not-built, not finished.
+- Milestone 5 is complete as redefined by decision 0016 (explainable scoring plus the Attio List approval gate). Milestones 7 and 8 are not built and are declared designed-not-built, not finished.
 
 ## What stops now
 

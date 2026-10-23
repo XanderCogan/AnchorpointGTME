@@ -6,7 +6,7 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 
 - Milestones 0 to 3 are complete; evidence is in `docs/milestones/`. Milestone 3 (read-only Attio, decision 0011) was accepted on 2026-10-22.
 - Milestone 4, the Georgia market sample, is in progress (decision 0008). Senior living is the only segment worked in depth. Tiers now include the people-pass inputs (2026-10-22): 6 A, 15 B, 32 C, 18 Watch.
-- Milestone 6 (Lemlist) is built on labelled practice fixtures (decision 0012). Milestone 5 is a scoring script and JSON only; Milestones 7 and 8 are not built. No email or call is ever sent.
+- Milestone 5 (explainable scoring and approval gate) is complete as redefined by decision 0016. Milestone 6 (Lemlist) is built on labelled practice fixtures (decision 0012). Milestones 7 and 8 are not built. No email or call is ever sent.
 - The deployed preview still shows the frozen HubSpot-shaped `inspection-v1`: 22 findings, 15 critical and 7 warning. Never use it to derive the ICP, scores, or market size.
 - Timeline: the project finishes in one day. Pay for speed, and confirm each purchase with its price first.
 

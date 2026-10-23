@@ -1,6 +1,6 @@
 # Gap Statement: What Was Not Built
 
-Status: written 2026-10-22 under `docs/product/finish-plan.md`. Building stopped that day. This page covers Milestones 5, 7, and 8, and the unfinished parts of Milestone 4, against the gated build plan in `docs/product/build-plan.md`. Current status lives in `STATE.md`; this page records why the gaps exist and what to do first.
+Status: written 2026-10-22 under `docs/product/finish-plan.md`. Building stopped that day. This page covers Milestones 7 and 8, the unfinished parts of Milestone 4, and what decision 0016 moved out of Milestone 5, against the gated build plan in `docs/product/build-plan.md`. Current status lives in `STATE.md`; this page records why the gaps exist and what to do first.
 
 ## 1. Why building stopped
 
@@ -8,7 +8,7 @@ Three reasons, in order of weight.
 
 - The one-day timeline. The project was scoped to finish in one day (2026-10-20) and ran to 2026-10-22. The finish plan chose to package what exists rather than start work that could not be verified in the time left.
 - Budget. Clay runs on free credits (about 55 remain this month, and the user will not pay for Clay Growth). No dialer was bought (decision 0014). Each paid step needs a per-purchase confirmation.
-- A deliberate choice. Milestones 5, 7, and 8 are declared designed-not-built. Their contracts, decisions, and fixtures exist; their code, tables, and screens do not.
+- A deliberate choice. Milestones 7 and 8 are declared designed-not-built. Their contracts, decisions, and fixtures exist; their code, tables, and screens do not.
 
 ## 2. Milestone 4: Clay enrichment loop, unfinished parts
 
@@ -31,26 +31,11 @@ Exit gate status: not met. The trace exists for one operator, and the suppressio
 
 What the next engineer does first: get the user's OK on credits, add the `companies-3` columns to `companies-1` and `companies-2`, run them with Auto-run off, import one CSV, run `clay:import` as a dry run, read the review items, then `--live`. Then re-run `npm run attio:audit` and confirm the 142 findings fall. Then rerun `tier.ts`, which now reads the people inputs, and look at which operators cross a band edge.
 
-## 3. Milestone 5: Play table and approval
+## 3. Milestone 5: Explainable scoring and approval gate
 
-What the plan asked for: explainable scoring, account tiers, contact recommendations, message inputs, approval decisions, and before-action previews. Exit gate: a manager can understand why every account was included, excluded, or blocked.
+Redefined and closed by decision 0016 on 2026-10-22. Scoring is explainable per operator in `data/georgia-sample/tiers.json`, and the enrollment planner refuses any contact not on the approved campaign's Attio audience List. The gate is verified on fixtures; the List itself is Milestone 6's open item below.
 
-What exists today:
-
-- Explainable scoring at the account level, as a script and a file: `scripts/georgia-sample/tier.ts` writes `data/georgia-sample/tiers.json` under `account-score-v1.1` with every component's points, input, and source, and one explanation sentence per operator. The band thresholds (A 40, B 30, C 20) were approved on 2026-10-20.
-- Contact recommendations only as role slots in `clay-role-map.json` (four slots, personas, and point proposals), not as per-account recommendations.
-- A before-action preview only in the Lemlist dry run, which lists what would be enrolled and why each skipped candidate was skipped.
-
-What is not done:
-
-- No approval table. The Lemlist enrollment script takes approvals as a JSON file keyed by Attio person record ID until one exists. Nothing records who approved what, when, or against which message version.
-- No play table screen. The web app shows only the frozen `inspection-v1` audit findings. No manager can see the 71 operators, their bands, or their explanations without opening a JSON file.
-- No message inputs. The two drafts in `copy-examples.md` were written by hand from the data, not generated from stored inputs.
-- No person-level scoring. Person relevance, role change, and channel confidence are zero in `tiers.json`.
-
-Exit gate status: not met. A manager who can read JSON can understand the account bands; a manager who cannot has no way in, and blocked or excluded accounts are visible only in the audit findings and the operator review file.
-
-What the next engineer does first: add an `approvals` table (contact, campaign, message version, approver, timestamp, scoring version) in a migration, switch `lemlist:enroll` from the `--approvals` file to that table, then put one read-only page in the web app that lists `tiers.json` operators with their explanation and current findings. Do that before touching person scoring.
+What moved out, to Milestone 8: an `approvals` table (contact, campaign, message version, approver, timestamp, scoring version) and a read-only page listing the tiered operators with their explanations. Person-level scoring stays unearned in `tiers.json` because channel verification has not run.
 
 ## 4. Milestone 7: TitanX handoff
 
@@ -82,12 +67,12 @@ What is not done: no work queue, no SLA indicators (the one-business-hour intere
 
 Exit gate status: not met.
 
-What the next engineer does first: write the operating runbook from `README.md`, `STATE.md`, and the two connector notes, and test it by asking someone else to run the audit, trip the kill switch, and read a failed job without help. The work queue and SLA clock should wait until Milestone 5's approval table exists, because both read from it.
+What the next engineer does first: write the operating runbook from `README.md`, `STATE.md`, and the two connector notes, and test it by asking someone else to run the audit, trip the kill switch, and read a failed job without help. Build the approvals table first, because the work queue and SLA clock both read from it.
 
 ## 6. Exit gates, in one place
 
 - Milestone 4: not met. One operator traced; 70 not enriched; 142 findings open; tiers not re-inspected.
-- Milestone 5: not met. Scoring script and JSON only; no approval table, no screen.
+- Milestone 5: met as redefined by decision 0016. Approvals table and operator page moved to Milestone 8.
 - Milestone 7: not met. No code; the Attio List does not exist.
 - Milestone 8: not met. Nothing built.
 

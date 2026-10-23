@@ -75,11 +75,13 @@ Deliverables:
 
 Exit gate: the user can trace one raw facility through parent resolution, serviceability, enrichment, and scoring inputs; enrichment cannot bypass suppression rules or make a record outreach-ready without recomputing eligibility.
 
-## Milestone 5: Play table and approval
+## Milestone 5: Explainable scoring and approval gate
 
-Implement explainable scoring, account tiers, contact recommendations, message inputs, approval decisions, and before-action previews.
+Status: complete on 2026-10-22 as redefined under decision 0016. Scoring is live on the Georgia sample; the approval gate is verified on fixtures, the same standard as Milestones 6 and 7.
 
-Exit gate: a manager can understand why every account was included, excluded, or blocked.
+Produce explainable account scoring with tier bands and a written explanation per operator, and gate enrollment on campaign-level approval expressed as membership of an Attio audience List (decision 0015). Before-action previews are the Lemlist dry run; message inputs are the drafting fact sheet. The original play-table screen and per-contact approval decisions were removed by decision 0016; the approvals table moved to Milestone 8.
+
+Exit gate: every tiered operator has a written explanation of its band, and no contact can be planned for enrollment without approval expressed as audience List membership.
 
 ## Milestone 6: Lemlist activation
 
@@ -101,7 +103,7 @@ Exit gate: call-ready contacts are traceable from approval through disposition w
 
 ## Milestone 8: Feedback and handoff
 
-Build the rep work queue, service-level response-target indicators, reconciliation jobs, operating runbook, three-minute demo, and honest production-gap assessment.
+Build the rep work queue, an approvals table recording approver, timestamp, message version, and scoring version (moved here from Milestone 5 by decision 0016), service-level response-target indicators, reconciliation jobs, operating runbook, three-minute demo, and honest production-gap assessment.
 
 Exit gate: another operator can explain the rules, investigate a failed job, stop activation, and own the system without the original builder.
 
