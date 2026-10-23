@@ -81,7 +81,7 @@ services:
         value: call_logs
       - key: ATTIO_CONNECTION_ID
         value: anchorpoint-attio
-      - key: ATTIO_SETUP_TOKEN
+      - key: ATTIO_WRITEBACK_TOKEN
         sync: false
       - key: ATTIO_ACCESS_TOKEN
         sync: false

@@ -1,12 +1,13 @@
 // One-time setup step, separate from the read-only connector: loads the real Georgia
 // senior-living operators as Companies and their facilities as Sites (decision 0010).
-// Uses ATTIO_SETUP_TOKEN. Attio refuses API-set uniqueness, so existing records are read first and
+// Uses ATTIO_WRITEBACK_TOKEN (records read-write, object configuration read), or ATTIO_SETUP_TOKEN
+// when attributes still need creating. Attio refuses API-set uniqueness, so existing records are read first and
 // matched on operator_id and ccn: a rerun updates them and never duplicates.
 import { readFileSync } from "node:fs";
 
-const token = process.env.ATTIO_SETUP_TOKEN;
+const token = process.env.ATTIO_WRITEBACK_TOKEN ?? process.env.ATTIO_SETUP_TOKEN;
 if (!token) {
-  console.error("Set ATTIO_SETUP_TOKEN to a token with record and object configuration write scopes.");
+  console.error("Set ATTIO_WRITEBACK_TOKEN (records read-write) or, for a first load that creates attributes, ATTIO_SETUP_TOKEN.");
   process.exit(1);
 }
 const siteObject = process.env.ATTIO_SITE_OBJECT ?? "sites";
