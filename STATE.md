@@ -27,8 +27,7 @@ Last updated: 2026-10-22. Live context only; durable knowledge is in `docs/` (ro
 Building has stopped under `docs/product/finish-plan.md` (2026-10-22). Remaining work is packaging only.
 
 1. User: record the three Loom walkthroughs (video 2 script in `docs/portfolio/loom-video-2-script.md`) and read `docs/portfolio/methodology.md` once for voice.
-2. In flight: a Render cron for the monthly CMS refresh, on its own branch.
-3. Deferred, recorded in `docs/portfolio/gap-statement.md`: the remaining Clay runs, the 142 live audit findings, tier re-inspection, the CRM history port, Lemlist timing and webhook events, and the Milestone 7 Attio List.
+2. Deferred, recorded in `docs/portfolio/gap-statement.md`: the remaining Clay runs, the 142 live audit findings, the CRM history port, Lemlist timing and webhook events, the Milestone 7 Attio List, and committing cron outputs back to the repo.
 
 ## Blockers
 

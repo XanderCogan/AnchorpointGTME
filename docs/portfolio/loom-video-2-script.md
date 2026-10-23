@@ -6,11 +6,11 @@ Status: recording script, 2026-10-22. Facts come from `STATE.md`, `docs/research
 
 Say: this is one Georgia nursing-home operator going from a federal dataset to a CRM record with named contacts, and stopping one step before any outreach. Four tools on screen: the repo, Attio, Clay, Lemlist. Point at each and say what it owns. The repo owns sourcing, scoring, and the connectors. Attio is the system of record. Clay finds people. Lemlist is built but never launched.
 
-Correct the two things people assume. Nothing here is scraped and nothing runs on a schedule. The data is a one-time pull of public CMS nursing-home datasets, rerun by hand when wanted. And the dashboard is a CRM health audit, not a lead board.
+Correct the two things people assume. Nothing here is scraped: the data is the public CMS nursing-home datasets, pulled through their API by a cron job on Render on the 3rd of each month, since CMS refreshes monthly. And the dashboard is a CRM health audit, not a lead board.
 
 ## Stop 1: the repo, sourcing (about 90 seconds)
 
-Show `scripts/georgia-sample/` and `npm run sample:georgia` in `package.json`. Say: these are five TypeScript scripts, run once from the command line.
+Show `scripts/georgia-sample/` and the cron service in `render.yaml`. Say: these are five TypeScript scripts chained by `npm run sample:georgia:refresh`, which the Render cron runs monthly and which I can run from the command line. The first live run on Render refreshed CMS, rescored, and reloaded Attio in six minutes.
 
 - Pull: the CMS Provider Data Catalog, four datasets, provider information, ownership, deficiencies, and the citation code lookup. Pulled 2026-10-19. 356 Georgia facilities. Not a state site; the Georgia portals forbid automation, so this sample is nursing homes only.
 - Resolve: facilities to operators by CMS chain id, then controlling owner, then legal name. Ambiguous cases went to a review file I approved by hand. 105 operators.
@@ -53,7 +53,7 @@ Say: Attio also syncs one way into a Postgres mirror on Render through a read-on
 
 ## Stop 6: Lemlist and the stop line (about 45 seconds)
 
-Show the connector code or the Lemlist workspace with no campaign. Say: enrollment reads Attio, checks opt-out and do-not-call, requires a human approval record, writes an idempotent ledger entry, and has a kill switch. It is built and tested. No campaign has been launched, no mailbox or sending domain exists, and no real contact has been enrolled. The phone handoff ends at an Attio List that is not built.
+Show the connector code or the Lemlist workspace with no campaign. Say: enrollment reads Attio, checks opt-out and do-not-call, requires approval by membership of an Attio List, writes an idempotent ledger entry, and has a kill switch. A drafting step (`npm run lemlist:draft`) builds a fact sheet from the operator's cited records and has Claude write a subject, opener, and body per contact into a file that a human must mark reviewed before enrollment will carry it as Lemlist variables. It is built and tested, and one practice draft has been generated. No campaign has been launched, no mailbox or sending domain exists, and no real contact has been enrolled. The phone handoff ends at an Attio List that is not built.
 
 ## Closing (about 20 seconds)
 
