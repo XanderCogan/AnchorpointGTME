@@ -18,6 +18,7 @@
     "portfolio:bundle": "node scripts/build-portfolio-bundle.ts",
     "sample:georgia": "node scripts/georgia-sample/resolve-operators.ts && node scripts/georgia-sample/serviceability.ts && node scripts/georgia-sample/signals.ts && node scripts/georgia-sample/serper-lookups.ts && node scripts/georgia-sample/tier.ts",
     "sample:georgia:pull": "node scripts/georgia-sample/pull-cms.ts",
+    "sample:georgia:refresh": "node scripts/georgia-sample/refresh.ts",
     "sample:georgia:clay-export": "node scripts/georgia-sample/clay-export.ts",
     "sample:georgia:clay-summarize": "node scripts/georgia-sample/clay-summarize.ts",
     "sample:georgia:clay-reduce": "node scripts/georgia-sample/clay-reduce.ts",

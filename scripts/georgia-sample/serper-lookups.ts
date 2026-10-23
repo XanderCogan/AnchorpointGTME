@@ -21,8 +21,8 @@ try {
 } catch {
   // The key may already be in the environment.
 }
+// The key is only required once a query misses the cache, so a fully cached rerun needs none.
 const API_KEY = process.env.SERPER_API_KEY?.trim();
-if (!API_KEY) throw new Error("SERPER_API_KEY is not set in .env");
 
 const limitArg = process.argv.indexOf("--limit");
 const LIMIT = limitArg > -1 ? Number.parseInt(process.argv[limitArg + 1] ?? "", 10) : Number.POSITIVE_INFINITY;
@@ -92,6 +92,7 @@ async function search(query: string): Promise<SearchResponse> {
     // Not cached yet.
   }
   if (spent >= LIMIT) throw new Error("LIMIT");
+  if (!API_KEY) throw new Error(`SERPER_API_KEY is not set and this query is not cached: ${query}`);
   if (Number.isNaN(balance)) {
     const account = (await (await fetch("https://google.serper.dev/account", { headers: { "X-API-KEY": API_KEY! } })).json()) as {
       balance: number;

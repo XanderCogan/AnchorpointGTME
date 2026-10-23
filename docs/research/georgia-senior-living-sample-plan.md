@@ -157,6 +157,10 @@ On 2026-10-20 the user approved a second batch of 26 facility decisions and 2 ch
 
 `npm run sample:georgia` reruns resolution, serviceability, signals, Serper lookups, and tiering from the raw data, with OSRM and Serper served from cache. `npm run sample:georgia:pull` refreshes the CMS pull separately.
 
+### Scheduled refresh
+
+`npm run sample:georgia:refresh` (`scripts/georgia-sample/refresh.ts`) runs the whole chain unattended: the CMS pull, resolution, serviceability, signals, Serper lookups, tiering, `scripts/attio-load-georgia.ts`, and `scripts/attio-sync.ts`. It spawns the existing scripts in order, logs each stage, stops on the first failure, and ends with the facility, operator, review-case, and band counts, naming any new review case IDs. `--dry-run` skips the pull and both Attio steps and reruns the rest on cached data. The `anchorpoint-cms-refresh` cron in `render.yaml` runs it on the 3rd of each month at 06:00 UTC. A Render cron starts from an empty raw folder, so each run fetches OSRM live (about four requests, 1.5 seconds apart) and reruns every Serper query, roughly the 300 in the current local cache; Serper's free credits are a one-time allowance, and the lookups stop cleanly at the 200-credit reserve. The Serper key is needed only when a query misses the cache. The container's files are discarded after the run, so new ambiguous facilities appear only in the run log, still unmerged and loaded as provisional operators.
+
 ### Stage 5: tiering, proposal 2 approved on 2026-10-20
 
 `scripts/georgia-sample/tier.ts` writes `data/georgia-sample/tiers.json`. It applies `account-score-v1.1`. Every value the contract leaves open sits in one labeled parameter block, `georgia-account-proposal-2`, which the user approved on 2026-10-20. Scored components no longer carry a proposal marker.
