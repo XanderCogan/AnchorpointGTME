@@ -12,17 +12,17 @@
 //                          (default ATTIO_APPROVED_LIST); read live, read-only
 //   --approvals <file>     offline alternative: [{ contactKey, approvedBy, approvedAt }]
 //                          keyed by Attio person record ID
-import { readFileSync } from "node:fs";
+//   --drafts <dir>         reviewed draft files from lemlist:draft (default
+//                          data/georgia-sample/private/drafts); a contact whose draft
+//                          is not marked reviewed is skipped, one with no draft enrolls
+//                          without copy variables.
 import { resolve } from "node:path";
 import { parseArgs } from "node:util";
-import { attioConfigFromEnv } from "../packages/connectors/src/attio/config.ts";
-import { connectAttio } from "../packages/connectors/src/attio/connect.ts";
-import { approvalsFromListEntries, candidatesFromAttio, parseApprovals, type Approval } from "../packages/connectors/src/lemlist/attio-source.ts";
 import { lemlistConfigFromEnv } from "../packages/connectors/src/lemlist/config.ts";
 import { connectLemlist } from "../packages/connectors/src/lemlist/connect.ts";
-import { executeEnrollment, planEnrollment, suppressionsFrom, type EnrollmentCandidate } from "../packages/connectors/src/lemlist/enrollment.ts";
-import { loadPracticeContacts } from "../packages/connectors/src/lemlist/practice.ts";
-import { loadAttioPeopleAndCompanies } from "../packages/db/src/attio-mirror.ts";
+import { attachDrafts, DEFAULT_DRAFTS_DIR, readDraftFile } from "../packages/connectors/src/lemlist/drafts.ts";
+import { executeEnrollment, planEnrollment, suppressionsFrom } from "../packages/connectors/src/lemlist/enrollment.ts";
+import { loadEnrollmentSource } from "../packages/connectors/src/lemlist/source.ts";
 import { closePool } from "../packages/db/src/client.ts";
 import { localSuppressions, PostgresActivationControls, PostgresEnrollmentLedger } from "../packages/db/src/lemlist.ts";
 
@@ -39,6 +39,7 @@ const { values: args } = parseArgs({
     source: { type: "string", default: "practice" },
     approvals: { type: "string" },
     "approved-list": { type: "string" },
+    drafts: { type: "string", default: resolve(import.meta.dirname, "..", DEFAULT_DRAFTS_DIR) },
   },
 });
 const config = lemlistConfigFromEnv();
@@ -48,54 +49,32 @@ if (!config || !campaignId) {
   process.exit(1);
 }
 
-// Decision 0015: approval is membership of the approved campaign's audience List.
-async function loadApprovals(): Promise<ReadonlyMap<string, Approval>> {
-  const listSlug = args["approved-list"] ?? process.env.ATTIO_APPROVED_LIST;
-  if (listSlug) {
-    const attioConfig = attioConfigFromEnv();
-    if (!attioConfig) throw new Error("Set ATTIO_ACCESS_TOKEN to read the approved List.");
-    const entries = [];
-    for await (const page of connectAttio(attioConfig).queryListEntries(listSlug, { pageSize: 500, maxPages: 20 })) entries.push(...page);
-    const approvals = approvalsFromListEntries(entries, listSlug);
-    console.log(`${approvals.size} people approved by membership of Attio List ${listSlug}.`);
-    return approvals;
-  }
-  if (args.approvals) return parseApprovals(JSON.parse(readFileSync(resolve(args.approvals), "utf8")));
-  throw new Error("--source attio needs --approved-list <slug> (or ATTIO_APPROVED_LIST), or --approvals <file.json> for an offline run.");
-}
-
-async function loadSource(): Promise<{ candidates: EnrollmentCandidate[]; localDoNotContact: string[] }> {
-  if (args.source === "practice") {
-    return loadPracticeContacts(resolve(import.meta.dirname, "..", "fixtures", "lemlist-practice-v1", "contacts.json"));
-  }
-  if (args.source === "attio") {
-    const connectionId = process.env.ATTIO_CONNECTION_ID;
-    if (!connectionId) throw new Error("Set ATTIO_CONNECTION_ID to read the Attio mirror.");
-    const approvals = await loadApprovals();
-    const source = candidatesFromAttio({ ...(await loadAttioPeopleAndCompanies(connectionId)), approvals });
-    if (source.unlinked.length > 0) console.log(`${source.unlinked.length} people skipped: not linked to a mirrored company.`);
-    return source;
-  }
-  throw new Error(`Unknown --source ${args.source}; use practice or attio.`);
-}
-
 try {
-  const source = await loadSource();
+  const source = await loadEnrollmentSource({
+    source: args.source,
+    approvals: args.approvals,
+    approvedList: args["approved-list"],
+    practicePath: resolve(import.meta.dirname, "..", "fixtures", "lemlist-practice-v1", "contacts.json"),
+  });
   const client = connectLemlist(config);
   const ledger = new PostgresEnrollmentLedger();
   const remote: string[] = [];
   for await (const page of client.listUnsubscribes({ pageSize: 100, maxPages: 50 })) {
     for (const row of page) remote.push(row.email ?? row.value ?? "");
   }
-  const decisions = planEnrollment({
-    campaignId,
-    candidates: source.candidates,
-    suppressions: suppressionsFrom(remote, [...source.localDoNotContact, ...(await localSuppressions())]),
-    activeKeys: await ledger.activeKeys(campaignId),
-    killSwitchEngaged: await new PostgresActivationControls().killSwitchEngaged(campaignId),
-  });
+  const decisions = attachDrafts(
+    planEnrollment({
+      campaignId,
+      candidates: source.candidates,
+      suppressions: suppressionsFrom(remote, [...source.localDoNotContact, ...(await localSuppressions())]),
+      activeKeys: await ledger.activeKeys(campaignId),
+      killSwitchEngaged: await new PostgresActivationControls().killSwitchEngaged(campaignId),
+    }),
+    (contactKey) => readDraftFile(args.drafts, contactKey),
+  );
   for (const decision of decisions) {
-    console.log(`${decision.contactKey}: ${decision.action === "enroll" ? "enroll" : `skip (${decision.reason})`}`);
+    const withDraft = decision.action === "enroll" && "subject" in (decision.lead.variables ?? {}) ? " with reviewed draft variables" : "";
+    console.log(`${decision.contactKey}: ${decision.action === "enroll" ? `enroll${withDraft}` : `skip (${decision.reason})`}`);
   }
   if (!args.live) {
     console.log(`Dry run: no Lemlist write was made. Pass --live to add the planned leads to campaign ${campaignId}.`);
